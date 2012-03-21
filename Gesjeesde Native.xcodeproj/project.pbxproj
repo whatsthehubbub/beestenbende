@@ -37,6 +37,8 @@
 		4E3326AF151A663B00CEC850 /* speech-bubble-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332692151A663B00CEC850 /* speech-bubble-small.png */; };
 		4E3326B0151A663B00CEC850 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332693151A663B00CEC850 /* sun.png */; };
 		4E3326B3151A666D00CEC850 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E3326B2151A666D00CEC850 /* Default@2x.png */; };
+		4E3326B7151A909000CEC850 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3326B6151A909000CEC850 /* CreditsViewController.m */; };
+		4E3326BA151A91B200CEC850 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3326B9151A91B200CEC850 /* MenuViewController.m */; };
 		4EAE98DB151A618A0051C926 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAE98DA151A618A0051C926 /* UIKit.framework */; };
 		4EAE98DD151A618A0051C926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAE98DC151A618A0051C926 /* Foundation.framework */; };
 		4EAE98DF151A618A0051C926 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAE98DE151A618A0051C926 /* CoreGraphics.framework */; };
@@ -78,6 +80,10 @@
 		4E332692151A663B00CEC850 /* speech-bubble-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-small.png"; sourceTree = "<group>"; };
 		4E332693151A663B00CEC850 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
 		4E3326B2151A666D00CEC850 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		4E3326B5151A909000CEC850 /* CreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditsViewController.h; sourceTree = "<group>"; };
+		4E3326B6151A909000CEC850 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
+		4E3326B8151A91B200CEC850 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		4E3326B9151A91B200CEC850 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		4EAE98D6151A618A0051C926 /* Gesjeesde Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesjeesde Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE98DA151A618A0051C926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4EAE98DC151A618A0051C926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -176,8 +182,12 @@
 			isa = PBXGroup;
 			children = (
 				4EAE98E9151A618A0051C926 /* AppDelegate.h */,
+				4E3326B5151A909000CEC850 /* CreditsViewController.h */,
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
+				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4E3326B8151A91B200CEC850 /* MenuViewController.h */,
+				4E3326B9151A91B200CEC850 /* MenuViewController.m */,
 				4EAE98EF151A618A0051C926 /* ViewController.h */,
 				4EAE98F0151A618A0051C926 /* ViewController.m */,
 				4EAE98E1151A618A0051C926 /* Supporting Files */,
@@ -292,6 +302,8 @@
 				4EAE98E7151A618A0051C926 /* main.m in Sources */,
 				4EAE98EB151A618A0051C926 /* AppDelegate.m in Sources */,
 				4EAE98F1151A618A0051C926 /* ViewController.m in Sources */,
+				4E3326B7151A909000CEC850 /* CreditsViewController.m in Sources */,
+				4E3326BA151A91B200CEC850 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
