@@ -15,6 +15,7 @@
 @implementation TeamPictureViewController
 
 @synthesize teamPictureView;
+@synthesize titleLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +30,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ doe je foto", [defaults objectForKey:kTeam1NameKey]]];
+    
 }
 
 - (void)viewDidUnload

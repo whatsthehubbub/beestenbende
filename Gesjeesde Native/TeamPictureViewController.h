@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Constants.h"
+
 @interface TeamPictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     UIImageView *teamPictureView;
     UIButton *takeTeamPictureButton;
+    UILabel *titleLabel;
 }
 
 @property (retain, nonatomic) IBOutlet UIImageView *teamPictureView;
+@property (retain, nonatomic) IBOutlet UILabel *titleLabel;
 
 - (IBAction)takeTeamPicture:(id)sender;
 
