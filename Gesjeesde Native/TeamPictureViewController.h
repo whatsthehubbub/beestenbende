@@ -14,11 +14,16 @@
     UIImageView *teamPictureView;
     UIButton *takeTeamPictureButton;
     UILabel *titleLabel;
+    
+    int teamNumber;
 }
+
+@property (readwrite) int teamNumber;
 
 @property (retain, nonatomic) IBOutlet UIImageView *teamPictureView;
 @property (retain, nonatomic) IBOutlet UILabel *titleLabel;
 
 - (IBAction)takeTeamPicture:(id)sender;
+- (IBAction)doneWithPicture:(id)sender;
 
 @end

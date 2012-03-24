@@ -7,6 +7,7 @@
 //
 
 #import "TeamNamesViewController.h"
+#import "TeamPictureViewController.h"
 
 @interface TeamNamesViewController ()
 
@@ -16,6 +17,7 @@
 
 @synthesize team1NameField;
 @synthesize team2NameField;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -66,6 +68,10 @@
     [defaults setObject:[self.team2NameField text] forKey:kTeam2NameKey];
     
     // Give team 1 as target for next viewcontroller
+    
+    TeamPictureViewController *tc = [segue destinationViewController];
+    [tc setTeamNumber:1];
+    
 }
 
 @end

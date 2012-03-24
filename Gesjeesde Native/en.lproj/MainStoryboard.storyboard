@@ -234,7 +234,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="50Y-ih-Ttg">
-                                <rect key="frame" x="40" y="176" width="240" height="128"/>
+                                <rect key="frame" x="51" y="136" width="240" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UtT-Wi-adY">
@@ -256,7 +256,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="O1r-7e-Hsl" kind="push" id="Lb2-j5-Plu"/>
+                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="AIe-7M-657"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -266,6 +266,7 @@
                     <connections>
                         <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="wIA-7b-tPg"/>
                         <outlet property="titleLabel" destination="UtT-Wi-adY" id="cZ8-Ng-YYH"/>
+                        <segue destination="O1r-7e-Hsl" kind="push" identifier="PastTeamPicture" id="5sO-T3-uID"/>
                     </connections>
                 </viewController>
             </objects>
@@ -324,7 +325,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="apH-ed-9aX" kind="push" id="7vn-m0-ede"/>
+                                    <segue destination="apH-ed-9aX" kind="push" identifier="TakeTeamPicture" id="7vn-m0-ede"/>
                                 </connections>
                             </button>
                         </subviews>
