@@ -94,7 +94,7 @@
 		4EA0F26C151B73C700B12716 /* TeamNamesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamNamesViewController.h; sourceTree = "<group>"; };
 		4EA0F26D151B73C700B12716 /* TeamNamesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamNamesViewController.m; sourceTree = "<group>"; };
 		4EA0F26F151B81B900B12716 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		4EAE98D6151A618A0051C926 /* Gesjeesde Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesjeesde Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAE98D6151A618A0051C926 /* Gesjeesde Beesten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesjeesde Beesten.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE98DA151A618A0051C926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4EAE98DC151A618A0051C926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EAE98DE151A618A0051C926 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -173,7 +173,7 @@
 		4EAE98D7151A618A0051C926 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EAE98D6151A618A0051C926 /* Gesjeesde Native.app */,
+				4EAE98D6151A618A0051C926 /* Gesjeesde Beesten.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,9 +226,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EAE98D5151A618A0051C926 /* Gesjeesde Native */ = {
+		4EAE98D5151A618A0051C926 /* Gesjeesde Beesten */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "Gesjeesde Native" */;
+			buildConfigurationList = 4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "Gesjeesde Beesten" */;
 			buildPhases = (
 				4EAE98D2151A618A0051C926 /* Sources */,
 				4EAE98D3151A618A0051C926 /* Frameworks */,
@@ -238,9 +238,9 @@
 			);
 			dependencies = (
 			);
-			name = "Gesjeesde Native";
+			name = "Gesjeesde Beesten";
 			productName = "Gesjeesde Native";
-			productReference = 4EAE98D6151A618A0051C926 /* Gesjeesde Native.app */;
+			productReference = 4EAE98D6151A618A0051C926 /* Gesjeesde Beesten.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EAE98D5151A618A0051C926 /* Gesjeesde Native */,
+				4EAE98D5151A618A0051C926 /* Gesjeesde Beesten */,
 			);
 		};
 /* End PBXProject section */
@@ -462,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "Gesjeesde Native" */ = {
+		4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "Gesjeesde Beesten" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EAE98F5151A618A0051C926 /* Debug */,
