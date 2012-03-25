@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="huA-t4-3Pw">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
@@ -349,13 +348,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You should not see tihs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="n9U-MG-HFZ">
-                                <rect key="frame" x="88" y="172" width="179" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg foto's kenmerken" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="n9U-MG-HFZ">
+                                <rect key="frame" x="71" y="62" width="181" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkL-UD-bNU">
+                                <rect key="frame" x="190" y="418" width="110" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="button-volgende.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="mSr-Hg-WQh"/>
+                                    <segue destination="mhP-gb-YWU" kind="push" id="SFQ-c5-a1T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -363,6 +378,167 @@
                 </viewController>
             </objects>
             <point key="canvasLocation" x="3183" y="-57"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L1C-Nq-hfS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfh-Bo-PeI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="mhP-gb-YWU" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IIL-oH-2Oj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team 1 maak je klaar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yCf-Jl-Dd1">
+                                <rect key="frame" x="70" y="59" width="181" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qk5-w3-gWg">
+                                <rect key="frame" x="190" y="418" width="110" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="button-volgende.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="oXL-Rz-qQX"/>
+                                    <segue destination="GYy-if-IZ4" kind="push" id="BQv-ri-vgg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RpP-1M-0do"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3590" y="-57"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ghd-ke-a3C">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7l9-y3-lPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="GYy-if-IZ4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KfJ-4M-NAS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maak foto's kenmerken team 1" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Pw9-zS-8Cq">
+                                <rect key="frame" x="76" y="54" width="158" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="uCB-YX-BTp">
+                                <rect key="frame" x="224" y="154" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tijd over:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RCs-st-T0C">
+                                <rect key="frame" x="137" y="154" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SAY-R5-3E5">
+                                <rect key="frame" x="76" y="367" width="158" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Neem foto">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hPt-m4-B4i">
+                                <rect key="frame" x="190" y="418" width="110" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="button-volgende.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="9yd-dd-BYf"/>
+                                    <segue destination="7jx-Og-bWS" kind="push" id="ouh-k9-Jio"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="65c-EZ-kZM"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3969" y="-57"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gJv-t0-ChO">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlr-Ob-U8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="7jx-Og-bWS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p6K-7W-nMq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg foto's labellen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JU7-aG-stm">
+                                <rect key="frame" x="73" y="56" width="155" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lQT-Cc-Cem">
+                                <rect key="frame" x="190" y="418" width="110" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="button-volgende.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="vYT-OY-hn2"/>
+                                    <segue destination="rP3-dC-dUL" kind="push" id="bvE-K4-KNL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NB1-ED-2ox"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4364" y="-57"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IC2-hg-Dfa">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0A-xp-E6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="rP3-dC-dUL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MUu-st-lJj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="W17-TO-wuG"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4741" y="-57"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="zud-re-MKp">
@@ -432,6 +608,33 @@
         <image name="button-terug.png" width="219" height="83"/>
         <image name="button-volgende.png" width="219" height="83"/>
     </resources>
+    <classes>
+        <class className="CreditsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="MenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+        </class>
+        <class className="TeamNamesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamNamesViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="team1NameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="team2NameField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="TeamPictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPictureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneWithPicture:"/>
+                <relationship kind="action" name="takeTeamPicture:"/>
+                <relationship kind="outlet" name="teamPictureView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
