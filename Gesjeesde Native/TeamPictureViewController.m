@@ -69,6 +69,8 @@
 
 - (IBAction)doneWithPicture:(id)sender {
     if ([self teamNumber] == 1) {
+        // TODO save picture for team 1
+        
         // Start segue back to this view for other team to take picture
         // Maybe wiser to 
         
@@ -78,8 +80,15 @@
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
         
         // Changes to this ViewController
-        [self.titleLabel setText:@"Alper heerst"];
         self.teamNumber = 2;
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        NSString *key = kTeam2NameKey;
+        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ doe je foto", [defaults objectForKey:key]]];
+        
+        // Blank image
+        teamPictureView.image = nil;    
+        
         
         [UIView commitAnimations];
     
