@@ -49,8 +49,6 @@
 
 #pragma mark - CreditsViewControllerDelegate
 - (void)creditsViewControllerDidBack:(CreditsViewController *)controller {
-    NSLog(@"before dismiss");
-    
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 

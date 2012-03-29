@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "Constants.h"
+#import "AppDelegate.h"
 
 @interface TeamPictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     UIImageView *teamPictureView;
@@ -16,12 +16,16 @@
     UILabel *titleLabel;
     
     int teamNumber;
+    
+    Game *game;
 }
 
 @property (readwrite) int teamNumber;
 
 @property (retain, nonatomic) IBOutlet UIImageView *teamPictureView;
 @property (retain, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (retain, nonatomic) Game *game;
 
 - (IBAction)takeTeamPicture:(id)sender;
 - (IBAction)doneWithPicture:(id)sender;

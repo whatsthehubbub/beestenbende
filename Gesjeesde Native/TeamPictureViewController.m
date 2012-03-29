@@ -19,6 +19,8 @@
 
 @synthesize teamNumber;
 
+@synthesize game;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,16 +35,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.teamNumber = 1;
     
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    game = appDelegate.game;
     
-    NSString *key = kTeam1NameKey;
-    if (teamNumber == 2) {
-        key = kTeam2NameKey;
-    }
-    
-    [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ doe je foto", [defaults objectForKey:key]]];
-    
+    [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem een foto", [game.team1 getTeamName]]];
 }
 
 - (void)viewDidUnload
@@ -82,9 +80,7 @@
         // Changes to this ViewController
         self.teamNumber = 2;
         
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        NSString *key = kTeam2NameKey;
-        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ doe je foto", [defaults objectForKey:key]]];
+        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem je foto", [game.team2 getTeamName]]];
         
         // Blank image
         teamPictureView.image = nil;    

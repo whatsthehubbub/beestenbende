@@ -12,9 +12,14 @@
 
 @synthesize window = _window;
 
+@synthesize game;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    game = [[Game alloc] init];
+    
     return YES;
 }
 							
