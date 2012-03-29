@@ -15,12 +15,12 @@
     UIButton *takeTeamPictureButton;
     UILabel *titleLabel;
     
-    int teamNumber;
+    int currentTeamNumber;
     
     Game *game;
 }
 
-@property (readwrite) int teamNumber;
+@property (readwrite) int currentTeamNumber;
 
 @property (retain, nonatomic) IBOutlet UIImageView *teamPictureView;
 @property (retain, nonatomic) IBOutlet UILabel *titleLabel;

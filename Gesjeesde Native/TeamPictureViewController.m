@@ -17,7 +17,7 @@
 @synthesize teamPictureView;
 @synthesize titleLabel;
 
-@synthesize teamNumber;
+@synthesize currentTeamNumber;
 
 @synthesize game;
 
@@ -35,7 +35,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.teamNumber = 1;
+    self.currentTeamNumber = 1;
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
@@ -66,7 +66,7 @@
 }
 
 - (IBAction)doneWithPicture:(id)sender {
-    if ([self teamNumber] == 1) {
+    if ([self currentTeamNumber] == 1) {
         // TODO save picture for team 1
         
         // Start segue back to this view for other team to take picture
@@ -78,7 +78,7 @@
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
         
         // Changes to this ViewController
-        self.teamNumber = 2;
+        self.currentTeamNumber = 2;
         
         [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem je foto", [game.team2 getTeamName]]];
         
@@ -91,13 +91,6 @@
     } else {
         // Start segue to the next view to start the game
         [self performSegueWithIdentifier:@"PastTeamPicture" sender:sender];
-    }
-}
-
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"TakeTeamPicture"]) {
-        TeamPictureViewController *tc = [segue destinationViewController];
-        [tc setTeamNumber:2];
     }
 }
 
