@@ -58,6 +58,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47D381511524CF9A00C4A7CE /* Vollkorn-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Bold.ttf"; sourceTree = "<group>"; };
+		47D381521524CF9A00C4A7CE /* Vollkorn-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-BoldItalic.ttf"; sourceTree = "<group>"; };
+		47D381531524CF9A00C4A7CE /* Vollkorn-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Italic.ttf"; sourceTree = "<group>"; };
+		47D381541524CF9A00C4A7CE /* Vollkorn-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Regular.ttf"; sourceTree = "<group>"; };
 		4E08C30E1524723D00F3CDC7 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
 		4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureExampleViewController.h; sourceTree = "<group>"; };
 		4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureExampleViewController.m; sourceTree = "<group>"; };
@@ -139,6 +143,10 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47D381511524CF9A00C4A7CE /* Vollkorn-Bold.ttf */,
+				47D381521524CF9A00C4A7CE /* Vollkorn-BoldItalic.ttf */,
+				47D381531524CF9A00C4A7CE /* Vollkorn-Italic.ttf */,
+				47D381541524CF9A00C4A7CE /* Vollkorn-Regular.ttf */,
 				4E3326B2151A666D00CEC850 /* Default@2x.png */,
 				4E332677151A663B00CEC850 /* bg-0-plain.png */,
 				4E332678151A663B00CEC850 /* bg-1-splash.png */,
