@@ -40,8 +40,11 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
+    [self.titleLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:16.0]];
+    
     [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem een foto", [game.team1 getTeamName]]];
-}
+    
+    }
 
 - (void)viewDidUnload
 {
