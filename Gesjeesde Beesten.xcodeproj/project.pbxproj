@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4E08C30F1524723D00F3CDC7 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E08C30E1524723D00F3CDC7 /* 15.png */; };
+		4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */; };
+		4E08C31615248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */; };
 		4E332694151A663B00CEC850 /* bg-0-plain.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332677151A663B00CEC850 /* bg-0-plain.png */; };
 		4E332695151A663B00CEC850 /* bg-1-splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332678151A663B00CEC850 /* bg-1-splash.png */; };
 		4E332696151A663B00CEC850 /* bg-2-main-menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332679151A663B00CEC850 /* bg-2-main-menu.png */; };
@@ -55,6 +57,10 @@
 
 /* Begin PBXFileReference section */
 		4E08C30E1524723D00F3CDC7 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
+		4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureExampleViewController.h; sourceTree = "<group>"; };
+		4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureExampleViewController.m; sourceTree = "<group>"; };
+		4E08C31415248CAA00F3CDC7 /* FeaturePictureExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePictureExplanationViewController.h; sourceTree = "<group>"; };
+		4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePictureExplanationViewController.m; sourceTree = "<group>"; };
 		4E332677151A663B00CEC850 /* bg-0-plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-0-plain.png"; sourceTree = "<group>"; };
 		4E332678151A663B00CEC850 /* bg-1-splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-1-splash.png"; sourceTree = "<group>"; };
 		4E332679151A663B00CEC850 /* bg-2-main-menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-2-main-menu.png"; sourceTree = "<group>"; };
@@ -199,6 +205,10 @@
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4E08C31415248CAA00F3CDC7 /* FeaturePictureExplanationViewController.h */,
+				4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */,
+				4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */,
+				4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */,
 				4E80ADC8151FCA22001CBA7E /* WelcomeViewController.h */,
 				4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */,
 				4EA0F26C151B73C700B12716 /* TeamNamesViewController.h */,
@@ -328,6 +338,8 @@
 				4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */,
 				4EA0F26E151B73C700B12716 /* TeamNamesViewController.m in Sources */,
 				4E80ADCA151FCA22001CBA7E /* WelcomeViewController.m in Sources */,
+				4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */,
+				4E08C31615248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
