@@ -46,6 +46,7 @@
 		4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */; };
 		4EA62E2A15249B4100E74E64 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2915249B4100E74E64 /* Game.m */; };
 		4EA62E2E15249B9D00E74E64 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2D15249B9D00E74E64 /* Team.m */; };
+		4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */; };
 		4EAE98DB151A618A0051C926 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAE98DA151A618A0051C926 /* UIKit.framework */; };
 		4EAE98DD151A618A0051C926 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAE98DC151A618A0051C926 /* Foundation.framework */; };
 		4EAE98DF151A618A0051C926 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAE98DE151A618A0051C926 /* CoreGraphics.framework */; };
@@ -104,6 +105,8 @@
 		4EA62E2915249B4100E74E64 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		4EA62E2C15249B9D00E74E64 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
 		4EA62E2D15249B9D00E74E64 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabellingResultsViewController.h; sourceTree = "<group>"; };
+		4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabellingResultsViewController.m; sourceTree = "<group>"; };
 		4EAE98D6151A618A0051C926 /* Gesjeesde Beesten.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesjeesde Beesten.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE98DA151A618A0051C926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4EAE98DC151A618A0051C926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -207,6 +210,8 @@
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
+				4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */,
 				4E08C31415248CAA00F3CDC7 /* FeaturePictureExplanationViewController.h */,
 				4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */,
 				4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */,
@@ -344,6 +349,7 @@
 				4E08C31615248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m in Sources */,
 				4EA62E2A15249B4100E74E64 /* Game.m in Sources */,
 				4EA62E2E15249B9D00E74E64 /* Team.m in Sources */,
+				4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

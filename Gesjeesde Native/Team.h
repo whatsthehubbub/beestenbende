@@ -21,5 +21,6 @@
 
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamName;
+-(NSString *)getPicturePath;
 
 @end

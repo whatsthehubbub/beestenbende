@@ -99,6 +99,17 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
     teamPictureView.image = image;
     [picker dismissModalViewControllerAnimated:YES];
+    
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
+    
+    Team *team;
+    if (self.currentTeamNumber==1) {
+        team = game.team1;
+    } else {
+        team = game.team2;
+    }
+    
+    [imageData writeToFile:[team getPicturePath] atomically:NO];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {

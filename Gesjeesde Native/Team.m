@@ -29,6 +29,18 @@
     }
 }
 
+-(NSString *)getPicturePath {
+    
+    // TODO maybe save to caches
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    
+    NSString *fullPathToFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"Team-%@-image", [self getTeamName]]];
+    
+    return fullPathToFile;
+}
+
 //#pragma mark NSCoding
 //
 //- (void)encodeWithCoder:(NSCoder *)aCoder {

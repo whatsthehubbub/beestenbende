@@ -826,11 +826,11 @@
             </objects>
             <point key="canvasLocation" x="5163" y="-57"/>
         </scene>
-        <!--View Controller-->
+        <!--Labelling Results View Controller-->
         <scene sceneID="9hp-qI-2LF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQT-Vd-wXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="f0b-yc-RIg" sceneMemberID="viewController">
+                <viewController id="f0b-yc-RIg" customClass="LabellingResultsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a20-Xj-7nb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -898,6 +898,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ndg-IS-Ls3"/>
+                    <connections>
+                        <outlet property="team1Image" destination="SN7-Iw-ojK" id="ayl-LV-cep"/>
+                        <outlet property="team2Image" destination="hfj-rS-xme" id="Msj-l6-eyk"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="5562" y="-57"/>
