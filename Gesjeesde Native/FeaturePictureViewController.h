@@ -21,6 +21,6 @@
 @property (nonatomic, retain) NSTimer *timer;
 @property (readwrite) int secondsLeft;
 
-- (void)decrementTimer;
+- (void)decrementTimer:(NSTimer *)theTimer;
 
 @end

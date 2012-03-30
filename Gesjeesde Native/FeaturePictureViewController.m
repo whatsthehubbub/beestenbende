@@ -33,7 +33,9 @@
 	// Do any additional setup after loading the view.
     
     self.secondsLeft = 60;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer) userInfo:nil repeats:YES];
+    
+    // Timer code from: http://www.herbert-siojo.com/2011/04/19/drawing-a-countdown-timer-ios/
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer:) userInfo:nil repeats:YES];
 }
 
 - (void)viewDidUnload
@@ -47,7 +49,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)decrementTimer {
+- (void)decrementTimer:(NSTimer *)theTimer {
     [self.timeLabel setText:[NSString stringWithFormat:@"%ds", self.secondsLeft]];
     
     self.secondsLeft -= 1;
