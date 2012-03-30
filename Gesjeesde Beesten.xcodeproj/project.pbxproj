@@ -60,6 +60,7 @@
 		4EAE98EB151A618A0051C926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE98EA151A618A0051C926 /* AppDelegate.m */; };
 		4EAE98EE151A618A0051C926 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */; };
 		4EAE98F1151A618A0051C926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE98F0151A618A0051C926 /* ViewController.m */; };
+		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +132,8 @@
 		4EAE98ED151A618A0051C926 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4EAE98EF151A618A0051C926 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4EAE98F0151A618A0051C926 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
+		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +228,8 @@
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */,
+				4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */,
 				4E6D61ED1525F799009D27B0 /* FeaturePictureViewController.h */,
 				4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */,
 				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
@@ -372,6 +377,7 @@
 				4EA62E2E15249B9D00E74E64 /* Team.m in Sources */,
 				4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */,
 				4E6D61EF1525F79A009D27B0 /* FeaturePictureViewController.m in Sources */,
+				4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
