@@ -46,6 +46,7 @@
 		4E6D61E91525246A009D27B0 /* Vollkorn-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47D381521524CF9A00C4A7CE /* Vollkorn-BoldItalic.ttf */; };
 		4E6D61EA1525246A009D27B0 /* Vollkorn-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47D381531524CF9A00C4A7CE /* Vollkorn-Italic.ttf */; };
 		4E6D61EB1525246A009D27B0 /* Vollkorn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47D381541524CF9A00C4A7CE /* Vollkorn-Regular.ttf */; };
+		4E6D61EF1525F79A009D27B0 /* FeaturePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */; };
 		4E80ADCA151FCA22001CBA7E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */; };
 		4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */; };
 		4EA62E2A15249B4100E74E64 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2915249B4100E74E64 /* Game.m */; };
@@ -105,6 +106,8 @@
 		4E3326B6151A909000CEC850 /* CreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsViewController.m; sourceTree = "<group>"; };
 		4E3326B8151A91B200CEC850 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		4E3326B9151A91B200CEC850 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		4E6D61ED1525F799009D27B0 /* FeaturePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePictureViewController.h; sourceTree = "<group>"; };
+		4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePictureViewController.m; sourceTree = "<group>"; };
 		4E80ADC8151FCA22001CBA7E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPictureViewController.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4E6D61ED1525F799009D27B0 /* FeaturePictureViewController.h */,
+				4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */,
 				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
 				4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */,
 				4E08C31415248CAA00F3CDC7 /* FeaturePictureExplanationViewController.h */,
@@ -366,6 +371,7 @@
 				4EA62E2A15249B4100E74E64 /* Game.m in Sources */,
 				4EA62E2E15249B9D00E74E64 /* Team.m in Sources */,
 				4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */,
+				4E6D61EF1525F79A009D27B0 /* FeaturePictureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
