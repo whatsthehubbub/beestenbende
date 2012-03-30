@@ -50,6 +50,8 @@
 }
 
 - (void)decrementTimer:(NSTimer *)theTimer {
+    // Could get userinfo object from theTimer if necessary
+    
     [self.timeLabel setText:[NSString stringWithFormat:@"%ds", self.secondsLeft]];
     
     self.secondsLeft -= 1;
