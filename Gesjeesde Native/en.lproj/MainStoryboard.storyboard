@@ -86,7 +86,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zijn jullie er al?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kij-Me-1bl">
-                                <rect key="frame" x="178" y="355" width="114" height="21"/>
+                                <rect key="frame" x="170" y="351" width="114" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Op naar het Rariteitenkabinet!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VpA-Cb-e78">
+                                <rect key="frame" x="46" y="27" width="228" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -126,6 +133,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="rpK-Bj-6UF"/>
+                                    <action selector="previous" destination="gnf-ri-JiR" eventType="touchUpInside" id="vfz-LI-SoD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G3Y-XA-uB8">
@@ -140,24 +148,54 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aEm-4i-hHa" kind="push" id="fYp-gI-7QV"/>
+                                    <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="zGh-jL-JRW"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="o3r-VL-feq">
-                                <rect key="frame" x="40" y="117" width="240" height="128"/>
+                                <rect key="frame" x="48" y="117" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Paniek! Een paar gesjeesde beesten zetten hier alles op z’n kop." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fKm-NU-S1c">
+                                        <rect key="frame" x="2" y="0.0" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ze zijn in de war en weten niet meer of ze vis, vogel, zoogdier of reptiel zijn." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Lok-VR-pfa">
+                                        <rect key="frame" x="240" y="0.0" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hulp nodig dus! Ook van de papa’s, mama’s, opa’s en oma’s." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="aT7-Yj-YR9">
+                                        <rect key="frame" x="480" y="0.0" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <connections>
                                     <outlet property="delegate" destination="gnf-ri-JiR" id="pU7-14-nmm"/>
                                 </connections>
                             </scrollView>
-                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="eO9-wZ-vVE">
+                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="eO9-wZ-vVE">
                                 <rect key="frame" x="79" y="245" width="166" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <action selector="changePage" destination="gnf-ri-JiR" eventType="valueChanged" id="oEY-7s-gC9"/>
+                                    <action selector="scrollPage" destination="gnf-ri-JiR" eventType="valueChanged" id="p7V-53-Zgc"/>
                                 </connections>
                             </pageControl>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welkom!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8XJ-EQ-Tge">
+                                <rect key="frame" x="48" y="25" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -165,6 +203,7 @@
                     <connections>
                         <outlet property="pageControl" destination="eO9-wZ-vVE" id="HjD-Le-Ns5"/>
                         <outlet property="scrollView" destination="o3r-VL-feq" id="ZwZ-S9-ERW"/>
+                        <segue destination="aEm-4i-hHa" kind="push" identifier="Next" id="1yc-du-adR"/>
                     </connections>
                 </viewController>
             </objects>

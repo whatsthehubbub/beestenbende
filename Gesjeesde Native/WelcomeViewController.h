@@ -16,6 +16,8 @@
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
 
-- (IBAction)changePage;
+- (IBAction)scrollPage;
+- (IBAction)previous;
+- (IBAction)next;
 
 @end
