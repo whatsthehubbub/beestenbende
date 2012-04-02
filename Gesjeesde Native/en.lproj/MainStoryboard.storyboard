@@ -635,7 +635,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SAY-R5-3E5">
-                                <rect key="frame" x="76" y="367" width="158" height="37"/>
+                                <rect key="frame" x="20" y="423" width="158" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Neem foto">
@@ -645,6 +645,9 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="takeFeaturePicture:" destination="GYy-if-IZ4" eventType="touchUpInside" id="ZOa-2S-Bxc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hPt-m4-B4i">
                                 <rect key="frame" x="190" y="418" width="110" height="42"/>
@@ -669,11 +672,17 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" id="TI8-ko-vaI">
+                                <rect key="frame" x="20" y="113" width="280" height="297"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="65c-EZ-kZM"/>
                     <connections>
+                        <outlet property="imagesView" destination="TI8-ko-vaI" id="sTP-cM-3eS"/>
                         <outlet property="timeLabel" destination="uCB-YX-BTp" id="zqy-ZO-aaR"/>
                     </connections>
                 </viewController>

@@ -8,19 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FeaturePictureViewController : UIViewController {
+@interface FeaturePictureViewController : UIViewController <UIImagePickerControllerDelegate> {
     UILabel *timeLabel;
+    
+    UIView *imagesView;
     
     NSTimer *timer;
     int secondsLeft;
-    
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
+@property (nonatomic, retain) IBOutlet UIView *imagesView;
 
 @property (nonatomic, retain) NSTimer *timer;
 @property (readwrite) int secondsLeft;
 
 - (void)decrementTimer:(NSTimer *)theTimer;
+
+- (IBAction)takeFeaturePicture:(id)sender;
 
 @end

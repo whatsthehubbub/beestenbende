@@ -17,6 +17,7 @@
 @synthesize timeLabel;
 @synthesize timer;
 @synthesize secondsLeft;
+@synthesize imagesView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -60,7 +61,82 @@
         [self.timer invalidate];
         // Clean up object
         // TODO we are done
+        
+        // TODO If the time is up, perform segue automatically?
     }
 }
+
+#pragma mark -
+
+- (IBAction)takeFeaturePicture:(id)sender {
+    // TODO check if the time is not over yet.
+    
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    [self presentModalViewController:picker animated:YES];
+}
+
+//- (IBAction)doneWithPicture:(id)sender {
+//    if ([self currentTeamNumber] == 1) {
+//        // TODO save picture for team 1
+//        
+//        // Start segue back to this view for other team to take picture
+//        // Maybe wiser to 
+//        
+//        [UIView beginAnimations:@"View Flip" context:nil];
+//        [UIView setAnimationDuration:0.80];
+//        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+//        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
+//        
+//        // Changes to this ViewController
+//        self.currentTeamNumber = 2;
+//        
+//        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem je foto", [game.team2 getTeamName]]];
+//        
+//        // Blank image
+//        teamPictureView.image = nil;    
+//        
+//        
+//        [UIView commitAnimations];
+//        
+//    } else {
+//        // Start segue to the next view to start the game
+//        [self performSegueWithIdentifier:@"PastTeamPicture" sender:sender];
+//    }
+//}
+
+#pragma mark -
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
+    
+//    teamPictureView.image = image;
+    
+    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 80, 80)];
+    newImageView.clipsToBounds = YES;
+    newImageView.contentMode = UIViewContentModeScaleAspectFit;
+    newImageView.image = image;
+    
+    [self.imagesView addSubview:newImageView];
+    
+    [picker dismissModalViewControllerAnimated:YES];
+    
+//    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
+//    
+//    Team *team;
+//    if (self.currentTeamNumber==1) {
+//        team = game.team1;
+//    } else {
+//        team = game.team2;
+//    }
+//    
+//    [imageData writeToFile:[team getPicturePath] atomically:NO];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissModalViewControllerAnimated:YES];
+}
+
 
 @end
