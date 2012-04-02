@@ -20,12 +20,12 @@
     Game *game;
 }
 
-@property (readwrite) int currentTeamNumber;
+@property (assign) int currentTeamNumber;
 
-@property (retain, nonatomic) IBOutlet UIImageView *teamPictureView;
-@property (retain, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong) IBOutlet UIImageView *teamPictureView;
+@property (strong) IBOutlet UILabel *titleLabel;
 
-@property (retain, nonatomic) Game *game;
+@property (strong) Game *game;
 
 - (IBAction)takeTeamPicture:(id)sender;
 - (IBAction)doneWithPicture:(id)sender;

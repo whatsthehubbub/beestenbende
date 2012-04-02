@@ -15,10 +15,13 @@
 @interface Game : NSObject {
     Team *team1;
     Team *team2;
+    
+    NSArray *features;
 }
 
-@property (nonatomic, retain) Team *team1;
-@property (nonatomic, retain) Team *team2;
+@property (strong) Team *team1;
+@property (strong) Team *team2;
 
+@property (strong) NSArray *features;
 
 @end
