@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#define kTeam1Name @"Morat"
-#define kTeam2Name @"Bold"
+#define kTeam1Name @"Marot"
+#define kTeam2Name @"Seba"
 
 //#define kTeamNumberKey @"teamNumberKey"
 
