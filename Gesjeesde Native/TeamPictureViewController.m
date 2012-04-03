@@ -83,7 +83,7 @@
         // Changes to this ViewController
         self.currentTeamNumber = 2;
         
-        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem je foto", [game.team2 getTeamName]]];
+        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem een foto", [game.team2 getTeamName]]];
         
         // Blank image
         teamPictureView.image = nil;    

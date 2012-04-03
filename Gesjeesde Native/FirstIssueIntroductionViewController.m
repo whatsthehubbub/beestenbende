@@ -66,8 +66,6 @@
     if (self.pageControl.currentPage < 1) {
         self.pageControl.currentPage += 1;
         [self scrollPage];
-    } else {
-        [self performSegueWithIdentifier:@"Next" sender:self];
     }
 }
 
