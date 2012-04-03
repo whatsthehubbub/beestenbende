@@ -11,12 +11,15 @@
 @implementation Team
 
 @synthesize number;
+@synthesize featurePictures;
 
 - (id)initWithNumber:(int)teamNumber;
 {
     self = [super init];
     if (self) {
         self.number = teamNumber;
+        
+        self.featurePictures = [[NSMutableArray alloc] init];
     }
     return self;
 }

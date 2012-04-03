@@ -15,9 +15,12 @@
 
 @interface Team : NSObject {
     int number;
+    
+    NSMutableArray *featurePictures;
 }
 
 @property (nonatomic) int number;
+@property (nonatomic, retain) NSMutableArray *featurePictures;
 
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamName;

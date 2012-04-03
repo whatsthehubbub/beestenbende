@@ -19,6 +19,8 @@
 @synthesize secondsLeft;
 @synthesize imagesView;
 
+@synthesize game;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +34,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    game = appDelegate.game;
     
     self.secondsLeft = 60;
     
@@ -111,14 +116,15 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
     
-//    teamPictureView.image = image;
-    
-    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10, 10, 80, 80)];
+    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (game.team1.featurePictures.count * 80), 10, 80, 80)];
     newImageView.clipsToBounds = YES;
     newImageView.contentMode = UIViewContentModeScaleAspectFit;
     newImageView.image = image;
     
     [self.imagesView addSubview:newImageView];
+    
+    // Save UIImage to team object
+    [game.team1.featurePictures addObject:[[FeaturePicture alloc] initWithImage:image]];
     
     [picker dismissModalViewControllerAnimated:YES];
     

@@ -8,13 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FeaturePictureViewController : UIViewController <UIImagePickerControllerDelegate> {
+#import "AppDelegate.h"
+#import "FeaturePicture.h"
+
+@interface FeaturePictureViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
     UILabel *timeLabel;
     
     UIView *imagesView;
     
     NSTimer *timer;
     int secondsLeft;
+    
+    Game *game;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
@@ -22,6 +27,8 @@
 
 @property (nonatomic, retain) NSTimer *timer;
 @property (readwrite) int secondsLeft;
+
+@property (strong) Game *game;
 
 - (void)decrementTimer:(NSTimer *)theTimer;
 

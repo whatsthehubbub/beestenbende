@@ -60,6 +60,7 @@
 		4EAE98EB151A618A0051C926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE98EA151A618A0051C926 /* AppDelegate.m */; };
 		4EAE98EE151A618A0051C926 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */; };
 		4EAE98F1151A618A0051C926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE98F0151A618A0051C926 /* ViewController.m */; };
+		4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD6152B359D00324EDB /* FeaturePicture.m */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +133,8 @@
 		4EAE98ED151A618A0051C926 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4EAE98EF151A618A0051C926 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4EAE98F0151A618A0051C926 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4EDEFAD5152B359D00324EDB /* FeaturePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePicture.h; sourceTree = "<group>"; };
+		4EDEFAD6152B359D00324EDB /* FeaturePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePicture.m; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -244,10 +247,7 @@
 				4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */,
 				4E3326B8151A91B200CEC850 /* MenuViewController.h */,
 				4E3326B9151A91B200CEC850 /* MenuViewController.m */,
-				4EA62E2815249B4100E74E64 /* Game.h */,
-				4EA62E2915249B4100E74E64 /* Game.m */,
-				4EA62E2C15249B9D00E74E64 /* Team.h */,
-				4EA62E2D15249B9D00E74E64 /* Team.m */,
+				4EDEFAD3152B304D00324EDB /* Model */,
 				4EAE98EF151A618A0051C926 /* ViewController.h */,
 				4EAE98F0151A618A0051C926 /* ViewController.m */,
 				4EAE98E1151A618A0051C926 /* Supporting Files */,
@@ -264,6 +264,19 @@
 				4EAE98E8151A618A0051C926 /* Gesjeesde Native-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EDEFAD3152B304D00324EDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4EA62E2815249B4100E74E64 /* Game.h */,
+				4EA62E2915249B4100E74E64 /* Game.m */,
+				4EA62E2C15249B9D00E74E64 /* Team.h */,
+				4EA62E2D15249B9D00E74E64 /* Team.m */,
+				4EDEFAD5152B359D00324EDB /* FeaturePicture.h */,
+				4EDEFAD6152B359D00324EDB /* FeaturePicture.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +391,7 @@
 				4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */,
 				4E6D61EF1525F79A009D27B0 /* FeaturePictureViewController.m in Sources */,
 				4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */,
+				4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
