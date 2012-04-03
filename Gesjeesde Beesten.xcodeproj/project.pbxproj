@@ -66,6 +66,8 @@
 		4EDEFAE7152B6F6500324EDB /* bg-4-welcome-to-cabinet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAE6152B6F6500324EDB /* bg-4-welcome-to-cabinet.png */; };
 		4EDEFAEA152B705500324EDB /* button-carousel-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAE8152B705500324EDB /* button-carousel-next.png */; };
 		4EDEFAEB152B705500324EDB /* button-carousel-prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAE9152B705500324EDB /* button-carousel-prev.png */; };
+		4EDEFAED152B825E00324EDB /* team-names-screen-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */; };
+		4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +149,8 @@
 		4EDEFAE6152B6F6500324EDB /* bg-4-welcome-to-cabinet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-4-welcome-to-cabinet.png"; sourceTree = "<group>"; };
 		4EDEFAE8152B705500324EDB /* button-carousel-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-carousel-next.png"; sourceTree = "<group>"; };
 		4EDEFAE9152B705500324EDB /* button-carousel-prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-carousel-prev.png"; sourceTree = "<group>"; };
+		4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team-names-screen-26.png"; sourceTree = "<group>"; };
+		4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ja-klaar.png"; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,8 +191,10 @@
 				4E332680151A663B00CEC850 /* button-credits.png */,
 				4E332681151A663B00CEC850 /* button-huh.png */,
 				4E332682151A663B00CEC850 /* button-ja.png */,
+				4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */,
 				4E332683151A663B00CEC850 /* button-nieuw-spel.png */,
 				4E332684151A663B00CEC850 /* button-terug.png */,
+				4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */,
 				4EDEFAE8152B705500324EDB /* button-carousel-next.png */,
 				4EDEFAE9152B705500324EDB /* button-carousel-prev.png */,
 				4E332685151A663B00CEC850 /* button-trash.png */,
@@ -389,6 +395,8 @@
 				4EDEFAE7152B6F6500324EDB /* bg-4-welcome-to-cabinet.png in Resources */,
 				4EDEFAEA152B705500324EDB /* button-carousel-next.png in Resources */,
 				4EDEFAEB152B705500324EDB /* button-carousel-prev.png in Resources */,
+				4EDEFAED152B825E00324EDB /* team-names-screen-26.png in Resources */,
+				4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
