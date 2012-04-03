@@ -85,15 +85,24 @@
                                     <segue destination="gnf-ri-JiR" kind="push" id="GSq-2D-3Z3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zijn jullie er al?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kij-Me-1bl">
-                                <rect key="frame" x="170" y="351" width="114" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Op naar het Rariteitenkabinet!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VpA-Cb-e78">
                                 <rect key="frame" x="46" y="27" width="228" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="sec-Md-zN7">
+                                <rect key="frame" x="-102" y="301" width="328" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-small.png" id="BgS-fO-hWk">
+                                <rect key="frame" x="140" y="328" width="175" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zijn jullie er al?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kij-Me-1bl">
+                                <rect key="frame" x="175" y="351" width="114" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1179,9 +1188,10 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
     </scenes>
     <resources>
         <image name="15.png" width="640" height="960"/>
+        <image name="animal-host.png" width="656" height="652"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-2-main-menu.png" width="640" height="960"/>
-        <image name="bg-3-map.png" width="640" height="960"/>
+        <image name="bg-3-map.png" width="641" height="960"/>
         <image name="bg-4-welcome-to-cabinet.png" width="640" height="960"/>
         <image name="bg-5-intro-mission-1.png" width="640" height="960"/>
         <image name="button-credits.png" width="480" height="71"/>
@@ -1189,6 +1199,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
         <image name="button-nieuw-spel.png" width="426" height="134"/>
         <image name="button-terug.png" width="219" height="83"/>
         <image name="button-volgende.png" width="219" height="83"/>
+        <image name="speech-bubble-small.png" width="351" height="168"/>
     </resources>
     <classes>
         <class className="CreditsViewController" superclassName="UIViewController">
