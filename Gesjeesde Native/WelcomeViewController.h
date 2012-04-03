@@ -19,5 +19,6 @@
 - (IBAction)scrollPage;
 - (IBAction)previous;
 - (IBAction)next;
+- (IBAction)done;
 
 @end

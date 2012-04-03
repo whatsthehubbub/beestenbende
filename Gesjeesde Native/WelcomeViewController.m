@@ -92,9 +92,11 @@
     if (self.pageControl.currentPage < 2) {
         self.pageControl.currentPage += 1;
         [self scrollPage];
-    } else {
-        [self performSegueWithIdentifier:@"Next" sender:self];
     }
+}
+
+- (IBAction)done {
+    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
 #pragma mark - UIScrollViewDelegate
