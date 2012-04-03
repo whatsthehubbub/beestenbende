@@ -729,11 +729,11 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
             </objects>
             <point key="canvasLocation" x="4364" y="-57"/>
         </scene>
-        <!--View Controller-->
+        <!--Picture Label View Controller-->
         <scene sceneID="IC2-hg-Dfa">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0A-xp-E6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="rP3-dC-dUL" sceneMemberID="viewController">
+                <viewController id="rP3-dC-dUL" customClass="PictureLabelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MUu-st-lJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -853,6 +853,9 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="W17-TO-wuG"/>
+                    <connections>
+                        <outlet property="featureButton" destination="546-tb-hty" id="TZN-yM-E5X"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="4741" y="-57"/>
@@ -1233,6 +1236,12 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
         </class>
         <class className="MenuViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+        </class>
+        <class className="PictureLabelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PictureLabelViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="TeamPictureViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPictureViewController.h"/>
