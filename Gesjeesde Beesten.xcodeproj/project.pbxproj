@@ -68,6 +68,7 @@
 		4EDEFAEB152B705500324EDB /* button-carousel-prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAE9152B705500324EDB /* button-carousel-prev.png */; };
 		4EDEFAED152B825E00324EDB /* team-names-screen-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */; };
 		4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */; };
+		4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +152,7 @@
 		4EDEFAE9152B705500324EDB /* button-carousel-prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-carousel-prev.png"; sourceTree = "<group>"; };
 		4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team-names-screen-26.png"; sourceTree = "<group>"; };
 		4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ja-klaar.png"; sourceTree = "<group>"; };
+		4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "infographic-make-team-photo.png"; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 				4EDEFAE0152B6DA200324EDB /* animal-host.png */,
 				4E33267F151A663B00CEC850 /* bird.png */,
 				4E332680151A663B00CEC850 /* button-credits.png */,
+				4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */,
 				4E332681151A663B00CEC850 /* button-huh.png */,
 				4E332682151A663B00CEC850 /* button-ja.png */,
 				4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */,
@@ -397,6 +400,7 @@
 				4EDEFAEB152B705500324EDB /* button-carousel-prev.png in Resources */,
 				4EDEFAED152B825E00324EDB /* team-names-screen-26.png in Resources */,
 				4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */,
+				4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
