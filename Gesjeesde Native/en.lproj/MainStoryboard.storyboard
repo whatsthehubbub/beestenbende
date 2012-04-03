@@ -203,11 +203,11 @@
                     <connections>
                         <outlet property="pageControl" destination="eO9-wZ-vVE" id="HjD-Le-Ns5"/>
                         <outlet property="scrollView" destination="o3r-VL-feq" id="ZwZ-S9-ERW"/>
-                        <segue destination="aEm-4i-hHa" kind="push" identifier="Next" id="1yc-du-adR"/>
+                        <segue destination="i3Y-tE-tAM" kind="push" identifier="Next" id="rZF-5p-iuu"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1527" y="-57"/>
+            <point key="canvasLocation" x="1541" y="-62"/>
         </scene>
         <!--First Issue Introduction View Controller-->
         <scene sceneID="kxR-Ib-jnv">
@@ -299,11 +299,11 @@
                     <connections>
                         <outlet property="pageControl" destination="7Gh-7P-Oss" id="ucG-jJ-hPb"/>
                         <outlet property="scrollView" destination="b1G-HI-K1C" id="Pph-sR-sqq"/>
-                        <segue destination="i3Y-tE-tAM" kind="push" identifier="Next" id="7JV-9J-722"/>
+                        <segue destination="O1r-7e-Hsl" kind="push" identifier="Next" id="yCu-4o-gfI"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1914" y="-57"/>
+            <point key="canvasLocation" x="3183" y="-433"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6uc-Ng-T8J">
@@ -349,7 +349,7 @@
                     <navigationItem key="navigationItem" id="F5Z-7P-Vzd"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2354" y="-368"/>
+            <point key="canvasLocation" x="2342" y="-62"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QjV-tY-JgD">
@@ -388,7 +388,7 @@
                     <navigationItem key="navigationItem" id="toF-GL-5cC"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2354" y="220"/>
+            <point key="canvasLocation" x="1922" y="-62"/>
         </scene>
         <!--Team Picture View Controller - Team Picture-->
         <scene sceneID="NYe-nf-psF">
@@ -447,7 +447,7 @@
                     <connections>
                         <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="wIA-7b-tPg"/>
                         <outlet property="titleLabel" destination="UtT-Wi-adY" id="cZ8-Ng-YYH"/>
-                        <segue destination="O1r-7e-Hsl" kind="push" identifier="PastTeamPicture" id="5sO-T3-uID"/>
+                        <segue destination="aEm-4i-hHa" kind="push" identifier="PastTeamPicture" id="fHu-b7-0Nr"/>
                     </connections>
                 </viewController>
             </objects>
@@ -516,7 +516,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                     <navigationItem key="navigationItem" id="Drn-EP-t1T"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3183" y="-57"/>
+            <point key="canvasLocation" x="3183" y="173"/>
         </scene>
         <!--Feature Example View Controller-->
         <scene sceneID="dDP-mV-XhC">
