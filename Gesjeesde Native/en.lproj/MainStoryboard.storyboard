@@ -662,7 +662,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 </state>
                                 <connections>
                                     <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="9yd-dd-BYf"/>
-                                    <segue destination="7jx-Og-bWS" kind="push" id="ouh-k9-Jio"/>
+                                    <segue destination="7jx-Og-bWS" kind="push" identifier="FeaturePicturesDone" id="ouh-k9-Jio"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Margot: fotografeer bewijs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Dk9-iv-Gic">

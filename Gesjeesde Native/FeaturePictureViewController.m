@@ -64,10 +64,10 @@
     
     if (self.secondsLeft < 0) {
         [self.timer invalidate];
-        // Clean up object
-        // TODO we are done
+        // If the time is up, perform segue automatically
+        [self performSegueWithIdentifier:@"FeaturePicturesDone" sender:self];
         
-        // TODO If the time is up, perform segue automatically?
+        // TODO also break picture taking if we're busy with that?
     }
 }
 
