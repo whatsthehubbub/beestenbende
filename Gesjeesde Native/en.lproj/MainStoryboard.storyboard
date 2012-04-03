@@ -680,8 +680,20 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="cBf-6s-fSu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="iWn-22-dxl">
+                                <rect key="frame" x="15" y="124" width="285" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="MYj-SL-xFV">
+                                <rect key="frame" x="-111" y="317" width="328" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Let op: jullie hebben 1 minuut om fotobewijs te verzamelen." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yCf-Jl-Dd1">
-                                <rect key="frame" x="50" y="129" width="220" height="101"/>
+                                <rect key="frame" x="69" y="162" width="220" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -727,6 +739,10 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="DWm-Pj-Hnp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="uCB-YX-BTp">
                                 <rect key="frame" x="123" y="54" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -805,18 +821,22 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg foto's labellen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JU7-aG-stm">
-                                <rect key="frame" x="73" y="56" width="155" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="Pyc-dx-OI6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label foto's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JU7-aG-stm">
+                                <rect key="frame" x="83" y="20" width="155" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lQT-Cc-Cem">
-                                <rect key="frame" x="190" y="418" width="110" height="42"/>
+                                <rect key="frame" x="156" y="419" width="144" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-volgende.png">
+                                <state key="normal" image="button-aan-de-slag.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -828,6 +848,13 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                     <segue destination="rP3-dC-dUL" kind="push" id="bvE-K4-KNL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wat staat erop?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="c2w-LN-Dnh">
+                                <rect key="frame" x="66" y="157" width="220" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -894,7 +921,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <rect key="frame" x="130" y="442" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-volgende.png">
+                                <state key="normal" image="button-kl">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1292,11 +1319,13 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
         <image name="bg-3-map.png" width="641" height="960"/>
         <image name="bg-4-welcome-to-cabinet.png" width="641" height="960"/>
         <image name="bg-5-intro-mission-1.png" width="640" height="960"/>
+        <image name="button-aan-de-slag.png" width="289" height="83"/>
         <image name="button-carousel-next.png" width="86" height="85"/>
         <image name="button-carousel-prev.png" width="86" height="85"/>
         <image name="button-credits.png" width="480" height="71"/>
         <image name="button-ja-klaar.png" width="219" height="84"/>
         <image name="button-ja.png" width="175" height="99"/>
+        <image name="button-kl" width="16" height="16"/>
         <image name="button-nieuw-spel.png" width="426" height="134"/>
         <image name="button-terug.png" width="219" height="83"/>
         <image name="button-volgende.png" width="219" height="83"/>
@@ -1306,80 +1335,6 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
         <image name="speech-bubble-small.png" width="351" height="168"/>
         <image name="team-names-screen-26.png" width="506" height="152"/>
     </resources>
-    <classes>
-        <class className="CreditsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
-        </class>
-        <class className="FeatureExampleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeatureExampleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
-        </class>
-        <class className="FeaturePickerViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePickerViewController.h"/>
-        </class>
-        <class className="FeaturePictureExplanationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePictureExplanationViewController.h"/>
-        </class>
-        <class className="FeaturePictureViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePictureViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="takeFeaturePicture:"/>
-                <relationship kind="outlet" name="imagesView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FirstIssueIntroductionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstIssueIntroductionViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="next"/>
-                <relationship kind="action" name="previous"/>
-                <relationship kind="action" name="scrollPage"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="LabellingResultsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LabellingResultsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="team1Image" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="team2Image" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="MenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
-        </class>
-        <class className="PictureLabelViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PictureLabelViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="TeamPictureViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPictureViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doneWithPicture:"/>
-                <relationship kind="action" name="takeTeamPicture:"/>
-                <relationship kind="outlet" name="teamPictureView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WelcomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done"/>
-                <relationship kind="action" name="next"/>
-                <relationship kind="action" name="previous"/>
-                <relationship kind="action" name="scrollPage"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

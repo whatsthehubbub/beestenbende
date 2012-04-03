@@ -70,6 +70,7 @@
 		4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */; };
 		4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */; };
 		4EDEFAF3152B89A400324EDB /* example-photos-of-features.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF2152B89A400324EDB /* example-photos-of-features.png */; };
+		4EDEFAF5152B8E9E00324EDB /* button-aan-de-slag.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -155,6 +156,7 @@
 		4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ja-klaar.png"; sourceTree = "<group>"; };
 		4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "infographic-make-team-photo.png"; sourceTree = "<group>"; };
 		4EDEFAF2152B89A400324EDB /* example-photos-of-features.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "example-photos-of-features.png"; sourceTree = "<group>"; };
+		4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-aan-de-slag.png"; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +188,7 @@
 				4EDEFAE3152B6ED400324EDB /* bg-2-main-menu.png */,
 				4EDEFAE6152B6F6500324EDB /* bg-4-welcome-to-cabinet.png */,
 				4EDEFADE152B6D2F00324EDB /* bg-3-map.png */,
+				4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */,
 				4E08C30E1524723D00F3CDC7 /* 15.png */,
 				4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */,
 				4E33267D151A663B00CEC850 /* bg-14-label-photos.png */,
@@ -405,6 +408,7 @@
 				4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */,
 				4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */,
 				4EDEFAF3152B89A400324EDB /* example-photos-of-features.png in Resources */,
+				4EDEFAF5152B8E9E00324EDB /* button-aan-de-slag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
