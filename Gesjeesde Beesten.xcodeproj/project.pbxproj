@@ -71,6 +71,10 @@
 		4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */; };
 		4EDEFAF3152B89A400324EDB /* example-photos-of-features.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF2152B89A400324EDB /* example-photos-of-features.png */; };
 		4EDEFAF5152B8E9E00324EDB /* button-aan-de-slag.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */; };
+		4EDEFAF7152B8FE100324EDB /* button-klaar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF6152B8FE100324EDB /* button-klaar.png */; };
+		4EDEFAF9152B902B00324EDB /* selector-feature-empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF8152B902B00324EDB /* selector-feature-empty.png */; };
+		4EDEFAFC152B90C700324EDB /* toggle-trash-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */; };
+		4EDEFAFD152B90C700324EDB /* toggle-trash-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -157,6 +161,10 @@
 		4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "infographic-make-team-photo.png"; sourceTree = "<group>"; };
 		4EDEFAF2152B89A400324EDB /* example-photos-of-features.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "example-photos-of-features.png"; sourceTree = "<group>"; };
 		4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-aan-de-slag.png"; sourceTree = "<group>"; };
+		4EDEFAF6152B8FE100324EDB /* button-klaar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-klaar.png"; sourceTree = "<group>"; };
+		4EDEFAF8152B902B00324EDB /* selector-feature-empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selector-feature-empty.png"; sourceTree = "<group>"; };
+		4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-trash-off.png"; sourceTree = "<group>"; };
+		4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-trash-on.png"; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,10 +196,14 @@
 				4EDEFAE3152B6ED400324EDB /* bg-2-main-menu.png */,
 				4EDEFAE6152B6F6500324EDB /* bg-4-welcome-to-cabinet.png */,
 				4EDEFADE152B6D2F00324EDB /* bg-3-map.png */,
+				4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */,
+				4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */,
 				4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */,
 				4E08C30E1524723D00F3CDC7 /* 15.png */,
 				4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */,
+				4EDEFAF8152B902B00324EDB /* selector-feature-empty.png */,
 				4E33267D151A663B00CEC850 /* bg-14-label-photos.png */,
+				4EDEFAF6152B8FE100324EDB /* button-klaar.png */,
 				4E33267E151A663B00CEC850 /* bg-20-uitslag.png */,
 				4EDEFAE0152B6DA200324EDB /* animal-host.png */,
 				4E33267F151A663B00CEC850 /* bird.png */,
@@ -409,6 +421,10 @@
 				4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */,
 				4EDEFAF3152B89A400324EDB /* example-photos-of-features.png in Resources */,
 				4EDEFAF5152B8E9E00324EDB /* button-aan-de-slag.png in Resources */,
+				4EDEFAF7152B8FE100324EDB /* button-klaar.png in Resources */,
+				4EDEFAF9152B902B00324EDB /* selector-feature-empty.png in Resources */,
+				4EDEFAFC152B90C700324EDB /* toggle-trash-off.png in Resources */,
+				4EDEFAFD152B90C700324EDB /* toggle-trash-on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
