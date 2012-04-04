@@ -10,8 +10,10 @@
 
 #import "AppDelegate.h"
 #import "FeaturePicture.h"
+#import "SwitchTeamViewController.h"
 
-@interface FeaturePictureViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
+@interface FeaturePictureViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, SwitchTeamViewControllerDelegate> {
+    UILabel *titleLabel;
     UILabel *timeLabel;
     
     UIView *imagesView;
@@ -26,6 +28,7 @@
 
 @property (assign) int currentTeamNumber;
 
+@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
 @property (nonatomic, retain) IBOutlet UIView *imagesView;
 
@@ -34,8 +37,12 @@
 
 @property (strong) Game *game;
 
+- (void)startTimer;
 - (void)decrementTimer:(NSTimer *)theTimer;
 
 - (IBAction)takeFeaturePicture:(id)sender;
+- (IBAction)next:(id)sender;
+
+
 
 @end

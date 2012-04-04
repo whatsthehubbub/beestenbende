@@ -14,6 +14,7 @@
 
 @implementation FeaturePictureViewController
 
+@synthesize titleLabel;
 @synthesize timeLabel;
 @synthesize timer;
 @synthesize secondsLeft;
@@ -42,12 +43,7 @@
     
     self.currentTeamNumber = 1;
     
-    self.secondsLeft = 60;
-    
-    // Timer code from: http://www.herbert-siojo.com/2011/04/19/drawing-a-countdown-timer-ios/
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer:) userInfo:nil repeats:YES];
-    
-    NSLog(@"Feature picture view loaded");
+    [self startTimer];
 }
 
 - (void)viewDidUnload
@@ -70,11 +66,52 @@
     
     if (self.secondsLeft < 0) {
         [self.timer invalidate];
-        // If the time is up, perform segue automatically
-        [self performSegueWithIdentifier:@"FeaturePicturesDone" sender:self];
+        // If the time is up, call the next method
+        
+        [self next:self];
+        // [self performSegueWithIdentifier:@"FeaturePicturesDone" sender:self];
         
         // TODO also break picture taking if we're busy with that?
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"SwitchTeams"]) {
+        
+        SwitchTeamViewController *stvc = segue.destinationViewController;
+        stvc.delegate = self;
+    }
+}
+
+- (void)startTimer {
+    self.secondsLeft = 60;
+
+    // Timer code from: http://www.herbert-siojo.com/2011/04/19/drawing-a-countdown-timer-ios/
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer:) userInfo:nil repeats:YES];
+}
+
+- (IBAction)next:(id)sender {
+    if (self.currentTeamNumber == 1) {
+        [self performSegueWithIdentifier:@"SwitchTeams" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"FeaturePicturesDone" sender:self];
+    }
+}
+
+#pragma mark - SwitchTeamViewControllerDelegate
+
+- (void)switchDone:(SwitchTeamViewController *)controller {
+    // set everything in order here for team 2
+    self.currentTeamNumber = 2;
+    [self.titleLabel setText:@"Team Seba: fotografeer bewijs"];        
+    
+    for (UIView *view in self.imagesView.subviews) {
+        [view removeFromSuperview];
+    }
+    
+    [self startTimer];
+    
+    [self.navigationController dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark -
@@ -118,19 +155,29 @@
 //    }
 //}
 
-#pragma mark -
+#pragma mark - UIIMagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
     
-    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (game.team1.featurePictures.count * 80), 10, 80, 80)];
+    Team *team = game.team1;
+    if (self.currentTeamNumber == 2) {
+        team = game.team2;
+    }
+    
+    UIGraphicsBeginImageContext(CGSizeMake(200, 200));
+    [image drawInRect:CGRectMake(0, 0, 200, 200)];
+    UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (team.featurePictures.count * 80), 10, 80, 80)];
     newImageView.clipsToBounds = YES;
     newImageView.contentMode = UIViewContentModeScaleAspectFit;
-    newImageView.image = image;
+    newImageView.image = smallImage;
     
     [self.imagesView addSubview:newImageView];
     
     // Save UIImage to team object
-    [game.team1.featurePictures addObject:[[FeaturePicture alloc] initWithImage:image]];
+    [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:smallImage]];
     
     [picker dismissModalViewControllerAnimated:YES];
     
