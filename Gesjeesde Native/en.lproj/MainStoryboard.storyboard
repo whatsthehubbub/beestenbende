@@ -904,7 +904,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R51-xD-bKj">
-                                <rect key="frame" x="260" y="256" width="40" height="38"/>
+                                <rect key="frame" x="260" y="257" width="40" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="toggle" image="toggle-trash-off.png">
@@ -914,6 +914,9 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="deleted:" destination="rP3-dC-dUL" eventType="touchUpInside" id="JLU-dq-0ES"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2AL-v9-YSv">
                                 <rect key="frame" x="191" y="419" width="109" height="41"/>
@@ -927,6 +930,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="rP3-dC-dUL" eventType="touchUpInside" id="zog-Ik-bFx"/>
                                     <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="zLl-sb-XGw"/>
                                     <segue destination="f0b-yc-RIg" kind="push" id="Jqv-KG-VUB"/>
                                 </connections>
@@ -938,12 +942,12 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="546-tb-hty">
-                                <rect key="frame" x="53" y="318" width="217" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="546-tb-hty">
+                                <rect key="frame" x="52" y="318" width="217" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Schubben" image="selector-feature-empty.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Schubben">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -967,6 +971,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <connections>
                                     <action selector="previous" destination="gnf-ri-JiR" eventType="touchUpInside" id="k9C-7L-KJP"/>
                                     <action selector="previous" destination="aEm-4i-hHa" eventType="touchUpInside" id="x6l-dB-5PJ"/>
+                                    <action selector="previous:" destination="rP3-dC-dUL" eventType="touchUpInside" id="ATd-Gs-pMh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Jm-pq-Scl">
@@ -983,6 +988,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <connections>
                                     <action selector="next" destination="aEm-4i-hHa" eventType="touchUpInside" id="Gl8-cx-Kdd"/>
                                     <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="e84-cF-8dq"/>
+                                    <action selector="next:" destination="rP3-dC-dUL" eventType="touchUpInside" id="J9t-QW-ZF9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -990,7 +996,11 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                     </view>
                     <navigationItem key="navigationItem" id="W17-TO-wuG"/>
                     <connections>
+                        <outlet property="currentImage" destination="lDO-vf-IF5" id="9UK-mt-dG7"/>
+                        <outlet property="currentLabel" destination="HhO-tU-W70" id="rUv-ge-7ph"/>
+                        <outlet property="deleteButton" destination="R51-xD-bKj" id="ykd-EU-PpE"/>
                         <outlet property="featureButton" destination="546-tb-hty" id="TZN-yM-E5X"/>
+                        <outlet property="teamLabel" destination="Fh5-dA-HZF" id="lUf-h8-Y4g"/>
                     </connections>
                 </viewController>
             </objects>
@@ -1336,7 +1346,6 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
         <image name="button-volgende.png" width="219" height="83"/>
         <image name="example-photos-of-features.png" width="381" height="274"/>
         <image name="infographic-make-team-photo.png" width="293" height="222"/>
-        <image name="selector-feature-empty.png" width="342" height="63"/>
         <image name="speech-bubble-big.png" width="571" height="524"/>
         <image name="speech-bubble-screen-6.png" width="502" height="292"/>
         <image name="speech-bubble-small.png" width="351" height="168"/>
