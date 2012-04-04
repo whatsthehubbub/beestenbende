@@ -100,10 +100,16 @@
 #pragma mark -
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
-    teamPictureView.image = image;
+    
+    UIGraphicsBeginImageContext(CGSizeMake(300, 400));
+    [image drawInRect:CGRectMake(0, 0, 300, 400)];
+    UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    teamPictureView.image = smallImage;
     [picker dismissModalViewControllerAnimated:YES];
     
-    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
+    NSData *imageData = UIImageJPEGRepresentation(smallImage, 0.5);
     
     Team *team;
     if (self.currentTeamNumber==1) {

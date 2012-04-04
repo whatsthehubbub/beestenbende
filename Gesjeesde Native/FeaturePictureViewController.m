@@ -42,6 +42,8 @@
     
     // Timer code from: http://www.herbert-siojo.com/2011/04/19/drawing-a-countdown-timer-ios/
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer:) userInfo:nil repeats:YES];
+    
+    NSLog(@"Feature picture view loaded");
 }
 
 - (void)viewDidUnload
