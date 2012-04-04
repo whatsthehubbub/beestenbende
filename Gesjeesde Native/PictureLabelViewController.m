@@ -65,6 +65,11 @@
         FeaturePickerViewController *fpvc = segue.destinationViewController;
         fpvc.delegate = self;
     }
+    
+    if ([segue.identifier isEqualToString:@"SwitchTeams"]) {
+        SwitchTeamViewController *stvc = segue.destinationViewController;
+        stvc.delegate = self;
+    }
 }
 
 -(IBAction)next:(id)sender {
@@ -89,6 +94,12 @@
     [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
     
     [self.currentLabel setText:[NSString stringWithFormat:@"Foto %d van %d", self.currentPictureIndex+1, self.currentTeam.featurePictures.count]];
+    
+    if (fp.deleted) {
+        [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-on.png"] forState:UIControlStateNormal];
+    } else {
+        [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-off.png"] forState:UIControlStateNormal];
+    }
 }
 
 -(IBAction)deleted:(id)sender {
@@ -103,7 +114,21 @@
 }
 
 -(IBAction)done:(id)sender {
+    if (self.currentTeam.number == 1) {
+        [self performSegueWithIdentifier:@"SwitchTeams" sender:self];
+    } else {
+        [self performSegueWithIdentifier:@"LabellingDone" sender:self];
+    }
+}
+
+- (void)switchDone:(SwitchTeamViewController *)controller {
+    self.currentTeam = game.team2;
+    [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", self.currentTeam.getTeamName]];
     
+    [self displayPicture];
+    
+    [self.navigationController dismissModalViewControllerAnimated:YES];
+
 }
 
 #pragma mark - FeaturePickerViewControllerDelegate

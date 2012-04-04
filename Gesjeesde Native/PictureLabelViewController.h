@@ -10,8 +10,9 @@
 
 #import "FeaturePickerViewController.h"
 #import "FeaturePicture.h"
+#import "SwitchTeamViewController.h"
 
-@interface PictureLabelViewController : UIViewController <FeaturePickerViewControllerDelegate> {
+@interface PictureLabelViewController : UIViewController <FeaturePickerViewControllerDelegate, SwitchTeamViewControllerDelegate> {
     UIButton *featureButton;
     UIButton *deleteButton;
     

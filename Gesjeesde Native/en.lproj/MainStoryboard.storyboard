@@ -932,7 +932,6 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                                 <connections>
                                     <action selector="done:" destination="rP3-dC-dUL" eventType="touchUpInside" id="zog-Ik-bFx"/>
                                     <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="zLl-sb-XGw"/>
-                                    <segue destination="f0b-yc-RIg" kind="push" id="Jqv-KG-VUB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kenmerk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="TER-TT-Bgp">
@@ -1001,6 +1000,8 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                         <outlet property="deleteButton" destination="R51-xD-bKj" id="ykd-EU-PpE"/>
                         <outlet property="featureButton" destination="546-tb-hty" id="TZN-yM-E5X"/>
                         <outlet property="teamLabel" destination="Fh5-dA-HZF" id="lUf-h8-Y4g"/>
+                        <segue destination="oRQ-dU-iWh" kind="modal" identifier="SwitchTeams" id="8YE-NQ-WeI"/>
+                        <segue destination="f0b-yc-RIg" kind="push" identifier="LabellingDone" id="l3K-DO-rSh"/>
                     </connections>
                 </viewController>
             </objects>
@@ -1081,7 +1082,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                     <navigationItem key="navigationItem" id="Kdu-jU-ptz"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4364" y="545"/>
+            <point key="canvasLocation" x="5134" y="645"/>
         </scene>
         <!--Labelling Results View Controller-->
         <scene sceneID="9hp-qI-2LF">
@@ -1357,4 +1358,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="8YE-NQ-WeI"/>
+    </inferredMetricsTieBreakers>
 </document>
