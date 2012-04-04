@@ -19,6 +19,8 @@
 @synthesize secondsLeft;
 @synthesize imagesView;
 
+@synthesize currentTeamNumber;
+
 @synthesize game;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,6 +39,8 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+    
+    self.currentTeamNumber = 1;
     
     self.secondsLeft = 60;
     

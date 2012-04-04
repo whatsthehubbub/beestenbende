@@ -20,7 +20,11 @@
     int secondsLeft;
     
     Game *game;
+    
+    int currentTeamNumber;
 }
+
+@property (assign) int currentTeamNumber;
 
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
 @property (nonatomic, retain) IBOutlet UIView *imagesView;
