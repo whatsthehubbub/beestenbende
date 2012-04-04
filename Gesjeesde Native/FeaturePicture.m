@@ -12,6 +12,7 @@
 
 @synthesize feature;
 @synthesize image;
+@synthesize deleted;
 
 -(id)initWithImage:(UIImage *)newImage {
     self = [super init];
@@ -19,6 +20,7 @@
     if (self) {
         self.image = newImage;
         self.feature = @"";
+        self.deleted = NO;
     }
     return self;
 }

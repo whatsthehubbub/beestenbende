@@ -12,10 +12,12 @@
     NSString *feature;
     
     UIImage *image;
+    bool deleted;
 }
 
 @property (nonatomic, retain) NSString *feature;
 @property (nonatomic, retain) UIImage *image;
+@property (assign) bool deleted;
 
 -(id)initWithImage:(UIImage *)newImage;
 
