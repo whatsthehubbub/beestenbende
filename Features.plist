@@ -22,9 +22,9 @@
 			<key>Fish</key>
 			<integer>2</integer>
 			<key>Mammal</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>Reptile</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>Bird</key>
 			<integer>2</integer>
 		</dict>
@@ -34,19 +34,19 @@
 			<key>Fish</key>
 			<integer>2</integer>
 			<key>Mammal</key>
-			<integer>1</integer>
-			<key>Reptile</key>
-			<integer>1</integer>
-			<key>Bird</key>
 			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>Label</key>
 			<string>Tanden in meerdere rijen</string>
 			<key>Fish</key>
-			<integer>2</integer>
-			<key>Mammal</key>
 			<integer>1</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
 			<key>Reptile</key>
 			<integer>1</integer>
 			<key>Bird</key>
@@ -56,9 +56,9 @@
 			<key>Label</key>
 			<string>Overal tanden in de bek</string>
 			<key>Fish</key>
-			<integer>2</integer>
-			<key>Mammal</key>
 			<integer>1</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
 			<key>Reptile</key>
 			<integer>1</integer>
 			<key>Bird</key>
@@ -68,9 +68,9 @@
 			<key>Label</key>
 			<string>Allemaal hetzelfde type tanden</string>
 			<key>Fish</key>
-			<integer>2</integer>
-			<key>Mammal</key>
 			<integer>1</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
 			<key>Reptile</key>
 			<integer>1</integer>
 			<key>Bird</key>
@@ -86,7 +86,7 @@
 			<key>Reptile</key>
 			<integer>1</integer>
 			<key>Bird</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>Label</key>
@@ -96,9 +96,9 @@
 			<key>Mammal</key>
 			<integer>1</integer>
 			<key>Reptile</key>
-			<integer>1</integer>
-			<key>Bird</key>
 			<integer>2</integer>
+			<key>Bird</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>Label</key>
@@ -110,7 +110,7 @@
 			<key>Reptile</key>
 			<integer>1</integer>
 			<key>Bird</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>Label</key>
@@ -123,6 +123,186 @@
 			<integer>1</integer>
 			<key>Bird</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Staart</string>
+			<key>Fish</key>
+			<integer>1</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Vleugels met veren</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Vleugels van huid</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>2 poten</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>4 tenen per poot</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Vinnen</string>
+			<key>Fish</key>
+			<integer>0</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Staartvin</string>
+			<key>Fish</key>
+			<integer>0</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Haren</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>0</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Veren</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Schubben op poten</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Schubben</string>
+			<key>Fish</key>
+			<integer>1</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Uitstekend borstbeen</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Plat borstbeen</string>
+			<key>Fish</key>
+			<integer>1</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Kieuwen</string>
+			<key>Fish</key>
+			<integer>0</integer>
+			<key>Mammal</key>
+			<integer>2</integer>
+			<key>Reptile</key>
+			<integer>2</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Nek</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>1</integer>
 		</dict>
 	</array>
 </dict>
