@@ -127,6 +127,8 @@
     self.currentTeam = game.team2;
     [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", self.currentTeam.getTeamName]];
     
+    self.currentPictureIndex = 0;
+    
     [self displayPicture];
     
     [self.navigationController dismissModalViewControllerAnimated:YES];

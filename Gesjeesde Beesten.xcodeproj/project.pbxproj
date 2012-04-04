@@ -47,6 +47,9 @@
 		4E3326B7151A909000CEC850 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3326B6151A909000CEC850 /* CreditsViewController.m */; };
 		4E3326BA151A91B200CEC850 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3326B9151A91B200CEC850 /* MenuViewController.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
+		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
+		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
+		4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */; };
 		4E6C07F0152CA3F000F52B61 /* SwitchTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C07EF152CA3F000F52B61 /* SwitchTeamViewController.m */; };
 		4E6D61E81525246A009D27B0 /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47D381511524CF9A00C4A7CE /* Vollkorn-Bold.ttf */; };
 		4E6D61E91525246A009D27B0 /* Vollkorn-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47D381521524CF9A00C4A7CE /* Vollkorn-BoldItalic.ttf */; };
@@ -137,6 +140,12 @@
 		4E3326B8151A91B200CEC850 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		4E3326B9151A91B200CEC850 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		4E4D8F9D152CCFCD00E898D5 /* Features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Features.plist; sourceTree = "<group>"; };
+		4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentFeatureViewController.h; sourceTree = "<group>"; };
+		4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFeatureViewController.m; sourceTree = "<group>"; };
+		4E4D8FA8152D05EE00E898D5 /* TeamFeaturePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamFeaturePickerViewController.h; sourceTree = "<group>"; };
+		4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamFeaturePickerViewController.m; sourceTree = "<group>"; };
+		4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentResultViewController.h; sourceTree = "<group>"; };
+		4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentResultViewController.m; sourceTree = "<group>"; };
 		4E6C07EE152CA3F000F52B61 /* SwitchTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTeamViewController.h; sourceTree = "<group>"; };
 		4E6C07EF152CA3F000F52B61 /* SwitchTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTeamViewController.m; sourceTree = "<group>"; };
 		4E6D61ED1525F799009D27B0 /* FeaturePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePictureViewController.h; sourceTree = "<group>"; };
@@ -303,6 +312,12 @@
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */,
+				4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */,
+				4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */,
+				4E4D8FA8152D05EE00E898D5 /* TeamFeaturePickerViewController.h */,
+				4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */,
+				4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */,
 				4EDEFAD8152B426300324EDB /* FeaturePickerViewController.h */,
 				4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */,
 				4EDEFADB152B625800324EDB /* PictureLabelViewController.h */,
@@ -494,6 +509,9 @@
 				4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */,
 				4EDEFADD152B625900324EDB /* PictureLabelViewController.m in Sources */,
 				4E6C07F0152CA3F000F52B61 /* SwitchTeamViewController.m in Sources */,
+				4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */,
+				4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */,
+				4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
