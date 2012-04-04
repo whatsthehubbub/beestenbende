@@ -91,6 +91,7 @@
 }
 
 - (IBAction)next:(id)sender {
+    [self.timer invalidate];
     if (self.currentTeamNumber == 1) {
         [self performSegueWithIdentifier:@"SwitchTeams" sender:self];
     } else {
