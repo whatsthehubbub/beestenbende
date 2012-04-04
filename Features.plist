@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Root</key>
+	<array>
+		<dict>
+			<key>Label</key>
+			<string>1 rij tanden</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Verschillende type tanden</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Snavel</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Tanden in meerdere rijen</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Overal tanden in de bek</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Allemaal hetzelfde type tanden</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>4 ledematen</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Lichaam recht boven de poten</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Nagels</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>Label</key>
+			<string>Tenen</string>
+			<key>Fish</key>
+			<integer>2</integer>
+			<key>Mammal</key>
+			<integer>1</integer>
+			<key>Reptile</key>
+			<integer>1</integer>
+			<key>Bird</key>
+			<integer>2</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

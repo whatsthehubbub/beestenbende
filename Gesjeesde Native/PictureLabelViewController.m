@@ -88,17 +88,19 @@
 }
 
 -(void)displayPicture {
-    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:currentPictureIndex];
-    
-    self.currentImage.image = fp.image;
-    [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
-    
-    [self.currentLabel setText:[NSString stringWithFormat:@"Foto %d van %d", self.currentPictureIndex+1, self.currentTeam.featurePictures.count]];
-    
-    if (fp.deleted) {
-        [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-on.png"] forState:UIControlStateNormal];
-    } else {
-        [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-off.png"] forState:UIControlStateNormal];
+    if (self.currentTeam.featurePictures.count > 0) {
+        FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:currentPictureIndex];
+        
+        self.currentImage.image = fp.image;
+        [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
+        
+        [self.currentLabel setText:[NSString stringWithFormat:@"Foto %d van %d", self.currentPictureIndex+1, self.currentTeam.featurePictures.count]];
+        
+        if (fp.deleted) {
+            [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-on.png"] forState:UIControlStateNormal];
+        } else {
+            [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-off.png"] forState:UIControlStateNormal];
+        }
     }
 }
 

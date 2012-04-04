@@ -22,7 +22,10 @@
         self.team1 = [[Team alloc] initWithNumber:1];
         self.team2 = [[Team alloc] initWithNumber:2];
         
-        self.features = [NSArray arrayWithObjects:@"1 rij tanden", @"Verschillende soorten tanden (kiezen/snijtanden)", @"Snavel", @"Geen tanden", @"Tanden in meerdere rijen", @"Overal tanden in de bek", @"Allemaal dezelfde tanden (geen kiezen/snijtanden)", nil];
+        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Features" ofType:@"plist"];
+        NSDictionary *root = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+        
+        self.features = (NSArray *)[root objectForKey:@"Root"];
     }
     return self;
 }

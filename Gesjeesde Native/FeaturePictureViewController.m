@@ -42,6 +42,7 @@
     game = appDelegate.game;
     
     self.currentTeamNumber = 1;
+    [self.timeLabel setText:@"60"];
     
     [self startTimer];
 }
