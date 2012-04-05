@@ -117,16 +117,15 @@
 }
 
 - (IBAction)next:(id)sender {
-    if (game.required > 0) {
+    [game.team1 purgeUsedFeaturePictures];
+    [game.team2 purgeUsedFeaturePictures];
+    
+    if (game.required > 0 && game.team1.featurePictures.count > 0 && game.team2.featurePictures.count > 0) {
         game.turn += 1;
             
-        [game.team1 purgeUsedFeaturePictures];
-        [game.team2 purgeUsedFeaturePictures];
-        
-        // TODO only perform another round if there are still feature pictures left for both teams
-        
         [self performSegueWithIdentifier:@"AnotherRound" sender:self];
     } else {
+        // TODO show something if the proof was completed by a lack of features
         [self performSegueWithIdentifier:@"ProofComplete" sender:self];
     }
 }
