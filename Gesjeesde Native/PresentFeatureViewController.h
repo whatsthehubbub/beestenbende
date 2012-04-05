@@ -19,6 +19,8 @@
 
     Game *game;
     Team *currentTeam;
+    
+    bool hasFeature;
 }
 
 @property (nonatomic, retain) IBOutlet UIButton *yesNoButton;
@@ -27,6 +29,8 @@
 
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
+
+@property (assign) bool hasFeature;
 
 - (IBAction)yesNo:(id)sender;
 - (IBAction)next:(id)sender;

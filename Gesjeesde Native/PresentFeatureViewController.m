@@ -21,6 +21,8 @@
 @synthesize game;
 @synthesize currentTeam;
 
+@synthesize hasFeature;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -39,6 +41,8 @@
     game = appDelegate.game;
     
     self.currentTeam = game.team1;
+    
+    self.hasFeature = YES;
     
 }
 
@@ -61,7 +65,16 @@
 }
 
 - (IBAction)yesNo:(id)sender {
-    [self.yesNoButton setTitle:@"Niet" forState:UIControlStateNormal];
+    NSString *title;
+    if (self.hasFeature) {
+        title = @"Niet";
+    } else {
+        title = @"Wel";
+    }
+    
+    self.hasFeature = !self.hasFeature;
+    
+    [self.yesNoButton setTitle:title forState:UIControlStateNormal];
 }
 
 - (IBAction)next:(id)sender {
