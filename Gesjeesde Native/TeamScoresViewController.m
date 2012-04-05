@@ -36,7 +36,7 @@
     game = appDelegate.game;
     
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.points]];
-    [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.points]];
+    [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.points]];
 }
 
 - (void)viewDidUnload
