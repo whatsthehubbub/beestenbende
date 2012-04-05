@@ -15,6 +15,7 @@
 @implementation TeamFeaturePickerViewController
 
 @synthesize delegate;
+@synthesize team;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -59,7 +60,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 10;
+    return team.featurePictures.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,7 +68,10 @@
     static NSString *CellIdentifier = @"TeamFeatureCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.textLabel.text = @"Alper";
+    FeaturePicture *fp = [team.featurePictures objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = fp.feature;
+    cell.imageView.image = fp.image;
     
     // Configure the cell...
     

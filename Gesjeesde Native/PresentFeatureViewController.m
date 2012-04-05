@@ -61,6 +61,7 @@
     if ([segue.identifier isEqualToString:@"PickFeature"]) {
         TeamFeaturePickerViewController *tfpvc = segue.destinationViewController;
         tfpvc.delegate = self;
+        tfpvc.team = self.currentTeam;
     }
 }
 
@@ -84,6 +85,12 @@
 #pragma mark - TeamFeaturePickerViewControllerDelegate
 
 - (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {
+    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:index];
+    
+    self.featureImageView.image = fp.image;
+    [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
+    
+    // TODO save turn in some state somewhere
     
     [self.navigationController popViewControllerAnimated:YES];
 }

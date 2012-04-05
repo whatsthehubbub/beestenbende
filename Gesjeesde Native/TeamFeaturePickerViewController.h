@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Team.h"
+#import "FeaturePicture.h"
+
 @class TeamFeaturePickerViewController;
 
 @protocol TeamFeaturePickerViewControllerDelegate <NSObject>
@@ -15,9 +18,11 @@
 - (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index;
 
 @end
+
 @interface TeamFeaturePickerViewController : UITableViewController {
 }
 
 @property (nonatomic, weak) id <TeamFeaturePickerViewControllerDelegate> delegate;
+@property (nonatomic, weak) Team *team;
 
 @end
