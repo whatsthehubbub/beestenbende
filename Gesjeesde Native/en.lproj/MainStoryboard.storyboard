@@ -1142,7 +1142,7 @@ Alleen vogels hebben veren. Ja, toch?</string>
                     <navigationItem key="navigationItem" id="Kdu-jU-ptz"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5134" y="645"/>
+            <point key="canvasLocation" x="4642" y="669"/>
         </scene>
         <!--Labelling Results View Controller-->
         <scene sceneID="9hp-qI-2LF">
@@ -1806,137 +1806,12 @@ Alleen vogels hebben veren. Ja, toch?</string>
         <image name="titlebar-team-marot.png" width="570" height="46"/>
         <image name="toggle-trash-off.png" width="80" height="76"/>
     </resources>
-    <classes>
-        <class className="CreditsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
-        </class>
-        <class className="FeatureExampleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeatureExampleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
-        </class>
-        <class className="FeaturePickerViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePickerViewController.h"/>
-        </class>
-        <class className="FeaturePictureExplanationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePictureExplanationViewController.h"/>
-        </class>
-        <class className="FeaturePictureViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePictureViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="action" name="takeFeaturePicture:"/>
-                <relationship kind="outlet" name="imagesView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="FirstIssueIntroductionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstIssueIntroductionViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="next"/>
-                <relationship kind="action" name="previous"/>
-                <relationship kind="action" name="scrollPage"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="LabellingResultsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LabellingResultsViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="team1Image" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="team2Image" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="MenuViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
-        </class>
-        <class className="PictureLabelViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PictureLabelViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="deleted:"/>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="action" name="previous:"/>
-                <relationship kind="outlet" name="currentImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="currentLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="deleteButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="teamLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="PresentFeatureViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PresentFeatureViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="action" name="yesNo:"/>
-                <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="featureImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="teamLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="yesNoButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="PresentResultViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PresentResultViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="outlet" name="proofsRequiredLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team1featureImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="team1featureLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team1pointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team2featureImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="team2featureLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team2pointsLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="SwitchTeamViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SwitchTeamViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-            </relationships>
-        </class>
-        <class className="TeamFeaturePickerViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamFeaturePickerViewController.h"/>
-        </class>
-        <class className="TeamPictureViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPictureViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="doneWithPicture:"/>
-                <relationship kind="action" name="takeTeamPicture:"/>
-                <relationship kind="outlet" name="teamPictureView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="TeamScoresViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamScoresViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="team1ScoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team2ScoreLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="WelcomeViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done"/>
-                <relationship kind="action" name="next"/>
-                <relationship kind="action" name="previous"/>
-                <relationship kind="action" name="scrollPage"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8YE-NQ-WeI"/>
-        <segue reference="kg1-HJ-wW0"/>
+        <segue reference="0PR-B0-KuG"/>
     </inferredMetricsTieBreakers>
 </document>

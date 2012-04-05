@@ -24,6 +24,9 @@
     UILabel *team2pointsLabel;
     
     UILabel *proofsRequiredLabel;
+    
+    FeaturePicture *team1fp;
+    FeaturePicture *team2fp;
 }
 
 @property (strong) Game *game;
@@ -38,6 +41,9 @@
 @property (nonatomic, retain) IBOutlet UILabel *team2pointsLabel;
 
 @property (nonatomic, retain) IBOutlet UILabel *proofsRequiredLabel;
+
+@property (nonatomic, retain) FeaturePicture *team1fp;
+@property (nonatomic, retain) FeaturePicture *team2fp;
 
 - (IBAction)next:(id)sender;
 

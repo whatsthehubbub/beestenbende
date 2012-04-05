@@ -24,6 +24,9 @@
 @synthesize team1pointsLabel;
 @synthesize team2pointsLabel;
 
+@synthesize team1fp;
+@synthesize team2fp;
+
 @synthesize proofsRequiredLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -43,8 +46,6 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    // TODO figure out which features each team has played
-    FeaturePicture *team1fp;
     for (FeaturePicture *fp in game.team1.featurePictures) {
         if (fp.presentedTurn == game.turn) {
             team1fp = fp;
@@ -71,7 +72,6 @@
     
     // Do some magic
     
-    FeaturePicture *team2fp;
     for (FeaturePicture *fp in game.team2.featurePictures) {
         if (fp.presentedTurn == game.turn) {
             team2fp = fp;
@@ -122,6 +122,8 @@
 - (IBAction)next:(id)sender {
     [game.team1 purgeUsedFeaturePictures];
     [game.team2 purgeUsedFeaturePictures];
+    
+    // Show Modal View Controllers with explanation of both features
     
     if (game.required > 0 && game.team1.featurePictures.count > 0 && game.team2.featurePictures.count > 0) {
         game.turn += 1;
