@@ -95,6 +95,9 @@
         [featureButton setTitle:@"" forState:UIControlStateNormal];
         featureImageView.image = nil;
         
+        [yesNoButton setTitle:@"Wel" forState:UIControlStateNormal];
+        self.hasFeature = YES;
+        
         
         [UIView commitAnimations];
     } else {
