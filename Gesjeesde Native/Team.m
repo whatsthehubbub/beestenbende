@@ -44,6 +44,29 @@
     return fullPathToFile;
 }
 
+- (void)purgeDeletedFeaturePictures {
+    NSMutableArray *save = [[NSMutableArray alloc] init];
+    
+    for (FeaturePicture *fp in self.featurePictures) {
+        if (!fp.deleted) {
+            [save addObject:fp];
+        }
+    }
+    self.featurePictures = save;
+}
+
+- (void)purgeUsedFeaturePictures {
+    NSMutableArray *save = [[NSMutableArray alloc] init];
+    
+    for (FeaturePicture *fp in self.featurePictures) {
+        if (!fp.presentedTurn == -1) {
+            [save addObject:fp];
+        }
+    }
+    
+    self.featurePictures = save;
+}
+
 //#pragma mark NSCoding
 //
 //- (void)encodeWithCoder:(NSCoder *)aCoder {

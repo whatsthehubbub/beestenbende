@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FeaturePicture.h"
+
 #define kTeam1Name @"Marot"
 #define kTeam2Name @"Seba"
 
@@ -25,5 +27,8 @@
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamName;
 -(NSString *)getPicturePath;
+
+- (void)purgeDeletedFeaturePictures;
+- (void)purgeUsedFeaturePictures;
 
 @end

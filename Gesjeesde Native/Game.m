@@ -36,6 +36,15 @@
     return self;
 }
 
+- (NSDictionary *)getFeatureWithName:(NSString *)name {
+    for (NSDictionary *dict in self.features) {
+        if ([name isEqualToString:[dict objectForKey:@"Label"]]) {
+            return dict;
+        }
+    }
+    return nil;
+}
+
 //#pragma mark NSCoding
 //
 //- (void)encodeWithCoder:(NSCoder *)aCoder {

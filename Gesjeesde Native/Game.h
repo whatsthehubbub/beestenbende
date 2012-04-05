@@ -31,4 +31,6 @@
 @property (assign) int turn;
 @property (assign) int required;
 
+- (NSDictionary *)getFeatureWithName:(NSString *)name;
+
 @end

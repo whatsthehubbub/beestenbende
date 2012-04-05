@@ -17,9 +17,13 @@
     
     UIImageView *team1featureImage;
     UILabel *team1featureLabel;
+    UILabel *team1pointsLabel;
     
     UIImageView *team2featureImage;
     UILabel *team2featureLabel;
+    UILabel *team2pointsLabel;
+    
+    UILabel *proofsRequiredLabel;
 }
 
 @property (strong) Game *game;
@@ -29,6 +33,11 @@
 
 @property (nonatomic, retain) IBOutlet UIImageView *team1featureImage;
 @property (nonatomic, retain) IBOutlet UIImageView *team2featureImage;
+
+@property (nonatomic, retain) IBOutlet UILabel *team1pointsLabel;
+@property (nonatomic, retain) IBOutlet UILabel *team2pointsLabel;
+
+@property (nonatomic, retain) IBOutlet UILabel *proofsRequiredLabel;
 
 - (IBAction)next:(id)sender;
 

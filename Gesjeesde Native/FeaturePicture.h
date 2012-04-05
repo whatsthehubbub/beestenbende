@@ -14,8 +14,8 @@
     UIImage *image;
     bool deleted;
     
-    int presentedTurn;
-    bool presentAssertion;
+    int presentedTurn; // The turn that this feature picture was presented in
+    bool presentAssertion; // True is Wel, False is Niet
 }
 
 @property (nonatomic, retain) NSString *feature;
@@ -26,5 +26,6 @@
 @property (assign) bool presentAssertion;
 
 -(id)initWithImage:(UIImage *)newImage;
+
 
 @end
