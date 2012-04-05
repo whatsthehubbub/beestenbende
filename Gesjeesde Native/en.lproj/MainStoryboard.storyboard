@@ -702,6 +702,9 @@ Alleen vogels hebben veren. Ja, toch?</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="back:" destination="p3a-E9-b1k" eventType="touchUpInside" id="7a6-UK-Oa0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
