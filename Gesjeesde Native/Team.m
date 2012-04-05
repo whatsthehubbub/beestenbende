@@ -59,7 +59,7 @@
     NSMutableArray *save = [[NSMutableArray alloc] init];
     
     for (FeaturePicture *fp in self.featurePictures) {
-        if (!fp.presentedTurn == -1) {
+        if (fp.presentedTurn == -1) {
             [save addObject:fp];
         }
     }
