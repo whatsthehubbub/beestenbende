@@ -71,7 +71,7 @@
 - (IBAction)yesNo:(id)sender {
     NSString *title;
     if (self.hasFeature) {
-        title = @"Niet";
+        title = @"Geen";
     } else {
         title = @"Wel";
     }
