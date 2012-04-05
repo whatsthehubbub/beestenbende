@@ -15,6 +15,9 @@
 
 @synthesize features;
 
+@synthesize turn;
+@synthesize required;
+
 - (id)init
 {
     self = [super init];
@@ -26,6 +29,9 @@
         NSDictionary *root = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
         
         self.features = (NSArray *)[root objectForKey:@"Root"];
+        
+        self.turn = 1;
+        self.required = 4;
     }
     return self;
 }

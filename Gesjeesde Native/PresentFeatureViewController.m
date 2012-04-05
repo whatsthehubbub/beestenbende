@@ -14,6 +14,7 @@
 
 @implementation PresentFeatureViewController
 
+@synthesize teamLabel;
 @synthesize yesNoButton;
 @synthesize featureButton;
 @synthesize featureImageView;
@@ -22,6 +23,7 @@
 @synthesize currentTeam;
 
 @synthesize hasFeature;
+@synthesize turn;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,6 +45,7 @@
     self.currentTeam = game.team1;
     
     self.hasFeature = YES;
+    self.turn = game.turn;
     
 }
 
@@ -79,18 +82,35 @@
 }
 
 - (IBAction)next:(id)sender {
-    [self performSegueWithIdentifier:@"Result" sender:self];
+    if (self.currentTeam.number == 1) {
+        [UIView beginAnimations:@"View Flip" context:nil];
+        [UIView setAnimationDuration:0.80];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
+        
+        // Changes to this ViewController
+        self.currentTeam = game.team2;
+        [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", [self.currentTeam getTeamName]]];
+        
+        [featureButton setTitle:@"" forState:UIControlStateNormal];
+        featureImageView.image = nil;
+        
+        
+        [UIView commitAnimations];
+    } else {
+        [self performSegueWithIdentifier:@"Result" sender:self];
+    }
 }
 
 #pragma mark - TeamFeaturePickerViewControllerDelegate
 
 - (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {
     FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:index];
+    // TODO this does not take into account deleted featurepicture (probably purge team featurepictures at some point)
+    fp.presentedTurn = self.turn;
     
     self.featureImageView.image = fp.image;
     [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
-    
-    // TODO save turn in some state somewhere
     
     [self.navigationController popViewControllerAnimated:YES];
 }

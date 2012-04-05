@@ -13,6 +13,7 @@
 @synthesize feature;
 @synthesize image;
 @synthesize deleted;
+@synthesize presentedTurn;
 
 -(id)initWithImage:(UIImage *)newImage {
     self = [super init];
@@ -21,6 +22,7 @@
         self.image = newImage;
         self.feature = @"";
         self.deleted = NO;
+        self.presentedTurn = -1;
     }
     return self;
 }

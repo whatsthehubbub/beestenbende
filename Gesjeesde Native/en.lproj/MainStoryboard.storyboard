@@ -1297,6 +1297,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                     <connections>
                         <outlet property="featureButton" destination="WoQ-zd-fSs" id="gwZ-R4-fpR"/>
                         <outlet property="featureImageView" destination="uTF-wg-lnc" id="vzo-yt-4N0"/>
+                        <outlet property="teamLabel" destination="TBQ-Xa-4xG" id="L4X-AH-Fr8"/>
                         <outlet property="yesNoButton" destination="xtc-7C-RXk" id="xV7-mh-rlw"/>
                         <segue destination="I6G-Xg-n2C" kind="push" identifier="Result" id="9Lr-4t-XRe"/>
                     </connections>
@@ -1384,6 +1385,10 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                     </view>
                     <navigationItem key="navigationItem" id="C1S-xG-uOx"/>
                     <connections>
+                        <outlet property="team1featureImage" destination="mXF-zH-HP8" id="P8A-F7-dlH"/>
+                        <outlet property="team1featureLabel" destination="XHG-Kc-FTP" id="iiB-h8-Elq"/>
+                        <outlet property="team2featureImage" destination="c9z-xu-6aC" id="9YM-1P-jhx"/>
+                        <outlet property="team2featureLabel" destination="8eG-nc-NY6" id="81P-Ia-8cc"/>
                         <segue destination="ETL-EA-CCI" kind="push" identifier="AnotherRound" id="PsD-W6-0KE"/>
                         <segue destination="rTe-1j-Lla" kind="push" identifier="ProofComplete" id="q6o-tL-wb0"/>
                     </connections>
@@ -1482,7 +1487,7 @@ kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien.</string>
                     </view>
                     <navigationItem key="navigationItem" id="xtQ-oR-uBc"/>
                     <connections>
-                        <segue destination="f0b-yc-RIg" kind="push" id="aKz-du-AtI"/>
+                        <segue destination="f0b-yc-RIg" kind="push" identifier="Unused" id="aKz-du-AtI"/>
                     </connections>
                 </viewController>
             </objects>

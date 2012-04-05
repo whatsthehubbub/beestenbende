@@ -12,6 +12,7 @@
 #import "TeamFeaturePickerViewController.h"
 
 @interface PresentFeatureViewController : UIViewController <TeamFeaturePickerViewControllerDelegate> {
+    UILabel *teamLabel;
     UIButton *yesNoButton;
     UIButton *featureButton;
     
@@ -21,8 +22,10 @@
     Team *currentTeam;
     
     bool hasFeature;
+    int turn;
 }
 
+@property (nonatomic, retain) IBOutlet UILabel *teamLabel;
 @property (nonatomic, retain) IBOutlet UIButton *yesNoButton;
 @property (nonatomic, retain) IBOutlet UIButton *featureButton;
 @property (nonatomic, retain) IBOutlet UIImageView *featureImageView;
@@ -31,6 +34,7 @@
 @property (strong) Team *currentTeam;
 
 @property (assign) bool hasFeature;
+@property (assign) int turn;
 
 - (IBAction)yesNo:(id)sender;
 - (IBAction)next:(id)sender;
