@@ -14,6 +14,7 @@
 @synthesize image;
 @synthesize deleted;
 @synthesize presentedTurn;
+@synthesize presentAssertion;
 
 -(id)initWithImage:(UIImage *)newImage {
     self = [super init];

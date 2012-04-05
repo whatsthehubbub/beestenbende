@@ -15,6 +15,7 @@
     bool deleted;
     
     int presentedTurn;
+    bool presentAssertion;
 }
 
 @property (nonatomic, retain) NSString *feature;
@@ -22,6 +23,7 @@
 @property (assign) bool deleted;
 
 @property (assign) int presentedTurn;
+@property (assign) bool presentAssertion;
 
 -(id)initWithImage:(UIImage *)newImage;
 
