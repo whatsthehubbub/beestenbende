@@ -128,36 +128,7 @@
     [self presentModalViewController:picker animated:YES];
 }
 
-//- (IBAction)doneWithPicture:(id)sender {
-//    if ([self currentTeamNumber] == 1) {
-//        // TODO save picture for team 1
-//        
-//        // Start segue back to this view for other team to take picture
-//        // Maybe wiser to 
-//        
-//        [UIView beginAnimations:@"View Flip" context:nil];
-//        [UIView setAnimationDuration:0.80];
-//        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-//        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
-//        
-//        // Changes to this ViewController
-//        self.currentTeamNumber = 2;
-//        
-//        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem je foto", [game.team2 getTeamName]]];
-//        
-//        // Blank image
-//        teamPictureView.image = nil;    
-//        
-//        
-//        [UIView commitAnimations];
-//        
-//    } else {
-//        // Start segue to the next view to start the game
-//        [self performSegueWithIdentifier:@"PastTeamPicture" sender:sender];
-//    }
-//}
-
-#pragma mark - UIIMagePickerControllerDelegate
+#pragma mark - UIImagePickerControllerDelegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
     
@@ -171,7 +142,7 @@
     UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (team.featurePictures.count * 80), 10, 80, 80)];
+    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (team.featurePictures.count % 3 * 80), 10 + 90 * ([team.featurePictures count] / 3), 80, 80)];
     newImageView.clipsToBounds = YES;
     newImageView.contentMode = UIViewContentModeScaleAspectFit;
     newImageView.image = smallImage;
