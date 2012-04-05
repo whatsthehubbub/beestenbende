@@ -109,6 +109,7 @@
     fp.deleted = !fp.deleted;
     
     if (fp.deleted) {
+        fp.feature = @"";
         [self.featureButton setTitle:@"Wordt verwijderd" forState:UIControlStateNormal];
         
         [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-on.png"] forState:UIControlStateNormal];
@@ -120,6 +121,17 @@
 }
 
 -(IBAction)done:(id)sender {
+    // Delete feature pictures marked for deletion
+    NSMutableArray *save = [[NSMutableArray alloc] init];
+    
+    for (FeaturePicture *fp in self.currentTeam.featurePictures) {
+        if (!fp.deleted) {
+            [save addObject:fp];
+        }
+    }
+    self.currentTeam.featurePictures = save;
+    
+    
     if (self.currentTeam.number == 1) {
         [self performSegueWithIdentifier:@"SwitchTeams" sender:self];
     } else {
