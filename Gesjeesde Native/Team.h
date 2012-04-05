@@ -19,10 +19,14 @@
     int number;
     
     NSMutableArray *featurePictures;
+    
+    int points;
 }
 
-@property (nonatomic) int number;
+@property (readwrite) int number;
 @property (nonatomic, retain) NSMutableArray *featurePictures;
+
+@property (readwrite) int points;
 
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamName;

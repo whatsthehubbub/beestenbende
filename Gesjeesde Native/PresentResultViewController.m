@@ -64,6 +64,7 @@
         team1points = 5;
     }
     [self.team1pointsLabel setText:[NSString stringWithFormat:@"%d punten", team1points]];
+    game.team1.points += team1points;
     
     [self.team1featureLabel setText:team1fp.feature];
     self.team1featureImage.image = team1fp.image;
@@ -83,6 +84,7 @@
     int team2points = 0;
     
     NSLog(@"Team 2 featurenumber %d", team2featureNumber);
+    NSLog(@"Team 2 team2fp %@", team2fp.feature);
     
     if (team2fp.presentAssertion && team2featureNumber == 0) {
         team2points = 10;
@@ -92,6 +94,7 @@
         team2points = 5;
     }
     [self.team2pointsLabel setText:[NSString stringWithFormat:@"%d punten", team2points]];
+    game.team2.points += team2points;
     
     [self.team2featureLabel setText:team2fp.feature];
     self.team2featureImage.image = team2fp.image;

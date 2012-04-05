@@ -107,11 +107,12 @@
 - (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {
     FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:index];
     
-    // TODO this does not take into account deleted featurepicture (probably purge team featurepictures at some point)
     fp.presentedTurn = self.turn;
     fp.presentAssertion = self.hasFeature;
+    // TODO if you pick a feature and then do No, it is not taken into account
     
     self.featureImageView.image = fp.image;
+    
     [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
     
     [self.navigationController popViewControllerAnimated:YES];

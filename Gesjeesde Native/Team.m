@@ -12,6 +12,7 @@
 
 @synthesize number;
 @synthesize featurePictures;
+@synthesize points;
 
 - (id)initWithNumber:(int)teamNumber;
 {
@@ -20,6 +21,8 @@
         self.number = teamNumber;
         
         self.featurePictures = [[NSMutableArray alloc] init];
+        
+        self.points = 0;
     }
     return self;
 }

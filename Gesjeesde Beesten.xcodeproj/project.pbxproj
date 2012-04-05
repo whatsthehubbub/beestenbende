@@ -69,6 +69,7 @@
 		4EAE98EB151A618A0051C926 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE98EA151A618A0051C926 /* AppDelegate.m */; };
 		4EAE98EE151A618A0051C926 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */; };
 		4EAE98F1151A618A0051C926 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE98F0151A618A0051C926 /* ViewController.m */; };
+		4EC4012D152E09A10005EC5C /* TeamScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4012C152E09A10005EC5C /* TeamScoresViewController.m */; };
 		4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD6152B359D00324EDB /* FeaturePicture.m */; };
 		4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */; };
 		4EDEFADD152B625900324EDB /* PictureLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFADC152B625800324EDB /* PictureLabelViewController.m */; };
@@ -173,6 +174,8 @@
 		4EAE98ED151A618A0051C926 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		4EAE98EF151A618A0051C926 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4EAE98F0151A618A0051C926 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4EC4012B152E09A10005EC5C /* TeamScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamScoresViewController.h; sourceTree = "<group>"; };
+		4EC4012C152E09A10005EC5C /* TeamScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamScoresViewController.m; sourceTree = "<group>"; };
 		4EDEFAD5152B359D00324EDB /* FeaturePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePicture.h; sourceTree = "<group>"; };
 		4EDEFAD6152B359D00324EDB /* FeaturePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePicture.m; sourceTree = "<group>"; };
 		4EDEFAD8152B426300324EDB /* FeaturePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePickerViewController.h; sourceTree = "<group>"; };
@@ -324,6 +327,8 @@
 				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
 				4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4EC4012B152E09A10005EC5C /* TeamScoresViewController.h */,
+				4EC4012C152E09A10005EC5C /* TeamScoresViewController.m */,
 				4E3326B8151A91B200CEC850 /* MenuViewController.h */,
 				4E3326B9151A91B200CEC850 /* MenuViewController.m */,
 				4EDEFAD3152B304D00324EDB /* Model */,
@@ -512,6 +517,7 @@
 				4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */,
 				4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */,
 				4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */,
+				4EC4012D152E09A10005EC5C /* TeamScoresViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
