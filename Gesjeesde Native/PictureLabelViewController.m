@@ -109,8 +109,12 @@
     fp.deleted = !fp.deleted;
     
     if (fp.deleted) {
+        [self.featureButton setTitle:@"Wordt verwijderd" forState:UIControlStateNormal];
+        
         [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-on.png"] forState:UIControlStateNormal];
     } else {
+        [self.featureButton setTitle:@"" forState:UIControlStateNormal];
+        
         [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-off.png"] forState:UIControlStateNormal];
     }
 }
