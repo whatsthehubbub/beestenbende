@@ -1526,10 +1526,68 @@ Alleen vogels hebben veren. Ja, toch?</string>
                         <outlet property="team2pointsLabel" destination="cz4-AA-hQ7" id="Nbc-b3-zpv"/>
                         <segue destination="rTe-1j-Lla" kind="push" identifier="ProofComplete" id="q6o-tL-wb0"/>
                         <segue destination="Kgz-tg-9iE" kind="push" identifier="AnotherRound" id="x4L-eh-fL3"/>
+                        <segue destination="Vw8-zy-TjQ" kind="modal" identifier="ShowFirstExplanation" modalTransitionStyle="coverVertical" id="Aa8-AL-jFN"/>
+                        <segue destination="Vw8-zy-TjQ" kind="modal" identifier="ShowSecondExplanation" modalTransitionStyle="coverVertical" id="2Y3-7q-SWz"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="6564" y="-62"/>
+        </scene>
+        <!--Explain Feature View Controller-->
+        <scene sceneID="I6a-tZ-zg4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IwW-2A-Tug" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Vw8-zy-TjQ" customClass="ExplainFeatureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N6F-p8-JZS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="5XK-6O-wZg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oIv-In-UDp">
+                                <rect key="frame" x="190" y="418" width="110" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="button-klaar.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="Vw8-zy-TjQ" eventType="touchUpInside" id="opo-dh-3Cj"/>
+                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="zOy-Nz-aaU"/>
+                                    <action selector="next:" destination="GYy-if-IZ4" eventType="touchUpInside" id="EwD-Ql-qsF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="R01-YJ-f7u">
+                                <rect key="frame" x="53" y="122" width="202" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RdP-nr-4my">
+                                <rect key="frame" x="53" y="93" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Rt-CH-yv1"/>
+                    <connections>
+                        <outlet property="explanationLabel" destination="R01-YJ-f7u" id="row-hQ-sJ5"/>
+                        <outlet property="featureLabel" destination="RdP-nr-4my" id="0ar-IN-X34"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="6838" y="499"/>
         </scene>
         <!--Team Feature Picker View Controller-->
         <scene sceneID="0xp-NP-yXF">

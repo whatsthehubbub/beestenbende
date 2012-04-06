@@ -27,6 +27,9 @@
 @synthesize team1fp;
 @synthesize team2fp;
 
+@synthesize explanation1Shown;
+@synthesize explanation2Shown;
+
 @synthesize proofsRequiredLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -45,6 +48,9 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+    
+    self.explanation1Shown = NO;
+    self.explanation2Shown = NO;
     
     for (FeaturePicture *fp in game.team1.featurePictures) {
         if (fp.presentedTurn == game.turn) {
@@ -119,20 +125,53 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)next:(id)sender {
-    [game.team1 purgeUsedFeaturePictures];
-    [game.team2 purgeUsedFeaturePictures];
-    
-    // Show Modal View Controllers with explanation of both features
-    
-    if (game.required > 0 && game.team1.featurePictures.count > 0 && game.team2.featurePictures.count > 0) {
-        game.turn += 1;
-            
-        [self performSegueWithIdentifier:@"AnotherRound" sender:self];
-    } else {
-        // TODO show something if the proof was completed by a lack of features
-        [self performSegueWithIdentifier:@"ProofComplete" sender:self];
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ShowFirstExplanation"]) {
+        ExplainFeatureViewController *efvc = segue.destinationViewController;
+        efvc.delegate = self;
+        efvc.feature = [game getFeatureWithName:team1fp.feature];
     }
+    
+    if ([segue.identifier isEqualToString:@"ShowSecondExplanation"]) {
+        ExplainFeatureViewController *efvc = segue.destinationViewController;
+        efvc.delegate = self;
+        efvc.feature = [game getFeatureWithName:team2fp.feature];
+    }
+}
+
+- (IBAction)next:(id)sender {
+    // Horrible state machine nonsense TODO
+    if (!(self.explanation1Shown && self.explanation2Shown)) {
+        // Show Modal View Controllers with explanation of both features
+        if (!self.explanation1Shown) {
+            [self performSegueWithIdentifier:@"ShowFirstExplanation" sender:self];
+            self.explanation1Shown = YES;
+        } else if (!self.explanation2Shown) {
+            [self performSegueWithIdentifier:@"ShowSecondExplanation" sender:self];
+            self.explanation2Shown = YES;
+        }
+    } else {
+        [game.team1 purgeUsedFeaturePictures];
+        [game.team2 purgeUsedFeaturePictures];
+        
+        if (game.required > 0 && game.team1.featurePictures.count > 0 && game.team2.featurePictures.count > 0) {
+            game.turn += 1;
+                
+            [self performSegueWithIdentifier:@"AnotherRound" sender:self];
+        } else {
+            // TODO show something if the proof was completed by a lack of features
+            [self performSegueWithIdentifier:@"ProofComplete" sender:self];
+        }
+    }
+}
+
+#pragma mark - ExplainFeatureViewControllerDelegate
+
+- (void)explainFeatureViewControllerWasDone:(ExplainFeatureViewController *)controller {
+    [self.navigationController dismissModalViewControllerAnimated:YES];
+    
+    // Immediately go into the next action
+    [self next:self];
 }
 
 @end

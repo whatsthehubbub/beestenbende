@@ -20,9 +20,9 @@
 
     Game *game;
     Team *currentTeam;
+    FeaturePicture *currentFeaturePicture;
     
     bool hasFeature;
-    int turn;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *teamLabel;
@@ -32,9 +32,9 @@
 
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
+@property (strong) FeaturePicture *currentFeaturePicture;
 
 @property (assign) bool hasFeature;
-@property (assign) int turn;
 
 - (IBAction)yesNo:(id)sender;
 - (IBAction)next:(id)sender;

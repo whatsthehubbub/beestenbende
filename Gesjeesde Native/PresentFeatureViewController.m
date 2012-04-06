@@ -21,9 +21,9 @@
 
 @synthesize game;
 @synthesize currentTeam;
+@synthesize currentFeaturePicture;
 
 @synthesize hasFeature;
-@synthesize turn;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,8 +45,6 @@
     self.currentTeam = game.team1;
     
     self.hasFeature = YES;
-    self.turn = game.turn;
-    
 }
 
 - (void)viewDidUnload
@@ -78,6 +76,10 @@
     
     self.hasFeature = !self.hasFeature;
     
+    if (self.currentFeaturePicture) {
+        self.currentFeaturePicture.presentAssertion = self.hasFeature;
+    }
+    
     [self.yesNoButton setTitle:title forState:UIControlStateNormal];
 }
 
@@ -108,15 +110,15 @@
 #pragma mark - TeamFeaturePickerViewControllerDelegate
 
 - (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {
-    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:index];
     
-    fp.presentedTurn = self.turn;
-    fp.presentAssertion = self.hasFeature;
-    // TODO if you pick a feature and then do No, it is not taken into account
+    self.currentFeaturePicture = [self.currentTeam.featurePictures objectAtIndex:index];
     
-    self.featureImageView.image = fp.image;
+    self.currentFeaturePicture.presentedTurn = game.turn;
+    self.currentFeaturePicture.presentAssertion = self.hasFeature;
     
-    [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
+    self.featureImageView.image = self.currentFeaturePicture.image;
+    
+    [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
     
     [self.navigationController popViewControllerAnimated:YES];
 }

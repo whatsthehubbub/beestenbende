@@ -11,8 +11,9 @@
 #import "AppDelegate.h"
 #import "Game.h"
 #import "FeaturePicture.h"
+#import "ExplainFeatureViewController.h"
 
-@interface PresentResultViewController : UIViewController {
+@interface PresentResultViewController : UIViewController <ExplainFeatureViewControllerDelegate> {
     Game *game;
     
     UIImageView *team1featureImage;
@@ -27,6 +28,9 @@
     
     FeaturePicture *team1fp;
     FeaturePicture *team2fp;
+    
+    bool explanation1Shown;
+    bool explanation2Shown;
 }
 
 @property (strong) Game *game;
@@ -44,6 +48,9 @@
 
 @property (nonatomic, retain) FeaturePicture *team1fp;
 @property (nonatomic, retain) FeaturePicture *team2fp;
+
+@property (assign) bool explanation1Shown;
+@property (assign) bool explanation2Shown;
 
 - (IBAction)next:(id)sender;
 

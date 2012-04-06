@@ -36,6 +36,7 @@
 		4E08C30F1524723D00F3CDC7 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E08C30E1524723D00F3CDC7 /* 15.png */; };
 		4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */; };
 		4E08C31615248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */; };
+		4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */; };
 		4E332694151A663B00CEC850 /* bg-0-plain.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332677151A663B00CEC850 /* bg-0-plain.png */; };
 		4E332699151A663B00CEC850 /* bg-5-intro-mission-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */; };
 		4E33269A151A663B00CEC850 /* bg-14-label-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E33267D151A663B00CEC850 /* bg-14-label-photos.png */; };
@@ -146,6 +147,8 @@
 		4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureExampleViewController.m; sourceTree = "<group>"; };
 		4E08C31415248CAA00F3CDC7 /* FeaturePictureExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePictureExplanationViewController.h; sourceTree = "<group>"; };
 		4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePictureExplanationViewController.m; sourceTree = "<group>"; };
+		4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplainFeatureViewController.h; sourceTree = "<group>"; };
+		4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplainFeatureViewController.m; sourceTree = "<group>"; };
 		4E332677151A663B00CEC850 /* bg-0-plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-0-plain.png"; sourceTree = "<group>"; };
 		4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-5-intro-mission-1.png"; sourceTree = "<group>"; };
 		4E33267D151A663B00CEC850 /* bg-14-label-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-14-label-photos.png"; sourceTree = "<group>"; };
@@ -390,6 +393,8 @@
 				4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */,
 				4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */,
 				4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */,
+				4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */,
+				4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */,
 				4EAE98E1151A618A0051C926 /* Supporting Files */,
 				4E6C07EE152CA3F000F52B61 /* SwitchTeamViewController.h */,
 				4E6C07EF152CA3F000F52B61 /* SwitchTeamViewController.m */,
@@ -590,6 +595,7 @@
 				4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */,
 				4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */,
 				4EC4012D152E09A10005EC5C /* TeamScoresViewController.m in Sources */,
+				4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
