@@ -171,7 +171,7 @@
     [self.navigationController dismissModalViewControllerAnimated:YES];
     
     // Immediately go into the next action
-    [self next:self];
+    // [self next:self];
 }
 
 @end
