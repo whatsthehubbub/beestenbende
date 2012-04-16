@@ -49,7 +49,7 @@
 
 #pragma mark - CreditsViewControllerDelegate
 - (void)creditsViewControllerDidBack:(CreditsViewController *)controller {
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
