@@ -46,7 +46,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aA8-Uu-wjL" kind="push" identifier="Credits" id="sWp-gp-vaf"/>
+                                    <segue destination="aA8-Uu-wjL" kind="modal" identifier="Credits" modalTransitionStyle="coverVertical" id="sWp-gp-vaf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1588,7 +1588,7 @@ Alleen vogels hebben veren. Ja, toch?</string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="6838" y="499"/>
+            <point key="canvasLocation" x="7036" y="587"/>
         </scene>
         <!--Team Feature Picker View Controller-->
         <scene sceneID="0xp-NP-yXF">
