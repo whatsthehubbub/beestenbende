@@ -21,6 +21,9 @@
 
 @synthesize game;
 
+@synthesize csManager;
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -44,7 +47,9 @@
     
     [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem een foto", [game.team1 getTeamName]]];
     
-    }
+    // Start capture session and bind it to the image view
+    self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
+}
 
 - (void)viewDidUnload
 {
@@ -61,11 +66,13 @@
 #pragma mark -
 
 - (IBAction)takeTeamPicture:(id)sender {
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
- 
-    [self presentModalViewController:picker animated:YES];
+    [self.csManager captureStillImage];
+    
+//    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+//    picker.delegate = self;
+//    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+// 
+//    [self presentModalViewController:picker animated:YES];
 }
 
 - (IBAction)doneWithPicture:(id)sender {
