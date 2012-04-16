@@ -11,10 +11,13 @@
 @interface WelcomeViewController : UIViewController <UIScrollViewDelegate> {
     UIScrollView *scrollView;
     UIPageControl *pageControl;
+    
+    UILabel *titleLabel;
 }
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 
 - (IBAction)scrollPage;
 - (IBAction)previous;

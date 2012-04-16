@@ -80,7 +80,7 @@
     NSDictionary *feature = [self.game.features objectAtIndex:indexPath.row];
     cell.textLabel.text = [feature objectForKey:@"Label"];
     
-    // Configure the cell...
+    [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:16.0]];
     
     return cell;
 }

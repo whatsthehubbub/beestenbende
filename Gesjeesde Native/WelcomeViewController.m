@@ -16,6 +16,7 @@
 
 @synthesize scrollView;
 @synthesize pageControl;
+@synthesize titleLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +30,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+//    Vollkorn-Italic
+//    2012-04-16 13:44:55.837 Gesjeesde Beesten[2717:707] Vollkorn-Bold
+//    2012-04-16 13:44:55.841 Gesjeesde Beesten[2717:707] Vollkorn-Regular
+//    2012-04-16 13:44:55.845 Gesjeesde Beesten[2717:707] Vollkorn-BoldItalic
+    //[self.titleLabel setFont:[UIFont fontWithName:@"Vollkorn-Bold" size:16.0]];
+    
 	// Do any additional setup after loading the view.
     
 //    CGRect frame1;
