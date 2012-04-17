@@ -318,11 +318,11 @@
                                     <action selector="next" destination="aEm-4i-hHa" eventType="touchUpInside" id="kAi-8c-JJf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Feo-OE-Hl2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Feo-OE-Hl2" customClass="ArrowRight">
                                 <rect key="frame" x="190" y="418" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-verder.png">
+                                <state key="normal" title="Verder">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -528,11 +528,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmF-Sg-FnO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmF-Sg-FnO" customClass="ArrowRight">
                                 <rect key="frame" x="193" y="418" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-volgende.png">
+                                <state key="normal" title="Volgende">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -581,11 +581,12 @@
                                 <rect key="frame" x="15" y="48" width="285" height="262"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkL-UD-bNU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkL-UD-bNU" customClass="ArrowRight">
                                 <rect key="frame" x="179" y="418" width="121" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-duidelijk.png">
+                                <state key="normal" title="Duidelijk!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -596,11 +597,12 @@
                                     <segue destination="mhP-gb-YWU" kind="push" id="SFQ-c5-a1T"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LJQ-hh-xoc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LJQ-hh-xoc" customClass="BeestenButton">
                                 <rect key="frame" x="42" y="418" width="129" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-bijvoorbeeld.png">
+                                <state key="normal" title="Bijvoorbeeld?">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -677,11 +679,11 @@ Alleen vogels hebben veren. Ja, toch?</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m4F-V7-6mE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m4F-V7-6mE" customClass="ArrowLeft">
                                 <rect key="frame" x="20" y="418" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Oh zo, terug" image="button-terug.png">
+                                <state key="normal" title="Terug">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -755,11 +757,11 @@ Alleen vogels hebben veren. Ja, toch?</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qk5-w3-gWg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qk5-w3-gWg" customClass="ArrowRight">
                                 <rect key="frame" x="193" y="418" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-ja-start.png">
+                                <state key="normal" title="Ja, start!">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1834,22 +1836,17 @@ Alleen vogels hebben veren. Ja, toch?</string>
         <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
         <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
         <image name="button-aan-de-slag.png" width="289" height="83"/>
-        <image name="button-bijvoorbeeld.png" width="258" height="83"/>
         <image name="button-carousel-next.png" width="86" height="85"/>
         <image name="button-carousel-prev.png" width="86" height="85"/>
         <image name="button-credits.png" width="480" height="71"/>
-        <image name="button-duidelijk.png" width="242" height="84"/>
         <image name="button-en-de-winnaar-is.png" width="379" height="84"/>
         <image name="button-ja-klaar.png" width="219" height="84"/>
-        <image name="button-ja-start.png" width="218" height="84"/>
         <image name="button-ja.png" width="175" height="99"/>
         <image name="button-klaar.png" width="219" height="83"/>
         <image name="button-leg-uit.png" width="219" height="83"/>
         <image name="button-nieuw-spel.png" width="426" height="134"/>
         <image name="button-start.png" width="218" height="84"/>
-        <image name="button-terug.png" width="219" height="83"/>
         <image name="button-titlebar-back.png" width="43" height="43"/>
-        <image name="button-verder.png" width="219" height="83"/>
         <image name="button-volgende.png" width="219" height="83"/>
         <image name="example-photos-of-features.png" width="381" height="274"/>
         <image name="infographic-make-team-photo.png" width="293" height="222"/>
