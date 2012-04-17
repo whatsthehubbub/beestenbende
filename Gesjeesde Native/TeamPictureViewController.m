@@ -17,6 +17,10 @@
 @synthesize teamPictureView;
 @synthesize titleLabel;
 
+@synthesize takeTeamPictureButton;
+@synthesize takePictureAgainButton;
+@synthesize nextButton;
+
 @synthesize currentTeamNumber;
 
 @synthesize game;
@@ -65,6 +69,24 @@
 
 - (IBAction)takeTeamPicture:(id)sender {
     [self.csManager captureStillImage];
+    
+    // Hide take picture button, show other two
+    // TODO actually switch the buttons when the picture has been really taken (slight delay)
+    self.takeTeamPictureButton.hidden = YES;
+    self.takePictureAgainButton.hidden = NO;
+    self.nextButton.hidden = NO;
+}
+
+- (IBAction)takeTeamPictureAgain:(id)sender {
+    // Blank image
+    teamPictureView.image = nil;    
+    // Start capture session again for team 2
+    [teamPictureView.layer addSublayer:csManager.previewLayer];
+    [csManager.captureSession startRunning];
+    
+    self.takeTeamPictureButton.hidden = NO;
+    self.takePictureAgainButton.hidden = YES;
+    self.nextButton.hidden = YES;
 }
 
 - (IBAction)doneWithPicture:(id)sender {
@@ -82,11 +104,8 @@
         
         [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem een foto", [game.team2 getTeamName]]];
         
-        // Blank image
-        teamPictureView.image = nil;    
-        // Start capture session again for team 2
-        [teamPictureView.layer addSublayer:csManager.previewLayer];
-        [csManager.captureSession startRunning];
+        // Setup everything for team picture again
+        [self takeTeamPictureAgain:self];
         
         [UIView commitAnimations];
     

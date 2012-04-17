@@ -15,7 +15,11 @@
 
 @interface TeamPictureViewController : UIViewController {
     UIImageView *teamPictureView;
+    
     UIButton *takeTeamPictureButton;
+    UIButton *takePictureAgainButton;
+    UIButton *nextButton;
+    
     UILabel *titleLabel;
     
     int currentTeamNumber;
@@ -30,11 +34,16 @@
 @property (strong) IBOutlet UIImageView *teamPictureView;
 @property (strong) IBOutlet UILabel *titleLabel;
 
+@property (strong) IBOutlet UIButton *takeTeamPictureButton;
+@property (strong) IBOutlet UIButton *takePictureAgainButton;
+@property (strong) IBOutlet UIButton *nextButton;
+
 @property (strong) Game *game;
 
 @property (strong) CaptureSessionManager *csManager;
 
 - (IBAction)takeTeamPicture:(id)sender;
+- (IBAction)takeTeamPictureAgain:(id)sender;
 - (IBAction)doneWithPicture:(id)sender;
 
 @end
