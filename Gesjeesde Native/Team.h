@@ -17,6 +17,7 @@
 
 @interface Team : NSObject {
     int number;
+    UIImage *picture;
     
     NSMutableArray *featurePictures;
     
@@ -24,6 +25,8 @@
 }
 
 @property (readwrite) int number;
+@property (nonatomic, retain) UIImage *picture;
+
 @property (nonatomic, retain) NSMutableArray *featurePictures;
 
 @property (readwrite) int points;

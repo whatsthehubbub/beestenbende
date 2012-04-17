@@ -11,8 +11,9 @@
 
 #import "AppDelegate.h"
 #import "CaptureSessionManager.h"
+#import "UIImage+Extras.h"
 
-@interface TeamPictureViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+@interface TeamPictureViewController : UIViewController {
     UIImageView *teamPictureView;
     UIButton *takeTeamPictureButton;
     UILabel *titleLabel;

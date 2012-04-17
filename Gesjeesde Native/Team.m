@@ -11,6 +11,8 @@
 @implementation Team
 
 @synthesize number;
+@synthesize picture;
+
 @synthesize featurePictures;
 @synthesize points;
 
@@ -36,9 +38,6 @@
 }
 
 -(NSString *)getPicturePath {
-    
-    // TODO maybe save to caches
-    
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     
