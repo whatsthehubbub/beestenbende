@@ -54,7 +54,7 @@
     [self.scrollView scrollRectToVisible:frame animated:YES];
 }
 
-- (IBAction)previous {
+- (IBAction)previous:(id)sender {
     if (self.pageControl.currentPage > 0) {
         self.pageControl.currentPage -= 1;
         
@@ -62,10 +62,18 @@
     }
 }
 
-- (IBAction)next {
+- (IBAction)next:(id)sender {
     if (self.pageControl.currentPage < 1) {
         self.pageControl.currentPage += 1;
         [self scrollPage];
+    }
+}
+
+- (IBAction)done:(id)sender {
+    if (self.pageControl.currentPage < 1) {
+        [self next:self];
+    } else {
+        [self performSegueWithIdentifier:@"NextScreen" sender:self];
     }
 }
 

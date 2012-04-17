@@ -17,7 +17,9 @@
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
 
 - (IBAction)scrollPage;
-- (IBAction)previous;
-- (IBAction)next;
+- (IBAction)previous:(id)sender;
+- (IBAction)next:(id)sender;
+
+- (IBAction)done:(id)sender;
 
 @end
