@@ -14,8 +14,6 @@
 @synthesize captureSession;
 @synthesize stillImageOutput;
 
-//@synthesize imageView;
-
 // Code from : http://www.musicalgeometry.com/?p=1273
 // and: http://www.musicalgeometry.com/?p=1297
 - (id)initWithImageView:(UIImageView *)iView {
@@ -23,9 +21,9 @@
 		self.captureSession = [[AVCaptureSession alloc] init];
         imageView = iView;
         
-        
-        // TODO set captureSession.sessionPreset to something with a sane output value
-        // Now we get 1280x720 px images
+        // Set captureSession.sessionPreset to something with a sane output value
+        // Default is 1280x720 px images
+        self.captureSession.sessionPreset = AVCaptureSessionPresetMedium;
         
         AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
         if (videoDevice) {
@@ -92,22 +90,20 @@
 	NSLog(@"about to request a capture from: %@", self.stillImageOutput);
     
     [self.stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
-        NSLog(@"capture async");
-//        CFDictionaryRef exifAttachments = CMGetAttachment(imageSampleBuffer, kCGImagePropertyExifDictionary, NULL);
-//        
-//        if (exifAttachments) {
-//            NSLog(@"attachements: %@", exifAttachments);
-//        } else {
-//            NSLog(@"no attachments");
-//        }
         
         NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
         UIImage *image = [[UIImage alloc] initWithData:imageData];
+        
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
         [imageView setImage:image];
         
-        UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
+        // Slow
+        // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
         
         [self.previewLayer removeFromSuperlayer];
+        
+        // TODO restart capture session if we want to take another picture
+        [self.captureSession stopRunning];
         
         // [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:nil];
     }];

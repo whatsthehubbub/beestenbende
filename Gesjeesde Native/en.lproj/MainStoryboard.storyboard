@@ -516,7 +516,7 @@
                                     <action selector="takeTeamPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="Zj1-Ey-JUL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="50Y-ih-Ttg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="50Y-ih-Ttg">
                                 <rect key="frame" x="40" y="109" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -544,7 +544,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="NbA-dD-FFm">
-                                <rect key="frame" x="36" y="105.5" width="248" height="247"/>
+                                <rect key="frame" x="36" y="105" width="248" height="247"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -552,7 +552,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ifW-qg-foT"/>
                     <connections>
-                        <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="wIA-7b-tPg"/>
+                        <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="fIc-hY-0xz"/>
                         <outlet property="titleLabel" destination="UtT-Wi-adY" id="cZ8-Ng-YYH"/>
                         <segue destination="aEm-4i-hHa" kind="push" identifier="PastTeamPicture" id="fHu-b7-0Nr"/>
                     </connections>

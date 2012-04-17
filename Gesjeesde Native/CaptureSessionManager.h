@@ -18,8 +18,6 @@
 @property (retain) AVCaptureSession *captureSession;
 @property (retain) AVCaptureStillImageOutput *stillImageOutput;
 
-//@property (readonly) UIImageView *imageView;
-
 - (id)initWithImageView:(UIImageView *)iView;
 
 - (void)captureStillImage;
