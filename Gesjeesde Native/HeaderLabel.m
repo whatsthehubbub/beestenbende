@@ -38,8 +38,6 @@
 
 - (void)customizeLabel {
     [self setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:self.font.pointSize]];
-    
-    self.baselineAdjustment = UIBaselineAdjustmentAlignCenters;     
 }
 
 @end

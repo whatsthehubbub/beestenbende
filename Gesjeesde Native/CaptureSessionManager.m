@@ -103,7 +103,7 @@
         [self.previewLayer removeFromSuperlayer];
         
         // TODO restart capture session if we want to take another picture
-        [self.captureSession stopRunning];
+        // [self.captureSession stopRunning];
         
         // [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:nil];
     }];
