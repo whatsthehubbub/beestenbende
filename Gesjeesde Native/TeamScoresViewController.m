@@ -37,6 +37,13 @@
     
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.points]];
     [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.points]];
+    
+    // Store the points in the total and reset the points for the second issue
+    game.team1.totalPoints += game.team1.points;
+    game.team1.points = 0;
+    
+    game.team2.totalPoints += game.team2.points;
+    game.team2.points = 0;
 }
 
 - (void)viewDidUnload
@@ -51,6 +58,7 @@
 }
 
 - (IBAction)nextIssue:(id)sender {
+    // Go to the first screen of the second issue
     UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueIntroduction"];
     
     [self.navigationController pushViewController:viewController animated:YES];
