@@ -97,9 +97,7 @@
         [featureButton setTitle:@"" forState:UIControlStateNormal];
         featureImageView.image = nil;
         
-        [yesNoButton setTitle:@"Wel" forState:UIControlStateNormal];
-        self.hasFeature = YES;
-        
+        self.yesNoButton.enabled = NO; // Disable yes no button for the second team
         
         [UIView commitAnimations];
     } else {

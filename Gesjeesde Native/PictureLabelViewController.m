@@ -125,8 +125,10 @@
 }
 
 -(IBAction)done:(id)sender {
+    // TODO done button only appears if all pictures have been labelled / or deleted
+    
     // Delete feature pictures marked for deletion
-    [self.currentTeam purgeDeletedFeaturePictures];    
+    [self.currentTeam purgeDeletedFeaturePictures];
     
     if (self.currentTeam.number == 1) {
         [self performSegueWithIdentifier:@"SwitchTeams" sender:self];
