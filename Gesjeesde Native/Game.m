@@ -15,6 +15,8 @@
 
 @synthesize features;
 
+@synthesize issue;
+
 @synthesize turn;
 @synthesize required;
 
@@ -29,6 +31,8 @@
         NSDictionary *root = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
         
         self.features = (NSArray *)[root objectForKey:@"Root"];
+        
+        issue = 1; // We start at the first issue
         
         self.turn = 1;
         self.required = 4;

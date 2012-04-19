@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Team.h"
 
-//#define kTeam1Key @"team1key"
-//#define kTeam2Key @"team2key"
-
 @interface Game : NSObject {
     Team *team1;
     Team *team2;
     
     NSArray *features;
+    
+    // The issue we are currently playing
+    int issue;
     
     // For resolving the turns
     int turn;
@@ -27,6 +27,8 @@
 @property (strong) Team *team2;
 
 @property (strong) NSArray *features;
+
+@property (assign) int issue;
 
 @property (assign) int turn;
 @property (assign) int required;
