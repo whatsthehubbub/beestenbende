@@ -53,7 +53,7 @@
 - (IBAction)nextIssue:(id)sender {
     UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueIntroduction"];
     
-    [self presentViewController:viewController animated:YES completion:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end
