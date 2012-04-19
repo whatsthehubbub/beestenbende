@@ -47,11 +47,12 @@
     
     [self.titleLabel setFont:[UIFont fontWithName:@"Vollkorn-Bold" size:self.titleLabel.font.pointSize]];
     
-    [self.titleLabel setShadowColor:[UIColor blackColor]];
-    [self.titleLabel setShadowOffset:CGSizeMake(0.0f, -1.0f)];
+//    [self.titleLabel setShadowColor:[UIColor blackColor]];
+//    [self.titleLabel setShadowOffset:CGSizeMake(0.0f, -1.0f)];
     
-    self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
-    self.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 15);
+    self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+//    self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
+//    self.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 15);
 }
 
 

@@ -37,7 +37,7 @@
 */
 
 - (void)customizeLabel {
-    [self setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:self.font.pointSize]];
+    [self setFont:[UIFont fontWithName:@"Vollkorn-Bold" size:16]];
 }
 
 @end

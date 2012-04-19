@@ -45,10 +45,10 @@
     
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
-    [self.titleLabel setFont:[UIFont fontWithName:@"Vollkorn-Bold" size:self.titleLabel.font.pointSize]];
+    [self.titleLabel setFont:[UIFont fontWithName:@"Vollkorn-Bold" size:18]];
     
-    [self.titleLabel setShadowColor:[UIColor blackColor]];
-    [self.titleLabel setShadowOffset:CGSizeMake(0.0f, -1.0f)];
+//    [self.titleLabel setShadowColor:[UIColor blackColor]];
+//    [self.titleLabel setShadowOffset:CGSizeMake(0.0f, -1.0f)];
 }
 
 @end
