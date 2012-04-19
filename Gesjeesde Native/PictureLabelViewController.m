@@ -133,7 +133,11 @@
     if (self.currentTeam.number == 1) {
         [self performSegueWithIdentifier:@"SwitchTeams" sender:self];
     } else {
-        [self performSegueWithIdentifier:@"LabellingDone" sender:self];
+        if (self.game.issue == 1) {
+            [self performSegueWithIdentifier:@"LabellingDone" sender:self];
+        } else {
+            [self performSegueWithIdentifier:@"LabellingDoneSecond" sender:self];
+        }
     }
 }
 

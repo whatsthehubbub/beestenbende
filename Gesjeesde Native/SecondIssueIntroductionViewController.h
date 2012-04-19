@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface SecondIssueIntroductionViewController : UIViewController
+@interface SecondIssueIntroductionViewController : UIViewController {
+    Game *game;
+}
+
+@property (strong) Game *game;
 
 - (IBAction)next:(id)sender;
 

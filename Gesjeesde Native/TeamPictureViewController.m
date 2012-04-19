@@ -115,10 +115,7 @@
         game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
 
         // Start segue to the next view to start the game
-        // [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];
-        
-        // To test the second issue
-        [self performSegueWithIdentifier:@"SecondIssueIntroduction" sender:sender];
+        [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];
     }
 }
 @end
