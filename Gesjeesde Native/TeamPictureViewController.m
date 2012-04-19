@@ -15,6 +15,7 @@
 @implementation TeamPictureViewController
 
 @synthesize teamPictureView;
+@synthesize teamOverlay;
 @synthesize titleLabel;
 
 @synthesize takeTeamPictureButton;
@@ -47,7 +48,7 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem een foto", [game.team1 getTeamName]]];
+    [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [game.team1 getTeamName]]];
     
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
@@ -102,7 +103,8 @@
         // Changes to this ViewController
         self.currentTeamNumber = 2;
         
-        [self.titleLabel setText:[NSString stringWithFormat:@"Team %@ neem een foto", [game.team2 getTeamName]]];
+        [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [game.team2 getTeamName]]];
+        [self.teamOverlay setImage:[UIImage imageNamed:@"overlay-team-yellow.png"]];
         
         // Setup everything for team picture again
         [self takeTeamPictureAgain:self];
@@ -113,7 +115,10 @@
         game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
 
         // Start segue to the next view to start the game
-        [self performSegueWithIdentifier:@"PastTeamPicture" sender:sender];
+        // [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];
+        
+        // To test the second issue
+        [self performSegueWithIdentifier:@"SecondIssueIntroduction" sender:sender];
     }
 }
 @end
