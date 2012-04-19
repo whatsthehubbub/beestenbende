@@ -10,8 +10,8 @@
 
 #import "FeaturePicture.h"
 
-#define kTeam1Name @"Marot"
-#define kTeam2Name @"Seba"
+#define kTeam1Name @"Blauw"
+#define kTeam2Name @"Geel"
 
 //#define kTeamNumberKey @"teamNumberKey"
 
