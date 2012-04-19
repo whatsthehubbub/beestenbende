@@ -323,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				4E08C30E1524723D00F3CDC7 /* 15.png */,
+				47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */,
 				4EDEFAE0152B6DA200324EDB /* animal-host.png */,
 				47993150152E426700AF019F /* animal-squirrel.png */,
 				47AF02DF152C90C7008905ED /* bg-0-plain.jpg */,
@@ -416,7 +417,6 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
-				47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */,
 				4E3326B4151A68C200CEC850 /* assets */,
 				4EAE98E0151A618A0051C926 /* Gesjeesde Native */,
 				4EAE98D9151A618A0051C926 /* Frameworks */,
