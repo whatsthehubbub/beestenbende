@@ -23,4 +23,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *team1ScoreLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2ScoreLabel;
 
+- (IBAction)nextIssue:(id)sender;
+
 @end

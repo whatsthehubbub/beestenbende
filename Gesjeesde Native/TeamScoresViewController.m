@@ -50,4 +50,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)nextIssue:(id)sender {
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueIntroduction"];
+    
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
 @end
