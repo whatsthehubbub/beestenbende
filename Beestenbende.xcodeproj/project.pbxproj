@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		478F9DF21540138900D14182 /* button-titlebar-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF11540138900D14182 /* button-titlebar-home.png */; };
+		478F9DF61540163B00D14182 /* block-yellow-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF41540163B00D14182 /* block-yellow-team.png */; };
+		478F9DF71540163B00D14182 /* block-blue-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF51540163B00D14182 /* block-blue-team.png */; };
+		478F9DFA15401FB100D14182 /* overlay-team-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF815401FB100D14182 /* overlay-team-blue.png */; };
+		478F9DFB15401FB100D14182 /* overlay-team-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF915401FB100D14182 /* overlay-team-yellow.png */; };
 		47993148152E3EDA00AF019F /* button-titlebar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 47993147152E3EDA00AF019F /* button-titlebar-back.png */; };
 		4799314C152E405E00AF019F /* titlebar-team-marot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314A152E405E00AF019F /* titlebar-team-marot.png */; };
 		4799314D152E405E00AF019F /* titlebar-team-seba.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314B152E405E00AF019F /* titlebar-team-seba.png */; };
@@ -132,6 +137,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		478F9DF11540138900D14182 /* button-titlebar-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-home.png"; sourceTree = "<group>"; };
+		478F9DF41540163B00D14182 /* block-yellow-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-yellow-team.png"; sourceTree = "<group>"; };
+		478F9DF51540163B00D14182 /* block-blue-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-blue-team.png"; sourceTree = "<group>"; };
+		478F9DF815401FB100D14182 /* overlay-team-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-blue.png"; sourceTree = "<group>"; };
+		478F9DF915401FB100D14182 /* overlay-team-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-yellow.png"; sourceTree = "<group>"; };
 		47993147152E3EDA00AF019F /* button-titlebar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-back.png"; sourceTree = "<group>"; };
 		4799314A152E405E00AF019F /* titlebar-team-marot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-marot.png"; sourceTree = "<group>"; };
 		4799314B152E405E00AF019F /* titlebar-team-seba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-seba.png"; sourceTree = "<group>"; };
@@ -386,8 +396,13 @@
 				4ED21526153C4C8700040C97 /* Vollkorn-BoldItalic.ttf */,
 				4ED21527153C4C8700040C97 /* Vollkorn-Italic.ttf */,
 				4ED21528153C4C8700040C97 /* Vollkorn-Regular.ttf */,
+				478F9DF41540163B00D14182 /* block-yellow-team.png */,
+				478F9DF51540163B00D14182 /* block-blue-team.png */,
+				478F9DF815401FB100D14182 /* overlay-team-blue.png */,
+				478F9DF915401FB100D14182 /* overlay-team-yellow.png */,
 				4E332692151A663B00CEC850 /* speech-bubble-small.png */,
 				4E332693151A663B00CEC850 /* sun.png */,
+				478F9DF11540138900D14182 /* button-titlebar-home.png */,
 				4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */,
 				4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */,
 				4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */,
@@ -658,6 +673,11 @@
 				47BFEDC6153F0300002BF8F3 /* button-start-nieuw-spel.png in Resources */,
 				47BFEDC8153F04DF002BF8F3 /* button-speel-verder.png in Resources */,
 				47BFEDCA153F0DA1002BF8F3 /* map.png in Resources */,
+				478F9DF21540138900D14182 /* button-titlebar-home.png in Resources */,
+				478F9DF61540163B00D14182 /* block-yellow-team.png in Resources */,
+				478F9DF71540163B00D14182 /* block-blue-team.png in Resources */,
+				478F9DFA15401FB100D14182 /* overlay-team-blue.png in Resources */,
+				478F9DFB15401FB100D14182 /* overlay-team-yellow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
