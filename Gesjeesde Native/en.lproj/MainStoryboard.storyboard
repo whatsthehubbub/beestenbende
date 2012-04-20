@@ -606,7 +606,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pcn-Qj-exJ" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="368" width="240" height="42"/>
+                                <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Maak teamfoto">
@@ -621,7 +621,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJi-Na-9mH" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="368" width="110" height="42"/>
+                                <rect key="frame" x="40" y="418" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Opnieuw">
@@ -636,7 +636,7 @@
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmF-Sg-FnO" customClass="ArrowRight">
-                                <rect key="frame" x="170" y="368" width="110" height="42"/>
+                                <rect key="frame" x="170" y="418" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Klaar">
@@ -950,7 +950,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1pI-Nz-eIs" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="368" width="240" height="42"/>
+                                <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Maak foto">
@@ -962,17 +962,18 @@
                                 </state>
                                 <connections>
                                     <action selector="takeTeamPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="fWN-YO-kVo"/>
+                                    <segue destination="9Kf-oj-xZs" kind="push" id="qnz-9P-Xtb"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2Wx-Wc-oH5">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="sfJ-69-6FS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-clock.png" id="sfJ-69-6FS">
                                 <rect key="frame" x="40" y="84" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="8nd-K1-cks">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-stack-of-photos.png" id="8nd-K1-cks">
                                 <rect key="frame" x="252" y="84" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -998,9 +999,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hfm-BP-Gk7"/>
-                    <connections>
-                        <segue destination="9Kf-oj-xZs" kind="push" id="1Ok-Z1-TtB"/>
-                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="4394" y="475"/>
@@ -1014,6 +1012,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-yellow.png" id="5rM-Q8-Fw0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="gxx-Zg-zfy">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1049,11 +1051,11 @@
                                 <rect key="frame" x="36" y="116" width="248" height="247"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="hCE-HU-cP1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-clock.png" id="hCE-HU-cP1">
                                 <rect key="frame" x="40" y="84" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="x4T-Or-cM8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-stack-of-photos.png" id="x4T-Or-cM8">
                                 <rect key="frame" x="252" y="84" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1072,7 +1074,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Q1-KH-j0a" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="368" width="240" height="42"/>
+                                <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Klaar">
@@ -1084,8 +1086,16 @@
                                 </state>
                                 <connections>
                                     <action selector="takeTeamPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="RaO-L3-9eu"/>
+                                    <segue destination="7jx-Og-bWS" kind="push" id="wHb-5b-0Iw"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De tijd is op!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dfl-IA-BBZ">
+                                <rect key="frame" x="40" y="229.5" width="240" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1103,6 +1113,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-yellow.png" id="oK0-Kq-GFQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="cBf-6s-fSu">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1142,7 +1156,7 @@
                                     <segue destination="jlM-Ks-Kmv" kind="push" id="X5H-d2-ph1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw bereid je voor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tpg-Mh-feY" customClass="HeaderLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw/Geel bereid je voor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tpg-Mh-feY" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2284,6 +2298,8 @@
         <image name="button-titlebar-back.png" width="56" height="55"/>
         <image name="button-volgende.png" width="219" height="83"/>
         <image name="example-photos-of-features.png" width="381" height="274"/>
+        <image name="icon-clock.png" width="53" height="53"/>
+        <image name="icon-stack-of-photos.png" width="54" height="54"/>
         <image name="infographic-make-team-photo.png" width="293" height="222"/>
         <image name="map.png" width="492" height="499"/>
         <image name="overlay-team-blue.png" width="640" height="960"/>
