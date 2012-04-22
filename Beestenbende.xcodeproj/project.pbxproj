@@ -79,6 +79,7 @@
 		4E3326BA151A91B200CEC850 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3326B9151A91B200CEC850 /* MenuViewController.m */; };
 		4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */; };
 		4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E428204154425F8009FD991 /* MakeTeamsViewController.m */; };
+		4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamPrepareViewController.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
 		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
 		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
@@ -221,6 +222,8 @@
 		4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondIssueIntroductionViewController.m; sourceTree = "<group>"; };
 		4E428203154425F8009FD991 /* MakeTeamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTeamsViewController.h; sourceTree = "<group>"; };
 		4E428204154425F8009FD991 /* MakeTeamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamsViewController.m; sourceTree = "<group>"; };
+		4E42820715447EBC009FD991 /* TeamPrepareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPrepareViewController.h; sourceTree = "<group>"; };
+		4E42820815447EBD009FD991 /* TeamPrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamPrepareViewController.m; sourceTree = "<group>"; };
 		4E4D8F9D152CCFCD00E898D5 /* Features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Features.plist; sourceTree = "<group>"; };
 		4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentFeatureViewController.h; sourceTree = "<group>"; };
 		4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFeatureViewController.m; sourceTree = "<group>"; };
@@ -503,6 +506,8 @@
 				4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */,
 				4EC4012B152E09A10005EC5C /* TeamScoresViewController.h */,
 				4EC4012C152E09A10005EC5C /* TeamScoresViewController.m */,
+				4E42820715447EBC009FD991 /* TeamPrepareViewController.h */,
+				4E42820815447EBD009FD991 /* TeamPrepareViewController.m */,
 				4EAE98EF151A618A0051C926 /* ViewController.h */,
 				4EAE98F0151A618A0051C926 /* ViewController.m */,
 				4E80ADC8151FCA22001CBA7E /* WelcomeViewController.h */,
@@ -742,6 +747,7 @@
 				4EAF06D7153DAE6600BE1CAA /* ArrowRight.m in Sources */,
 				4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */,
 				4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */,
+				4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,6 +24,7 @@
     int secondsLeft;
     
     Game *game;
+    Team *team;
     
     CaptureSessionManager *csManager;
 }
@@ -31,6 +32,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
 @property (nonatomic, retain) IBOutlet UILabel *imagesLabel;
 @property (nonatomic, retain) IBOutlet UIImageView *pictureView;
+@property (nonatomic, retain) IBOutlet UIImageView *teamOverlay;
 
 @property (strong) IBOutlet UIButton *takePictureButton;
 @property (strong) IBOutlet UIButton *doneButton;

@@ -17,6 +17,7 @@
 @synthesize timeLabel;
 @synthesize imagesLabel;
 @synthesize pictureView;
+@synthesize teamOverlay;
 
 @synthesize takePictureButton;
 @synthesize doneButton;
@@ -46,13 +47,26 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
+    // Find the current team
+    team = game.team1;
+    if (team.tookFeaturePictures) {
+        team = game.team2;
+    }
+    
+    // Set the correct overlay for this team
+    if (team.number == 1) {
+        teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];
+    } else {
+        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+    }
+    
     // Start capture session and bind it to the image view
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
     csManager.continuous = YES;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictureTaken:) name:kImageCapturedSuccessfully object:nil];
     
-    secondsLeft = 60;
+    secondsLeft = 6;
     timeLabel.text =[NSString stringWithFormat:@"%d", secondsLeft];
     
     imagesLabel.text = @"0";
@@ -64,6 +78,7 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -82,8 +97,9 @@
         [self.timer invalidate];
         // If the time is up, call the next method
         
-        [takePictureButton setHidden:YES];
-        [doneButton setHidden:NO];
+        pictureView.hidden = YES;
+        takePictureButton.hidden = YES;
+        doneButton.hidden = NO;
     }
 }
 
@@ -103,8 +119,10 @@
 - (IBAction)next:(id)sender {
     [self.timer invalidate];
     
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
+    
     if (game.team1.tookFeaturePictures) {
-        // TODO these need resetting for the next round of picture taking
+        // TODO these need resetting to NO for both teams on the next round of picture taking
         game.team2.tookFeaturePictures = YES;
         // Go on to labelling
         [self performSegueWithIdentifier:@"PicturesDone" sender:self];
@@ -117,17 +135,13 @@
 
 - (void)pictureTaken:(NSNotification *)notification {
     UIImage *image = [notification.userInfo valueForKey:@"image"];
-    
-    // Find the current team
-    Team *team = game.team1;
-    if (team.tookFeaturePictures) {
-        team = game.team2;
-    }
-    imagesLabel.text = [NSString stringWithFormat:@"%d", team.featurePictures.count];
-    
+        
     // Save UIImage to team object
     [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
                                      [image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
+    
+    // Update the count of images
+    imagesLabel.text = [NSString stringWithFormat:@"%d", team.featurePictures.count];
 }
 
 #pragma mark - SwitchTeamViewControllerDelegate
