@@ -764,6 +764,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="previous:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="geP-FH-Yb8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="B0F-me-yY1">
                                 <rect key="frame" x="287" y="144" width="28" height="28"/>
@@ -776,12 +779,15 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="bFS-Qc-V8e"/>
+                                </connections>
                             </button>
-                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="Wv1-3L-7C1">
+                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="Wv1-3L-7C1">
                                 <rect key="frame" x="17.5" y="219" width="285" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="scrollPage" destination="gnf-ri-JiR" eventType="valueChanged" id="3YF-es-sZK"/>
+                                    <action selector="scrollPage:" destination="O1r-7e-Hsl" eventType="valueChanged" id="fVl-JQ-iKZ"/>
                                 </connections>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkL-UD-bNU" customClass="ArrowRight">
@@ -796,8 +802,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="Hgh-kK-144"/>
                                     <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="mSr-Hg-WQh"/>
-                                    <segue destination="mhP-gb-YWU" kind="push" id="SFQ-c5-a1T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LJQ-hh-xoc" customClass="BeestenButton">
@@ -842,6 +848,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Drn-EP-t1T"/>
+                    <connections>
+                        <outlet property="pageControl" destination="Wv1-3L-7C1" id="Uof-3Q-KA2"/>
+                        <outlet property="scrollView" destination="93b-Lr-hyL" id="cqJ-vK-5P9"/>
+                        <segue destination="mhP-gb-YWU" kind="push" identifier="Next" id="sz9-qc-ZZh"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="3432" y="-164"/>
@@ -898,7 +909,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="l4Q-Jh-6yB"/>
+                                    <action selector="back:" destination="p3a-E9-b1k" eventType="touchUpInside" id="yec-Nr-ira"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2374,6 +2385,14 @@
         </class>
         <class className="FeaturePictureExplanationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePictureExplanationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="previous:"/>
+                <relationship kind="action" name="scrollPage:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
         </class>
         <class className="FeaturePictureViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePictureViewController.h"/>

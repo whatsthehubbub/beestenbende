@@ -14,6 +14,9 @@
 
 @implementation FeaturePictureExplanationViewController
 
+@synthesize scrollView;
+@synthesize pageControl;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 4, self.scrollView.frame.size.height);
 }
 
 - (void)viewDidUnload
@@ -44,6 +49,40 @@
     if ([segue.identifier isEqualToString:@"FeatureExample"]) {
         FeatureExampleViewController *fev = segue.destinationViewController;
         fev.delegate = self;
+    }
+}
+
+- (IBAction)scrollPage:(id)sender {
+    CGRect frame;
+    frame.origin.x = self.scrollView.frame.size.width * self.pageControl.currentPage;
+    frame.origin.y = 0;
+    frame.size = self.scrollView.frame.size;
+    
+    [self.scrollView scrollRectToVisible:frame animated:YES];
+}
+
+- (IBAction)previous:(id)sender {
+    if (self.pageControl.currentPage > 0) {
+        self.pageControl.currentPage -= 1;
+        
+        [self scrollPage:self];
+    }
+}
+
+- (IBAction)next:(id)sender {
+    if (self.pageControl.currentPage < 4) {
+        self.pageControl.currentPage += 1;
+        [self scrollPage:self];
+    }
+}
+
+- (IBAction)done:(id)sender {
+    NSLog(@"Page %d", self.pageControl.currentPage);
+    
+    if (self.pageControl.currentPage != 3) {
+        [self next:self];
+    } else {
+        [self performSegueWithIdentifier:@"Next" sender:self];
     }
 }
 
