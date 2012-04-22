@@ -1016,7 +1016,7 @@
                     <navigationItem key="navigationItem" id="Hfm-BP-Gk7"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4394" y="475"/>
+            <point key="canvasLocation" x="4350" y="475"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="YH2-AU-xBp">
@@ -1117,7 +1117,7 @@
                     <navigationItem key="navigationItem" id="VYD-QR-b1s"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4874" y="475"/>
+            <point key="canvasLocation" x="4770" y="475"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L1C-Nq-hfS">
@@ -1365,7 +1365,7 @@
                     <navigationItem key="navigationItem" id="NB1-ED-2ox"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4874" y="-165"/>
+            <point key="canvasLocation" x="4786" y="-164"/>
         </scene>
         <!--Picture Label View Controller-->
         <scene sceneID="IC2-hg-Dfa">
@@ -1501,6 +1501,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ETL-EA-CCI" kind="push" identifier="LabellingDone" id="HcG-00-pef"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1516,7 +1519,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5355" y="-164"/>
+            <point key="canvasLocation" x="5227" y="-164"/>
         </scene>
         <!--Feature Picker View Controller-->
         <scene sceneID="mDs-fL-2SJ">
@@ -1593,7 +1596,7 @@
                     <navigationItem key="navigationItem" id="Kdu-jU-ptz"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5355" y="475"/>
+            <point key="canvasLocation" x="5299" y="475"/>
         </scene>
         <!--Labelling Results View Controller-->
         <scene sceneID="9hp-qI-2LF">
@@ -1743,7 +1746,7 @@
                     <navigationItem key="navigationItem" id="Jic-0N-3zS"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5835" y="-164"/>
+            <point key="canvasLocation" x="5751" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jvw-Ym-Q31">
@@ -1783,7 +1786,7 @@
                     <navigationItem key="navigationItem" id="AzQ-pQ-5iQ"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5835" y="475"/>
+            <point key="canvasLocation" x="5751" y="475"/>
         </scene>
         <!--Present Feature View Controller-->
         <scene sceneID="n2N-b1-R7d">
