@@ -51,7 +51,7 @@
 //    [self.titleLabel setShadowOffset:CGSizeMake(0.0f, -1.0f)];
     
     self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-    self.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 30);
+    self.contentEdgeInsets = UIEdgeInsetsMake(0, 30, 0, 0);
 }
 
 
