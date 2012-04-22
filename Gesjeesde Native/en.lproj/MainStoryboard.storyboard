@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -484,11 +484,11 @@
             </objects>
             <point key="canvasLocation" x="1994" y="-805"/>
         </scene>
-        <!--View Controller-->
+        <!--Make Teams View Controller-->
         <scene sceneID="QjV-tY-JgD">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfR-Fv-pdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="i3Y-tE-tAM" sceneMemberID="viewController">
+                <viewController id="i3Y-tE-tAM" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDj-5G-06t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -576,6 +576,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="toF-GL-5cC"/>
+                    <connections>
+                        <outlet property="teamBlueLabel" destination="WaG-2p-2QK" id="2DQ-5j-tQc"/>
+                        <outlet property="teamYellowLabel" destination="KXg-pX-3lN" id="rJD-t2-M5Z"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1513" y="-805"/>
@@ -2400,6 +2404,13 @@
             <relationships>
                 <relationship kind="outlet" name="team1Image" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team2Image" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="MakeTeamsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MakeTeamsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="teamBlueLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamYellowLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MenuViewController" superclassName="UIViewController">
