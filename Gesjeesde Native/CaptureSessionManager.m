@@ -10,6 +10,7 @@
 
 @implementation CaptureSessionManager
 
+@synthesize continuous;
 @synthesize previewLayer;
 @synthesize captureSession;
 @synthesize stillImageOutput;
@@ -18,6 +19,8 @@
 // and: http://www.musicalgeometry.com/?p=1297
 - (id)initWithImageView:(UIImageView *)iView {
     if ((self = [super init])) {
+        self.continuous = NO;
+        
 		self.captureSession = [[AVCaptureSession alloc] init];
         imageView = iView;
         
@@ -94,19 +97,41 @@
         NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
         UIImage *image = [[UIImage alloc] initWithData:imageData];
         
-        imageView.contentMode = UIViewContentModeScaleAspectFill;
-        [imageView setImage:image];
-        
-        // Slow
-        // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
-        
-        [self.previewLayer removeFromSuperlayer];
+        if (!continuous) {
+            // Pass the data using the UIImageView
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
+            [imageView setImage:image];
+            
+            // Slow
+            // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
+            
+            [self.previewLayer removeFromSuperlayer];
+        } else {
+            // TODO flash the image view to show that a picture has been taken
+            
+            // Pass the data in some other way
+            NSDictionary *userInfo = [[NSMutableDictionary alloc] init];
+            [userInfo setValue:image forKey:@"Image"];
+            
+            [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:self userInfo:userInfo];
+        }
         
         // TODO restart capture session if we want to take another picture
         // [self.captureSession stopRunning];
         
         // [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:nil];
     }];
+}
+
+- (void)restartPreview {
+    if (!continuous) {
+        // Blank image
+        imageView.image = nil;
+        
+        // Start capture session again
+        [imageView.layer addSublayer:previewLayer];
+        [captureSession startRunning];
+    }
 }
 
 - (void)saved {

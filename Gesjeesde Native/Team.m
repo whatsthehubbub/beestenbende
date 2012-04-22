@@ -13,7 +13,9 @@
 @synthesize number;
 @synthesize picture;
 
+@synthesize tookFeaturePictures;
 @synthesize featurePictures;
+
 @synthesize points;
 @synthesize totalPoints;
 
@@ -23,6 +25,7 @@
     if (self) {
         self.number = teamNumber;
         
+        self.tookFeaturePictures = NO;
         self.featurePictures = [[NSMutableArray alloc] init];
         
         self.points = 0;

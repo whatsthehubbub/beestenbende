@@ -10,9 +10,14 @@
 #import <AVFoundation/AVFoundation.h>
 #import <ImageIO/ImageIO.h>
 
+#define kImageCapturedSuccessfully @"imageCapturedSuccessfully"
+
 @interface CaptureSessionManager : NSObject {
     UIImageView *imageView;
+    bool continuous;
 }
+
+@property (readwrite) bool continuous;
 
 @property (retain) AVCaptureVideoPreviewLayer *previewLayer;
 @property (retain) AVCaptureSession *captureSession;
@@ -21,5 +26,6 @@
 - (id)initWithImageView:(UIImageView *)iView;
 
 - (void)captureStillImage;
+- (void)restartPreview;
 
 @end

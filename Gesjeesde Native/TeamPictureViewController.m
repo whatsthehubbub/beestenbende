@@ -79,11 +79,7 @@
 }
 
 - (IBAction)takeTeamPictureAgain:(id)sender {
-    // Blank image
-    teamPictureView.image = nil;    
-    // Start capture session again for team 2
-    [teamPictureView.layer addSublayer:csManager.previewLayer];
-    [csManager.captureSession startRunning];
+    [csManager restartPreview];
     
     self.takeTeamPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;

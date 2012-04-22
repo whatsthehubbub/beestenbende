@@ -58,8 +58,17 @@
 }
 
 - (IBAction)nextIssue:(id)sender {
-    // Go to the first screen of the second issue
-    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueIntroduction"];
+    NSString *controllerIdentifier = @"";
+    
+    if (game.issue == 1) {
+        // Go to the first screen of the second issue
+        controllerIdentifier = @"SecondIssueIntroduction";
+    } else {
+        // Go to the first screen of the dragon
+        controllerIdentifier = @"FinalIssueIntroduction";
+    }
+
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:controllerIdentifier];
     
     [self.navigationController pushViewController:viewController animated:YES];
 }

@@ -19,6 +19,7 @@
     int number;
     UIImage *picture;
     
+    bool tookFeaturePictures;
     NSMutableArray *featurePictures;
     
     int points;
@@ -28,6 +29,7 @@
 @property (readwrite) int number;
 @property (nonatomic, retain) UIImage *picture;
 
+@property (readwrite) bool tookFeaturePictures;
 @property (nonatomic, retain) NSMutableArray *featurePictures;
 
 @property (readwrite) int points;

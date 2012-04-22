@@ -11,37 +11,43 @@
 #import "AppDelegate.h"
 #import "FeaturePicture.h"
 #import "SwitchTeamViewController.h"
+#import "CaptureSessionManager.h"
+#import "UIImage+Extras.h"
 
-@interface FeaturePictureViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, SwitchTeamViewControllerDelegate> {
-    UILabel *titleLabel;
+@interface FeaturePictureViewController : UIViewController <SwitchTeamViewControllerDelegate> {
     UILabel *timeLabel;
+    UILabel *imagesLabel;
     
-    UIView *imagesView;
+    UIImageView *pictureView;
     
     NSTimer *timer;
     int secondsLeft;
     
     Game *game;
     
-    int currentTeamNumber;
+    CaptureSessionManager *csManager;
 }
 
-@property (assign) int currentTeamNumber;
-
-@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
-@property (nonatomic, retain) IBOutlet UIView *imagesView;
+@property (nonatomic, retain) IBOutlet UILabel *imagesLabel;
+@property (nonatomic, retain) IBOutlet UIImageView *pictureView;
+
+@property (strong) IBOutlet UIButton *takePictureButton;
+@property (strong) IBOutlet UIButton *doneButton;
 
 @property (nonatomic, retain) NSTimer *timer;
 @property (readwrite) int secondsLeft;
 
 @property (strong) Game *game;
 
+@property (strong) CaptureSessionManager *csManager;
+
 - (void)startTimer;
 - (void)decrementTimer:(NSTimer *)theTimer;
 
 - (IBAction)takeFeaturePicture:(id)sender;
 - (IBAction)next:(id)sender;
+- (void)pictureTaken:(NSNotification *)notification;
 
 
 
