@@ -103,14 +103,6 @@
     }
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"SwitchTeams"]) {
-        
-        SwitchTeamViewController *stvc = segue.destinationViewController;
-        stvc.delegate = self;
-    }
-}
-
 - (void)startTimer {
     // Timer code from: http://www.herbert-siojo.com/2011/04/19/drawing-a-countdown-timer-ios/
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer:) userInfo:nil repeats:YES];
@@ -142,22 +134,6 @@
     
     // Update the count of images
     imagesLabel.text = [NSString stringWithFormat:@"%d", team.featurePictures.count];
-}
-
-#pragma mark - SwitchTeamViewControllerDelegate
-
-- (void)switchDone:(SwitchTeamViewController *)controller {
-    // set everything in order here for team 2
-//    self.currentTeamNumber = 2;
-//    [self.titleLabel setText:@"Team Seba: fotografeer bewijs"];        
-    
-//    for (UIView *view in self.imagesView.subviews) {
-//        [view removeFromSuperview];
-//    }
-    
-    [self startTimer];
-    
-    [self.navigationController dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark -

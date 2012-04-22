@@ -10,11 +10,10 @@
 
 #import "AppDelegate.h"
 #import "FeaturePicture.h"
-#import "SwitchTeamViewController.h"
 #import "CaptureSessionManager.h"
 #import "UIImage+Extras.h"
 
-@interface FeaturePictureViewController : UIViewController <SwitchTeamViewControllerDelegate> {
+@interface FeaturePictureViewController : UIViewController {
     UILabel *timeLabel;
     UILabel *imagesLabel;
     
