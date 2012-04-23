@@ -373,13 +373,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="tweede kwestie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6sw-U9-6Ao">
-                                <rect key="frame" x="78" y="100" width="119" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="4qe-Ve-8Bk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Ec-4U-hD9" customClass="ArrowRight">
                                 <rect key="frame" x="190" y="418" width="110" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -396,6 +393,14 @@
                                     <segue destination="pZK-6x-SL0" kind="push" identifier="Next" id="Wpf-fO-0Zr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek de zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tGy-Uw-Cbc" customClass="HeaderLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1636,8 +1641,8 @@
                                     <segue destination="Kgz-tg-9iE" kind="push" id="q2r-Gm-pvW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Overtuig de…" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9KU-AZ-Jh3">
-                                <rect key="frame" x="86" y="70" width="106" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Overtuig de zeepaling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9KU-AZ-Jh3">
+                                <rect key="frame" x="86" y="70" width="166" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -2200,28 +2205,28 @@
                                 <rect key="frame" x="40" y="70" width="240" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kijk, dat bedoelen we nou. Hij maakt er een bende van. Help ons bewijzen dat hij geen vogel is." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QW9-mv-ENO" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="We moeten bewijzen dat de zeepaling geen reptiel is." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QW9-mv-ENO" customClass="NormalLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="We zoeken bewijzen dat de eekhoorn geen vogel is. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ble-pM-tnV" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bedenk je: wat zijn dingen die alleen reptielen hebben?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ble-pM-tnV" customClass="NormalLabel">
                                         <rect key="frame" x="240" y="0.0" width="240" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bedenk je: wat zijn dingen die alleen vogels hebben? En wat is typsich voor zoogdieren?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nzt-aD-pqC" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="En wat is typisch voor vissen?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nzt-aD-pqC" customClass="NormalLabel">
                                         <rect key="frame" x="480" y="0.0" width="240" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer deze kenmerken van vogels en zoogdieren. Deze laten we straks aan hem zien." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="khc-Bw-nEB" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer deze kenmerken van reptielen en vissen. Deze laten we straks aan hem zien." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="khc-Bw-nEB" customClass="NormalLabel">
                                         <rect key="frame" x="720" y="0.0" width="240" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -2375,6 +2380,196 @@
         <image name="speech-bubble-twin-screen-19.png" width="533" height="559"/>
         <image name="toggle-trash-off.png" width="80" height="76"/>
     </resources>
+    <classes>
+        <class className="ArrowRight" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArrowRight.h"/>
+        </class>
+        <class className="BeestenButton" superclassName="UIButton">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BeestenButton.h"/>
+        </class>
+        <class className="CreditsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="ExplainFeatureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExplainFeatureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="explanationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="featureLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FeatureExampleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeatureExampleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+        <class className="FeaturePickerViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePickerViewController.h"/>
+        </class>
+        <class className="FeaturePictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FeaturePictureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="takeFeaturePicture:"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imagesLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pictureView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="takePictureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="FirstIssueExplanationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstIssueExplanationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="previous:"/>
+                <relationship kind="action" name="scrollPage:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="FirstIssueIntroductionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstIssueIntroductionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="previous:"/>
+                <relationship kind="action" name="scrollPage"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="HeaderLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeaderLabel.h"/>
+        </class>
+        <class className="LabellingResultsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LabellingResultsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="team1Image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team2Image" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="MakeTeamsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MakeTeamsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="teamBlueLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamYellowLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MenuViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuViewController.h"/>
+        </class>
+        <class className="NormalLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NormalLabel.h"/>
+        </class>
+        <class className="PictureLabelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PictureLabelViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="deleted:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="previous:"/>
+                <relationship kind="outlet" name="currentImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="currentLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="deleteButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="overlayImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="PresentFeatureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PresentFeatureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="yesNo:"/>
+                <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="featureImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="teamLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="yesNoButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="PresentResultViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PresentResultViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="proofsRequiredLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1featureImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team1featureLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1pointsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2featureImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team2featureLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2pointsLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="SecondIssueExplanationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondIssueExplanationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="previous:"/>
+                <relationship kind="action" name="scrollPage:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="SecondIssueIntroductionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondIssueIntroductionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+        <class className="TeamFeaturePickerViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamFeaturePickerViewController.h"/>
+        </class>
+        <class className="TeamPictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPictureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneWithPicture:"/>
+                <relationship kind="action" name="takeTeamPicture:"/>
+                <relationship kind="action" name="takeTeamPictureAgain:"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="takePictureAgainButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="takeTeamPictureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="teamPictureView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="TeamPrepareViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPrepareViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="TeamScoresViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamScoresViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="nextIssue:"/>
+                <relationship kind="outlet" name="team1ScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2ScoreLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="WelcomeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="done"/>
+                <relationship kind="action" name="next"/>
+                <relationship kind="action" name="previous"/>
+                <relationship kind="action" name="scrollPage"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
@@ -2382,5 +2577,7 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="all-Ba-Vs9"/>
+        <segue reference="q2r-Gm-pvW"/>
+        <segue reference="Aa8-AL-jFN"/>
     </inferredMetricsTieBreakers>
 </document>
