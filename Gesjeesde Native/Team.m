@@ -25,8 +25,8 @@
     if (self) {
         self.number = teamNumber;
         
-        self.tookFeaturePictures = NO;
-        self.featurePictures = [[NSMutableArray alloc] init];
+        tookFeaturePictures = NO;
+        featurePictures = [[NSMutableArray alloc] init];
         
         self.points = 0;
         self.totalPoints = 0;
@@ -49,6 +49,16 @@
     NSString *fullPathToFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"Team-%@-image", [self getTeamName]]];
     
     return fullPathToFile;
+}
+
+- (bool)allFeaturePicturesLabelledOrDeleted {
+    for (FeaturePicture *fp in self.featurePictures) {
+        if ([fp.feature isEqualToString:@""] && !fp.deleted) {
+            return false;
+        }
+    }
+    
+    return true;
 }
 
 - (void)purgeDeletedFeaturePictures {

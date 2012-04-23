@@ -16,9 +16,11 @@
 
 @synthesize featureButton;
 @synthesize deleteButton;
+@synthesize doneButton;
 @synthesize currentImage;
+@synthesize overlayImage;
 
-@synthesize teamLabel;
+@synthesize headerLabel;
 @synthesize currentLabel;
 
 @synthesize currentPictureIndex;
@@ -43,8 +45,17 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
+    // Find the current team
     self.currentTeam = game.team1;
-    [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", self.currentTeam.getTeamName]];
+    if (currentTeam.labelledFeaturePictures) {
+        currentTeam = game.team2;
+    }
+    
+    if (currentTeam.number != 1) {
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+    }
+    
+    self.currentPictureIndex = 0;
     
     [self displayPicture];
 }
@@ -84,38 +95,32 @@
 
 -(void)displayPicture {
     if (self.currentTeam.featurePictures.count > 0) {
-        FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:currentPictureIndex];
-        
-        self.currentImage.image = fp.image;
-        if (fp.deleted) {
-            [self.featureButton setTitle:@"Wordt verwijderd" forState:UIControlStateNormal];
-        } else {
-            [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
-        }
+        FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];
         
         [self.currentLabel setText:[NSString stringWithFormat:@"Foto %d van %d", self.currentPictureIndex+1, self.currentTeam.featurePictures.count]];
         
+        self.currentImage.image = fp.image;
+        
         if (fp.deleted) {
             [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-on.png"] forState:UIControlStateNormal];
+            [self.featureButton setTitle:@"Wordt verwijderd" forState:UIControlStateNormal];
         } else {
             [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-off.png"] forState:UIControlStateNormal];
+            [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
         }
     }
 }
 
 -(IBAction)deleted:(id)sender {
-    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:currentPictureIndex];
+    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];
     fp.deleted = !fp.deleted;
     
-    if (fp.deleted) {
-        fp.feature = @"";
-        [self.featureButton setTitle:@"Wordt verwijderd" forState:UIControlStateNormal];
-        
-        [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-on.png"] forState:UIControlStateNormal];
+    [self displayPicture];
+
+    if ([currentTeam allFeaturePicturesLabelledOrDeleted]) {
+        doneButton.hidden = NO;
     } else {
-        [self.featureButton setTitle:@"" forState:UIControlStateNormal];
-        
-        [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-off.png"] forState:UIControlStateNormal];
+        doneButton.hidden = YES;
     }
 }
 
@@ -126,8 +131,26 @@
     [self.currentTeam purgeDeletedFeaturePictures];
     
     if (self.currentTeam.number == 1) {
-        //
+        self.currentTeam.labelledFeaturePictures = YES;
+        
+        // Start segue back to this view for other team to take picture
+        [UIView beginAnimations:@"View Flip" context:nil];
+        [UIView setAnimationDuration:0.80];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
+        
+        // Changes to this ViewController
+        self.currentTeam = game.team2;
+        self.currentPictureIndex = 0;
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        headerLabel.text = @"Geel benoem je foto's";
+
+        [self displayPicture];
+            
+        [UIView commitAnimations];
     } else {
+        self.currentTeam.labelledFeaturePictures = YES;
+        
         if (self.game.issue == 1) {
             [self performSegueWithIdentifier:@"LabellingDone" sender:self];
         } else {
@@ -139,13 +162,18 @@
 #pragma mark - FeaturePickerViewControllerDelegate
 
 -(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)feature {
-
     [self.featureButton setTitle:feature forState:UIControlStateNormal];
     
-    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:currentPictureIndex];
+    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];
     fp.feature = feature;
     
     [self.navigationController popViewControllerAnimated:YES];
+    
+    if ([currentTeam allFeaturePicturesLabelledOrDeleted]) {
+        doneButton.hidden = NO;
+    } else {
+        doneButton.hidden = YES;
+    }
 }
 
 @end

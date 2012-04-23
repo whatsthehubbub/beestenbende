@@ -15,7 +15,6 @@
     UIButton *featureButton;
     UIButton *deleteButton;
     
-    UILabel *teamLabel;
     UILabel *currentLabel;
     
     UIImageView *currentImage;
@@ -29,11 +28,13 @@
 @property (nonatomic, retain) IBOutlet UIButton *featureButton;
 @property (nonatomic, retain) IBOutlet UIButton *deleteButton;
 @property (nonatomic, retain) IBOutlet UIImageView *currentImage;
+@property (nonatomic, retain) IBOutlet UIImageView *overlayImage;
+@property (nonatomic, retain) IBOutlet UIButton *doneButton;
 
-@property (nonatomic, retain) IBOutlet UILabel *teamLabel;
+@property (nonatomic, retain) IBOutlet UILabel *headerLabel;
 @property (nonatomic, retain) IBOutlet UILabel *currentLabel;
 
-@property (assign) int currentPictureIndex;
+@property (readwrite) int currentPictureIndex;
 
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
