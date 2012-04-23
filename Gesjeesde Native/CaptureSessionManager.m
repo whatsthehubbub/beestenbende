@@ -109,10 +109,9 @@
         } else {
             // TODO flash the image view to show that a picture has been taken
             
-            // Pass the data in some other way
-            NSDictionary *userInfo = [[NSMutableDictionary alloc] init];
-            [userInfo setValue:image forKey:@"Image"];
-            
+            // Pass the data in some other way            
+            NSDictionary *userInfo = [NSDictionary dictionaryWithObject:image forKey:@"image"];
+
             [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:self userInfo:userInfo];
         }
         

@@ -54,9 +54,8 @@
     }
     
     // Set the correct overlay for this team
-    if (team.number == 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];
-    } else {
+    teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];
+    if (team.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
@@ -66,7 +65,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictureTaken:) name:kImageCapturedSuccessfully object:nil];
     
-    secondsLeft = 60;
+    secondsLeft = 6;
     timeLabel.text =[NSString stringWithFormat:@"%d", secondsLeft];
     
     imagesLabel.text = @"0";
@@ -127,7 +126,7 @@
 
 - (void)pictureTaken:(NSNotification *)notification {
     UIImage *image = [notification.userInfo valueForKey:@"image"];
-        
+
     // Save UIImage to team object
     [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
                                      [image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
