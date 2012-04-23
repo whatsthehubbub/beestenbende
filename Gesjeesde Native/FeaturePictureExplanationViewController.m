@@ -79,7 +79,7 @@
 - (IBAction)done:(id)sender {
     NSLog(@"Page %d", self.pageControl.currentPage);
     
-    if (self.pageControl.currentPage != 3) {
+    if (NO && /* Short circuit for quicker testing. TODO */ self.pageControl.currentPage != 3) {
         [self next:self];
     } else {
         [self performSegueWithIdentifier:@"Next" sender:self];
