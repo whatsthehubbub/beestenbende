@@ -47,9 +47,6 @@
     
     // Find the current team
     self.currentTeam = game.team1;
-    if (currentTeam.labelledFeaturePictures) {
-        currentTeam = game.team2;
-    }
     
     if (currentTeam.number != 1) {
         overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
@@ -131,8 +128,6 @@
     [self.currentTeam purgeDeletedFeaturePictures];
     
     if (self.currentTeam.number == 1) {
-        self.currentTeam.labelledFeaturePictures = YES;
-        
         // Start segue back to this view for other team to take picture
         [UIView beginAnimations:@"View Flip" context:nil];
         [UIView setAnimationDuration:0.80];
@@ -149,8 +144,6 @@
             
         [UIView commitAnimations];
     } else {
-        self.currentTeam.labelledFeaturePictures = YES;
-        
         if (self.game.issue == 1) {
             [self performSegueWithIdentifier:@"LabellingDone" sender:self];
         } else {
