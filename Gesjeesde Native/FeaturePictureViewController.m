@@ -66,7 +66,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictureTaken:) name:kImageCapturedSuccessfully object:nil];
     
-    secondsLeft = 6;
+    secondsLeft = 60;
     timeLabel.text =[NSString stringWithFormat:@"%d", secondsLeft];
     
     imagesLabel.text = @"0";
