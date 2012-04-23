@@ -47,7 +47,7 @@
 		47BFEDCA153F0DA1002BF8F3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC9153F0DA1002BF8F3 /* map.png */; };
 		4E08C30F1524723D00F3CDC7 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E08C30E1524723D00F3CDC7 /* 15.png */; };
 		4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */; };
-		4E08C31615248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */; };
+		4E08C31615248CAA00F3CDC7 /* FirstIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */; };
 		4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */; };
 		4E332694151A663B00CEC850 /* bg-0-plain.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332677151A663B00CEC850 /* bg-0-plain.png */; };
 		4E332699151A663B00CEC850 /* bg-5-intro-mission-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */; };
@@ -183,8 +183,8 @@
 		4E08C30E1524723D00F3CDC7 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
 		4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureExampleViewController.h; sourceTree = "<group>"; };
 		4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureExampleViewController.m; sourceTree = "<group>"; };
-		4E08C31415248CAA00F3CDC7 /* FeaturePictureExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePictureExplanationViewController.h; sourceTree = "<group>"; };
-		4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePictureExplanationViewController.m; sourceTree = "<group>"; };
+		4E08C31415248CAA00F3CDC7 /* FirstIssueExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FirstIssueExplanationViewController.h; sourceTree = "<group>"; };
+		4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueExplanationViewController.m; sourceTree = "<group>"; };
 		4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplainFeatureViewController.h; sourceTree = "<group>"; };
 		4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplainFeatureViewController.m; sourceTree = "<group>"; };
 		4E332677151A663B00CEC850 /* bg-0-plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-0-plain.png"; sourceTree = "<group>"; };
@@ -469,8 +469,8 @@
 				4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */,
 				4EDEFAD8152B426300324EDB /* FeaturePickerViewController.h */,
 				4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */,
-				4E08C31415248CAA00F3CDC7 /* FeaturePictureExplanationViewController.h */,
-				4E08C31515248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m */,
+				4E08C31415248CAA00F3CDC7 /* FirstIssueExplanationViewController.h */,
+				4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */,
 				4E6D61ED1525F799009D27B0 /* FeaturePictureViewController.h */,
 				4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */,
 				4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */,
@@ -718,7 +718,7 @@
 				4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */,
 				4E80ADCA151FCA22001CBA7E /* WelcomeViewController.m in Sources */,
 				4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */,
-				4E08C31615248CAA00F3CDC7 /* FeaturePictureExplanationViewController.m in Sources */,
+				4E08C31615248CAA00F3CDC7 /* FirstIssueExplanationViewController.m in Sources */,
 				4EA62E2A15249B4100E74E64 /* Game.m in Sources */,
 				4EA62E2E15249B9D00E74E64 /* Team.m in Sources */,
 				4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */,
