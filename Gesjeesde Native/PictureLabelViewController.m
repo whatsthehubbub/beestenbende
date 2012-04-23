@@ -139,6 +139,7 @@
         self.currentPictureIndex = 0;
         overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
         headerLabel.text = @"Geel benoem je foto's";
+        doneButton.hidden = YES;
 
         [self displayPicture];
             
