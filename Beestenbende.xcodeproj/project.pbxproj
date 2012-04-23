@@ -84,7 +84,6 @@
 		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
 		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
 		4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */; };
-		4E6C07F0152CA3F000F52B61 /* SwitchTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C07EF152CA3F000F52B61 /* SwitchTeamViewController.m */; };
 		4E6D61EF1525F79A009D27B0 /* FeaturePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */; };
 		4E80ADCA151FCA22001CBA7E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */; };
 		4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */; };
@@ -231,8 +230,6 @@
 		4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamFeaturePickerViewController.m; sourceTree = "<group>"; };
 		4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentResultViewController.h; sourceTree = "<group>"; };
 		4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentResultViewController.m; sourceTree = "<group>"; };
-		4E6C07EE152CA3F000F52B61 /* SwitchTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchTeamViewController.h; sourceTree = "<group>"; };
-		4E6C07EF152CA3F000F52B61 /* SwitchTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchTeamViewController.m; sourceTree = "<group>"; };
 		4E6D61ED1525F799009D27B0 /* FeaturePictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePictureViewController.h; sourceTree = "<group>"; };
 		4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePictureViewController.m; sourceTree = "<group>"; };
 		4E80ADC8151FCA22001CBA7E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
@@ -478,8 +475,8 @@
 				4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */,
 				4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */,
 				4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */,
-				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
 				4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */,
+				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
 				4E428203154425F8009FD991 /* MakeTeamsViewController.h */,
 				4E428204154425F8009FD991 /* MakeTeamsViewController.m */,
@@ -498,8 +495,6 @@
 				4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */,
 				4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */,
 				4EAE98E1151A618A0051C926 /* Supporting Files */,
-				4E6C07EE152CA3F000F52B61 /* SwitchTeamViewController.h */,
-				4E6C07EF152CA3F000F52B61 /* SwitchTeamViewController.m */,
 				4E4D8FA8152D05EE00E898D5 /* TeamFeaturePickerViewController.h */,
 				4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */,
 				4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */,
@@ -732,7 +727,6 @@
 				4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */,
 				4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */,
 				4EDEFADD152B625900324EDB /* PictureLabelViewController.m in Sources */,
-				4E6C07F0152CA3F000F52B61 /* SwitchTeamViewController.m in Sources */,
 				4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */,
 				4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */,
 				4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */,

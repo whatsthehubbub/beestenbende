@@ -65,11 +65,6 @@
         FeaturePickerViewController *fpvc = segue.destinationViewController;
         fpvc.delegate = self;
     }
-    
-    if ([segue.identifier isEqualToString:@"SwitchTeams"]) {
-        SwitchTeamViewController *stvc = segue.destinationViewController;
-        stvc.delegate = self;
-    }
 }
 
 -(IBAction)next:(id)sender {
@@ -131,7 +126,7 @@
     [self.currentTeam purgeDeletedFeaturePictures];
     
     if (self.currentTeam.number == 1) {
-        [self performSegueWithIdentifier:@"SwitchTeams" sender:self];
+        //
     } else {
         if (self.game.issue == 1) {
             [self performSegueWithIdentifier:@"LabellingDone" sender:self];
@@ -139,18 +134,6 @@
             [self performSegueWithIdentifier:@"LabellingDoneSecond" sender:self];
         }
     }
-}
-
-- (void)switchDone:(SwitchTeamViewController *)controller {
-    self.currentTeam = game.team2;
-    [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", self.currentTeam.getTeamName]];
-    
-    self.currentPictureIndex = 0;
-    
-    [self displayPicture];
-    
-    [self.navigationController dismissModalViewControllerAnimated:YES];
-
 }
 
 #pragma mark - FeaturePickerViewControllerDelegate
