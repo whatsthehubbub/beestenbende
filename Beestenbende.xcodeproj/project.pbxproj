@@ -80,6 +80,7 @@
 		4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */; };
 		4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E428204154425F8009FD991 /* MakeTeamsViewController.m */; };
 		4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamPrepareViewController.m */; };
+		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
 		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
 		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
@@ -183,7 +184,7 @@
 		4E08C30E1524723D00F3CDC7 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
 		4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureExampleViewController.h; sourceTree = "<group>"; };
 		4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureExampleViewController.m; sourceTree = "<group>"; };
-		4E08C31415248CAA00F3CDC7 /* FirstIssueExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FirstIssueExplanationViewController.h; sourceTree = "<group>"; };
+		4E08C31415248CAA00F3CDC7 /* FirstIssueExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueExplanationViewController.h; sourceTree = "<group>"; };
 		4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueExplanationViewController.m; sourceTree = "<group>"; };
 		4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplainFeatureViewController.h; sourceTree = "<group>"; };
 		4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplainFeatureViewController.m; sourceTree = "<group>"; };
@@ -223,6 +224,8 @@
 		4E428204154425F8009FD991 /* MakeTeamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamsViewController.m; sourceTree = "<group>"; };
 		4E42820715447EBC009FD991 /* TeamPrepareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPrepareViewController.h; sourceTree = "<group>"; };
 		4E42820815447EBD009FD991 /* TeamPrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamPrepareViewController.m; sourceTree = "<group>"; };
+		4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondIssueExplanationViewController.h; sourceTree = "<group>"; };
+		4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondIssueExplanationViewController.m; sourceTree = "<group>"; };
 		4E4D8F9D152CCFCD00E898D5 /* Features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Features.plist; sourceTree = "<group>"; };
 		4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentFeatureViewController.h; sourceTree = "<group>"; };
 		4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFeatureViewController.m; sourceTree = "<group>"; };
@@ -488,6 +491,8 @@
 				4EDEFAD3152B304D00324EDB /* Model */,
 				4EDEFADB152B625800324EDB /* PictureLabelViewController.h */,
 				4EDEFADC152B625800324EDB /* PictureLabelViewController.m */,
+				4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */,
+				4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */,
 				4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */,
 				4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */,
 				4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */,
@@ -742,6 +747,7 @@
 				4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */,
 				4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */,
 				4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */,
+				4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

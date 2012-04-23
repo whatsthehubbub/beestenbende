@@ -32,7 +32,7 @@
         
         self.features = (NSArray *)[root objectForKey:@"Root"];
         
-        issue = 1; // We start at the first issue
+        issue = 2; // We start at the first issue
         
         self.turn = 1;
         self.required = 4;
