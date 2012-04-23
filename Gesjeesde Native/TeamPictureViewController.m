@@ -110,8 +110,14 @@
     } else {
         game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
 
-        // Start segue to the next view to start the game
-        [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];
+        if (game.issue == 1) {
+            // Start segue to the next view to start the game
+            [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];
+        } else if (game.issue == 2) {
+            [self performSegueWithIdentifier:@"SecondIssueIntroduction" sender:sender];
+        } else {
+            [self performSegueWithIdentifier:@"FinalIssueIntroduction" sender:sender];
+        }
     }
 }
 @end
