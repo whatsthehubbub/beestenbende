@@ -81,6 +81,7 @@
 		4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E428204154425F8009FD991 /* MakeTeamsViewController.m */; };
 		4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamPrepareViewController.m */; };
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
+		4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
 		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
 		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
@@ -112,7 +113,7 @@
 		4EAF06D7153DAE6600BE1CAA /* ArrowRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF06D6153DAE6600BE1CAA /* ArrowRight.m */; };
 		4EAF06DA153DBB2700BE1CAA /* button-pijl-links@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06D8153DBB2700BE1CAA /* button-pijl-links@2x.png */; };
 		4EAF06DB153DBB2700BE1CAA /* button-pijl-rechts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06D9153DBB2700BE1CAA /* button-pijl-rechts@2x.png */; };
-		4EC4012D152E09A10005EC5C /* TeamScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4012C152E09A10005EC5C /* TeamScoresViewController.m */; };
+		4EC4012D152E09A10005EC5C /* IssueScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */; };
 		4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2151E153C3B6400040C97 /* HeaderLabel.m */; };
 		4ED21524153C417D00040C97 /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED21523153C417D00040C97 /* NormalLabel.m */; };
 		4ED21529153C4CA600040C97 /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21525153C4C8700040C97 /* Vollkorn-Bold.ttf */; };
@@ -226,6 +227,8 @@
 		4E42820815447EBD009FD991 /* TeamPrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamPrepareViewController.m; sourceTree = "<group>"; };
 		4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondIssueExplanationViewController.h; sourceTree = "<group>"; };
 		4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondIssueExplanationViewController.m; sourceTree = "<group>"; };
+		4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediaryScoresViewController.h; sourceTree = "<group>"; };
+		4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediaryScoresViewController.m; sourceTree = "<group>"; };
 		4E4D8F9D152CCFCD00E898D5 /* Features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Features.plist; sourceTree = "<group>"; };
 		4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentFeatureViewController.h; sourceTree = "<group>"; };
 		4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFeatureViewController.m; sourceTree = "<group>"; };
@@ -276,8 +279,8 @@
 		4EAF06D6153DAE6600BE1CAA /* ArrowRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowRight.m; sourceTree = "<group>"; };
 		4EAF06D8153DBB2700BE1CAA /* button-pijl-links@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pijl-links@2x.png"; sourceTree = "<group>"; };
 		4EAF06D9153DBB2700BE1CAA /* button-pijl-rechts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pijl-rechts@2x.png"; sourceTree = "<group>"; };
-		4EC4012B152E09A10005EC5C /* TeamScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamScoresViewController.h; sourceTree = "<group>"; };
-		4EC4012C152E09A10005EC5C /* TeamScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamScoresViewController.m; sourceTree = "<group>"; };
+		4EC4012B152E09A10005EC5C /* IssueScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueScoresViewController.h; sourceTree = "<group>"; };
+		4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueScoresViewController.m; sourceTree = "<group>"; };
 		4ED2151D153C3B6400040C97 /* HeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderLabel.h; sourceTree = "<group>"; };
 		4ED2151E153C3B6400040C97 /* HeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabel.m; sourceTree = "<group>"; };
 		4ED21522153C417D00040C97 /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
@@ -493,6 +496,8 @@
 				4EDEFADC152B625800324EDB /* PictureLabelViewController.m */,
 				4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */,
 				4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */,
+				4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */,
+				4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */,
 				4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */,
 				4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */,
 				4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */,
@@ -504,8 +509,8 @@
 				4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */,
 				4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */,
 				4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */,
-				4EC4012B152E09A10005EC5C /* TeamScoresViewController.h */,
-				4EC4012C152E09A10005EC5C /* TeamScoresViewController.m */,
+				4EC4012B152E09A10005EC5C /* IssueScoresViewController.h */,
+				4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */,
 				4E42820715447EBC009FD991 /* TeamPrepareViewController.h */,
 				4E42820815447EBD009FD991 /* TeamPrepareViewController.m */,
 				4EAE98EF151A618A0051C926 /* ViewController.h */,
@@ -735,7 +740,7 @@
 				4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */,
 				4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */,
 				4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */,
-				4EC4012D152E09A10005EC5C /* TeamScoresViewController.m in Sources */,
+				4EC4012D152E09A10005EC5C /* IssueScoresViewController.m in Sources */,
 				4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */,
 				4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */,
 				4ED21524153C417D00040C97 /* NormalLabel.m in Sources */,
@@ -748,6 +753,7 @@
 				4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */,
 				4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */,
 				4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */,
+				4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
