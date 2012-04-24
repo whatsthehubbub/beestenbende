@@ -82,6 +82,7 @@
 		4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamPrepareViewController.m */; };
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
 		4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */; };
+		4E4282141546CEFB009FD991 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282131546C8AD009FD991 /* DDPageControl.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
 		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
 		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
@@ -229,6 +230,8 @@
 		4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondIssueExplanationViewController.m; sourceTree = "<group>"; };
 		4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediaryScoresViewController.h; sourceTree = "<group>"; };
 		4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediaryScoresViewController.m; sourceTree = "<group>"; };
+		4E4282121546C8AC009FD991 /* DDPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPageControl.h; sourceTree = "<group>"; };
+		4E4282131546C8AD009FD991 /* DDPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
 		4E4D8F9D152CCFCD00E898D5 /* Features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Features.plist; sourceTree = "<group>"; };
 		4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentFeatureViewController.h; sourceTree = "<group>"; };
 		4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFeatureViewController.m; sourceTree = "<group>"; };
@@ -535,6 +538,8 @@
 		4ED21521153C3BD300040C97 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				4E4282121546C8AC009FD991 /* DDPageControl.h */,
+				4E4282131546C8AD009FD991 /* DDPageControl.m */,
 				4ED2151D153C3B6400040C97 /* HeaderLabel.h */,
 				4ED2151E153C3B6400040C97 /* HeaderLabel.m */,
 				4EAF06D2153DAE5C00BE1CAA /* ArrowLeft.h */,
@@ -720,6 +725,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4282141546CEFB009FD991 /* DDPageControl.m in Sources */,
 				4EAE98E7151A618A0051C926 /* main.m in Sources */,
 				4EAE98EB151A618A0051C926 /* AppDelegate.m in Sources */,
 				4EAE98F1151A618A0051C926 /* ViewController.m in Sources */,

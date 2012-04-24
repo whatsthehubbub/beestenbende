@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DDPageControl.h"
+
 @interface WelcomeViewController : UIViewController <UIScrollViewDelegate> {
     UIScrollView *scrollView;
     UIPageControl *pageControl;
@@ -17,11 +19,14 @@
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
-@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
+
+@property (nonatomic, retain) DDPageControl *ddPageControl;
 
 - (IBAction)scrollPage;
 - (IBAction)previous;
 - (IBAction)next;
 - (IBAction)done;
+
+- (void)pageControlClicked:(id)sender;
 
 @end
