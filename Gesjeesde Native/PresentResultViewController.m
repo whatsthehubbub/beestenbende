@@ -16,6 +16,8 @@
 
 @synthesize game;
 
+@synthesize yesNoLabel;
+
 @synthesize team1featureLabel;
 @synthesize team1featureImage;
 @synthesize team2featureLabel;
@@ -57,6 +59,10 @@
             team1fp = fp;
             break;
         }
+    }
+    
+    if (!team1fp.presentAssertion) {
+        self.yesNoLabel.text = @"Geen";
     }
     
     NSDictionary *team1FeatureDict = [game getFeatureWithName:team1fp.feature];

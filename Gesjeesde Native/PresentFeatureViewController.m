@@ -84,6 +84,8 @@
 }
 
 - (IBAction)next:(id)sender {
+    // Check if they have picked a feature TODO
+    
     if (self.currentTeam.number == 1) {
         [UIView beginAnimations:@"View Flip" context:nil];
         [UIView setAnimationDuration:0.80];
@@ -97,6 +99,7 @@
         [featureButton setTitle:@"" forState:UIControlStateNormal];
         featureImageView.image = nil;
         
+        // self.hasFeature remains the same for the other team, they have to go along
         self.yesNoButton.enabled = NO; // Disable yes no button for the second team
         
         [UIView commitAnimations];

@@ -16,6 +16,8 @@
 @interface PresentResultViewController : UIViewController <ExplainFeatureViewControllerDelegate> {
     Game *game;
     
+    UILabel *yesNoLabel;
+    
     UIImageView *team1featureImage;
     UILabel *team1featureLabel;
     UILabel *team1pointsLabel;
@@ -34,6 +36,8 @@
 }
 
 @property (strong) Game *game;
+
+@property (nonatomic, retain) IBOutlet UILabel *yesNoLabel;
 
 @property (nonatomic, retain) IBOutlet UILabel *team1featureLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2featureLabel;

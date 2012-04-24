@@ -23,7 +23,9 @@
         self.image = newImage;
         self.feature = @"";
         self.deleted = NO;
+        
         self.presentedTurn = -1;
+        self.presentAssertion = YES;
     }
     return self;
 }

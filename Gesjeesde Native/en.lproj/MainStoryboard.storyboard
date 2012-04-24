@@ -1721,6 +1721,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VaO-8o-l2a" customClass="NormalLabel">
+                                <rect key="frame" x="95" y="87" width="120" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Seba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="KYi-0q-KUs" customClass="NormalLabel">
                                 <rect key="frame" x="180" y="116" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1807,6 +1814,7 @@
                         <outlet property="team2featureImage" destination="c9z-xu-6aC" id="9YM-1P-jhx"/>
                         <outlet property="team2featureLabel" destination="8eG-nc-NY6" id="81P-Ia-8cc"/>
                         <outlet property="team2pointsLabel" destination="cz4-AA-hQ7" id="Nbc-b3-zpv"/>
+                        <outlet property="yesNoLabel" destination="VaO-8o-l2a" id="mRG-KR-I6Q"/>
                         <segue destination="rTe-1j-Lla" kind="push" identifier="FirstProofComplete" id="q6o-tL-wb0"/>
                         <segue destination="Kgz-tg-9iE" kind="push" identifier="AnotherRound" id="x4L-eh-fL3"/>
                         <segue destination="Vw8-zy-TjQ" kind="modal" identifier="ShowFirstExplanation" modalTransitionStyle="coverVertical" id="Aa8-AL-jFN"/>
