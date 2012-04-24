@@ -160,7 +160,12 @@
             [self performSegueWithIdentifier:@"AnotherRound" sender:self];
         } else {
             // TODO show something if the proof was completed by a lack of features
-            [self performSegueWithIdentifier:@"ProofComplete" sender:self];
+            
+            if (game.issue == 1) {
+                [self performSegueWithIdentifier:@"FirstProofComplete" sender:sender];
+            } else {
+                [self performSegueWithIdentifier:@"SecondProofComplete" sender:sender];
+            }
         }
     }
 }
