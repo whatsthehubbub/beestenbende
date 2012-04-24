@@ -49,6 +49,14 @@
     return nil;
 }
 
+- (void)resetForNextIssue {
+    turn = 1;
+    required = 4;
+    
+    [self.team1 resetForNextIssue];
+    [self.team2 resetForNextIssue];
+}
+
 //#pragma mark NSCoding
 //
 //- (void)encodeWithCoder:(NSCoder *)aCoder {

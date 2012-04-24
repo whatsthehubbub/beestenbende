@@ -35,4 +35,6 @@
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name;
 
+- (void)resetForNextIssue;
+
 @end

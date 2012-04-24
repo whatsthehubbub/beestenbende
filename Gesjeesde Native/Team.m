@@ -84,6 +84,11 @@
     self.featurePictures = save;
 }
 
+- (void)resetForNextIssue {
+    tookFeaturePictures = NO;
+    featurePictures = [[NSMutableArray alloc] init];
+}
+
 //#pragma mark NSCoding
 //
 //- (void)encodeWithCoder:(NSCoder *)aCoder {

@@ -43,4 +43,6 @@
 - (void)purgeDeletedFeaturePictures;
 - (void)purgeUsedFeaturePictures;
 
+- (void)resetForNextIssue;
+
 @end
