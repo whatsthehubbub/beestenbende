@@ -50,7 +50,8 @@
 }
 
 - (Team *)firstTeamForTurn {
-    if (turn % 2 == 0) {
+    // First issue we start with team 1, and then alternate
+    if ((turn + issue - 1) % 2 == 0) {
         return team2;
     } else {
         return team1;
