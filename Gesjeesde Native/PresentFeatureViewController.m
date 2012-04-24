@@ -42,7 +42,8 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    self.currentTeam = game.team1;
+    self.currentTeam = [game firstTeamForTurn];
+    [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", [self.currentTeam getTeamName]]];
     
     self.hasFeature = YES;
 }
@@ -86,14 +87,14 @@
 - (IBAction)next:(id)sender {
     // Check if they have picked a feature TODO
     
-    if (self.currentTeam.number == 1) {
+    if (self.currentTeam == [game firstTeamForTurn]) {
         [UIView beginAnimations:@"View Flip" context:nil];
         [UIView setAnimationDuration:0.80];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
         
         // Changes to this ViewController
-        self.currentTeam = game.team2;
+        self.currentTeam = [game secondTeamForTurn];
         [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", [self.currentTeam getTeamName]]];
         
         [featureButton setTitle:@"" forState:UIControlStateNormal];

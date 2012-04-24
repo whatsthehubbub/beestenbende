@@ -49,6 +49,28 @@
     return nil;
 }
 
+- (Team *)firstTeamForTurn {
+    if (turn % 2 == 0) {
+        return team2;
+    } else {
+        return team1;
+    }
+}
+
+- (Team *)secondTeamForTurn {
+    return [self otherTeamForTeam:[self firstTeamForTurn]];
+}
+
+- (Team *)otherTeamForTeam:(Team *)thisTeam {
+    if (thisTeam.number == 1) {
+        return self.team2;
+    } else {
+        return self.team1;
+    }
+}
+
+
+
 - (void)resetForNextIssue {
     turn = 1;
     required = 4;

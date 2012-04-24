@@ -35,6 +35,10 @@
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name;
 
+- (Team *)firstTeamForTurn;
+- (Team *)secondTeamForTurn;
+- (Team *)otherTeamForTeam:(Team *)thisTeam;
+
 - (void)resetForNextIssue;
 
 @end
