@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		472AFF521547E5D6001B38F9 /* photo-frame-square-240.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF511547E5D6001B38F9 /* photo-frame-square-240.png */; };
+		472AFF561547E88C001B38F9 /* block-yellow-team-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF541547E88C001B38F9 /* block-yellow-team-small.png */; };
+		472AFF571547E88C001B38F9 /* block-blue-team-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF551547E88C001B38F9 /* block-blue-team-small.png */; };
+		472AFF591547E9F6001B38F9 /* stack-of-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF581547E9F6001B38F9 /* stack-of-photos.png */; };
+		472AFF5B1547EF22001B38F9 /* animal-host-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF5A1547EF22001B38F9 /* animal-host-icon.png */; };
+		472AFF5E1547F291001B38F9 /* team-photo-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF5C1547F291001B38F9 /* team-photo-frame-yellow.png */; };
+		472AFF5F1547F291001B38F9 /* team-photo-frame-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF5D1547F291001B38F9 /* team-photo-frame-blue.png */; };
+		472AFF611547F6D4001B38F9 /* number-of-evidence-left-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */; };
+		472AFF6415480467001B38F9 /* toggle-wel-off-geen-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */; };
+		472AFF6515480467001B38F9 /* toggle-wel-on-geen-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */; };
+		472AFF6715480A2E001B38F9 /* photo-frame-square-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6615480A2E001B38F9 /* photo-frame-square-80.png */; };
+		472AFF6915480A70001B38F9 /* photo-frame-square-160.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6815480A70001B38F9 /* photo-frame-square-160.png */; };
 		478F9DF21540138900D14182 /* button-titlebar-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF11540138900D14182 /* button-titlebar-home.png */; };
 		478F9DF61540163B00D14182 /* block-yellow-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF41540163B00D14182 /* block-yellow-team.png */; };
 		478F9DF71540163B00D14182 /* block-blue-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF51540163B00D14182 /* block-blue-team.png */; };
@@ -145,6 +157,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		472AFF511547E5D6001B38F9 /* photo-frame-square-240.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame-square-240.png"; sourceTree = "<group>"; };
+		472AFF541547E88C001B38F9 /* block-yellow-team-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-yellow-team-small.png"; sourceTree = "<group>"; };
+		472AFF551547E88C001B38F9 /* block-blue-team-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-blue-team-small.png"; sourceTree = "<group>"; };
+		472AFF581547E9F6001B38F9 /* stack-of-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stack-of-photos.png"; sourceTree = "<group>"; };
+		472AFF5A1547EF22001B38F9 /* animal-host-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-host-icon.png"; sourceTree = "<group>"; };
+		472AFF5C1547F291001B38F9 /* team-photo-frame-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team-photo-frame-yellow.png"; sourceTree = "<group>"; };
+		472AFF5D1547F291001B38F9 /* team-photo-frame-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team-photo-frame-blue.png"; sourceTree = "<group>"; };
+		472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number-of-evidence-left-frame.png"; sourceTree = "<group>"; };
+		472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-off-geen-on.png"; sourceTree = "<group>"; };
+		472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-on-geen-off.png"; sourceTree = "<group>"; };
+		472AFF6615480A2E001B38F9 /* photo-frame-square-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame-square-80.png"; sourceTree = "<group>"; };
+		472AFF6815480A70001B38F9 /* photo-frame-square-160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame-square-160.png"; sourceTree = "<group>"; };
 		478F9DF11540138900D14182 /* button-titlebar-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-home.png"; sourceTree = "<group>"; };
 		478F9DF41540163B00D14182 /* block-yellow-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-yellow-team.png"; sourceTree = "<group>"; };
 		478F9DF51540163B00D14182 /* block-blue-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-blue-team.png"; sourceTree = "<group>"; };
@@ -342,10 +366,18 @@
 			children = (
 				4E08C30E1524723D00F3CDC7 /* 15.png */,
 				479DEB7C154199550093C1A6 /* icon-clock.png */,
+				472AFF511547E5D6001B38F9 /* photo-frame-square-240.png */,
 				479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */,
 				479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */,
+				472AFF581547E9F6001B38F9 /* stack-of-photos.png */,
+				472AFF5C1547F291001B38F9 /* team-photo-frame-yellow.png */,
+				472AFF5D1547F291001B38F9 /* team-photo-frame-blue.png */,
+				472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */,
 				47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */,
 				4EDEFAE0152B6DA200324EDB /* animal-host.png */,
+				472AFF5A1547EF22001B38F9 /* animal-host-icon.png */,
+				472AFF541547E88C001B38F9 /* block-yellow-team-small.png */,
+				472AFF551547E88C001B38F9 /* block-blue-team-small.png */,
 				47993150152E426700AF019F /* animal-squirrel.png */,
 				47AF02DF152C90C7008905ED /* bg-0-plain.jpg */,
 				47993147152E3EDA00AF019F /* button-titlebar-back.png */,
@@ -354,6 +386,8 @@
 				4EAF06D9153DBB2700BE1CAA /* button-pijl-rechts@2x.png */,
 				4EAF06CD153DA00100BE1CAA /* button-pijl-links.png */,
 				4EAF06CE153DA00100BE1CAA /* button-pijl-rechts.png */,
+				472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */,
+				472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */,
 				4E332677151A663B00CEC850 /* bg-0-plain.png */,
 				47993158152E499E00AF019F /* button-bijvoorbeeld.png */,
 				4799316A152E5E9200AF019F /* button-en-de-winnaar-is.png */,
@@ -371,8 +405,10 @@
 				47993154152E456B00AF019F /* photo-frame-square-480.png */,
 				47BFEDC9153F0DA1002BF8F3 /* map.png */,
 				47993160152E58B900AF019F /* button-start.png */,
+				472AFF6815480A70001B38F9 /* photo-frame-square-160.png */,
 				47BFEDC5153F0300002BF8F3 /* button-start-nieuw-spel.png */,
 				47993166152E5CBF00AF019F /* button-leg-uit.png */,
+				472AFF6615480A2E001B38F9 /* photo-frame-square-80.png */,
 				4EDEFAE3152B6ED400324EDB /* bg-2-main-menu.png */,
 				4799315E152E581800AF019F /* animal-squirrel-icon.png */,
 				4E33267E151A663B00CEC850 /* bg-20-uitslag.png */,
@@ -715,6 +751,18 @@
 				479DEB7D154199550093C1A6 /* icon-clock.png in Resources */,
 				479DEB7F15419A800093C1A6 /* icon-stack-of-photos.png in Resources */,
 				479DEB811541A6BD0093C1A6 /* button-bg-choose-feature.png in Resources */,
+				472AFF521547E5D6001B38F9 /* photo-frame-square-240.png in Resources */,
+				472AFF561547E88C001B38F9 /* block-yellow-team-small.png in Resources */,
+				472AFF571547E88C001B38F9 /* block-blue-team-small.png in Resources */,
+				472AFF591547E9F6001B38F9 /* stack-of-photos.png in Resources */,
+				472AFF5B1547EF22001B38F9 /* animal-host-icon.png in Resources */,
+				472AFF5E1547F291001B38F9 /* team-photo-frame-yellow.png in Resources */,
+				472AFF5F1547F291001B38F9 /* team-photo-frame-blue.png in Resources */,
+				472AFF611547F6D4001B38F9 /* number-of-evidence-left-frame.png in Resources */,
+				472AFF6415480467001B38F9 /* toggle-wel-off-geen-on.png in Resources */,
+				472AFF6515480467001B38F9 /* toggle-wel-on-geen-off.png in Resources */,
+				472AFF6715480A2E001B38F9 /* photo-frame-square-80.png in Resources */,
+				472AFF6915480A70001B38F9 /* photo-frame-square-160.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
