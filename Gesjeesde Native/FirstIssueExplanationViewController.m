@@ -77,8 +77,6 @@
 }
 
 - (IBAction)done:(id)sender {
-    NSLog(@"Page %d", self.pageControl.currentPage);
-    
     if (NO && /* Short circuit for quicker testing. TODO */ self.pageControl.currentPage != 3) {
         [self next:self];
     } else {
