@@ -101,6 +101,7 @@
         // Changes to this ViewController
         self.currentTeam = [game secondTeamForTurn];
         overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        // TODO check if this overlay image is correct
         
         [featureButton setTitle:@"" forState:UIControlStateNormal];
         featureImageView.image = nil;

@@ -23,8 +23,8 @@
 @synthesize team2featureLabel;
 @synthesize team2featureImage;
 
-@synthesize team1pointsLabel;
-@synthesize team2pointsLabel;
+@synthesize team1pointsImage;
+@synthesize team2pointsImage;
 
 @synthesize team1fp;
 @synthesize team2fp;
@@ -62,21 +62,26 @@
     }
     
     if (!team1fp.presentAssertion) {
-        self.yesNoLabel.text = @"Geen";
+        self.yesNoLabel.text = @"Eekhoorn heeft geen…";
     }
     
     NSDictionary *team1FeatureDict = [game getFeatureWithName:team1fp.feature];
     int team1featureNumber = [[team1FeatureDict objectForKey:@"Mammal"] intValue];
+    
     int team1points = 0;
+    [self.team1pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
     
     if (team1fp.presentAssertion && team1featureNumber == 0) {
+        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
         team1points = 10;
     } else if (team1fp.presentAssertion && team1featureNumber == 1) {
+        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
         team1points = 5;
     } else if (!team1fp.presentAssertion && team1featureNumber == 2) {
+        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
         team1points = 5;
     }
-    [self.team1pointsLabel setText:[NSString stringWithFormat:@"%d punten", team1points]];
+
     game.team1.points += team1points;
     
     [self.team1featureLabel setText:team1fp.feature];
@@ -93,19 +98,24 @@
     
     NSDictionary *team2FeatureDict = [game getFeatureWithName:team2fp.feature];
     int team2featureNumber = [[team2FeatureDict objectForKey:@"Mammal"] intValue];
+    
     int team2points = 0;
+    [self.team2pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
     
     NSLog(@"Team 2 featurenumber %d", team2featureNumber);
     NSLog(@"Team 2 team2fp %@", team2fp.feature);
     
     if (team2fp.presentAssertion && team2featureNumber == 0) {
+        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
         team2points = 10;
     } else if (team2fp.presentAssertion && team2featureNumber == 1) {
+        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
         team2points = 5;
     } else if (!team2fp.presentAssertion && team2featureNumber == 2) {
+        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
         team2points = 5;
     }
-    [self.team2pointsLabel setText:[NSString stringWithFormat:@"%d punten", team2points]];
+    
     game.team2.points += team2points;
     
     [self.team2featureLabel setText:team2fp.feature];
@@ -116,7 +126,8 @@
         // This means we have one positive proof
         game.required -= 1;
         
-        [self.proofsRequiredLabel setText:[NSString stringWithFormat:@"De eekhoorn heeft nog %d bewijzen nodig.", game.required]];
+        [self.proofsRequiredLabel setText:[NSString stringWithFormat:@"%d", game.required]];
+        // TODO check if proofsRequired is reset on reset for next issue
     }
 }
 
