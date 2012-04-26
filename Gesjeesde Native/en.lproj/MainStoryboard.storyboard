@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -1443,8 +1443,6 @@
                         <outlet property="featureButton" destination="546-tb-hty" id="TZN-yM-E5X"/>
                         <outlet property="headerLabel" destination="K3s-YT-CSG" id="7hL-hh-Zhh"/>
                         <outlet property="overlayImage" destination="dCt-RR-0x9" id="qjZ-d9-qxk"/>
-                        <segue destination="JWb-Gt-s87" kind="push" identifier="LabellingDoneSecond" id="Yil-9w-CVA"/>
-                        <segue destination="ETL-EA-CCI" kind="push" identifier="LabellingDone" id="RLo-an-3Vk"/>
                         <segue destination="Xjc-Xc-ENv" kind="push" id="8Y3-nS-vPa"/>
                     </connections>
                 </viewController>
@@ -1596,7 +1594,7 @@
                     <navigationItem key="navigationItem" id="Jic-0N-3zS"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5751" y="-164"/>
+            <point key="canvasLocation" x="6483" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I3e-rk-uqI">
@@ -1730,9 +1728,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rFE-bx-9d3"/>
+                    <connections>
+                        <segue destination="JWb-Gt-s87" kind="push" identifier="LabellingDoneSecond" id="ODx-be-US5"/>
+                        <segue destination="ETL-EA-CCI" kind="push" identifier="LabellingDone" id="dDB-Xz-g1r"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5214" y="475"/>
+            <point key="canvasLocation" x="5803" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jvw-Ym-Q31">
@@ -1772,7 +1774,7 @@
                     <navigationItem key="navigationItem" id="AzQ-pQ-5iQ"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5751" y="475"/>
+            <point key="canvasLocation" x="6483" y="475"/>
         </scene>
         <!--Present Feature View Controller-->
         <scene sceneID="n2N-b1-R7d">
@@ -1891,7 +1893,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="6238" y="-164"/>
+            <point key="canvasLocation" x="6970" y="-164"/>
         </scene>
         <!--Present Result View Controller-->
         <scene sceneID="I1M-IU-Lz9">
@@ -2063,7 +2065,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="6714" y="-164"/>
+            <point key="canvasLocation" x="7446" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZyI-wr-vRl">
@@ -2217,7 +2219,7 @@
                     <navigationItem key="navigationItem" id="2Xr-Bc-Yow"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="6714" y="475"/>
+            <point key="canvasLocation" x="7446" y="475"/>
         </scene>
         <!--Explain Feature View Controller-->
         <scene sceneID="I6a-tZ-zg4">
@@ -2272,7 +2274,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7194" y="475"/>
+            <point key="canvasLocation" x="7926" y="475"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LXm-9V-jLV">
@@ -2439,7 +2441,7 @@
                     <navigationItem key="navigationItem" id="51h-PT-sz0"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7194" y="1116"/>
+            <point key="canvasLocation" x="7926" y="1116"/>
         </scene>
         <!--Team Feature Picker View Controller-->
         <scene sceneID="0xp-NP-yXF">
@@ -2469,7 +2471,7 @@
                     <navigationItem key="navigationItem" id="RZc-2n-BSn"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="6742" y="-779"/>
+            <point key="canvasLocation" x="7454" y="-831"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cwx-wr-6zT">
@@ -2544,7 +2546,7 @@
                     <navigationItem key="navigationItem" id="fvI-8K-6n5"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7422" y="-164"/>
+            <point key="canvasLocation" x="8154" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eok-ou-PYS">
@@ -2587,7 +2589,7 @@
                     <navigationItem key="navigationItem" id="wYg-pa-JPt"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7801" y="519"/>
+            <point key="canvasLocation" x="8533" y="519"/>
         </scene>
         <!--Issue Scores View Controller-->
         <scene sceneID="XBQ-vX-giP">
@@ -2729,7 +2731,7 @@
                     <navigationItem key="navigationItem" id="xtQ-oR-uBc"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="8447" y="-164"/>
+            <point key="canvasLocation" x="9179" y="-164"/>
         </scene>
         <!--Intermediary Scores View Controller-->
         <scene sceneID="Vc6-1M-xGY">
@@ -2805,7 +2807,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="8845" y="-164"/>
+            <point key="canvasLocation" x="9577" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L3j-eL-VcF">
@@ -2880,7 +2882,7 @@
                     <navigationItem key="navigationItem" id="SaU-GX-DOb"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7880" y="-164"/>
+            <point key="canvasLocation" x="8612" y="-164"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="zud-re-MKp">
@@ -3145,7 +3147,7 @@
                     <navigationItem key="navigationItem" id="5bK-GN-tvq"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="8236" y="519"/>
+            <point key="canvasLocation" x="8968" y="519"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WyE-te-f1n">
@@ -3576,5 +3578,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="sz9-qc-ZZh"/>
+        <segue reference="q2r-Gm-pvW"/>
+        <segue reference="Aa8-AL-jFN"/>
+        <segue reference="HXG-Iv-RWR"/>
     </inferredMetricsTieBreakers>
 </document>
