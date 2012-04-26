@@ -74,15 +74,15 @@
 }
 
 - (IBAction)yesNo:(id)sender {
-    NSString *image;
-    if (self.hasFeature) {
-        image = @"toggle-wel-off-geen-on.png";
-    } else {
-        image = @"toggle-wel-on-geen-off.png";
-    }
-    self.yesNoButton.imageView.image = [UIImage imageNamed:image];
-    
     self.hasFeature = !self.hasFeature;
+    
+    NSString *imageName;
+    if (self.hasFeature) {
+        imageName = @"toggle-wel-on-geen-off.png";
+    } else {
+        imageName = @"toggle-wel-off-geen-on.png";
+    }
+    self.yesNoButton.imageView.image = [UIImage imageNamed:imageName];
     
     if (self.currentFeaturePicture) {
         self.currentFeaturePicture.presentAssertion = self.hasFeature;
