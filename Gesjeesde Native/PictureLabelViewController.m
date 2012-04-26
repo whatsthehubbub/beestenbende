@@ -54,7 +54,11 @@
     
     self.currentPictureIndex = 0;
     
+#ifdef DEBUG
     doneButton.hidden = NO;
+#else
+    doneButton.hidden = YES;
+#endif
     
     [self displayPicture];
 }
@@ -141,7 +145,10 @@
         self.currentPictureIndex = 0;
         overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
         headerLabel.text = @"Geel benoem je foto's";
-        // doneButton.hidden = YES;
+        
+#ifndef DEBUG
+        doneButton.hidden = YES;
+#endif
 
         [self displayPicture];
             
