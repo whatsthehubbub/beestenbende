@@ -1710,7 +1710,7 @@
                     <navigationItem key="navigationItem" id="00V-35-v7n"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="5751" y="-791"/>
+            <point key="canvasLocation" x="5835" y="-787"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9Ez-FX-W4p">
@@ -2703,7 +2703,7 @@
                     <navigationItem key="navigationItem" id="RZc-2n-BSn"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="7454" y="-831"/>
+            <point key="canvasLocation" x="7276" y="-797"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cwx-wr-6zT">
