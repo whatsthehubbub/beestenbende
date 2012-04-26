@@ -88,6 +88,7 @@
 
 - (IBAction)doneWithPicture:(id)sender {
     if ([self currentTeamNumber] == 1) {
+        // TODO team1 picture is sometimes not saved (if everything goes to quickly maybe?)
         game.team1.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
         
         // Start segue back to this view for other team to take picture

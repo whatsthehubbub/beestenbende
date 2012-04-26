@@ -42,9 +42,7 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
-    
-//    team1Image.image = [UIImage imageWithContentsOfFile:[game.team1 getPicturePath]];
-//    team2Image.image = [UIImage imageWithContentsOfFile:[game.team2 getPicturePath]];
+
     team1Image.image = game.team1.picture;
     team2Image.image = game.team2.picture;
     
@@ -52,7 +50,10 @@
     team2Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2Label.font.pointSize];
     
     team1PictureCount.text = [NSString stringWithFormat:@"%d", game.team1.featurePictures.count];
+    team1PictureCount.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1PictureCount.font.pointSize];
+    
     team2PictureCount.text = [NSString stringWithFormat:@"%d", game.team2.featurePictures.count];
+    team2PictureCount.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2PictureCount.font.pointSize];
     
     NSString *winnerText;
     if (game.team1.featurePictures.count == game.team2.featurePictures.count) {
@@ -61,6 +62,7 @@
         Team *winner = game.team1.featurePictures.count > game.team2.featurePictures.count ? game.team1 : game.team2;
         winnerText = [NSString stringWithFormat:@"Goed werk, team %@! Maar hebben jullie ook de juiste kenmerken?", winner.getTeamName];
     }
+    systemText.text = winnerText;
 }
 
 - (void)viewDidUnload

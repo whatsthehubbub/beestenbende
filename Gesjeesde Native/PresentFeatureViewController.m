@@ -14,7 +14,8 @@
 
 @implementation PresentFeatureViewController
 
-@synthesize teamLabel;
+@synthesize overlayImage;
+
 @synthesize yesNoButton;
 @synthesize featureButton;
 @synthesize featureImageView;
@@ -43,7 +44,12 @@
     game = appDelegate.game;
     
     self.currentTeam = [game firstTeamForTurn];
-    [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", [self.currentTeam getTeamName]]];
+    
+    if (self.currentTeam.number == 1) {
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-blue.png"];
+    } else {
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+    }
     
     self.hasFeature = YES;
 }
@@ -95,7 +101,7 @@
         
         // Changes to this ViewController
         self.currentTeam = [game secondTeamForTurn];
-        [self.teamLabel setText:[NSString stringWithFormat:@"Team %@", [self.currentTeam getTeamName]]];
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
         
         [featureButton setTitle:@"" forState:UIControlStateNormal];
         featureImageView.image = nil;
