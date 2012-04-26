@@ -1729,6 +1729,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rFE-bx-9d3"/>
                     <connections>
+                        <outlet property="systemText" destination="brj-QX-7hP" id="gdV-hE-BEV"/>
                         <outlet property="team1Image" destination="O64-nF-DyP" id="sRI-16-nRg"/>
                         <outlet property="team1Label" destination="TRh-DT-II1" id="uy1-pa-SKt"/>
                         <outlet property="team1PictureCount" destination="Add-Ce-uh9" id="mzN-nH-eyc"/>
@@ -3484,6 +3485,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MostPicturesViewController.h"/>
             <relationships>
                 <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="systemText" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1Image" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team1Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1PictureCount" candidateClass="UILabel"/>

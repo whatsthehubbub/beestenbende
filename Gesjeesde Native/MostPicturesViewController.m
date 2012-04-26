@@ -24,6 +24,7 @@
 @synthesize team2Label;
 @synthesize team2PictureCount;
 
+@synthesize systemText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -52,6 +53,14 @@
     
     team1PictureCount.text = [NSString stringWithFormat:@"%d", game.team1.featurePictures.count];
     team2PictureCount.text = [NSString stringWithFormat:@"%d", game.team2.featurePictures.count];
+    
+    NSString *winnerText;
+    if (game.team1.featurePictures.count == game.team2.featurePictures.count) {
+        winnerText = @"Goed werk, teams! Maar hebben jullie ook de juiste kenmerken?";
+    } else {
+        Team *winner = game.team1.featurePictures.count > game.team2.featurePictures.count ? game.team1 : game.team2;
+        winnerText = [NSString stringWithFormat:@"Goed werk, team %@! Maar hebben jullie ook de juiste kenmerken?", winner.getTeamName];
+    }
 }
 
 - (void)viewDidUnload

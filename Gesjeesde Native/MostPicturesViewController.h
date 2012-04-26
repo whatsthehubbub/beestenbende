@@ -22,6 +22,8 @@
 @property (nonatomic, retain) IBOutlet UILabel *team2Label;
 @property (nonatomic, retain) IBOutlet UILabel *team2PictureCount;
 
+@property (nonatomic, retain) IBOutlet UILabel *systemText;
+
 - (IBAction)done:(id)sender;
 
 @end
