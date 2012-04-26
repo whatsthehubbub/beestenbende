@@ -154,11 +154,7 @@
             
         [UIView commitAnimations];
     } else {
-        if (self.game.issue == 1) {
-            [self performSegueWithIdentifier:@"LabellingDone" sender:self];
-        } else {
-            [self performSegueWithIdentifier:@"LabellingDoneSecond" sender:self];
-        }
+        [self performSegueWithIdentifier:@"LabellingDone" sender:self];
     }
 }
 
