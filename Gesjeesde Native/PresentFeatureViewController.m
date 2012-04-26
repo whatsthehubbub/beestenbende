@@ -74,20 +74,19 @@
 }
 
 - (IBAction)yesNo:(id)sender {
-    NSString *title;
+    NSString *image;
     if (self.hasFeature) {
-        title = @"Geen";
+        image = @"toggle-wel-off-geen-on.png";
     } else {
-        title = @"Wel";
+        image = @"toggle-wel-on-geen-off.png";
     }
+    self.yesNoButton.imageView.image = [UIImage imageNamed:image];
     
     self.hasFeature = !self.hasFeature;
     
     if (self.currentFeaturePicture) {
         self.currentFeaturePicture.presentAssertion = self.hasFeature;
     }
-    
-    [self.yesNoButton setTitle:title forState:UIControlStateNormal];
 }
 
 - (IBAction)next:(id)sender {
