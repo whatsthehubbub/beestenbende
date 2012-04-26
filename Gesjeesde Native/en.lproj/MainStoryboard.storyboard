@@ -2283,7 +2283,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7926" y="475"/>
+            <point key="canvasLocation" x="8114" y="-831"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="LXm-9V-jLV">
@@ -2450,7 +2450,7 @@
                     <navigationItem key="navigationItem" id="51h-PT-sz0"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7926" y="1116"/>
+            <point key="canvasLocation" x="8010" y="475"/>
         </scene>
         <!--Team Feature Picker View Controller-->
         <scene sceneID="0xp-NP-yXF">
@@ -2555,7 +2555,7 @@
                     <navigationItem key="navigationItem" id="fvI-8K-6n5"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="8154" y="-164"/>
+            <point key="canvasLocation" x="9034" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eok-ou-PYS">
@@ -2598,7 +2598,7 @@
                     <navigationItem key="navigationItem" id="wYg-pa-JPt"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="8533" y="519"/>
+            <point key="canvasLocation" x="9413" y="519"/>
         </scene>
         <!--Issue Scores View Controller-->
         <scene sceneID="XBQ-vX-giP">
@@ -2740,7 +2740,7 @@
                     <navigationItem key="navigationItem" id="xtQ-oR-uBc"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="9179" y="-164"/>
+            <point key="canvasLocation" x="10059" y="-164"/>
         </scene>
         <!--Intermediary Scores View Controller-->
         <scene sceneID="Vc6-1M-xGY">
@@ -2816,7 +2816,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="9577" y="-164"/>
+            <point key="canvasLocation" x="10457" y="-164"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="L3j-eL-VcF">
@@ -2891,7 +2891,7 @@
                     <navigationItem key="navigationItem" id="SaU-GX-DOb"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="8612" y="-164"/>
+            <point key="canvasLocation" x="9492" y="-164"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="zud-re-MKp">
@@ -3156,7 +3156,7 @@
                     <navigationItem key="navigationItem" id="5bK-GN-tvq"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="8968" y="519"/>
+            <point key="canvasLocation" x="9848" y="519"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WyE-te-f1n">
