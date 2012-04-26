@@ -22,6 +22,9 @@
 		475D6B6015498CB20010DF59 /* progress-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B5C15498CB20010DF59 /* progress-1.png */; };
 		475D6B6115498CB20010DF59 /* progress-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B5D15498CB20010DF59 /* progress-0.png */; };
 		475D6B6215498CB20010DF59 /* progress-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B5E15498CB20010DF59 /* progress-2.png */; };
+		475D6B65154998C40010DF59 /* animal-dragon.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B64154998C40010DF59 /* animal-dragon.png */; };
+		475D6B671549996B0010DF59 /* speech-bubble-big-mirrored.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B661549996B0010DF59 /* speech-bubble-big-mirrored.png */; };
+		475D6B6915499AD80010DF59 /* animal-reptiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B6815499AD80010DF59 /* animal-reptiles.png */; };
 		478F9DF21540138900D14182 /* button-titlebar-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF11540138900D14182 /* button-titlebar-home.png */; };
 		478F9DF61540163B00D14182 /* block-yellow-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF41540163B00D14182 /* block-yellow-team.png */; };
 		478F9DF71540163B00D14182 /* block-blue-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF51540163B00D14182 /* block-blue-team.png */; };
@@ -176,6 +179,9 @@
 		475D6B5C15498CB20010DF59 /* progress-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-1.png"; sourceTree = "<group>"; };
 		475D6B5D15498CB20010DF59 /* progress-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-0.png"; sourceTree = "<group>"; };
 		475D6B5E15498CB20010DF59 /* progress-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-2.png"; sourceTree = "<group>"; };
+		475D6B64154998C40010DF59 /* animal-dragon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-dragon.png"; sourceTree = "<group>"; };
+		475D6B661549996B0010DF59 /* speech-bubble-big-mirrored.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-big-mirrored.png"; sourceTree = "<group>"; };
+		475D6B6815499AD80010DF59 /* animal-reptiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-reptiles.png"; sourceTree = "<group>"; };
 		478F9DF11540138900D14182 /* button-titlebar-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-home.png"; sourceTree = "<group>"; };
 		478F9DF41540163B00D14182 /* block-yellow-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-yellow-team.png"; sourceTree = "<group>"; };
 		478F9DF51540163B00D14182 /* block-blue-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-blue-team.png"; sourceTree = "<group>"; };
@@ -384,6 +390,7 @@
 				472AFF581547E9F6001B38F9 /* stack-of-photos.png */,
 				472AFF5C1547F291001B38F9 /* team-photo-frame-yellow.png */,
 				472AFF5D1547F291001B38F9 /* team-photo-frame-blue.png */,
+				475D6B6815499AD80010DF59 /* animal-reptiles.png */,
 				472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */,
 				47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */,
 				4EDEFAE0152B6DA200324EDB /* animal-host.png */,
@@ -395,9 +402,11 @@
 				47993147152E3EDA00AF019F /* button-titlebar-back.png */,
 				4EAF06CC153DA00100BE1CAA /* button-vierkant.png */,
 				4EAF06D8153DBB2700BE1CAA /* button-pijl-links@2x.png */,
+				475D6B661549996B0010DF59 /* speech-bubble-big-mirrored.png */,
 				4EAF06D9153DBB2700BE1CAA /* button-pijl-rechts@2x.png */,
 				4EAF06CD153DA00100BE1CAA /* button-pijl-links.png */,
 				4EAF06CE153DA00100BE1CAA /* button-pijl-rechts.png */,
+				475D6B64154998C40010DF59 /* animal-dragon.png */,
 				472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */,
 				472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */,
 				4E332677151A663B00CEC850 /* bg-0-plain.png */,
@@ -780,6 +789,9 @@
 				475D6B6015498CB20010DF59 /* progress-1.png in Resources */,
 				475D6B6115498CB20010DF59 /* progress-0.png in Resources */,
 				475D6B6215498CB20010DF59 /* progress-2.png in Resources */,
+				475D6B65154998C40010DF59 /* animal-dragon.png in Resources */,
+				475D6B671549996B0010DF59 /* speech-bubble-big-mirrored.png in Resources */,
+				475D6B6915499AD80010DF59 /* animal-reptiles.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
