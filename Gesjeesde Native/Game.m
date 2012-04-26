@@ -32,7 +32,11 @@
         
         self.features = (NSArray *)[root objectForKey:@"Root"];
         
+#ifdef DEBUG
         issue = 2; // We start at the first issue
+#else
+        issue = 1;
+#endif
         
         self.turn = 1;
         self.required = 4;
