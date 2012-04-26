@@ -82,7 +82,7 @@
     } else {
         imageName = @"toggle-wel-off-geen-on.png";
     }
-    self.yesNoButton.imageView.image = [UIImage imageNamed:imageName];
+    [self.yesNoButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     
     if (self.currentFeaturePicture) {
         self.currentFeaturePicture.presentAssertion = self.hasFeature;
