@@ -66,7 +66,7 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictureTaken:) name:kImageCapturedSuccessfully object:nil];
     
 #ifdef DEBUG
-    secondsLeft = 6;
+    secondsLeft = 2;
 #else
     secondsLeft = 60;
 #endif
