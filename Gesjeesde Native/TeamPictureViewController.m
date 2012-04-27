@@ -46,6 +46,11 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+#ifndef DEBUG
+    selector.hidden = YES;
+#endif
+    
+    // TODO fix this like we do it elsewhere
     self.currentTeamNumber = 1;
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];

@@ -920,7 +920,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="kJe-GL-DM8">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="kJe-GL-DM8">
                                 <rect key="frame" x="42" y="54" width="242" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
@@ -3227,6 +3227,7 @@
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="7K3-hb-up5"/>
+                                    <action selector="nextIssue:" destination="rSy-eg-ifs" eventType="touchUpInside" id="op6-Ig-Cse"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kwesties" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oYm-q4-YC8" customClass="NormalLabel">
