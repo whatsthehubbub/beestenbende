@@ -2656,7 +2656,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view alpha="0.0" contentMode="scaleToFill" id="T0C-S8-9mI">
+                            <view contentMode="scaleToFill" id="T0C-S8-9mI">
                                 <rect key="frame" x="160" y="60" width="140" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2664,7 +2664,7 @@
                                         <rect key="frame" x="20" y="15" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-yellow.png" id="7Ek-Lm-czM">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-yellow.png" id="7Ek-Lm-czM">
                                         <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -2676,9 +2676,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.0" contentMode="scaleToFill" id="IIX-YD-jeG">
+                            <view contentMode="scaleToFill" id="IIX-YD-jeG">
                                 <rect key="frame" x="20" y="60" width="140" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2686,7 +2685,7 @@
                                         <rect key="frame" x="20" y="15" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-blue.png" id="JzZ-Q9-xQA">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-blue.png" id="JzZ-Q9-xQA">
                                         <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -2698,13 +2697,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host-icon.png" id="xPq-LD-ujP">
                                 <rect key="frame" x="20" y="349" width="58" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bedankt voor jullie hulp met het overtuigen van de eekhoorn." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lL7-rY-bvQ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bedankt voor jullie hulp met het overtuigen van de eekhoorn." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lL7-rY-bvQ" customClass="NormalLabel">
                                 <rect key="frame" x="86" y="347" width="214" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -2719,7 +2717,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jCy-Oy-gwh">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jCy-Oy-gwh">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2748,14 +2746,14 @@
                                 <color key="textColor" red="0.73333333329999995" green="0.1529411765" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="iTe-Mh-NNN">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="iTe-Mh-NNN" customClass="NormalLabel">
                                 <rect key="frame" x="30" y="278" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1H2-9O-XvO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1H2-9O-XvO" customClass="NormalLabel">
                                 <rect key="frame" x="170" y="278" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2782,6 +2780,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="xtQ-oR-uBc"/>
+                    <connections>
+                        <outlet property="team1Label" destination="oO7-5e-72b" id="jOX-xB-3QL"/>
+                        <outlet property="team1Picture" destination="GKE-04-Jcf" id="AUe-it-ATH"/>
+                        <outlet property="team1ScoreLabel" destination="wNB-iN-VCU" id="kEX-Na-BYP"/>
+                        <outlet property="team2Label" destination="SIw-yY-V2K" id="jbK-rl-GPv"/>
+                        <outlet property="team2Picture" destination="PmZ-Mt-RGY" id="djR-Kd-bof"/>
+                        <outlet property="team2ScoreLabel" destination="ghs-r1-0iX" id="HPF-4b-YKo"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="10059" y="-164"/>
@@ -2813,21 +2819,21 @@
                                 <color key="textColor" red="0.73333333329999995" green="0.1529411765" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pNy-yN-aTe">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="pNy-yN-aTe" customClass="NormalLabel">
                                 <rect key="frame" x="30" y="278" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ElF-JU-hOm">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="punten" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ElF-JU-hOm" customClass="NormalLabel">
                                 <rect key="frame" x="170" y="278" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view alpha="0.0" contentMode="scaleToFill" id="e3C-QK-z99">
+                            <view contentMode="scaleToFill" id="e3C-QK-z99">
                                 <rect key="frame" x="20" y="60" width="140" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2835,7 +2841,7 @@
                                         <rect key="frame" x="20" y="15" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-blue.png" id="3WA-Og-eIp">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-blue.png" id="3WA-Og-eIp">
                                         <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -2847,9 +2853,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view alpha="0.0" contentMode="scaleToFill" id="DPi-1M-LGG">
+                            <view contentMode="scaleToFill" id="DPi-1M-LGG">
                                 <rect key="frame" x="160" y="60" width="140" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2857,7 +2862,7 @@
                                         <rect key="frame" x="20" y="15" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-yellow.png" id="8jN-Ec-c9w">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-yellow.png" id="8jN-Ec-c9w">
                                         <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -2869,7 +2874,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wie staat er voor?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="EjL-tG-3ot" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -2879,7 +2883,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YaQ-UH-cgO">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YaQ-UH-cgO">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2913,7 +2917,7 @@
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="7K3-hb-up5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kwesties" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oYm-q4-YC8">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kwesties" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oYm-q4-YC8" customClass="NormalLabel">
                                 <rect key="frame" x="43" y="321" width="234" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -2924,6 +2928,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="j54-lQ-ubl"/>
+                    <connections>
+                        <outlet property="team1Label" destination="cl4-l6-Zv2" id="BEO-YR-6Pg"/>
+                        <outlet property="team1Picture" destination="c2t-qu-lA2" id="w0C-NS-vY1"/>
+                        <outlet property="team1ScoreLabel" destination="OM1-AH-2xP" id="1NC-Q6-hp3"/>
+                        <outlet property="team2Label" destination="MJl-Zr-NX2" id="Dpv-q7-4Qc"/>
+                        <outlet property="team2Picture" destination="6xt-As-GCo" id="s8P-eb-4Fs"/>
+                        <outlet property="team2ScoreLabel" destination="t3g-6B-II9" id="cKH-xx-fOp"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="10457" y="-164"/>
@@ -2964,7 +2976,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0De-qA-yBc">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0De-qA-yBc">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4107,14 +4119,22 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IntermediaryScoresViewController.h"/>
             <relationships>
                 <relationship kind="action" name="nextIssue:"/>
+                <relationship kind="outlet" name="team1Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team1ScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team2ScoreLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="IssueScoresViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IssueScoresViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="team1Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team1ScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2Label" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team2ScoreLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
