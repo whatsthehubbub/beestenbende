@@ -1312,7 +1312,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="2Wx-Wc-oH5">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="Vmr-Lz-lbo">
+                                <rect key="frame" x="36" y="116" width="248" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="2Wx-Wc-oH5">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1338,10 +1342,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="Vmr-Lz-lbo">
-                                <rect key="frame" x="36" y="116" width="248" height="247"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Q1-KH-j0a" customClass="BeestenButton">
                                 <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4609,12 +4609,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="c8n-UF-cmF"/>
-        <segue reference="mGZ-ym-IHt"/>
-        <segue reference="nT0-nb-xZI"/>
-        <segue reference="OEt-II-FtC"/>
-        <segue reference="gKX-hz-SZJ"/>
-    </inferredMetricsTieBreakers>
 </document>
