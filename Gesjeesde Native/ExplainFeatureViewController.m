@@ -14,11 +14,19 @@
 
 @implementation ExplainFeatureViewController
 
-@synthesize delegate;
+@synthesize game;
+
 @synthesize feature;
 
-@synthesize featureLabel;
-@synthesize explanationLabel;
+@synthesize team1NameLabel;
+@synthesize team1FeatureImage;
+@synthesize team1FeatureLabel;
+@synthesize team1ResultAndExplanationLabel;
+
+@synthesize team2NameLabel;
+@synthesize team2FeatureImage;
+@synthesize team2FeatureLabel;
+@synthesize team2ResultAndExplanationLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,8 +42,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self.featureLabel setText:[feature objectForKey:@"Label"]];
-    [self.explanationLabel setText:[feature objectForKey:@"Explanation"]];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    game = appDelegate.game;
+    
+    // TODO fill in all the explanation code here
 }
 
 - (void)viewDidUnload
@@ -50,7 +60,22 @@
 }
 
 - (IBAction)done:(id)sender {
-    [self.delegate explainFeatureViewControllerWasDone:self];
+    [game.team1 purgeUsedFeaturePictures];
+    [game.team2 purgeUsedFeaturePictures];
+    
+    if (game.required > 0 && game.team1.featurePictures.count > 0 && game.team2.featurePictures.count > 0) {
+        game.turn += 1;
+        
+        [self performSegueWithIdentifier:@"AnotherRound" sender:self];
+    } else {
+        // TODO show something if the proof was completed by a lack of features
+        
+        if (game.issue == 1) {
+            [self performSegueWithIdentifier:@"FirstProofComplete" sender:sender];
+        } else {
+            [self performSegueWithIdentifier:@"SecondProofComplete" sender:sender];
+        }
+    }
 }
 
 @end

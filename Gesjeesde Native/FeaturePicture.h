@@ -15,7 +15,7 @@
     bool deleted;
     
     int presentedTurn; // The turn that this feature picture was presented in
-    bool presentAssertion; // True is Wel, False is Niet
+    bool presentAssertion; // True is Wel, False is Geen
 }
 
 @property (nonatomic, retain) NSString *feature;

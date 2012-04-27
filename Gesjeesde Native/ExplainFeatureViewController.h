@@ -8,27 +8,27 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AppDelegate.h"
+
 @class ExplainFeatureViewController;
-
-@protocol ExplainFeatureViewControllerDelegate <NSObject>
-
-- (void)explainFeatureViewControllerWasDone:(ExplainFeatureViewController *)controller;
-
-@end
 
 @interface ExplainFeatureViewController : UIViewController {
     NSDictionary *feature;
-    
-    UILabel *featureLabel;
-    UILabel *explanationLabel;
 }
 
-@property (nonatomic, weak) id <ExplainFeatureViewControllerDelegate> delegate;
+@property (strong) Game *game;
 
 @property (nonatomic, retain) NSDictionary *feature;
 
-@property (nonatomic, retain) IBOutlet UILabel *featureLabel;
-@property (nonatomic, retain) IBOutlet UILabel *explanationLabel;
+@property (nonatomic, retain) IBOutlet UILabel *team1NameLabel;
+@property (nonatomic, retain) IBOutlet UIImageView *team1FeatureImage;
+@property (nonatomic, retain) IBOutlet UILabel *team1FeatureLabel;
+@property (nonatomic, retain) IBOutlet UILabel *team1ResultAndExplanationLabel;
+
+@property (nonatomic, retain) IBOutlet UILabel *team2NameLabel;
+@property (nonatomic, retain) IBOutlet UIImageView *team2FeatureImage;
+@property (nonatomic, retain) IBOutlet UILabel *team2FeatureLabel;
+@property (nonatomic, retain) IBOutlet UILabel *team2ResultAndExplanationLabel;
 
 - (IBAction)done:(id)sender;
 

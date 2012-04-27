@@ -44,6 +44,27 @@
     return self;
 }
 
+- (int)pointsForFeaturePicture:(FeaturePicture *)fp {
+    NSDictionary *featureDict = [self getFeatureWithName:fp.feature];
+    
+    int featureNumber;
+    if (issue == 1) {
+        featureNumber = [[featureDict objectForKey:@"Mammal"] intValue];
+    } else if (issue == 2) {
+        featureNumber = [[featureDict objectForKey:@"Fish"] intValue];
+    }
+    
+    if (fp.presentAssertion && featureNumber == 0) {
+        return 10;
+    } else if (fp.presentAssertion && featureNumber == 1) {
+        return 5;
+    } else if (!fp.presentAssertion && featureNumber == 2) {
+        return -5;
+    }
+    
+    return 0;
+}
+
 - (NSDictionary *)getFeatureWithName:(NSString *)name {
     for (NSDictionary *dict in self.features) {
         if ([name isEqualToString:[dict objectForKey:@"Label"]]) {
@@ -60,6 +81,7 @@
     } else {
         return team1;
     }
+    
 }
 
 - (Team *)secondTeamForTurn {

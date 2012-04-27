@@ -39,6 +39,7 @@
 -(NSString *)getTeamName;
 -(NSString *)getPicturePath;
 
+- (FeaturePicture *)featurePictureForTurn:(int)turn;
 - (bool)allFeaturePicturesLabelledOrDeleted;
 - (void)purgeDeletedFeaturePictures;
 - (void)purgeUsedFeaturePictures;

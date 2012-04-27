@@ -51,6 +51,15 @@
     return fullPathToFile;
 }
 
+- (FeaturePicture *)featurePictureForTurn:(int)turn {
+    for (FeaturePicture *fp in self.featurePictures) {
+        if (fp.presentedTurn == turn) {
+            return fp;
+        }
+    }
+    return nil;
+}
+
 - (bool)allFeaturePicturesLabelledOrDeleted {
     for (FeaturePicture *fp in self.featurePictures) {
         if ([fp.feature isEqualToString:@""] && !fp.deleted) {
