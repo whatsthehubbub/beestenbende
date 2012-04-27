@@ -59,6 +59,11 @@
     team1ResultAndExplanationLabel.text = @"result";
     
     FeaturePicture *team2fp = [game.team2 featurePictureForTurn:game.turn];
+    
+    team2NameLabel.text = [game.team2 getTeamName];
+    team2FeatureImage.image = team2fp.image;
+    team2FeatureLabel.text = team2fp.feature;
+    team2ResultAndExplanationLabel.text = @"result";
 }
 
 - (void)viewDidUnload
