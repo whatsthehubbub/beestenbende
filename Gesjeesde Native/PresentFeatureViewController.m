@@ -14,6 +14,8 @@
 
 @implementation PresentFeatureViewController
 
+@synthesize headerLabel;
+
 @synthesize overlayImage;
 
 @synthesize yesNoButton;
@@ -44,6 +46,8 @@
     game = appDelegate.game;
     
     self.currentTeam = [game firstTeamForTurn];
+    
+    self.headerLabel.text = [NSString stringWithFormat:@"Team %@: Maak de zin af", [self.currentTeam getTeamName]];
     
     if (self.currentTeam.number == 1) {
         overlayImage.image = [UIImage imageNamed:@"overlay-team-blue.png"];
@@ -100,6 +104,8 @@
         
         // Changes to this ViewController
         self.currentTeam = [game secondTeamForTurn];
+        
+        self.headerLabel.text = [NSString stringWithFormat:@"Team %@: Maak de zin af", [self.currentTeam getTeamName]];
         
         if (self.currentTeam.number == 1) {
             overlayImage.image = [UIImage imageNamed:@"overlay-team-blue.png"];

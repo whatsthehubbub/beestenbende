@@ -25,6 +25,8 @@
     bool hasFeature;
 }
 
+@property (nonatomic, retain) IBOutlet UILabel *headerLabel;
+
 @property (nonatomic, retain) IBOutlet UIImageView *overlayImage;
 
 @property (nonatomic, retain) IBOutlet UIButton *yesNoButton;
