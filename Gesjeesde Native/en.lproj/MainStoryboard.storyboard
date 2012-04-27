@@ -924,9 +924,9 @@
                                 <rect key="frame" x="42" y="54" width="242" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title="Third"/>
+                                    <segment title="Eekhoorn"/>
+                                    <segment title="Paling"/>
+                                    <segment title="Draak"/>
                                 </segments>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="50Y-ih-Ttg">
