@@ -50,7 +50,7 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
-
+    
 
     FeaturePicture *team1fp = [game.team1 featurePictureForTurn:game.turn];
     team1NameLabel.text = [game.team1 getTeamName];
