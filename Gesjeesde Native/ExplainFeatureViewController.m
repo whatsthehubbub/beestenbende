@@ -44,8 +44,15 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+
+
+    FeaturePicture *team1fp = [game.team1 featurePictureForTurn:game.turn];
+    team1NameLabel.text = [game.team1 getTeamName];
+    team1FeatureImage.image = team1fp.image;
+    team1FeatureLabel.text = team1fp.feature;
+    team1ResultAndExplanationLabel.text = @"result";
     
-    // TODO fill in all the explanation code here
+    FeaturePicture *team2fp = [game.team2 featurePictureForTurn:game.turn];
 }
 
 - (void)viewDidUnload
