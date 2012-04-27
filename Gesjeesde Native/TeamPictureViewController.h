@@ -44,6 +44,8 @@
 
 @property (strong) CaptureSessionManager *csManager;
 
+@property (strong) IBOutlet UISegmentedControl *selector;
+
 - (IBAction)takeTeamPicture:(id)sender;
 - (IBAction)takeTeamPictureAgain:(id)sender;
 - (IBAction)doneWithPicture:(id)sender;
