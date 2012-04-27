@@ -113,7 +113,11 @@
     if (game.required > 0 && game.team1.featurePictures.count > 0 && game.team2.featurePictures.count > 0) {
         game.turn += 1;
         
-        [self performSegueWithIdentifier:@"AnotherRound" sender:self];
+        if (game.issue == 1) {
+            [self performSegueWithIdentifier:@"AnotherRoundFirstIssue" sender:sender];
+        } else {
+            [self performSegueWithIdentifier:@"AnotherRoundSecondIssue" sender:sender];
+        }
     } else {
         // TODO show something if the proof was completed by a lack of features
         
