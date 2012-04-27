@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -920,6 +920,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" id="kJe-GL-DM8">
+                                <rect key="frame" x="42" y="54" width="242" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Eekhoorn"/>
+                                    <segment title="Paling"/>
+                                    <segment title="Draak"/>
+                                </segments>
+                            </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="50Y-ih-Ttg">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1002,6 +1011,7 @@
                     <navigationItem key="navigationItem" id="ifW-qg-foT"/>
                     <connections>
                         <outlet property="nextButton" destination="kmF-Sg-FnO" id="fKC-5f-uKI"/>
+                        <outlet property="selector" destination="kJe-GL-DM8" id="tVW-jm-HtJ"/>
                         <outlet property="takePictureAgainButton" destination="iJi-Na-9mH" id="Hz8-Ln-fNZ"/>
                         <outlet property="takeTeamPictureButton" destination="pcn-Qj-exJ" id="9Kd-sW-6K7"/>
                         <outlet property="teamOverlay" destination="aMU-rC-4xZ" id="eH6-Xe-dkn"/>
@@ -4467,6 +4477,7 @@
                 <relationship kind="action" name="takeTeamPicture:"/>
                 <relationship kind="action" name="takeTeamPictureAgain:"/>
                 <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="selector" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="takePictureAgainButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="takeTeamPictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>

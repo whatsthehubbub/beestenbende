@@ -28,6 +28,9 @@
 
 @synthesize csManager;
 
+// TODO remove for the final game
+@synthesize selector;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -111,6 +114,8 @@
     } else {
         game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
 
+        game.issue = selector.selectedSegmentIndex+1;
+        
         if (game.issue == 1) {
             // Start segue to the next view to start the game
             [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];
