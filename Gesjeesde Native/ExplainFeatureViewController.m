@@ -18,6 +18,9 @@
 
 @synthesize feature;
 
+@synthesize scrollView;
+@synthesize pageControl;
+
 @synthesize team1NameLabel;
 @synthesize team1FeatureImage;
 @synthesize team1FeatureLabel;
@@ -42,6 +45,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height);
+    
+    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
 
@@ -64,6 +70,31 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)scrollPage:(id)sender {
+    CGRect frame;
+    frame.origin.x = self.scrollView.frame.size.width * self.pageControl.currentPage;
+    frame.origin.y = 0;
+    frame.size = self.scrollView.frame.size;
+    
+    [self.scrollView scrollRectToVisible:frame animated:YES];
+}
+
+- (IBAction)previous:(id)sender {
+    if (self.pageControl.currentPage > 0) {
+        self.pageControl.currentPage -= 1;
+        
+        [self scrollPage:sender];
+    }
+}
+
+- (IBAction)next:(id)sender {
+    if (self.pageControl.currentPage < 1) {
+        self.pageControl.currentPage += 1;
+        
+        [self scrollPage:sender];
+    }
 }
 
 - (IBAction)done:(id)sender {

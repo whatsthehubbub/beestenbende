@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="huA-t4-3Pw">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
@@ -2333,7 +2334,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PEc-kd-bff">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PEc-kd-bff">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2371,7 +2372,7 @@
                                         <rect key="frame" x="20" y="0.0" width="240" height="280"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WSQ-Ke-AW2">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WSQ-Ke-AW2" customClass="NormalLabel">
                                                 <rect key="frame" x="0.0" y="0.0" width="280" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -2382,14 +2383,14 @@
                                                 <rect key="frame" x="0.0" y="29" width="110" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qKh-Eg-Y9y">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qKh-Eg-Y9y" customClass="NormalLabel">
                                                 <rect key="frame" x="118" y="29" width="122" height="110"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[Uniek/Goed/Fout] want: [uitleg]" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="C91-Wo-Khs">
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[Uniek/Goed/Fout] want: [uitleg]" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="C91-Wo-Khs" customClass="NormalLabel">
                                                 <rect key="frame" x="0.0" y="147" width="240" height="133"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -2431,11 +2432,12 @@
                                     </view>
                                 </subviews>
                             </scrollView>
-                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="E7e-Mi-arZ">
+                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" id="E7e-Mi-arZ">
                                 <rect key="frame" x="18" y="304" width="285" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="scrollPage" destination="gnf-ri-JiR" eventType="valueChanged" id="ROH-rZ-Fo3"/>
+                                    <action selector="scrollPage:" destination="TCN-yU-vb0" eventType="valueChanged" id="Z8U-3e-rMB"/>
                                 </connections>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="32s-Ac-y1r">
@@ -2451,6 +2453,7 @@
                                 </state>
                                 <connections>
                                     <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="aPR-AE-Mga"/>
+                                    <action selector="next:" destination="TCN-yU-vb0" eventType="touchUpInside" id="Nbv-98-CG1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="00d-4b-l4T">
@@ -2466,6 +2469,7 @@
                                 </state>
                                 <connections>
                                     <action selector="previous" destination="gnf-ri-JiR" eventType="touchUpInside" id="FER-PQ-Jux"/>
+                                    <action selector="previous:" destination="TCN-yU-vb0" eventType="touchUpInside" id="bWW-WL-8l2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2473,6 +2477,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="51h-PT-sz0"/>
                     <connections>
+                        <outlet property="pageControl" destination="E7e-Mi-arZ" id="NVq-4G-RiG"/>
+                        <outlet property="scrollView" destination="1Rd-27-WVN" id="oDf-nA-SCH"/>
                         <outlet property="team1FeatureImage" destination="FHH-Nt-atY" id="AG9-va-RuK"/>
                         <outlet property="team1FeatureLabel" destination="qKh-Eg-Y9y" id="BRM-hP-WOp"/>
                         <outlet property="team1NameLabel" destination="WSQ-Ke-AW2" id="KPP-7N-yo9"/>
@@ -4035,6 +4041,11 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ExplainFeatureViewController.h"/>
             <relationships>
                 <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="previous:"/>
+                <relationship kind="action" name="scrollPage:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="team1FeatureImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team1FeatureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1NameLabel" candidateClass="UILabel"/>
@@ -4235,7 +4246,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="sz9-qc-ZZh"/>
-        <segue reference="mGZ-ym-IHt"/>
-        <segue reference="HXG-Iv-RWR"/>
     </inferredMetricsTieBreakers>
 </document>
