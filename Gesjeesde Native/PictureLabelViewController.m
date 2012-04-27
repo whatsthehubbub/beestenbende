@@ -48,6 +48,8 @@
     // Find the current team
     self.currentTeam = game.team1;
     
+    headerLabel.text = [NSString stringWithFormat:@"Team %@ benoem je foto's", [self.currentTeam getTeamName]];
+    
     if (currentTeam.number != 1) {
         overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
@@ -144,7 +146,7 @@
         self.currentTeam = game.team2;
         self.currentPictureIndex = 0;
         overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
-        headerLabel.text = @"Geel benoem je foto's";
+        headerLabel.text = [NSString stringWithFormat:@"Team %@ benoem je foto's", [self.currentTeam getTeamName]];
         
 #ifndef DEBUG
         doneButton.hidden = YES;
