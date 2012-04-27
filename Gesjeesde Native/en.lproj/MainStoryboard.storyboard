@@ -562,7 +562,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xbP-4x-tO3" customClass="ArrowRight">
-                                <rect key="frame" x="140" y="418" width="140" height="42"/>
+                                <rect key="frame" x="160" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Aan de slag">
@@ -602,6 +602,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="OaA-Nt-Xyk">
+                                <rect key="frame" x="18" y="209" width="285" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="scrollPage:" destination="O1r-7e-Hsl" eventType="valueChanged" id="8cC-vY-63B"/>
+                                </connections>
+                            </pageControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="Bk7-03-zzb">
                                 <rect key="frame" x="127" y="267" width="193" height="213"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1097,7 +1104,7 @@
                                 </connections>
                             </button>
                             <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="Wv1-3L-7C1">
-                                <rect key="frame" x="17.5" y="219" width="285" height="36"/>
+                                <rect key="frame" x="17.5" y="209" width="285" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="scrollPage:" destination="O1r-7e-Hsl" eventType="valueChanged" id="fVl-JQ-iKZ"/>
@@ -3122,7 +3129,7 @@
                                 </connections>
                             </button>
                             <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="pin-nu-xx3">
-                                <rect key="frame" x="17.5" y="219" width="285" height="36"/>
+                                <rect key="frame" x="17.5" y="209" width="285" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="scrollPage:" destination="pZK-6x-SL0" eventType="valueChanged" id="6rY-cn-U0o"/>
@@ -3804,6 +3811,13 @@
                                     <outlet property="delegate" destination="gnf-ri-JiR" id="EQg-r9-K2i"/>
                                 </connections>
                             </scrollView>
+                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="mVB-jT-Ok3">
+                                <rect key="frame" x="18" y="209" width="285" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="scrollPage:" destination="O1r-7e-Hsl" eventType="valueChanged" id="7An-fU-lc9"/>
+                                </connections>
+                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j6O-ZH-U0r">
                                 <rect key="frame" x="287" y="144" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3871,6 +3885,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="jXq-lw-5Sg">
+                                <rect key="frame" x="20" y="60" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha! Ook wij zullen beter opletten, draak!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Iim-89-RLe" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="80" width="240" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-reptiles.png" id="O9M-aa-gjE">
+                                <rect key="frame" x="0.0" y="267" width="172" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De draak is ontmaskerd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="uu3-Yv-8lI" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3892,6 +3921,21 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="SOQ-3P-MBl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pHt-GF-TZM" customClass="ArrowRight">
+                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Verder…">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="xkw-cT-hVh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -4169,6 +4213,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="all-Ba-Vs9"/>
+        <segue reference="sz9-qc-ZZh"/>
     </inferredMetricsTieBreakers>
 </document>
