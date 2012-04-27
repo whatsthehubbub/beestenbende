@@ -2061,11 +2061,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3EX-vo-MH1">
-                                <rect key="frame" x="197" y="147" width="110" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="vws-36-cby">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Overtuig de zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="USq-WW-sfD" customClass="HeaderLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="izC-z4-BGz">
+                                <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-start.png">
+                                <state key="normal" image="button-titlebar-back.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2073,17 +2085,72 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="Fu6-rg-DIW"/>
-                                    <segue destination="Kgz-tg-9iE" kind="push" id="q2r-Gm-pvW"/>
+                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="Wgn-Xh-qIU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Overtuig de zeepaling" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9KU-AZ-Jh3">
-                                <rect key="frame" x="86" y="70" width="166" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="sYe-yb-Yl9">
+                                <rect key="frame" x="0.0" y="276" width="264" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="Cr4-PW-8oU">
+                                <rect key="frame" x="20" y="142" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wie heeft de beste kenmerken om de zeepaling te overtuigen dat hij geen reptiel is, maar een vis?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wv0-ew-VHD" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="162" width="240" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4MY-LB-fy8" customClass="ArrowRight">
+                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view alpha="0.0" contentMode="scaleToFill" id="pRB-uB-mHm">
+                                <rect key="frame" x="20" y="60" width="280" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-eel-icon.png" id="NXH-gx-bhR">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Paling heeft nog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LPL-0A-7EL" customClass="NormalLabel">
+                                        <rect key="frame" x="66" y="8" width="214" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="bewijzen nodig." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="cnK-jp-vnd" customClass="NormalLabel">
+                                        <rect key="frame" x="95" y="30" width="185" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="number-of-evidence-left-frame.png" id="f7z-TQ-FOB">
+                                        <rect key="frame" x="65" y="30" width="23" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9vI-wX-xOM" customClass="NormalLabel">
+                                        <rect key="frame" x="66" y="30" width="21" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="0.73333333329999995" green="0.1529411765" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -4039,12 +4106,13 @@
     <resources>
         <image name="animal-birds.png" width="366" height="480"/>
         <image name="animal-dragon.png" width="386" height="434"/>
+        <image name="animal-eel-icon.png" width="117" height="120"/>
         <image name="animal-eel.png" width="290" height="429"/>
         <image name="animal-fish.png" width="329" height="463"/>
         <image name="animal-host-icon.png" width="116" height="120"/>
         <image name="animal-host.png" width="527" height="408"/>
         <image name="animal-reptiles.png" width="343" height="426"/>
-        <image name="animal-squirrel-icon.png" width="116" height="120"/>
+        <image name="animal-squirrel-icon.png" width="118" height="120"/>
         <image name="animal-squirrel.png" width="429" height="642"/>
         <image name="bg-0-plain.jpg" width="640" height="960"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
@@ -4060,7 +4128,6 @@
         <image name="button-en-de-winnaar-is.png" width="379" height="84"/>
         <image name="button-speel-verder.png" width="362" height="114"/>
         <image name="button-start-nieuw-spel.png" width="365" height="112"/>
-        <image name="button-start.png" width="218" height="84"/>
         <image name="button-titlebar-back.png" width="56" height="55"/>
         <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="example-photos-of-features.png" width="381" height="274"/>
