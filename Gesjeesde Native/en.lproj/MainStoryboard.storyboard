@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -1872,8 +1872,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Kgz-tg-9iE" kind="push" id="MAw-yf-3XR"/>
+                                </connections>
                             </button>
-                            <view alpha="0.0" contentMode="scaleToFill" id="SaD-0g-4LM">
+                            <view contentMode="scaleToFill" id="SaD-0g-4LM">
                                 <rect key="frame" x="20" y="60" width="280" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2124,8 +2127,11 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NDf-Ve-Xx0" kind="push" id="c8n-UF-cmF"/>
+                                </connections>
                             </button>
-                            <view alpha="0.0" contentMode="scaleToFill" id="pRB-uB-mHm">
+                            <view contentMode="scaleToFill" id="pRB-uB-mHm">
                                 <rect key="frame" x="20" y="60" width="280" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
@@ -2272,6 +2278,7 @@
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="Kgz-tg-9iE" eventType="touchUpInside" id="Nej-PC-kEf"/>
+                                    <segue destination="4Xr-pd-4cz" kind="push" id="fUN-u1-nYM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2400,7 +2407,6 @@
                         <outlet property="overlayImage" destination="RxL-gE-LAJ" id="4nE-52-OU8"/>
                         <outlet property="yesNoButton" destination="xtc-7C-RXk" id="R5G-uQ-ZMR"/>
                         <segue destination="4Xr-pd-4cz" kind="push" identifier="Result" id="OEt-II-FtC"/>
-                        <segue destination="NDf-Ve-Xx0" kind="push" id="GNe-Tz-9N5"/>
                     </connections>
                 </viewController>
             </objects>
@@ -2465,11 +2471,11 @@
                                 <rect key="frame" x="20" y="350" width="280" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-squirrel-icon.png" id="gwu-p8-jYw">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="animal--icon.png" id="gwu-p8-jYw">
                                         <rect key="frame" x="0.0" y="0.0" width="58" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Eekhoorn heeft nog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mta-oL-oJU" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[Eekhoorn/Zeepaling] heeft nog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="mta-oL-oJU" customClass="NormalLabel">
                                         <rect key="frame" x="66" y="8" width="214" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -2495,8 +2501,9 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Eekhoorn heeft wel…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sfT-N2-DFH" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[Eekhoorn/Zeepaling] heeft [wel/geen]…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sfT-N2-DFH" customClass="NormalLabel">
                                 <rect key="frame" x="20" y="60" width="280" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -2688,6 +2695,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                             </scrollView>
@@ -2867,7 +2875,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eekhoorn snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kR2-lo-5Af" customClass="HeaderLabel">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-eel.png" id="tvL-FT-dbM">
+                                <rect key="frame" x="175" y="266" width="145" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="a9v-NV-vTr">
+                                <rect key="frame" x="20" y="60" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik heb dan misschien geen poten, maar ik ben geen slang. Ik ben een vis! Hoera!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Uni-8Q-7is" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="80" width="240" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kR2-lo-5Af" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2891,7 +2914,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZQR-HE-dG1" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <rect key="frame" x="20" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Verder…">
@@ -2903,6 +2926,7 @@
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="e19-v9-bNj"/>
+                                    <segue destination="jda-9n-bj0" kind="push" id="xL5-rE-8Xx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3508,7 +3532,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eekhoorn snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QH5-D3-BWV" customClass="HeaderLabel">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="fYH-LF-c8M">
+                                <rect key="frame" x="20" y="60" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-fish.png" id="jvV-jd-okv">
+                                <rect key="frame" x="0.0" y="248" width="164" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Juist! Ken je kenmerken, zeepaling." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="U4s-2M-rSm" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="80" width="240" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QH5-D3-BWV" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -3529,6 +3568,22 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="Mpt-nn-Wgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m5W-mm-oRw" customClass="ArrowRight">
+                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Verder…">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="69i-g1-nGY"/>
+                                    <segue destination="3Ko-sZ-1eK" kind="push" id="gKX-hz-SZJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -4245,6 +4300,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="animal--icon.png" width="16" height="16"/>
         <image name="animal-birds.png" width="366" height="480"/>
         <image name="animal-dragon.png" width="386" height="434"/>
         <image name="animal-eel-icon.png" width="117" height="120"/>
@@ -4511,5 +4567,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="all-Ba-Vs9"/>
+        <segue reference="fUN-u1-nYM"/>
+        <segue reference="qsg-AI-tMp"/>
+        <segue reference="gKX-hz-SZJ"/>
     </inferredMetricsTieBreakers>
 </document>
