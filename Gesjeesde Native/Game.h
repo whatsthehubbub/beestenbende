@@ -36,6 +36,7 @@
 - (NSDictionary *)getFeatureWithName:(NSString *)name;
 
 - (int)pointsForFeaturePicture:(FeaturePicture *)fp;
+- (NSString *)getCurrentAnimal;
 
 - (Team *)firstTeamForTurn;
 - (Team *)secondTeamForTurn;

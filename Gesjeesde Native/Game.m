@@ -65,6 +65,16 @@
     return 0;
 }
 
+- (NSString *)getCurrentAnimal {
+    if (self.issue == 1) {
+        return @"Eekhoorn";
+    } else if (self.issue == 2) {
+        return @"Zeepaling";
+    } else {
+        return @"Draak";
+    }
+}
+
 - (NSDictionary *)getFeatureWithName:(NSString *)name {
     for (NSDictionary *dict in self.features) {
         if ([name isEqualToString:[dict objectForKey:@"Label"]]) {

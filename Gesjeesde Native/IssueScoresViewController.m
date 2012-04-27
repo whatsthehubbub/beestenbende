@@ -16,6 +16,8 @@
 
 @synthesize game;
 
+@synthesize headerLabel;
+
 @synthesize team1Label;
 @synthesize team2Label;
 
@@ -41,6 +43,8 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+    
+    self.headerLabel.text = [NSString stringWithFormat:@"De %@ snapt het", [game getCurrentAnimal]];
     
     team1Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1Label.font.pointSize];
     team2Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2Label.font.pointSize];

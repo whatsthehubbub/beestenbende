@@ -29,6 +29,7 @@
 @synthesize team1fp;
 @synthesize team2fp;
 
+@synthesize animalRequiresLabel;
 @synthesize proofsRequiredLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -48,10 +49,14 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
+    team1featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1featureLabel.font.pointSize];
+    team2featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2featureLabel.font.pointSize];
+    
     team1fp = [game.team1 featurePictureForTurn:game.turn];
     
     if (!team1fp.presentAssertion) {
-        self.yesNoLabel.text = @"Eekhoorn heeft geen…";
+        self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft geen…", [game getCurrentAnimal]];
+        self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimal]];
     }
     
     int team1points = [game pointsForFeaturePicture:team1fp];
