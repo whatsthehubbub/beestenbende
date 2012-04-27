@@ -378,10 +378,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-eel.png" id="DgK-OZ-YRD">
-                                <rect key="frame" x="0.0" y="240" width="160" height="240"/>
+                                <rect key="frame" x="175" y="266" width="145" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="s0W-Ky-xWW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="s0W-Ky-xWW">
                                 <rect key="frame" x="20" y="60" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -401,7 +401,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CFt-kE-t9o" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <rect key="frame" x="20" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Verder…">
@@ -3058,7 +3058,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-fish.png" id="5Ys-sQ-Kcc">
-                                <rect key="frame" x="0.0" y="240" width="183" height="240"/>
+                                <rect key="frame" x="0.0" y="248" width="164" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="jfz-ow-oFW">
@@ -3950,8 +3950,8 @@
     <resources>
         <image name="animal-birds.png" width="366" height="480"/>
         <image name="animal-dragon.png" width="386" height="434"/>
-        <image name="animal-eel.png" width="16" height="16"/>
-        <image name="animal-fish.png" width="16" height="16"/>
+        <image name="animal-eel.png" width="290" height="429"/>
+        <image name="animal-fish.png" width="329" height="463"/>
         <image name="animal-host-icon.png" width="116" height="120"/>
         <image name="animal-host.png" width="527" height="408"/>
         <image name="animal-reptiles.png" width="343" height="426"/>
@@ -4213,6 +4213,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="all-Ba-Vs9"/>
     </inferredMetricsTieBreakers>
 </document>
