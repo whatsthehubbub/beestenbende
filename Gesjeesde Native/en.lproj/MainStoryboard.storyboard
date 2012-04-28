@@ -136,8 +136,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="done" destination="gnf-ri-JiR" eventType="touchUpInside" id="lcI-xn-nWa"/>
-                                    <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="UjS-xm-uos"/>
                                     <segue destination="gnf-ri-JiR" kind="push" id="mmu-Pe-mH0"/>
                                 </connections>
                             </button>
@@ -234,7 +232,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="nGz-gN-SYJ"/>
+                                    <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="d1f-AN-cza"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="G3Y-XA-uB8" customClass="ArrowRight">
@@ -250,7 +248,6 @@
                                 </state>
                                 <connections>
                                     <action selector="done" destination="gnf-ri-JiR" eventType="touchUpInside" id="gal-gB-62d"/>
-                                    <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="zGh-jL-JRW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welkom!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="JHr-kP-RbO" customClass="HeaderLabel">
@@ -1730,7 +1727,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="previous" destination="gnf-ri-JiR" eventType="touchUpInside" id="k9C-7L-KJP"/>
                                     <action selector="previous" destination="aEm-4i-hHa" eventType="touchUpInside" id="x6l-dB-5PJ"/>
                                     <action selector="previous:" destination="rP3-dC-dUL" eventType="touchUpInside" id="ATd-Gs-pMh"/>
                                 </connections>
@@ -1748,7 +1744,6 @@
                                 </state>
                                 <connections>
                                     <action selector="next" destination="aEm-4i-hHa" eventType="touchUpInside" id="Gl8-cx-Kdd"/>
-                                    <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="e84-cF-8dq"/>
                                     <action selector="next:" destination="rP3-dC-dUL" eventType="touchUpInside" id="J9t-QW-ZF9"/>
                                 </connections>
                             </button>
@@ -2715,7 +2710,6 @@
                                 <rect key="frame" x="18" y="304" width="285" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="scrollPage" destination="gnf-ri-JiR" eventType="valueChanged" id="ROH-rZ-Fo3"/>
                                     <action selector="scrollPage:" destination="TCN-yU-vb0" eventType="valueChanged" id="Z8U-3e-rMB"/>
                                 </connections>
                             </pageControl>
@@ -2731,7 +2725,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next" destination="gnf-ri-JiR" eventType="touchUpInside" id="aPR-AE-Mga"/>
                                     <action selector="next:" destination="TCN-yU-vb0" eventType="touchUpInside" id="Nbv-98-CG1"/>
                                 </connections>
                             </button>
@@ -2747,7 +2740,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="previous" destination="gnf-ri-JiR" eventType="touchUpInside" id="FER-PQ-Jux"/>
                                     <action selector="previous:" destination="TCN-yU-vb0" eventType="touchUpInside" id="bWW-WL-8l2"/>
                                 </connections>
                             </button>
