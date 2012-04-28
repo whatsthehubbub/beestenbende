@@ -52,12 +52,16 @@
     team1featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1featureLabel.font.pointSize];
     team2featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2featureLabel.font.pointSize];
     
-    team1fp = [game.team1 featurePictureForTurn:game.turn];
+    Team *team1 = [game firstTeamForTurn];
     
+    team1fp = [team1 featurePictureForTurn:game.turn];
+    
+    NSString *present = @"wel";
     if (!team1fp.presentAssertion) {
-        self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft geen…", [game getCurrentAnimal]];
-        self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimal]];
+        present = @"geen"; 
     }
+    self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimal], present];
+    self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimal]];
     
     int team1points = [game pointsForFeaturePicture:team1fp];
     if (team1points == 0) {
@@ -69,14 +73,15 @@
     }
 
     // We get -5 back in the negative case
-    game.team1.points += abs(team1points);
+    team1.points += abs(team1points);
     
     [self.team1featureLabel setText:team1fp.feature];
     self.team1featureImage.image = team1fp.image;
     
 
     // Do exactly the same thing for team 2
-    team2fp = [game.team2 featurePictureForTurn:game.turn];
+    Team *team2 = [game secondTeamForTurn];
+    team2fp = [team2 featurePictureForTurn:game.turn];
     
     int team2points = [game pointsForFeaturePicture:team2fp];
 
@@ -88,7 +93,7 @@
         [self.team2pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
     }
     
-    game.team2.points += abs(team2points);
+    team2.points += abs(team2points);
     
     [self.team2featureLabel setText:team2fp.feature];
     self.team2featureImage.image = team2fp.image;
