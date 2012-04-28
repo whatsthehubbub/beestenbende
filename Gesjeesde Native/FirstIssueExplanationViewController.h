@@ -14,7 +14,7 @@
 @interface FirstIssueExplanationViewController : UIViewController <FeatureExampleViewControllerDelegate, UIScrollViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain) IBOutlet DDPageControl *pageControl;
+@property (nonatomic, retain) DDPageControl *pageControl;
 
 @property (assign) BOOL pageControlBeingUsed;
 

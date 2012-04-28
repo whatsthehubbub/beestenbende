@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "DDPageControl.h"
 
 @class ExplainFeatureViewController;
 
@@ -21,7 +22,9 @@
 @property (nonatomic, retain) NSDictionary *feature;
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
+
+@property (nonatomic, retain) DDPageControl *pageControl;
+@property (assign) BOOL pageControlBeingUsed;
 
 @property (nonatomic, retain) IBOutlet UILabel *team1NameLabel;
 @property (nonatomic, retain) IBOutlet UIImageView *team1FeatureImage;
@@ -33,7 +36,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *team2FeatureLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2ResultAndExplanationLabel;
 
-- (IBAction)scrollPage:(id)sender;
+- (void)scrollPage;
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
 - (IBAction)done:(id)sender;
