@@ -52,16 +52,8 @@
     team1featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1featureLabel.font.pointSize];
     team2featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2featureLabel.font.pointSize];
     
-    Team *team1 = [game firstTeamForTurn];
     
-    team1fp = [team1 featurePictureForTurn:game.turn];
-    
-    NSString *present = @"wel";
-    if (!team1fp.presentAssertion) {
-        present = @"geen"; 
-    }
-    self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimal], present];
-    self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimal]];
+    team1fp = [game.team1 featurePictureForTurn:game.turn];
     
     int team1points = [game pointsForFeaturePicture:team1fp];
     if (team1points == 0) {
@@ -73,15 +65,14 @@
     }
 
     // We get -5 back in the negative case
-    team1.points += abs(team1points);
+    game.team1.points += abs(team1points);
     
     [self.team1featureLabel setText:team1fp.feature];
     self.team1featureImage.image = team1fp.image;
     
 
     // Do exactly the same thing for team 2
-    Team *team2 = [game secondTeamForTurn];
-    team2fp = [team2 featurePictureForTurn:game.turn];
+    team2fp = [game.team2 featurePictureForTurn:game.turn];
     
     int team2points = [game pointsForFeaturePicture:team2fp];
 
@@ -93,10 +84,20 @@
         [self.team2pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
     }
     
-    team2.points += abs(team2points);
+    game.team2.points += abs(team2points);
     
     [self.team2featureLabel setText:team2fp.feature];
     self.team2featureImage.image = team2fp.image;
+    
+    // Update some user interface
+    NSString *present = @"wel";
+    // Presence depends on the first team playing not necessarily team1
+    if (![[game firstTeamForTurn] featurePictureForTurn:game.turn].presentAssertion) {
+        present = @"geen"; 
+    }
+    self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimal], present];
+    self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimal]];
+    
     
     // Check if we're closer to the required proof
     if (abs(team1points) + abs(team2points) > 0) {
