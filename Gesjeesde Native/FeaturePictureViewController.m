@@ -42,7 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
@@ -121,7 +120,12 @@
         // TODO these need resetting to NO for both teams on the next round of picture taking
         game.team2.tookFeaturePictures = YES;
         // Go on to labelling
-        [self performSegueWithIdentifier:@"PicturesDone" sender:self];
+        
+        if (game.issue == 1) {
+            [self performSegueWithIdentifier:@"LabelFirst" sender:sender];
+        } else {
+            [self performSegueWithIdentifier:@"LabelSecond" sender:sender];
+        }
     } else {
         // Go back again to have team 2 take their pictures
         game.team1.tookFeaturePictures = YES;
@@ -143,58 +147,7 @@
 #pragma mark -
 
 - (IBAction)takeFeaturePicture:(id)sender {
-    // TODO check if the time is not over yet.
-    
-//    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-//    picker.delegate = self;
-//    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
-//    
-//    [self presentModalViewController:picker animated:YES];
-    
     [csManager captureStillImage];
 }
-
-#pragma mark - UIImagePickerControllerDelegate
-
-//- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary *)editingInfo {
-    
-//    Team *team = game.team1;
-//    if (self.currentTeamNumber == 2) {
-//        team = game.team2;
-//    }
-//    
-//    UIGraphicsBeginImageContext(CGSizeMake(200, 200));
-//    [image drawInRect:CGRectMake(0, 0, 200, 200)];
-//    UIImage *smallImage = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    
-//    UIImageView *newImageView = [[UIImageView alloc] initWithFrame:CGRectMake(10 + (team.featurePictures.count % 3 * 80), 10 + 90 * ([team.featurePictures count] / 3), 80, 80)];
-//    newImageView.clipsToBounds = YES;
-//    newImageView.contentMode = UIViewContentModeScaleAspectFit;
-//    newImageView.image = smallImage;
-//    
-//    [self.imagesView addSubview:newImageView];
-//    
-//    // Save UIImage to team object
-//    [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:smallImage]];
-//    
-//    [picker dismissModalViewControllerAnimated:YES];
-    
-//    NSData *imageData = UIImageJPEGRepresentation(image, 0.5);
-//    
-//    Team *team;
-//    if (self.currentTeamNumber==1) {
-//        team = game.team1;
-//    } else {
-//        team = game.team2;
-//    }
-//    
-//    [imageData writeToFile:[team getPicturePath] atomically:NO];
-//}
-
-//- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-//    [picker dismissModalViewControllerAnimated:YES];
-//}
-//
 
 @end
