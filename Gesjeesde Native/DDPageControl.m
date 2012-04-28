@@ -8,6 +8,8 @@
 
 #import "DDPageControl.h"
 
+// Page control taken from
+// http://www.ddeville.me/2011/01/ddpagecontrol-a-custom-uipagecontrol/
 
 #define kDotDiameter	4.0f
 #define kDotSpace		12.0f
@@ -44,9 +46,14 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-	if ((self = [super initWithFrame: CGRectZero]))
-	{
-		self.backgroundColor = [UIColor clearColor] ;
+	if ((self = [super initWithFrame: CGRectZero])) {
+		self.backgroundColor = [UIColor clearColor];
+        
+        [self setType: DDPageControlTypeOnEmptyOffFull] ;
+        [self setOnColor: [UIColor grayColor]];
+        [self setOffColor: [UIColor grayColor]];
+        [self setIndicatorDiameter: 10.0f] ;
+        [self setIndicatorSpace: 15.0f] ;
 	}
 	return self ;
 }
@@ -115,7 +122,7 @@
 	}
 	
 	// restore the context
-	CGContextRestoreGState(context) ;
+	CGContextRestoreGState(context);
 }
 
 

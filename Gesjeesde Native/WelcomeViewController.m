@@ -17,7 +17,7 @@
 @synthesize scrollView;
 @synthesize pageControl;
 
-@synthesize ddPageControl;
+@synthesize pageControlBeingUsed;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,21 +34,18 @@
     
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 3, self.scrollView.frame.size.height);
     
+    self.pageControl = [[DDPageControl alloc] init];
     
-    // Page control taken from
-    // http://www.ddeville.me/2011/01/ddpagecontrol-a-custom-uipagecontrol/
-    self.ddPageControl = [[DDPageControl alloc] init];
-    [ddPageControl setCenter: CGPointMake(self.scrollView.center.x, self.scrollView.center.y + self.scrollView.bounds.size.height/2 - 20)] ;
-    [ddPageControl addTarget: self action: @selector(pageControlClicked:) forControlEvents: UIControlEventValueChanged] ;
-    ddPageControl.numberOfPages = 3;
-    ddPageControl.currentPage = 0;
+    [pageControl setCenter: CGPointMake(self.scrollView.center.x, self.scrollView.center.y + self.scrollView.bounds.size.height/2 - 20)] ;
     
-    [ddPageControl setType: DDPageControlTypeOnEmptyOffFull] ;
-    [ddPageControl setOnColor: [UIColor grayColor]];
-    [ddPageControl setOffColor: [UIColor grayColor]];
-    [ddPageControl setIndicatorDiameter: 10.0f] ;
-    [ddPageControl setIndicatorSpace: 15.0f] ;
-    [self.view addSubview:ddPageControl];
+    [pageControl addTarget: self action: @selector(pageControlClicked:) forControlEvents: UIControlEventValueChanged] ;
+    
+    pageControl.numberOfPages = 3;
+    pageControl.currentPage = 0;
+    
+    pageControlBeingUsed = NO;
+    
+    [self.view addSubview:pageControl];
 }
 
 - (void)viewDidUnload
@@ -77,16 +74,17 @@
         
         [self scrollPage];
         
-        [ddPageControl setCurrentPage:self.pageControl.currentPage];
+        pageControlBeingUsed = YES;
     }
 }
 
 - (IBAction)next {
-    if (self.pageControl.currentPage < 2) {
+    if (self.pageControl.currentPage < pageControl.numberOfPages-1) {
         self.pageControl.currentPage += 1;
+        
         [self scrollPage];
         
-        [ddPageControl setCurrentPage:self.pageControl.currentPage];
+        pageControlBeingUsed = YES;
     }
 }
 
@@ -98,22 +96,35 @@
 #pragma mark DDPageControl triggered actions
 - (void)pageControlClicked:(id)sender
 {
-	DDPageControl *thePageControl = (DDPageControl *)sender ;
+	DDPageControl *thePageControl = (DDPageControl *)sender;
     
-	// we need to scroll to the new index
-	[scrollView setContentOffset: CGPointMake(scrollView.bounds.size.width * thePageControl.currentPage, scrollView.contentOffset.y) animated: YES] ;
+    self.pageControl.currentPage = thePageControl.currentPage;
+    [self scrollPage];
+    
+    pageControlBeingUsed = YES;
+    
+//	// we need to scroll to the new index
+//	[scrollView setContentOffset: CGPointMake(scrollView.bounds.size.width * thePageControl.currentPage, scrollView.contentOffset.y) animated: YES] ;
 }
 
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    // From: http://www.iosdevnotes.com/2011/03/uiscrollview-paging/
-    CGFloat pageWidth = self.scrollView.frame.size.width;
-    int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    
-    self.pageControl.currentPage = page;
-    
-    [ddPageControl setCurrentPage:page];
+    if (!pageControlBeingUsed) {
+        // From: http://www.iosdevnotes.com/2011/03/uiscrollview-paging/
+        CGFloat pageWidth = self.scrollView.frame.size.width;
+        int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+        
+        self.pageControl.currentPage = page;
+    }
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    pageControlBeingUsed = NO;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    pageControlBeingUsed = NO;
 }
 
 @end
