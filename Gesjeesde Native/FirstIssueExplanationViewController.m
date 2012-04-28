@@ -17,6 +17,8 @@
 @synthesize scrollView;
 @synthesize pageControl;
 
+@synthesize pageControlBeingUsed;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +34,19 @@
 	// Do any additional setup after loading the view.
     
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 4, self.scrollView.frame.size.height);
+    
+    self.pageControl = [[DDPageControl alloc] init];
+    
+    [pageControl setCenter: CGPointMake(self.scrollView.center.x, self.scrollView.center.y + self.scrollView.bounds.size.height/2 - 20)] ;
+    
+    [pageControl addTarget: self action: @selector(pageControlClicked:) forControlEvents: UIControlEventValueChanged] ;
+    
+    pageControl.numberOfPages = 4;
+    pageControl.currentPage = 0;
+    
+    pageControlBeingUsed = NO;
+    
+    [self.view addSubview:pageControl];
 }
 
 - (void)viewDidUnload
@@ -53,6 +68,8 @@
 }
 
 - (IBAction)scrollPage:(id)sender {
+    pageControlBeingUsed = YES;
+    
     CGRect frame;
     frame.origin.x = self.scrollView.frame.size.width * self.pageControl.currentPage;
     frame.origin.y = 0;
@@ -84,12 +101,42 @@
     }
 }
 
+#pragma mark -
+#pragma mark DDPageControl triggered actions
+- (void)pageControlClicked:(id)sender
+{
+	DDPageControl *thePageControl = (DDPageControl *)sender;
+    
+    self.pageControl.currentPage = thePageControl.currentPage;
+    [self scrollPage:sender];
+    
+    //	// we need to scroll to the new index
+    //	[scrollView setContentOffset: CGPointMake(scrollView.bounds.size.width * thePageControl.currentPage, scrollView.contentOffset.y) animated: YES] ;
+}
+
 #pragma mark - FeatureExampleViewControllerDelegate
 
 - (void)featureExampleDidBack:(FeatureExampleViewController *)controller {
-    // [self dismissViewControllerAnimated:YES completion:nil];
-    
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (!pageControlBeingUsed) {
+        CGFloat pageWidth = self.scrollView.frame.size.width;
+        int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+        
+        self.pageControl.currentPage = page;
+    }
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    pageControlBeingUsed = NO;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    pageControlBeingUsed = NO;
 }
 
 @end

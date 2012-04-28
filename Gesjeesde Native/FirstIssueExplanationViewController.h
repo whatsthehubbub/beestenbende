@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 
 #import "FeatureExampleViewController.h"
+#import "DDPageControl.h"
 
-@interface FirstIssueExplanationViewController : UIViewController <FeatureExampleViewControllerDelegate>
+@interface FirstIssueExplanationViewController : UIViewController <FeatureExampleViewControllerDelegate, UIScrollViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, retain) IBOutlet DDPageControl *pageControl;
+
+@property (assign) BOOL pageControlBeingUsed;
 
 - (IBAction)scrollPage:(id)sender;
 - (IBAction)previous:(id)sender;

@@ -60,6 +60,8 @@
 }
 
 - (IBAction)scrollPage {
+    pageControlBeingUsed = YES;
+    
     CGRect frame;
     frame.origin.x = self.scrollView.frame.size.width * self.pageControl.currentPage;
     frame.origin.y = 0;
@@ -73,8 +75,6 @@
         self.pageControl.currentPage -= 1;
         
         [self scrollPage];
-        
-        pageControlBeingUsed = YES;
     }
 }
 
@@ -83,8 +83,6 @@
         self.pageControl.currentPage += 1;
         
         [self scrollPage];
-        
-        pageControlBeingUsed = YES;
     }
 }
 
@@ -92,23 +90,16 @@
     [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
-#pragma mark -
-#pragma mark DDPageControl triggered actions
+#pragma mark - DDPageControl triggered actions
 - (void)pageControlClicked:(id)sender
 {
 	DDPageControl *thePageControl = (DDPageControl *)sender;
     
     self.pageControl.currentPage = thePageControl.currentPage;
     [self scrollPage];
-    
-    pageControlBeingUsed = YES;
-    
-//	// we need to scroll to the new index
-//	[scrollView setContentOffset: CGPointMake(scrollView.bounds.size.width * thePageControl.currentPage, scrollView.contentOffset.y) animated: YES] ;
 }
 
 #pragma mark - UIScrollViewDelegate
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (!pageControlBeingUsed) {
         // From: http://www.iosdevnotes.com/2011/03/uiscrollview-paging/
