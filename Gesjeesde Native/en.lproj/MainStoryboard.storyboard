@@ -1107,10 +1107,6 @@
                                     <action selector="next:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="bFS-Qc-V8e"/>
                                 </connections>
                             </button>
-                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="Wv1-3L-7C1">
-                                <rect key="frame" x="17.5" y="209" width="285" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="JkL-UD-bNU" customClass="ArrowRight">
                                 <rect key="frame" x="170" y="418" width="130" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1170,7 +1166,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Drn-EP-t1T"/>
                     <connections>
-                        <outlet property="pageControl" destination="Wv1-3L-7C1" id="Uof-3Q-KA2"/>
                         <outlet property="scrollView" destination="93b-Lr-hyL" id="cqJ-vK-5P9"/>
                         <segue destination="mhP-gb-YWU" kind="push" identifier="Next" id="sz9-qc-ZZh"/>
                     </connections>
@@ -2632,12 +2627,12 @@
                                     <action selector="done:" destination="TCN-yU-vb0" eventType="touchUpInside" id="WnB-5h-2K9"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1Rd-27-WVN">
-                                <rect key="frame" x="20" y="60" width="280" height="280"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="1Rd-27-WVN">
+                                <rect key="frame" x="40" y="60" width="240" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="PgO-u0-f3F">
-                                        <rect key="frame" x="20" y="0.0" width="240" height="280"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="280"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WSQ-Ke-AW2" customClass="NormalLabel">
@@ -2668,7 +2663,7 @@
                                         </subviews>
                                     </view>
                                     <view contentMode="scaleToFill" id="uVU-sh-j1J">
-                                        <rect key="frame" x="300" y="0.0" width="240" height="280"/>
+                                        <rect key="frame" x="240" y="0.0" width="240" height="280"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jTu-fr-lnI">
@@ -4593,4 +4588,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="p5P-Gt-fdu"/>
+    </inferredMetricsTieBreakers>
 </document>
