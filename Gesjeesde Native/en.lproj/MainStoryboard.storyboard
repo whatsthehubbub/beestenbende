@@ -2694,6 +2694,9 @@
                                         </subviews>
                                     </view>
                                 </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="TCN-yU-vb0" id="UhE-UD-6dH"/>
+                                </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="32s-Ac-y1r">
                                 <rect key="frame" x="286" y="186" width="28" height="28"/>
