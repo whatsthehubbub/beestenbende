@@ -44,6 +44,9 @@
     team1Picture.image = game.team1.picture;
     team2Picture.image = game.team2.picture;
     
+    self.team1Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team1.dragonProofs]];
+    self.team2Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team2.dragonProofs]];
+    
     explanation.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer. ", [[game firstTeamForTurn] getTeamName], [[game secondTeamForTurn] getTeamName]];
 }
 

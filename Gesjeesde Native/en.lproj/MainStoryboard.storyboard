@@ -3734,7 +3734,9 @@
                     <connections>
                         <outlet property="explanation" destination="29c-3B-RCO" id="RWk-2g-ydE"/>
                         <outlet property="team1Picture" destination="vHv-AJ-hrm" id="cQP-kl-EYH"/>
+                        <outlet property="team1Proofs" destination="zrt-ZD-Jgp" id="7n5-LL-ON9"/>
                         <outlet property="team2Picture" destination="fqC-By-QSd" id="Dx9-4n-pAB"/>
+                        <outlet property="team2Proofs" destination="cBs-Pa-1id" id="Jv1-uF-pZl"/>
                     </connections>
                 </viewController>
             </objects>
@@ -4094,10 +4096,6 @@
                                     </label>
                                 </subviews>
                             </scrollView>
-                            <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="mVB-jT-Ok3">
-                                <rect key="frame" x="18" y="209" width="285" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j6O-ZH-U0r">
                                 <rect key="frame" x="287" y="144" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4307,7 +4305,9 @@
             <relationships>
                 <relationship kind="outlet" name="explanation" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1Picture" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team1Proofs" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team2Picture" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team2Proofs" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="ExplainFeatureViewController" superclassName="UIViewController">

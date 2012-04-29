@@ -17,6 +17,9 @@
 @property (nonatomic, retain) IBOutlet UIImageView *team1Picture;
 @property (nonatomic, retain) IBOutlet UIImageView *team2Picture;
 
+@property (nonatomic, retain) IBOutlet UIImageView *team1Proofs;
+@property (nonatomic, retain) IBOutlet UIImageView *team2Proofs;
+
 @property (nonatomic, retain) IBOutlet UILabel *explanation;
 
 @end

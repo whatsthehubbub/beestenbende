@@ -24,6 +24,8 @@
     
     int points;
     int totalPoints;
+    
+    int dragonProofs;
 }
 
 @property (readwrite) int number;
@@ -34,6 +36,7 @@
 
 @property (readwrite) int points;
 @property (readwrite) int totalPoints;
+@property (readwrite) int dragonProofs;
 
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamName;
