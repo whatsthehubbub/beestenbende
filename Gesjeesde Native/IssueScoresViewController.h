@@ -28,4 +28,5 @@
 @property (nonatomic, retain) IBOutlet UILabel *team1ScoreLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2ScoreLabel;
 
+@property (nonatomic, retain) IBOutlet UILabel *thanksLabel;
 @end

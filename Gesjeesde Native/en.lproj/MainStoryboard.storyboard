@@ -3076,6 +3076,7 @@
                         <outlet property="team2Label" destination="SIw-yY-V2K" id="jbK-rl-GPv"/>
                         <outlet property="team2Picture" destination="PmZ-Mt-RGY" id="djR-Kd-bof"/>
                         <outlet property="team2ScoreLabel" destination="ghs-r1-0iX" id="HPF-4b-YKo"/>
+                        <outlet property="thanksLabel" destination="lL7-rY-bvQ" id="tgm-yo-mmA"/>
                     </connections>
                 </viewController>
             </objects>
@@ -4450,6 +4451,7 @@
                 <relationship kind="outlet" name="team2Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team2Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team2ScoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="thanksLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MakeTeamsViewController" superclassName="UIViewController">

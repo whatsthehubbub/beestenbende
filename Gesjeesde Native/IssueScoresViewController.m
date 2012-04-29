@@ -27,6 +27,8 @@
 @synthesize team1ScoreLabel;
 @synthesize team2ScoreLabel;
 
+@synthesize thanksLabel;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -61,6 +63,8 @@
     
     game.team2.totalPoints += game.team2.points;
     game.team2.points = 0;
+    
+    self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@.", [game getCurrentAnimal]];
 }
 
 - (void)viewDidUnload
