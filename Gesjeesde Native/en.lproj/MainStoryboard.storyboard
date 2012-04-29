@@ -584,7 +584,7 @@
                     <navigationItem key="navigationItem" id="417-VD-8kO"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2954" y="1757"/>
+            <point key="canvasLocation" x="3432" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="HaD-5H-CQD">
@@ -717,7 +717,7 @@
                     <navigationItem key="navigationItem" id="7FB-fo-6G1"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3432" y="1116"/>
+            <point key="canvasLocation" x="3911" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6uc-Ng-T8J">
@@ -3601,90 +3601,6 @@
             <point key="canvasLocation" x="9492" y="519"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="WyE-te-f1n">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hYv-RQ-vF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="TdB-G2-tA5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="z1K-CQ-Kie">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="JZh-Wu-n4R">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Rg-QI-VvK" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="418" width="240" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Maak draakfoto">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="i9B-vh-0WE" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="418" width="110" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Opnieuw">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FfM-3b-8cc" customClass="ArrowRight">
-                                <rect key="frame" x="170" y="418" width="110" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Klaar">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Ohl-yM-6C4">
-                                <rect key="frame" x="40" y="90" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wat is de draak?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xQM-CW-lhq" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OLv-kN-hAj">
-                                <rect key="frame" x="5" y="6" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="qZJ-DF-gPe"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ypy-Ic-gnP"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="3911" y="1116"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="aXj-aZ-nnA">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaH-uG-MJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3810,7 +3726,7 @@
                     <navigationItem key="navigationItem" id="mUS-MS-wcz"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3432" y="1757"/>
+            <point key="canvasLocation" x="4408" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XUj-ef-RYG">
@@ -3914,7 +3830,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3911" y="1757"/>
+            <point key="canvasLocation" x="4876" y="1109"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="X9A-dO-oBU">
@@ -3998,7 +3914,7 @@
                     <navigationItem key="navigationItem" id="MFV-Hb-6rg"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4394" y="1116"/>
+            <point key="canvasLocation" x="5356" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XRf-iB-mpE">
@@ -4092,7 +4008,7 @@
                     <navigationItem key="navigationItem" id="w7a-lX-fPL"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4876" y="1116"/>
+            <point key="canvasLocation" x="5835" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ttn-ai-RLD">
@@ -4222,7 +4138,7 @@
                     <navigationItem key="navigationItem" id="SXK-81-Ifv"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5356" y="1116"/>
+            <point key="canvasLocation" x="6317" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ktj-ry-yzQ">
@@ -4296,7 +4212,7 @@
                     <navigationItem key="navigationItem" id="rdO-zH-dYs"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5835" y="1116"/>
+            <point key="canvasLocation" x="6794" y="1116"/>
         </scene>
     </scenes>
     <resources>
