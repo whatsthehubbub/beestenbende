@@ -115,6 +115,7 @@
 		4E50320715497AD80028880F /* MostPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E50320615497AD80028880F /* MostPicturesViewController.m */; };
 		4E6D61EF1525F79A009D27B0 /* FeaturePictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */; };
 		4E75576B154D9500009A9E51 /* DragonExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75576A154D9500009A9E51 /* DragonExplanationViewController.m */; };
+		4E75576F154D98F7009A9E51 /* DragonIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */; };
 		4E80ADCA151FCA22001CBA7E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */; };
 		4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */; };
 		4EA62E2A15249B4100E74E64 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2915249B4100E74E64 /* Game.m */; };
@@ -297,6 +298,8 @@
 		4E6D61EE1525F799009D27B0 /* FeaturePictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePictureViewController.m; sourceTree = "<group>"; };
 		4E755769154D94FF009A9E51 /* DragonExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonExplanationViewController.h; sourceTree = "<group>"; };
 		4E75576A154D9500009A9E51 /* DragonExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonExplanationViewController.m; sourceTree = "<group>"; };
+		4E75576D154D98F7009A9E51 /* DragonIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonIntroductionViewController.h; sourceTree = "<group>"; };
+		4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonIntroductionViewController.m; sourceTree = "<group>"; };
 		4E80ADC8151FCA22001CBA7E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 		4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPictureViewController.h; sourceTree = "<group>"; };
@@ -599,6 +602,8 @@
 				4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */,
 				4E755769154D94FF009A9E51 /* DragonExplanationViewController.h */,
 				4E75576A154D9500009A9E51 /* DragonExplanationViewController.m */,
+				4E75576D154D98F7009A9E51 /* DragonIntroductionViewController.h */,
+				4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */,
 				4E42820715447EBC009FD991 /* TeamPrepareViewController.h */,
 				4E42820815447EBD009FD991 /* TeamPrepareViewController.m */,
 				4EAE98EF151A618A0051C926 /* ViewController.h */,
@@ -872,6 +877,7 @@
 				4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */,
 				4E50320715497AD80028880F /* MostPicturesViewController.m in Sources */,
 				4E75576B154D9500009A9E51 /* DragonExplanationViewController.m in Sources */,
+				4E75576F154D98F7009A9E51 /* DragonIntroductionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

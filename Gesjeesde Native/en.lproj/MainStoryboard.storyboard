@@ -3607,11 +3607,11 @@
             </objects>
             <point key="canvasLocation" x="9492" y="519"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Introduction View Controller-->
         <scene sceneID="aXj-aZ-nnA">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaH-uG-MJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Dee-6Y-Prk" sceneMemberID="viewController">
+                <viewController id="Dee-6Y-Prk" customClass="DragonIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GKT-ke-Jds">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3731,6 +3731,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mUS-MS-wcz"/>
+                    <connections>
+                        <outlet property="explanation" destination="29c-3B-RCO" id="RWk-2g-ydE"/>
+                        <outlet property="team1Picture" destination="vHv-AJ-hrm" id="cQP-kl-EYH"/>
+                        <outlet property="team2Picture" destination="fqC-By-QSd" id="Dx9-4n-pAB"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="4408" y="1116"/>
@@ -4295,6 +4300,14 @@
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="DragonIntroductionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonIntroductionViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="explanation" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1Picture" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team2Picture" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="ExplainFeatureViewController" superclassName="UIViewController">

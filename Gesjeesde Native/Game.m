@@ -91,7 +91,6 @@
     } else {
         return team1;
     }
-    
 }
 
 - (Team *)secondTeamForTurn {
