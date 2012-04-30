@@ -85,10 +85,10 @@
     NSString *imageName, *imageDisabledName;
     if (self.hasFeature) {
         imageName = @"toggle-wel-on-geen-off.png";
-        imageDisabledName = @"toggle-wel-on-geen-off-disabled.png";
+        imageDisabledName = @"toggle-wel-on-geen-off-inactive.png";
     } else {
         imageName = @"toggle-wel-off-geen-on.png";
-        imageDisabledName = @"toggle-wel-off-geen-on-disabled.png";
+        imageDisabledName = @"toggle-wel-off-geen-on-inactive.png";
     }
     
     [self.yesNoButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
