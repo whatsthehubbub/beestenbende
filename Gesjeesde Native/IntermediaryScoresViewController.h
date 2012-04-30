@@ -23,6 +23,8 @@
 @property (nonatomic, retain) IBOutlet UILabel *team1ScoreLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2ScoreLabel;
 
+@property (nonatomic, retain) IBOutlet UIImageView *progressImage;
+
 - (IBAction)nextIssue:(id)sender;
 
 @end

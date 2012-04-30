@@ -25,6 +25,8 @@
 @synthesize team1ScoreLabel;
 @synthesize team2ScoreLabel;
 
+@synthesize progressImage;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -50,6 +52,8 @@
     
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.totalPoints]];
     [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.totalPoints]];
+    
+    self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"progress-%d.png", game.issue-1]];
 }
 
 - (void)viewDidUnload
@@ -64,25 +68,23 @@
 }
 
 - (IBAction)nextIssue:(id)sender {
-    NSString *controllerIdentifier = @"";
-    
     if (game.issue == 1) {
         game.issue = 2;
         [game resetForNextIssue];
         
         // Go to the first screen of the second issue
-        controllerIdentifier = @"SecondIssueIntroduction";
-    } else {
+        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueIntroduction"];
+        [self.navigationController pushViewController:viewController animated:YES];
+    } else if (game.issue == 2) {
         game.issue = 3;
         [game resetForNextIssue];
         
         // Go to the first screen of the dragon
-        controllerIdentifier = @"FinalIssueIntroduction";
+        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FinalIssueIntroduction"];
+        [self.navigationController pushViewController:viewController animated:YES];
+    } else if (game.issue == 3) {
+        [self performSegueWithIdentifier:@"EndScreen" sender:sender];
     }
-    
-    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:controllerIdentifier];
-    
-    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

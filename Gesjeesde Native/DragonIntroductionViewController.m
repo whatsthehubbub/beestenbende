@@ -69,6 +69,13 @@
 
 - (IBAction)done:(id)sender {
     if (game.team1.dragonProofs == 3 || game.team2.dragonProofs == 3) {
+        
+        if (game.team1.dragonProofs == 3) {
+            game.team1.points += 10;
+        } else {
+            game.team2.points += 10;
+        }
+        
         [self performSegueWithIdentifier:@"DragonDone" sender:sender];
     } else {
         [self performSegueWithIdentifier:@"DragonAgain" sender:sender];

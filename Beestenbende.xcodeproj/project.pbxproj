@@ -151,6 +151,7 @@
 		4EAF06DB153DBB2700BE1CAA /* button-pijl-rechts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06D9153DBB2700BE1CAA /* button-pijl-rechts@2x.png */; };
 		4EC4012D152E09A10005EC5C /* IssueScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */; };
 		4EC83230154ED0AB006E7AC6 /* DragonResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */; };
+		4EC83234154EE26C006E7AC6 /* EndScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */; };
 		4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2151E153C3B6400040C97 /* HeaderLabel.m */; };
 		4ED21524153C417D00040C97 /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED21523153C417D00040C97 /* NormalLabel.m */; };
 		4ED21529153C4CA600040C97 /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21525153C4C8700040C97 /* Vollkorn-Bold.ttf */; };
@@ -362,6 +363,8 @@
 		4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueScoresViewController.m; sourceTree = "<group>"; };
 		4EC8322E154ED0AB006E7AC6 /* DragonResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonResultViewController.h; sourceTree = "<group>"; };
 		4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonResultViewController.m; sourceTree = "<group>"; };
+		4EC83232154EE26C006E7AC6 /* EndScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndScreenViewController.h; sourceTree = "<group>"; };
+		4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndScreenViewController.m; sourceTree = "<group>"; };
 		4ED2151D153C3B6400040C97 /* HeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderLabel.h; sourceTree = "<group>"; };
 		4ED2151E153C3B6400040C97 /* HeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabel.m; sourceTree = "<group>"; };
 		4ED21522153C417D00040C97 /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
@@ -620,6 +623,8 @@
 				4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */,
 				4EC8322E154ED0AB006E7AC6 /* DragonResultViewController.h */,
 				4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */,
+				4EC83232154EE26C006E7AC6 /* EndScreenViewController.h */,
+				4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */,
 				4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */,
 				4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */,
 				4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */,
@@ -916,6 +921,7 @@
 				4E4A4DF3154EB719009785BD /* DragonPictureViewController.m in Sources */,
 				4E4A4DF7154ECA1B009785BD /* DragonLabelViewController.m in Sources */,
 				4EC83230154ED0AB006E7AC6 /* DragonResultViewController.m in Sources */,
+				4EC83234154EE26C006E7AC6 /* EndScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

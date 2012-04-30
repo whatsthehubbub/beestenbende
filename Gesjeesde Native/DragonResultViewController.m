@@ -62,6 +62,9 @@
     if (points > 0) {
         correctOrWrong = @"Goed";
         currentTeam.dragonProofs += 1;
+        
+        // Add the issues points for this team
+        currentTeam.points += 10;
     } else {
         
     }

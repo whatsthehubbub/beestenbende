@@ -46,7 +46,11 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    self.headerLabel.text = [NSString stringWithFormat:@"De %@ snapt het", [game getCurrentAnimal]];
+    if (game.issue == 1 || game.issue == 2) {
+        self.headerLabel.text = [NSString stringWithFormat:@"De %@ snapt het", [game getCurrentAnimal]];
+    } else {
+        self.headerLabel.text = @"Tekst voor de draak"; // TODO
+    }
     
     team1Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1Label.font.pointSize];
     team2Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2Label.font.pointSize];
@@ -65,6 +69,7 @@
     game.team2.points = 0;
     
     self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@.", [game getCurrentAnimal]];
+    // TODO add text for the dragon issue
 }
 
 - (void)viewDidUnload
