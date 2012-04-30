@@ -49,7 +49,7 @@
     if (game.issue == 1 || game.issue == 2) {
         self.headerLabel.text = [NSString stringWithFormat:@"De %@ snapt het", [game getCurrentAnimal]];
     } else {
-        self.headerLabel.text = @"Tekst voor de draak"; // TODO
+        self.headerLabel.text = @"De draak is ontmaskerd";
     }
     
     team1Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1Label.font.pointSize];
@@ -71,7 +71,11 @@
     game.team2.totalPoints += game.team2.points;
     game.team2.points = 0;
     
-    self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@.", [[game getCurrentAnimal] lowercaseString]];
+    if (game.issue == 1 || game.issue == 2) {
+        self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@.", [[game getCurrentAnimal] lowercaseString]];
+    } else {
+        self.thanksLabel.text = @"Bedankt voor jullie hulp met het ontmaskeren van de draak.";
+    }
 }
 
 - (void)viewDidUnload
