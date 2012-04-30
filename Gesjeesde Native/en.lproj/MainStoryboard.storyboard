@@ -2472,7 +2472,7 @@
                                 <rect key="frame" x="20" y="350" width="280" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="animal--icon.png" id="gwu-p8-jYw">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-squirrel-icon.png" id="gwu-p8-jYw">
                                         <rect key="frame" x="0.0" y="0.0" width="58" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -2562,6 +2562,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="2Xr-Bc-Yow"/>
                     <connections>
+                        <outlet property="animalImage" destination="gwu-p8-jYw" id="QHT-Ei-3bG"/>
                         <outlet property="animalRequiresLabel" destination="mta-oL-oJU" id="eAw-1q-dxO"/>
                         <outlet property="proofsRequiredLabel" destination="k80-i3-9IF" id="0Cc-RB-UkH"/>
                         <outlet property="team1featureImage" destination="r9i-Ll-gaT" id="cpg-e7-qMk"/>
@@ -4336,7 +4337,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="animal--icon.png" width="16" height="16"/>
         <image name="animal-all.png" width="668" height="990"/>
         <image name="animal-birds.png" width="366" height="480"/>
         <image name="animal-dragon.png" width="386" height="434"/>
@@ -4609,6 +4609,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PresentResultViewController.h"/>
             <relationships>
                 <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="animalImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="animalRequiresLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="proofsRequiredLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1featureImage" candidateClass="UIImageView"/>
