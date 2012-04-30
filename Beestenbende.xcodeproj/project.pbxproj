@@ -110,6 +110,8 @@
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
 		4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */; };
 		4E4282141546CEFB009FD991 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282131546C8AD009FD991 /* DDPageControl.m */; };
+		4E4A4DF3154EB719009785BD /* DragonPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */; };
+		4E4A4DF7154ECA1B009785BD /* DragonLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
 		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
 		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
@@ -289,6 +291,10 @@
 		4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediaryScoresViewController.m; sourceTree = "<group>"; };
 		4E4282121546C8AC009FD991 /* DDPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPageControl.h; sourceTree = "<group>"; };
 		4E4282131546C8AD009FD991 /* DDPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
+		4E4A4DF1154EB719009785BD /* DragonPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonPictureViewController.h; sourceTree = "<group>"; };
+		4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonPictureViewController.m; sourceTree = "<group>"; };
+		4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonLabelViewController.h; sourceTree = "<group>"; };
+		4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonLabelViewController.m; sourceTree = "<group>"; };
 		4E4D8F9D152CCFCD00E898D5 /* Features.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Features.plist; sourceTree = "<group>"; };
 		4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentFeatureViewController.h; sourceTree = "<group>"; };
 		4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFeatureViewController.m; sourceTree = "<group>"; };
@@ -598,6 +604,10 @@
 				4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */,
 				4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */,
 				4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */,
+				4E4A4DF1154EB719009785BD /* DragonPictureViewController.h */,
+				4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */,
+				4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */,
+				4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */,
 				4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */,
 				4E3385DB154043AF00E740BB /* SecondIssueIntroductionViewController.h */,
 				4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */,
@@ -886,6 +896,8 @@
 				4E50320715497AD80028880F /* MostPicturesViewController.m in Sources */,
 				4E75576B154D9500009A9E51 /* DragonExplanationViewController.m in Sources */,
 				4E75576F154D98F7009A9E51 /* DragonIntroductionViewController.m in Sources */,
+				4E4A4DF3154EB719009785BD /* DragonPictureViewController.m in Sources */,
+				4E4A4DF7154ECA1B009785BD /* DragonLabelViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

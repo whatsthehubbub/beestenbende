@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="huA-t4-3Pw">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
@@ -3821,11 +3822,11 @@
             </objects>
             <point key="canvasLocation" x="4408" y="1116"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Picture View Controller-->
         <scene sceneID="XUj-ef-RYG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fj1-M9-pq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="JWy-sg-rOd" sceneMemberID="viewController">
+                <viewController id="JWy-sg-rOd" customClass="DragonPictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4r-fe-Nlj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3858,6 +3859,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="takeDragonPicture:" destination="JWy-sg-rOd" eventType="touchUpInside" id="Y0j-RQ-BHy"/>
                                     <action selector="takeTeamPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="361-6e-qlp"/>
                                 </connections>
                             </button>
@@ -3873,6 +3875,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="takeDragonPictureAgain:" destination="JWy-sg-rOd" eventType="touchUpInside" id="RkX-df-8s9"/>
                                     <action selector="takeTeamPictureAgain:" destination="apH-ed-9aX" eventType="touchUpInside" id="Iel-yR-kk1"/>
                                 </connections>
                             </button>
@@ -3889,6 +3892,7 @@
                                 </state>
                                 <connections>
                                     <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="6Xj-XQ-l8h"/>
+                                    <action selector="doneWithPicture:" destination="JWy-sg-rOd" eventType="touchUpInside" id="fkc-Du-SDf"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Onderzoek de draak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WjZ-qA-zcE" customClass="HeaderLabel">
@@ -3919,17 +3923,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="6cr-Mk-Wqg"/>
                     <connections>
-                        <segue destination="yMG-9O-rz6" kind="push" id="HOA-0I-TTa"/>
+                        <outlet property="doneButton" destination="d91-aZ-hGR" id="bNv-gw-qm5"/>
+                        <outlet property="dragonPictureView" destination="6tb-W8-dWk" id="PpL-Oe-nBd"/>
+                        <outlet property="takeDragonPictureButton" destination="2tz-1D-sEa" id="yLX-iD-1Z4"/>
+                        <outlet property="takePictureAgainButton" destination="oPR-1W-hG1" id="AEq-pJ-Bgw"/>
+                        <outlet property="teamOverlay" destination="1Og-aM-259" id="4mP-Ri-LEv"/>
+                        <segue destination="yMG-9O-rz6" kind="push" identifier="Next" id="HOA-0I-TTa"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="4876" y="1109"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Label View Controller-->
         <scene sceneID="X9A-dO-oBU">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVB-sK-dK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="yMG-9O-rz6" sceneMemberID="viewController">
+                <viewController id="yMG-9O-rz6" customClass="DragonLabelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghy-02-M9z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3961,6 +3970,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="LV6-Fj-42D"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draak heeft het kenmerk…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sFB-BP-ABr" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -3998,16 +4010,21 @@
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="PyZ-4q-3Ir"/>
-                                    <segue destination="Ica-di-yHw" kind="push" id="xup-69-ICh"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="MFV-Hb-6rg"/>
+                    <connections>
+                        <outlet property="doneButton" destination="Mcg-PQ-7g3" id="Tz6-0H-Odx"/>
+                        <outlet property="dragonPictureView" destination="9px-hm-1tr" id="1K7-tx-Pt3"/>
+                        <outlet property="featureButton" destination="zwv-1O-2Ql" id="yjz-7u-YSM"/>
+                        <outlet property="labelButton" destination="zwv-1O-2Ql" id="SFU-NX-26q"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5356" y="1116"/>
+            <point key="canvasLocation" x="5356" y="1109"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XRf-iB-mpE">
@@ -4085,7 +4102,7 @@
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="J4A-GW-s9I"/>
-                                    <segue destination="riD-0B-aIy" kind="push" id="bM1-7w-uhk"/>
+                                    <segue destination="riD-0B-aIy" kind="push" identifier="DragonKnown" id="bM1-7w-uhk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="OwZ-JE-OW8">
@@ -4099,9 +4116,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="w7a-lX-fPL"/>
+                    <connections>
+                        <segue destination="Dee-6Y-Prk" kind="push" identifier="DragonAgain" id="5OT-N5-qpE"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5835" y="1116"/>
+            <point key="canvasLocation" x="5846" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ttn-ai-RLD">
@@ -4391,6 +4411,27 @@
                 <relationship kind="outlet" name="team2Proofs" candidateClass="UIImageView"/>
             </relationships>
         </class>
+        <class className="DragonLabelViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonLabelViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dragonPictureView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="DragonPictureViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonPictureViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doneWithPicture:"/>
+                <relationship kind="action" name="takeDragonPicture:"/>
+                <relationship kind="action" name="takeDragonPictureAgain:"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dragonPictureView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="takeDragonPictureButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="takePictureAgainButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="ExplainFeatureViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ExplainFeatureViewController.h"/>
             <relationships>
@@ -4608,7 +4649,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="p5P-Gt-fdu"/>
+        <segue reference="5OT-N5-qpE"/>
+        <segue reference="LV6-Fj-42D"/>
     </inferredMetricsTieBreakers>
 </document>

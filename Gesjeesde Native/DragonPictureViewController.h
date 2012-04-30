@@ -8,6 +8,26 @@
 
 #import <UIKit/UIKit.h>
 
+#import "AppDelegate.h"
+#import "CaptureSessionManager.h"
+#import "UIImage+Extras.h"
+
 @interface DragonPictureViewController : UIViewController
+
+@property (strong) IBOutlet UIImageView *dragonPictureView;
+@property (strong) IBOutlet UIImageView *teamOverlay;
+
+@property (strong) IBOutlet UIButton *takeDragonPictureButton;
+@property (strong) IBOutlet UIButton *takePictureAgainButton;
+@property (strong) IBOutlet UIButton *doneButton;
+
+@property (strong) Game *game;
+@property (strong) Team *currentTeam;
+
+@property (strong) CaptureSessionManager *csManager;
+
+- (IBAction)takeDragonPicture:(id)sender;
+- (IBAction)takeDragonPictureAgain:(id)sender;
+- (IBAction)doneWithPicture:(id)sender;
 
 @end

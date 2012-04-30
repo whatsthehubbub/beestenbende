@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DragonLabelViewController : UIViewController
+#import "AppDelegate.h"
+#import "FeaturePickerViewController.h"
+#import "FeaturePicture.h"
+
+@interface DragonLabelViewController : UIViewController <FeaturePickerViewControllerDelegate>
+
+@property (strong) IBOutlet UIImageView *dragonPictureView;
+
+@property (strong) IBOutlet UIButton *featureButton;
+@property (strong) IBOutlet UIButton *doneButton;
+
+@property (strong) Game *game;
+@property (strong) Team *currentTeam;
 
 @end
