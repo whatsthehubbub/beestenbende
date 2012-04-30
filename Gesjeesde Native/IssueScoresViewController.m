@@ -61,6 +61,9 @@
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.points]];
     [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.points]];
     
+    team1ScoreLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1ScoreLabel.font.pointSize];
+    team2ScoreLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2ScoreLabel.font.pointSize];
+    
     // Store the points in the total and reset the points for the second issue
     game.team1.totalPoints += game.team1.points;
     game.team1.points = 0;
