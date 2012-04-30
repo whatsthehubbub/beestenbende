@@ -15,6 +15,7 @@
 @interface DragonLabelViewController : UIViewController <FeaturePickerViewControllerDelegate>
 
 @property (strong) IBOutlet UIImageView *dragonPictureView;
+@property (strong) IBOutlet UIImageView *teamOverlay;
 
 @property (strong) IBOutlet UIButton *featureButton;
 @property (strong) IBOutlet UIButton *doneButton;

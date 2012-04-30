@@ -50,7 +50,13 @@
     self.team1Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team1.dragonProofs]];
     self.team2Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team2.dragonProofs]];
     
-    explanation.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer. ", [[game firstTeamForTurn] getTeamName], [[game secondTeamForTurn] getTeamName]];
+    
+    Team *currentTeam = [game firstTeamForTurn];
+    if (currentTeam.tookFeaturePictures) {
+        currentTeam = [game otherTeamForTeam:currentTeam];
+    }
+    
+    explanation.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer. ", [currentTeam getTeamName], [[game otherTeamForTeam:currentTeam] getTeamName]];
 }
 
 - (void)viewDidUnload
@@ -62,6 +68,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (IBAction)done:(id)sender {
+    if (game.team1.dragonProofs == 3 || game.team2.dragonProofs == 3) {
+        [self performSegueWithIdentifier:@"DragonDone" sender:sender];
+    } else {
+        [self performSegueWithIdentifier:@"DragonAgain" sender:sender];
+    }
 }
 
 @end

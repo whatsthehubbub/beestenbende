@@ -49,6 +49,10 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
+    if (!currentTeam.number == 1) {
+        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+    }
+    
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];
 }
@@ -85,8 +89,6 @@
 }
 
 - (IBAction)doneWithPicture:(id)sender {
-    currentTeam.tookFeaturePictures = YES; // TODO move this till after the next stage
-    
     [currentTeam.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
                                      [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
     

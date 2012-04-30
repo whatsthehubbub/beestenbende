@@ -1,27 +1,26 @@
 //
-//  DragonLabelViewController.m
+//  DragonResultViewController.m
 //  Beestenbende
 //
 //  Created by Alper Çuğun on 30/4/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "DragonLabelViewController.h"
+#import "DragonResultViewController.h"
 
-@interface DragonLabelViewController ()
+@interface DragonResultViewController ()
 
 @end
 
-@implementation DragonLabelViewController
-
-@synthesize dragonPictureView;
-@synthesize teamOverlay;
-
-@synthesize featureButton;
-@synthesize doneButton;
+@implementation DragonResultViewController
 
 @synthesize game;
 @synthesize currentTeam;
+
+@synthesize teamOverlay;
+
+@synthesize featureImage;
+@synthesize featureLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -50,7 +49,17 @@
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
-    self.dragonPictureView.image = ((FeaturePicture *)self.currentTeam.featurePictures.lastObject).image;
+    // Only now we can move over to the next team
+    currentTeam.tookFeaturePictures = YES;
+    
+    // If both teams now have taken feature pictures, reset
+    if (currentTeam.tookFeaturePictures && [game otherTeamForTeam:currentTeam].tookFeaturePictures) {
+        // Increment turn so the other team can start
+        game.turn += 1;
+        
+        currentTeam.tookFeaturePictures = NO;
+        [game otherTeamForTeam:currentTeam].tookFeaturePictures = NO;
+    }
 }
 
 - (void)viewDidUnload
@@ -64,26 +73,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"PickFeature"]) {
-        FeaturePickerViewController *fpvc = segue.destinationViewController;
-        fpvc.delegate = self;
-    }
-}
-
-#pragma mark - FeaturePickerViewControllerDelegate
-
--(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)feature {
-    [self.featureButton setTitle:feature forState:UIControlStateNormal];
-    
-    FeaturePicture *fp = [self.currentTeam.featurePictures lastObject];
-
-    // Set that object's feature
-    fp.feature = feature;
-    
-    [self.navigationController popViewControllerAnimated:YES];
-    
-    doneButton.hidden = NO;
+- (IBAction)done:(id)sender {
+    [self performSegueWithIdentifier:@"DragonAgain" sender:sender];
 }
 
 @end
