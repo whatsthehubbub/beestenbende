@@ -72,6 +72,9 @@
 		47BFEDCA153F0DA1002BF8F3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC9153F0DA1002BF8F3 /* map.png */; };
 		47F47F40154EA6CB00BB481D /* animal-all.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F3F154EA6CB00BB481D /* animal-all.png */; };
 		47F47F43154EAC0400BB481D /* progress-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F42154EAC0400BB481D /* progress-3.png */; };
+		47F47F45154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */; };
+		47F47F48154ECD0900BB481D /* toggle-wel-on-geen-off-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F46154ECD0900BB481D /* toggle-wel-on-geen-off-inactive.png */; };
+		47F47F49154ECD0900BB481D /* toggle-wel-off-geen-on-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F47154ECD0900BB481D /* toggle-wel-off-geen-on-inactive.png */; };
 		4E08C30F1524723D00F3CDC7 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E08C30E1524723D00F3CDC7 /* 15.png */; };
 		4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */; };
 		4E08C31615248CAA00F3CDC7 /* FirstIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */; };
@@ -242,6 +245,9 @@
 		47BFEDC9153F0DA1002BF8F3 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		47F47F3F154EA6CB00BB481D /* animal-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-all.png"; sourceTree = "<group>"; };
 		47F47F42154EAC0400BB481D /* progress-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-3.png"; sourceTree = "<group>"; };
+		47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-big-mirrored-flipped.png"; sourceTree = "<group>"; };
+		47F47F46154ECD0900BB481D /* toggle-wel-on-geen-off-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-on-geen-off-inactive.png"; sourceTree = "<group>"; };
+		47F47F47154ECD0900BB481D /* toggle-wel-off-geen-on-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-off-geen-on-inactive.png"; sourceTree = "<group>"; };
 		4E08C30E1524723D00F3CDC7 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
 		4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureExampleViewController.h; sourceTree = "<group>"; };
 		4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureExampleViewController.m; sourceTree = "<group>"; };
@@ -414,6 +420,7 @@
 				475D6B64154998C40010DF59 /* animal-dragon.png */,
 				472AFF5A1547EF22001B38F9 /* animal-host-icon.png */,
 				4EDEFAE0152B6DA200324EDB /* animal-host.png */,
+				47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */,
 				475D6B6815499AD80010DF59 /* animal-reptiles.png */,
 				4799315E152E581800AF019F /* animal-squirrel-icon.png */,
 				47993150152E426700AF019F /* animal-squirrel.png */,
@@ -501,6 +508,8 @@
 				475D6B5D15498CB20010DF59 /* progress-0.png */,
 				475D6B5C15498CB20010DF59 /* progress-1.png */,
 				475D6B5E15498CB20010DF59 /* progress-2.png */,
+				47F47F46154ECD0900BB481D /* toggle-wel-on-geen-off-inactive.png */,
+				47F47F47154ECD0900BB481D /* toggle-wel-off-geen-on-inactive.png */,
 				4E332690151A663B00CEC850 /* pulldown.png */,
 				47993168152E5DB900AF019F /* round-result-screen-20.png */,
 				4EDEFAF8152B902B00324EDB /* selector-feature-empty.png */,
@@ -848,6 +857,9 @@
 				4765A931154AE15700204E85 /* animal-eel-icon.png in Resources */,
 				47F47F40154EA6CB00BB481D /* animal-all.png in Resources */,
 				47F47F43154EAC0400BB481D /* progress-3.png in Resources */,
+				47F47F45154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png in Resources */,
+				47F47F48154ECD0900BB481D /* toggle-wel-on-geen-off-inactive.png in Resources */,
+				47F47F49154ECD0900BB481D /* toggle-wel-off-geen-on-inactive.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
