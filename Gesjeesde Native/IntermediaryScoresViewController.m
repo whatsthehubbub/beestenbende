@@ -53,6 +53,9 @@
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.totalPoints]];
     [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.totalPoints]];
     
+    team1ScoreLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1ScoreLabel.font.pointSize];
+    team2ScoreLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2ScoreLabel.font.pointSize];
+    
     self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"progress-%d.png", game.issue-1]];
 }
 
