@@ -27,6 +27,7 @@
 @property (nonatomic, retain) IBOutlet UIImageView *team1pointsImage;
 @property (nonatomic, retain) IBOutlet UIImageView *team2pointsImage;
 
+@property (nonatomic, retain) IBOutlet UIImageView *animalImage;
 @property (nonatomic, retain) IBOutlet UILabel *animalRequiresLabel;
 @property (nonatomic, retain) IBOutlet UILabel *proofsRequiredLabel;
 

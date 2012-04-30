@@ -29,6 +29,7 @@
 @synthesize team1fp;
 @synthesize team2fp;
 
+@synthesize animalImage;
 @synthesize animalRequiresLabel;
 @synthesize proofsRequiredLabel;
 
@@ -96,6 +97,13 @@
         present = @"geen"; 
     }
     self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimal], present];
+    
+    if (game.issue == 1) {
+        self.animalImage.image = [UIImage imageNamed:@"animal-squirrel-icon.png"];
+    } else if (game.issue == 2) {
+        self.animalImage.image = [UIImage imageNamed:@"animal-eel-icon.png"];
+    }
+    
     self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimal]];
     
     
