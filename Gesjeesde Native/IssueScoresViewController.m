@@ -68,8 +68,7 @@
     game.team2.totalPoints += game.team2.points;
     game.team2.points = 0;
     
-    self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@.", [game getCurrentAnimal]];
-    // TODO add text for the dragon issue
+    self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@.", [[game getCurrentAnimal] lowercaseString]];
 }
 
 - (void)viewDidUnload
