@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="huA-t4-3Pw">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -2803,8 +2804,8 @@
                                 <rect key="frame" x="106" y="-1" width="214" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-squirrel-screen-5.png" id="GWW-kv-skx">
-                                <rect key="frame" x="38" y="185" width="245" height="215"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored-flipped.png" id="DL5-Et-9n9">
+                                <rect key="frame" x="20" y="160" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fXL-0M-kXD" customClass="ArrowRight">
@@ -2847,7 +2848,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik kan dan wel een stukje zweven, maar heb geen kenmerken van een vogel. Ik ben een zoogdier!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fXJ-6d-Pob" customClass="NormalLabel">
-                                <rect key="frame" x="58" y="255" width="205" height="125"/>
+                                <rect key="frame" x="40" y="235" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4345,6 +4346,7 @@
         <image name="points-fout.png" width="130" height="180"/>
         <image name="points-uniek.png" width="130" height="180"/>
         <image name="progress-3.png" width="470" height="119"/>
+        <image name="speech-bubble-big-mirrored-flipped.png" width="560" height="500"/>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
         <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="speech-bubble-screen-6.png" width="502" height="292"/>
