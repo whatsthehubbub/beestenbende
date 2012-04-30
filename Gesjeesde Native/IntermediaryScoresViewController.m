@@ -56,7 +56,7 @@
     team1ScoreLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1ScoreLabel.font.pointSize];
     team2ScoreLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2ScoreLabel.font.pointSize];
     
-    self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"progress-%d.png", game.issue-1]];
+    self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"progress-%d.png", game.issue]];
 }
 
 - (void)viewDidUnload
