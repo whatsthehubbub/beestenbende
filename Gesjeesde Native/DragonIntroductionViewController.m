@@ -40,9 +40,6 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
-
-    [game resetForNextIssue];
-    game.issue = 3;
     
     team1Picture.image = game.team1.picture;
     team2Picture.image = game.team2.picture;

@@ -3232,7 +3232,7 @@
                         <outlet property="team2Label" destination="MJl-Zr-NX2" id="Dpv-q7-4Qc"/>
                         <outlet property="team2Picture" destination="6xt-As-GCo" id="s8P-eb-4Fs"/>
                         <outlet property="team2ScoreLabel" destination="t3g-6B-II9" id="cKH-xx-fOp"/>
-                        <segue destination="3rS-nM-KiT" kind="push" id="0rk-rs-l5i"/>
+                        <segue destination="3rS-nM-KiT" kind="push" identifier="EndScreen" id="0rk-rs-l5i"/>
                     </connections>
                 </viewController>
             </objects>

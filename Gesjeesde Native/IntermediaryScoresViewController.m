@@ -67,9 +67,15 @@
     NSString *controllerIdentifier = @"";
     
     if (game.issue == 1) {
+        game.issue = 2;
+        [game resetForNextIssue];
+        
         // Go to the first screen of the second issue
         controllerIdentifier = @"SecondIssueIntroduction";
     } else {
+        game.issue = 3;
+        [game resetForNextIssue];
+        
         // Go to the first screen of the dragon
         controllerIdentifier = @"FinalIssueIntroduction";
     }
