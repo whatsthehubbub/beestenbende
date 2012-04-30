@@ -49,7 +49,7 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    if (!currentTeam.number == 1) {
+    if (currentTeam.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
