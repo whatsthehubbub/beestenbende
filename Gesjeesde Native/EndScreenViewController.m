@@ -45,6 +45,8 @@
     
     self.winnerPicture.image = winner.picture;
     self.winnerLabel.text = [NSString stringWithFormat:@"Team %@", [winner getTeamName]];
+    
+    winnerLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:winnerLabel.font.pointSize];
 }
 
 - (void)viewDidUnload
