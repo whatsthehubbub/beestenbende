@@ -148,7 +148,7 @@
 			<key>Label</key>
 			<string>Staart</string>
 			<key>Explanation</key>
-			<string>Vogels, reptielen, vissen en zoogdieren hebben allemaal een staart. De staart van vogels is gemaakt van veren. Let op: soms is de staart zo klein dat je 'm niet meer ziet, zoals bij jou! </string>
+			<string>Vogels, reptielen, vissen en zoogdieren hebben allemaal een staart. De staart van vogels is gemaakt van veren. Let op: soms is de staart zo klein dat je &apos;m niet meer ziet, zoals bij jou! </string>
 			<key>Fish</key>
 			<integer>1</integer>
 			<key>Mammal</key>
@@ -360,13 +360,13 @@
 			<key>Explanation</key>
 			<string>Vogels, vissen, en reptielen leggen inderdaad eieren, maar dit kun je niet zien aan het dier. Je weet dus niet zeker of dit ook echt zo is. Gebruik alleen kenmerken die jullie kunnen waarnemen.</string>
 			<key>Fish</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>Mammal</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>Reptile</key>
-			<integer>2</integer>
+			<integer>3</integer>
 			<key>Bird</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 </dict>
