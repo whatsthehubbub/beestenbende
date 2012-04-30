@@ -56,6 +56,8 @@
     }
     
     self.hasFeature = YES;
+    
+    self.featureButton.titleLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:self.featureButton.titleLabel.font.pointSize];
 }
 
 - (void)viewDidUnload
