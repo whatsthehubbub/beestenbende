@@ -72,17 +72,28 @@
     team1FeatureImage.image = team1fp.image;
     team1FeatureLabel.text = team1fp.feature;
     
-    // TODO fix this result
-    team1ResultAndExplanationLabel.text = @"result";
+    // Lots of code to generate the result
+    NSString *team1Explanation = [[game getFeatureWithName:team1fp.feature] objectForKey:@"Explanation"];
+    int team1Points = [game pointsForFeaturePicture:team1fp];
     
+    NSString *team1Result = @"Fout";
+    if (abs(team1Points) == 5) team1Result = @"Goed"; else if (team1Points == 10) team1Result = @"Uniek"; 
+    team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team1Result, team1Explanation];
+    
+    // Do exactly the same thing for team 2
     FeaturePicture *team2fp = [game.team2 featurePictureForTurn:game.turn];
     
     team2NameLabel.text = [game.team2 getTeamName];
     team2FeatureImage.image = team2fp.image;
     team2FeatureLabel.text = team2fp.feature;
     
-    // TODO fix this result
-    team2ResultAndExplanationLabel.text = @"result";
+    // Lots of code to generate the result
+    NSString *team2Explanation = [[game getFeatureWithName:team2fp.feature] objectForKey:@"Explanation"];
+    int team2Points = [game pointsForFeaturePicture:team2fp];
+    
+    NSString *team2Result = @"Fout";
+    if (abs(team2Points) == 5) team2Result = @"Goed"; else if (team2Points == 10) team2Result = @"Uniek"; 
+    team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team2Result, team2Explanation];
 }
 
 - (void)viewDidUnload
