@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondIssueExplanationViewController : UIViewController
+#import "DDPageControl.h"
+
+@interface SecondIssueExplanationViewController : UIViewController <UIScrollViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
+@property (nonatomic, retain) DDPageControl *pageControl;
 
-- (IBAction)scrollPage:(id)sender;
+@property (assign) BOOL pageControlBeingUsed;
+
+- (void)scrollPage;
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
 - (IBAction)done:(id)sender;
