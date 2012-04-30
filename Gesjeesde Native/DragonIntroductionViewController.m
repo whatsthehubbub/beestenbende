@@ -19,6 +19,9 @@
 @synthesize team1Picture;
 @synthesize team2Picture;
 
+@synthesize team1Proofs;
+@synthesize team2Proofs;
+
 @synthesize explanation;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
