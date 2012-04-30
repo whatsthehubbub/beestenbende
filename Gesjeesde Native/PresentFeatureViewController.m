@@ -57,8 +57,6 @@
     
     self.hasFeature = YES;
     
-    [self.yesNoButton setImage:[UIImage imageNamed:@"toggle-wel-on-geen-off-inactive.png"] forState:UIControlStateDisabled];
-    
     self.featureButton.titleLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:self.featureButton.titleLabel.font.pointSize];
 }
 
@@ -92,6 +90,7 @@
         imageName = @"toggle-wel-off-geen-on.png";
         imageDisabledName = @"toggle-wel-off-geen-on-disabled.png";
     }
+    
     [self.yesNoButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [self.yesNoButton setImage:[UIImage imageNamed:imageDisabledName] forState:UIControlStateDisabled];
     
