@@ -18,6 +18,7 @@
 
 @synthesize points;
 @synthesize totalPoints;
+
 @synthesize dragonProofs;
 
 - (id)initWithNumber:(int)teamNumber;
@@ -31,6 +32,7 @@
         
         self.points = 0;
         self.totalPoints = 0;
+        
         self.dragonProofs = 0;
     }
     return self;
