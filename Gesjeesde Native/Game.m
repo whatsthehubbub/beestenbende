@@ -52,6 +52,8 @@
         featureNumber = [[featureDict objectForKey:@"Mammal"] intValue];
     } else if (issue == 2) {
         featureNumber = [[featureDict objectForKey:@"Fish"] intValue];
+    } else if (issue == 3) {
+        featureNumber = [[featureDict objectForKey:@"Fish"] intValue];
     }
     
     if (fp.presentAssertion && featureNumber == 0) {
