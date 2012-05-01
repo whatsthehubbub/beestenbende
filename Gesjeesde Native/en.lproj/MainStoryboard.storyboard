@@ -3298,8 +3298,8 @@
                                 <rect key="frame" x="38" y="228" width="245" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fijn! Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zoals dat hoort in een museum." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Cbj-eT-N4D" customClass="NormalLabel">
-                                <rect key="frame" x="57.5" y="298" width="205" height="125"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fijn! Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zoals dat hoort in een museum." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Cbj-eT-N4D" customClass="NormalLabel">
+                                <rect key="frame" x="53" y="278" width="215" height="165"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
