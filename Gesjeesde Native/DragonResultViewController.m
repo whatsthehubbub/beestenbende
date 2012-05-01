@@ -71,7 +71,7 @@
     
     NSString *explanation = [[game getFeatureWithName:featurePicture.feature] objectForKey:@"Explanation"];
     
-    self.explanationLabel.text = [NSString stringWithFormat:@"%@ want %@.", correctOrWrong, explanation];
+    self.explanationLabel.text = [NSString stringWithFormat:@"%@ want: %@.", correctOrWrong, explanation];
     
     // Only now we can move over to the next team
     currentTeam.tookFeaturePictures = YES;
