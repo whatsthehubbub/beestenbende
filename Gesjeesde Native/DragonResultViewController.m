@@ -17,8 +17,6 @@
 @synthesize game;
 @synthesize currentTeam;
 
-@synthesize classLabel;
-
 @synthesize teamOverlay;
 
 @synthesize featureImage;
@@ -65,8 +63,10 @@
     NSString *explanation = [[game getFeatureWithName:featurePicture.feature] objectForKey:@"Explanation"];
     
     if (currentTeam.dragonClass == 0) {
+        // If fish has been chosen
+        
         if (points > 0) {
-            // Correct feature
+            // And a fish feature
             self.explanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
             
             currentTeam.dragonProofs += 1;
@@ -74,12 +74,24 @@
             // Add the issues points for this team
             currentTeam.points += 10;
         } else {
-            // Wrong feature
+            // A not fish feature is wrong
             self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
         }
     } else {
-        // Wrong class alltogether so plain wrong
-        self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@ Maar ik ben geen %@!", explanation, class];
+        // Wrong class alltogether so wrong in any case
+        NSDictionary *feature = [game getFeatureWithName:featurePicture.feature];
+        
+        if  ((currentTeam.dragonClass == 1 && [[feature objectForKey:@"Mammal"] intValue]==2)
+             ||
+             (currentTeam.dragonClass == 2 && [[feature objectForKey:@"Reptile"] intValue]==2)
+             ||
+             (currentTeam.dragonClass == 3 && [[feature objectForKey:@"Bird"] intValue]==2)) {
+            // Feature and class do not match
+            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
+        } else {
+            // Feature and class do match, but it is the wrong class
+            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@ Maar ik ben geen %@!", explanation, class];
+        }
     }
     
     

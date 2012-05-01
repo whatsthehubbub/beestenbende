@@ -15,8 +15,6 @@
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
 
-@property (nonatomic, retain) IBOutlet UILabel *classLabel;
-
 @property (strong) IBOutlet UIImageView *teamOverlay;
 
 @property (strong) IBOutlet UIImageView *featureImage;

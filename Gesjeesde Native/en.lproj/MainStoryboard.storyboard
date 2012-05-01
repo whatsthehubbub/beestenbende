@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="huA-t4-3Pw">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
@@ -4223,9 +4224,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="w7a-lX-fPL"/>
                     <connections>
-                        <outlet property="classLabel" destination="UrW-kZ-Q8C" id="QbI-5Y-uBY"/>
                         <outlet property="explanationLabel" destination="N1a-WB-Qev" id="Ljv-I5-Zqs"/>
                         <outlet property="featureImage" destination="NzE-cL-tYh" id="zdk-MK-sb6"/>
+                        <outlet property="featureLabel" destination="UrW-kZ-Q8C" id="qCx-Pg-ODS"/>
                         <outlet property="teamOverlay" destination="fWu-u0-Aw1" id="1mV-0I-LT6"/>
                         <segue destination="Dee-6Y-Prk" kind="push" identifier="DragonAgain" id="5OT-N5-qpE"/>
                     </connections>
