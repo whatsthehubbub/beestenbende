@@ -4097,7 +4097,7 @@
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="J4A-GW-s9I"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="OwZ-JE-OW8">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="OwZ-JE-OW8" customClass="NormalLabel">
                                 <rect key="frame" x="114" y="62" width="186" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -4682,7 +4682,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="umK-20-HZ7"/>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="p5P-Gt-fdu"/>
         <segue reference="iYQ-bF-g8K"/>
