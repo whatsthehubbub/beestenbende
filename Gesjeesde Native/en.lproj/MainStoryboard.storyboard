@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -1390,7 +1390,7 @@
                                 <rect key="frame" x="20" y="60" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Let op: jullie hebben 1 minuut om fotobewijs te verzamelen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Dv3-KM-zeD" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Let op: jullie hebben 1 minuut om fotobewijs te verzamelen. (Het andere team kan alvast even rondkijken…)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Dv3-KM-zeD" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="80" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -4578,7 +4578,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonResultViewController.h"/>
             <relationships>
                 <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="classLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="explanationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="featureImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="featureLabel" candidateClass="UILabel"/>
@@ -4813,5 +4812,6 @@
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="p5P-Gt-fdu"/>
         <segue reference="iYQ-bF-g8K"/>
+        <segue reference="umK-20-HZ7"/>
     </inferredMetricsTieBreakers>
 </document>
