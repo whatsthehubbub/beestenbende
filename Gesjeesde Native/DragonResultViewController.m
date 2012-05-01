@@ -52,31 +52,36 @@
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
-    NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
-    self.classLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft…", class.lowercaseString];
-    
     // Check the result
     FeaturePicture *featurePicture = currentTeam.featurePictures.lastObject;
     
     self.featureImage.image = featurePicture.image;
-    self.featureLabel.text = featurePicture.feature;
+    
+    NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
+    self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft %@.", class, featurePicture.feature];
     
     int points = [game pointsForFeaturePicture:featurePicture];
-    
-    NSString *correctOrWrong = @"Fout";
-    if (points > 0) {
-        correctOrWrong = @"Goed";
-        currentTeam.dragonProofs += 1;
         
-        // Add the issues points for this team
-        currentTeam.points += 10;
-    } else {
-        
-    }
-    
     NSString *explanation = [[game getFeatureWithName:featurePicture.feature] objectForKey:@"Explanation"];
     
-    self.explanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", correctOrWrong, explanation];
+    if (currentTeam.dragonClass == 0) {
+        if (points > 0) {
+            // Correct feature
+            self.explanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
+            
+            currentTeam.dragonProofs += 1;
+            
+            // Add the issues points for this team
+            currentTeam.points += 10;
+        } else {
+            // Wrong feature
+            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
+        }
+    } else {
+        // Wrong class alltogether so plain wrong
+        self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@ Maar ik ben geen %@!", explanation, class];
+    }
+    
     
     // Only now we can move over to the next team
     currentTeam.tookFeaturePictures = YES;
