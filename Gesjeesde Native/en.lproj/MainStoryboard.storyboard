@@ -3,7 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -3690,7 +3690,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host-icon.png" id="Si1-O4-exb">
-                                <rect key="frame" x="20" y="326" width="58" height="60"/>
+                                <rect key="frame" x="20" y="338" width="58" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: fotografeer een kenmerk. Team [Kleur]: jullie mogen straks weer. " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="29c-3B-RCO" customClass="NormalLabel">
@@ -4001,9 +4001,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer een kenmerk van een [gekozen diergroep]." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tgb-PZ-EPf" customClass="NormalLabel">
-                                <rect key="frame" x="20" y="56" width="280" height="56"/>
+                                <rect key="frame" x="20" y="60" width="280" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4106,7 +4106,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De draak is een [diergroep] want hij heeft…" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vi0-Ps-U7O">
                                 <rect key="frame" x="22" y="60" width="280" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4147,21 +4147,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="NzE-cL-tYh">
-                                <rect key="frame" x="23" y="112" width="80" height="80"/>
+                                <rect key="frame" x="23" y="62" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="NvF-eX-RrG">
-                                <rect key="frame" x="20" y="110" width="86" height="84"/>
+                                <rect key="frame" x="20" y="60" width="86" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="etB-s4-HBu">
                                 <rect key="frame" x="0.0" y="276" width="264" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[Goed/Fout] want [uitleg]." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="N1a-WB-Qev" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fout want: [Uitleg.] Maar ik ben geen [diergroep]! / Goed want: [Uitleg.]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="10" id="N1a-WB-Qev" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="172" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4204,17 +4204,10 @@
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="J4A-GW-s9I"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="OwZ-JE-OW8">
-                                <rect key="frame" x="114" y="112" width="160" height="32"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De draak is een [diergroep] want hij heeft [kenmerk]." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UrW-kZ-Q8C">
+                                <rect key="frame" x="114" y="60" width="186" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De draak is een [diergroep] want hij heeft…" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UrW-kZ-Q8C">
-                                <rect key="frame" x="20" y="60" width="280" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4226,7 +4219,6 @@
                         <outlet property="classLabel" destination="UrW-kZ-Q8C" id="QbI-5Y-uBY"/>
                         <outlet property="explanationLabel" destination="N1a-WB-Qev" id="Ljv-I5-Zqs"/>
                         <outlet property="featureImage" destination="NzE-cL-tYh" id="zdk-MK-sb6"/>
-                        <outlet property="featureLabel" destination="OwZ-JE-OW8" id="CiH-JA-UgH"/>
                         <outlet property="teamOverlay" destination="fWu-u0-Aw1" id="1mV-0I-LT6"/>
                         <segue destination="Dee-6Y-Prk" kind="push" identifier="DragonAgain" id="5OT-N5-qpE"/>
                     </connections>
