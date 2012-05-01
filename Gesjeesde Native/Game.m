@@ -47,7 +47,7 @@
 - (int)pointsForFeaturePicture:(FeaturePicture *)fp {
     NSDictionary *featureDict = [self getFeatureWithName:fp.feature];
     
-    int featureNumber;
+    int featureNumber = 0; // Initialize on null to not let xcode whine
     if (issue == 1) {
         featureNumber = [[featureDict objectForKey:@"Mammal"] intValue];
     } else if (issue == 2) {
