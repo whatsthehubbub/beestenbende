@@ -61,6 +61,10 @@
 }
 
 - (IBAction)mainMenu:(id)sender {
+    // Reset game
+    [game resetForNextIssue];
+    game.issue = 1;
+    
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
