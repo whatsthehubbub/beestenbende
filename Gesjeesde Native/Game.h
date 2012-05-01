@@ -34,6 +34,7 @@
 @property (assign) int required;
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name;
+- (NSArray *)getClasses;
 
 - (int)pointsForFeaturePicture:(FeaturePicture *)fp;
 - (NSString *)getCurrentAnimal;

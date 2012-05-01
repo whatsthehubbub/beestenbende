@@ -86,6 +86,10 @@
     return nil;
 }
 
+- (NSArray *)getClasses { 
+    return [[NSArray alloc] initWithObjects:@"Vis", @"Zoogdier", @"Reptiel", @"Vogel", nil];
+}
+
 - (Team *)firstTeamForTurn {
     // First issue we start with team 1, and then alternate
     if ((turn + issue - 1) % 2 == 0) {

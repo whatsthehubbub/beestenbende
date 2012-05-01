@@ -17,6 +17,8 @@
 @synthesize game;
 @synthesize currentTeam;
 
+@synthesize classLabel;
+
 @synthesize teamOverlay;
 
 @synthesize featureImage;
@@ -49,6 +51,9 @@
     if (currentTeam.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
+    
+    NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
+    self.classLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft…", class.lowercaseString];
     
     // Check the result
     FeaturePicture *featurePicture = currentTeam.featurePictures.lastObject;

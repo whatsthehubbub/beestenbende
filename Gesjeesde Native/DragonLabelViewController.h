@@ -14,6 +14,8 @@
 
 @interface DragonLabelViewController : UIViewController <FeaturePickerViewControllerDelegate>
 
+@property (nonatomic, retain) IBOutlet UILabel *classLabel;
+
 @property (strong) IBOutlet UIImageView *dragonPictureView;
 @property (strong) IBOutlet UIImageView *teamOverlay;
 

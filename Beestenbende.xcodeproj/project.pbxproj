@@ -79,6 +79,7 @@
 		4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */; };
 		4E08C31615248CAA00F3CDC7 /* FirstIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */; };
 		4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */; };
+		4E110FC8154FFA7700935443 /* DragonClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E110FC7154FFA7600935443 /* DragonClassViewController.m */; };
 		4E332694151A663B00CEC850 /* bg-0-plain.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E332677151A663B00CEC850 /* bg-0-plain.png */; };
 		4E332699151A663B00CEC850 /* bg-5-intro-mission-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */; };
 		4E33269A151A663B00CEC850 /* bg-14-label-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E33267D151A663B00CEC850 /* bg-14-label-photos.png */; };
@@ -258,6 +259,8 @@
 		4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueExplanationViewController.m; sourceTree = "<group>"; };
 		4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplainFeatureViewController.h; sourceTree = "<group>"; };
 		4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplainFeatureViewController.m; sourceTree = "<group>"; };
+		4E110FC6154FFA7600935443 /* DragonClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonClassViewController.h; sourceTree = "<group>"; };
+		4E110FC7154FFA7600935443 /* DragonClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonClassViewController.m; sourceTree = "<group>"; };
 		4E332677151A663B00CEC850 /* bg-0-plain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-0-plain.png"; sourceTree = "<group>"; };
 		4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-5-intro-mission-1.png"; sourceTree = "<group>"; };
 		4E33267D151A663B00CEC850 /* bg-14-label-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-14-label-photos.png"; sourceTree = "<group>"; };
@@ -614,6 +617,8 @@
 				4E08C31415248CAA00F3CDC7 /* FirstIssueExplanationViewController.h */,
 				4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */,
 				4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */,
+				4E110FC6154FFA7600935443 /* DragonClassViewController.h */,
+				4E110FC7154FFA7600935443 /* DragonClassViewController.m */,
 				4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */,
 				4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */,
 				4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */,
@@ -928,6 +933,7 @@
 				4EC83230154ED0AB006E7AC6 /* DragonResultViewController.m in Sources */,
 				4EC83234154EE26C006E7AC6 /* EndScreenViewController.m in Sources */,
 				4EC83237154F3901006E7AC6 /* DragonResolutionViewController.m in Sources */,
+				4E110FC8154FFA7700935443 /* DragonClassViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

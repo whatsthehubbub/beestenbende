@@ -14,6 +14,8 @@
 
 @implementation DragonPictureViewController
 
+@synthesize classLabel;
+
 @synthesize dragonPictureView;
 @synthesize teamOverlay;
 
@@ -52,6 +54,9 @@
     if (currentTeam.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
+    
+    NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
+    self.classLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van een %@.", class.lowercaseString];
     
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];

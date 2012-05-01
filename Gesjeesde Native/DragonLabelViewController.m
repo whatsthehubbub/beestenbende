@@ -14,6 +14,8 @@
 
 @implementation DragonLabelViewController
 
+@synthesize classLabel;
+
 @synthesize dragonPictureView;
 @synthesize teamOverlay;
 
@@ -49,6 +51,9 @@
     if (currentTeam.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
+    
+    NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
+    self.classLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft…", class.lowercaseString];
     
     self.dragonPictureView.image = ((FeaturePicture *)self.currentTeam.featurePictures.lastObject).image;
     

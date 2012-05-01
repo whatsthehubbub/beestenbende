@@ -509,7 +509,7 @@
                     <navigationItem key="navigationItem" id="b1a-8U-8ZZ"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2954" y="1116"/>
+            <point key="canvasLocation" x="2458" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GnT-KT-xeG">
@@ -584,7 +584,7 @@
                     <navigationItem key="navigationItem" id="417-VD-8kO"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3432" y="1116"/>
+            <point key="canvasLocation" x="2936" y="1116"/>
         </scene>
         <!--Dragon Explanation View Controller-->
         <scene sceneID="HaD-5H-CQD">
@@ -724,7 +724,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3911" y="1116"/>
+            <point key="canvasLocation" x="3415" y="1116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6uc-Ng-T8J">
@@ -3808,19 +3808,18 @@
                         <outlet property="team2Label" destination="0dS-4y-fPc" id="NAS-lF-io8"/>
                         <outlet property="team2Picture" destination="fqC-By-QSd" id="Dx9-4n-pAB"/>
                         <outlet property="team2Proofs" destination="cBs-Pa-1id" id="Jv1-uF-pZl"/>
-                        <segue destination="JWy-sg-rOd" kind="push" identifier="DragonAgain" id="2QK-Vi-PPo"/>
                         <segue destination="riD-0B-aIy" kind="push" identifier="DragonDone" id="hwp-Dj-N7X"/>
-                        <segue destination="whR-Wj-nBL" kind="push" id="Hgh-8l-fH6"/>
+                        <segue destination="whR-Wj-nBL" kind="push" identifier="DragonAgain" id="Hgh-8l-fH6"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4408" y="1116"/>
+            <point key="canvasLocation" x="3900" y="1116"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Class View Controller-->
         <scene sceneID="pbc-Xe-epM">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yea-oZ-jS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="whR-Wj-nBL" sceneMemberID="viewController">
+                <viewController id="whR-Wj-nBL" customClass="DragonClassViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vvh-PL-Arm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3881,18 +3880,29 @@
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="aEm-4i-hHa" eventType="touchUpInside" id="m5C-dT-kFq"/>
+                                    <action selector="next:" destination="whR-Wj-nBL" eventType="touchUpInside" id="8TD-cs-nBo"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" id="Rzy-0l-mJs">
+                                <rect key="frame" x="0.0" y="132" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="whR-Wj-nBL" id="LVO-R6-56O"/>
+                                    <outlet property="delegate" destination="whR-Wj-nBL" id="O0S-n8-3Y1"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="V1G-Rt-9We"/>
                     <connections>
-                        <segue destination="JWy-sg-rOd" kind="push" id="UMC-BP-rGr"/>
+                        <outlet property="classPicker" destination="Rzy-0l-mJs" id="4E1-JY-eli"/>
+                        <outlet property="teamOverlay" destination="Ch8-Q3-uz6" id="nbd-US-PaB"/>
+                        <segue destination="JWy-sg-rOd" kind="push" identifier="Next" id="UMC-BP-rGr"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4408" y="1740"/>
+            <point key="canvasLocation" x="4416" y="1116"/>
         </scene>
         <!--Dragon Picture View Controller-->
         <scene sceneID="XUj-ef-RYG">
@@ -3990,8 +4000,8 @@
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="LNr-Bi-3id"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer een kenmerk van een [gekozen diergroep]." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tgb-PZ-EPf">
-                                <rect key="frame" x="20" y="60" width="280" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer een kenmerk van een [gekozen diergroep]." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tgb-PZ-EPf" customClass="NormalLabel">
+                                <rect key="frame" x="20" y="56" width="280" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4002,6 +4012,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="6cr-Mk-Wqg"/>
                     <connections>
+                        <outlet property="classLabel" destination="tgb-PZ-EPf" id="Gtf-eU-3Qe"/>
                         <outlet property="doneButton" destination="d91-aZ-hGR" id="bNv-gw-qm5"/>
                         <outlet property="dragonPictureView" destination="6tb-W8-dWk" id="PpL-Oe-nBd"/>
                         <outlet property="takeDragonPictureButton" destination="2tz-1D-sEa" id="yLX-iD-1Z4"/>
@@ -4104,6 +4115,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="MFV-Hb-6rg"/>
                     <connections>
+                        <outlet property="classLabel" destination="vi0-Ps-U7O" id="4Bs-OH-2Hl"/>
                         <outlet property="doneButton" destination="Mcg-PQ-7g3" id="Tz6-0H-Odx"/>
                         <outlet property="dragonPictureView" destination="9px-hm-1tr" id="1K7-tx-Pt3"/>
                         <outlet property="featureButton" destination="zwv-1O-2Ql" id="yjz-7u-YSM"/>
@@ -4111,7 +4123,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5356" y="1109"/>
+            <point key="canvasLocation" x="5356" y="1116"/>
         </scene>
         <!--Dragon Result View Controller-->
         <scene sceneID="XRf-iB-mpE">
@@ -4193,7 +4205,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="OwZ-JE-OW8">
-                                <rect key="frame" x="114" y="112" width="186" height="80"/>
+                                <rect key="frame" x="114" y="112" width="160" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -4211,6 +4223,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="w7a-lX-fPL"/>
                     <connections>
+                        <outlet property="classLabel" destination="UrW-kZ-Q8C" id="QbI-5Y-uBY"/>
                         <outlet property="explanationLabel" destination="N1a-WB-Qev" id="Ljv-I5-Zqs"/>
                         <outlet property="featureImage" destination="NzE-cL-tYh" id="zdk-MK-sb6"/>
                         <outlet property="featureLabel" destination="OwZ-JE-OW8" id="CiH-JA-UgH"/>
@@ -4219,7 +4232,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="5846" y="1116"/>
+            <point key="canvasLocation" x="6214" y="1116"/>
         </scene>
         <!--Dragon Resolution View Controller-->
         <scene sceneID="Ttn-ai-RLD">
@@ -4353,7 +4366,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4876" y="1740"/>
+            <point key="canvasLocation" x="4416" y="1732"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ktj-ry-yzQ">
@@ -4501,6 +4514,14 @@
         <class className="DDPageControl" superclassName="UIControl">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DDPageControl.h"/>
         </class>
+        <class className="DragonClassViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonClassViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="classPicker" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="DragonExplanationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonExplanationViewController.h"/>
             <relationships>
@@ -4525,6 +4546,7 @@
         <class className="DragonLabelViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonLabelViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="classLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dragonPictureView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
@@ -4537,6 +4559,7 @@
                 <relationship kind="action" name="doneWithPicture:"/>
                 <relationship kind="action" name="takeDragonPicture:"/>
                 <relationship kind="action" name="takeDragonPictureAgain:"/>
+                <relationship kind="outlet" name="classLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dragonPictureView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="takeDragonPictureButton" candidateClass="UIButton"/>
@@ -4556,6 +4579,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonResultViewController.h"/>
             <relationships>
                 <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="classLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="explanationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="featureImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="featureLabel" candidateClass="UILabel"/>
@@ -4787,10 +4811,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="umK-20-HZ7"/>
-        <segue reference="UMC-BP-rGr"/>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="p5P-Gt-fdu"/>
-        <segue reference="iYQ-bF-g8K"/>
     </inferredMetricsTieBreakers>
 </document>
