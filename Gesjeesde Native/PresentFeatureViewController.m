@@ -102,6 +102,11 @@
 - (IBAction)next:(id)sender {
     // Check if they have picked a feature TODO
     
+    // Commit the feature picture to the current turn and present assertion
+    // because it could still change after picking
+    self.currentFeaturePicture.presentedTurn = game.turn;
+    self.currentFeaturePicture.presentAssertion = self.hasFeature;
+    
     if (self.currentTeam == [game firstTeamForTurn]) {
         [UIView beginAnimations:@"View Flip" context:nil];
         [UIView setAnimationDuration:0.80];
@@ -136,9 +141,6 @@
 - (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {
     
     self.currentFeaturePicture = [self.currentTeam.featurePictures objectAtIndex:index];
-    
-    self.currentFeaturePicture.presentedTurn = game.turn;
-    self.currentFeaturePicture.presentAssertion = self.hasFeature;
     
     self.featureImageView.image = self.currentFeaturePicture.image;
     

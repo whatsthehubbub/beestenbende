@@ -53,7 +53,6 @@
     team1featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1featureLabel.font.pointSize];
     team2featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2featureLabel.font.pointSize];
     
-    
     team1fp = [game.team1 featurePictureForTurn:game.turn];
     
     int team1points = [game pointsForFeaturePicture:team1fp];
