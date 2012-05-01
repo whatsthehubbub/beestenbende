@@ -152,6 +152,7 @@
 		4EC4012D152E09A10005EC5C /* IssueScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */; };
 		4EC83230154ED0AB006E7AC6 /* DragonResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */; };
 		4EC83234154EE26C006E7AC6 /* EndScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */; };
+		4EC83237154F3901006E7AC6 /* DragonResolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */; };
 		4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2151E153C3B6400040C97 /* HeaderLabel.m */; };
 		4ED21524153C417D00040C97 /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED21523153C417D00040C97 /* NormalLabel.m */; };
 		4ED21529153C4CA600040C97 /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21525153C4C8700040C97 /* Vollkorn-Bold.ttf */; };
@@ -365,6 +366,8 @@
 		4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonResultViewController.m; sourceTree = "<group>"; };
 		4EC83232154EE26C006E7AC6 /* EndScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EndScreenViewController.h; sourceTree = "<group>"; };
 		4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndScreenViewController.m; sourceTree = "<group>"; };
+		4EC83235154F38FF006E7AC6 /* DragonResolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonResolutionViewController.h; sourceTree = "<group>"; };
+		4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonResolutionViewController.m; sourceTree = "<group>"; };
 		4ED2151D153C3B6400040C97 /* HeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderLabel.h; sourceTree = "<group>"; };
 		4ED2151E153C3B6400040C97 /* HeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabel.m; sourceTree = "<group>"; };
 		4ED21522153C417D00040C97 /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
@@ -586,6 +589,20 @@
 				4E3326B5151A909000CEC850 /* CreditsViewController.h */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4ED21521153C3BD300040C97 /* Custom */,
+				4E755769154D94FF009A9E51 /* DragonExplanationViewController.h */,
+				4E75576A154D9500009A9E51 /* DragonExplanationViewController.m */,
+				4E75576D154D98F7009A9E51 /* DragonIntroductionViewController.h */,
+				4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */,
+				4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */,
+				4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */,
+				4EC83235154F38FF006E7AC6 /* DragonResolutionViewController.h */,
+				4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */,
+				4E4A4DF1154EB719009785BD /* DragonPictureViewController.h */,
+				4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */,
+				4EC8322E154ED0AB006E7AC6 /* DragonResultViewController.h */,
+				4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */,
+				4EC83232154EE26C006E7AC6 /* EndScreenViewController.h */,
+				4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */,
 				4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */,
 				4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */,
 				4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */,
@@ -619,14 +636,6 @@
 				4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */,
 				4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */,
 				4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */,
-				4E4A4DF1154EB719009785BD /* DragonPictureViewController.h */,
-				4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */,
-				4EC8322E154ED0AB006E7AC6 /* DragonResultViewController.h */,
-				4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */,
-				4EC83232154EE26C006E7AC6 /* EndScreenViewController.h */,
-				4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */,
-				4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */,
-				4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */,
 				4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */,
 				4E3385DB154043AF00E740BB /* SecondIssueIntroductionViewController.h */,
 				4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */,
@@ -635,10 +644,6 @@
 				4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */,
 				4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */,
 				4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */,
-				4E755769154D94FF009A9E51 /* DragonExplanationViewController.h */,
-				4E75576A154D9500009A9E51 /* DragonExplanationViewController.m */,
-				4E75576D154D98F7009A9E51 /* DragonIntroductionViewController.h */,
-				4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */,
 				4E42820715447EBC009FD991 /* TeamPrepareViewController.h */,
 				4E42820815447EBD009FD991 /* TeamPrepareViewController.m */,
 				4EAE98EF151A618A0051C926 /* ViewController.h */,
@@ -922,6 +927,7 @@
 				4E4A4DF7154ECA1B009785BD /* DragonLabelViewController.m in Sources */,
 				4EC83230154ED0AB006E7AC6 /* DragonResultViewController.m in Sources */,
 				4EC83234154EE26C006E7AC6 /* EndScreenViewController.m in Sources */,
+				4EC83237154F3901006E7AC6 /* DragonResolutionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

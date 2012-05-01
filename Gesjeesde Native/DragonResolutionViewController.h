@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DragonResolutionViewController : UIViewController
+#import "DDPageControl.h"
+
+@interface DragonResolutionViewController : UIViewController <UIScrollViewDelegate>
+
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain)  DDPageControl *pageControl;
+
+@property (assign) BOOL pageControlBeingUsed;
+
+- (void)scrollPage;
+- (IBAction)previous;
+- (IBAction)next;
+
+- (void)pageControlClicked:(id)sender;
 
 @end
