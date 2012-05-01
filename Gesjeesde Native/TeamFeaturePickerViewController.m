@@ -71,6 +71,8 @@
     FeaturePicture *fp = [team.featurePictures objectAtIndex:indexPath.row];
     
     cell.textLabel.text = fp.feature;
+    [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:cell.textLabel.font.pointSize]];
+    
     cell.imageView.image = fp.image;
     
     // Configure the cell...
