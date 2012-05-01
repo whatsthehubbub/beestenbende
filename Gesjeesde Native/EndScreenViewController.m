@@ -60,4 +60,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)mainMenu:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
 @end

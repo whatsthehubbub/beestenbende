@@ -18,4 +18,6 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *winnerLabel;
 
+- (IBAction)mainMenu:(id)sender;
+
 @end
