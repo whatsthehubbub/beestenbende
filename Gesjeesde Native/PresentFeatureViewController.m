@@ -82,7 +82,8 @@
 - (IBAction)yesNo:(id)sender {
     self.hasFeature = !self.hasFeature;
     
-    NSString *imageName, *imageDisabledName;
+    NSString *imageName;
+    NSString *imageDisabledName;
     if (self.hasFeature) {
         imageName = @"toggle-wel-on-geen-off.png";
         imageDisabledName = @"toggle-wel-on-geen-off-inactive.png";
