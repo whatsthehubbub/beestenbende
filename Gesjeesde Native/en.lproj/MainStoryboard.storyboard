@@ -3690,11 +3690,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host-icon.png" id="Si1-O4-exb">
-                                <rect key="frame" x="20" y="349" width="58" height="60"/>
+                                <rect key="frame" x="20" y="326" width="58" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: fotografeer een kenmerk. Team [Kleur]: jullie mogen straks weer. " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="29c-3B-RCO" customClass="NormalLabel">
-                                <rect key="frame" x="86" y="347" width="214" height="63"/>
+                                <rect key="frame" x="86" y="326" width="214" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3789,7 +3789,7 @@
                                 <rect key="frame" x="172" y="257" width="116" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eerste met 3 goede kenmerken wint!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ti7-NT-oKg">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eerste met 3 goede kenmerken wint!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ti7-NT-oKg" customClass="NormalLabel">
                                 <rect key="frame" x="20" y="60" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -3802,8 +3802,10 @@
                     <navigationItem key="navigationItem" id="mUS-MS-wcz"/>
                     <connections>
                         <outlet property="explanation" destination="29c-3B-RCO" id="RWk-2g-ydE"/>
+                        <outlet property="team1Label" destination="qlT-HG-SfI" id="oMm-04-D2R"/>
                         <outlet property="team1Picture" destination="vHv-AJ-hrm" id="cQP-kl-EYH"/>
                         <outlet property="team1Proofs" destination="zrt-ZD-Jgp" id="7n5-LL-ON9"/>
+                        <outlet property="team2Label" destination="0dS-4y-fPc" id="NAS-lF-io8"/>
                         <outlet property="team2Picture" destination="fqC-By-QSd" id="Dx9-4n-pAB"/>
                         <outlet property="team2Proofs" destination="cBs-Pa-1id" id="Jv1-uF-pZl"/>
                         <segue destination="JWy-sg-rOd" kind="push" identifier="DragonAgain" id="2QK-Vi-PPo"/>
@@ -4412,8 +4414,10 @@
             <relationships>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="outlet" name="explanation" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team1Proofs" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team2Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team2Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team2Proofs" candidateClass="UIImageView"/>
             </relationships>
