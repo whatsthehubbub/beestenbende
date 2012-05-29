@@ -27,5 +27,6 @@
 
 - (void)captureStillImage;
 - (void)restartPreview;
+- (void)stopPreview;
 
 @end

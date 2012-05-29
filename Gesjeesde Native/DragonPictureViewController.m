@@ -60,12 +60,25 @@
     
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];
+    
+    // For some reason this camera does not resume gracefully after Active/Inactive
+    // I suspect this has something to do with looping back through this ViewController
+    // http://developer.apple.com/library/ios/#DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/ManagingYourApplicationsFlow/ManagingYourApplicationsFlow.html#//apple_ref/doc/uid/TP40007072-CH4-SW1
+    // http://stackoverflow.com/questions/10125261/avcapturevideopreviewlayer-displays-nothing-on-resume
+//    [[NSNotificationCenter defaultCenter] addObserver:self.csManager
+//                                             selector:@selector(restartPreview)
+//                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self.csManager
+//                                             selector:@selector(stopPreview)
+//                                                 name:UIApplicationWillResignActiveNotification object:nil];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    
+//    [[NSNotificationCenter defaultCenter] removeObserver:self.csManager];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -96,6 +109,8 @@
 - (IBAction)doneWithPicture:(id)sender {
     [currentTeam.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
                                      [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
+    
+    [self.csManager stopPreview];
     
     [self performSegueWithIdentifier:@"Next" sender:sender];
 }

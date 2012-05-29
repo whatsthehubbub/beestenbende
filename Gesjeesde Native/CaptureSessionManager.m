@@ -21,8 +21,11 @@
     if ((self = [super init])) {
         self.continuous = NO;
         
-		self.captureSession = [[AVCaptureSession alloc] init];
         imageView = iView;
+        
+		self.captureSession = [[AVCaptureSession alloc] init];
+        
+        [self.captureSession beginConfiguration];
         
         // Set captureSession.sessionPreset to something with a sane output value
         // Default is 1280x720 px images
@@ -70,6 +73,8 @@
             }
         }
         [self.captureSession addOutput:self.stillImageOutput];
+        
+        [self.captureSession commitConfiguration];
         
         [self.captureSession startRunning];
 	}
@@ -133,8 +138,8 @@
     }
 }
 
-- (void)saved {
-    
+- (void)stopPreview {
+    [captureSession stopRunning];
 }
 
 @end

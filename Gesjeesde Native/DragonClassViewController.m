@@ -63,7 +63,7 @@
 - (IBAction)next:(id)sender {
     // Store animal group and move on
     
-    NSLog(@"%d", [classPicker selectedRowInComponent:0]);
+    NSLog(@"Dragon animal group picked %d", [classPicker selectedRowInComponent:0]);
     
     [self performSegueWithIdentifier:@"Next" sender:sender];
 }
