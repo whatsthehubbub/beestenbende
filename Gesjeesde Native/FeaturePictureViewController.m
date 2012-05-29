@@ -46,9 +46,6 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    imagesLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:imagesLabel.font.pointSize];
-    timeLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:timeLabel.font.pointSize];
-    
     // Find the current team
     team = game.team1;
     if (team.tookFeaturePictures) {
