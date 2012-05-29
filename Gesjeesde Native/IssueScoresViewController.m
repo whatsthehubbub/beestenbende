@@ -47,7 +47,7 @@
     game = appDelegate.game;
     
     if (game.issue == 1 || game.issue == 2) {
-        self.headerLabel.text = [NSString stringWithFormat:@"De %@ snapt het", [game getCurrentAnimal]];
+        self.headerLabel.text = [NSString stringWithFormat:@"De %@ snapt het", [[game getCurrentAnimal] lowercaseString]];
     } else {
         self.headerLabel.text = @"De draak is ontmaskerd";
     }
