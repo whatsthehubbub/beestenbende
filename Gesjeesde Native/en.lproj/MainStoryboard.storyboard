@@ -278,7 +278,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="2MK-Dp-6M7"/>
                     <connections>
+                        <outlet property="nextButton" destination="6EM-Yl-4ZA" id="zmt-sf-xPC"/>
                         <outlet property="pageControl" destination="eO9-wZ-vVE" id="HjD-Le-Ns5"/>
+                        <outlet property="previousButton" destination="zoY-6q-4jS" id="y1l-UD-47i"/>
                         <outlet property="scrollView" destination="o3r-VL-feq" id="ZwZ-S9-ERW"/>
                         <segue destination="i3Y-tE-tAM" kind="push" identifier="Next" id="rZF-5p-iuu"/>
                     </connections>
@@ -4797,7 +4799,9 @@
                 <relationship kind="action" name="next"/>
                 <relationship kind="action" name="previous"/>
                 <relationship kind="action" name="scrollPage"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="pageControl" candidateClass="DDPageControl"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -4808,6 +4812,9 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="p5P-Gt-fdu"/>
+        <segue reference="iYQ-bF-g8K"/>
         <segue reference="umK-20-HZ7"/>
     </inferredMetricsTieBreakers>
 </document>

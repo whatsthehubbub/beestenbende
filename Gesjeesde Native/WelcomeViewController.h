@@ -17,6 +17,9 @@
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, retain) IBOutlet DDPageControl *pageControl;
 
+@property (strong) IBOutlet UIButton *previousButton;
+@property (strong) IBOutlet UIButton *nextButton;
+
 @property (assign) BOOL pageControlBeingUsed;
 
 - (IBAction)scrollPage;

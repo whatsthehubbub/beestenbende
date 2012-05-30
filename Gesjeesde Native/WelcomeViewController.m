@@ -17,6 +17,9 @@
 @synthesize scrollView;
 @synthesize pageControl;
 
+@synthesize previousButton;
+@synthesize nextButton;
+
 @synthesize pageControlBeingUsed;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,6 +47,8 @@
     pageControl.currentPage = 0;
     
     pageControlBeingUsed = NO;
+    
+    self.previousButton.enabled = NO;
     
     [self.view addSubview:pageControl];
 }
@@ -76,6 +81,11 @@
         
         [self scrollPage];
     }
+    
+    self.nextButton.enabled = YES;
+    if (self.pageControl.currentPage == 0) {
+        self.previousButton.enabled = NO;
+    } 
 }
 
 - (IBAction)next {
@@ -83,6 +93,11 @@
         self.pageControl.currentPage += 1;
         
         [self scrollPage];
+    }
+    
+    self.previousButton.enabled = YES;
+    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
+        self.nextButton.enabled = NO;
     }
 }
 
