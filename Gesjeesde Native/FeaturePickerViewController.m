@@ -77,7 +77,7 @@
     static NSString *CellIdentifier = @"FeatureCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
-    NSDictionary *feature = [self.game.features objectAtIndex:indexPath.row];
+    NSDictionary *feature = [[self.game getOrderedFeatures] objectAtIndex:indexPath.row];
     cell.textLabel.text = [feature objectForKey:@"Label"];
     
     [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:16.0]];

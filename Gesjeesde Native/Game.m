@@ -86,6 +86,15 @@
     return nil;
 }
 
+- (NSArray *)getOrderedFeatures {
+    return [self.features sortedArrayUsingComparator: ^(id a, id b) {
+        NSString *first = [a objectForKey:@"Label"];
+        NSString *second = [b objectForKey:@"Label"];
+        
+        return [first compare:second];
+    }];
+}
+
 - (NSArray *)getClasses { 
     return [[NSArray alloc] initWithObjects:@"Vis", @"Zoogdier", @"Reptiel", @"Vogel", nil];
 }
