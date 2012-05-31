@@ -17,6 +17,9 @@
 
 @property (assign) BOOL pageControlBeingUsed;
 
+@property (strong) IBOutlet UIButton *previousButton;
+@property (strong) IBOutlet UIButton *nextButton;
+
 - (void)scrollPage;
 - (IBAction)previous;
 - (IBAction)next;

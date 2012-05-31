@@ -18,7 +18,10 @@
 
 @property (assign) BOOL pageControlBeingUsed;
 
-- (IBAction)scrollPage:(id)sender;
+@property (strong) IBOutlet UIButton *previousButton;
+@property (strong) IBOutlet UIButton *nextButton;
+
+- (void)scrollPage:(id)sender;
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
 - (IBAction)done:(id)sender;

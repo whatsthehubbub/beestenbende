@@ -722,6 +722,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="7FB-fo-6G1"/>
                     <connections>
+                        <outlet property="nextButton" destination="2J6-rn-P7p" id="cHH-Fy-b7G"/>
+                        <outlet property="previousButton" destination="urc-Zu-wBg" id="QrR-Vp-6SO"/>
                         <outlet property="scrollView" destination="Ulg-FS-hO4" id="aBg-TX-1Y7"/>
                     </connections>
                 </viewController>
@@ -1175,6 +1177,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Drn-EP-t1T"/>
                     <connections>
+                        <outlet property="nextButton" destination="B0F-me-yY1" id="yLh-Gl-WO3"/>
+                        <outlet property="previousButton" destination="z3f-fW-bFc" id="75R-Jb-0y0"/>
                         <outlet property="scrollView" destination="93b-Lr-hyL" id="cqJ-vK-5P9"/>
                         <segue destination="mhP-gb-YWU" kind="push" identifier="Next" id="sz9-qc-ZZh"/>
                     </connections>
@@ -2750,6 +2754,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="51h-PT-sz0"/>
                     <connections>
+                        <outlet property="nextButton" destination="32s-Ac-y1r" id="Wxw-nl-1uH"/>
+                        <outlet property="previousButton" destination="00d-4b-l4T" id="stL-RR-wLH"/>
                         <outlet property="scrollView" destination="1Rd-27-WVN" id="oDf-nA-SCH"/>
                         <outlet property="team1FeatureImage" destination="FHH-Nt-atY" id="AG9-va-RuK"/>
                         <outlet property="team1FeatureLabel" destination="qKh-Eg-Y9y" id="BRM-hP-WOp"/>
@@ -3604,6 +3610,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="HMx-KA-Mqx"/>
                     <connections>
+                        <outlet property="nextButton" destination="GWf-zm-h9Z" id="hv7-kN-YRF"/>
+                        <outlet property="previousButton" destination="q3l-d9-Gkm" id="we1-lE-Gp3"/>
                         <outlet property="scrollView" destination="jfz-ow-oFW" id="p0x-qo-dR4"/>
                         <segue destination="mhP-gb-YWU" kind="push" identifier="Next" id="all-Ba-Vs9"/>
                     </connections>
@@ -4363,6 +4371,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="SXK-81-Ifv"/>
                     <connections>
+                        <outlet property="nextButton" destination="j6O-ZH-U0r" id="fhS-Os-7IX"/>
+                        <outlet property="previousButton" destination="NF6-pH-EyS" id="zsc-0Z-dMM"/>
                         <outlet property="scrollView" destination="FVt-nT-YFD" id="80L-dD-srP"/>
                     </connections>
                 </viewController>
@@ -4527,6 +4537,8 @@
             <relationships>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -4572,6 +4584,8 @@
             <relationships>
                 <relationship kind="action" name="next"/>
                 <relationship kind="action" name="previous"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -4599,6 +4613,8 @@
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="team1FeatureImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team1FeatureLabel" candidateClass="UILabel"/>
@@ -4638,7 +4654,8 @@
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
-                <relationship kind="action" name="scrollPage:"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -4758,6 +4775,8 @@
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
@@ -4812,7 +4831,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="all-Ba-Vs9"/>
         <segue reference="p5P-Gt-fdu"/>
         <segue reference="iYQ-bF-g8K"/>
         <segue reference="umK-20-HZ7"/>

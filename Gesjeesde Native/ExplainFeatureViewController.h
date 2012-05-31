@@ -36,6 +36,9 @@
 @property (nonatomic, retain) IBOutlet UILabel *team2FeatureLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2ResultAndExplanationLabel;
 
+@property (strong) IBOutlet UIButton *previousButton;
+@property (strong) IBOutlet UIButton *nextButton;
+
 - (void)scrollPage;
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;

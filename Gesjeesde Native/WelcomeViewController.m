@@ -85,7 +85,7 @@
     self.nextButton.enabled = YES;
     if (self.pageControl.currentPage == 0) {
         self.previousButton.enabled = NO;
-    } 
+    }
 }
 
 - (IBAction)next {
