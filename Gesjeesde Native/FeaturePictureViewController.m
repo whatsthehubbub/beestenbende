@@ -17,6 +17,7 @@
 @synthesize timeLabel;
 @synthesize imagesLabel;
 @synthesize pictureView;
+@synthesize pictureFrame;
 @synthesize teamOverlay;
 
 @synthesize takePictureButton;
@@ -101,6 +102,7 @@
         // If the time is up, call the next method
         
         pictureView.hidden = YES;
+        pictureFrame.hidden = YES;
         takePictureButton.hidden = YES;
         doneButton.hidden = NO;
     }

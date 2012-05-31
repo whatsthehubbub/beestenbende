@@ -1311,14 +1311,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="Vmr-Lz-lbo">
-                                <rect key="frame" x="36" y="116" width="248" height="247"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" id="2Wx-Wc-oH5">
-                                <rect key="frame" x="40" y="120" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-clock.png" id="sfJ-69-6FS">
                                 <rect key="frame" x="40" y="84" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1356,6 +1348,14 @@
                                     <action selector="next:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="AGG-vz-4kG"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="Xa1-Hl-WNi">
+                                <rect key="frame" x="40" y="120" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="9Wr-fn-qC2">
+                                <rect key="frame" x="36" y="116" width="248" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1363,7 +1363,8 @@
                     <connections>
                         <outlet property="doneButton" destination="5Q1-KH-j0a" id="KAv-ug-LTF"/>
                         <outlet property="imagesLabel" destination="tv8-fi-k7e" id="9x6-3P-50i"/>
-                        <outlet property="pictureView" destination="Vmr-Lz-lbo" id="Tgd-0C-m0o"/>
+                        <outlet property="pictureFrame" destination="9Wr-fn-qC2" id="Q3i-ly-XbY"/>
+                        <outlet property="pictureView" destination="Xa1-Hl-WNi" id="OKI-si-Xr8"/>
                         <outlet property="takePictureButton" destination="1pI-Nz-eIs" id="iID-2b-jFh"/>
                         <outlet property="teamOverlay" destination="wRd-MK-2wJ" id="Q4z-TE-HNi"/>
                         <outlet property="timeLabel" destination="qT8-zr-JJV" id="rqa-NI-xZZ"/>
@@ -1633,12 +1634,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="lDO-vf-IF5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="ypc-4t-WjL">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="0XX-wb-6w2">
-                                <rect key="frame" x="36" y="116" width="248" height="247"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="ZSI-CC-oCf">
+                                <rect key="frame" x="36" y="117" width="248" height="247"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Foto x van y" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="HhO-tU-W70" customClass="NormalLabel">
@@ -1753,7 +1754,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="W17-TO-wuG"/>
                     <connections>
-                        <outlet property="currentImage" destination="lDO-vf-IF5" id="9UK-mt-dG7"/>
+                        <outlet property="currentImage" destination="ypc-4t-WjL" id="ulP-Qa-6C0"/>
                         <outlet property="currentLabel" destination="HhO-tU-W70" id="rUv-ge-7ph"/>
                         <outlet property="deleteButton" destination="R51-xD-bKj" id="ykd-EU-PpE"/>
                         <outlet property="doneButton" destination="UDF-dN-9xo" id="as4-g4-kXW"/>
@@ -4059,12 +4060,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="sb9-Jl-bBv">
-                                <rect key="frame" x="40" y="120" width="240" height="240"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="2uX-40-ao7">
+                                <rect key="frame" x="36" y="116" width="248" height="247"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="9px-hm-1tr">
-                                <rect key="frame" x="36" y="116" width="248" height="247"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="ckl-Ai-cCT">
+                                <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zwv-1O-2Ql">
@@ -4135,7 +4136,7 @@
                     <connections>
                         <outlet property="classLabel" destination="vi0-Ps-U7O" id="4Bs-OH-2Hl"/>
                         <outlet property="doneButton" destination="Mcg-PQ-7g3" id="Tz6-0H-Odx"/>
-                        <outlet property="dragonPictureView" destination="9px-hm-1tr" id="1K7-tx-Pt3"/>
+                        <outlet property="dragonPictureView" destination="ckl-Ai-cCT" id="ash-NR-5Nx"/>
                         <outlet property="featureButton" destination="zwv-1O-2Ql" id="yjz-7u-YSM"/>
                         <outlet property="teamOverlay" destination="qZN-bD-HyY" id="IiA-C2-qDP"/>
                     </connections>
@@ -4642,6 +4643,7 @@
                 <relationship kind="action" name="takeFeaturePicture:"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="imagesLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pictureFrame" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="pictureView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="takePictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
@@ -4831,9 +4833,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="p5P-Gt-fdu"/>
-        <segue reference="iYQ-bF-g8K"/>
         <segue reference="umK-20-HZ7"/>
+        <segue reference="LV6-Fj-42D"/>
     </inferredMetricsTieBreakers>
 </document>
