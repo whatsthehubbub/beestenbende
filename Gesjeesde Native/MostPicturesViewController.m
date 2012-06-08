@@ -82,8 +82,6 @@
     } else if (game.issue == 2) {
         [self performSegueWithIdentifier:@"LabellingDoneSecond" sender:sender];
     }
-    
-    
 }
 
 @end
