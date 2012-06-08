@@ -68,16 +68,22 @@
     static NSString *CellIdentifier = @"TeamFeatureCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
     FeaturePicture *fp = [team.featurePictures objectAtIndex:indexPath.row];
     
     cell.textLabel.text = fp.feature;
-    [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:cell.textLabel.font.pointSize]];
-    
     cell.imageView.image = fp.image;
     
-    // Configure the cell...
-    
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:cell.textLabel.font.pointSize]];
+    
 }
 
 #pragma mark - Table view delegate

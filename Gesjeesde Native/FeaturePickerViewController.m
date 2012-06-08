@@ -76,11 +76,14 @@
 {
     static NSString *CellIdentifier = @"FeatureCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+
     NSDictionary *feature = [[self.game getOrderedFeatures] objectAtIndex:indexPath.row];
     cell.textLabel.text = [feature objectForKey:@"Label"];
-    
-    [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:16.0]];
+    [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:cell.textLabel.font.pointSize]];
     
     return cell;
 }
@@ -101,7 +104,7 @@
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
     
-    NSDictionary *feature = [self.game.features objectAtIndex:indexPath.row];
+    NSDictionary *feature = [[self.game getOrderedFeatures] objectAtIndex:indexPath.row];
     
     [self.delegate featurePickerViewController:self didSelectFeature:[feature objectForKey:@"Label"]];
 }
