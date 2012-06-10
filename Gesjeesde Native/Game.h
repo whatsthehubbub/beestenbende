@@ -34,7 +34,7 @@
 @property (assign) int required;
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name;
-- (NSArray *)getOrderedFeatures;
+- (NSArray *)getOrderedFeaturesForGroup:(int)number;
 - (NSArray *)getClasses;
 
 - (int)pointsForFeaturePicture:(FeaturePicture *)fp;

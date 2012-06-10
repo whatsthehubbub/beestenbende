@@ -28,15 +28,7 @@
         self.team2 = [[Team alloc] initWithNumber:2];
         
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Features" ofType:@"plist"];
-        NSDictionary *root = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
-        
-        self.features = (NSArray *)[root objectForKey:@"Root"];
-        
-#ifdef DEBUG
-        issue = 2; // We start at the first issue
-#else
-        issue = 1;
-#endif
+        self.features = [[NSArray alloc] initWithContentsOfFile:plistPath];
         
         self.turn = 1;
         self.required = 4;
@@ -78,16 +70,19 @@
 }
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name {
-    for (NSDictionary *dict in self.features) {
-        if ([name isEqualToString:[dict objectForKey:@"Label"]]) {
-            return dict;
+    for (NSDictionary *group in self.features) {
+        NSArray *groupFeatures = [group objectForKey:@"Features"];
+        for (NSDictionary *feature in groupFeatures) {
+            if ([name isEqualToString:[feature objectForKey:@"Label"]]) {
+                return feature;
+            }
         }
     }
     return nil;
 }
 
-- (NSArray *)getOrderedFeatures {
-    return [self.features sortedArrayUsingComparator: ^(id a, id b) {
+- (NSArray *)getOrderedFeaturesForGroup:(int)number {
+    return [[[self.features objectAtIndex:number] objectForKey:@"Features"] sortedArrayUsingComparator: ^(id a, id b) {
         NSString *first = [a objectForKey:@"Label"];
         NSString *second = [b objectForKey:@"Label"];
         

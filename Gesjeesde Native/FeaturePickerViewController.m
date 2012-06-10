@@ -61,15 +61,36 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    
-    // Add sections per set of features?
-    return 1;
+    return self.game.features.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.game.features.count;
+    return [[[self.game.features objectAtIndex:section] objectForKey:@"Features"] count];
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    // http://www.iphonedevsdk.com/forum/iphone-sdk-development/5172-font-size-color-tableview-header.html
+    UIView *wrapperView = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 44.0)];
+
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 44.0)];
+    headerLabel.backgroundColor = [UIColor clearColor];
+    headerLabel.opaque = NO;
+    headerLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:16.0f];
+    
+    headerLabel.text = [[self.game.features objectAtIndex:section] objectForKey:@"Group"];
+    
+    [wrapperView addSubview:headerLabel];
+    return wrapperView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 44.0;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return [[self.game.features objectAtIndex:section] objectForKey:@"Group"];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -80,8 +101,10 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-
-    NSDictionary *feature = [[self.game getOrderedFeatures] objectAtIndex:indexPath.row];
+    
+    NSLog(@"section: %d, row: %d", indexPath.section, indexPath.row);
+    
+    NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
     cell.textLabel.text = [feature objectForKey:@"Label"];
     [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:cell.textLabel.font.pointSize]];
     
@@ -95,7 +118,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if (selectedIndex != NSNotFound) {
-        UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:selectedIndex inSection:0]];
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:selectedIndex inSection:indexPath.section]];
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
     
@@ -104,7 +127,7 @@
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
     
-    NSDictionary *feature = [[self.game getOrderedFeatures] objectAtIndex:indexPath.row];
+    NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
     
     [self.delegate featurePickerViewController:self didSelectFeature:[feature objectForKey:@"Label"]];
 }
