@@ -62,6 +62,7 @@
     // Start capture session and bind it to the image view
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
     csManager.continuous = YES;
+    [csManager startPreview];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictureTaken:) name:kImageCapturedSuccessfully object:nil];
     
