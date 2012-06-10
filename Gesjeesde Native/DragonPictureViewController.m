@@ -61,6 +61,8 @@
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];
     
+    [self.csManager startPreview];
+    
     // For some reason this camera does not resume gracefully after Active/Inactive
     // I suspect this has something to do with looping back through this ViewController
     // http://developer.apple.com/library/ios/#DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/ManagingYourApplicationsFlow/ManagingYourApplicationsFlow.html#//apple_ref/doc/uid/TP40007072-CH4-SW1
@@ -99,7 +101,7 @@
 }
 
 - (IBAction)takeDragonPictureAgain:(id)sender {
-    [csManager restartPreview];
+    [csManager startPreview];
     
     self.takeDragonPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;

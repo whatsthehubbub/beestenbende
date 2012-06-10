@@ -55,8 +55,6 @@
         self.previewLayer.bounds = imageView.bounds;
         self.previewLayer.position = CGPointMake(CGRectGetMidX(imageView.bounds), CGRectGetMidY(imageView.bounds));
         
-        [imageView.layer addSublayer:self.previewLayer];
-        
         self.stillImageOutput = [[AVCaptureStillImageOutput alloc] init];
         self.stillImageOutput.outputSettings = [[NSDictionary alloc] initWithObjectsAndKeys: AVVideoCodecJPEG, AVVideoCodecKey, nil];
         
@@ -75,8 +73,6 @@
         [self.captureSession addOutput:self.stillImageOutput];
         
         [self.captureSession commitConfiguration];
-        
-        [self.captureSession startRunning];
 	}
 	return self;
 }
@@ -110,7 +106,8 @@
             // Slow
             // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
             
-            [self.previewLayer removeFromSuperlayer];
+            // TODO this is not the correct name anymore, because we don't just stop the preview
+            [self stopPreview];
         } else {
             // TODO flash the image view to show that a picture has been taken
             
@@ -127,18 +124,19 @@
     }];
 }
 
-- (void)restartPreview {
+- (void)startPreview {
     if (!continuous) {
-        // Blank image
+        // Blank image, because we're showing a preview
         imageView.image = nil;
-        
-        // Start capture session again
-        [imageView.layer addSublayer:previewLayer];
-        [captureSession startRunning];
     }
+    
+    [imageView.layer addSublayer:previewLayer];
+    [self.captureSession startRunning];
 }
 
 - (void)stopPreview {
+    [self.previewLayer removeFromSuperlayer];
+    
     [captureSession stopRunning];
 }
 

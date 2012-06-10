@@ -14,6 +14,8 @@
 
 @interface CaptureSessionManager : NSObject {
     UIImageView *imageView;
+    
+    // Continuous means the imageView is not used to display previews of the images
     bool continuous;
 }
 
@@ -26,7 +28,7 @@
 - (id)initWithImageView:(UIImageView *)iView;
 
 - (void)captureStillImage;
-- (void)restartPreview;
+- (void)startPreview;
 - (void)stopPreview;
 
 @end

@@ -60,6 +60,8 @@
     
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
+    
+    [self.csManager startPreview];
 }
 
 - (void)viewDidUnload
@@ -87,7 +89,7 @@
 }
 
 - (IBAction)takeTeamPictureAgain:(id)sender {
-    [csManager restartPreview];
+    [csManager startPreview];
     
     self.takeTeamPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
