@@ -46,7 +46,7 @@
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
-    [classPicker selectRow:currentTeam.dragonClass inComponent:0 animated:NO];
+    [classPicker selectRow:[game otherTeamForTeam:currentTeam].dragonClass inComponent:0 animated:NO];
 }
 
 - (void)viewDidUnload
