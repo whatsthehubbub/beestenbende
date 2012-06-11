@@ -132,8 +132,6 @@
 }
 
 -(IBAction)done:(id)sender {
-    // TODO done button only appears if all pictures have been labelled / or deleted
-    
     // Delete feature pictures marked for deletion
     [self.currentTeam purgeDeletedFeaturePictures];
     

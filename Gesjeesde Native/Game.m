@@ -36,30 +36,56 @@
     return self;
 }
 
-- (int)pointsForFeaturePicture:(FeaturePicture *)fp {
+- (FEATURE_RESULT)resultForFeaturePicture:(FeaturePicture *)fp {
     NSDictionary *featureDict = [self getFeatureWithName:fp.feature];
     
-    int featureNumber = 0; // Initialize on null to not let xcode whine
+    NSString *wrongAnimal = @"";
+    NSString *correctAnimal = @"";
+    
     if (issue == 1) {
-        featureNumber = [[featureDict objectForKey:@"Mammal"] intValue];
+        wrongAnimal = @"Bird";
+        correctAnimal = @"Mammal";
     } else if (issue == 2) {
-        featureNumber = [[featureDict objectForKey:@"Fish"] intValue];
-    } else if (issue == 3) {
-        featureNumber = [[featureDict objectForKey:@"Fish"] intValue];
+        wrongAnimal = @"Reptile";
+        correctAnimal = @"Fish";
+    }
+
+    int featureForWrongAnimal = [[featureDict objectForKey:wrongAnimal] intValue];
+    int featureForCorrectAnimal = [[featureDict objectForKey:correctAnimal] intValue];
+
+    if (fp.presentAssertion) {
+        if (featureForCorrectAnimal == 0) {
+            return FEATURE_YES_UNIQUE;
+        } else if (featureForCorrectAnimal == 1) {
+            if (featureForWrongAnimal != 1) {
+                return FEATURE_YES_CORRECT_AND_DIFFERENTIATING;
+            } else {
+                return FEATURE_YES_CORRECT_NOT_DIFFERENTIATING;
+            }
+        } else if (featureForCorrectAnimal == 2) {
+            return FEATURE_YES_INCORRECT;
+        }
+    } else {
+        if (featureForCorrectAnimal == 2) {
+            return FEATURE_NO_INCORRECT;
+        } else {
+            return FEATURE_NO_CORRECT;
+        }
     }
     
-    if (fp.presentAssertion && featureNumber == 0) {
-        return 10;
-    } else if (fp.presentAssertion && featureNumber == 1) {
-        return 5;
-    } else if (!fp.presentAssertion && featureNumber == 2) {
-        return -5;
-    }
+    return FEATURE_NO_CORRECT; // Default return with minimal value
+}
+
+- (BOOL)feature:(FeaturePicture *)fp presentInAnimal:(NSString *)animal {
+    NSDictionary *feature = [self getFeatureWithName:fp.feature];
     
-    return 0;
+    int featureValue = [[feature objectForKey:animal] intValue];
+    
+    return featureValue == 0 || featureValue == 1;
 }
 
 - (NSString *)getCurrentAnimal {
+    // TODO refactor to getCurrentAnimalName
     if (self.issue == 1) {
         return @"Eekhoorn";
     } else if (self.issue == 2) {
@@ -105,7 +131,7 @@
     } else {
         // For issue 3 the team with the most points is allowed to start (and a minor advantage)
         if (team1.totalPoints > team2.totalPoints) {
-            // TODO behaviour undefined for tie
+            // Behaviour undefined for tie
             return team1;
         } else {
             return team2;

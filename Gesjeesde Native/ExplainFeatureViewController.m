@@ -79,11 +79,22 @@
     
     // Lots of code to generate the result
     NSString *team1Explanation = [[game getFeatureWithName:team1fp.feature] objectForKey:@"Explanation"];
-    int team1Points = [game pointsForFeaturePicture:team1fp];
     
-    NSString *team1Result = @"Fout";
-    if (abs(team1Points) == 5) team1Result = @"Goed"; else if (team1Points == 10) team1Result = @"Uniek"; 
-    team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team1Result, team1Explanation];
+    FEATURE_RESULT team1Result = [game resultForFeaturePicture:team1fp];
+    NSString *team1ResultFeedback = @"";
+    
+    if (team1Result == FEATURE_YES_UNIQUE) {
+        team1ResultFeedback = @"Uniek";
+    } else if (team1Result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team1Result == FEATURE_NO_INCORRECT) {
+        team1ResultFeedback = @"Goed";
+    } else if (team1Result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
+        team1ResultFeedback = @"Niet onderscheidend";
+    } else {
+        team1ResultFeedback = @"Fout";
+    }
+     
+    team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team1ResultFeedback, team1Explanation];
+    
     
     // Do exactly the same thing for team 2
     FeaturePicture *team2fp = [game.team2 featurePictureForTurn:game.turn];
@@ -91,14 +102,24 @@
     team2NameLabel.text = [game.team2 getTeamName];
     team2FeatureImage.image = team2fp.image;
     team2FeatureLabel.text = team2fp.feature;
-    
+
     // Lots of code to generate the result
     NSString *team2Explanation = [[game getFeatureWithName:team2fp.feature] objectForKey:@"Explanation"];
-    int team2Points = [game pointsForFeaturePicture:team2fp];
     
-    NSString *team2Result = @"Fout";
-    if (abs(team2Points) == 5) team2Result = @"Goed"; else if (team2Points == 10) team2Result = @"Uniek"; 
-    team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team2Result, team2Explanation];
+    FEATURE_RESULT team2Result = [game resultForFeaturePicture:team2fp];
+    NSString *team2ResultFeedback = @"";
+    
+    if (team2Result == FEATURE_YES_UNIQUE) {
+        team2ResultFeedback = @"Uniek";
+    } else if (team2Result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team2Result == FEATURE_NO_INCORRECT) {
+        team2ResultFeedback = @"Goed";
+    } else if (team2Result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
+        team2ResultFeedback = @"Niet onderscheidend";
+    } else {
+        team2ResultFeedback = @"Fout";
+    }
+    
+    team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team2ResultFeedback, team2Explanation];
 }
 
 - (void)viewDidUnload

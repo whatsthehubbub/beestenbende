@@ -26,8 +26,6 @@
         // Custom initialization
     }
     
-    NSLog(@"In init with style");
-    
     return self;
 }
 
@@ -101,8 +99,6 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
-    NSLog(@"section: %d, row: %d", indexPath.section, indexPath.row);
     
     NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
     cell.textLabel.text = [feature objectForKey:@"Label"];

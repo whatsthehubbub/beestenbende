@@ -58,14 +58,14 @@
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
     self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft %@.", [class lowercaseString], featurePicture.feature];
     
-    int points = [game pointsForFeaturePicture:featurePicture];
-        
+//    int points = [game pointsForFeaturePicture:featurePicture];
+
     NSString *explanation = [[game getFeatureWithName:featurePicture.feature] objectForKey:@"Explanation"];
     
     if (currentTeam.dragonClass == 0) {
         // If fish has been chosen
         
-        if (points > 0) {
+        if ([game feature:featurePicture presentInAnimal:@"Fish"]) {
             // And a fish feature
             self.explanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
             

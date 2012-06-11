@@ -55,17 +55,20 @@
     
     team1fp = [game.team1 featurePictureForTurn:game.turn];
     
-    int team1points = [game pointsForFeaturePicture:team1fp];
-    if (team1points == 0) {
-        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
-    } else if (team1points == 5 || team1points == -5) {
-        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
-    } else if (team1points == 10) {
+    FEATURE_RESULT team1result = [game resultForFeaturePicture:team1fp];
+    int team1points = 0;
+    if (team1result == FEATURE_YES_UNIQUE) {
         [self.team1pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
+        team1points = 10;
+    } else if (team1result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team1result == FEATURE_NO_INCORRECT) {
+        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
+        team1points = 5;
+    } else {
+        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
+        team1points = 0;
     }
-
-    // We get -5 back in the negative case
-    game.team1.points += abs(team1points);
+    
+    game.team1.points += team1points;
     
     [self.team1featureLabel setText:team1fp.feature];
     self.team1featureImage.image = team1fp.image;
@@ -73,18 +76,21 @@
 
     // Do exactly the same thing for team 2
     team2fp = [game.team2 featurePictureForTurn:game.turn];
-    
-    int team2points = [game pointsForFeaturePicture:team2fp];
 
-    if (team2points == 0) {
-        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
-    } else if (team2points == 5 || team2points == -5) {
-        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
-    } else if (team2points == 10) {
+    FEATURE_RESULT team2result = [game resultForFeaturePicture:team2fp];
+    int team2points = 0;
+    if (team2result == FEATURE_YES_UNIQUE) {
         [self.team2pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
+        team2points = 10;
+    } else if (team2result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team2result == FEATURE_NO_INCORRECT) {
+        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
+        team2points = 5;
+    } else {
+        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
+        team2points = 0;
     }
     
-    game.team2.points += abs(team2points);
+    game.team2.points += team2points;
     
     [self.team2featureLabel setText:team2fp.feature];
     self.team2featureImage.image = team2fp.image;

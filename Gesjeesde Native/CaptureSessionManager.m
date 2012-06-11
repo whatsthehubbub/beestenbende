@@ -106,7 +106,6 @@
             // Slow
             // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
             
-            // TODO this is not the correct name anymore, because we don't just stop the preview
             [self stopPreview];
         } else {
             // TODO flash the image view to show that a picture has been taken
@@ -116,9 +115,6 @@
 
             [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:self userInfo:userInfo];
         }
-        
-        // TODO restart capture session if we want to take another picture
-        // [self.captureSession stopRunning];
         
         // [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:nil];
     }];

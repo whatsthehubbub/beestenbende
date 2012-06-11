@@ -9,6 +9,18 @@
 #import <Foundation/Foundation.h>
 #import "Team.h"
 
+typedef enum {
+    FEATURE_YES_UNIQUE, // 10 points
+    FEATURE_YES_CORRECT_AND_DIFFERENTIATING, // 5 points
+    FEATURE_YES_CORRECT_NOT_DIFFERENTIATING, // 0 points
+    FEATURE_YES_INCORRECT, // 0 points
+    
+    FEATURE_NO_INCORRECT, // 5 points
+    FEATURE_NO_CORRECT // 0 points
+} FEATURE_RESULT;
+
+
+
 @interface Game : NSObject {
     Team *team1;
     Team *team2;
@@ -37,7 +49,8 @@
 - (NSArray *)getOrderedFeaturesForGroup:(int)number;
 - (NSArray *)getClasses;
 
-- (int)pointsForFeaturePicture:(FeaturePicture *)fp;
+- (FEATURE_RESULT)resultForFeaturePicture:(FeaturePicture *)fp;
+- (BOOL)feature:(FeaturePicture *)fp presentInAnimal:(NSString *)animal;
 - (NSString *)getCurrentAnimal;
 
 - (Team *)firstTeamForTurn;
