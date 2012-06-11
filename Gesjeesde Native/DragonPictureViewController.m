@@ -57,7 +57,7 @@
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
     self.classLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van een %@.", class.lowercaseString];
-    
+    a
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];
     

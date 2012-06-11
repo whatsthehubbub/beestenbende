@@ -56,7 +56,7 @@
     self.featureImage.image = featurePicture.image;
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
-    self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft %@.", class, featurePicture.feature];
+    self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft %@.", [class lowercaseString], featurePicture.feature];
     
     int points = [game pointsForFeaturePicture:featurePicture];
         
@@ -90,7 +90,7 @@
             self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
         } else {
             // Feature and class do match, but it is the wrong class
-            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@ Maar ik ben geen %@!", explanation, class];
+            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@ Maar ik ben geen %@!", explanation, [class lowercaseString]];
         }
     }
     
