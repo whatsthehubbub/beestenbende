@@ -100,9 +100,7 @@
     
     // If both teams now have taken feature pictures, reset
     if (currentTeam.tookFeaturePictures && [game otherTeamForTeam:currentTeam].tookFeaturePictures) {
-        // Increment turn so the other team can start
-        game.turn += 1;
-        
+        // We don't have the concept of turns here, it just goes back and forth with the team with the most points starting
         currentTeam.tookFeaturePictures = NO;
         [game otherTeamForTeam:currentTeam].tookFeaturePictures = NO;
     }

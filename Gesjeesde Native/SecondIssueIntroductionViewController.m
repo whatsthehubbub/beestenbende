@@ -32,10 +32,6 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
-    
-    // Setup game and its teams for the next issue
-    game.issue = 2;
-    [game resetForNextIssue];
 }
 
 - (void)viewDidUnload

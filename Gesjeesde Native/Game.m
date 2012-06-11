@@ -96,10 +96,20 @@
 
 - (Team *)firstTeamForTurn {
     // First issue we start with team 1, and then alternate
-    if ((turn + issue - 1) % 2 == 0) {
-        return team2;
+    if (issue != 3) {
+        if ((turn + issue - 1) % 2 == 0) {
+            return team2;
+        } else {
+            return team1;
+        }
     } else {
-        return team1;
+        // For issue 3 the team with the most points is allowed to start (and a minor advantage)
+        if (team1.totalPoints > team2.totalPoints) {
+            // TODO behaviour undefined for tie
+            return team1;
+        } else {
+            return team2;
+        }
     }
 }
 
