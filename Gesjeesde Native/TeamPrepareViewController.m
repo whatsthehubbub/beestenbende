@@ -37,9 +37,9 @@
     game = appDelegate.game;
     
     // Find the current team
-    Team *team = game.team1;
+    Team *team = [game firstTeamForTurn];
     if (team.tookFeaturePictures) {
-        team = game.team2;
+        team = [game otherTeamForTeam:team];
     }
 
     headerLabel.text = [NSString stringWithFormat:@"Team %@ bereid je voor", [team getTeamName]];

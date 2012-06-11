@@ -48,9 +48,9 @@
     game = appDelegate.game;
     
     // Find the current team
-    team = game.team1;
+    team = [game firstTeamForTurn];
     if (team.tookFeaturePictures) {
-        team = game.team2;
+        team = [game otherTeamForTeam:team];
     }
     
     // Set the correct overlay for this team
@@ -119,11 +119,10 @@
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
     
-    if (game.team1.tookFeaturePictures) {
-        // TODO these need resetting to NO for both teams on the next round of picture taking
-        game.team2.tookFeaturePictures = YES;
+    team.tookFeaturePictures = YES;
+    
+    if (team.tookFeaturePictures && [[game otherTeamForTeam:team] tookFeaturePictures]) {
         // Go on to labelling
-        
         if (game.issue == 1) {
             [self performSegueWithIdentifier:@"LabelFirst" sender:sender];
         } else {
@@ -131,8 +130,8 @@
         }
     } else {
         // Go back again to have team 2 take their pictures
-        game.team1.tookFeaturePictures = YES;
         [self performSegueWithIdentifier:@"NextTeamPrepare" sender:self];
+
     }
 }
 
