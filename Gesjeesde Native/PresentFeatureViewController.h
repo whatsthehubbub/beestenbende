@@ -33,6 +33,8 @@
 @property (nonatomic, retain) IBOutlet UIButton *featureButton;
 @property (nonatomic, retain) IBOutlet UIImageView *featureImageView;
 
+@property (nonatomic, retain) IBOutlet UIButton *doneButton;
+
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
 @property (strong) FeaturePicture *currentFeaturePicture;

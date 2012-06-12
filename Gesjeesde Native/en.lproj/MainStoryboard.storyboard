@@ -2286,6 +2286,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="TPb-Br-cHt"/>
                     <connections>
+                        <outlet property="doneButton" destination="v27-C1-U6a" id="N9f-jP-p95"/>
                         <outlet property="featureButton" destination="N0H-sq-Nql" id="KrU-Zt-10L"/>
                         <outlet property="featureImageView" destination="v1F-ym-i7b" id="K9q-aK-Uk6"/>
                         <outlet property="headerLabel" destination="Ga4-8b-XD1" id="FKq-R5-ix3"/>
@@ -2411,6 +2412,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZP5-aN-YkD"/>
                     <connections>
+                        <outlet property="doneButton" destination="wQJ-ju-lAl" id="Gyt-vs-87c"/>
                         <outlet property="featureButton" destination="WoQ-zd-fSs" id="gwZ-R4-fpR"/>
                         <outlet property="featureImageView" destination="uTF-wg-lnc" id="vzo-yt-4N0"/>
                         <outlet property="headerLabel" destination="VzL-5w-4Vr" id="Q4T-pX-3e6"/>
@@ -4757,6 +4759,7 @@
             <relationships>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="yesNo:"/>
+                <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="featureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="featureImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
@@ -4844,7 +4847,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="p5P-Gt-fdu"/>
+        <segue reference="iYQ-bF-g8K"/>
         <segue reference="umK-20-HZ7"/>
-        <segue reference="LV6-Fj-42D"/>
     </inferredMetricsTieBreakers>
 </document>

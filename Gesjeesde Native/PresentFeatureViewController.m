@@ -22,6 +22,8 @@
 @synthesize featureButton;
 @synthesize featureImageView;
 
+@synthesize doneButton;
+
 @synthesize game;
 @synthesize currentTeam;
 @synthesize currentFeaturePicture;
@@ -56,6 +58,11 @@
     }
     
     self.hasFeature = YES;
+    
+    self.doneButton.enabled = NO;
+#ifdef DEBUG
+    self.doneButton.enabled = YES;
+#endif
     
     self.featureButton.titleLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:self.featureButton.titleLabel.font.pointSize];
 }
@@ -148,6 +155,9 @@
     [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
     
     [self.navigationController popViewControllerAnimated:YES];
+    
+    // Enable the done button
+    self.doneButton.enabled = YES;
 }
 
 @end
