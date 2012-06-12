@@ -258,7 +258,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tcn-7o-Y7t">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tcn-7o-Y7t">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -271,6 +271,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="CqU-oP-Aqf"/>
+                                    <action selector="back:" destination="gnf-ri-JiR" eventType="touchUpInside" id="bOn-ff-EIN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -513,11 +514,11 @@
             </objects>
             <point key="canvasLocation" x="2458" y="1116"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Question View Controller-->
         <scene sceneID="GnT-KT-xeG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4r-GI-JIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="fbs-mE-PLk" sceneMemberID="viewController">
+                <viewController id="fbs-mE-PLk" customClass="DragonQuestionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p0n-d1-PLQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -557,6 +558,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="fbs-mE-PLk" eventType="touchUpInside" id="Lma-nV-9Vu"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="jSB-pa-im8"/>
                                 </connections>
                             </button>
@@ -617,7 +619,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9XT-NJ-5nX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9XT-NJ-5nX">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -630,6 +632,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="n6G-8y-YUX"/>
+                                    <action selector="back:" destination="axP-nJ-0sf" eventType="touchUpInside" id="nPH-ct-wob"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="Ulg-FS-hO4">
@@ -730,11 +733,11 @@
             </objects>
             <point key="canvasLocation" x="3415" y="1116"/>
         </scene>
-        <!--View Controller-->
+        <!--Make Team Pictures View Controller-->
         <scene sceneID="6uc-Ng-T8J">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PpI-55-cDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="eaH-OO-SNN" sceneMemberID="viewController">
+                <viewController id="eaH-OO-SNN" customClass="MakeTeamPicturesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MGp-Ty-CMO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -785,7 +788,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Obp-eD-QtP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Obp-eD-QtP">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -798,6 +801,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="NKa-7m-e1T"/>
+                                    <action selector="back:" destination="eaH-OO-SNN" eventType="touchUpInside" id="lzy-oH-8g7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -859,7 +863,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xWl-sA-s0G">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xWl-sA-s0G">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -872,6 +876,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="Afr-37-eow"/>
+                                    <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="nTG-dn-57H"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="block-blue-team.png" id="aOn-7e-fTu">
@@ -1157,7 +1162,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cV3-hm-VFT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cV3-hm-VFT">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -1169,6 +1174,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="uyl-QQ-ySP"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="vEk-tR-NHd"/>
                                 </connections>
                             </button>
@@ -1444,6 +1450,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="mhP-gb-YWU" eventType="touchUpInside" id="hKc-TS-fCv"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="j7H-wu-7YK"/>
                                 </connections>
                             </button>
@@ -1807,11 +1814,11 @@
             </objects>
             <point key="canvasLocation" x="5835" y="-787"/>
         </scene>
-        <!--View Controller-->
+        <!--Convince Animal View Controller-->
         <scene sceneID="9Ez-FX-W4p">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g3-ru-P6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="StartPresentFirstIssue" id="ETL-EA-CCI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartPresentFirstIssue" id="ETL-EA-CCI" customClass="ConvinceAnimalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QR6-ba-wtE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1828,7 +1835,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lpy-0Y-qUq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lpy-0Y-qUq">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -1840,6 +1847,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="ETL-EA-CCI" eventType="touchUpInside" id="awq-hw-zj9"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="p03-uG-ydm"/>
                                 </connections>
                             </button>
@@ -2061,11 +2069,11 @@
             </objects>
             <point key="canvasLocation" x="5835" y="-165"/>
         </scene>
-        <!--View Controller-->
+        <!--Convince Animal View Controller-->
         <scene sceneID="Jvw-Ym-Q31">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0V-nS-Jqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="StartPresentSecondIssue" id="JWb-Gt-s87" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartPresentSecondIssue" id="JWb-Gt-s87" customClass="ConvinceAnimalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CLc-md-kBr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2082,7 +2090,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="izC-z4-BGz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="izC-z4-BGz">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -2095,6 +2103,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="Wgn-Xh-qIU"/>
+                                    <action selector="back:" destination="JWb-Gt-s87" eventType="touchUpInside" id="kPw-Zg-jC4"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="sYe-yb-Yl9">
@@ -2626,6 +2635,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="aDd-f0-9ee"/>
+                                    <action selector="back:" destination="TCN-yU-vb0" eventType="touchUpInside" id="iYT-7y-Hzb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="09t-LF-Fcw" customClass="ArrowRight">
@@ -3040,7 +3050,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jCy-Oy-gwh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jCy-Oy-gwh">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3053,6 +3063,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="fDv-IT-3lj"/>
+                                    <action selector="back:" destination="3Ko-sZ-1eK" eventType="touchUpInside" id="xur-hN-tbS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wNB-iN-VCU">
@@ -3208,7 +3219,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YaQ-UH-cgO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YaQ-UH-cgO">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3221,6 +3232,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="KbX-V4-BUP"/>
+                                    <action selector="back:" destination="rSy-eg-ifs" eventType="touchUpInside" id="QTY-rB-auA"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="progress-0.png" id="swt-ai-enj">
@@ -3352,11 +3364,11 @@
             </objects>
             <point key="canvasLocation" x="10955" y="-164"/>
         </scene>
-        <!--View Controller-->
+        <!--Animal Understands View Controller-->
         <scene sceneID="L3j-eL-VcF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABc-rc-jSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="QN4-xP-Apt" sceneMemberID="viewController">
+                <viewController id="QN4-xP-Apt" customClass="AnimalUnderstandsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4G0-TU-KsZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3388,7 +3400,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0De-qA-yBc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0De-qA-yBc">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3401,6 +3413,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="406-us-Jh7"/>
+                                    <action selector="back:" destination="QN4-xP-Apt" eventType="touchUpInside" id="uau-Aa-QZm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MBb-Ae-4Cp" customClass="ArrowRight">
@@ -3602,7 +3615,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h7M-hN-Pbz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h7M-hN-Pbz">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3614,6 +3627,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="pZK-6x-SL0" eventType="touchUpInside" id="3e0-1C-Oyr"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="pHZ-iv-VTO"/>
                                 </connections>
                             </button>
@@ -3631,11 +3645,11 @@
             </objects>
             <point key="canvasLocation" x="3432" y="475"/>
         </scene>
-        <!--View Controller-->
+        <!--Animal Understands View Controller-->
         <scene sceneID="Qup-xT-pOs">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2T-PN-zhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="jda-9n-bj0" sceneMemberID="viewController">
+                <viewController id="jda-9n-bj0" customClass="AnimalUnderstandsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ju0-62-wBR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3667,7 +3681,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8ej-au-1S7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8ej-au-1S7">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3680,6 +3694,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="Mpt-nn-Wgi"/>
+                                    <action selector="back:" destination="jda-9n-bj0" eventType="touchUpInside" id="XjC-xI-Un2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m5W-mm-oRw" customClass="ArrowRight">
@@ -3780,7 +3795,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Wh-85-qIs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4Wh-85-qIs">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -3792,6 +3807,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="Dee-6Y-Prk" eventType="touchUpInside" id="P1r-xB-QrC"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="jlj-Yc-ANo"/>
                                 </connections>
                             </button>
@@ -4277,7 +4293,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lkF-vx-fNw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lkF-vx-fNw">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4289,6 +4305,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="riD-0B-aIy" eventType="touchUpInside" id="POZ-UE-mG8"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="cVL-4O-Eke"/>
                                 </connections>
                             </button>
@@ -4391,11 +4408,11 @@
             </objects>
             <point key="canvasLocation" x="4416" y="1732"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Revealed View Controller-->
         <scene sceneID="ktj-ry-yzQ">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe7-ai-G7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="gkn-EA-2Cj" sceneMemberID="viewController">
+                <viewController id="gkn-EA-2Cj" customClass="DragonRevealedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FWq-1i-flX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4427,7 +4444,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aSt-Y2-19i">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aSt-Y2-19i">
                                 <rect key="frame" x="6" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -4440,6 +4457,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="SOQ-3P-MBl"/>
+                                    <action selector="back:" destination="gkn-EA-2Cj" eventType="touchUpInside" id="Vvc-Kl-M05"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pHt-GF-TZM" customClass="ArrowRight">
@@ -4521,11 +4539,23 @@
         <image name="toggle-wel-on-geen-off.png" width="206" height="55"/>
     </resources>
     <classes>
+        <class className="AnimalUnderstandsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnimalUnderstandsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
         <class className="ArrowRight" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ArrowRight.h"/>
         </class>
         <class className="BeestenButton" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BeestenButton.h"/>
+        </class>
+        <class className="ConvinceAnimalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConvinceAnimalViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
         </class>
         <class className="CreditsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditsViewController.h"/>
@@ -4547,6 +4577,7 @@
         <class className="DragonExplanationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonExplanationViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
                 <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
@@ -4557,6 +4588,7 @@
         <class className="DragonIntroductionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonIntroductionViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="outlet" name="explanation" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1Label" candidateClass="UILabel"/>
@@ -4591,9 +4623,16 @@
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
             </relationships>
         </class>
+        <class className="DragonQuestionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonQuestionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
         <class className="DragonResolutionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonResolutionViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next"/>
                 <relationship kind="action" name="previous"/>
                 <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
@@ -4611,6 +4650,12 @@
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
             </relationships>
         </class>
+        <class className="DragonRevealedViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonRevealedViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
         <class className="EndScreenViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EndScreenViewController.h"/>
             <relationships>
@@ -4622,6 +4667,7 @@
         <class className="ExplainFeatureViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ExplainFeatureViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
@@ -4664,6 +4710,7 @@
         <class className="FirstIssueExplanationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstIssueExplanationViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
@@ -4689,6 +4736,7 @@
         <class className="IntermediaryScoresViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IntermediaryScoresViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="nextIssue:"/>
                 <relationship kind="outlet" name="progressImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team1Label" candidateClass="UILabel"/>
@@ -4702,6 +4750,7 @@
         <class className="IssueScoresViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/IssueScoresViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1Label" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team1Picture" candidateClass="UIImageView"/>
@@ -4712,9 +4761,16 @@
                 <relationship kind="outlet" name="thanksLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
+        <class className="MakeTeamPicturesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MakeTeamPicturesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
         <class className="MakeTeamsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MakeTeamsViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="outlet" name="teamBlueLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="teamYellowLabel" candidateClass="UILabel"/>
             </relationships>
@@ -4786,6 +4842,7 @@
         <class className="SecondIssueExplanationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondIssueExplanationViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
@@ -4821,6 +4878,7 @@
         <class className="TeamPrepareViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPrepareViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
             </relationships>
@@ -4828,6 +4886,7 @@
         <class className="WelcomeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WelcomeViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="done"/>
                 <relationship kind="action" name="next"/>
                 <relationship kind="action" name="previous"/>
@@ -4845,9 +4904,10 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="all-Ba-Vs9"/>
         <segue reference="p5P-Gt-fdu"/>
         <segue reference="iYQ-bF-g8K"/>
         <segue reference="umK-20-HZ7"/>
+        <segue reference="0H7-JY-rCP"/>
     </inferredMetricsTieBreakers>
 </document>

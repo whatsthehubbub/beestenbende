@@ -29,4 +29,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *team2ScoreLabel;
 
 @property (nonatomic, retain) IBOutlet UILabel *thanksLabel;
+
+- (IBAction)back:(id)sender;
+
 @end

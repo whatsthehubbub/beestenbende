@@ -26,5 +26,6 @@
 @property (nonatomic, retain) IBOutlet UIImageView *progressImage;
 
 - (IBAction)nextIssue:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

@@ -23,6 +23,7 @@
 - (void)scrollPage;
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 
 - (void)pageControlClicked:(id)sender;
 

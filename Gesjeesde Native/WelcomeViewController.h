@@ -26,6 +26,7 @@
 - (IBAction)previous;
 - (IBAction)next;
 - (IBAction)done;
+- (IBAction)back:(id)sender;
 
 - (void)pageControlClicked:(id)sender;
 

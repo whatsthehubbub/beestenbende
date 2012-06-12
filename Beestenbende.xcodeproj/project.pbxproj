@@ -154,6 +154,10 @@
 		4EC83230154ED0AB006E7AC6 /* DragonResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */; };
 		4EC83234154EE26C006E7AC6 /* EndScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */; };
 		4EC83237154F3901006E7AC6 /* DragonResolutionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */; };
+		4ECB23391587F53C00F3CDCA /* ConvinceAnimalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB23381587F53B00F3CDCA /* ConvinceAnimalViewController.m */; };
+		4ECB233C1587F61700F3CDCA /* AnimalUnderstandsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB233B1587F61700F3CDCA /* AnimalUnderstandsViewController.m */; };
+		4ECB233F1587F88200F3CDCA /* DragonQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB233E1587F88000F3CDCA /* DragonQuestionViewController.m */; };
+		4ECB23421587FA1A00F3CDCA /* DragonRevealedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */; };
 		4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2151E153C3B6400040C97 /* HeaderLabel.m */; };
 		4ED21524153C417D00040C97 /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED21523153C417D00040C97 /* NormalLabel.m */; };
 		4ED21529153C4CA600040C97 /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21525153C4C8700040C97 /* Vollkorn-Bold.ttf */; };
@@ -371,6 +375,16 @@
 		4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EndScreenViewController.m; sourceTree = "<group>"; };
 		4EC83235154F38FF006E7AC6 /* DragonResolutionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonResolutionViewController.h; sourceTree = "<group>"; };
 		4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonResolutionViewController.m; sourceTree = "<group>"; };
+		4ECB23371587F53A00F3CDCA /* ConvinceAnimalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvinceAnimalViewController.h; sourceTree = "<group>"; };
+		4ECB23381587F53B00F3CDCA /* ConvinceAnimalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvinceAnimalViewController.m; sourceTree = "<group>"; };
+		4ECB233A1587F61500F3CDCA /* AnimalUnderstandsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalUnderstandsViewController.h; sourceTree = "<group>"; };
+		4ECB233B1587F61700F3CDCA /* AnimalUnderstandsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalUnderstandsViewController.m; sourceTree = "<group>"; };
+		4ECB233D1587F87F00F3CDCA /* DragonQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonQuestionViewController.h; sourceTree = "<group>"; };
+		4ECB233E1587F88000F3CDCA /* DragonQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonQuestionViewController.m; sourceTree = "<group>"; };
+		4ECB23401587FA1700F3CDCA /* DragonRevealedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonRevealedViewController.h; sourceTree = "<group>"; };
+		4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonRevealedViewController.m; sourceTree = "<group>"; };
+		4ECB23431587FDFF00F3CDCA /* MakeTeamPicturesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MakeTeamPicturesViewController.h; sourceTree = "<group>"; };
+		4ECB23441587FE0100F3CDCA /* MakeTeamPicturesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MakeTeamPicturesViewController.m; sourceTree = "<group>"; };
 		4ED2151D153C3B6400040C97 /* HeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderLabel.h; sourceTree = "<group>"; };
 		4ED2151E153C3B6400040C97 /* HeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabel.m; sourceTree = "<group>"; };
 		4ED21522153C417D00040C97 /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
@@ -587,23 +601,33 @@
 		4EAE98E0151A618A0051C926 /* Gesjeesde Native */ = {
 			isa = PBXGroup;
 			children = (
+				4ECB233A1587F61500F3CDCA /* AnimalUnderstandsViewController.h */,
+				4ECB233B1587F61700F3CDCA /* AnimalUnderstandsViewController.m */,
 				4EAE98E9151A618A0051C926 /* AppDelegate.h */,
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
+				4ECB23371587F53A00F3CDCA /* ConvinceAnimalViewController.h */,
+				4ECB23381587F53B00F3CDCA /* ConvinceAnimalViewController.m */,
 				4E3326B5151A909000CEC850 /* CreditsViewController.h */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
 				4ED21521153C3BD300040C97 /* Custom */,
+				4E110FC6154FFA7600935443 /* DragonClassViewController.h */,
+				4E110FC7154FFA7600935443 /* DragonClassViewController.m */,
 				4E755769154D94FF009A9E51 /* DragonExplanationViewController.h */,
 				4E75576A154D9500009A9E51 /* DragonExplanationViewController.m */,
 				4E75576D154D98F7009A9E51 /* DragonIntroductionViewController.h */,
 				4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */,
 				4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */,
 				4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */,
-				4EC83235154F38FF006E7AC6 /* DragonResolutionViewController.h */,
-				4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */,
 				4E4A4DF1154EB719009785BD /* DragonPictureViewController.h */,
 				4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */,
+				4ECB233D1587F87F00F3CDCA /* DragonQuestionViewController.h */,
+				4ECB233E1587F88000F3CDCA /* DragonQuestionViewController.m */,
+				4EC83235154F38FF006E7AC6 /* DragonResolutionViewController.h */,
+				4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */,
 				4EC8322E154ED0AB006E7AC6 /* DragonResultViewController.h */,
 				4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */,
+				4ECB23401587FA1700F3CDCA /* DragonRevealedViewController.h */,
+				4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */,
 				4EC83232154EE26C006E7AC6 /* EndScreenViewController.h */,
 				4EC83233154EE26C006E7AC6 /* EndScreenViewController.m */,
 				4E0D5F37152E69DD00009EC0 /* ExplainFeatureViewController.h */,
@@ -617,8 +641,6 @@
 				4E08C31415248CAA00F3CDC7 /* FirstIssueExplanationViewController.h */,
 				4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */,
 				4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */,
-				4E110FC6154FFA7600935443 /* DragonClassViewController.h */,
-				4E110FC7154FFA7600935443 /* DragonClassViewController.m */,
 				4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */,
 				4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */,
 				4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */,
@@ -627,6 +649,8 @@
 				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
 				4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
+				4ECB23431587FDFF00F3CDCA /* MakeTeamPicturesViewController.h */,
+				4ECB23441587FE0100F3CDCA /* MakeTeamPicturesViewController.m */,
 				4E428203154425F8009FD991 /* MakeTeamsViewController.h */,
 				4E428204154425F8009FD991 /* MakeTeamsViewController.m */,
 				4E3326B8151A91B200CEC850 /* MenuViewController.h */,
@@ -934,6 +958,10 @@
 				4EC83234154EE26C006E7AC6 /* EndScreenViewController.m in Sources */,
 				4EC83237154F3901006E7AC6 /* DragonResolutionViewController.m in Sources */,
 				4E110FC8154FFA7700935443 /* DragonClassViewController.m in Sources */,
+				4ECB23391587F53C00F3CDCA /* ConvinceAnimalViewController.m in Sources */,
+				4ECB233C1587F61700F3CDCA /* AnimalUnderstandsViewController.m in Sources */,
+				4ECB233F1587F88200F3CDCA /* DragonQuestionViewController.m in Sources */,
+				4ECB23421587FA1A00F3CDCA /* DragonRevealedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

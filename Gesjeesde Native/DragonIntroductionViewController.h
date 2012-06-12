@@ -26,5 +26,6 @@
 @property (nonatomic, retain) IBOutlet UILabel *explanation;
 
 - (IBAction)done:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

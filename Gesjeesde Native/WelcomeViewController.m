@@ -105,6 +105,10 @@
     [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
+- (IBAction)back:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - DDPageControl triggered actions
 - (void)pageControlClicked:(id)sender
 {

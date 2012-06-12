@@ -43,5 +43,6 @@
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
 - (IBAction)done:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

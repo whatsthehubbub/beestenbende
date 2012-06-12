@@ -13,4 +13,6 @@
 @property (strong) IBOutlet UILabel *teamYellowLabel;
 @property (strong) IBOutlet UILabel *teamBlueLabel;
 
+- (IBAction)back:(id)sender;
+
 @end

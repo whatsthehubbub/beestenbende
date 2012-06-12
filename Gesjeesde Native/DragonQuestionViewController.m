@@ -1,21 +1,18 @@
 //
-//  MakeTeamsViewController.m
+//  DragonQuestionViewController.m
 //  Beestenbende
 //
-//  Created by Alper Çuğun on 22/4/12.
+//  Created by Alper Çuğun on 13/6/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "MakeTeamsViewController.h"
+#import "DragonQuestionViewController.h"
 
-@interface MakeTeamsViewController ()
+@interface DragonQuestionViewController ()
 
 @end
 
-@implementation MakeTeamsViewController
-
-@synthesize teamYellowLabel;
-@synthesize teamBlueLabel;
+@implementation DragonQuestionViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,9 +27,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    teamYellowLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:teamYellowLabel.font.pointSize];
-    teamBlueLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:teamBlueLabel.font.pointSize];
 }
 
 - (void)viewDidUnload
