@@ -25,7 +25,7 @@
     			<key>Label</key>
     			<string>Verschillende type tanden</string>
     			<key>Explanation</key>
-    			<string>Zoogdieren en sommige vissen hebben verschillende types tanden.</string>
+    			<string>Zoogdieren hebben verschillende types tanden.</string>
     			<key>Fish</key>
     			<integer>2</integer>
     			<key>Mammal</key>
@@ -53,7 +53,7 @@
     			<key>Label</key>
     			<string>Tanden in meerdere rijen</string>
     			<key>Explanation</key>
-    			<string>Vissen kunnen tanden in meerdere rijen hebben.</string>
+    			<string>Vissen en reptielen kunnen tanden in meerdere rijen hebben.</string>
     			<key>Fish</key>
     			<integer>1</integer>
     			<key>Mammal</key>
@@ -67,7 +67,7 @@
     			<key>Label</key>
     			<string>Overal tanden in de bek</string>
     			<key>Explanation</key>
-    			<string>Vissen hebben overal tanden in de bek. </string>
+    			<string>Vissen en reptielen kunnen overal tanden in de bek hebben.</string>
     			<key>Fish</key>
     			<integer>1</integer>
     			<key>Mammal</key>
@@ -102,7 +102,7 @@
     			<key>Label</key>
     			<string>4 ledematen</string>
     			<key>Explanation</key>
-    			<string>Reptielen, vogels en zoogdieren hebben 4 ledematen. Let op: bij slangen zijn de ledematen verdwenen. </string>
+    			<string>Reptielen, vogels en zoogdieren hebben 4 ledematen. Let op: bij slangen zijn de ledematen verdwenen.</string>
     			<key>Fish</key>
     			<integer>2</integer>
     			<key>Mammal</key>
@@ -305,7 +305,7 @@
     			<key>Label</key>
     			<string>Schubben</string>
     			<key>Explanation</key>
-    			<string>Vissen en reptielen hebben allebei schubben. Let op: het zijn wel andere soorten schubben. Bij vissen zijn schubben gemaakt van bot, bij reptielen van huid. Visschubben kun je eraf schrapen, bij bijvoorbeeld een krokodil lukt dat nooit.</string>
+    			<string>Vissen en reptielen hebben allebei schubben. Let op: het zijn wel andere soorten schubben. Bij vissen zijn schubben gemaakt van bot, bij reptielen van huid. Visschubben kun je eraf halen, bij een reptiel kan dat niet.</string>
     			<key>Fish</key>
     			<integer>1</integer>
     			<key>Mammal</key>
@@ -382,7 +382,7 @@
     			<key>Label</key>
     			<string>Ei</string>
     			<key>Explanation</key>
-    			<string>Vogels, vissen, en reptielen leggen inderdaad eieren, maar dit kun je niet zien aan het dier. Je weet dus niet zeker of dit ook echt zo is. Gebruik alleen kenmerken die jullie kunnen waarnemen.</string>
+    			<string>Je weet niet zeker of het ei dat hier ligt van een vogel, vis of reptiel is. Tip: gebruik alleen bewijzen die je zelf kunt waarnemen.</string>
     			<key>Fish</key>
     			<integer>3</integer>
     			<key>Mammal</key>
