@@ -450,11 +450,11 @@
             </objects>
             <point key="canvasLocation" x="2954" y="475"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Start View Controller-->
         <scene sceneID="Jxr-kz-8GL">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9T9-LD-Zpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="FinalIssueIntroduction" id="e3m-9K-xFw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinalIssueIntroduction" id="e3m-9K-xFw" customClass="DragonStartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MKd-zs-MI5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -513,13 +513,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fbs-mE-PLk" kind="push" id="04g-ZQ-Bet"/>
+                                    <action selector="next:" destination="e3m-9K-xFw" eventType="touchUpInside" id="3Dn-c4-4wX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="b1a-8U-8ZZ"/>
+                    <connections>
+                        <segue destination="fbs-mE-PLk" kind="push" identifier="Next" id="MZi-4W-qVc"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2458" y="1116"/>
@@ -556,7 +559,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z7t-ad-VEO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="z7t-ad-VEO">
                                 <rect key="frame" x="5" y="6" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -568,7 +571,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="fbs-mE-PLk" eventType="touchUpInside" id="Lma-nV-9Vu"/>
+                                    <action selector="back:" destination="fbs-mE-PLk" eventType="touchUpInside" id="8wq-7x-Ae6"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="jSB-pa-im8"/>
                                 </connections>
                             </button>
@@ -584,7 +587,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="axP-nJ-0sf" kind="push" id="1mb-jt-Rd8"/>
+                                    <action selector="next:" destination="fbs-mE-PLk" eventType="touchUpInside" id="lXJ-AR-yhG"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-reptiles.png" id="o3Z-EC-CfB">
@@ -595,6 +598,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="417-VD-8kO"/>
+                    <connections>
+                        <segue destination="axP-nJ-0sf" kind="push" identifier="Next" id="5d6-iR-adl"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2936" y="1116"/>
@@ -725,7 +731,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Dee-6Y-Prk" kind="push" id="umK-20-HZ7"/>
+                                    <action selector="done:" destination="axP-nJ-0sf" eventType="touchUpInside" id="FKn-G6-ZJY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -736,6 +742,7 @@
                         <outlet property="nextButton" destination="2J6-rn-P7p" id="cHH-Fy-b7G"/>
                         <outlet property="previousButton" destination="urc-Zu-wBg" id="QrR-Vp-6SO"/>
                         <outlet property="scrollView" destination="Ulg-FS-hO4" id="aBg-TX-1Y7"/>
+                        <segue destination="Dee-6Y-Prk" kind="push" identifier="Next" id="fEa-BH-mAb"/>
                     </connections>
                 </viewController>
             </objects>
@@ -3913,21 +3920,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w8W-xW-Tha">
-                                <rect key="frame" x="5" y="6" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="4CX-Kr-BVb"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De draak is eigenlijk een…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Cov-b4-Uex" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3959,6 +3951,21 @@
                                     <outlet property="delegate" destination="whR-Wj-nBL" id="O0S-n8-3Y1"/>
                                 </connections>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w8W-xW-Tha">
+                                <rect key="frame" x="5" y="6" width="28" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="button-titlebar-back.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="whR-Wj-nBL" eventType="touchUpInside" id="TLt-iu-7Ui"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -4167,7 +4174,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ica-di-yHw" kind="push" id="jXY-4s-XjO"/>
+                                    <action selector="next:" destination="yMG-9O-rz6" eventType="touchUpInside" id="gBF-RJ-NoS"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De draak is een [diergroep] want hij heeft…" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vi0-Ps-U7O">
@@ -4187,6 +4194,7 @@
                         <outlet property="dragonPictureView" destination="ckl-Ai-cCT" id="ash-NR-5Nx"/>
                         <outlet property="featureButton" destination="zwv-1O-2Ql" id="yjz-7u-YSM"/>
                         <outlet property="teamOverlay" destination="qZN-bD-HyY" id="IiA-C2-qDP"/>
+                        <segue destination="Ica-di-yHw" kind="push" identifier="Next" id="cGx-rh-seh"/>
                     </connections>
                 </viewController>
             </objects>
@@ -4411,7 +4419,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gkn-EA-2Cj" kind="push" id="Ekt-Xb-ftQ"/>
+                                    <action selector="done:" destination="riD-0B-aIy" eventType="touchUpInside" id="nfG-Hq-cqK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -4422,6 +4430,7 @@
                         <outlet property="nextButton" destination="j6O-ZH-U0r" id="fhS-Os-7IX"/>
                         <outlet property="previousButton" destination="NF6-pH-EyS" id="zsc-0Z-dMM"/>
                         <outlet property="scrollView" destination="FVt-nT-YFD" id="80L-dD-srP"/>
+                        <segue destination="gkn-EA-2Cj" kind="push" identifier="Next" id="Fdn-wg-VFE"/>
                     </connections>
                 </viewController>
             </objects>
@@ -4491,13 +4500,16 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="3Ko-sZ-1eK" kind="push" id="0H7-JY-rCP"/>
+                                    <action selector="next:" destination="gkn-EA-2Cj" eventType="touchUpInside" id="pfq-b2-HDp"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="rdO-zH-dYs"/>
+                    <connections>
+                        <segue destination="3Ko-sZ-1eK" kind="push" identifier="Next" id="AoM-So-BHK"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="9492" y="1116"/>
@@ -4595,6 +4607,7 @@
         <class className="DragonClassViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonClassViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="outlet" name="classPicker" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
@@ -4604,6 +4617,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonExplanationViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="previous:"/>
                 <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
@@ -4628,6 +4642,7 @@
         <class className="DragonLabelViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonLabelViewController.h"/>
             <relationships>
+                <relationship kind="action" name="next:"/>
                 <relationship kind="outlet" name="classLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="dragonPictureView" candidateClass="UIImageView"/>
@@ -4653,12 +4668,14 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonQuestionViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
             </relationships>
         </class>
         <class className="DragonResolutionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonResolutionViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next"/>
                 <relationship kind="action" name="previous"/>
                 <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
@@ -4680,6 +4697,13 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonRevealedViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
+        <class className="DragonStartViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonStartViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
             </relationships>
         </class>
         <class className="EndScreenViewController" superclassName="UIViewController">
@@ -4947,7 +4971,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="0AR-ig-N8o"/>
-        <segue reference="iYQ-bF-g8K"/>
-        <segue reference="umK-20-HZ7"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="AoM-So-BHK"/>
+        <segue reference="LV6-Fj-42D"/>
     </inferredMetricsTieBreakers>
 </document>

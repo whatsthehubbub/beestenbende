@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "DDPageControl.h"
+#import "SimpleAudioEngine.h"
 
 @interface DragonExplanationViewController : UIViewController <UIScrollViewDelegate>
 
@@ -23,6 +25,7 @@
 - (void)scrollPage;
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
+- (IBAction)done:(id)sender;
 - (IBAction)back:(id)sender;
 
 - (void)pageControlClicked:(id)sender;

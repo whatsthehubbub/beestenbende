@@ -73,9 +73,17 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"PickFeature"]) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i10_openmenu.wav"];
+        
         FeaturePickerViewController *fpvc = segue.destinationViewController;
         fpvc.delegate = self;
     }
+}
+
+- (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
+    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
 #pragma mark - FeaturePickerViewControllerDelegate

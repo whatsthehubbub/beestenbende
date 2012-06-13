@@ -65,7 +65,15 @@
     
     NSLog(@"Dragon animal group picked %d", [classPicker selectedRowInComponent:0]);
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     [self performSegueWithIdentifier:@"Next" sender:sender];
+}
+
+- (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - UIPickerViewDataSource

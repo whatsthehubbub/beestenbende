@@ -118,6 +118,8 @@
 }
 
 - (IBAction)done:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     [self performSegueWithIdentifier:@"DragonAgain" sender:sender];
 }
 

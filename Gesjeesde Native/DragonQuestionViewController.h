@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SimpleAudioEngine.h"
+
 @interface DragonQuestionViewController : UIViewController
 
+- (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
 
 @end

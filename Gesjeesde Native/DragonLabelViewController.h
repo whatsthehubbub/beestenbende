@@ -25,4 +25,6 @@
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
 
+- (IBAction)next:(id)sender;
+
 @end

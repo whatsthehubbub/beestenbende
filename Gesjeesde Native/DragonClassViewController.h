@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "SimpleAudioEngine.h"
 
 @interface DragonClassViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
@@ -20,5 +21,6 @@
 @property (nonatomic, retain) IBOutlet UIPickerView *classPicker;
 
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

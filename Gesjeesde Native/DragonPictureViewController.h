@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "CaptureSessionManager.h"
 #import "UIImage+Extras.h"
+#import "SimpleAudioEngine.h"
 
 @interface DragonPictureViewController : UIViewController
 

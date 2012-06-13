@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "DDPageControl.h"
+#import "SimpleAudioEngine.h"
 
 @interface DragonResolutionViewController : UIViewController <UIScrollViewDelegate>
 
@@ -24,6 +25,7 @@
 - (IBAction)previous;
 - (IBAction)next;
 - (IBAction)back:(id)sender;
+- (IBAction)done:(id)sender;
 
 - (void)pageControlClicked:(id)sender;
 

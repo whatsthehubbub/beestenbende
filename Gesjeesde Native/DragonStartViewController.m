@@ -1,18 +1,18 @@
 //
-//  DragonQuestionViewController.m
+//  DragonStartViewController.m
 //  Beestenbende
 //
 //  Created by Alper Çuğun on 13/6/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "DragonQuestionViewController.h"
+#import "DragonStartViewController.h"
 
-@interface DragonQuestionViewController ()
+@interface DragonStartViewController ()
 
 @end
 
-@implementation DragonQuestionViewController
+@implementation DragonStartViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,12 +44,6 @@
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
     [self performSegueWithIdentifier:@"Next" sender:self];
-}
-
-- (IBAction)back:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
-    
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

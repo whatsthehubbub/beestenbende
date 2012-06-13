@@ -114,6 +114,8 @@
     
     [self.csManager stopPreview];
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     [self performSegueWithIdentifier:@"Next" sender:sender];
 }
 

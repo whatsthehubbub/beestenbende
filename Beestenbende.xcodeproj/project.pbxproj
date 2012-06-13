@@ -209,6 +209,7 @@
 		4ED69F711588F93600F84D92 /* d08_zeepaling_snapt.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F6F1588F93600F84D92 /* d08_zeepaling_snapt.wav */; };
 		4ED69F721588F93600F84D92 /* d09_vissen_opgelucht.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F701588F93600F84D92 /* d09_vissen_opgelucht.wav */; };
 		4ED69F741588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F731588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav */; };
+		4ED69F7715890A2100F84D92 /* DragonStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED69F7615890A1F00F84D92 /* DragonStartViewController.m */; };
 		4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD6152B359D00324EDB /* FeaturePicture.m */; };
 		4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */; };
 		4EDEFADD152B625900324EDB /* PictureLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFADC152B625800324EDB /* PictureLabelViewController.m */; };
@@ -489,6 +490,8 @@
 		4ED69F6F1588F93600F84D92 /* d08_zeepaling_snapt.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d08_zeepaling_snapt.wav; sourceTree = "<group>"; };
 		4ED69F701588F93600F84D92 /* d09_vissen_opgelucht.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d09_vissen_opgelucht.wav; sourceTree = "<group>"; };
 		4ED69F731588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d14_alledierenblij_einde_v2.wav; sourceTree = "<group>"; };
+		4ED69F7515890A1E00F84D92 /* DragonStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonStartViewController.h; sourceTree = "<group>"; };
+		4ED69F7615890A1F00F84D92 /* DragonStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonStartViewController.m; sourceTree = "<group>"; };
 		4EDEFAD5152B359D00324EDB /* FeaturePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePicture.h; sourceTree = "<group>"; };
 		4EDEFAD6152B359D00324EDB /* FeaturePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePicture.m; sourceTree = "<group>"; };
 		4EDEFAD8152B426300324EDB /* FeaturePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePickerViewController.h; sourceTree = "<group>"; };
@@ -763,6 +766,8 @@
 				4ECB233B1587F61700F3CDCA /* AnimalUnderstandsViewController.m */,
 				4ED69F641588F5A600F84D92 /* AnimalUnderstandsResponseViewController.h */,
 				4ED69F651588F5A600F84D92 /* AnimalUnderstandsResponseViewController.m */,
+				4ED69F7515890A1E00F84D92 /* DragonStartViewController.h */,
+				4ED69F7615890A1F00F84D92 /* DragonStartViewController.m */,
 				4EAE98E9151A618A0051C926 /* AppDelegate.h */,
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
 				4ECB23371587F53A00F3CDCA /* ConvinceAnimalViewController.h */,
@@ -1168,6 +1173,7 @@
 				4ED69F301588CDCF00F84D92 /* MakeTeamPicturesViewController.m in Sources */,
 				4ED69F331588D29D00F84D92 /* FeaturePictureDoneViewController.m in Sources */,
 				4ED69F661588F5A700F84D92 /* AnimalUnderstandsResponseViewController.m in Sources */,
+				4ED69F7715890A2100F84D92 /* DragonStartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

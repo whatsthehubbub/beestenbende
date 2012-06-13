@@ -74,6 +74,8 @@
 }
 
 - (IBAction)done:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     if (game.team1.dragonProofs == 3 || game.team2.dragonProofs == 3) {
         
         if (game.team1.dragonProofs == 3) {
@@ -89,6 +91,8 @@
 }
 
 - (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

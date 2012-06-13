@@ -77,6 +77,8 @@
 }
 
 - (IBAction)previous:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     if (self.pageControl.currentPage > 0) {
         self.pageControl.currentPage -= 1;
         
@@ -90,6 +92,8 @@
 }
 
 - (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     if (self.pageControl.currentPage < pageControl.numberOfPages-1) {
         self.pageControl.currentPage += 1;
         
@@ -102,7 +106,15 @@
     }
 }
 
+- (IBAction)done:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
+    [self performSegueWithIdentifier:@"Next" sender:self];
+}
+
 - (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 
