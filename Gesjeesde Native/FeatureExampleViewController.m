@@ -43,7 +43,7 @@
 }
 
 - (IBAction)back:(id)sender {
-    NSLog(@"Back from feature examples");
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
     
     [self.delegate featureExampleDidBack:self];
 }

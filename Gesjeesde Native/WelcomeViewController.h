@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "DDPageControl.h"
+#import "SimpleAudioEngine.h"
 
 @interface WelcomeViewController : UIViewController <UIScrollViewDelegate> {
     UIScrollView *scrollView;

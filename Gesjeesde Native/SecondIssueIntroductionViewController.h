@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "AppDelegate.h"
+#import "SimpleAudioEngine.h"
 
 @interface SecondIssueIntroductionViewController : UIViewController {
     Game *game;

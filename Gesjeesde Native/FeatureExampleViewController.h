@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SimpleAudioEngine.h"
+
 @class FeatureExampleViewController;
 
 @protocol FeatureExampleViewControllerDelegate

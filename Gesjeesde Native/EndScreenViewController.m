@@ -33,6 +33,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d14_alledrieneblij_einde_v2.wav"];
+    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     

@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SimpleAudioEngine.h"
+
 @class CreditsViewController;
+
 
 @protocol CreditsViewControllerDelegate <NSObject>
 
 -(void)creditsViewControllerDidBack:(CreditsViewController *)controller;
 
 @end
+
 
 @interface CreditsViewController : UIViewController
 

@@ -80,18 +80,24 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"PickFeature"]) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i10_openmenu.wav"];
+        
         FeaturePickerViewController *fpvc = segue.destinationViewController;
         fpvc.delegate = self;
     }
 }
 
 -(IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     self.currentPictureIndex = (self.currentPictureIndex+1) % self.currentTeam.featurePictures.count;
     
     [self displayPicture];
 }
 
 -(IBAction)previous:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     self.currentPictureIndex -= 1;
     if (self.currentPictureIndex < 0) {
         self.currentPictureIndex += self.currentTeam.featurePictures.count;
@@ -119,6 +125,8 @@
 }
 
 -(IBAction)deleted:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i09_knop-toggle.wav"];
+    
     FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];
     fp.deleted = !fp.deleted;
     
@@ -156,6 +164,8 @@
             
         [UIView commitAnimations];
     } else {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+        
         [self performSegueWithIdentifier:@"LabellingDone" sender:self];
     }
 }

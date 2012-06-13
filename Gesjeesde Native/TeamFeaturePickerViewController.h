@@ -10,6 +10,7 @@
 
 #import "Team.h"
 #import "FeaturePicture.h"
+#import "SimpleAudioEngine.h"
 
 @class TeamFeaturePickerViewController;
 

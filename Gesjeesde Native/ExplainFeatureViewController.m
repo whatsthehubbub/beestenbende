@@ -50,6 +50,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    NSArray *nautilus = [NSArray arrayWithObjects:@"d01_nautilus_1.wav", @"d01_nautilus_2.wav", @"d01_nautilus_3.wav", @"d01_nautilus_4.wav", @"d01_nautilus_5.wav", @"d01_nautilus_6.wav", @"d01_nautilus_7.wav", @"d01_nautilus_8.wav", @"d01_nautilus_9.wav", @"d01_nautilus_10.wav", @"d01_nautilus_11.wav", nil];
+    [[SimpleAudioEngine sharedEngine] playEffect:[nautilus objectAtIndex:arc4random() % [nautilus count]]];
+    
+    
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height);
     
     self.pageControl = [[DDPageControl alloc] init];
@@ -145,6 +149,8 @@
 }
 
 - (IBAction)previous:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     if (self.pageControl.currentPage > 0) {
         self.pageControl.currentPage -= 1;
         
@@ -158,6 +164,8 @@
 }
 
 - (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     if (self.pageControl.currentPage < self.pageControl.numberOfPages-1) {
         self.pageControl.currentPage += 1;
         
@@ -171,6 +179,8 @@
 }
 
 - (IBAction)done:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     [game.team1 purgeUsedFeaturePictures];
     [game.team2 purgeUsedFeaturePictures];
     
@@ -194,6 +204,8 @@
 }
 
 - (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

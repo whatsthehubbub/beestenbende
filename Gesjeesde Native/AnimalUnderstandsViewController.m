@@ -27,6 +27,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    Game *game = appDelegate.game;
+    
+    if (game.issue == 1) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"d04_vleekhoorn_snapt.wav"];
+    } else {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"d08_zeepaling_reptielverdriet.wav"];
+    }
 }
 
 - (void)viewDidUnload
@@ -40,8 +49,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+- (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
+    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
 @end

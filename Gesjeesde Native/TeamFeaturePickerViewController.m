@@ -90,6 +90,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i11_menu-select-close.wav"];
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [self.delegate teamFeaturePickerViewController:self didSelectFeature:indexPath.row];

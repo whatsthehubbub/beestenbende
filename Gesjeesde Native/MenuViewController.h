@@ -10,6 +10,10 @@
 
 #import "CreditsViewController.h"
 
+#import "SimpleAudioEngine.h"
+
 @interface MenuViewController : UIViewController <CreditsViewControllerDelegate>
+
+- (IBAction)next:(id)sender;
 
 @end

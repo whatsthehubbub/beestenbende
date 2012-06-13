@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "SimpleAudioEngine.h"
 
 @interface TeamPrepareViewController : UIViewController 
 
@@ -16,6 +17,6 @@
 
 @property (strong) Game *game;
 
-//- (IBAction)back:(id)sender;
+- (IBAction)next:(id)sender;
 
 @end

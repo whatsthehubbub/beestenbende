@@ -43,7 +43,7 @@
 }
 
 - (IBAction)back:(id)sender {
-    NSLog(@"Pressed back");
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
     
     [self.delegate creditsViewControllerDidBack:self];
 }

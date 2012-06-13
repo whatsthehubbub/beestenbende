@@ -41,6 +41,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i15_tussenstand_v2.wav"];
+    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
@@ -71,6 +73,8 @@
 }
 
 - (IBAction)nextIssue:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     if (game.issue == 1) {
         game.issue = 2;
         [game resetForNextIssue];
@@ -91,6 +95,8 @@
 }
 
 - (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -10,6 +10,7 @@
 
 #import "FeaturePickerViewController.h"
 #import "FeaturePicture.h"
+#import "SimpleAudioEngine.h"
 
 @interface PictureLabelViewController : UIViewController <FeaturePickerViewControllerDelegate> {
     UIButton *featureButton;

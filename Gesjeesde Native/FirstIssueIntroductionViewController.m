@@ -14,9 +14,6 @@
 
 @implementation FirstIssueIntroductionViewController
 
-@synthesize scrollView;
-@synthesize pageControl;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,15 +26,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
     
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height);
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d02_vleekhoorn_denktvogel.wav"];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    // Release any retained subviews of the main view
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -45,47 +41,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)scrollPage {
-    CGRect frame;
-    frame.origin.x = self.scrollView.frame.size.width * self.pageControl.currentPage;
-    frame.origin.y = 0;
-    frame.size = self.scrollView.frame.size;
-    
-    [self.scrollView scrollRectToVisible:frame animated:YES];
-}
-
-- (IBAction)previous:(id)sender {
-    if (self.pageControl.currentPage > 0) {
-        self.pageControl.currentPage -= 1;
-        
-        [self scrollPage];
-    }
-}
-
 - (IBAction)next:(id)sender {
-    if (self.pageControl.currentPage < 1) {
-        self.pageControl.currentPage += 1;
-        [self scrollPage];
-    }
-}
-
-- (IBAction)done:(id)sender {
-    if (self.pageControl.currentPage < 1) {
-        [self next:self];
-    } else {
-        [self performSegueWithIdentifier:@"NextScreen" sender:self];
-    }
-}
-
-#pragma mark - UIScrollViewDelegate
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    // From: http://www.iosdevnotes.com/2011/03/uiscrollview-paging/
-    CGFloat pageWidth = self.scrollView.frame.size.width;
-    int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-    self.pageControl.currentPage = page;
+    [self performSegueWithIdentifier:@"Next" sender:self];
 }
-
 
 @end

@@ -10,6 +10,7 @@
 
 #import "FeatureExampleViewController.h"
 #import "DDPageControl.h"
+#import "SimpleAudioEngine.h"
 
 @interface FirstIssueExplanationViewController : UIViewController <FeatureExampleViewControllerDelegate, UIScrollViewDelegate>
 
@@ -24,6 +25,7 @@
 - (void)scrollPage:(id)sender;
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
+- (IBAction)example:(id)sender;
 - (IBAction)done:(id)sender;
 - (IBAction)back:(id)sender;
 

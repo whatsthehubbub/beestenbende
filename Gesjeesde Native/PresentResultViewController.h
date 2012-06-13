@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
+#import "SimpleAudioEngine.h"
 
 @interface PresentResultViewController : UIViewController {
     Game *game;

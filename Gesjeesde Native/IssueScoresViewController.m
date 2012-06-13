@@ -43,6 +43,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i14_uitslagkwestie_v2.wav"];
+    
+    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
@@ -90,7 +93,15 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
+    [self performSegueWithIdentifier:@"Next" sender:self];
+}
+
 - (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SimpleAudioEngine.h"
+
 @interface MakeTeamsViewController : UIViewController
 
 @property (strong) IBOutlet UILabel *teamYellowLabel;
 @property (strong) IBOutlet UILabel *teamBlueLabel;
 
+- (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
 
 @end

@@ -79,6 +79,8 @@
 #pragma mark -
 
 - (IBAction)takeTeamPicture:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v2.wav"];
+    
     [self.csManager captureStillImage];
     
     // Hide take picture button, show other two
@@ -121,6 +123,8 @@
     } else {
         game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
 
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+        
         game.issue = selector.selectedSegmentIndex+1;
         
         if (game.issue == 1) {

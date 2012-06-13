@@ -12,6 +12,7 @@
 #import "FeaturePicture.h"
 #import "CaptureSessionManager.h"
 #import "UIImage+Extras.h"
+#import "SimpleAudioEngine.h"
 
 @interface FeaturePictureViewController : UIViewController {
     UILabel *timeLabel;

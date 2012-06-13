@@ -69,10 +69,10 @@
 #ifdef DEBUG
     secondsLeft = 2;
 #else
-    secondsLeft = 90;
+    secondsLeft = 89;
 #endif
     
-    timeLabel.text =[NSString stringWithFormat:@"%d", secondsLeft];
+    timeLabel.text = [NSString stringWithFormat:@"%d", secondsLeft+1];
     
     imagesLabel.text = @"0";
     
@@ -95,10 +95,13 @@
     // Could get userinfo object from theTimer if necessary
     
     self.timeLabel.text = [NSString stringWithFormat:@"%d", self.secondsLeft];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i06_tijdtiktaf.wav"];
     
     self.secondsLeft -= 1;
     
     if (self.secondsLeft < 0) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i08_tijdvoorbij_v2.wav"];
+        
         [self.timer invalidate];
         // If the time is up, call the next method
         
@@ -121,6 +124,10 @@
     
     team.tookFeaturePictures = YES;
     
+    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
+    
     if (team.tookFeaturePictures && [[game otherTeamForTeam:team] tookFeaturePictures]) {
         // Go on to labelling
         if (game.issue == 1) {
@@ -138,6 +145,8 @@
 - (void)pictureTaken:(NSNotification *)notification {
     UIImage *image = [notification.userInfo valueForKey:@"image"];
 
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v2.wav"];
+    
     // Save UIImage to team object
     [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
                                      [image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];

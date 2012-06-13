@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "TeamFeaturePickerViewController.h"
+#import "SimpleAudioEngine.h"
 
 @interface PresentFeatureViewController : UIViewController <TeamFeaturePickerViewControllerDelegate> {
     UILabel *teamLabel;

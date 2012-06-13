@@ -8,18 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstIssueIntroductionViewController : UIViewController <UIScrollViewDelegate> {
-    UIScrollView *scrollView;
-    UIPageControl *pageControl;
+#import "SimpleAudioEngine.h"
+
+@interface FirstIssueIntroductionViewController : UIViewController {
 }
 
-@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
-
-- (IBAction)scrollPage;
-- (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
-
-- (IBAction)done:(id)sender;
 
 @end

@@ -26,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i01_openingsscherm_v2.wav"];
 }
 
 - (void)viewDidUnload
@@ -42,9 +43,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"Credits"]) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
         CreditsViewController *creditsViewController = segue.destinationViewController;
         creditsViewController.delegate = self;
     }
+}
+
+- (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
 #pragma mark - CreditsViewControllerDelegate

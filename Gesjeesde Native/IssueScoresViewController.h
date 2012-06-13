@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "Game.h"
+#import "SimpleAudioEngine.h"
 
 @interface IssueScoresViewController : UIViewController {
     Game *game;
@@ -30,6 +31,7 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *thanksLabel;
 
+- (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
 
 @end

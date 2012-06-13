@@ -30,8 +30,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d06_zeepaling_reptielverdriet.wav"];
+    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+    
+    
 }
 
 - (void)viewDidUnload
@@ -46,6 +50,8 @@
 }
 
 - (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     [self performSegueWithIdentifier:@"Next" sender:self];
 }
 

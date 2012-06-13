@@ -36,6 +36,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d03_vogels_irritatie.wav"];
+    
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 4, self.scrollView.frame.size.height);
     
     self.pageControl = [[DDPageControl alloc] init];
@@ -84,6 +86,8 @@
 }
 
 - (IBAction)previous:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     if (self.pageControl.currentPage > 0) {
         self.pageControl.currentPage -= 1;
         
@@ -97,6 +101,8 @@
 }
 
 - (IBAction)next:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
+    
     if (self.pageControl.currentPage < 4) {
         self.pageControl.currentPage += 1;
         [self scrollPage:self];
@@ -108,15 +114,25 @@
     }
 }
 
+- (IBAction)example:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+
+    [self performSegueWithIdentifier:@"FeatureExample" sender:self];
+}
+
 - (IBAction)done:(id)sender {
     if (NO && /* Short circuit for quicker testing. TODO */ self.pageControl.currentPage != 3) {
         [self next:self];
     } else {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+        
         [self performSegueWithIdentifier:@"Next" sender:self];
     }
 }
 
 - (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
     [self.navigationController popViewControllerAnimated:YES];
 }
 

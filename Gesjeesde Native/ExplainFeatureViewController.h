@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "DDPageControl.h"
+#import "SimpleAudioEngine.h"
 
 @class ExplainFeatureViewController;
 

@@ -80,6 +80,8 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"PickFeature"]) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i10_openmenu.wav"];
+        
         TeamFeaturePickerViewController *tfpvc = segue.destinationViewController;
         tfpvc.delegate = self;
         tfpvc.team = self.currentTeam;
@@ -87,6 +89,8 @@
 }
 
 - (IBAction)yesNo:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i09_knop-toggle.wav"];
+    
     self.hasFeature = !self.hasFeature;
     
     NSString *imageName;
@@ -140,6 +144,8 @@
         
         [UIView commitAnimations];
     } else {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+        
         [self performSegueWithIdentifier:@"Result" sender:self];
     }
 }

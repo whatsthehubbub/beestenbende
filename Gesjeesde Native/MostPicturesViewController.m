@@ -77,6 +77,8 @@
 }
 
 - (IBAction)done:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
     if (game.issue == 1) {
         [self performSegueWithIdentifier:@"LabellingDone" sender:sender];
     } else if (game.issue == 2) {
