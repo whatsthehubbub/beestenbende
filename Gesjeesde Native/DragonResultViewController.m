@@ -81,11 +81,11 @@
         // Wrong class alltogether so wrong in any case
         NSDictionary *feature = [game getFeatureWithName:featurePicture.feature];
         
-        if  ((currentTeam.dragonClass == 1 && [[feature objectForKey:@"Mammal"] intValue]==2)
+        if  ((currentTeam.dragonClass == 1 && [[feature objectForKey:@"Mammal"] intValue] == 2)
              ||
-             (currentTeam.dragonClass == 2 && [[feature objectForKey:@"Reptile"] intValue]==2)
+             (currentTeam.dragonClass == 2 && [[feature objectForKey:@"Reptile"] intValue] == 2)
              ||
-             (currentTeam.dragonClass == 3 && [[feature objectForKey:@"Bird"] intValue]==2)) {
+             (currentTeam.dragonClass == 3 && [[feature objectForKey:@"Bird"] intValue] == 2)) {
             // Feature and class do not match
             self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
         } else {

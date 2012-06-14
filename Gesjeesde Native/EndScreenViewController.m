@@ -41,8 +41,11 @@
     Team *winner;
     if (game.team1.totalPoints > game.team2.totalPoints) {
         winner = game.team1;
-    } else {
+    } else if (game.team2.totalPoints > game.team1.totalPoints) {
         winner = game.team2;
+    } else {
+        // The team that had 3 dragon proofs wins on ties
+        winner = game.team1.dragonProofs == 3 ? game.team1 : game.team2;
     }
     
     self.winnerPicture.image = winner.picture;
