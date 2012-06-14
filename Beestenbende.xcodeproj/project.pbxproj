@@ -210,6 +210,10 @@
 		4ED69F721588F93600F84D92 /* d09_vissen_opgelucht.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F701588F93600F84D92 /* d09_vissen_opgelucht.wav */; };
 		4ED69F741588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F731588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav */; };
 		4ED69F7715890A2100F84D92 /* DragonStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED69F7615890A1F00F84D92 /* DragonStartViewController.m */; };
+		4ED69F7C1589E40D00F84D92 /* d10_draak_wiebenik_v4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F781589E40B00F84D92 /* d10_draak_wiebenik_v4.wav */; };
+		4ED69F7D1589E40D00F84D92 /* d11_reptielen_watisdraak_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F791589E40B00F84D92 /* d11_reptielen_watisdraak_v2.wav */; };
+		4ED69F7E1589E40D00F84D92 /* d12_draak_inderdaadvis_v4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F7A1589E40C00F84D92 /* d12_draak_inderdaadvis_v4.wav */; };
+		4ED69F7F1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F7B1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav */; };
 		4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD6152B359D00324EDB /* FeaturePicture.m */; };
 		4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */; };
 		4EDEFADD152B625900324EDB /* PictureLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFADC152B625800324EDB /* PictureLabelViewController.m */; };
@@ -492,6 +496,10 @@
 		4ED69F731588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d14_alledierenblij_einde_v2.wav; sourceTree = "<group>"; };
 		4ED69F7515890A1E00F84D92 /* DragonStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonStartViewController.h; sourceTree = "<group>"; };
 		4ED69F7615890A1F00F84D92 /* DragonStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonStartViewController.m; sourceTree = "<group>"; };
+		4ED69F781589E40B00F84D92 /* d10_draak_wiebenik_v4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d10_draak_wiebenik_v4.wav; sourceTree = "<group>"; };
+		4ED69F791589E40B00F84D92 /* d11_reptielen_watisdraak_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d11_reptielen_watisdraak_v2.wav; sourceTree = "<group>"; };
+		4ED69F7A1589E40C00F84D92 /* d12_draak_inderdaadvis_v4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d12_draak_inderdaadvis_v4.wav; sourceTree = "<group>"; };
+		4ED69F7B1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d13_reptielen_opgelucht_v2.wav; sourceTree = "<group>"; };
 		4EDEFAD5152B359D00324EDB /* FeaturePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePicture.h; sourceTree = "<group>"; };
 		4EDEFAD6152B359D00324EDB /* FeaturePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePicture.m; sourceTree = "<group>"; };
 		4EDEFAD8152B426300324EDB /* FeaturePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePickerViewController.h; sourceTree = "<group>"; };
@@ -705,6 +713,10 @@
 				4ED69F6C1588F8DF00F84D92 /* d07_vissen_hulp.wav */,
 				4ED69F6F1588F93600F84D92 /* d08_zeepaling_snapt.wav */,
 				4ED69F701588F93600F84D92 /* d09_vissen_opgelucht.wav */,
+				4ED69F781589E40B00F84D92 /* d10_draak_wiebenik_v4.wav */,
+				4ED69F791589E40B00F84D92 /* d11_reptielen_watisdraak_v2.wav */,
+				4ED69F7A1589E40C00F84D92 /* d12_draak_inderdaadvis_v4.wav */,
+				4ED69F7B1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav */,
 				4ED69F731588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav */,
 				4E4EECF11588C2570018170C /* i01_openingsscherm_v2.wav */,
 				4E4EECF31588C3B80018170C /* i02_schermverder.wav */,
@@ -1107,6 +1119,10 @@
 				4ED69F711588F93600F84D92 /* d08_zeepaling_snapt.wav in Resources */,
 				4ED69F721588F93600F84D92 /* d09_vissen_opgelucht.wav in Resources */,
 				4ED69F741588F98B00F84D92 /* d14_alledierenblij_einde_v2.wav in Resources */,
+				4ED69F7C1589E40D00F84D92 /* d10_draak_wiebenik_v4.wav in Resources */,
+				4ED69F7D1589E40D00F84D92 /* d11_reptielen_watisdraak_v2.wav in Resources */,
+				4ED69F7E1589E40D00F84D92 /* d12_draak_inderdaadvis_v4.wav in Resources */,
+				4ED69F7F1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
