@@ -15,6 +15,7 @@
 @implementation TeamPictureViewController
 
 @synthesize teamPictureView;
+@synthesize teamPictureFrame;
 @synthesize teamOverlay;
 @synthesize titleLabel;
 
@@ -62,6 +63,10 @@
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
     
     [self.csManager startPreview];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 - (void)viewDidUnload
@@ -74,6 +79,18 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)resignedActive {
+    [self.csManager stopPreview];
+    
+    self.teamPictureFrame.hidden = YES;
+}
+
+- (void)becameActive {
+    [self.csManager startPreview];
+    
+    self.teamPictureFrame.hidden = NO;
 }
 
 #pragma mark -
@@ -123,6 +140,11 @@
     } else {
         game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
 
+        // Remove notification observers
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+        
         [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
         
         game.issue = selector.selectedSegmentIndex+1;

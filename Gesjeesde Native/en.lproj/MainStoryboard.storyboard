@@ -1043,6 +1043,7 @@
                         <outlet property="takePictureAgainButton" destination="iJi-Na-9mH" id="Hz8-Ln-fNZ"/>
                         <outlet property="takeTeamPictureButton" destination="pcn-Qj-exJ" id="9Kd-sW-6K7"/>
                         <outlet property="teamOverlay" destination="aMU-rC-4xZ" id="eH6-Xe-dkn"/>
+                        <outlet property="teamPictureFrame" destination="NbA-dD-FFm" id="WDk-dC-XCu"/>
                         <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="fIc-hY-0xz"/>
                         <outlet property="titleLabel" destination="VmV-6v-w4x" id="qzc-HR-nzM"/>
                         <segue destination="aEm-4i-hHa" kind="push" identifier="FirstIssueIntroduction" id="fHu-b7-0Nr"/>
@@ -4938,6 +4939,7 @@
                 <relationship kind="outlet" name="takePictureAgainButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="takeTeamPictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="teamPictureFrame" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="teamPictureView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
