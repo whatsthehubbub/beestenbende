@@ -185,7 +185,6 @@
 		4ED69F3F1588E65E00F84D92 /* i10_openmenu.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F3E1588E65E00F84D92 /* i10_openmenu.wav */; };
 		4ED69F411588E66400F84D92 /* i11_menu-select-close.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F401588E66300F84D92 /* i11_menu-select-close.wav */; };
 		4ED69F431588E69800F84D92 /* i09_knop-toggle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F421588E69800F84D92 /* i09_knop-toggle.wav */; };
-		4ED69F451588E93A00F84D92 /* i07_tijdtiktlaatstesec_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F441588E93A00F84D92 /* i07_tijdtiktlaatstesec_v3.wav */; };
 		4ED69F481588E94F00F84D92 /* i13_uitslagronde_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F461588E94F00F84D92 /* i13_uitslagronde_v2.wav */; };
 		4ED69F491588E94F00F84D92 /* i14_uitslagkwestie_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F471588E94F00F84D92 /* i14_uitslagkwestie_v2.wav */; };
 		4ED69F551588EACF00F84D92 /* d01_nautilus_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F4A1588EACE00F84D92 /* d01_nautilus_1.wav */; };
@@ -214,6 +213,7 @@
 		4ED69F7D1589E40D00F84D92 /* d11_reptielen_watisdraak_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F791589E40B00F84D92 /* d11_reptielen_watisdraak_v2.wav */; };
 		4ED69F7E1589E40D00F84D92 /* d12_draak_inderdaadvis_v4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F7A1589E40C00F84D92 /* d12_draak_inderdaadvis_v4.wav */; };
 		4ED69F7F1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F7B1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav */; };
+		4ED69F81158A737700F84D92 /* i07_tijdtiktlaatstesec_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F80158A737600F84D92 /* i07_tijdtiktlaatstesec_v3.wav */; };
 		4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD6152B359D00324EDB /* FeaturePicture.m */; };
 		4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */; };
 		4EDEFADD152B625900324EDB /* PictureLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFADC152B625800324EDB /* PictureLabelViewController.m */; };
@@ -469,7 +469,6 @@
 		4ED69F3E1588E65E00F84D92 /* i10_openmenu.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i10_openmenu.wav; sourceTree = "<group>"; };
 		4ED69F401588E66300F84D92 /* i11_menu-select-close.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "i11_menu-select-close.wav"; sourceTree = "<group>"; };
 		4ED69F421588E69800F84D92 /* i09_knop-toggle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "i09_knop-toggle.wav"; sourceTree = "<group>"; };
-		4ED69F441588E93A00F84D92 /* i07_tijdtiktlaatstesec_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i07_tijdtiktlaatstesec_v3.wav; sourceTree = "<group>"; };
 		4ED69F461588E94F00F84D92 /* i13_uitslagronde_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i13_uitslagronde_v2.wav; sourceTree = "<group>"; };
 		4ED69F471588E94F00F84D92 /* i14_uitslagkwestie_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i14_uitslagkwestie_v2.wav; sourceTree = "<group>"; };
 		4ED69F4A1588EACE00F84D92 /* d01_nautilus_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d01_nautilus_1.wav; sourceTree = "<group>"; };
@@ -500,6 +499,7 @@
 		4ED69F791589E40B00F84D92 /* d11_reptielen_watisdraak_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d11_reptielen_watisdraak_v2.wav; sourceTree = "<group>"; };
 		4ED69F7A1589E40C00F84D92 /* d12_draak_inderdaadvis_v4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d12_draak_inderdaadvis_v4.wav; sourceTree = "<group>"; };
 		4ED69F7B1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d13_reptielen_opgelucht_v2.wav; sourceTree = "<group>"; };
+		4ED69F80158A737600F84D92 /* i07_tijdtiktlaatstesec_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i07_tijdtiktlaatstesec_v3.wav; sourceTree = "<group>"; };
 		4EDEFAD5152B359D00324EDB /* FeaturePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePicture.h; sourceTree = "<group>"; };
 		4EDEFAD6152B359D00324EDB /* FeaturePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePicture.m; sourceTree = "<group>"; };
 		4EDEFAD8152B426300324EDB /* FeaturePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeaturePickerViewController.h; sourceTree = "<group>"; };
@@ -725,7 +725,7 @@
 				4ED69F3C1588DD1200F84D92 /* i05_carouselverderterug.wav */,
 				4ED69F421588E69800F84D92 /* i09_knop-toggle.wav */,
 				4ED69F3A1588DB9100F84D92 /* i06_tijdtiktaf.wav */,
-				4ED69F441588E93A00F84D92 /* i07_tijdtiktlaatstesec_v3.wav */,
+				4ED69F80158A737600F84D92 /* i07_tijdtiktlaatstesec_v3.wav */,
 				4ED69F381588DB7D00F84D92 /* i08_tijdvoorbij_v2.wav */,
 				4ED69F3E1588E65E00F84D92 /* i10_openmenu.wav */,
 				4ED69F401588E66300F84D92 /* i11_menu-select-close.wav */,
@@ -1096,7 +1096,6 @@
 				4ED69F3F1588E65E00F84D92 /* i10_openmenu.wav in Resources */,
 				4ED69F411588E66400F84D92 /* i11_menu-select-close.wav in Resources */,
 				4ED69F431588E69800F84D92 /* i09_knop-toggle.wav in Resources */,
-				4ED69F451588E93A00F84D92 /* i07_tijdtiktlaatstesec_v3.wav in Resources */,
 				4ED69F481588E94F00F84D92 /* i13_uitslagronde_v2.wav in Resources */,
 				4ED69F491588E94F00F84D92 /* i14_uitslagkwestie_v2.wav in Resources */,
 				4ED69F551588EACF00F84D92 /* d01_nautilus_1.wav in Resources */,
@@ -1123,6 +1122,7 @@
 				4ED69F7D1589E40D00F84D92 /* d11_reptielen_watisdraak_v2.wav in Resources */,
 				4ED69F7E1589E40D00F84D92 /* d12_draak_inderdaadvis_v4.wav in Resources */,
 				4ED69F7F1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav in Resources */,
+				4ED69F81158A737700F84D92 /* i07_tijdtiktlaatstesec_v3.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

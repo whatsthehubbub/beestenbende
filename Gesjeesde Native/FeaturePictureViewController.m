@@ -104,12 +104,17 @@
     // Could get userinfo object from theTimer if necessary
     
     self.timeLabel.text = [NSString stringWithFormat:@"%d", self.secondsLeft];
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i06_tijdtiktaf.wav"];
     
     self.secondsLeft -= 1;
     
-    if (self.secondsLeft < 0) {
+    if (self.secondsLeft > 10) {
+        // The normal second sounds
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i06_tijdtiktaf.wav"];
+    } else if (self.secondsLeft < 0) {
         [self timeUp];
+    } else {
+        // The last couple of seconds have a different sound
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i07_tijdtiktlaatstesec_v3.wav"];
     }
 }
 
