@@ -31,6 +31,7 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
 @property (nonatomic, retain) IBOutlet UILabel *imagesLabel;
+@property (nonatomic, retain) IBOutlet UILabel *timeUpLabel;
 
 @property (nonatomic, retain) IBOutlet UIImageView *pictureView;
 @property (nonatomic, retain) IBOutlet UIImageView *pictureFrame;
@@ -48,7 +49,9 @@
 @property (strong) CaptureSessionManager *csManager;
 
 - (void)startTimer;
+- (void)stopTimer;
 - (void)decrementTimer:(NSTimer *)theTimer;
+- (void)timeUp;
 
 - (IBAction)takeFeaturePicture:(id)sender;
 - (IBAction)next:(id)sender;

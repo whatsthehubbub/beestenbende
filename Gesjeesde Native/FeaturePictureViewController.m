@@ -16,6 +16,8 @@
 
 @synthesize timeLabel;
 @synthesize imagesLabel;
+@synthesize timeUpLabel;
+
 @synthesize pictureView;
 @synthesize pictureFrame;
 @synthesize teamOverlay;
@@ -64,10 +66,18 @@
     csManager.continuous = YES;
     [csManager startPreview];
     
+    self.pictureFrame.hidden = NO;
+    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictureTaken:) name:kImageCapturedSuccessfully object:nil];
     
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
+    
+
 #ifdef DEBUG
-    secondsLeft = 2;
+    secondsLeft = 4;
 #else
     secondsLeft = 89;
 #endif
@@ -83,7 +93,6 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -100,16 +109,33 @@
     self.secondsLeft -= 1;
     
     if (self.secondsLeft < 0) {
-        [[SimpleAudioEngine sharedEngine] playEffect:@"i08_tijdvoorbij_v2.wav"];
-        
-        [self.timer invalidate];
-        // If the time is up, call the next method
-        
-        pictureView.hidden = YES;
-        pictureFrame.hidden = YES;
-        takePictureButton.hidden = YES;
-        doneButton.hidden = NO;
+        [self timeUp];
     }
+}
+
+- (void)timeUp {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i08_tijdvoorbij_v2.wav"];
+    
+    [self stopTimer];
+    
+    pictureView.hidden = YES;
+    pictureFrame.hidden = YES;
+    takePictureButton.hidden = YES;
+    doneButton.hidden = NO;
+}
+
+- (void)resignedActive {    
+    [self stopTimer];
+    [self.csManager stopPreview];
+    
+    self.pictureFrame.hidden = YES;
+}
+
+- (void)becameActive {
+    [self startTimer];
+    [self.csManager startPreview];
+
+    self.pictureFrame.hidden = NO;
 }
 
 - (void)startTimer {
@@ -117,8 +143,12 @@
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer:) userInfo:nil repeats:YES];
 }
 
-- (IBAction)next:(id)sender {
+- (void)stopTimer {
     [self.timer invalidate];
+}
+
+- (IBAction)next:(id)sender {
+    [self stopTimer];
     
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
     
@@ -136,9 +166,14 @@
             [self performSegueWithIdentifier:@"LabelSecond" sender:sender];
         }
     } else {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
+        
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+        
         // Go back again to have team 2 take their pictures
         [self performSegueWithIdentifier:@"NextTeamPrepare" sender:self];
-
     }
 }
 
@@ -158,7 +193,11 @@
 #pragma mark -
 
 - (IBAction)takeFeaturePicture:(id)sender {
-    [csManager captureStillImage];
+    if (self.timer.isValid) {
+        [csManager captureStillImage];
+    } else {
+        [self timeUp];
+    }
 }
 
 @end

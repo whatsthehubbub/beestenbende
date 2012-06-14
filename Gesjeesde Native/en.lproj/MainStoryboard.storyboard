@@ -1329,7 +1329,7 @@
                                     <action selector="takeFeaturePicture:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="zv6-Pn-lXz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De tijd is op!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dfl-IA-BBZ" customClass="NormalLabel">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De tijd is op!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dfl-IA-BBZ" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="229" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -1377,7 +1377,7 @@
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="9Wr-fn-qC2">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="9Wr-fn-qC2">
                                 <rect key="frame" x="36" y="116" width="248" height="247"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1393,6 +1393,7 @@
                         <outlet property="takePictureButton" destination="1pI-Nz-eIs" id="iID-2b-jFh"/>
                         <outlet property="teamOverlay" destination="wRd-MK-2wJ" id="Q4z-TE-HNi"/>
                         <outlet property="timeLabel" destination="qT8-zr-JJV" id="rqa-NI-xZZ"/>
+                        <outlet property="timeUpLabel" destination="dfl-IA-BBZ" id="tZa-if-J5T"/>
                         <segue destination="mhP-gb-YWU" kind="push" identifier="NextTeamPrepare" id="gvp-bG-FzK"/>
                         <segue destination="7jx-Og-bWS" kind="push" identifier="LabelFirst" id="KVj-xd-ewv"/>
                         <segue destination="Moc-nT-lay" kind="push" identifier="LabelSecond" id="ukb-al-fCe"/>
@@ -4761,6 +4762,7 @@
                 <relationship kind="outlet" name="takePictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeUpLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="FirstIssueExplanationViewController" superclassName="UIViewController">
@@ -4969,8 +4971,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="0AR-ig-N8o"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
         <segue reference="LV6-Fj-42D"/>
