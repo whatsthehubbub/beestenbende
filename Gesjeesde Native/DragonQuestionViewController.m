@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d11_reptielen_watisdraak_v2.wav"];
 }
 
 - (void)viewDidUnload

@@ -35,6 +35,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d12_draak_inderdaadvis_v4.wav"];
+    
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 3, self.scrollView.frame.size.height);
     
     self.pageControl = [[DDPageControl alloc] init];

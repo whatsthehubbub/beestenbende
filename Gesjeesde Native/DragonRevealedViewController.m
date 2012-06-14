@@ -27,6 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d13_reptielen_opgelucht_v2.wav"];
 }
 
 - (void)viewDidUnload
