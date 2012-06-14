@@ -3567,20 +3567,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <mutableString key="text">Gemaakt door Hubbub
-Kars Alfrink - Project Lead
-Erwin Bravenboer - Production
-Alper Cugun - Software Engineering
-Hanne Marckmann - Copy &amp; Game Design
-Karel Millenaar - Art &amp; Game Design
-Rik Nieuwdorp - Audio
+
+Kars Alfrink – Project Lead
+Erwin Bravenboer – Production
+Alper Cugun – Software Engineering
+Hanne Marckmann – Copy &amp; Game Design
+Karel Millenaar – Art &amp; Game Design
+Rik Nieuwdorp – Audio
+
+www.whatsthehubbub.nl
 
 In opdracht van Universiteitsmuseum Utrecht
 
+www.uu.nl/universiteitsmuseum
+
 Mogelijk gemaakt door Taskforce Innovatie Regio Utrecht
 
+www.taskforceinnovatie.nl
+
 Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA wordt mogelijk gemaakt door subsidie in het kader van het economisch stimuleringsprogramma ‘Pieken in de Delta’ van het Ministerie van Economische Zaken, de gemeente Utrecht en de provincie Utrecht. SEA is een samenwerkingsverband tussen Taskforce Innovatie Regio Utrecht, Universiteit Utrecht, Universiteit Twente, Hogeschool Utrecht, Hogeschool voor de Kunsten Utrecht en Reinwardt Academie.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
