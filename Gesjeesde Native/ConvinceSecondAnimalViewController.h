@@ -10,7 +10,7 @@
 
 #import "SimpleAudioEngine.h"
 
-@interface ConvinceAnimalViewController : UIViewController
+@interface ConvinceSecondAnimalViewController : UIViewController
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;

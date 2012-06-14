@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "ConvinceAnimalViewController.h"
+#import "ConvinceSecondAnimalViewController.h"
 
-@interface ConvinceAnimalViewController ()
+@interface ConvinceSecondAnimalViewController ()
 
 @end
 
-@implementation ConvinceAnimalViewController
+@implementation ConvinceSecondAnimalViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

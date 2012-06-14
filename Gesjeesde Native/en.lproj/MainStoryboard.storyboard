@@ -1840,11 +1840,11 @@
             </objects>
             <point key="canvasLocation" x="5835" y="-787"/>
         </scene>
-        <!--Convince Animal View Controller-->
+        <!--Convince First Animal View Controller-->
         <scene sceneID="9Ez-FX-W4p">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7g3-ru-P6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="StartPresentFirstIssue" id="ETL-EA-CCI" customClass="ConvinceAnimalViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartPresentFirstIssue" id="ETL-EA-CCI" customClass="ConvinceFirstAnimalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QR6-ba-wtE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1873,8 +1873,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="ETL-EA-CCI" eventType="touchUpInside" id="awq-hw-zj9"/>
-                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="p03-uG-ydm"/>
+                                    <action selector="back:" destination="ETL-EA-CCI" eventType="touchUpInside" id="ZlW-rM-VGA"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="FQl-qN-0xA">
@@ -1897,7 +1896,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="ETL-EA-CCI" eventType="touchUpInside" id="ohv-Tn-h52"/>
+                                    <action selector="done:" destination="ETL-EA-CCI" eventType="touchUpInside" id="Y35-qu-YR8"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="SaD-0g-4LM">
@@ -1947,6 +1946,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="previous" destination="ETL-EA-CCI" eventType="touchUpInside" id="3cl-vB-Hvq"/>
                                     <action selector="previous:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="VNW-lN-HnI"/>
                                 </connections>
                             </button>
@@ -1962,10 +1962,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="next" destination="ETL-EA-CCI" eventType="touchUpInside" id="fr2-Q4-fOz"/>
                                     <action selector="next:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="KcK-UD-YSF"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="nOx-mv-HEt">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="nOx-mv-HEt">
                                 <rect key="frame" x="40" y="163" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -1998,12 +1999,18 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <connections>
+                                    <outlet property="delegate" destination="ETL-EA-CCI" id="TYG-6V-Vh9"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jic-0N-3zS"/>
                     <connections>
+                        <outlet property="nextButton" destination="agy-Ug-hQT" id="fd1-Ss-4NW"/>
+                        <outlet property="previousButton" destination="joJ-CX-vXm" id="HuR-Kw-1gc"/>
+                        <outlet property="scrollView" destination="nOx-mv-HEt" id="Say-Sr-Jl3"/>
                         <segue destination="Kgz-tg-9iE" kind="push" identifier="Next" id="8jN-ZW-QTz"/>
                     </connections>
                 </viewController>
@@ -2155,11 +2162,11 @@
             </objects>
             <point key="canvasLocation" x="5835" y="-165"/>
         </scene>
-        <!--Convince Animal View Controller-->
+        <!--Convince Second Animal View Controller-->
         <scene sceneID="Jvw-Ym-Q31">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0V-nS-Jqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="StartPresentSecondIssue" id="JWb-Gt-s87" customClass="ConvinceAnimalViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StartPresentSecondIssue" id="JWb-Gt-s87" customClass="ConvinceSecondAnimalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CLc-md-kBr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3581,7 +3588,7 @@
                                 <rect key="frame" x="0.0" y="40" width="320" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Gemaakt door Hubbub
+                                <string key="text">Gemaakt door Hubbub
 
 Kars Alfrink – Project Lead
 Erwin Bravenboer – Production
@@ -3600,7 +3607,7 @@ Mogelijk gemaakt door Taskforce Innovatie Regio Utrecht
 
 www.taskforceinnovatie.nl
 
-Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA wordt mogelijk gemaakt door subsidie in het kader van het economisch stimuleringsprogramma ‘Pieken in de Delta’ van het Ministerie van Economische Zaken, de gemeente Utrecht en de provincie Utrecht. SEA is een samenwerkingsverband tussen Taskforce Innovatie Regio Utrecht, Universiteit Utrecht, Universiteit Twente, Hogeschool Utrecht, Hogeschool voor de Kunsten Utrecht en Reinwardt Academie.</mutableString>
+Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA wordt mogelijk gemaakt door subsidie in het kader van het economisch stimuleringsprogramma ‘Pieken in de Delta’ van het Ministerie van Economische Zaken, de gemeente Utrecht en de provincie Utrecht. SEA is een samenwerkingsverband tussen Taskforce Innovatie Regio Utrecht, Universiteit Utrecht, Universiteit Twente, Hogeschool Utrecht, Hogeschool voor de Kunsten Utrecht en Reinwardt Academie.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" link="YES"/>
@@ -4689,8 +4696,22 @@ Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA 
         <class className="BeestenButton" superclassName="UIButton">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BeestenButton.h"/>
         </class>
-        <class className="ConvinceAnimalViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConvinceAnimalViewController.h"/>
+        <class className="ConvinceFirstAnimalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConvinceFirstAnimalViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="action" name="next"/>
+                <relationship kind="action" name="previous"/>
+                <relationship kind="action" name="scrollPage"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="DDPageControl"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="ConvinceSecondAnimalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ConvinceSecondAnimalViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next:"/>
@@ -5074,10 +5095,14 @@ Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA 
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="AoM-So-BHK"/>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="0AR-ig-N8o"/>
         <segue reference="iYQ-bF-g8K"/>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
+        <segue reference="c8n-UF-cmF"/>
+        <segue reference="WNU-Ah-KpY"/>
+        <segue reference="8jN-ZW-QTz"/>
+        <segue reference="nT0-nb-xZI"/>
     </inferredMetricsTieBreakers>
 </document>
