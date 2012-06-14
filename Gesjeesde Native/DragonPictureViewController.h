@@ -18,6 +18,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *classLabel;
 
 @property (strong) IBOutlet UIImageView *dragonPictureView;
+@property (strong)  IBOutlet UIImageView *dragonPictureFrame;
 @property (strong) IBOutlet UIImageView *teamOverlay;
 
 @property (strong) IBOutlet UIButton *takeDragonPictureButton;

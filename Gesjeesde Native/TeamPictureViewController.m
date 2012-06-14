@@ -136,7 +136,6 @@
         [self takeTeamPictureAgain:self];
         
         [UIView commitAnimations];
-    
     } else {
         game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
 

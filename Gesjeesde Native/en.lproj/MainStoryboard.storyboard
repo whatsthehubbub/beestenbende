@@ -4091,6 +4091,7 @@
                     <connections>
                         <outlet property="classLabel" destination="tgb-PZ-EPf" id="Gtf-eU-3Qe"/>
                         <outlet property="doneButton" destination="d91-aZ-hGR" id="bNv-gw-qm5"/>
+                        <outlet property="dragonPictureFrame" destination="S7H-X2-pY3" id="p8L-Db-cSU"/>
                         <outlet property="dragonPictureView" destination="6tb-W8-dWk" id="PpL-Oe-nBd"/>
                         <outlet property="takeDragonPictureButton" destination="2tz-1D-sEa" id="yLX-iD-1Z4"/>
                         <outlet property="takePictureAgainButton" destination="oPR-1W-hG1" id="AEq-pJ-Bgw"/>
@@ -4660,6 +4661,7 @@
                 <relationship kind="action" name="takeDragonPictureAgain:"/>
                 <relationship kind="outlet" name="classLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="dragonPictureFrame" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="dragonPictureView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="takeDragonPictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="takePictureAgainButton" candidateClass="UIButton"/>

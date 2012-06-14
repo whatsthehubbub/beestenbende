@@ -17,6 +17,7 @@
 @synthesize classLabel;
 
 @synthesize dragonPictureView;
+@synthesize dragonPictureFrame;
 @synthesize teamOverlay;
 
 @synthesize takeDragonPictureButton;
@@ -67,12 +68,10 @@
     // I suspect this has something to do with looping back through this ViewController
     // http://developer.apple.com/library/ios/#DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/ManagingYourApplicationsFlow/ManagingYourApplicationsFlow.html#//apple_ref/doc/uid/TP40007072-CH4-SW1
     // http://stackoverflow.com/questions/10125261/avcapturevideopreviewlayer-displays-nothing-on-resume
-//    [[NSNotificationCenter defaultCenter] addObserver:self.csManager
-//                                             selector:@selector(restartPreview)
-//                                                 name:UIApplicationDidBecomeActiveNotification object:nil];
-//    [[NSNotificationCenter defaultCenter] addObserver:self.csManager
-//                                             selector:@selector(stopPreview)
-//                                                 name:UIApplicationWillResignActiveNotification object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 - (void)viewDidUnload
@@ -86,6 +85,18 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)resignedActive {
+    [self.csManager stopPreview];
+    
+    self.dragonPictureFrame.hidden = YES;
+}
+
+- (void)becameActive {
+    [self.csManager startPreview];
+    
+    self.dragonPictureFrame.hidden = NO;
 }
 
 #pragma mark -
@@ -113,6 +124,13 @@
                                      [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
     
     [self.csManager stopPreview];
+    
+    
+    // Remove notification observers
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+    
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
