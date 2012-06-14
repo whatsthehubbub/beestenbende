@@ -56,7 +56,7 @@
     self.featureImage.image = featurePicture.image;
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
-    self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft %@.", [class lowercaseString], featurePicture.feature];
+    self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft: %@.", [class lowercaseString], featurePicture.feature];
     
 //    int points = [game pointsForFeaturePicture:featurePicture];
 
