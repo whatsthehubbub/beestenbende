@@ -39,19 +39,8 @@
 - (FEATURE_RESULT)resultForFeaturePicture:(FeaturePicture *)fp {
     NSDictionary *featureDict = [self getFeatureWithName:fp.feature];
     
-    NSString *wrongAnimal = @"";
-    NSString *correctAnimal = @"";
-    
-    if (issue == 1) {
-        wrongAnimal = @"Bird";
-        correctAnimal = @"Mammal";
-    } else if (issue == 2) {
-        wrongAnimal = @"Reptile";
-        correctAnimal = @"Fish";
-    }
-
-    int featureForWrongAnimal = [[featureDict objectForKey:wrongAnimal] intValue];
-    int featureForCorrectAnimal = [[featureDict objectForKey:correctAnimal] intValue];
+    int featureForWrongAnimal = [[featureDict objectForKey:[self getWrongAnimalClass]] intValue];
+    int featureForCorrectAnimal = [[featureDict objectForKey:[self getCorrectAnimalClass]] intValue];
 
     if (fp.presentAssertion) {
         if (featureForCorrectAnimal == 0) {
@@ -93,6 +82,30 @@
     } else {
         return @"Draak";
     }
+}
+
+- (NSString *)getWrongAnimalClass {
+    NSString *animalClass = @"";
+    
+    if (issue == 1) {
+        animalClass = @"Vogel";
+    } else if (issue == 2) {
+        animalClass = @"Reptiel";
+    }
+    
+    return animalClass;
+}
+
+- (NSString *)getCorrectAnimalClass {
+    NSString *animalClass = @"";
+    
+    if (issue == 1) {
+        animalClass = @"Zoogdier";
+    } else if (issue == 2) {
+        animalClass = @"Vis";
+    }
+    
+    return animalClass;
 }
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name {

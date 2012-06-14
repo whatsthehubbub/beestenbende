@@ -85,19 +85,16 @@
     NSString *team1Explanation = [[game getFeatureWithName:team1fp.feature] objectForKey:@"Explanation"];
     
     FEATURE_RESULT team1Result = [game resultForFeaturePicture:team1fp];
-    NSString *team1ResultFeedback = @"";
     
     if (team1Result == FEATURE_YES_UNIQUE) {
-        team1ResultFeedback = @"Uniek";
+        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", team1Explanation];
     } else if (team1Result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team1Result == FEATURE_NO_INCORRECT) {
-        team1ResultFeedback = @"Goed";
+        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", team1Explanation];
     } else if (team1Result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        team1ResultFeedback = @"Niet onderscheidend";
+        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Inderdaad, %@ heeft dit kenmerk. Maar %@ ook! Kun je een kenmerk bedenken dat onderscheidend is?", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
     } else {
-        team1ResultFeedback = @"Fout";
+        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", team1Explanation];
     }
-     
-    team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team1ResultFeedback, team1Explanation];
     
     
     // Do exactly the same thing for team 2
@@ -111,19 +108,16 @@
     NSString *team2Explanation = [[game getFeatureWithName:team2fp.feature] objectForKey:@"Explanation"];
     
     FEATURE_RESULT team2Result = [game resultForFeaturePicture:team2fp];
-    NSString *team2ResultFeedback = @"";
     
     if (team2Result == FEATURE_YES_UNIQUE) {
-        team2ResultFeedback = @"Uniek";
+        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", team2Explanation];
     } else if (team2Result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team2Result == FEATURE_NO_INCORRECT) {
-        team2ResultFeedback = @"Goed";
+        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", team2Explanation];
     } else if (team2Result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        team2ResultFeedback = @"Niet onderscheidend";
+        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Inderdaad, %@ heeft dit kenmerk. Maar %@ ook! Kun je een kenmerk bedenken dat onderscheidend is?", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
     } else {
-        team2ResultFeedback = @"Fout";
+        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", team2Explanation];
     }
-    
-    team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"%@ want: %@", team2ResultFeedback, team2Explanation];
 }
 
 - (void)viewDidUnload
