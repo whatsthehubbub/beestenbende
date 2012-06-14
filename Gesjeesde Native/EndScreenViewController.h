@@ -21,4 +21,6 @@
 
 - (IBAction)mainMenu:(id)sender;
 
+- (IBAction)back:(id)sender;
+
 @end

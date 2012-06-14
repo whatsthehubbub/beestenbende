@@ -73,4 +73,10 @@
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
+- (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end
