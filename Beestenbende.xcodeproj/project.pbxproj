@@ -65,6 +65,7 @@
 		47A9B674158F6DF200691553 /* hubbub-typo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B673158F6DF200691553 /* hubbub-typo.png */; };
 		47A9B676158F6FFA00691553 /* um-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B675158F6FFA00691553 /* um-logo.png */; };
 		47A9B678158F724F00691553 /* tfi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B677158F724F00691553 /* tfi-logo.png */; };
+		47A9B67A158F852200691553 /* animal-squirrel-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B679158F852200691553 /* animal-squirrel-icon-large.png */; };
 		47AF02D2152C7878008905ED /* button-ga-door.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D1152C7878008905ED /* button-ga-door.png */; };
 		47AF02D4152C8C37008905ED /* button-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D3152C8C37008905ED /* button-verder.png */; };
 		47AF02D6152C8D56008905ED /* speech-bubble-screen-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */; };
@@ -303,6 +304,7 @@
 		47A9B673158F6DF200691553 /* hubbub-typo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hubbub-typo.png"; sourceTree = "<group>"; };
 		47A9B675158F6FFA00691553 /* um-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "um-logo.png"; sourceTree = "<group>"; };
 		47A9B677158F724F00691553 /* tfi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfi-logo.png"; sourceTree = "<group>"; };
+		47A9B679158F852200691553 /* animal-squirrel-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-squirrel-icon-large.png"; sourceTree = "<group>"; };
 		47AF02D1152C7878008905ED /* button-ga-door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ga-door.png"; sourceTree = "<group>"; };
 		47AF02D3152C8C37008905ED /* button-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder.png"; sourceTree = "<group>"; };
 		47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-screen-6.png"; sourceTree = "<group>"; };
@@ -566,6 +568,7 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47A9B679158F852200691553 /* animal-squirrel-icon-large.png */,
 				47A9B677158F724F00691553 /* tfi-logo.png */,
 				47A9B675158F6FFA00691553 /* um-logo.png */,
 				47A9B673158F6DF200691553 /* hubbub-typo.png */,
@@ -1156,6 +1159,7 @@
 				47A9B674158F6DF200691553 /* hubbub-typo.png in Resources */,
 				47A9B676158F6FFA00691553 /* um-logo.png in Resources */,
 				47A9B678158F724F00691553 /* tfi-logo.png in Resources */,
+				47A9B67A158F852200691553 /* animal-squirrel-icon-large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
