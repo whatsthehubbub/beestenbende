@@ -58,6 +58,7 @@
 		479DEB7D154199550093C1A6 /* icon-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7C154199550093C1A6 /* icon-clock.png */; };
 		479DEB7F15419A800093C1A6 /* icon-stack-of-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */; };
 		479DEB811541A6BD0093C1A6 /* button-bg-choose-feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */; };
+		47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66B158F44D200691553 /* um-logo-splash.jpg */; };
 		47AF02D2152C7878008905ED /* button-ga-door.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D1152C7878008905ED /* button-ga-door.png */; };
 		47AF02D4152C8C37008905ED /* button-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D3152C8C37008905ED /* button-verder.png */; };
 		47AF02D6152C8D56008905ED /* speech-bubble-screen-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */; };
@@ -289,6 +290,7 @@
 		479DEB7C154199550093C1A6 /* icon-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-clock.png"; sourceTree = "<group>"; };
 		479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-stack-of-photos.png"; sourceTree = "<group>"; };
 		479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature.png"; sourceTree = "<group>"; };
+		47A9B66B158F44D200691553 /* um-logo-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "um-logo-splash.jpg"; sourceTree = "<group>"; };
 		47AF02D1152C7878008905ED /* button-ga-door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ga-door.png"; sourceTree = "<group>"; };
 		47AF02D3152C8C37008905ED /* button-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder.png"; sourceTree = "<group>"; };
 		47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-screen-6.png"; sourceTree = "<group>"; };
@@ -552,6 +554,7 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47A9B66B158F44D200691553 /* um-logo-splash.jpg */,
 				4E4EECF01588C2480018170C /* audio */,
 				4E08C30E1524723D00F3CDC7 /* 15.png */,
 				47F47F3F154EA6CB00BB481D /* animal-all.png */,
@@ -1128,6 +1131,7 @@
 				4ED69F7E1589E40D00F84D92 /* d12_draak_inderdaadvis_v4.wav in Resources */,
 				4ED69F7F1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav in Resources */,
 				4ED69F81158A737700F84D92 /* i07_tijdtiktlaatstesec_v3.wav in Resources */,
+				47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
