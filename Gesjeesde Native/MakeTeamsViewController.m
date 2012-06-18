@@ -35,6 +35,7 @@
     [[SimpleAudioEngine sharedEngine] playEffect:[nautilus objectAtIndex:arc4random() % [nautilus count]]];
     
     teamYellowLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:teamYellowLabel.font.pointSize];
+    
     teamBlueLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:teamBlueLabel.font.pointSize];
 }
 
