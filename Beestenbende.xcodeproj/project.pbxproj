@@ -58,6 +58,14 @@
 		479DEB7D154199550093C1A6 /* icon-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7C154199550093C1A6 /* icon-clock.png */; };
 		479DEB7F15419A800093C1A6 /* icon-stack-of-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */; };
 		479DEB811541A6BD0093C1A6 /* button-bg-choose-feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */; };
+		47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66B158F44D200691553 /* um-logo-splash.jpg */; };
+		47A9B66E158F4AF500691553 /* progress-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66D158F4AF500691553 /* progress-4.png */; };
+		47A9B670158F505F00691553 /* animal-example.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66F158F505F00691553 /* animal-example.png */; };
+		47A9B672158F68C200691553 /* hubbub-logo-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */; };
+		47A9B674158F6DF200691553 /* hubbub-typo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B673158F6DF200691553 /* hubbub-typo.png */; };
+		47A9B676158F6FFA00691553 /* um-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B675158F6FFA00691553 /* um-logo.png */; };
+		47A9B678158F724F00691553 /* tfi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B677158F724F00691553 /* tfi-logo.png */; };
+		47A9B67A158F852200691553 /* animal-squirrel-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B679158F852200691553 /* animal-squirrel-icon-large.png */; };
 		47AF02D2152C7878008905ED /* button-ga-door.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D1152C7878008905ED /* button-ga-door.png */; };
 		47AF02D4152C8C37008905ED /* button-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D3152C8C37008905ED /* button-verder.png */; };
 		47AF02D6152C8D56008905ED /* speech-bubble-screen-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */; };
@@ -169,6 +177,7 @@
 		4ECB233C1587F61700F3CDCA /* AnimalUnderstandsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB233B1587F61700F3CDCA /* AnimalUnderstandsViewController.m */; };
 		4ECB233F1587F88200F3CDCA /* DragonQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB233E1587F88000F3CDCA /* DragonQuestionViewController.m */; };
 		4ECB23421587FA1A00F3CDCA /* DragonRevealedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */; };
+		4ECE090E158FF59200868CD0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECE090D158FF59200868CD0 /* SplashViewController.m */; };
 		4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2151E153C3B6400040C97 /* HeaderLabel.m */; };
 		4ED21524153C417D00040C97 /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED21523153C417D00040C97 /* NormalLabel.m */; };
 		4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2152D153C610700040C97 /* AVFoundation.framework */; };
@@ -285,6 +294,14 @@
 		479DEB7C154199550093C1A6 /* icon-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-clock.png"; sourceTree = "<group>"; };
 		479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-stack-of-photos.png"; sourceTree = "<group>"; };
 		479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature.png"; sourceTree = "<group>"; };
+		47A9B66B158F44D200691553 /* um-logo-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "um-logo-splash.jpg"; sourceTree = "<group>"; };
+		47A9B66D158F4AF500691553 /* progress-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-4.png"; sourceTree = "<group>"; };
+		47A9B66F158F505F00691553 /* animal-example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-example.png"; sourceTree = "<group>"; };
+		47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hubbub-logo-splash.jpg"; sourceTree = "<group>"; };
+		47A9B673158F6DF200691553 /* hubbub-typo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hubbub-typo.png"; sourceTree = "<group>"; };
+		47A9B675158F6FFA00691553 /* um-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "um-logo.png"; sourceTree = "<group>"; };
+		47A9B677158F724F00691553 /* tfi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfi-logo.png"; sourceTree = "<group>"; };
+		47A9B679158F852200691553 /* animal-squirrel-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-squirrel-icon-large.png"; sourceTree = "<group>"; };
 		47AF02D1152C7878008905ED /* button-ga-door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ga-door.png"; sourceTree = "<group>"; };
 		47AF02D3152C8C37008905ED /* button-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder.png"; sourceTree = "<group>"; };
 		47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-screen-6.png"; sourceTree = "<group>"; };
@@ -447,6 +464,8 @@
 		4ECB233E1587F88000F3CDCA /* DragonQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonQuestionViewController.m; sourceTree = "<group>"; };
 		4ECB23401587FA1700F3CDCA /* DragonRevealedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonRevealedViewController.h; sourceTree = "<group>"; };
 		4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonRevealedViewController.m; sourceTree = "<group>"; };
+		4ECE090C158FF59200868CD0 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		4ECE090D158FF59200868CD0 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		4ED2151D153C3B6400040C97 /* HeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderLabel.h; sourceTree = "<group>"; };
 		4ED2151E153C3B6400040C97 /* HeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabel.m; sourceTree = "<group>"; };
 		4ED21522153C417D00040C97 /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
@@ -544,6 +563,14 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47A9B679158F852200691553 /* animal-squirrel-icon-large.png */,
+				47A9B677158F724F00691553 /* tfi-logo.png */,
+				47A9B675158F6FFA00691553 /* um-logo.png */,
+				47A9B673158F6DF200691553 /* hubbub-typo.png */,
+				47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */,
+				47A9B66F158F505F00691553 /* animal-example.png */,
+				47A9B66D158F4AF500691553 /* progress-4.png */,
+				47A9B66B158F44D200691553 /* um-logo-splash.jpg */,
 				4E4EECF01588C2480018170C /* audio */,
 				4E08C30E1524723D00F3CDC7 /* 15.png */,
 				47F47F3F154EA6CB00BB481D /* animal-all.png */,
@@ -797,6 +824,8 @@
 				4EC83235154F38FF006E7AC6 /* DragonResolutionViewController.h */,
 				4EC83236154F3900006E7AC6 /* DragonResolutionViewController.m */,
 				4EC8322E154ED0AB006E7AC6 /* DragonResultViewController.h */,
+				4ECE090C158FF59200868CD0 /* SplashViewController.h */,
+				4ECE090D158FF59200868CD0 /* SplashViewController.m */,
 				4EC8322F154ED0AB006E7AC6 /* DragonResultViewController.m */,
 				4ECB23401587FA1700F3CDCA /* DragonRevealedViewController.h */,
 				4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */,
@@ -1112,6 +1141,14 @@
 				4ED69F7E1589E40D00F84D92 /* d12_draak_inderdaadvis_v4.wav in Resources */,
 				4ED69F7F1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav in Resources */,
 				4ED69F81158A737700F84D92 /* i07_tijdtiktlaatstesec_v3.wav in Resources */,
+				47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */,
+				47A9B66E158F4AF500691553 /* progress-4.png in Resources */,
+				47A9B670158F505F00691553 /* animal-example.png in Resources */,
+				47A9B672158F68C200691553 /* hubbub-logo-splash.jpg in Resources */,
+				47A9B674158F6DF200691553 /* hubbub-typo.png in Resources */,
+				47A9B676158F6FFA00691553 /* um-logo.png in Resources */,
+				47A9B678158F724F00691553 /* tfi-logo.png in Resources */,
+				47A9B67A158F852200691553 /* animal-squirrel-icon-large.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1180,6 +1217,7 @@
 				4ED69F661588F5A700F84D92 /* AnimalUnderstandsResponseViewController.m in Sources */,
 				4ED69F7715890A2100F84D92 /* DragonStartViewController.m in Sources */,
 				4E643856158A94F70087A05A /* ConvinceFirstAnimalViewController.m in Sources */,
+				4ECE090E158FF59200868CD0 /* SplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
