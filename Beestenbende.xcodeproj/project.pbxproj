@@ -171,10 +171,6 @@
 		4ECB23421587FA1A00F3CDCA /* DragonRevealedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */; };
 		4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2151E153C3B6400040C97 /* HeaderLabel.m */; };
 		4ED21524153C417D00040C97 /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED21523153C417D00040C97 /* NormalLabel.m */; };
-		4ED21529153C4CA600040C97 /* Vollkorn-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21525153C4C8700040C97 /* Vollkorn-Bold.ttf */; };
-		4ED2152A153C4CA600040C97 /* Vollkorn-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21526153C4C8700040C97 /* Vollkorn-BoldItalic.ttf */; };
-		4ED2152B153C4CA600040C97 /* Vollkorn-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21527153C4C8700040C97 /* Vollkorn-Italic.ttf */; };
-		4ED2152C153C4CA600040C97 /* Vollkorn-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4ED21528153C4C8700040C97 /* Vollkorn-Regular.ttf */; };
 		4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2152D153C610700040C97 /* AVFoundation.framework */; };
 		4ED69F301588CDCF00F84D92 /* MakeTeamPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */; };
 		4ED69F331588D29D00F84D92 /* FeaturePictureDoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED69F321588D29D00F84D92 /* FeaturePictureDoneViewController.m */; };
@@ -455,10 +451,6 @@
 		4ED2151E153C3B6400040C97 /* HeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabel.m; sourceTree = "<group>"; };
 		4ED21522153C417D00040C97 /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
 		4ED21523153C417D00040C97 /* NormalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLabel.m; sourceTree = "<group>"; };
-		4ED21525153C4C8700040C97 /* Vollkorn-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Bold.ttf"; sourceTree = "<group>"; };
-		4ED21526153C4C8700040C97 /* Vollkorn-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-BoldItalic.ttf"; sourceTree = "<group>"; };
-		4ED21527153C4C8700040C97 /* Vollkorn-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Italic.ttf"; sourceTree = "<group>"; };
-		4ED21528153C4C8700040C97 /* Vollkorn-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vollkorn-Regular.ttf"; sourceTree = "<group>"; };
 		4ED2152D153C610700040C97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4ED69F2E1588CDCE00F84D92 /* MakeTeamPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTeamPicturesViewController.h; sourceTree = "<group>"; };
 		4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamPicturesViewController.m; sourceTree = "<group>"; };
@@ -670,10 +662,6 @@
 				472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */,
 				47F47F46154ECD0900BB481D /* toggle-wel-on-geen-off-inactive.png */,
 				472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */,
-				4ED21525153C4C8700040C97 /* Vollkorn-Bold.ttf */,
-				4ED21526153C4C8700040C97 /* Vollkorn-BoldItalic.ttf */,
-				4ED21527153C4C8700040C97 /* Vollkorn-Italic.ttf */,
-				4ED21528153C4C8700040C97 /* Vollkorn-Regular.ttf */,
 			);
 			name = assets;
 			sourceTree = "<group>";
@@ -967,10 +955,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED21529153C4CA600040C97 /* Vollkorn-Bold.ttf in Resources */,
-				4ED2152A153C4CA600040C97 /* Vollkorn-BoldItalic.ttf in Resources */,
-				4ED2152B153C4CA600040C97 /* Vollkorn-Italic.ttf in Resources */,
-				4ED2152C153C4CA600040C97 /* Vollkorn-Regular.ttf in Resources */,
 				4EAE98E5151A618A0051C926 /* InfoPlist.strings in Resources */,
 				4EAE98EE151A618A0051C926 /* MainStoryboard.storyboard in Resources */,
 				4E332694151A663B00CEC850 /* bg-0-plain.png in Resources */,
