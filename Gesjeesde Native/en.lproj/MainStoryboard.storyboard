@@ -70,7 +70,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="70" y="-165"/>
+            <point key="canvasLocation" x="75" y="-165"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="S9k-Fp-Exm">
@@ -3983,6 +3983,30 @@ Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA 
             <point key="canvasLocation" x="555" y="475"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="o7I-wb-sCo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0U-F6-V3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="3Oi-9P-c94" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gJ5-bk-kBy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="hubbub-logo-splash.jpg" id="CHF-Vp-itB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vvB-qd-Q5U"/>
+                    <connections>
+                        <segue destination="umP-hU-cZb" kind="push" id="SX8-6g-XRT"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-406" y="-805"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="OhM-7N-Nf9">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Db8-Ws-oGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3998,9 +4022,13 @@ Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA 
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AR2-Rp-EZ9"/>
+                    <connections>
+                        <segue destination="2" kind="push" id="J2h-Zn-n45"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-179" y="-858"/>
+            <point key="canvasLocation" x="75" y="-805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qbn-T9-tk6">
@@ -4015,7 +4043,7 @@ Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA 
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="PSp-3C-v3b"/>
+                        <segue destination="3Oi-9P-c94" kind="relationship" relationship="rootViewController" id="wpX-XR-inJ"/>
                     </connections>
                 </navigationController>
             </objects>
@@ -5034,6 +5062,7 @@ Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA 
         <image name="button-titlebar-back.png" width="80" height="80"/>
         <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="example-photos-of-features.png" width="381" height="274"/>
+        <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
         <image name="icon-clock.png" width="53" height="53"/>
         <image name="icon-stack-of-photos.png" width="54" height="54"/>
         <image name="infographic-make-team-photo.png" width="293" height="222"/>

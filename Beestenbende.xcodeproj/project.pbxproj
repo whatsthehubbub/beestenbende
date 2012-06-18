@@ -61,6 +61,7 @@
 		47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66B158F44D200691553 /* um-logo-splash.jpg */; };
 		47A9B66E158F4AF500691553 /* progress-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66D158F4AF500691553 /* progress-4.png */; };
 		47A9B670158F505F00691553 /* animal-example.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66F158F505F00691553 /* animal-example.png */; };
+		47A9B672158F68C200691553 /* hubbub-logo-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */; };
 		47AF02D2152C7878008905ED /* button-ga-door.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D1152C7878008905ED /* button-ga-door.png */; };
 		47AF02D4152C8C37008905ED /* button-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D3152C8C37008905ED /* button-verder.png */; };
 		47AF02D6152C8D56008905ED /* speech-bubble-screen-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */; };
@@ -295,6 +296,7 @@
 		47A9B66B158F44D200691553 /* um-logo-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "um-logo-splash.jpg"; sourceTree = "<group>"; };
 		47A9B66D158F4AF500691553 /* progress-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-4.png"; sourceTree = "<group>"; };
 		47A9B66F158F505F00691553 /* animal-example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-example.png"; sourceTree = "<group>"; };
+		47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hubbub-logo-splash.jpg"; sourceTree = "<group>"; };
 		47AF02D1152C7878008905ED /* button-ga-door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ga-door.png"; sourceTree = "<group>"; };
 		47AF02D3152C8C37008905ED /* button-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder.png"; sourceTree = "<group>"; };
 		47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-screen-6.png"; sourceTree = "<group>"; };
@@ -558,6 +560,7 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */,
 				47A9B66F158F505F00691553 /* animal-example.png */,
 				47A9B66D158F4AF500691553 /* progress-4.png */,
 				47A9B66B158F44D200691553 /* um-logo-splash.jpg */,
@@ -1140,6 +1143,7 @@
 				47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */,
 				47A9B66E158F4AF500691553 /* progress-4.png in Resources */,
 				47A9B670158F505F00691553 /* animal-example.png in Resources */,
+				47A9B672158F68C200691553 /* hubbub-logo-splash.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
