@@ -63,7 +63,7 @@
         explanation.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer. ", [currentTeam getTeamName], [[game otherTeamForTeam:currentTeam] getTeamName]];
     } else {
         Team *winner = game.team1.dragonProofs == 3 ? game.team1 : game.team2;
-        explanation.text = [NSString stringWithFormat:@"Team %@ heeft het goed.", [winner getTeamName]];
+        explanation.text = [NSString stringWithFormat:@"Team %@ heeft drie goede kenmerken gevonden!", [winner getTeamName]];
     }
 }
 
