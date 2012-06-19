@@ -5599,25 +5599,15 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="Xfn-XH-57d"/>
-        <segue reference="fHu-b7-0Nr"/>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
-=======
-        <segue reference="fHu-b7-0Nr"/>
->>>>>>> d84c51cb2c43e9ba13d0cd0898b9b94f95c2cd84
-        <segue reference="sz9-qc-ZZh"/>
-        <segue reference="0AR-ig-N8o"/>
-        <segue reference="iYQ-bF-g8K"/>
-        <segue reference="8jN-ZW-QTz"/>
-        <segue reference="nT0-nb-xZI"/>
-<<<<<<< HEAD
-=======
-        <segue reference="c8n-UF-cmF"/>
-        <segue reference="WNU-Ah-KpY"/>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
->>>>>>> d84c51cb2c43e9ba13d0cd0898b9b94f95c2cd84
+            <segue reference="fHu-b7-0Nr"/>
+            <segue reference="sz9-qc-ZZh"/>
+            <segue reference="0AR-ig-N8o"/>
+            <segue reference="iYQ-bF-g8K"/>
+            <segue reference="8jN-ZW-QTz"/>
+            <segue reference="nT0-nb-xZI"/>
+            <segue reference="c8n-UF-cmF"/>
+            <segue reference="WNU-Ah-KpY"/>
+            <segue reference="fEa-BH-mAb"/>
+            <segue reference="AoM-So-BHK"/>
     </inferredMetricsTieBreakers>
 </document>
