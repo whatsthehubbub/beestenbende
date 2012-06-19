@@ -3776,8 +3776,8 @@ die strijden om de meeste punten.</string>
                                 <rect key="frame" x="-7" y="-7" width="334" height="495"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WcB-MN-qhK">
-                                <rect key="frame" x="6" y="6" width="28" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WcB-MN-qhK">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="button-titlebar-back.png">
@@ -5175,7 +5175,7 @@ Rik Nieuwdorp – Audio</string>
         <image name="photo-frame-square-480.png" width="496" height="494"/>
         <image name="points-fout.png" width="130" height="180"/>
         <image name="points-uniek.png" width="130" height="180"/>
-        <image name="progress-0.png" width="469" height="119"/>
+        <image name="progress-0.png" width="470" height="119"/>
         <image name="progress-4.png" width="469" height="120"/>
         <image name="speech-bubble-big-mirrored-flipped.png" width="560" height="500"/>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
@@ -5610,7 +5610,10 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zfu-Av-N64"/>
+        <segue reference="Xfn-XH-57d"/>
+        <segue reference="fHu-b7-0Nr"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="AoM-So-BHK"/>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="0AR-ig-N8o"/>
         <segue reference="iYQ-bF-g8K"/>
@@ -5618,8 +5621,5 @@ Rik Nieuwdorp – Audio</string>
         <segue reference="WNU-Ah-KpY"/>
         <segue reference="8jN-ZW-QTz"/>
         <segue reference="nT0-nb-xZI"/>
-        <segue reference="Xfn-XH-57d"/>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
     </inferredMetricsTieBreakers>
 </document>
