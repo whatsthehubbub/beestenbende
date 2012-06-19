@@ -45,13 +45,13 @@
     
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
-    [self.titleLabel setFont:[UIFont fontWithName:@"Vollkorn-Bold" size:self.titleLabel.font.pointSize]];
+    [self.titleLabel setFont:[UIFont fontWithName:@"HoeflerText-Black" size:self.titleLabel.font.pointSize]];
     
 //    [self.titleLabel setShadowColor:[UIColor blackColor]];
 //    [self.titleLabel setShadowOffset:CGSizeMake(0.0f, -1.0f)];
     
     self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-    self.contentEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 30);
+    self.contentEdgeInsets = UIEdgeInsetsMake(5, 0, 0, 30);
 }
 
 

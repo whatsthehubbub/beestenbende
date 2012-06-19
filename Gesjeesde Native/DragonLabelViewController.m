@@ -57,7 +57,7 @@
     
     self.dragonPictureView.image = ((FeaturePicture *)self.currentTeam.featurePictures.lastObject).image;
     
-    self.featureButton.titleLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:self.featureButton.titleLabel.font.pointSize];
+    self.featureButton.titleLabel.font = [UIFont fontWithName:@"HoeflerText-Regular" size:self.featureButton.titleLabel.font.pointSize];
 }
 
 - (void)viewDidUnload

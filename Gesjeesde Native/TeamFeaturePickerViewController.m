@@ -82,7 +82,7 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    [cell.textLabel setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:cell.textLabel.font.pointSize]];
+    [cell.textLabel setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:cell.textLabel.font.pointSize]];
     
 }
 

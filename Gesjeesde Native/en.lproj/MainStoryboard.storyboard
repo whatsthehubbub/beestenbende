@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="huA-t4-3Pw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
@@ -70,7 +70,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="75" y="-165"/>
+            <point key="canvasLocation" x="1435" y="-2157"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="S9k-Fp-Exm">
@@ -127,19 +127,6 @@
                                     <action selector="next:" destination="19C-6r-hKc" eventType="touchUpInside" id="pbp-8f-VTZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0Uh-G7-mBF">
-                                <rect key="frame" x="160" y="368" width="140" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="18"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="30" maxY="0.0"/>
-                                <state key="normal" title="Test" backgroundImage="button-pijl-rechts.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -149,7 +136,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="555" y="-165"/>
+            <point key="canvasLocation" x="1915" y="-2157"/>
         </scene>
         <!--Welcome View Controller - Welcome-->
         <scene sceneID="qrX-xg-Mrk">
@@ -291,7 +278,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1035" y="-165"/>
+            <point key="canvasLocation" x="-1282" y="-805"/>
         </scene>
         <!--First Issue Introduction View Controller-->
         <scene sceneID="kxR-Ib-jnv">
@@ -504,7 +491,7 @@
                     <navigationItem key="navigationItem" id="acW-MS-AKO"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2474" y="475"/>
+            <point key="canvasLocation" x="1013" y="-805"/>
         </scene>
         <!--Second Issue Introduction View Controller-->
         <scene sceneID="rBC-kx-VM3">
@@ -960,7 +947,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1994" y="-805"/>
+            <point key="canvasLocation" x="1451" y="-805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3RN-6O-mt2">
@@ -1043,7 +1030,7 @@ te helpen.</string>
                     <navigationItem key="navigationItem" id="EfU-aY-pLt"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1513" y="-165"/>
+            <point key="canvasLocation" x="-312" y="-805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qN9-tO-ExE">
@@ -1119,7 +1106,7 @@ te helpen.</string>
                     <navigationItem key="navigationItem" id="6Jq-z2-ngm"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1994" y="-165"/>
+            <point key="canvasLocation" x="121" y="-805"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NQB-65-13G">
@@ -1184,7 +1171,7 @@ te helpen.</string>
                     <navigationItem key="navigationItem" id="eqU-0d-FYZ"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2474" y="-165"/>
+            <point key="canvasLocation" x="545" y="-805"/>
         </scene>
         <!--Make Teams View Controller-->
         <scene sceneID="QjV-tY-JgD">
@@ -1229,7 +1216,6 @@ die strijden om de meeste punten.</string>
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="2Mp-D1-Gu1"/>
-                                    <segue destination="IoP-tb-2Mi" kind="push" id="LRT-ot-nGy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dPn-op-yEi" customClass="HeaderLabel">
@@ -1267,7 +1253,7 @@ die strijden om de meeste punten.</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WaG-2p-2QK">
                                 <rect key="frame" x="30" y="120" width="118" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1285,10 +1271,11 @@ die strijden om de meeste punten.</string>
                     <connections>
                         <outlet property="teamBlueLabel" destination="WaG-2p-2QK" id="2DQ-5j-tQc"/>
                         <outlet property="teamYellowLabel" destination="KXg-pX-3lN" id="rJD-t2-M5Z"/>
+                        <segue destination="IoP-tb-2Mi" kind="push" identifier="Next" id="Na2-jC-fPy"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1513" y="-805"/>
+            <point key="canvasLocation" x="-790" y="-805"/>
         </scene>
         <!--Team Picture View Controller - Team Picture-->
         <scene sceneID="NYe-nf-psF">
@@ -1411,7 +1398,7 @@ die strijden om de meeste punten.</string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2474" y="-805"/>
+            <point key="canvasLocation" x="1923" y="-805"/>
         </scene>
         <!--First Issue Explanation View Controller-->
         <scene sceneID="xrJ-Lo-DNP">
@@ -1632,7 +1619,7 @@ die strijden om de meeste punten.</string>
                     <navigationItem key="navigationItem" id="7Xj-bK-0tp"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3911" y="-758"/>
+            <point key="canvasLocation" x="4437" y="-758"/>
         </scene>
         <!--Feature Picture View Controller-->
         <scene sceneID="aSc-un-SDF">
@@ -2197,7 +2184,7 @@ die strijden om de meeste punten.</string>
                     <navigationItem key="navigationItem" id="00V-35-v7n"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="5835" y="-787"/>
+            <point key="canvasLocation" x="6361" y="-787"/>
         </scene>
         <!--Convince First Animal View Controller-->
         <scene sceneID="9Ez-FX-W4p">
@@ -3276,7 +3263,7 @@ die strijden om de meeste punten.</string>
                     <navigationItem key="navigationItem" id="RZc-2n-BSn"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="7340" y="-779"/>
+            <point key="canvasLocation" x="7866" y="-779"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="cwx-wr-6zT">
@@ -4009,13 +3996,13 @@ Rik Nieuwdorp – Audio</string>
                     <navigationItem key="navigationItem" id="ZBk-yX-DRv"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="555" y="475"/>
+            <point key="canvasLocation" x="1915" y="-1517"/>
         </scene>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="o7I-wb-sCo">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0U-F6-V3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="3Oi-9P-c94" sceneMemberID="viewController">
+                <viewController id="3Oi-9P-c94" customClass="SplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJ5-bk-kBy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4029,17 +4016,17 @@ Rik Nieuwdorp – Audio</string>
                     </view>
                     <navigationItem key="navigationItem" id="vvB-qd-Q5U"/>
                     <connections>
-                        <segue destination="umP-hU-cZb" kind="push" id="SX8-6g-XRT"/>
+                        <segue destination="umP-hU-cZb" kind="push" identifier="Next" id="SX8-6g-XRT"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-406" y="-805"/>
+            <point key="canvasLocation" x="462" y="-2156"/>
         </scene>
-        <!--View Controller-->
+        <!--Splash View Controller-->
         <scene sceneID="OhM-7N-Nf9">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Db8-Ws-oGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="umP-hU-cZb" sceneMemberID="viewController">
+                <viewController id="umP-hU-cZb" customClass="SplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FEF-YG-zEG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4053,30 +4040,11 @@ Rik Nieuwdorp – Audio</string>
                     </view>
                     <navigationItem key="navigationItem" id="AR2-Rp-EZ9"/>
                     <connections>
-                        <segue destination="2" kind="push" id="J2h-Zn-n45"/>
+                        <segue destination="2" kind="push" identifier="Next" id="J2h-Zn-n45"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="75" y="-805"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Qbn-T9-tk6">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uBZ-9l-5Lr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationController navigationBarHidden="YES" id="huA-t4-3Pw" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="lKL-tn-iUY">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="Xfn-XH-57d"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-406" y="-165"/>
+            <point key="canvasLocation" x="943" y="-2156"/>
         </scene>
         <!--Second Issue Explanation View Controller-->
         <scene sceneID="EXb-LP-run">
@@ -5129,7 +5097,26 @@ Rik Nieuwdorp – Audio</string>
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2954" y="-805"/>
+            <point key="canvasLocation" x="2600" y="-957"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uvS-q7-vsb">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dku-Ol-iWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="a31-AO-osa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BfT-By-uRx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Oi-9P-c94" kind="relationship" relationship="rootViewController" id="YUg-Z9-Sge"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-64" y="-2156"/>
         </scene>
     </scenes>
     <resources>
@@ -5157,7 +5144,6 @@ Rik Nieuwdorp – Audio</string>
         <image name="button-carousel-next.png" width="80" height="80"/>
         <image name="button-carousel-prev.png" width="80" height="80"/>
         <image name="button-credits.png" width="365" height="113"/>
-        <image name="button-pijl-rechts.png" width="140" height="42"/>
         <image name="button-speel-verder.png" width="362" height="114"/>
         <image name="button-start-nieuw-spel.png" width="365" height="112"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
@@ -5562,6 +5548,9 @@ Rik Nieuwdorp – Audio</string>
                 <relationship kind="action" name="next:"/>
             </relationships>
         </class>
+        <class className="SplashViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashViewController.h"/>
+        </class>
         <class className="TeamFeaturePickerViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamFeaturePickerViewController.h"/>
         </class>
@@ -5610,16 +5599,25 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="Xfn-XH-57d"/>
         <segue reference="fHu-b7-0Nr"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
+=======
+        <segue reference="fHu-b7-0Nr"/>
+>>>>>>> d84c51cb2c43e9ba13d0cd0898b9b94f95c2cd84
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="0AR-ig-N8o"/>
         <segue reference="iYQ-bF-g8K"/>
-        <segue reference="c8n-UF-cmF"/>
-        <segue reference="WNU-Ah-KpY"/>
         <segue reference="8jN-ZW-QTz"/>
         <segue reference="nT0-nb-xZI"/>
+<<<<<<< HEAD
+=======
+        <segue reference="c8n-UF-cmF"/>
+        <segue reference="WNU-Ah-KpY"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="AoM-So-BHK"/>
+>>>>>>> d84c51cb2c43e9ba13d0cd0898b9b94f95c2cd84
     </inferredMetricsTieBreakers>
 </document>

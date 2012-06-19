@@ -37,7 +37,7 @@
 */
 
 - (void)customizeLabel {
-    [self setFont:[UIFont fontWithName:@"Vollkorn-Regular" size:self.font.pointSize]];
+    [self setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:self.font.pointSize]];
 }
 
 @end

@@ -37,7 +37,7 @@
 */
 
 - (void)customizeLabel {
-    [self setFont:[UIFont fontWithName:@"Vollkorn-Bold" size:16]];
+    [self setFont:[UIFont fontWithName:@"HoeflerText-Black" size:16]];
 }
 
 @end

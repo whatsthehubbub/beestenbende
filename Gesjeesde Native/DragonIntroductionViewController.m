@@ -47,8 +47,8 @@
     team1Picture.image = game.team1.picture;
     team2Picture.image = game.team2.picture;
     
-    team1Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1Label.font.pointSize];
-    team2Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2Label.font.pointSize];
+    team1Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1Label.font.pointSize];
+    team2Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2Label.font.pointSize];
     
     self.team1Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team1.dragonProofs]];
     self.team2Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team2.dragonProofs]];

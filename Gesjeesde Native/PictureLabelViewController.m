@@ -62,7 +62,7 @@
     doneButton.hidden = YES;
 #endif
     
-    self.featureButton.titleLabel.font = [UIFont fontWithName:@"Vollkorn-Regular" size:self.featureButton.titleLabel.font.pointSize];
+    self.featureButton.titleLabel.font = [UIFont fontWithName:@"HoeflerText-Regular" size:self.featureButton.titleLabel.font.pointSize];
     
     [self displayPicture];
 }

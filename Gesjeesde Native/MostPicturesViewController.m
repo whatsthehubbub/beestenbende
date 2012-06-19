@@ -46,14 +46,14 @@
     team1Image.image = game.team1.picture;
     team2Image.image = game.team2.picture;
     
-    team1Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1Label.font.pointSize];
-    team2Label.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2Label.font.pointSize];
+    team1Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1Label.font.pointSize];
+    team2Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2Label.font.pointSize];
     
     team1PictureCount.text = [NSString stringWithFormat:@"%d", game.team1.featurePictures.count];
-    team1PictureCount.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1PictureCount.font.pointSize];
+    team1PictureCount.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1PictureCount.font.pointSize];
     
     team2PictureCount.text = [NSString stringWithFormat:@"%d", game.team2.featurePictures.count];
-    team2PictureCount.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2PictureCount.font.pointSize];
+    team2PictureCount.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2PictureCount.font.pointSize];
     
     NSString *winnerText;
     if (game.team1.featurePictures.count == game.team2.featurePictures.count) {

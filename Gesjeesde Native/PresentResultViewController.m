@@ -53,8 +53,8 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    team1featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team1featureLabel.font.pointSize];
-    team2featureLabel.font = [UIFont fontWithName:@"Vollkorn-Bold" size:team2featureLabel.font.pointSize];
+    team1featureLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1featureLabel.font.pointSize];
+    team2featureLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2featureLabel.font.pointSize];
     
     team1fp = [game.team1 featurePictureForTurn:game.turn];
     
