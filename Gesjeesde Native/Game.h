@@ -51,7 +51,7 @@ typedef enum {
 
 - (FEATURE_RESULT)resultForFeaturePicture:(FeaturePicture *)fp;
 - (BOOL)feature:(FeaturePicture *)fp presentInAnimal:(NSString *)animal;
-- (NSString *)getCurrentAnimal;
+- (NSString *)getCurrentAnimalName;
 - (NSString *)getWrongAnimalClass;
 - (NSString *)getCorrectAnimalClass;
 

@@ -104,7 +104,7 @@
     if (![[game firstTeamForTurn] featurePictureForTurn:game.turn].presentAssertion) {
         present = @"geen"; 
     }
-    self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimal], present];
+    self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimalName], present];
     
     if (game.issue == 1) {
         self.animalImage.image = [UIImage imageNamed:@"animal-squirrel-icon.png"];
@@ -112,7 +112,7 @@
         self.animalImage.image = [UIImage imageNamed:@"animal-eel-icon.png"];
     }
     
-    self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimal]];
+    self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimalName]];
     
     
     // Check if we're closer to the required proof

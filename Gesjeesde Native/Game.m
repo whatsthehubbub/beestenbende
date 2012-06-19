@@ -73,8 +73,7 @@
     return featureValue == 0 || featureValue == 1;
 }
 
-- (NSString *)getCurrentAnimal {
-    // TODO refactor to getCurrentAnimalName
+- (NSString *)getCurrentAnimalName {
     if (self.issue == 1) {
         return @"Eekhoorn";
     } else if (self.issue == 2) {
@@ -164,8 +163,6 @@
     }
 }
 
-
-
 - (void)resetForNextIssue {
     turn = 1;
     required = 4;
@@ -173,33 +170,5 @@
     [self.team1 resetForNextIssue];
     [self.team2 resetForNextIssue];
 }
-
-//#pragma mark NSCoding
-//
-//- (void)encodeWithCoder:(NSCoder *)aCoder {
-//    [aCoder encodeObject:self.team1 forKey:kTeam1Key];
-//    [aCoder encodeObject:self.team2 forKey:kTeam2Key];
-//}
-//
-//- (id)initWithCoder:(NSCoder *)aDecoder {
-//    if (self = [super init]) {
-//        self.team1 = [aDecoder decodeObjectForKey:kTeam1Key];
-//        self.team2 = [aDecoder decodeObjectForKey:kTeam2Key];
-//    }
-//    
-//    return self;
-//}
-//
-//#pragma mark - 
-//#pragma mark NSCopying
-//
-//- (id)copyWithZone:(NSZone *)zone {
-//    Game *copy = [[[self class] allocWithZone:zone] init];
-//    
-//    copy.team1 = [self.team1 copyWithZone:zone];
-//    copy.team2 = [self.team2 copyWithZone:zone];
-//    
-//    return copy;
-//}
 
 @end
