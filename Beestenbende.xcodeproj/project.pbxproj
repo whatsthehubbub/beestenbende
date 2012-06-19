@@ -40,6 +40,7 @@
 		4793D5CE1590C363003312D8 /* animal-eel-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 4793D5CC1590C363003312D8 /* animal-eel-icon-large.png */; };
 		4793D5CF1590C363003312D8 /* animal-dragon-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 4793D5CD1590C363003312D8 /* animal-dragon-icon-large.png */; };
 		4793D5D21590D457003312D8 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 4793D5D11590D457003312D8 /* clock.png */; };
+		4793D5D41590DAEF003312D8 /* speech-bubble-build-evidence.png in Resources */ = {isa = PBXBuildFile; fileRef = 4793D5D31590DAEF003312D8 /* speech-bubble-build-evidence.png */; };
 		47993148152E3EDA00AF019F /* button-titlebar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 47993147152E3EDA00AF019F /* button-titlebar-back.png */; };
 		4799314C152E405E00AF019F /* titlebar-team-marot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314A152E405E00AF019F /* titlebar-team-marot.png */; };
 		4799314D152E405E00AF019F /* titlebar-team-seba.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314B152E405E00AF019F /* titlebar-team-seba.png */; };
@@ -279,6 +280,7 @@
 		4793D5CC1590C363003312D8 /* animal-eel-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-eel-icon-large.png"; sourceTree = "<group>"; };
 		4793D5CD1590C363003312D8 /* animal-dragon-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-dragon-icon-large.png"; sourceTree = "<group>"; };
 		4793D5D11590D457003312D8 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		4793D5D31590DAEF003312D8 /* speech-bubble-build-evidence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-build-evidence.png"; sourceTree = "<group>"; };
 		47993147152E3EDA00AF019F /* button-titlebar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-back.png"; sourceTree = "<group>"; };
 		4799314A152E405E00AF019F /* titlebar-team-marot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-marot.png"; sourceTree = "<group>"; };
 		4799314B152E405E00AF019F /* titlebar-team-seba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-seba.png"; sourceTree = "<group>"; };
@@ -799,6 +801,7 @@
 		4EAE98E0151A618A0051C926 /* Gesjeesde Native */ = {
 			isa = PBXGroup;
 			children = (
+				4793D5D31590DAEF003312D8 /* speech-bubble-build-evidence.png */,
 				4793D5D11590D457003312D8 /* clock.png */,
 				4E4EECDD1588BDC00018170C /* CocosDenshion */,
 				4ECB233A1587F61500F3CDCA /* AnimalUnderstandsViewController.h */,
@@ -1161,6 +1164,7 @@
 				4793D5CE1590C363003312D8 /* animal-eel-icon-large.png in Resources */,
 				4793D5CF1590C363003312D8 /* animal-dragon-icon-large.png in Resources */,
 				4793D5D21590D457003312D8 /* clock.png in Resources */,
+				4793D5D41590DAEF003312D8 /* speech-bubble-build-evidence.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
