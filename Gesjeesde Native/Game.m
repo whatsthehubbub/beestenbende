@@ -65,8 +65,8 @@
     return FEATURE_NO_CORRECT; // Default return with minimal value
 }
 
-- (BOOL)feature:(FeaturePicture *)fp presentInAnimal:(NSString *)animal {
-    NSDictionary *feature = [self getFeatureWithName:fp.feature];
+- (BOOL)feature:(NSString *)fName presentInAnimal:(NSString *)animal {
+    NSDictionary *feature = [self getFeatureWithName:fName];
     
     int featureValue = [[feature objectForKey:animal] intValue];
     

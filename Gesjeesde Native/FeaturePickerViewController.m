@@ -99,10 +99,20 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
+
     
     NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
+
     cell.textLabel.text = [feature objectForKey:@"Label"];
     [cell.textLabel setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:cell.textLabel.font.pointSize]];
+    
+    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || game.issue==3) {
+        // This feature is correct for one of two 
+    } else {
+        // TODO grey out disabled cells
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+    }
     
     return cell;
 }
@@ -111,23 +121,26 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i11_menu-select-close.wav"];
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    if (selectedIndex != NSNotFound) {
-        UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:selectedIndex inSection:indexPath.section]];
-        cell.accessoryType = UITableViewCellAccessoryNone;
-    }
-    
-    selectedIndex = indexPath.row;
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    
-    
     NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
     
-    [self.delegate featurePickerViewController:self didSelectFeature:[feature objectForKey:@"Label"]];
+    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || game.issue==3) {
+        // This feature is correct for one of two animals, so this cell is selectable
+        
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i11_menu-select-close.wav"];
+        
+        [tableView deselectRowAtIndexPath:indexPath animated:YES];
+        
+        if (selectedIndex != NSNotFound) {
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:selectedIndex inSection:indexPath.section]];
+            cell.accessoryType = UITableViewCellAccessoryNone;
+        }
+        
+        selectedIndex = indexPath.row;
+        UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        
+        [self.delegate featurePickerViewController:self didSelectFeature:[feature objectForKey:@"Label"]];
+    }
 }
 
 @end

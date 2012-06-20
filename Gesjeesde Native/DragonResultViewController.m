@@ -65,7 +65,7 @@
     if (currentTeam.dragonClass == 0) {
         // If fish has been chosen
         
-        if ([game feature:featurePicture presentInAnimal:@"Fish"]) {
+        if ([game feature:featurePicture.feature presentInAnimal:@"Fish"]) {
             // And a fish feature
             self.explanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
             

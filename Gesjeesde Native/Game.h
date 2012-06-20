@@ -50,7 +50,7 @@ typedef enum {
 - (NSArray *)getClasses;
 
 - (FEATURE_RESULT)resultForFeaturePicture:(FeaturePicture *)fp;
-- (BOOL)feature:(FeaturePicture *)fp presentInAnimal:(NSString *)animal;
+- (BOOL)feature:(NSString *)fName presentInAnimal:(NSString *)animal;
 - (NSString *)getCurrentAnimalName;
 - (NSString *)getWrongAnimalClass;
 - (NSString *)getCorrectAnimalClass;
