@@ -292,7 +292,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-squirrel.png" id="Tzw-Pm-76O">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-squirrel-happy.png" id="Tzw-Pm-76O">
                                 <rect key="frame" x="106" y="-1" width="214" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -752,7 +752,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="9Ga-TH-WKl">
-                                <rect key="frame" x="127" y="267" width="193" height="213"/>
+                                <rect key="frame" x="127" y="246" width="193" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cxT-GP-YCH" customClass="ArrowRight">
@@ -844,7 +844,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-reptiles.png" id="o3Z-EC-CfB">
-                                <rect key="frame" x="0.0" y="267" width="172" height="213"/>
+                                <rect key="frame" x="0.0" y="267" width="172" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -872,7 +872,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="Bk7-03-zzb">
-                                <rect key="frame" x="127" y="267" width="193" height="213"/>
+                                <rect key="frame" x="127" y="246" width="193" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="wox-Ua-p33">
@@ -3605,7 +3605,7 @@ die strijden om de meeste punten.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-eel.png" id="tvL-FT-dbM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-eel-happy.png" id="tvL-FT-dbM">
                                 <rect key="frame" x="175" y="266" width="145" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -4086,7 +4086,7 @@ die strijden om de meeste punten.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-birds.png" id="irJ-bh-YYf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-birds-happy.png" id="irJ-bh-YYf">
                                 <rect key="frame" x="0.0" y="240" width="183" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -4448,7 +4448,7 @@ Rik Nieuwdorp – Audio</string>
                                 <rect key="frame" x="20" y="60" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-fish.png" id="jvV-jd-okv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-fish-happy.png" id="jvV-jd-okv">
                                 <rect key="frame" x="0.0" y="248" width="164" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -5094,7 +5094,7 @@ Rik Nieuwdorp – Audio</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="96T-5F-tRV">
-                                <rect key="frame" x="127" y="267" width="193" height="213"/>
+                                <rect key="frame" x="127" y="246" width="193" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fout want: [Uitleg.] Maar ik ben geen [diergroep]! / Goed want: [Uitleg.]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="10" id="N1a-WB-Qev" customClass="NormalLabel">
@@ -5199,8 +5199,8 @@ Rik Nieuwdorp – Audio</string>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="cVL-4O-Eke"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="h1f-1r-UvR">
-                                <rect key="frame" x="127" y="267" width="193" height="213"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon-happy.png" id="h1f-1r-UvR">
+                                <rect key="frame" x="122" y="246" width="198" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="TZQ-SN-xC6">
@@ -5322,8 +5322,8 @@ Rik Nieuwdorp – Audio</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-reptiles.png" id="O9M-aa-gjE">
-                                <rect key="frame" x="0.0" y="267" width="172" height="213"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-reptiles-happy.png" id="O9M-aa-gjE">
+                                <rect key="frame" x="0.0" y="248" width="172" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is ontmaskerd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="uu3-Yv-8lI" customClass="HeaderLabel">
@@ -5675,20 +5675,26 @@ Rik Nieuwdorp – Audio</string>
     </scenes>
     <resources>
         <image name="animal-all.png" width="668" height="990"/>
+        <image name="animal-birds-happy.png" width="366" height="480"/>
         <image name="animal-birds.png" width="366" height="480"/>
+        <image name="animal-dragon-happy.png" width="395" height="467"/>
         <image name="animal-dragon-icon-large.png" width="347" height="346"/>
-        <image name="animal-dragon.png" width="386" height="434"/>
+        <image name="animal-dragon.png" width="386" height="467"/>
+        <image name="animal-eel-happy.png" width="290" height="429"/>
         <image name="animal-eel-icon-large.png" width="340" height="343"/>
         <image name="animal-eel-icon.png" width="117" height="120"/>
         <image name="animal-eel.png" width="290" height="429"/>
         <image name="animal-example.png" width="548" height="612"/>
+        <image name="animal-fish-happy.png" width="329" height="463"/>
         <image name="animal-fish.png" width="329" height="463"/>
         <image name="animal-host-icon.png" width="117" height="120"/>
         <image name="animal-host.png" width="527" height="408"/>
-        <image name="animal-reptiles.png" width="343" height="426"/>
+        <image name="animal-reptiles-happy.png" width="343" height="463"/>
+        <image name="animal-reptiles.png" width="343" height="463"/>
+        <image name="animal-squirrel-happy.png" width="428" height="643"/>
         <image name="animal-squirrel-icon-large.png" width="341" height="328"/>
         <image name="animal-squirrel-icon.png" width="118" height="120"/>
-        <image name="animal-squirrel.png" width="429" height="642"/>
+        <image name="animal-squirrel.png" width="428" height="641"/>
         <image name="bg-0-plain.jpg" width="640" height="960"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-2-main-menu.jpg" width="640" height="960"/>
