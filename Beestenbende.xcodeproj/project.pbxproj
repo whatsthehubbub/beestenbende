@@ -90,6 +90,7 @@
 		47AF02DE152C9056008905ED /* bg-1-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DD152C9056008905ED /* bg-1-splash.jpg */; };
 		47AF02E0152C90C7008905ED /* bg-0-plain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DF152C90C7008905ED /* bg-0-plain.jpg */; };
 		47B991401593313400138393 /* icon_002-02-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B9913F1593313400138393 /* icon_002-02-114.png */; };
+		47B991421593748200138393 /* i04_neemfoto_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 47B991411593748200138393 /* i04_neemfoto_v3.wav */; };
 		47BFEDC4153EFC2D002BF8F3 /* icon_001-04-L.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */; };
 		47BFEDC6153F0300002BF8F3 /* button-start-nieuw-spel.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC5153F0300002BF8F3 /* button-start-nieuw-spel.png */; };
 		47BFEDC8153F04DF002BF8F3 /* button-speel-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */; };
@@ -342,6 +343,7 @@
 		47AF02DD152C9056008905ED /* bg-1-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-1-splash.jpg"; sourceTree = "<group>"; };
 		47AF02DF152C90C7008905ED /* bg-0-plain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-0-plain.jpg"; sourceTree = "<group>"; };
 		47B9913F1593313400138393 /* icon_002-02-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_002-02-114.png"; sourceTree = "<group>"; };
+		47B991411593748200138393 /* i04_neemfoto_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = i04_neemfoto_v3.wav; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/audio/i04_neemfoto_v3.wav"; sourceTree = "<group>"; };
 		47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_001-04-L.png"; sourceTree = "<group>"; };
 		47BFEDC5153F0300002BF8F3 /* button-start-nieuw-spel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start-nieuw-spel.png"; sourceTree = "<group>"; };
 		47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-speel-verder.png"; sourceTree = "<group>"; };
@@ -759,6 +761,7 @@
 		4E4EECF01588C2480018170C /* audio */ = {
 			isa = PBXGroup;
 			children = (
+				47B991411593748200138393 /* i04_neemfoto_v3.wav */,
 				4ED69F4A1588EACE00F84D92 /* d01_nautilus_1.wav */,
 				4ED69F4B1588EACE00F84D92 /* d01_nautilus_2.wav */,
 				4ED69F4C1588EACE00F84D92 /* d01_nautilus_3.wav */,
@@ -1213,6 +1216,7 @@
 				4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
 				47B991401593313400138393 /* icon_002-02-114.png in Resources */,
+				47B991421593748200138393 /* i04_neemfoto_v3.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
