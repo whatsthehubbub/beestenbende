@@ -17,6 +17,8 @@
 @synthesize headerLabel;
 @synthesize teamOverlay;
 
+@synthesize explanationLabel;
+
 @synthesize game;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -43,6 +45,9 @@
     Team *team = [game firstTeamForTurn];
     if (team.tookFeaturePictures) {
         team = [game otherTeamForTeam:team];
+        
+        // Change the text on the label
+        self.explanationLabel.text = @"Let op: jullie hebben 90 seconden om fotobewijs te verzamelen.";
     }
 
     headerLabel.text = [NSString stringWithFormat:@"Team %@ bereid je voor", [team getTeamName]];

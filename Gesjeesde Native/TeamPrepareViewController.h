@@ -15,6 +15,8 @@
 @property (nonatomic, retain) IBOutlet UILabel *headerLabel;
 @property (strong) IBOutlet UIImageView *teamOverlay;
 
+@property (strong) IBOutlet UILabel *explanationLabel;
+
 @property (strong) Game *game;
 
 - (IBAction)next:(id)sender;
