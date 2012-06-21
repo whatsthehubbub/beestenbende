@@ -12,7 +12,7 @@
 
 #import "SimpleAudioEngine.h"
 
-@interface MenuViewController : UIViewController <CreditsViewControllerDelegate>
+@interface MenuViewController : UIViewController
 
 - (IBAction)next:(id)sender;
 

@@ -14,7 +14,7 @@
 
 @implementation CreditsViewController
 
-@synthesize delegate;
+@synthesize creditsScrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +29,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.creditsScrollView.scrollEnabled = YES;
+    
+    self.creditsScrollView.contentSize = CGSizeMake(320.0, 670.0);
 }
 
 - (void)viewDidUnload
@@ -45,7 +49,7 @@
 - (IBAction)back:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
     
-    [self.delegate creditsViewControllerDidBack:self];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

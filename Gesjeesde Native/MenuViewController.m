@@ -44,19 +44,12 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"Credits"]) {
         [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
-        CreditsViewController *creditsViewController = segue.destinationViewController;
-        creditsViewController.delegate = self;
     }
 }
 
 - (IBAction)next:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     [self performSegueWithIdentifier:@"Next" sender:self];
-}
-
-#pragma mark - CreditsViewControllerDelegate
-- (void)creditsViewControllerDidBack:(CreditsViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

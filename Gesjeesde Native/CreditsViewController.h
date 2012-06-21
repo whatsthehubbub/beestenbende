@@ -10,19 +10,9 @@
 
 #import "SimpleAudioEngine.h"
 
-@class CreditsViewController;
-
-
-@protocol CreditsViewControllerDelegate <NSObject>
-
--(void)creditsViewControllerDidBack:(CreditsViewController *)controller;
-
-@end
-
-
 @interface CreditsViewController : UIViewController
 
-@property (nonatomic, weak) id <CreditsViewControllerDelegate> delegate;
+@property (nonatomic) IBOutlet UIScrollView *creditsScrollView;
 
 - (IBAction)back:(id)sender;
 
