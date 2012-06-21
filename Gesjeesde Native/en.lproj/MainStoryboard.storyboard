@@ -4952,6 +4952,10 @@ Rik Nieuwdorp – Audio</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="fd8-lB-z4u">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is eigenlijk een…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ri5-5D-03i" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4959,10 +4963,6 @@ Rik Nieuwdorp – Audio</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="fd8-lB-z4u">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fIE-W5-9D5" customClass="ArrowRight">
                                 <rect key="frame" x="160" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5777,7 +5777,7 @@ Rik Nieuwdorp – Audio</string>
         <image name="animal-reptiles-happy.png" width="343" height="463"/>
         <image name="animal-reptiles.png" width="343" height="463"/>
         <image name="animal-squirrel-happy.png" width="428" height="643"/>
-        <image name="animal-squirrel-icon-large.png" width="341" height="328"/>
+        <image name="animal-squirrel-icon-large.png" width="345" height="331"/>
         <image name="animal-squirrel-icon.png" width="118" height="120"/>
         <image name="animal-squirrel.png" width="428" height="641"/>
         <image name="bg-0-plain.jpg" width="640" height="960"/>
@@ -5817,7 +5817,7 @@ Rik Nieuwdorp – Audio</string>
         <image name="points-fout.png" width="130" height="180"/>
         <image name="points-uniek.png" width="130" height="180"/>
         <image name="progress-0.png" width="470" height="119"/>
-        <image name="progress-4.png" width="469" height="120"/>
+        <image name="progress-4.png" width="470" height="120"/>
         <image name="speech-bubble-big-mirrored-flipped.png" width="560" height="500"/>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
         <image name="speech-bubble-big.png" width="560" height="500"/>
