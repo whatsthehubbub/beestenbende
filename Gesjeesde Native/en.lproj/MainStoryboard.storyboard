@@ -350,11 +350,11 @@
             </objects>
             <point key="canvasLocation" x="2954" y="-164"/>
         </scene>
-        <!--View Controller-->
+        <!--Explanation View Controller-->
         <scene sceneID="ijN-Ou-H9H">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8c-Wh-MX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="vvi-fO-Lr8" sceneMemberID="viewController">
+                <viewController id="vvi-fO-Lr8" customClass="ExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ic-5Z-W8U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -451,7 +451,7 @@
                                 </state>
                                 <connections>
                                     <action selector="done" destination="gnf-ri-JiR" eventType="touchUpInside" id="sNd-u3-Qg5"/>
-                                    <segue destination="eaH-OO-SNN" kind="push" id="sga-lv-TE2"/>
+                                    <action selector="next:" destination="vvi-fO-Lr8" eventType="touchUpInside" id="3sJ-TA-67O"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lna-vx-9c3" customClass="HeaderLabel">
@@ -473,6 +473,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="vvi-fO-Lr8" eventType="touchUpInside" id="NCD-we-mER"/>
                                     <action selector="back:" destination="gnf-ri-JiR" eventType="touchUpInside" id="w3h-yB-M6x"/>
                                 </connections>
                             </button>
@@ -480,6 +481,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="acW-MS-AKO"/>
+                    <connections>
+                        <segue destination="eaH-OO-SNN" kind="push" identifier="Next" id="HtV-Y0-kXO"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1013" y="-805"/>
@@ -5968,6 +5972,13 @@ Rik Nieuwdorp – Audio</string>
                 <relationship kind="outlet" name="team2FeatureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team2NameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team2ResultAndExplanationLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ExplanationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExplanationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
             </relationships>
         </class>
         <class className="FeatureExampleViewController" superclassName="UIViewController">
