@@ -1,18 +1,18 @@
 //
-//  MapViewController.m
+//  ExplanationViewController.m
 //  Beestenbende
 //
-//  Created by Alper Çuğun on 13/6/12.
+//  Created by Alper Çuğun on 22/6/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "ExplanationViewController.h"
 
-@interface MapViewController ()
+@interface ExplanationViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation ExplanationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

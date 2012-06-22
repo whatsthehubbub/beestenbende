@@ -1,18 +1,18 @@
 //
-//  MapViewController.m
+//  AnimalPartsViewController.m
 //  Beestenbende
 //
-//  Created by Alper Çuğun on 13/6/12.
+//  Created by Alper Çuğun on 22/6/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "MapViewController.h"
+#import "AnimalPartsViewController.h"
 
-@interface MapViewController ()
+@interface AnimalPartsViewController ()
 
 @end
 
-@implementation MapViewController
+@implementation AnimalPartsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

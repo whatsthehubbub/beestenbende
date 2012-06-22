@@ -63,8 +63,6 @@
 #ifdef DEBUG
     self.doneButton.enabled = YES;
 #endif
-    
-    self.featureButton.titleLabel.font = [UIFont fontWithName:@"HoeflerText-Regular" size:self.featureButton.titleLabel.font.pointSize];
 }
 
 - (void)viewDidUnload
@@ -136,7 +134,7 @@
             overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
         }
         
-        [featureButton setTitle:@"" forState:UIControlStateNormal];
+        [featureButton setTitle:@"kies een kenmerk…" forState:UIControlStateNormal];
         featureImageView.image = nil;
         
         // self.hasFeature remains the same for the other team, they have to go along

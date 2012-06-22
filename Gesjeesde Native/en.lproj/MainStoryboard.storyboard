@@ -350,11 +350,11 @@
             </objects>
             <point key="canvasLocation" x="2954" y="-164"/>
         </scene>
-        <!--View Controller-->
+        <!--Explanation View Controller-->
         <scene sceneID="ijN-Ou-H9H">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8c-Wh-MX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="vvi-fO-Lr8" sceneMemberID="viewController">
+                <viewController id="vvi-fO-Lr8" customClass="ExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ic-5Z-W8U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -451,7 +451,7 @@
                                 </state>
                                 <connections>
                                     <action selector="done" destination="gnf-ri-JiR" eventType="touchUpInside" id="sNd-u3-Qg5"/>
-                                    <segue destination="eaH-OO-SNN" kind="push" id="sga-lv-TE2"/>
+                                    <action selector="next:" destination="vvi-fO-Lr8" eventType="touchUpInside" id="3sJ-TA-67O"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lna-vx-9c3" customClass="HeaderLabel">
@@ -473,6 +473,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="vvi-fO-Lr8" eventType="touchUpInside" id="NCD-we-mER"/>
                                     <action selector="back:" destination="gnf-ri-JiR" eventType="touchUpInside" id="w3h-yB-M6x"/>
                                 </connections>
                             </button>
@@ -480,6 +481,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="acW-MS-AKO"/>
+                    <connections>
+                        <segue destination="eaH-OO-SNN" kind="push" identifier="Next" id="HtV-Y0-kXO"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1013" y="-805"/>
@@ -1066,11 +1070,11 @@
             </objects>
             <point key="canvasLocation" x="1451" y="-805"/>
         </scene>
-        <!--View Controller-->
+        <!--Make Teams View Controller-->
         <scene sceneID="3RN-6O-mt2">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-cG-ujE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="IoP-tb-2Mi" sceneMemberID="viewController">
+                <viewController id="IoP-tb-2Mi" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grp-Hh-uYs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1102,6 +1106,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="IoP-tb-2Mi" eventType="touchUpInside" id="sQb-oQ-TFb"/>
                                     <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="xzG-vN-7Qc"/>
                                 </connections>
                             </button>
@@ -1135,23 +1140,26 @@ te helpen.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="IoP-tb-2Mi" eventType="touchUpInside" id="7H4-C7-LP6"/>
                                     <action selector="next:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="veb-wp-hya"/>
-                                    <segue destination="Ctl-ZB-eat" kind="push" id="dUC-l0-Xdu"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EfU-aY-pLt"/>
+                    <connections>
+                        <segue destination="Ctl-ZB-eat" kind="push" identifier="Next" id="llt-Ka-N9j"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-312" y="-805"/>
         </scene>
-        <!--View Controller-->
+        <!--Make Teams View Controller-->
         <scene sceneID="qN9-tO-ExE">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ll1-So-o3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Ctl-ZB-eat" sceneMemberID="viewController">
+                <viewController id="Ctl-ZB-eat" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYP-qp-unm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1191,6 +1199,7 @@ te helpen.</string>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="K4d-ub-dVf"/>
+                                    <action selector="back:" destination="Ctl-ZB-eat" eventType="touchUpInside" id="vRf-Z7-r0F"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="eCj-qs-oea">
@@ -1210,22 +1219,25 @@ te helpen.</string>
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="3x9-fG-e3U"/>
-                                    <segue destination="W9S-Qk-Vcr" kind="push" id="a2Q-5v-qjV"/>
+                                    <action selector="next:" destination="Ctl-ZB-eat" eventType="touchUpInside" id="Vh7-tN-CuM"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Jq-z2-ngm"/>
+                    <connections>
+                        <segue destination="W9S-Qk-Vcr" kind="push" identifier="Next" id="Dgh-T9-jdy"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="121" y="-805"/>
         </scene>
-        <!--View Controller-->
+        <!--Animal Parts View Controller-->
         <scene sceneID="NQB-65-13G">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GXb-qc-HlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="W9S-Qk-Vcr" sceneMemberID="viewController">
+                <viewController id="W9S-Qk-Vcr" customClass="AnimalPartsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rXF-Em-dAb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1253,6 +1265,7 @@ te helpen.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="W9S-Qk-Vcr" eventType="touchUpInside" id="3rz-gW-quT"/>
                                     <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="xfr-FE-HdQ"/>
                                 </connections>
                             </button>
@@ -1268,8 +1281,8 @@ te helpen.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="next:" destination="W9S-Qk-Vcr" eventType="touchUpInside" id="ha2-C2-cO2"/>
                                     <action selector="next:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="rOs-yf-QA1"/>
-                                    <segue destination="vvi-fO-Lr8" kind="push" id="98p-mf-qKM"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-example.png" id="6w2-5K-UeN">
@@ -1280,6 +1293,9 @@ te helpen.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="eqU-0d-FYZ"/>
+                    <connections>
+                        <segue destination="vvi-fO-Lr8" kind="push" identifier="Next" id="5HY-Pk-Req"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="545" y="-805"/>
@@ -5771,6 +5787,13 @@ Rik Nieuwdorp – Audio</string>
         <image name="zoek-foto-eekhoorn.jpg" width="16" height="16"/>
     </resources>
     <classes>
+        <class className="AnimalPartsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AnimalPartsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
+            </relationships>
+        </class>
         <class className="AnimalUnderstandsResponseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AnimalUnderstandsResponseViewController.h"/>
             <relationships>
@@ -5949,6 +5972,13 @@ Rik Nieuwdorp – Audio</string>
                 <relationship kind="outlet" name="team2FeatureLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team2NameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="team2ResultAndExplanationLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ExplanationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExplanationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="next:"/>
             </relationships>
         </class>
         <class className="FeatureExampleViewController" superclassName="UIViewController">
@@ -6199,9 +6229,9 @@ Rik Nieuwdorp – Audio</string>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
         <segue reference="8jN-ZW-QTz"/>
-        <segue reference="nT0-nb-xZI"/>
-        <segue reference="ynJ-lX-12N"/>
         <segue reference="c8n-UF-cmF"/>
+        <segue reference="GhX-mS-cBD"/>
+        <segue reference="fBl-OD-qSZ"/>
         <segue reference="WNU-Ah-KpY"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
