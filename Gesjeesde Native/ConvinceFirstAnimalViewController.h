@@ -22,6 +22,7 @@
 @property (assign) BOOL pageControlBeingUsed;
 
 - (void)scrollPage;
+- (void)checkButtons;
 - (IBAction)previous;
 - (IBAction)next;
 

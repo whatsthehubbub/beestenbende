@@ -257,7 +257,6 @@
 		4EDEFAFC152B90C700324EDB /* toggle-trash-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */; };
 		4EDEFAFD152B90C700324EDB /* toggle-trash-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
-		4EF7F246159677D000DD9C63 /* i04_neemfoto_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7F245159677D000DD9C63 /* i04_neemfoto_v3.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -575,7 +574,6 @@
 		4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-trash-on.png"; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
-		4EF7F245159677D000DD9C63 /* i04_neemfoto_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i04_neemfoto_v3.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -792,7 +790,6 @@
 				4E4EECF11588C2570018170C /* i01_openingsscherm_v2.wav */,
 				4E4EECF31588C3B80018170C /* i02_schermverder.wav */,
 				4E4EECF41588C3B80018170C /* i03_schermterug.wav */,
-				4EF7F245159677D000DD9C63 /* i04_neemfoto_v3.wav */,
 				4ED69F3C1588DD1200F84D92 /* i05_carouselverderterug.wav */,
 				4ED69F421588E69800F84D92 /* i09_knop-toggle.wav */,
 				4ED69F3A1588DB9100F84D92 /* i06_tijdtiktaf.wav */,
@@ -1222,7 +1219,6 @@
 				4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
 				47B991401593313400138393 /* icon_002-02-114.png in Resources */,
-				4EF7F246159677D000DD9C63 /* i04_neemfoto_v3.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

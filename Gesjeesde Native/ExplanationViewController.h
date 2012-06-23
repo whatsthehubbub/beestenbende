@@ -9,10 +9,26 @@
 #import <UIKit/UIKit.h>
 
 #import "SimpleAudioEngine.h"
+#import "DDPageControl.h"
 
-@interface ExplanationViewController : UIViewController
 
+@interface ExplanationViewController : UIViewController <UIScrollViewDelegate>
+
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) DDPageControl *pageControl;
+
+@property (assign) BOOL pageControlBeingUsed;
+
+@property (strong) IBOutlet UIButton *previousButton;
+@property (strong) IBOutlet UIButton *nextButton;
+
+- (void)scrollPage;
+- (void)checkButtons;
+
+- (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
+
+- (IBAction)done:(id)sender;
 - (IBAction)back:(id)sender;
 
 @end
