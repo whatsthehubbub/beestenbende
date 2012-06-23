@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
@@ -1513,11 +1514,9 @@ die strijden om de meeste punten.</string>
                         <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="fIc-hY-0xz"/>
                         <outlet property="titleLabel" destination="VmV-6v-w4x" id="qzc-HR-nzM"/>
                         <segue destination="aEm-4i-hHa" kind="push" identifier="FirstIssueIntroduction" id="fHu-b7-0Nr"/>
-                        <segue destination="viR-Ly-7kL" kind="push" identifier="SecondIssueIntroduction" id="l5h-Up-pLS"/>
-                        <segue destination="e3m-9K-xFw" kind="push" identifier="FinalIssueIntroduction" id="QAa-IR-dS6"/>
                         <segue destination="5Sb-GL-yMm" kind="push" id="7l1-2x-Ldd"/>
-                        <segue destination="PGG-bi-Ubz" kind="push" id="7LC-RQ-xs7"/>
-                        <segue destination="rPn-bJ-gLN" kind="push" id="cmy-uU-Pjz"/>
+                        <segue destination="PGG-bi-Ubz" kind="push" identifier="FinalIssueIntroduction" id="7LC-RQ-xs7"/>
+                        <segue destination="rPn-bJ-gLN" kind="push" identifier="SecondIssueIntroduction" id="cmy-uU-Pjz"/>
                     </connections>
                 </viewController>
             </objects>
@@ -6221,9 +6220,7 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="QAa-IR-dS6"/>
         <segue reference="fHu-b7-0Nr"/>
-        <segue reference="l5h-Up-pLS"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
         <segue reference="sz9-qc-ZZh"/>
