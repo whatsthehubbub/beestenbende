@@ -1513,8 +1513,7 @@ die strijden om de meeste punten.</string>
                         <outlet property="teamPictureFrame" destination="NbA-dD-FFm" id="WDk-dC-XCu"/>
                         <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="fIc-hY-0xz"/>
                         <outlet property="titleLabel" destination="VmV-6v-w4x" id="qzc-HR-nzM"/>
-                        <segue destination="aEm-4i-hHa" kind="push" identifier="FirstIssueIntroduction" id="fHu-b7-0Nr"/>
-                        <segue destination="5Sb-GL-yMm" kind="push" id="7l1-2x-Ldd"/>
+                        <segue destination="5Sb-GL-yMm" kind="push" identifier="FirstIssueIntroduction" id="7l1-2x-Ldd"/>
                         <segue destination="PGG-bi-Ubz" kind="push" identifier="FinalIssueIntroduction" id="7LC-RQ-xs7"/>
                         <segue destination="rPn-bJ-gLN" kind="push" identifier="SecondIssueIntroduction" id="cmy-uU-Pjz"/>
                     </connections>
@@ -6220,7 +6219,6 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fHu-b7-0Nr"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
         <segue reference="sz9-qc-ZZh"/>
