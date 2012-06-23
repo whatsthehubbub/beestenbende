@@ -5448,7 +5448,7 @@ Rik Nieuwdorp – Audio</string>
                                 <rect key="frame" x="75" y="141" width="170" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xuC-hd-mTS" customClass="BeestenButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xuC-hd-mTS" customClass="BeestenButton">
                                 <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -5512,7 +5512,7 @@ Rik Nieuwdorp – Audio</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uLR-hg-LlW" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <rect key="frame" x="133" y="418" width="167" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Ja, gevonden!">
