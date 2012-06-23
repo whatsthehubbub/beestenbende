@@ -97,8 +97,7 @@
 }
 
 - (IBAction)previous:(id)sender {
-    //[[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v2.wav"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
     
     if (self.pageControl.currentPage > 0) {
         self.pageControl.currentPage -= 1;
@@ -108,8 +107,7 @@
 }
 
 - (IBAction)next:(id)sender {
-    //[[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v2.wav"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
     
     if (self.pageControl.currentPage < pageControl.numberOfPages-1) {
         self.pageControl.currentPage += 1;
