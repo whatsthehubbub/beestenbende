@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
@@ -5480,7 +5479,7 @@ Rik Nieuwdorp – Audio</string>
                     <navigationItem key="navigationItem" id="qrX-Qo-SEj"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2600" y="-957"/>
+            <point key="canvasLocation" x="2042" y="-164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uvS-q7-vsb">
@@ -5567,7 +5566,7 @@ Rik Nieuwdorp – Audio</string>
                     <navigationItem key="navigationItem" id="i9M-sL-Vkr"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3034" y="-963"/>
+            <point key="canvasLocation" x="2527" y="-165"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="r7i-Vi-JzD">
@@ -6222,18 +6221,18 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fHu-b7-0Nr"/>
         <segue reference="QAa-IR-dS6"/>
+        <segue reference="fHu-b7-0Nr"/>
         <segue reference="l5h-Up-pLS"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="AoM-So-BHK"/>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
-        <segue reference="8jN-ZW-QTz"/>
         <segue reference="c8n-UF-cmF"/>
-        <segue reference="GhX-mS-cBD"/>
         <segue reference="fBl-OD-qSZ"/>
         <segue reference="WNU-Ah-KpY"/>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
+        <segue reference="GhX-mS-cBD"/>
+        <segue reference="8jN-ZW-QTz"/>
     </inferredMetricsTieBreakers>
 </document>
