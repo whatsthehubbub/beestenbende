@@ -105,7 +105,7 @@
 - (IBAction)next:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
     
-    if (self.pageControl.currentPage < 4) {
+    if (self.pageControl.currentPage < pageControl.numberOfPages-1) {
         self.pageControl.currentPage += 1;
         [self scrollPage];
     }

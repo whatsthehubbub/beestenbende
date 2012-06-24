@@ -74,7 +74,7 @@
     }
 }
 
-- (void)scrollPage:(id)sender {
+- (void)scrollPage {
     pageControlBeingUsed = YES;
     
     CGRect frame;
