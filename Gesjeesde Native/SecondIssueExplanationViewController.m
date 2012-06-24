@@ -69,6 +69,8 @@
 }
 
 - (void)scrollPage {
+    pageControlBeingUsed = YES;
+    
     CGRect frame;
     frame.origin.x = self.scrollView.frame.size.width * self.pageControl.currentPage;
     frame.origin.y = 0;
