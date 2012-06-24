@@ -493,11 +493,11 @@
             </objects>
             <point key="canvasLocation" x="1013" y="-805"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Splash View Controller-->
         <scene sceneID="oAu-2C-PM7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ga3-wu-Ssy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="rPn-bJ-gLN" sceneMemberID="viewController">
+                <viewController id="rPn-bJ-gLN" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t48-Sy-pNh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -525,15 +525,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="V5H-oP-1Ms"/>
-                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="zEn-V5-H0k"/>
+                                    <action selector="back:" destination="rPn-bJ-gLN" eventType="touchUpInside" id="qAd-BA-wUC"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-eel-icon-large.png" id="VKi-aj-riq">
                                 <rect key="frame" x="75" y="141" width="170" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="scT-hI-KsU" customClass="BeestenButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="scT-hI-KsU" customClass="BeestenButton">
                                 <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -545,8 +544,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="rPn-bJ-gLN" eventType="touchUpInside" id="36e-Ug-OxT"/>
                                     <action selector="next:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="tQe-oa-leM"/>
-                                    <segue destination="Vwl-8G-Q8z" kind="push" id="sPY-sr-OV0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De Zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="re7-rh-g92">
@@ -560,6 +559,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IbL-mO-OIM"/>
+                    <connections>
+                        <segue destination="Vwl-8G-Q8z" kind="push" identifier="Next" id="ej4-jd-UAr"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2042" y="481"/>
@@ -578,7 +580,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uYr-LT-gkD" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <rect key="frame" x="127" y="418" width="173" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Ja, gevonden!">
@@ -2841,7 +2843,7 @@ die strijden om de meeste punten.</string>
                                     </label>
                                 </subviews>
                                 <connections>
-                                    <outlet property="delegate" destination="ETL-EA-CCI" id="tzI-fG-NsM"/>
+                                    <outlet property="delegate" destination="JWb-Gt-s87" id="0fg-VT-veb"/>
                                 </connections>
                             </scrollView>
                         </subviews>
@@ -5418,11 +5420,11 @@ Rik Nieuwdorp – Audio</string>
             </objects>
             <point key="canvasLocation" x="9492" y="1116"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Splash View Controller-->
         <scene sceneID="E0o-ZR-fnM">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkr-Rd-ynP" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="5Sb-GL-yMm" sceneMemberID="viewController">
+                <viewController id="5Sb-GL-yMm" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sPa-Cy-el8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5450,7 +5452,7 @@ Rik Nieuwdorp – Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="Vj7-Mm-nHY"/>
+                                    <action selector="back:" destination="5Sb-GL-yMm" eventType="touchUpInside" id="FV6-j3-di2"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-squirrel-icon-large.png" id="bc3-vT-Tbx">
@@ -5469,8 +5471,8 @@ Rik Nieuwdorp – Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="5Sb-GL-yMm" eventType="touchUpInside" id="oDn-g7-jjP"/>
                                     <action selector="next:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="Yxl-84-eiD"/>
-                                    <segue destination="4ip-Ih-Udu" kind="push" id="rxM-0R-AHx"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De Vliegende Eekhoorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="One-rb-p2k">
@@ -5484,6 +5486,9 @@ Rik Nieuwdorp – Audio</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="qrX-Qo-SEj"/>
+                    <connections>
+                        <segue destination="4ip-Ih-Udu" kind="push" identifier="Next" id="pdk-lb-eRN"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2042" y="-164"/>
@@ -5575,11 +5580,11 @@ Rik Nieuwdorp – Audio</string>
             </objects>
             <point key="canvasLocation" x="2527" y="-165"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Splash View Controller-->
         <scene sceneID="r7i-Vi-JzD">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MT-dh-bHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="PGG-bi-Ubz" sceneMemberID="viewController">
+                <viewController id="PGG-bi-Ubz" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hks-Me-33v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5608,6 +5613,7 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="4tH-IK-WKb"/>
+                                    <action selector="back:" destination="PGG-bi-Ubz" eventType="touchUpInside" id="NFG-wv-nAo"/>
                                     <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="uvi-6j-MBr"/>
                                 </connections>
                             </button>
@@ -5615,7 +5621,7 @@ Rik Nieuwdorp – Audio</string>
                                 <rect key="frame" x="75" y="141" width="170" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WV2-L7-neF" customClass="BeestenButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WV2-L7-neF" customClass="BeestenButton">
                                 <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -5627,8 +5633,8 @@ Rik Nieuwdorp – Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="PGG-bi-Ubz" eventType="touchUpInside" id="N6H-Gb-CjX"/>
                                     <action selector="next:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="Nwy-9f-e2X"/>
-                                    <segue destination="yzE-93-vBD" kind="push" id="aPm-Rd-an2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Het Draakje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="YpZ-wV-t2r">
@@ -5642,6 +5648,9 @@ Rik Nieuwdorp – Audio</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="70b-jg-qSG"/>
+                    <connections>
+                        <segue destination="yzE-93-vBD" kind="push" identifier="Next" id="CAY-g4-g6G"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1570" y="1116"/>
@@ -6076,6 +6085,13 @@ Rik Nieuwdorp – Audio</string>
                 <relationship kind="outlet" name="team2Picture" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="team2ScoreLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="thanksLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="IssueSplashViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IssueSplashViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="done:"/>
             </relationships>
         </class>
         <class className="MakeTeamPicturesViewController" superclassName="UIViewController">

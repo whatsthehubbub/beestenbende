@@ -258,6 +258,7 @@
 		4EDEFAFD152B90C700324EDB /* toggle-trash-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 		4EF7F2491596826200DD9C63 /* i04_neemfoto_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7F2481596826200DD9C63 /* i04_neemfoto_v3.wav */; };
+		4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -576,6 +577,8 @@
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 		4EF7F2481596826200DD9C63 /* i04_neemfoto_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i04_neemfoto_v3.wav; sourceTree = "<group>"; };
+		4EF7F24C159697A200DD9C63 /* IssueSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueSplashViewController.h; sourceTree = "<group>"; };
+		4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueSplashViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -848,6 +851,8 @@
 				4E6E2A021593DBCC000EA338 /* AnimalPartsViewController.h */,
 				4E6E2A031593DBCC000EA338 /* AnimalPartsViewController.m */,
 				4ED69F641588F5A600F84D92 /* AnimalUnderstandsResponseViewController.h */,
+				4EF7F24C159697A200DD9C63 /* IssueSplashViewController.h */,
+				4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */,
 				4ED69F651588F5A600F84D92 /* AnimalUnderstandsResponseViewController.m */,
 				4ECB233A1587F61500F3CDCA /* AnimalUnderstandsViewController.h */,
 				4ECB233B1587F61700F3CDCA /* AnimalUnderstandsViewController.m */,
@@ -1294,6 +1299,7 @@
 				4ECE090E158FF59200868CD0 /* SplashViewController.m in Sources */,
 				4E6E2A041593DBCC000EA338 /* AnimalPartsViewController.m in Sources */,
 				4E6E2A081593DF6C000EA338 /* ExplanationViewController.m in Sources */,
+				4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
