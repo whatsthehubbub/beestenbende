@@ -593,7 +593,6 @@
                                 <connections>
                                     <action selector="done:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="5iQ-9M-zLf"/>
                                     <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="93W-UR-VZD"/>
-                                    <segue destination="viR-Ly-7kL" kind="push" id="Y74-q4-tRe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek de zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="X5b-Vv-Zkh" customClass="HeaderLabel">
@@ -630,6 +629,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aOD-8H-76c"/>
+                    <connections>
+                        <segue destination="viR-Ly-7kL" kind="push" identifier="Next" id="hHD-P9-itN"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2527" y="481"/>

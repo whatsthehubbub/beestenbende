@@ -114,11 +114,7 @@
 - (IBAction)done:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-    if (NO && /* Short circuit for quicker testing. TODO */ self.pageControl.currentPage != 3) {
-        [self next:self];
-    } else {
-        [self performSegueWithIdentifier:@"Next" sender:self];
-    }
+    [self performSegueWithIdentifier:@"Next" sender:self];
 }
 
 - (IBAction)back:(id)sender {
@@ -143,6 +139,8 @@
         int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
         
         self.pageControl.currentPage = page;
+        
+        [self checkButtons];
     }
 }
 
