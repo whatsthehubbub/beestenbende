@@ -259,6 +259,7 @@
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 		4EF7F2491596826200DD9C63 /* i04_neemfoto_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7F2481596826200DD9C63 /* i04_neemfoto_v3.wav */; };
 		4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */; };
+		4EF7F2521597931000DD9C63 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF7F2511597931000DD9C63 /* libFlurryAnalytics.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -579,6 +580,8 @@
 		4EF7F2481596826200DD9C63 /* i04_neemfoto_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i04_neemfoto_v3.wav; sourceTree = "<group>"; };
 		4EF7F24C159697A200DD9C63 /* IssueSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueSplashViewController.h; sourceTree = "<group>"; };
 		4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueSplashViewController.m; sourceTree = "<group>"; };
+		4EF7F2501597931000DD9C63 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
+		4EF7F2511597931000DD9C63 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -595,6 +598,7 @@
 				4EAE98DB151A618A0051C926 /* UIKit.framework in Frameworks */,
 				4EAE98DD151A618A0051C926 /* Foundation.framework in Frameworks */,
 				4EAE98DF151A618A0051C926 /* CoreGraphics.framework in Frameworks */,
+				4EF7F2521597931000DD9C63 /* libFlurryAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +852,7 @@
 		4EAE98E0151A618A0051C926 /* Gesjeesde Native */ = {
 			isa = PBXGroup;
 			children = (
+				4EF7F24F1597930D00DD9C63 /* FlurryAnalytics */,
 				4E6E2A021593DBCC000EA338 /* AnimalPartsViewController.h */,
 				4E6E2A031593DBCC000EA338 /* AnimalPartsViewController.m */,
 				4ED69F641588F5A600F84D92 /* AnimalUnderstandsResponseViewController.h */,
@@ -994,6 +999,15 @@
 				4EDEFAD6152B359D00324EDB /* FeaturePicture.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4EF7F24F1597930D00DD9C63 /* FlurryAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				4EF7F2501597931000DD9C63 /* FlurryAnalytics.h */,
+				4EF7F2511597931000DD9C63 /* libFlurryAnalytics.a */,
+			);
+			path = FlurryAnalytics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1354,6 +1368,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Gesjeesde Native/FlurryAnalytics\"",
+				);
 				PRODUCT_NAME = Beestenbende;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1410,6 +1428,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Gesjeesde Native/FlurryAnalytics\"",
+				);
 				PRODUCT_NAME = Beestenbende;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1421,6 +1443,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Gesjeesde Native/FlurryAnalytics\"",
+				);
 				PRODUCT_NAME = Beestenbende;
 				WRAPPER_EXTENSION = app;
 			};

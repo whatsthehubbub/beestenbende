@@ -20,6 +20,8 @@
     
     game = [[Game alloc] init];
     
+    [FlurryAnalytics startSession:@"226VFBNZRZN6QZP2DKN2"];
+    
     return YES;
 }
 							

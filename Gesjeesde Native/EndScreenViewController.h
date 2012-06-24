@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
+#import "FlurryAnalytics.h"
 
 @interface EndScreenViewController : UIViewController
 
