@@ -95,28 +95,30 @@
     
     [self.stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
         
-        NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
-        UIImage *image = [[UIImage alloc] initWithData:imageData];
+        // Check to see if the buffer is not Null
+        if (CMSampleBufferIsValid(imageSampleBuffer)) {
         
-        if (!continuous) {
-            // Pass the data using the UIImageView
-            imageView.contentMode = UIViewContentModeScaleAspectFill;
-            [imageView setImage:image];
+            NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
+            UIImage *image = [[UIImage alloc] initWithData:imageData];
             
-            // Slow
-            // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
-            
-            [self stopPreview];
-        } else {
-            // TODO flash the image view to show that a picture has been taken
-            
-            // Pass the data in some other way            
-            NSDictionary *userInfo = [NSDictionary dictionaryWithObject:image forKey:@"image"];
+            if (!continuous) {
+                // Pass the data using the UIImageView
+                imageView.contentMode = UIViewContentModeScaleAspectFill;
+                [imageView setImage:image];
+                
+                // Slow
+                // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
+                
+                [self stopPreview];
+            } else {
+                // TODO flash the image view to show that a picture has been taken
+                
+                // Pass the data in some other way            
+                NSDictionary *userInfo = [NSDictionary dictionaryWithObject:image forKey:@"image"];
 
-            [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:self userInfo:userInfo];
+                [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:self userInfo:userInfo];
+            }
         }
-        
-        // [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:nil];
     }];
 }
 
