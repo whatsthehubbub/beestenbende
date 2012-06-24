@@ -1742,7 +1742,7 @@ die strijden om de meeste punten.</string>
                     <navigationItem key="navigationItem" id="7Xj-bK-0tp"/>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4437" y="-758"/>
+            <point key="canvasLocation" x="3911" y="-770"/>
         </scene>
         <!--Feature Picture View Controller-->
         <scene sceneID="aSc-un-SDF">
@@ -2364,7 +2364,7 @@ die strijden om de meeste punten.</string>
                     <navigationItem key="navigationItem" id="00V-35-v7n"/>
                 </tableViewController>
             </objects>
-            <point key="canvasLocation" x="6361" y="-787"/>
+            <point key="canvasLocation" x="5835" y="-770"/>
         </scene>
         <!--Convince First Animal View Controller-->
         <scene sceneID="9Ez-FX-W4p">
@@ -2734,6 +2734,7 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="JWb-Gt-s87" eventType="touchUpInside" id="Nkp-7l-tnN"/>
                                     <segue destination="NDf-Ve-Xx0" kind="push" id="c8n-UF-cmF"/>
                                 </connections>
                             </button>
@@ -2788,8 +2789,7 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="previous" destination="ETL-EA-CCI" eventType="touchUpInside" id="LkA-2q-OhO"/>
-                                    <action selector="previous:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="F54-xc-js7"/>
+                                    <action selector="previous:" destination="JWb-Gt-s87" eventType="touchUpInside" id="5RQ-JE-EFB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="t4P-fY-9Hy">
@@ -2804,8 +2804,7 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next" destination="ETL-EA-CCI" eventType="touchUpInside" id="Nab-WZ-jee"/>
-                                    <action selector="next:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="UEH-oj-3ev"/>
+                                    <action selector="next:" destination="JWb-Gt-s87" eventType="touchUpInside" id="hMb-rp-QOW"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="1x8-zq-gbW">
@@ -2849,6 +2848,11 @@ die strijden om de meeste punten.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="AzQ-pQ-5iQ"/>
+                    <connections>
+                        <outlet property="nextButton" destination="t4P-fY-9Hy" id="gBM-rE-aby"/>
+                        <outlet property="previousButton" destination="7OU-j2-m6a" id="drL-GH-b0i"/>
+                        <outlet property="scrollView" destination="1x8-zq-gbW" id="wT9-9d-Kgh"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="6317" y="475"/>
@@ -5831,7 +5835,12 @@ Rik Nieuwdorp – Audio</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ConvinceSecondAnimalViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="next:"/>
+                <relationship kind="action" name="previous:"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
         <class className="CreditsViewController" superclassName="UIViewController">
