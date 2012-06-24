@@ -2737,7 +2737,6 @@ die strijden om de meeste punten.</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="JWb-Gt-s87" eventType="touchUpInside" id="Nkp-7l-tnN"/>
-                                    <segue destination="NDf-Ve-Xx0" kind="push" id="c8n-UF-cmF"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="pRB-uB-mHm">
@@ -2854,6 +2853,7 @@ die strijden om de meeste punten.</string>
                         <outlet property="nextButton" destination="t4P-fY-9Hy" id="gBM-rE-aby"/>
                         <outlet property="previousButton" destination="7OU-j2-m6a" id="drL-GH-b0i"/>
                         <outlet property="scrollView" destination="1x8-zq-gbW" id="wT9-9d-Kgh"/>
+                        <segue destination="NDf-Ve-Xx0" kind="push" identifier="Next" id="XVp-wt-Sm6"/>
                     </connections>
                 </viewController>
             </objects>
@@ -6258,7 +6258,7 @@ Rik Nieuwdorp – Audio</string>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
         <segue reference="8jN-ZW-QTz"/>
-        <segue reference="c8n-UF-cmF"/>
+        <segue reference="XVp-wt-Sm6"/>
         <segue reference="fBl-OD-qSZ"/>
         <segue reference="WNU-Ah-KpY"/>
         <segue reference="GhX-mS-cBD"/>

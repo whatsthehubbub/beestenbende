@@ -75,6 +75,21 @@
     frame.size = self.scrollView.frame.size;
     
     [self.scrollView scrollRectToVisible:frame animated:YES];
+    
+    [self checkButtons];
+}
+
+- (void)checkButtons {
+    self.previousButton.enabled = YES;
+    self.nextButton.enabled = YES;
+    
+    if (self.pageControl.currentPage == 0) {
+        self.previousButton.enabled = NO;
+    }
+    
+    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
+        self.nextButton.enabled = NO;
+    }
 }
 
 - (IBAction)previous:(id)sender {
@@ -85,11 +100,6 @@
         
         [self scrollPage];
     }
-    
-    self.nextButton.enabled = YES;
-    if (self.pageControl.currentPage == 0) {
-        self.previousButton.enabled = NO;
-    }
 }
 
 - (IBAction)next:(id)sender {
@@ -98,11 +108,6 @@
     if (self.pageControl.currentPage < 4) {
         self.pageControl.currentPage += 1;
         [self scrollPage];
-    }
-    
-    self.previousButton.enabled = YES;
-    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
-        self.nextButton.enabled = NO;
     }
 }
 
