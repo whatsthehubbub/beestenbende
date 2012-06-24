@@ -22,7 +22,9 @@
 @property (strong) IBOutlet UIButton *previousButton;
 @property (strong) IBOutlet UIButton *nextButton;
 
-- (void)scrollPage:(id)sender;
+- (void)scrollPage;
+- (void)checkButtons;
+
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
 - (IBAction)example:(id)sender;

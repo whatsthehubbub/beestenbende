@@ -566,11 +566,11 @@
             </objects>
             <point key="canvasLocation" x="2042" y="481"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Splash View Controller-->
         <scene sceneID="nCv-RD-v7D">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtQ-6E-Bv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Vwl-8G-Q8z" sceneMemberID="viewController">
+                <viewController id="Vwl-8G-Q8z" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdn-uX-S8q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -591,6 +591,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="5iQ-9M-zLf"/>
                                     <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="93W-UR-VZD"/>
                                     <segue destination="viR-Ly-7kL" kind="push" id="Y74-q4-tRe"/>
                                 </connections>
@@ -615,6 +616,7 @@
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="TnL-2Z-SHF"/>
+                                    <action selector="back:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="Tzj-hg-ELP"/>
                                     <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="xtH-Sq-8ZL"/>
                                 </connections>
                             </button>
@@ -5512,11 +5514,11 @@ Rik Nieuwdorp – Audio</string>
             </objects>
             <point key="canvasLocation" x="-64" y="-2156"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Splash View Controller-->
         <scene sceneID="tfG-hs-F3d">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xxr-gJ-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="4ip-Ih-Udu" sceneMemberID="viewController">
+                <viewController id="4ip-Ih-Udu" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ey-df-rHD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5537,6 +5539,7 @@ Rik Nieuwdorp – Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="4ip-Ih-Udu" eventType="touchUpInside" id="M67-EV-4t3"/>
                                     <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="cEc-RW-jjv"/>
                                     <segue destination="aEm-4i-hHa" kind="push" id="QyZ-NX-iFp"/>
                                 </connections>
@@ -5561,6 +5564,7 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="Jkb-21-TmM"/>
+                                    <action selector="back:" destination="4ip-Ih-Udu" eventType="touchUpInside" id="kux-y8-ciB"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="ozD-1G-oAa"/>
                                 </connections>
                             </button>

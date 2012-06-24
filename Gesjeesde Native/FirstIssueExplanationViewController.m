@@ -83,6 +83,21 @@
     frame.size = self.scrollView.frame.size;
     
     [self.scrollView scrollRectToVisible:frame animated:YES];
+    
+    [self checkButtons];
+}
+
+- (void)checkButtons {
+    self.previousButton.enabled = YES;
+    self.nextButton.enabled = YES;
+    
+    if (self.pageControl.currentPage == 0) {
+        self.previousButton.enabled = NO;
+    }
+    
+    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
+        self.nextButton.enabled = NO;
+    }
 }
 
 - (IBAction)previous:(id)sender {
@@ -91,12 +106,7 @@
     if (self.pageControl.currentPage > 0) {
         self.pageControl.currentPage -= 1;
         
-        [self scrollPage:self];
-    }
-    
-    self.nextButton.enabled = YES;
-    if (self.pageControl.currentPage == 0) {
-        self.previousButton.enabled = NO;
+        [self scrollPage];
     }
 }
 
@@ -105,12 +115,7 @@
     
     if (self.pageControl.currentPage < 4) {
         self.pageControl.currentPage += 1;
-        [self scrollPage:self];
-    }
-    
-    self.previousButton.enabled = YES;
-    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
-        self.nextButton.enabled = NO;
+        [self scrollPage];
     }
 }
 
@@ -143,7 +148,7 @@
 	DDPageControl *thePageControl = (DDPageControl *)sender;
     
     self.pageControl.currentPage = thePageControl.currentPage;
-    [self scrollPage:sender];
+    [self scrollPage];
     
     //	// we need to scroll to the new index
     //	[scrollView setContentOffset: CGPointMake(scrollView.bounds.size.width * thePageControl.currentPage, scrollView.contentOffset.y) animated: YES] ;
