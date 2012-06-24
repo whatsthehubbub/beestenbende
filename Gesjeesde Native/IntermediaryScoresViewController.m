@@ -80,14 +80,14 @@
         [game resetForNextIssue];
         
         // Go to the first screen of the second issue
-        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueIntroduction"];
+        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueSplash"];
         [self.navigationController pushViewController:viewController animated:YES];
     } else if (game.issue == 2) {
         game.issue = 3;
         [game resetForNextIssue];
         
         // Go to the first screen of the dragon
-        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FinalIssueIntroduction"];
+        UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FinalIssueSplash"];
         [self.navigationController pushViewController:viewController animated:YES];
     } else if (game.issue == 3) {
         [self performSegueWithIdentifier:@"EndScreen" sender:sender];

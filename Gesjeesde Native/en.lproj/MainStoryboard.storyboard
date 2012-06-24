@@ -497,7 +497,7 @@
         <scene sceneID="oAu-2C-PM7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ga3-wu-Ssy" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="rPn-bJ-gLN" customClass="IssueSplashViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondIssueSplash" id="rPn-bJ-gLN" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t48-Sy-pNh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3537,7 +3537,7 @@ die strijden om de meeste punten.</string>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7977" y="436"/>
+            <point key="canvasLocation" x="7441" y="466"/>
         </scene>
         <!--Team Feature Picker View Controller-->
         <scene sceneID="0xp-NP-yXF">
@@ -5584,7 +5584,7 @@ Rik Nieuwdorp – Audio</string>
         <scene sceneID="r7i-Vi-JzD">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MT-dh-bHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="PGG-bi-Ubz" customClass="IssueSplashViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinalIssueSplash" id="PGG-bi-Ubz" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hks-Me-33v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -6254,15 +6254,15 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
+        <segue reference="8jN-ZW-QTz"/>
         <segue reference="c8n-UF-cmF"/>
         <segue reference="fBl-OD-qSZ"/>
         <segue reference="WNU-Ah-KpY"/>
         <segue reference="GhX-mS-cBD"/>
-        <segue reference="8jN-ZW-QTz"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="AoM-So-BHK"/>
     </inferredMetricsTieBreakers>
 </document>
