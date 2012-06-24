@@ -398,7 +398,7 @@
                                     </label>
                                 </subviews>
                                 <connections>
-                                    <outlet property="delegate" destination="gnf-ri-JiR" id="gmg-iQ-e7e"/>
+                                    <outlet property="delegate" destination="vvi-fO-Lr8" id="IVd-XP-e6Q"/>
                                 </connections>
                             </scrollView>
                             <pageControl contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="KeN-ef-i7V">
@@ -5440,7 +5440,7 @@ Rik Nieuwdorp – Audio</string>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZWv-gR-Rik">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZWv-gR-Rik">
                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
