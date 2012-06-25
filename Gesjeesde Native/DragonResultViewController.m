@@ -57,40 +57,41 @@
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
     self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft: %@.", [class lowercaseString], featurePicture.feature];
-    
-//    int points = [game pointsForFeaturePicture:featurePicture];
-
-    NSString *explanation = [[game getFeatureWithName:featurePicture.feature] objectForKey:@"Explanation"];
-    
+        
     if (currentTeam.dragonClass == 0) {
         // If fish has been chosen
         
-        if ([game feature:featurePicture.feature presentInAnimal:@"Fish"]) {
-            // And a fish feature
-            self.explanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
+        NSDictionary *feature = [game getFeatureWithName:featurePicture.feature];
+        
+        if ([[feature objectForKey:@"Vis"] intValue] == 0) {
+            self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben %@. Kan je nog meer bewijs vinden? We hebben nog %d bewijs/zen nodig om iedereen te overtuigen.", [featurePicture.feature lowercaseString], 3-currentTeam.dragonProofs];
             
             currentTeam.dragonProofs += 1;
+            currentTeam.points += 10;
+        } else if ([[feature objectForKey:@"Vis"] intValue] == 1) {
+            self.explanationLabel.text = [NSString stringWithFormat:@"Goed! Ik heb %@. Ik ben een vis! En vissen hebben %@. Maar wij zijn niet de enige groep met %@. Zie je ook iets aan mij dat alleen vissen hebben? We hebben nog %d bewijs/zen nodig om iedereen te overtuigen.", [featurePicture.feature lowercaseString], [featurePicture.feature lowercaseString], [featurePicture.feature lowercaseString], 3-currentTeam.dragonProofs];
             
-            // Add the issues points for this team
+            currentTeam.dragonProofs += 1;
             currentTeam.points += 10;
         } else {
-            // A not fish feature is wrong
-            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
+            self.explanationLabel.text = [NSString stringWithFormat:@"Huh? Heb jij wel eens een vis gezien met %@? Daar geloof ik niets van! Kijk nog eens goed.", [featurePicture.feature lowercaseString]];
         }
     } else {
         // Wrong class alltogether so wrong in any case
-        NSDictionary *feature = [game getFeatureWithName:featurePicture.feature];
         
-        if  ((currentTeam.dragonClass == 1 && [[feature objectForKey:@"Zoogdier"] intValue] == 2)
-             ||
-             (currentTeam.dragonClass == 2 && [[feature objectForKey:@"Reptiel"] intValue] == 2)
-             ||
-             (currentTeam.dragonClass == 3 && [[feature objectForKey:@"Vogel"] intValue] == 2)) {
-            // Feature and class do not match
-            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
+        if ([game feature:featurePicture.feature presentInAnimal:@"Vis"]) {
+            if ((currentTeam.dragonClass == 1 && [game feature:featurePicture.feature presentInAnimal:@"Zoogdier"]) || 
+                (currentTeam.dragonClass == 2 && [game feature:featurePicture.feature presentInAnimal:@"Reptiel"]) ||
+                (currentTeam.dragonClass == 3 && [game feature:featurePicture.feature presentInAnimal:@"Vogel"])) {
+                // Correct for dragon and for chosen class
+                self.explanationLabel.text = [NSString stringWithFormat:@"Ja, ik heb inderdaad %@, maar ik ben geen %@. Denk goed na: welke diergroep heeft ook %@?", [featurePicture.feature lowercaseString], [class lowercaseString], [featurePicture.feature lowercaseString]];
+            } else {
+                // Correct for dragon but not for chosen class
+                self.explanationLabel.text = [NSString stringWithFormat:@"Inderdaad, ik heb %@. Maar een %@ heeft toch geen %@! Denk goed na: welke diergroep heeft wel %@?", [featurePicture.feature lowercaseString], [class lowercaseString], [featurePicture.feature lowercaseString], [featurePicture.feature lowercaseString]];
+            }
         } else {
-            // Feature and class do match, but it is the wrong class
-            self.explanationLabel.text = [NSString stringWithFormat:@"Fout want: %@ Maar ik ben geen %@!", explanation, [class lowercaseString]];
+            // Correct for neither
+            self.explanationLabel.text = [NSString stringWithFormat:@"Haha! Gefopt. Ik heb helemaal geen %@. Kijk nog eens goed.", [featurePicture.feature lowercaseString]];
         }
     }
     

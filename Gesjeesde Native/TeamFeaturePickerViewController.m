@@ -79,7 +79,7 @@
         cell.imageView.image = fp.image;
     } else {
         cell.textLabel.text = @"Pas!";
-    
+    }
     
     return cell;
 }
