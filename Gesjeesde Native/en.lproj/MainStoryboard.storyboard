@@ -743,7 +743,7 @@
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sg3-O5-luJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sg3-O5-luJ">
                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -754,6 +754,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="back:" destination="e3m-9K-xFw" eventType="touchUpInside" id="ibj-Xb-BC8"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="9Ga-TH-WKl">
                                 <rect key="frame" x="127" y="246" width="193" height="234"/>
@@ -5658,11 +5661,11 @@ Rik Nieuwdorp – Audio</string>
             </objects>
             <point key="canvasLocation" x="1570" y="1116"/>
         </scene>
-        <!--View Controller-->
+        <!--Issue Splash View Controller-->
         <scene sceneID="kKk-M4-neV">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9z0-Sm-wqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="yzE-93-vBD" sceneMemberID="viewController">
+                <viewController id="yzE-93-vBD" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5s-la-6jB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5672,7 +5675,7 @@ Rik Nieuwdorp – Audio</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4YD-Jv-GLW" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <rect key="frame" x="135" y="418" width="165" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Ja, gevonden!">
@@ -5683,8 +5686,8 @@ Rik Nieuwdorp – Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="yzE-93-vBD" eventType="touchUpInside" id="0FO-Cz-YZw"/>
                                     <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="cfw-Y9-25a"/>
-                                    <segue destination="e3m-9K-xFw" kind="push" id="HgT-Y5-1nm"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek het draakje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="k1F-os-SQJ" customClass="HeaderLabel">
@@ -5706,8 +5709,7 @@ Rik Nieuwdorp – Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="Vce-Tj-mfn"/>
-                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="jgQ-rf-9Ni"/>
+                                    <action selector="back:" destination="yzE-93-vBD" eventType="touchUpInside" id="zqt-oc-C2Q"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="zoek-foto-draak.jpg" id="oZu-kQ-N8P">
@@ -5722,6 +5724,9 @@ Rik Nieuwdorp – Audio</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="pA8-Vb-1F1"/>
+                    <connections>
+                        <segue destination="e3m-9K-xFw" kind="push" identifier="Next" id="foh-uf-2hW"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2002" y="1116"/>
@@ -5965,6 +5970,7 @@ Rik Nieuwdorp – Audio</string>
         <class className="DragonStartViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonStartViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next:"/>
             </relationships>
         </class>

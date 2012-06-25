@@ -14,5 +14,6 @@
 @interface DragonStartViewController : UIViewController
 
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end
