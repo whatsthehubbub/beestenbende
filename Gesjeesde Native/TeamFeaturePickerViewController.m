@@ -60,7 +60,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return team.featurePictures.count;
+    return team.featurePictures.count + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -71,11 +71,15 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    
-    FeaturePicture *fp = [team.featurePictures objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = fp.feature;
-    cell.imageView.image = fp.image;
+ 
+    if (indexPath.row < team.featurePictures.count) {
+        FeaturePicture *fp = [team.featurePictures objectAtIndex:indexPath.row];
+        
+        cell.textLabel.text = fp.feature;
+        cell.imageView.image = fp.image;
+    } else {
+        cell.textLabel.text = @"Pass";
+    }
     
     return cell;
 }
