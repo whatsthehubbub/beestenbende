@@ -78,8 +78,8 @@
         cell.textLabel.text = fp.feature;
         cell.imageView.image = fp.image;
     } else {
-        cell.textLabel.text = @"Pass";
-    }
+        cell.textLabel.text = @"Pas!";
+    
     
     return cell;
 }
