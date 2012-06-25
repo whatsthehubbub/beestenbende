@@ -23,6 +23,8 @@
 
 
 - (void)scrollPage;
+- (void)checkButtons;
+
 - (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
 - (IBAction)done:(id)sender;
