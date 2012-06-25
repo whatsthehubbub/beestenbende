@@ -78,6 +78,19 @@
     [self.scrollView scrollRectToVisible:frame animated:YES];
 }
 
+- (void)checkButtons {
+    self.previousButton.enabled = YES;
+    self.nextButton.enabled = YES;
+    
+    if (self.pageControl.currentPage == 0) {
+        self.previousButton.enabled = NO;
+    }
+    
+    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
+        self.nextButton.enabled = NO;
+    }
+}
+
 - (IBAction)previous {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
     
@@ -87,10 +100,7 @@
         [self scrollPage];
     }
     
-    self.nextButton.enabled = YES;
-    if (self.pageControl.currentPage == 0) {
-        self.previousButton.enabled = NO;
-    }
+    [self checkButtons];
 }
 
 - (IBAction)next {
@@ -102,10 +112,7 @@
         [self scrollPage];
     }
     
-    self.previousButton.enabled = YES;
-    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
-        self.nextButton.enabled = NO;
-    }
+    [self checkButtons];
 }
 
 - (IBAction)done {
@@ -138,6 +145,8 @@
         
         self.pageControl.currentPage = page;
     }
+    
+    [self checkButtons];
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
