@@ -90,8 +90,6 @@
     
 }
 
-#pragma mark - Table view delegate
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i11_menu-select-close.wav"];

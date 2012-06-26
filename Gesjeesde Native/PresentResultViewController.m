@@ -53,50 +53,61 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    team1featureLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1featureLabel.font.pointSize];
-    team2featureLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2featureLabel.font.pointSize];
-    
     team1fp = [game.team1 featurePictureForTurn:game.turn];
     
-    FEATURE_RESULT team1result = [game resultForFeaturePicture:team1fp];
     int team1points = 0;
-    if (team1result == FEATURE_YES_UNIQUE) {
-        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
-        team1points = 10;
-    } else if (team1result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team1result == FEATURE_NO_INCORRECT) {
-        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
-        team1points = 5;
+    
+    if (team1fp) {
+        FEATURE_RESULT team1result = [game resultForFeaturePicture:team1fp];
+        if (team1result == FEATURE_YES_UNIQUE) {
+            [self.team1pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
+            team1points = 10;
+        } else if (team1result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team1result == FEATURE_NO_INCORRECT) {
+            [self.team1pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
+            team1points = 5;
+        } else {
+            [self.team1pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
+            team1points = 0; // Superfluous but for clarity
+        }
+        [self.team1featureLabel setText:team1fp.feature];
+        self.team1featureImage.image = team1fp.image;
     } else {
-        [self.team1pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
-        team1points = 0;
+        self.team1pointsImage.image = nil;
+        
+        self.team1featureLabel.text = @"";
+        self.team1featureImage.image = nil;
     }
     
     game.team1.points += team1points;
     
-    [self.team1featureLabel setText:team1fp.feature];
-    self.team1featureImage.image = team1fp.image;
     
-
-    // Do exactly the same thing for team 2
     team2fp = [game.team2 featurePictureForTurn:game.turn];
-
-    FEATURE_RESULT team2result = [game resultForFeaturePicture:team2fp];
+    
     int team2points = 0;
-    if (team2result == FEATURE_YES_UNIQUE) {
-        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
-        team2points = 10;
-    } else if (team2result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team2result == FEATURE_NO_INCORRECT) {
-        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
-        team2points = 5;
+    
+    if (team2fp) {
+        FEATURE_RESULT team2result = [game resultForFeaturePicture:team2fp];
+        if (team2result == FEATURE_YES_UNIQUE) {
+            [self.team2pointsImage setImage:[UIImage imageNamed:@"points-uniek.png"]];
+            team2points = 10;
+        } else if (team2result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team2result == FEATURE_NO_INCORRECT) {
+            [self.team2pointsImage setImage:[UIImage imageNamed:@"points-goed.png"]];
+            team2points = 5;
+        } else {
+            [self.team2pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
+            team2points = 0; // Superfluous but for clarity
+        }
+        [self.team2featureLabel setText:team2fp.feature];
+        self.team2featureImage.image = team2fp.image;
     } else {
-        [self.team2pointsImage setImage:[UIImage imageNamed:@"points-fout.png"]];
-        team2points = 0;
+        self.team2pointsImage.image = nil;
+        
+        self.team2featureLabel.text = @"";
+        self.team2featureImage.image = nil;
     }
     
     game.team2.points += team2points;
-    
-    [self.team2featureLabel setText:team2fp.feature];
-    self.team2featureImage.image = team2fp.image;
+
     
     // Update some user interface
     NSString *present = @"wel";

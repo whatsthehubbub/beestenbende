@@ -152,11 +152,20 @@
 
 - (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {
     
-    self.currentFeaturePicture = [self.currentTeam.featurePictures objectAtIndex:index];
-    
-    self.featureImageView.image = self.currentFeaturePicture.image;
-    
-    [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
+    if (index < self.currentTeam.featurePictures.count) {    
+        self.currentFeaturePicture = [self.currentTeam.featurePictures objectAtIndex:index];
+        
+        self.featureImageView.image = self.currentFeaturePicture.image;
+        
+        [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
+    } else {
+        // Pass picked
+        
+        self.currentFeaturePicture = nil;
+        self.featureImageView.image = nil;
+        
+        [self.featureButton setTitle:@"Pas!" forState:UIControlStateNormal];
+    }
     
     [self.navigationController popViewControllerAnimated:YES];
     

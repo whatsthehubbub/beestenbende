@@ -104,27 +104,4 @@
     featurePictures = [[NSMutableArray alloc] init];
 }
 
-//#pragma mark NSCoding
-//
-//- (void)encodeWithCoder:(NSCoder *)aCoder {
-//    [aCoder encodeInt:self.number forKey:kTeamNumberKey];
-//}
-//
-//- (id)initWithCoder:(NSCoder *)aDecoder {
-//    if (self = [super init]) {
-//        self.number = [aDecoder decodeIntForKey:kTeamNumberKey];
-//    }
-//    
-//    return self;
-//}
-
-//#pragma mark -
-//#pragma mark NSCopying
-//
-//- (id)copyWithZone:(NSZone *)zone {
-//    Team *team = [[[self class] allocWithZone:zone] init];
-//    team.number = self.number;
-//    return team;
-//}
-
 @end
