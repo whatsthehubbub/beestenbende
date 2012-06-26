@@ -29,8 +29,12 @@
     CaptureSessionManager *csManager;
 }
 
+@property (strong) IBOutlet UILabel *headerLabel;
+
 @property (nonatomic, retain) IBOutlet UILabel *timeLabel;
 @property (nonatomic, retain) IBOutlet UILabel *imagesLabel;
+
+@property (strong) IBOutlet UIImageView *timeUpImage;
 @property (nonatomic, retain) IBOutlet UILabel *timeUpLabel;
 
 @property (nonatomic, retain) IBOutlet UIImageView *pictureView;

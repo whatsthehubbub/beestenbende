@@ -1788,6 +1788,17 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="clock.png" id="liQ-gz-0gT">
+                                <rect key="frame" x="35" y="109" width="249" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Roep het andere team er weer bij." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GPT-hi-9L0">
+                                <rect key="frame" x="20" y="379" width="280" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1pI-Nz-eIs" customClass="BeestenButton">
                                 <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1803,13 +1814,6 @@ die strijden om de meeste punten.</string>
                                     <action selector="takeFeaturePicture:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="zv6-Pn-lXz"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De tijd is op!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dfl-IA-BBZ" customClass="NormalLabel">
-                                <rect key="frame" x="40" y="229" width="240" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-clock.png" id="sfJ-69-6FS">
                                 <rect key="frame" x="40" y="84" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1861,94 +1865,22 @@ die strijden om de meeste punten.</string>
                     <navigationItem key="navigationItem" id="Hfm-BP-Gk7"/>
                     <connections>
                         <outlet property="doneButton" destination="5Q1-KH-j0a" id="KAv-ug-LTF"/>
+                        <outlet property="headerLabel" destination="9XZ-VN-APE" id="3op-Tz-3SJ"/>
                         <outlet property="imagesLabel" destination="tv8-fi-k7e" id="9x6-3P-50i"/>
                         <outlet property="pictureFrame" destination="9Wr-fn-qC2" id="Q3i-ly-XbY"/>
                         <outlet property="pictureView" destination="Xa1-Hl-WNi" id="OKI-si-Xr8"/>
                         <outlet property="takePictureButton" destination="1pI-Nz-eIs" id="iID-2b-jFh"/>
                         <outlet property="teamOverlay" destination="wRd-MK-2wJ" id="Q4z-TE-HNi"/>
                         <outlet property="timeLabel" destination="qT8-zr-JJV" id="rqa-NI-xZZ"/>
-                        <outlet property="timeUpLabel" destination="dfl-IA-BBZ" id="tZa-if-J5T"/>
+                        <outlet property="timeUpImage" destination="liQ-gz-0gT" id="VnH-Ad-iLC"/>
+                        <outlet property="timeUpLabel" destination="GPT-hi-9L0" id="0gR-Qd-phL"/>
                         <segue destination="mhP-gb-YWU" kind="push" identifier="NextTeamPrepare" id="gvp-bG-FzK"/>
                         <segue destination="7jx-Og-bWS" kind="push" identifier="LabelFirst" id="KVj-xd-ewv"/>
                         <segue destination="Moc-nT-lay" kind="push" identifier="LabelSecond" id="ukb-al-fCe"/>
-                        <segue destination="Lhx-2a-sFZ" kind="push" id="Zyi-dB-cu3"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="4394" y="-165"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="pAh-jA-BqE">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="37F-22-FzN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Lhx-2a-sFZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uby-FP-Uex">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="82A-ng-bBk">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="dNC-DX-Hpg"/>
-                                </connections>
-                            </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="7jL-Ai-Jsw" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="418" width="240" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Klaar">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="next:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="pZg-NK-gYd"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="fqb-hz-4J4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="9tO-nm-lEs">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De tijd is op!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="P39-ow-pZA" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="clock.png" id="1pn-rT-5Nb">
-                                <rect key="frame" x="35.5" y="109" width="249" height="262"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Roep het andere team er weer bij." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="MpZ-JK-y8q">
-                                <rect key="frame" x="20" y="379" width="280" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VA7-EP-HJu"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="4394" y="475"/>
         </scene>
         <!--Team Prepare View Controller-->
         <scene sceneID="L1C-Nq-hfS">
@@ -6039,12 +5971,14 @@ Rik Nieuwdorp – Audio</string>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="takeFeaturePicture:"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="imagesLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pictureFrame" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="pictureView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="takePictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeUpImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="timeUpLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -6269,8 +6203,5 @@ Rik Nieuwdorp – Audio</string>
     <inferredMetricsTieBreakers>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="pY3-Mn-Wz0"/>
-        <segue reference="iYQ-bF-g8K"/>
     </inferredMetricsTieBreakers>
 </document>

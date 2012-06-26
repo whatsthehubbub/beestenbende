@@ -14,8 +14,12 @@
 
 @implementation FeaturePictureViewController
 
+@synthesize headerLabel;
+
 @synthesize timeLabel;
 @synthesize imagesLabel;
+
+@synthesize timeUpImage;
 @synthesize timeUpLabel;
 
 @synthesize pictureView;
@@ -126,6 +130,11 @@
     pictureView.hidden = YES;
     pictureFrame.hidden = YES;
     takePictureButton.hidden = YES;
+    
+    headerLabel.text = @"De tijd is op!";
+    timeUpImage.hidden = NO;
+    timeUpLabel.hidden = NO;
+    
     doneButton.hidden = NO;
 }
 
