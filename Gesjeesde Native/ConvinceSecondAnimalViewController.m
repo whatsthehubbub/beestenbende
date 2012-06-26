@@ -106,7 +106,6 @@
 }
 
 - (IBAction)next:(id)sender {
-    // [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v3.wav"];
     [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
     
     if (self.pageControl.currentPage < pageControl.numberOfPages-1) {

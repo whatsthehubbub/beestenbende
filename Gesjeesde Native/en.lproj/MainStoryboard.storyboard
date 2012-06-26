@@ -3099,7 +3099,6 @@ die strijden om de meeste punten.</string>
                         <outlet property="overlayImage" destination="RxL-gE-LAJ" id="4nE-52-OU8"/>
                         <outlet property="yesNoButton" destination="xtc-7C-RXk" id="R5G-uQ-ZMR"/>
                         <segue destination="4Xr-pd-4cz" kind="push" identifier="Result" id="OEt-II-FtC"/>
-                        <segue destination="bTt-EX-SMb" kind="push" id="ynJ-lX-12N"/>
                     </connections>
                 </viewController>
             </objects>
@@ -3222,7 +3221,6 @@ die strijden om de meeste punten.</string>
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="4Xr-pd-4cz" eventType="touchUpInside" id="45S-zO-c5N"/>
-                                    <segue destination="TCN-yU-vb0" kind="push" identifier="Explanation" id="sVV-ME-Caj"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="points-uniek.png" id="egx-QW-1QD">
@@ -3260,6 +3258,7 @@ die strijden om de meeste punten.</string>
                         <outlet property="team2featureLabel" destination="V8k-Pf-c7m" id="0vl-DM-sWn"/>
                         <outlet property="team2pointsImage" destination="Smo-zc-9YY" id="Oun-EZ-xGh"/>
                         <outlet property="yesNoLabel" destination="sfT-N2-DFH" id="F3y-D5-AlV"/>
+                        <segue destination="bTt-EX-SMb" kind="push" identifier="Explanation" id="zBp-IS-FMf"/>
                     </connections>
                 </viewController>
             </objects>
@@ -3444,20 +3443,16 @@ die strijden om de meeste punten.</string>
                         <outlet property="team2FeatureLabel" destination="LAs-K7-Q0F" id="R6X-17-b1w"/>
                         <outlet property="team2NameLabel" destination="jTu-fr-lnI" id="oKp-Jd-U0M"/>
                         <outlet property="team2ResultAndExplanationLabel" destination="sa9-gU-vGf" id="b7H-cA-LW7"/>
-                        <segue destination="rTe-1j-Lla" kind="push" identifier="FirstProofComplete" id="kad-dS-1pc"/>
-                        <segue destination="1eD-BL-qUt" kind="push" identifier="SecondProofComplete" id="86t-uD-NCK"/>
-                        <segue destination="Kgz-tg-9iE" kind="push" identifier="AnotherRoundFirstIssue" id="qsg-AI-tMp"/>
-                        <segue destination="NDf-Ve-Xx0" kind="push" identifier="AnotherRoundSecondIssue" id="lq6-15-k7c"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7984" y="-165"/>
+            <point key="canvasLocation" x="7888" y="-126"/>
         </scene>
-        <!--View Controller-->
+        <!--Explain Feature View Controller-->
         <scene sceneID="F2H-N0-PIK">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrz-fZ-A9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="bTt-EX-SMb" sceneMemberID="viewController">
+                <viewController id="bTt-EX-SMb" customClass="ExplainFeatureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cDG-JA-I4d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3517,6 +3512,7 @@ die strijden om de meeste punten.</string>
                                 <connections>
                                     <action selector="back:" destination="TCN-yU-vb0" eventType="touchUpInside" id="KBF-sn-cr7"/>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="nfG-pZ-EQF"/>
+                                    <action selector="back:" destination="bTt-EX-SMb" eventType="touchUpInside" id="p1I-9z-Kcv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nhN-iR-pgD" customClass="ArrowRight">
@@ -3531,6 +3527,7 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="done:" destination="bTt-EX-SMb" eventType="touchUpInside" id="2cB-rk-16b"/>
                                     <action selector="done:" destination="TCN-yU-vb0" eventType="touchUpInside" id="JW0-yg-1dD"/>
                                 </connections>
                             </button>
@@ -3539,11 +3536,17 @@ die strijden om de meeste punten.</string>
                     </view>
                     <navigationItem key="navigationItem" id="DST-A7-LpF"/>
                     <connections>
-                        <segue destination="4Xr-pd-4cz" kind="push" id="A6V-em-HtB"/>
+                        <outlet property="team1FeatureImage" destination="vhi-l6-377" id="dyu-DH-cJV"/>
+                        <outlet property="team1FeatureLabel" destination="n4o-Si-akp" id="Zvc-O0-CaE"/>
+                        <outlet property="team1ResultAndExplanationLabel" destination="dNh-td-Cgx" id="pel-WO-l1u"/>
+                        <segue destination="NDf-Ve-Xx0" kind="push" identifier="AnotherRoundSecondIssue" id="aaR-lP-uRL"/>
+                        <segue destination="Kgz-tg-9iE" kind="push" identifier="AnotherRoundFirstIssue" id="FX2-j6-7Cj"/>
+                        <segue destination="rTe-1j-Lla" kind="push" identifier="FirstProofComplete" id="R09-DV-NBC"/>
+                        <segue destination="1eD-BL-qUt" kind="push" identifier="SecondProofComplete" id="Fpf-7m-p7F"/>
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="7441" y="466"/>
+            <point key="canvasLocation" x="7888" y="475"/>
         </scene>
         <!--Team Feature Picker View Controller-->
         <scene sceneID="0xp-NP-yXF">
@@ -6269,10 +6272,5 @@ Rik Nieuwdorp – Audio</string>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
-        <segue reference="8jN-ZW-QTz"/>
-        <segue reference="XVp-wt-Sm6"/>
-        <segue reference="fBl-OD-qSZ"/>
-        <segue reference="WNU-Ah-KpY"/>
-        <segue reference="GhX-mS-cBD"/>
     </inferredMetricsTieBreakers>
 </document>
