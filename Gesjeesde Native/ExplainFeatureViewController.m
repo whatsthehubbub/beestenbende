@@ -178,7 +178,7 @@
     [game.team1 purgeUsedFeaturePictures];
     [game.team2 purgeUsedFeaturePictures];
     
-    if (game.required > 0 && game.team1.featurePictures.count > 0 && game.team2.featurePictures.count > 0) {
+    if (game.required > 0 && (game.team1.featurePictures.count > 0 || game.team2.featurePictures.count > 0)) {
         game.turn += 1;
         
         if (game.issue == 1) {
