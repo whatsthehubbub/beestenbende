@@ -592,7 +592,6 @@
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="5iQ-9M-zLf"/>
-                                    <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="93W-UR-VZD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek de zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="X5b-Vv-Zkh" customClass="HeaderLabel">
@@ -1081,7 +1080,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1451" y="-805"/>
+            <point key="canvasLocation" x="1454" y="-805"/>
         </scene>
         <!--Make Teams View Controller-->
         <scene sceneID="3RN-6O-mt2">
@@ -1635,7 +1634,6 @@ die strijden om de meeste punten.</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="Hgh-kK-144"/>
-                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="mSr-Hg-WQh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LJQ-hh-xoc" customClass="BeestenButton">
@@ -1926,7 +1924,6 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="oXL-Rz-qQX"/>
                                     <action selector="next:" destination="mhP-gb-YWU" eventType="touchUpInside" id="5rC-uR-5TW"/>
                                 </connections>
                             </button>
@@ -2029,7 +2026,6 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="UiC-Xw-Pbu"/>
                                     <action selector="next:" destination="7jx-Og-bWS" eventType="touchUpInside" id="err-2Z-K8i"/>
                                 </connections>
                             </button>
@@ -2107,7 +2103,6 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="caS-nt-diA"/>
                                     <action selector="next:" destination="Moc-nT-lay" eventType="touchUpInside" id="RAA-A5-Daa"/>
                                 </connections>
                             </button>
@@ -2412,7 +2407,6 @@ die strijden om de meeste punten.</string>
                                 </state>
                                 <connections>
                                     <action selector="previous" destination="ETL-EA-CCI" eventType="touchUpInside" id="3cl-vB-Hvq"/>
-                                    <action selector="previous:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="VNW-lN-HnI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="agy-Ug-hQT">
@@ -2428,7 +2422,6 @@ die strijden om de meeste punten.</string>
                                 </state>
                                 <connections>
                                     <action selector="next" destination="ETL-EA-CCI" eventType="touchUpInside" id="fr2-Q4-fOz"/>
-                                    <action selector="next:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="KcK-UD-YSF"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="nOx-mv-HEt">
@@ -3650,14 +3643,14 @@ die strijden om de meeste punten.</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="jda-9n-bj0" kind="push" id="xL5-rE-8Xx"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="wYg-pa-JPt"/>
+                    <connections>
+                        <segue destination="jda-9n-bj0" kind="push" identifier="Next" id="jlU-aZ-YoS"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="9034" y="519"/>
@@ -4391,7 +4384,6 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="pZK-6x-SL0" eventType="touchUpInside" id="bOu-yf-SfJ"/>
-                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="mj1-cL-GaY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aan de slag!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kmr-be-VpQ" customClass="HeaderLabel">
@@ -4769,7 +4761,6 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="takeDragonPicture:" destination="JWy-sg-rOd" eventType="touchUpInside" id="Y0j-RQ-BHy"/>
-                                    <action selector="takeTeamPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="361-6e-qlp"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="oPR-1W-hG1" customClass="BeestenButton">
@@ -4785,7 +4776,6 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="takeDragonPictureAgain:" destination="JWy-sg-rOd" eventType="touchUpInside" id="RkX-df-8s9"/>
-                                    <action selector="takeTeamPictureAgain:" destination="apH-ed-9aX" eventType="touchUpInside" id="Iel-yR-kk1"/>
                                 </connections>
                             </button>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d91-aZ-hGR" customClass="ArrowRight">
@@ -4800,7 +4790,6 @@ Rik Nieuwdorp – Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="6Xj-XQ-l8h"/>
                                     <action selector="doneWithPicture:" destination="JWy-sg-rOd" eventType="touchUpInside" id="fkc-Du-SDf"/>
                                 </connections>
                             </button>
@@ -4883,9 +4872,6 @@ Rik Nieuwdorp – Audio</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="next:" destination="whR-Wj-nBL" eventType="touchUpInside" id="jUj-3p-hdg"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sTE-4G-h8T">
                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -4898,9 +4884,6 @@ Rik Nieuwdorp – Audio</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="back:" destination="whR-Wj-nBL" eventType="touchUpInside" id="O4T-MN-XpJ"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="waL-uT-QTk">
                                 <rect key="frame" x="20" y="60" width="130" height="130"/>
@@ -5477,7 +5460,6 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="4ip-Ih-Udu" eventType="touchUpInside" id="M67-EV-4t3"/>
-                                    <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="cEc-RW-jjv"/>
                                     <segue destination="aEm-4i-hHa" kind="push" identifier="Next" id="QyZ-NX-iFp"/>
                                 </connections>
                             </button>
@@ -5622,7 +5604,6 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="yzE-93-vBD" eventType="touchUpInside" id="0FO-Cz-YZw"/>
-                                    <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="cfw-Y9-25a"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek het draakje" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="k1F-os-SQJ" customClass="HeaderLabel">
@@ -6201,7 +6182,7 @@ Rik Nieuwdorp – Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
+        <segue reference="all-Ba-Vs9"/>
+        <segue reference="pY3-Mn-Wz0"/>
     </inferredMetricsTieBreakers>
 </document>
