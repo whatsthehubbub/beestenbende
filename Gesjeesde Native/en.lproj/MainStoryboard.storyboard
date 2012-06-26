@@ -4530,7 +4530,6 @@ Rik Nieuwdorp – Audio</string>
                         <outlet property="classPicker" destination="Rzy-0l-mJs" id="4E1-JY-eli"/>
                         <outlet property="teamOverlay" destination="Ch8-Q3-uz6" id="nbd-US-PaB"/>
                         <segue destination="JWy-sg-rOd" kind="push" identifier="Next" id="UMC-BP-rGr"/>
-                        <segue destination="Xrb-GQ-McX" kind="push" id="GO3-wI-9Q8"/>
                     </connections>
                 </viewController>
             </objects>
