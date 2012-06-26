@@ -162,6 +162,7 @@
 		4E75576B154D9500009A9E51 /* DragonExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75576A154D9500009A9E51 /* DragonExplanationViewController.m */; };
 		4E75576F154D98F7009A9E51 /* DragonIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */; };
 		4E80ADCA151FCA22001CBA7E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */; };
+		4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E94ACF8159A1527003AB362 /* i04_neemfoto_v4.wav */; };
 		4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */; };
 		4EA62E2A15249B4100E74E64 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2915249B4100E74E64 /* Game.m */; };
 		4EA62E2E15249B9D00E74E64 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2D15249B9D00E74E64 /* Team.m */; };
@@ -257,7 +258,6 @@
 		4EDEFAFC152B90C700324EDB /* toggle-trash-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */; };
 		4EDEFAFD152B90C700324EDB /* toggle-trash-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
-		4EF7F2491596826200DD9C63 /* i04_neemfoto_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7F2481596826200DD9C63 /* i04_neemfoto_v3.wav */; };
 		4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */; };
 		4EF7F2521597931000DD9C63 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF7F2511597931000DD9C63 /* libFlurryAnalytics.a */; };
 /* End PBXBuildFile section */
@@ -449,6 +449,7 @@
 		4E75576E154D98F7009A9E51 /* DragonIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonIntroductionViewController.m; sourceTree = "<group>"; };
 		4E80ADC8151FCA22001CBA7E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
 		4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		4E94ACF8159A1527003AB362 /* i04_neemfoto_v4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i04_neemfoto_v4.wav; sourceTree = "<group>"; };
 		4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPictureViewController.h; sourceTree = "<group>"; };
 		4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamPictureViewController.m; sourceTree = "<group>"; };
 		4EA62E2815249B4100E74E64 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
@@ -577,7 +578,6 @@
 		4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-trash-on.png"; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
-		4EF7F2481596826200DD9C63 /* i04_neemfoto_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i04_neemfoto_v3.wav; sourceTree = "<group>"; };
 		4EF7F24C159697A200DD9C63 /* IssueSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueSplashViewController.h; sourceTree = "<group>"; };
 		4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueSplashViewController.m; sourceTree = "<group>"; };
 		4EF7F2501597931000DD9C63 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
@@ -799,7 +799,7 @@
 				4E4EECF11588C2570018170C /* i01_openingsscherm_v2.wav */,
 				4E4EECF31588C3B80018170C /* i02_schermverder.wav */,
 				4E4EECF41588C3B80018170C /* i03_schermterug.wav */,
-				4EF7F2481596826200DD9C63 /* i04_neemfoto_v3.wav */,
+				4E94ACF8159A1527003AB362 /* i04_neemfoto_v4.wav */,
 				4ED69F3C1588DD1200F84D92 /* i05_carouselverderterug.wav */,
 				4ED69F3A1588DB9100F84D92 /* i06_tijdtiktaf.wav */,
 				4ED69F80158A737600F84D92 /* i07_tijdtiktlaatstesec_v3.wav */,
@@ -1241,7 +1241,7 @@
 				4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
 				47B991401593313400138393 /* icon_002-02-114.png in Resources */,
-				4EF7F2491596826200DD9C63 /* i04_neemfoto_v3.wav in Resources */,
+				4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

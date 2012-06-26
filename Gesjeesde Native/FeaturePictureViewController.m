@@ -185,7 +185,7 @@
 - (void)pictureTaken:(NSNotification *)notification {
     UIImage *image = [notification.userInfo valueForKey:@"image"];
 
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v3.wav"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v4.wav"];
     
     // Save UIImage to team object
     [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:

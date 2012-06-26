@@ -96,7 +96,7 @@
 #pragma mark -
 
 - (IBAction)takeTeamPicture:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v3.wav"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v4.wav"];
     
     [self.csManager captureStillImage];
     
