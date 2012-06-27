@@ -18,7 +18,11 @@
 @synthesize currentTeam;
 
 @synthesize teamOverlay;
-@synthesize classPicker;
+
+@synthesize mammalButton;
+@synthesize fishButton;
+@synthesize reptileButton;
+@synthesize birdButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -45,8 +49,6 @@
     if (currentTeam.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
-    
-    [classPicker selectRow:[game otherTeamForTeam:currentTeam].dragonClass inComponent:0 animated:NO];
 }
 
 - (void)viewDidUnload
@@ -62,9 +64,6 @@
 
 - (IBAction)next:(id)sender {
     // Store animal group and move on
-    
-    NSLog(@"Dragon animal group picked %d", [classPicker selectedRowInComponent:0]);
-    
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
     [self performSegueWithIdentifier:@"Next" sender:sender];
@@ -76,25 +75,25 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-#pragma mark - UIPickerViewDataSource
-
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-    return 1;
-}
-
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-    return [game getClasses].count;
-}
-
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+- (IBAction)buttonPushed:(id)sender {
+    UIButton *senderButton = (UIButton *)sender;
     
-    return [[game getClasses] objectAtIndex:row];
+    senderButton.enabled = NO;
 }
 
-#pragma mark - UIPickerViewDelegate
-
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
-    currentTeam.dragonClass = row;
-}
+//#pragma mark - UIPickerViewDataSource
+//
+//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+//    return 1;
+//}
+//
+//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+//    return [game getClasses].count;
+//}
+//
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+//    
+//    return [[game getClasses] objectAtIndex:row];
+//}
 
 @end
