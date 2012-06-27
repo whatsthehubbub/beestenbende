@@ -73,6 +73,9 @@
 		479DEB7D154199550093C1A6 /* icon-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7C154199550093C1A6 /* icon-clock.png */; };
 		479DEB7F15419A800093C1A6 /* icon-stack-of-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */; };
 		479DEB811541A6BD0093C1A6 /* button-bg-choose-feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */; };
+		47A8713B159B2CC70019F9EF /* logo-gemeente-utrecht.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A87138159B2CC70019F9EF /* logo-gemeente-utrecht.png */; };
+		47A8713C159B2CC70019F9EF /* logo-provincie-utrecht.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */; };
+		47A8713D159B2CC70019F9EF /* logo-min-eli.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A8713A159B2CC70019F9EF /* logo-min-eli.png */; };
 		47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66B158F44D200691553 /* um-logo-splash.jpg */; };
 		47A9B66E158F4AF500691553 /* progress-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66D158F4AF500691553 /* progress-4.png */; };
 		47A9B670158F505F00691553 /* animal-example.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B66F158F505F00691553 /* animal-example.png */; };
@@ -81,6 +84,29 @@
 		47A9B676158F6FFA00691553 /* um-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B675158F6FFA00691553 /* um-logo.png */; };
 		47A9B678158F724F00691553 /* tfi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B677158F724F00691553 /* tfi-logo.png */; };
 		47A9B67A158F852200691553 /* animal-squirrel-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B679158F852200691553 /* animal-squirrel-icon-large.png */; };
+		47AA62E5159B08DB000BD6B3 /* button-dragon-is-mammal-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62E4159B08DB000BD6B3 /* button-dragon-is-mammal-on.png */; };
+		47AA62F2159B1698000BD6B3 /* button-dragon-is-reptile-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62E7159B1698000BD6B3 /* button-dragon-is-reptile-disabled.png */; };
+		47AA62F3159B1698000BD6B3 /* button-dragon-is-fish-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62E8159B1698000BD6B3 /* button-dragon-is-fish-disabled.png */; };
+		47AA62F4159B1699000BD6B3 /* button-dragon-is-reptile-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62E9159B1698000BD6B3 /* button-dragon-is-reptile-off.png */; };
+		47AA62F5159B1699000BD6B3 /* button-dragon-is-fish-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62EA159B1698000BD6B3 /* button-dragon-is-fish-off.png */; };
+		47AA62F6159B1699000BD6B3 /* button-dragon-is-fish-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62EB159B1698000BD6B3 /* button-dragon-is-fish-on.png */; };
+		47AA62F7159B1699000BD6B3 /* button-dragon-is-mammal-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62EC159B1698000BD6B3 /* button-dragon-is-mammal-disabled.png */; };
+		47AA62F8159B1699000BD6B3 /* button-dragon-is-bird-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62ED159B1698000BD6B3 /* button-dragon-is-bird-disabled.png */; };
+		47AA62F9159B1699000BD6B3 /* button-dragon-is-mammal-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62EE159B1698000BD6B3 /* button-dragon-is-mammal-off.png */; };
+		47AA62FA159B1699000BD6B3 /* button-dragon-is-bird-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62EF159B1698000BD6B3 /* button-dragon-is-bird-off.png */; };
+		47AA62FB159B1699000BD6B3 /* button-dragon-is-reptile-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62F0159B1698000BD6B3 /* button-dragon-is-reptile-on.png */; };
+		47AA62FC159B1699000BD6B3 /* button-dragon-is-bird-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62F1159B1698000BD6B3 /* button-dragon-is-bird-on.png */; };
+		47AA62FE159B176C000BD6B3 /* button-dragon-is-mammal-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62FD159B176C000BD6B3 /* button-dragon-is-mammal-on.png */; };
+		47AA6306159B1E13000BD6B3 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */; };
+		47AA6307159B1E13000BD6B3 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */; };
+		47AA6308159B1E13000BD6B3 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6301159B1E13000BD6B3 /* Icon-Small.png */; };
+		47AA6309159B1E13000BD6B3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6302159B1E13000BD6B3 /* Icon.png */; };
+		47AA630A159B1E13000BD6B3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6303159B1E13000BD6B3 /* Icon-72.png */; };
+		47AA630B159B1E13000BD6B3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6304159B1E13000BD6B3 /* Icon@2x.png */; };
+		47AA630C159B1E13000BD6B3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */; };
+		47AA630E159B1E56000BD6B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA630D159B1E56000BD6B3 /* Default.png */; };
+		47AA6310159B1FC7000BD6B3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA630F159B1FC7000BD6B3 /* Icon@2x.png */; };
+		47AA6312159B1FCF000BD6B3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6311159B1FCF000BD6B3 /* Icon.png */; };
 		47AF02D2152C7878008905ED /* button-ga-door.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D1152C7878008905ED /* button-ga-door.png */; };
 		47AF02D4152C8C37008905ED /* button-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D3152C8C37008905ED /* button-verder.png */; };
 		47AF02D6152C8D56008905ED /* speech-bubble-screen-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */; };
@@ -89,7 +115,6 @@
 		47AF02DC152C9007008905ED /* bg-4-welcome-to-cabinet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DA152C9006008905ED /* bg-4-welcome-to-cabinet.jpg */; };
 		47AF02DE152C9056008905ED /* bg-1-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DD152C9056008905ED /* bg-1-splash.jpg */; };
 		47AF02E0152C90C7008905ED /* bg-0-plain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DF152C90C7008905ED /* bg-0-plain.jpg */; };
-		47B991401593313400138393 /* icon_002-02-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B9913F1593313400138393 /* icon_002-02-114.png */; };
 		47BFEDC4153EFC2D002BF8F3 /* icon_001-04-L.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */; };
 		47BFEDC6153F0300002BF8F3 /* button-start-nieuw-spel.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC5153F0300002BF8F3 /* button-start-nieuw-spel.png */; };
 		47BFEDC8153F04DF002BF8F3 /* button-speel-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */; };
@@ -329,6 +354,9 @@
 		479DEB7C154199550093C1A6 /* icon-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-clock.png"; sourceTree = "<group>"; };
 		479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-stack-of-photos.png"; sourceTree = "<group>"; };
 		479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature.png"; sourceTree = "<group>"; };
+		47A87138159B2CC70019F9EF /* logo-gemeente-utrecht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-gemeente-utrecht.png"; sourceTree = "<group>"; };
+		47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-provincie-utrecht.png"; sourceTree = "<group>"; };
+		47A8713A159B2CC70019F9EF /* logo-min-eli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-min-eli.png"; sourceTree = "<group>"; };
 		47A9B66B158F44D200691553 /* um-logo-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "um-logo-splash.jpg"; sourceTree = "<group>"; };
 		47A9B66D158F4AF500691553 /* progress-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-4.png"; sourceTree = "<group>"; };
 		47A9B66F158F505F00691553 /* animal-example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-example.png"; sourceTree = "<group>"; };
@@ -337,6 +365,29 @@
 		47A9B675158F6FFA00691553 /* um-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "um-logo.png"; sourceTree = "<group>"; };
 		47A9B677158F724F00691553 /* tfi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfi-logo.png"; sourceTree = "<group>"; };
 		47A9B679158F852200691553 /* animal-squirrel-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-squirrel-icon-large.png"; sourceTree = "<group>"; };
+		47AA62E4159B08DB000BD6B3 /* button-dragon-is-mammal-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-mammal-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-mammal-on.png"; sourceTree = "<group>"; };
+		47AA62E7159B1698000BD6B3 /* button-dragon-is-reptile-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-reptile-disabled.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-reptile-disabled.png"; sourceTree = "<group>"; };
+		47AA62E8159B1698000BD6B3 /* button-dragon-is-fish-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-fish-disabled.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-fish-disabled.png"; sourceTree = "<group>"; };
+		47AA62E9159B1698000BD6B3 /* button-dragon-is-reptile-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-reptile-off.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-reptile-off.png"; sourceTree = "<group>"; };
+		47AA62EA159B1698000BD6B3 /* button-dragon-is-fish-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-fish-off.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-fish-off.png"; sourceTree = "<group>"; };
+		47AA62EB159B1698000BD6B3 /* button-dragon-is-fish-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-fish-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-fish-on.png"; sourceTree = "<group>"; };
+		47AA62EC159B1698000BD6B3 /* button-dragon-is-mammal-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-mammal-disabled.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-mammal-disabled.png"; sourceTree = "<group>"; };
+		47AA62ED159B1698000BD6B3 /* button-dragon-is-bird-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-bird-disabled.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-bird-disabled.png"; sourceTree = "<group>"; };
+		47AA62EE159B1698000BD6B3 /* button-dragon-is-mammal-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-mammal-off.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-mammal-off.png"; sourceTree = "<group>"; };
+		47AA62EF159B1698000BD6B3 /* button-dragon-is-bird-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-bird-off.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-bird-off.png"; sourceTree = "<group>"; };
+		47AA62F0159B1698000BD6B3 /* button-dragon-is-reptile-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-reptile-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-reptile-on.png"; sourceTree = "<group>"; };
+		47AA62F1159B1698000BD6B3 /* button-dragon-is-bird-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-bird-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-bird-on.png"; sourceTree = "<group>"; };
+		47AA62FD159B176C000BD6B3 /* button-dragon-is-mammal-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-mammal-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-mammal-on.png"; sourceTree = "<group>"; };
+		47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small-50.png"; sourceTree = "<group>"; };
+		47AA6301159B1E13000BD6B3 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small.png"; sourceTree = "<group>"; };
+		47AA6302159B1E13000BD6B3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon.png"; sourceTree = "<group>"; };
+		47AA6303159B1E13000BD6B3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-72.png"; sourceTree = "<group>"; };
+		47AA6304159B1E13000BD6B3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon@2x.png"; sourceTree = "<group>"; };
+		47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/iTunesArtwork.png"; sourceTree = "<group>"; };
+		47AA630D159B1E56000BD6B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		47AA630F159B1FC7000BD6B3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		47AA6311159B1FCF000BD6B3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		47AF02D1152C7878008905ED /* button-ga-door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ga-door.png"; sourceTree = "<group>"; };
 		47AF02D3152C8C37008905ED /* button-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder.png"; sourceTree = "<group>"; };
 		47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-screen-6.png"; sourceTree = "<group>"; };
@@ -345,7 +396,6 @@
 		47AF02DA152C9006008905ED /* bg-4-welcome-to-cabinet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-4-welcome-to-cabinet.jpg"; sourceTree = "<group>"; };
 		47AF02DD152C9056008905ED /* bg-1-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-1-splash.jpg"; sourceTree = "<group>"; };
 		47AF02DF152C90C7008905ED /* bg-0-plain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-0-plain.jpg"; sourceTree = "<group>"; };
-		47B9913F1593313400138393 /* icon_002-02-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_002-02-114.png"; sourceTree = "<group>"; };
 		47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_001-04-L.png"; sourceTree = "<group>"; };
 		47BFEDC5153F0300002BF8F3 /* button-start-nieuw-spel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start-nieuw-spel.png"; sourceTree = "<group>"; };
 		47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-speel-verder.png"; sourceTree = "<group>"; };
@@ -608,6 +658,29 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47A87138159B2CC70019F9EF /* logo-gemeente-utrecht.png */,
+				47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */,
+				47A8713A159B2CC70019F9EF /* logo-min-eli.png */,
+				47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */,
+				47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */,
+				47AA6301159B1E13000BD6B3 /* Icon-Small.png */,
+				47AA6302159B1E13000BD6B3 /* Icon.png */,
+				47AA6303159B1E13000BD6B3 /* Icon-72.png */,
+				47AA6304159B1E13000BD6B3 /* Icon@2x.png */,
+				47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */,
+				47AA62E7159B1698000BD6B3 /* button-dragon-is-reptile-disabled.png */,
+				47AA62E8159B1698000BD6B3 /* button-dragon-is-fish-disabled.png */,
+				47AA62FD159B176C000BD6B3 /* button-dragon-is-mammal-on.png */,
+				47AA62E9159B1698000BD6B3 /* button-dragon-is-reptile-off.png */,
+				47AA62EA159B1698000BD6B3 /* button-dragon-is-fish-off.png */,
+				47AA62EB159B1698000BD6B3 /* button-dragon-is-fish-on.png */,
+				47AA62EC159B1698000BD6B3 /* button-dragon-is-mammal-disabled.png */,
+				47AA62ED159B1698000BD6B3 /* button-dragon-is-bird-disabled.png */,
+				47AA62EE159B1698000BD6B3 /* button-dragon-is-mammal-off.png */,
+				47AA62EF159B1698000BD6B3 /* button-dragon-is-bird-off.png */,
+				47AA62F0159B1698000BD6B3 /* button-dragon-is-reptile-on.png */,
+				47AA62F1159B1698000BD6B3 /* button-dragon-is-bird-on.png */,
+				47AA62E4159B08DB000BD6B3 /* button-dragon-is-mammal-on.png */,
 				4740FEBD15920C0C00DEB661 /* speech-bubble-explanation.png */,
 				4740FEBF15920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png */,
 				4740FEC015920F8800DEB661 /* overlay-team-blue-explanation-bubble.png */,
@@ -817,7 +890,9 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
-				47B9913F1593313400138393 /* icon_002-02-114.png */,
+				47AA6311159B1FCF000BD6B3 /* Icon.png */,
+				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
+				47AA630D159B1E56000BD6B3 /* Default.png */,
 				4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */,
 				4E4EECEC1588BDE80018170C /* OpenAL.framework */,
 				4E3326B4151A68C200CEC850 /* assets */,
@@ -1240,8 +1315,33 @@
 				4740FEC215920F8800DEB661 /* overlay-team-blue-explanation-bubble.png in Resources */,
 				4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
-				47B991401593313400138393 /* icon_002-02-114.png in Resources */,
 				4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */,
+				47AA62E5159B08DB000BD6B3 /* button-dragon-is-mammal-on.png in Resources */,
+				47AA62F2159B1698000BD6B3 /* button-dragon-is-reptile-disabled.png in Resources */,
+				47AA62F3159B1698000BD6B3 /* button-dragon-is-fish-disabled.png in Resources */,
+				47AA62F4159B1699000BD6B3 /* button-dragon-is-reptile-off.png in Resources */,
+				47AA62F5159B1699000BD6B3 /* button-dragon-is-fish-off.png in Resources */,
+				47AA62F6159B1699000BD6B3 /* button-dragon-is-fish-on.png in Resources */,
+				47AA62F7159B1699000BD6B3 /* button-dragon-is-mammal-disabled.png in Resources */,
+				47AA62F8159B1699000BD6B3 /* button-dragon-is-bird-disabled.png in Resources */,
+				47AA62F9159B1699000BD6B3 /* button-dragon-is-mammal-off.png in Resources */,
+				47AA62FA159B1699000BD6B3 /* button-dragon-is-bird-off.png in Resources */,
+				47AA62FB159B1699000BD6B3 /* button-dragon-is-reptile-on.png in Resources */,
+				47AA62FC159B1699000BD6B3 /* button-dragon-is-bird-on.png in Resources */,
+				47AA62FE159B176C000BD6B3 /* button-dragon-is-mammal-on.png in Resources */,
+				47AA6306159B1E13000BD6B3 /* Icon-Small@2x.png in Resources */,
+				47AA6307159B1E13000BD6B3 /* Icon-Small-50.png in Resources */,
+				47AA6308159B1E13000BD6B3 /* Icon-Small.png in Resources */,
+				47AA6309159B1E13000BD6B3 /* Icon.png in Resources */,
+				47AA630A159B1E13000BD6B3 /* Icon-72.png in Resources */,
+				47AA630B159B1E13000BD6B3 /* Icon@2x.png in Resources */,
+				47AA630C159B1E13000BD6B3 /* iTunesArtwork.png in Resources */,
+				47AA630E159B1E56000BD6B3 /* Default.png in Resources */,
+				47AA6310159B1FC7000BD6B3 /* Icon@2x.png in Resources */,
+				47AA6312159B1FCF000BD6B3 /* Icon.png in Resources */,
+				47A8713B159B2CC70019F9EF /* logo-gemeente-utrecht.png in Resources */,
+				47A8713C159B2CC70019F9EF /* logo-provincie-utrecht.png in Resources */,
+				47A8713D159B2CC70019F9EF /* logo-min-eli.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

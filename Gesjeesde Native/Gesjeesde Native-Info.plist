@@ -15,7 +15,9 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>Default@2x.png</string>
-				<string>icon_002-02-114.png</string>
+				<string>Icon@2x.png</string>
+				<string>Default.png</string>
+				<string>Icon.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
