@@ -4699,7 +4699,7 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="waL-uT-QTk">
-                                <rect key="frame" x="20" y="60" width="130" height="130"/>
+                                <rect key="frame" x="20" y="60" width="132" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="button-dragon-is-mammal-on.png">
@@ -4711,7 +4711,7 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HcT-w6-kzG">
-                                <rect key="frame" x="170" y="60" width="130" height="130"/>
+                                <rect key="frame" x="168" y="60" width="132" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="button-dragon-is-fish-off.png">
@@ -4723,7 +4723,7 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hu3-Lu-8Gy">
-                                <rect key="frame" x="20" y="210" width="130" height="130"/>
+                                <rect key="frame" x="20" y="220" width="132" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="button-dragon-is-reptile-disabled.png">
@@ -4735,7 +4735,7 @@ Rik Nieuwdorp – Audio</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iCa-yc-afv">
-                                <rect key="frame" x="170" y="210" width="130" height="130"/>
+                                <rect key="frame" x="168" y="220" width="132" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="button-dragon-is-bird-off.png">
@@ -5494,10 +5494,10 @@ Rik Nieuwdorp – Audio</string>
         <image name="button-carousel-next.png" width="80" height="80"/>
         <image name="button-carousel-prev.png" width="80" height="80"/>
         <image name="button-credits.png" width="366" height="118"/>
-        <image name="button-dragon-is-bird-off.png" width="16" height="16"/>
-        <image name="button-dragon-is-fish-off.png" width="16" height="16"/>
-        <image name="button-dragon-is-mammal-on.png" width="16" height="16"/>
-        <image name="button-dragon-is-reptile-disabled.png" width="16" height="16"/>
+        <image name="button-dragon-is-bird-off.png" width="263" height="305"/>
+        <image name="button-dragon-is-fish-off.png" width="263" height="305"/>
+        <image name="button-dragon-is-mammal-on.png" width="263" height="305"/>
+        <image name="button-dragon-is-reptile-disabled.png" width="263" height="305"/>
         <image name="button-speel-verder.png" width="361" height="111"/>
         <image name="button-start-nieuw-spel.png" width="365" height="112"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
