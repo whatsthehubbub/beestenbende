@@ -112,7 +112,6 @@
 		47AF02DC152C9007008905ED /* bg-4-welcome-to-cabinet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DA152C9006008905ED /* bg-4-welcome-to-cabinet.jpg */; };
 		47AF02DE152C9056008905ED /* bg-1-splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DD152C9056008905ED /* bg-1-splash.jpg */; };
 		47AF02E0152C90C7008905ED /* bg-0-plain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02DF152C90C7008905ED /* bg-0-plain.jpg */; };
-		47B991401593313400138393 /* icon_002-02-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 47B9913F1593313400138393 /* icon_002-02-114.png */; };
 		47BFEDC4153EFC2D002BF8F3 /* icon_001-04-L.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */; };
 		47BFEDC6153F0300002BF8F3 /* button-start-nieuw-spel.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC5153F0300002BF8F3 /* button-start-nieuw-spel.png */; };
 		47BFEDC8153F04DF002BF8F3 /* button-speel-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */; };
@@ -391,7 +390,6 @@
 		47AF02DA152C9006008905ED /* bg-4-welcome-to-cabinet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-4-welcome-to-cabinet.jpg"; sourceTree = "<group>"; };
 		47AF02DD152C9056008905ED /* bg-1-splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-1-splash.jpg"; sourceTree = "<group>"; };
 		47AF02DF152C90C7008905ED /* bg-0-plain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-0-plain.jpg"; sourceTree = "<group>"; };
-		47B9913F1593313400138393 /* icon_002-02-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_002-02-114.png"; sourceTree = "<group>"; };
 		47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_001-04-L.png"; sourceTree = "<group>"; };
 		47BFEDC5153F0300002BF8F3 /* button-start-nieuw-spel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-start-nieuw-spel.png"; sourceTree = "<group>"; };
 		47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-speel-verder.png"; sourceTree = "<group>"; };
@@ -886,7 +884,6 @@
 				47AA6311159B1FCF000BD6B3 /* Icon.png */,
 				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
 				47AA630D159B1E56000BD6B3 /* Default.png */,
-				47B9913F1593313400138393 /* icon_002-02-114.png */,
 				4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */,
 				4E4EECEC1588BDE80018170C /* OpenAL.framework */,
 				4E3326B4151A68C200CEC850 /* assets */,
@@ -1309,7 +1306,6 @@
 				4740FEC215920F8800DEB661 /* overlay-team-blue-explanation-bubble.png in Resources */,
 				4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
-				47B991401593313400138393 /* icon_002-02-114.png in Resources */,
 				4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */,
 				47AA62E5159B08DB000BD6B3 /* button-dragon-is-mammal-on.png in Resources */,
 				47AA62F2159B1698000BD6B3 /* button-dragon-is-reptile-disabled.png in Resources */,
