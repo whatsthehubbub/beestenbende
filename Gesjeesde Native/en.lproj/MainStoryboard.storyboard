@@ -4634,7 +4634,7 @@ Audio</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="waL-uT-QTk">
-                                <rect key="frame" x="20" y="60" width="132" height="152"/>
+                                <rect key="frame" x="168" y="60" width="132" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="button-dragon-is-mammal-off.png">
@@ -4651,7 +4651,7 @@ Audio</string>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HcT-w6-kzG">
-                                <rect key="frame" x="168" y="60" width="132" height="152"/>
+                                <rect key="frame" x="20" y="60" width="132" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="button-dragon-is-fish-off.png">
