@@ -75,25 +75,17 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)buttonPushed:(id)sender {
-    UIButton *senderButton = (UIButton *)sender;
+- (IBAction)buttonPushed:(UIButton *)sender {
+    for (int i = 11; i < 15; i++) {
+        UIButton *button = (UIButton *)[self.view viewWithTag:i];
+        
+        if (button.enabled) {
+            button.selected = NO;
+        }
+        
+    }
     
-    senderButton.enabled = NO;
+    sender.selected = YES;
 }
-
-//#pragma mark - UIPickerViewDataSource
-//
-//- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
-//    return 1;
-//}
-//
-//- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
-//    return [game getClasses].count;
-//}
-//
-//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
-//    
-//    return [[game getClasses] objectAtIndex:row];
-//}
 
 @end

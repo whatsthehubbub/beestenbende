@@ -26,6 +26,6 @@
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
 
-- (IBAction)buttonPushed:(id)sender;
+- (IBAction)buttonPushed:(UIButton *)sender;
 
 @end
