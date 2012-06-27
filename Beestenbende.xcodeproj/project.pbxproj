@@ -93,6 +93,17 @@
 		47AA62FA159B1699000BD6B3 /* button-dragon-is-bird-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62EF159B1698000BD6B3 /* button-dragon-is-bird-off.png */; };
 		47AA62FB159B1699000BD6B3 /* button-dragon-is-reptile-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62F0159B1698000BD6B3 /* button-dragon-is-reptile-on.png */; };
 		47AA62FC159B1699000BD6B3 /* button-dragon-is-bird-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62F1159B1698000BD6B3 /* button-dragon-is-bird-on.png */; };
+		47AA62FE159B176C000BD6B3 /* button-dragon-is-mammal-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62FD159B176C000BD6B3 /* button-dragon-is-mammal-on.png */; };
+		47AA6306159B1E13000BD6B3 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */; };
+		47AA6307159B1E13000BD6B3 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */; };
+		47AA6308159B1E13000BD6B3 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6301159B1E13000BD6B3 /* Icon-Small.png */; };
+		47AA6309159B1E13000BD6B3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6302159B1E13000BD6B3 /* Icon.png */; };
+		47AA630A159B1E13000BD6B3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6303159B1E13000BD6B3 /* Icon-72.png */; };
+		47AA630B159B1E13000BD6B3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6304159B1E13000BD6B3 /* Icon@2x.png */; };
+		47AA630C159B1E13000BD6B3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */; };
+		47AA630E159B1E56000BD6B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA630D159B1E56000BD6B3 /* Default.png */; };
+		47AA6310159B1FC7000BD6B3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA630F159B1FC7000BD6B3 /* Icon@2x.png */; };
+		47AA6312159B1FCF000BD6B3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6311159B1FCF000BD6B3 /* Icon.png */; };
 		47AF02D2152C7878008905ED /* button-ga-door.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D1152C7878008905ED /* button-ga-door.png */; };
 		47AF02D4152C8C37008905ED /* button-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D3152C8C37008905ED /* button-verder.png */; };
 		47AF02D6152C8D56008905ED /* speech-bubble-screen-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */; };
@@ -361,6 +372,17 @@
 		47AA62EF159B1698000BD6B3 /* button-dragon-is-bird-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-bird-off.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-bird-off.png"; sourceTree = "<group>"; };
 		47AA62F0159B1698000BD6B3 /* button-dragon-is-reptile-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-reptile-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-reptile-on.png"; sourceTree = "<group>"; };
 		47AA62F1159B1698000BD6B3 /* button-dragon-is-bird-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-bird-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-bird-on.png"; sourceTree = "<group>"; };
+		47AA62FD159B176C000BD6B3 /* button-dragon-is-mammal-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-dragon-is-mammal-on.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/button-dragon-is-mammal-on.png"; sourceTree = "<group>"; };
+		47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small-50.png"; sourceTree = "<group>"; };
+		47AA6301159B1E13000BD6B3 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small.png"; sourceTree = "<group>"; };
+		47AA6302159B1E13000BD6B3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon.png"; sourceTree = "<group>"; };
+		47AA6303159B1E13000BD6B3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-72.png"; sourceTree = "<group>"; };
+		47AA6304159B1E13000BD6B3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon@2x.png"; sourceTree = "<group>"; };
+		47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/iTunesArtwork.png"; sourceTree = "<group>"; };
+		47AA630D159B1E56000BD6B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		47AA630F159B1FC7000BD6B3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		47AA6311159B1FCF000BD6B3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		47AF02D1152C7878008905ED /* button-ga-door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ga-door.png"; sourceTree = "<group>"; };
 		47AF02D3152C8C37008905ED /* button-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-verder.png"; sourceTree = "<group>"; };
 		47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-screen-6.png"; sourceTree = "<group>"; };
@@ -632,8 +654,16 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */,
+				47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */,
+				47AA6301159B1E13000BD6B3 /* Icon-Small.png */,
+				47AA6302159B1E13000BD6B3 /* Icon.png */,
+				47AA6303159B1E13000BD6B3 /* Icon-72.png */,
+				47AA6304159B1E13000BD6B3 /* Icon@2x.png */,
+				47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */,
 				47AA62E7159B1698000BD6B3 /* button-dragon-is-reptile-disabled.png */,
 				47AA62E8159B1698000BD6B3 /* button-dragon-is-fish-disabled.png */,
+				47AA62FD159B176C000BD6B3 /* button-dragon-is-mammal-on.png */,
 				47AA62E9159B1698000BD6B3 /* button-dragon-is-reptile-off.png */,
 				47AA62EA159B1698000BD6B3 /* button-dragon-is-fish-off.png */,
 				47AA62EB159B1698000BD6B3 /* button-dragon-is-fish-on.png */,
@@ -853,6 +883,9 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
+				47AA6311159B1FCF000BD6B3 /* Icon.png */,
+				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
+				47AA630D159B1E56000BD6B3 /* Default.png */,
 				47B9913F1593313400138393 /* icon_002-02-114.png */,
 				4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */,
 				4E4EECEC1588BDE80018170C /* OpenAL.framework */,
@@ -1290,6 +1323,17 @@
 				47AA62FA159B1699000BD6B3 /* button-dragon-is-bird-off.png in Resources */,
 				47AA62FB159B1699000BD6B3 /* button-dragon-is-reptile-on.png in Resources */,
 				47AA62FC159B1699000BD6B3 /* button-dragon-is-bird-on.png in Resources */,
+				47AA62FE159B176C000BD6B3 /* button-dragon-is-mammal-on.png in Resources */,
+				47AA6306159B1E13000BD6B3 /* Icon-Small@2x.png in Resources */,
+				47AA6307159B1E13000BD6B3 /* Icon-Small-50.png in Resources */,
+				47AA6308159B1E13000BD6B3 /* Icon-Small.png in Resources */,
+				47AA6309159B1E13000BD6B3 /* Icon.png in Resources */,
+				47AA630A159B1E13000BD6B3 /* Icon-72.png in Resources */,
+				47AA630B159B1E13000BD6B3 /* Icon@2x.png in Resources */,
+				47AA630C159B1E13000BD6B3 /* iTunesArtwork.png in Resources */,
+				47AA630E159B1E56000BD6B3 /* Default.png in Resources */,
+				47AA6310159B1FC7000BD6B3 /* Icon@2x.png in Resources */,
+				47AA6312159B1FCF000BD6B3 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
