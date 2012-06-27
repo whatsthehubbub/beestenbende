@@ -96,13 +96,6 @@
 		47A9B676158F6FFA00691553 /* um-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B675158F6FFA00691553 /* um-logo.png */; };
 		47A9B678158F724F00691553 /* tfi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B677158F724F00691553 /* tfi-logo.png */; };
 		47A9B67A158F852200691553 /* animal-squirrel-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A9B679158F852200691553 /* animal-squirrel-icon-large.png */; };
-		47AA6306159B1E13000BD6B3 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */; };
-		47AA6307159B1E13000BD6B3 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */; };
-		47AA6308159B1E13000BD6B3 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6301159B1E13000BD6B3 /* Icon-Small.png */; };
-		47AA6309159B1E13000BD6B3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6302159B1E13000BD6B3 /* Icon.png */; };
-		47AA630A159B1E13000BD6B3 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6303159B1E13000BD6B3 /* Icon-72.png */; };
-		47AA630B159B1E13000BD6B3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6304159B1E13000BD6B3 /* Icon@2x.png */; };
-		47AA630C159B1E13000BD6B3 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */; };
 		47AA630E159B1E56000BD6B3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA630D159B1E56000BD6B3 /* Default.png */; };
 		47AA6310159B1FC7000BD6B3 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA630F159B1FC7000BD6B3 /* Icon@2x.png */; };
 		47AA6312159B1FCF000BD6B3 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 47AA6311159B1FCF000BD6B3 /* Icon.png */; };
@@ -376,13 +369,6 @@
 		47A9B675158F6FFA00691553 /* um-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "um-logo.png"; sourceTree = "<group>"; };
 		47A9B677158F724F00691553 /* tfi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tfi-logo.png"; sourceTree = "<group>"; };
 		47A9B679158F852200691553 /* animal-squirrel-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-squirrel-icon-large.png"; sourceTree = "<group>"; };
-		47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small@2x.png"; sourceTree = "<group>"; };
-		47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small-50.png"; sourceTree = "<group>"; };
-		47AA6301159B1E13000BD6B3 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-Small.png"; sourceTree = "<group>"; };
-		47AA6302159B1E13000BD6B3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon.png"; sourceTree = "<group>"; };
-		47AA6303159B1E13000BD6B3 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon-72.png"; sourceTree = "<group>"; };
-		47AA6304159B1E13000BD6B3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/Icon@2x.png"; sourceTree = "<group>"; };
-		47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iTunesArtwork.png; path = "../../Dropbox/[SABA] Universiteitsmuseum SEA pilot/assets/art/iTunesArtwork.png"; sourceTree = "<group>"; };
 		47AA630D159B1E56000BD6B3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		47AA630F159B1FC7000BD6B3 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		47AA6311159B1FCF000BD6B3 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
@@ -671,13 +657,6 @@
 				47A87138159B2CC70019F9EF /* logo-gemeente-utrecht.png */,
 				47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */,
 				47A8713A159B2CC70019F9EF /* logo-min-eli.png */,
-				47AA62FF159B1E13000BD6B3 /* Icon-Small@2x.png */,
-				47AA6300159B1E13000BD6B3 /* Icon-Small-50.png */,
-				47AA6301159B1E13000BD6B3 /* Icon-Small.png */,
-				47AA6302159B1E13000BD6B3 /* Icon.png */,
-				47AA6303159B1E13000BD6B3 /* Icon-72.png */,
-				47AA6304159B1E13000BD6B3 /* Icon@2x.png */,
-				47AA6305159B1E13000BD6B3 /* iTunesArtwork.png */,
 				4740FEBD15920C0C00DEB661 /* speech-bubble-explanation.png */,
 				4740FEBF15920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png */,
 				4740FEC015920F8800DEB661 /* overlay-team-blue-explanation-bubble.png */,
@@ -1313,13 +1292,6 @@
 				4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
 				4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */,
-				47AA6306159B1E13000BD6B3 /* Icon-Small@2x.png in Resources */,
-				47AA6307159B1E13000BD6B3 /* Icon-Small-50.png in Resources */,
-				47AA6308159B1E13000BD6B3 /* Icon-Small.png in Resources */,
-				47AA6309159B1E13000BD6B3 /* Icon.png in Resources */,
-				47AA630A159B1E13000BD6B3 /* Icon-72.png in Resources */,
-				47AA630B159B1E13000BD6B3 /* Icon@2x.png in Resources */,
-				47AA630C159B1E13000BD6B3 /* iTunesArtwork.png in Resources */,
 				47AA630E159B1E56000BD6B3 /* Default.png in Resources */,
 				47AA6310159B1FC7000BD6B3 /* Icon@2x.png in Resources */,
 				47AA6312159B1FCF000BD6B3 /* Icon.png in Resources */,
