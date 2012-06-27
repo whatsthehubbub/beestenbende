@@ -18,9 +18,14 @@
 
 @property (strong) IBOutlet UIImageView *teamOverlay;
 
-@property (nonatomic, retain) IBOutlet UIPickerView *classPicker;
+@property (strong) IBOutlet UIButton *mammalButton;
+@property (strong) IBOutlet UIButton *fishButton;
+@property (strong) IBOutlet UIButton *reptileButton;
+@property (strong) IBOutlet UIButton *birdButton;
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
+
+- (IBAction)buttonPushed:(id)sender;
 
 @end
