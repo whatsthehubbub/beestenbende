@@ -4024,6 +4024,18 @@ Audio</string>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-min-eli.png" id="jgi-4L-N5q">
+                                        <rect key="frame" x="53" y="710" width="214" height="92"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-provincie-utrecht.png" id="gqy-jL-XmG">
+                                        <rect key="frame" x="53" y="815" width="214" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-gemeente-utrecht.png" id="5fb-Bw-okh">
+                                        <rect key="frame" x="106" y="856" width="107" height="66"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                             </scrollView>
@@ -5522,6 +5534,9 @@ Audio</string>
         <image name="icon-clock.png" width="53" height="53"/>
         <image name="icon-stack-of-photos.png" width="54" height="54"/>
         <image name="infographic-make-team-photo.png" width="293" height="222"/>
+        <image name="logo-gemeente-utrecht.png" width="428" height="266"/>
+        <image name="logo-min-eli.png" width="428" height="185"/>
+        <image name="logo-provincie-utrecht.png" width="428" height="57"/>
         <image name="map.png" width="492" height="659"/>
         <image name="number-of-evidence-left-frame.png" width="46" height="45"/>
         <image name="overlay-team-blue-choose-evidence-bubble.png" width="640" height="960"/>
