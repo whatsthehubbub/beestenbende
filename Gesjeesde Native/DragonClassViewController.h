@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
 
-@interface DragonClassViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface DragonClassViewController : UIViewController
 
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;

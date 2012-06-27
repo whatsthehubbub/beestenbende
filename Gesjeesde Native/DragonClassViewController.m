@@ -76,7 +76,7 @@
 }
 
 - (IBAction)buttonPushed:(UIButton *)sender {
-    for (int i = 11; i < 15; i++) {
+    for (int i = 1; i < 5; i++) {
         UIButton *button = (UIButton *)[self.view viewWithTag:i];
         
         if (button.enabled) {
@@ -86,6 +86,7 @@
     }
     
     sender.selected = YES;
+    currentTeam.dragonClass = sender.tag-1;
 }
 
 @end
