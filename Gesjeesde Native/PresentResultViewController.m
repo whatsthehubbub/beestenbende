@@ -16,7 +16,7 @@
 
 @synthesize game;
 
-@synthesize yesNoLabel;
+@synthesize titleLabel;
 
 @synthesize team1featureLabel;
 @synthesize team1featureImage;
@@ -115,7 +115,8 @@
     if (![[game firstTeamForTurn] featurePictureForTurn:game.turn].presentAssertion) {
         present = @"geen"; 
     }
-    self.yesNoLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimalName], present];
+    self.titleLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimalName], present];
+    
     
     if (game.issue == 1) {
         self.animalImage.image = [UIImage imageNamed:@"animal-squirrel-icon.png"];
@@ -149,7 +150,32 @@
 - (IBAction)next:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-    [self performSegueWithIdentifier:@"Explanation" sender:sender];
+    [game.team1 purgeUsedFeaturePictures];
+    [game.team2 purgeUsedFeaturePictures];
+    
+    if (game.required > 0 && (game.team1.featurePictures.count > 0 || game.team2.featurePictures.count > 0)) {
+        game.turn += 1;
+        
+        if (game.issue == 1) {
+            [self performSegueWithIdentifier:@"AnotherRoundFirstIssue" sender:sender];
+        } else {
+            [self performSegueWithIdentifier:@"AnotherRoundSecondIssue" sender:sender];
+        }
+    } else {
+        // TODO show something if the proof was completed by a lack of features
+        
+        if (game.issue == 1) {
+            [self performSegueWithIdentifier:@"FirstProofComplete" sender:sender];
+        } else {
+            [self performSegueWithIdentifier:@"SecondProofComplete" sender:sender];
+        }
+    }
+}
+
+- (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

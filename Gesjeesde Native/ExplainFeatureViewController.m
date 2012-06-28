@@ -15,26 +15,13 @@
 @implementation ExplainFeatureViewController
 
 @synthesize game;
+@synthesize currentTeam;
 
-@synthesize feature;
+@synthesize overlayImage;
 
-@synthesize scrollView;
-
-@synthesize pageControl;
-@synthesize pageControlBeingUsed;
-
-@synthesize team1NameLabel;
-@synthesize team1FeatureImage;
-@synthesize team1FeatureLabel;
-@synthesize team1ResultAndExplanationLabel;
-
-@synthesize team2NameLabel;
-@synthesize team2FeatureImage;
-@synthesize team2FeatureLabel;
-@synthesize team2ResultAndExplanationLabel;
-
-@synthesize previousButton;
-@synthesize nextButton;
+@synthesize featureImage;
+@synthesize featureLabel;
+@synthesize resultAndExplanationLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,69 +41,41 @@
     [[SimpleAudioEngine sharedEngine] playEffect:[nautilus objectAtIndex:arc4random() % [nautilus count]]];
     
     
-    self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 2, self.scrollView.frame.size.height);
-    
-    self.pageControl = [[DDPageControl alloc] init];
-    
-    [pageControl setCenter: CGPointMake(self.scrollView.center.x, self.scrollView.center.y + self.scrollView.bounds.size.height/2 - 20)] ;
-    
-    [pageControl addTarget: self action: @selector(pageControlClicked:) forControlEvents: UIControlEventValueChanged] ;
-    
-    pageControl.numberOfPages = 2;
-    pageControl.currentPage = 0;
-    
-    pageControlBeingUsed = NO;
-    
-    self.previousButton.enabled = NO;
-    
-    [self.view addSubview:pageControl];
-    
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-
-    FeaturePicture *team1fp = [game.team1 featurePictureForTurn:game.turn];
-    team1NameLabel.text = [game.team1 getTeamName];
-    team1FeatureImage.image = team1fp.image;
-    team1FeatureLabel.text = team1fp.feature;
+    self.currentTeam = [game firstTeamForTurn];
     
-    // Lots of code to generate the result
-    NSString *team1Explanation = [[game getFeatureWithName:team1fp.feature] objectForKey:@"Explanation"];
+    [self setViewsForCurrentTeam];
     
-    FEATURE_RESULT team1Result = [game resultForFeaturePicture:team1fp];
-    
-    if (team1Result == FEATURE_YES_UNIQUE) {
-        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", team1Explanation];
-    } else if (team1Result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team1Result == FEATURE_NO_INCORRECT) {
-        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", team1Explanation];
-    } else if (team1Result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Inderdaad, %@ heeft dit kenmerk. Maar %@ ook! Kun je een kenmerk bedenken dat onderscheidend is?", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
+    if (self.currentTeam.number == 1) {
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-explanation-bubble.png"];
     } else {
-        team1ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", team1Explanation];
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-explanation-bubble.png"];
     }
-    
-    
-    // Do exactly the same thing for team 2
-    FeaturePicture *team2fp = [game.team2 featurePictureForTurn:game.turn];
-    
-    team2NameLabel.text = [game.team2 getTeamName];
-    team2FeatureImage.image = team2fp.image;
-    team2FeatureLabel.text = team2fp.feature;
+}
 
+- (void)setViewsForCurrentTeam {
+    // Utility method to not have to type this twice, parametrized on self.currentTeam
+    FeaturePicture *fp = [self.currentTeam featurePictureForTurn:game.turn];
+    
+    featureImage.image = fp.image;
+    featureLabel.text = fp.feature;
+    
     // Lots of code to generate the result
-    NSString *team2Explanation = [[game getFeatureWithName:team2fp.feature] objectForKey:@"Explanation"];
+    NSString *explanation = [[game getFeatureWithName:fp.feature] objectForKey:@"Explanation"];
     
-    FEATURE_RESULT team2Result = [game resultForFeaturePicture:team2fp];
+    FEATURE_RESULT result = [game resultForFeaturePicture:fp];
     
-    if (team2Result == FEATURE_YES_UNIQUE) {
-        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", team2Explanation];
-    } else if (team2Result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || team2Result == FEATURE_NO_INCORRECT) {
-        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", team2Explanation];
-    } else if (team2Result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Inderdaad, %@ heeft dit kenmerk. Maar %@ ook! Kun je een kenmerk bedenken dat onderscheidend is?", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
+    if (result == FEATURE_YES_UNIQUE) {
+        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", explanation];
+    } else if (result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
+        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
+    } else if (result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
+        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Inderdaad, %@ heeft dit kenmerk. Maar %@ ook! Kun je een kenmerk bedenken dat onderscheidend is?", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
     } else {
-        team2ResultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", team2Explanation];
+        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
     }
 }
 
@@ -131,104 +90,31 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)scrollPage {
-    pageControlBeingUsed = YES;
-    
-    CGRect frame;
-    frame.origin.x = self.scrollView.frame.size.width * self.pageControl.currentPage;
-    frame.origin.y = 0;
-    frame.size = self.scrollView.frame.size;
-    
-    [self.scrollView scrollRectToVisible:frame animated:YES];
-}
-
-- (IBAction)previous:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
-    
-    if (self.pageControl.currentPage > 0) {
-        self.pageControl.currentPage -= 1;
-        
-        [self scrollPage];
-    }
-    
-    self.nextButton.enabled = YES;
-    if (self.pageControl.currentPage == 0) {
-        self.previousButton.enabled = NO;
-    }
-}
-
-- (IBAction)next:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i05_carouselverderterug.wav"];
-    
-    if (self.pageControl.currentPage < self.pageControl.numberOfPages-1) {
-        self.pageControl.currentPage += 1;
-        
-        [self scrollPage];
-    }
-    
-    self.previousButton.enabled = YES;
-    if (self.pageControl.currentPage == pageControl.numberOfPages-1) {
-        self.nextButton.enabled = NO;
-    }
-}
-
 - (IBAction)done:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-    [game.team1 purgeUsedFeaturePictures];
-    [game.team2 purgeUsedFeaturePictures];
-    
-    if (game.required > 0 && (game.team1.featurePictures.count > 0 || game.team2.featurePictures.count > 0)) {
-        game.turn += 1;
+    if (self.currentTeam == [game firstTeamForTurn]) {
+        [UIView beginAnimations:@"View Flip" context:nil];
+        [UIView setAnimationDuration:0.80];
+        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
         
-        if (game.issue == 1) {
-            [self performSegueWithIdentifier:@"AnotherRoundFirstIssue" sender:sender];
+        // Changes to this ViewController
+        self.currentTeam = [game secondTeamForTurn];
+        [self setViewsForCurrentTeam];
+        
+        if (self.currentTeam.number == 1) {
+            overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-explanation-bubble.png"];
         } else {
-            [self performSegueWithIdentifier:@"AnotherRoundSecondIssue" sender:sender];
+            overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-explanation-bubble.png"];
         }
+        
+        [UIView commitAnimations];
     } else {
-        // TODO show something if the proof was completed by a lack of features
+        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
         
-        if (game.issue == 1) {
-            [self performSegueWithIdentifier:@"FirstProofComplete" sender:sender];
-        } else {
-            [self performSegueWithIdentifier:@"SecondProofComplete" sender:sender];
-        }
+        [self performSegueWithIdentifier:@"Done" sender:self];
     }
-}
-
-- (IBAction)back:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
-    
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
-#pragma mark - DDPageControl triggered actions
-- (void)pageControlClicked:(id)sender
-{
-	DDPageControl *thePageControl = (DDPageControl *)sender;
-    
-    self.pageControl.currentPage = thePageControl.currentPage;
-    [self scrollPage];
-}
-
-#pragma mark - UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (!pageControlBeingUsed) {
-        // From: http://www.iosdevnotes.com/2011/03/uiscrollview-paging/
-        CGFloat pageWidth = self.scrollView.frame.size.width;
-        int page = floor((self.scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-        
-        self.pageControl.currentPage = page;
-    }
-}
-
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    pageControlBeingUsed = NO;
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
-    pageControlBeingUsed = NO;
 }
 
 @end

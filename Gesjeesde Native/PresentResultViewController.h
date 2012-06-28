@@ -17,7 +17,7 @@
 
 @property (strong) Game *game;
 
-@property (nonatomic, retain) IBOutlet UILabel *yesNoLabel;
+@property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 
 @property (nonatomic, retain) IBOutlet UILabel *team1featureLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2featureLabel;
@@ -36,5 +36,6 @@
 @property (nonatomic, retain) FeaturePicture *team2fp;
 
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

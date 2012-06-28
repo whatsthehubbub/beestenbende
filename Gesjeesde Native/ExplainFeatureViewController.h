@@ -19,31 +19,14 @@
 }
 
 @property (strong) Game *game;
+@property (strong) Team *currentTeam;
 
-@property (nonatomic, retain) NSDictionary *feature;
+@property (strong) IBOutlet UIImageView *overlayImage;
 
-@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) IBOutlet UIImageView *featureImage;
+@property (nonatomic, retain) IBOutlet UILabel *featureLabel;
+@property (nonatomic, retain) IBOutlet UILabel *resultAndExplanationLabel;
 
-@property (nonatomic, retain) DDPageControl *pageControl;
-@property (assign) BOOL pageControlBeingUsed;
-
-@property (nonatomic, retain) IBOutlet UILabel *team1NameLabel;
-@property (nonatomic, retain) IBOutlet UIImageView *team1FeatureImage;
-@property (nonatomic, retain) IBOutlet UILabel *team1FeatureLabel;
-@property (nonatomic, retain) IBOutlet UILabel *team1ResultAndExplanationLabel;
-
-@property (nonatomic, retain) IBOutlet UILabel *team2NameLabel;
-@property (nonatomic, retain) IBOutlet UIImageView *team2FeatureImage;
-@property (nonatomic, retain) IBOutlet UILabel *team2FeatureLabel;
-@property (nonatomic, retain) IBOutlet UILabel *team2ResultAndExplanationLabel;
-
-@property (strong) IBOutlet UIButton *previousButton;
-@property (strong) IBOutlet UIButton *nextButton;
-
-- (void)scrollPage;
-- (IBAction)previous:(id)sender;
-- (IBAction)next:(id)sender;
 - (IBAction)done:(id)sender;
-- (IBAction)back:(id)sender;
 
 @end
