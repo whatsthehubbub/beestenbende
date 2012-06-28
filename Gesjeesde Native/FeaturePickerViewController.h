@@ -18,7 +18,6 @@
 @end;
 
 @interface FeaturePickerViewController : UITableViewController {
-
     Game *game;
 }
 

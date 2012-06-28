@@ -101,27 +101,24 @@
     if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || game.issue==3) {
         // This feature is correct for one of two
         
-        CellIdentifier = @"FeatureCell";
-        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
+        
+        CellIdentifier = @"FeatureCell";
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     } else {
-        // TODO grey out disabled cells
         CellIdentifier = @"DisabledFeatureCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.textLabel.textColor = [UIColor lightGrayColor];
-        
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
+        
+        cell.textLabel.textColor = [UIColor lightGrayColor];
     }
     
     cell.textLabel.text = [feature objectForKey:@"Label"];
-    [cell.textLabel setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:cell.textLabel.font.pointSize]];
     
     return cell;
 }
