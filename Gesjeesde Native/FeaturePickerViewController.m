@@ -93,26 +93,35 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"FeatureCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-
-    
     NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
 
-    cell.textLabel.text = [feature objectForKey:@"Label"];
-    [cell.textLabel setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:cell.textLabel.font.pointSize]];
+    static NSString *CellIdentifier;
+    UITableViewCell *cell;
     
     if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || game.issue==3) {
-        // This feature is correct for one of two 
+        // This feature is correct for one of two
+        
+        CellIdentifier = @"FeatureCell";
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
     } else {
         // TODO grey out disabled cells
+        CellIdentifier = @"DisabledFeatureCell";
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.textLabel.textColor = [UIColor lightGrayColor];
+        
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        }
     }
+    
+    cell.textLabel.text = [feature objectForKey:@"Label"];
+    [cell.textLabel setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:cell.textLabel.font.pointSize]];
     
     return cell;
 }
