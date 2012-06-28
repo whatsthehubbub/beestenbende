@@ -85,6 +85,21 @@
                 (currentTeam.dragonClass == 3 && [game feature:featurePicture.feature presentInAnimal:@"Vogel"])) {
                 // Correct for dragon and for chosen class
                 self.explanationLabel.text = [NSString stringWithFormat:@"Ja, ik heb inderdaad %@, maar ik ben geen %@. Denk goed na: welke diergroep heeft ook %@?", [featurePicture.feature lowercaseString], [class lowercaseString], [featurePicture.feature lowercaseString]];
+                
+                switch (currentTeam.dragonClass) {
+                    case 1:
+                        game.mammalEliminated = YES;
+                        break;
+                    case 2:
+                        game.reptileEliminated = YES;
+                        break;
+                    case 3:
+                        game.birdEliminated = YES;
+                        break;
+                    default:
+                        break;
+                }
+                
             } else {
                 // Correct for dragon but not for chosen class
                 self.explanationLabel.text = [NSString stringWithFormat:@"Inderdaad, ik heb %@. Maar een %@ heeft toch geen %@! Denk goed na: welke diergroep heeft wel %@?", [featurePicture.feature lowercaseString], [class lowercaseString], [featurePicture.feature lowercaseString], [featurePicture.feature lowercaseString]];

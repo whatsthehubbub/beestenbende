@@ -33,6 +33,12 @@ typedef enum {
     // For resolving the turns
     int turn;
     int required;
+    
+    // For Dragon animal elimination
+    BOOL fishEliminated;
+    BOOL mammalEliminated;
+    BOOL reptileEliminated;
+    BOOL birdEliminated;
 }
 
 @property (strong) Team *team1;
@@ -44,6 +50,11 @@ typedef enum {
 
 @property (assign) int turn;
 @property (assign) int required;
+
+@property (assign) BOOL fishEliminated;
+@property (assign) BOOL mammalEliminated;
+@property (assign) BOOL reptileEliminated;
+@property (assign) BOOL birdEliminated;
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name;
 - (NSArray *)getOrderedFeaturesForGroup:(int)number;

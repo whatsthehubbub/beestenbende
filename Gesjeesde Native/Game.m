@@ -20,6 +20,11 @@
 @synthesize turn;
 @synthesize required;
 
+@synthesize fishEliminated;
+@synthesize mammalEliminated;
+@synthesize reptileEliminated;
+@synthesize birdEliminated;
+
 - (id)init
 {
     self = [super init];
@@ -32,6 +37,12 @@
         
         self.turn = 1;
         self.required = 4;
+        
+        
+        self.fishEliminated = NO;
+        self.mammalEliminated = NO;
+        self.reptileEliminated = NO;
+        self.birdEliminated = NO;
     }
     return self;
 }

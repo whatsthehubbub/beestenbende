@@ -49,6 +49,12 @@
     if (currentTeam.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
+    
+    self.mammalButton.enabled = !game.mammalEliminated;
+    self.fishButton.enabled = !game.fishEliminated;
+    self.reptileButton.enabled = !game.reptileEliminated;
+    self.birdButton.enabled = !game.birdEliminated;
+
 }
 
 - (void)viewDidUnload
