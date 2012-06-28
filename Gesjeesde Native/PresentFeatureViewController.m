@@ -52,9 +52,9 @@
     self.headerLabel.text = [NSString stringWithFormat:@"Team %@: Maak de zin af", [self.currentTeam getTeamName]];
     
     if (self.currentTeam.number == 1) {
-        overlayImage.image = [UIImage imageNamed:@"overlay-team-blue.png"];
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-choose-evidence-bubble.png"];
     } else {
-        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-choose-evidence-bubble.png"];
     }
     
     self.hasFeature = YES;
@@ -129,9 +129,9 @@
         self.headerLabel.text = [NSString stringWithFormat:@"Team %@: Maak de zin af", [self.currentTeam getTeamName]];
         
         if (self.currentTeam.number == 1) {
-            overlayImage.image = [UIImage imageNamed:@"overlay-team-blue.png"];
+            overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-choose-evidence-bubble.png"];
         } else {
-            overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+            overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-choose-evidence-bubble.png"];
         }
         
         [featureButton setTitle:@"kies een kenmerk…" forState:UIControlStateNormal];
