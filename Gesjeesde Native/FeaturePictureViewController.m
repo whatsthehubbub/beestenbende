@@ -81,7 +81,7 @@
     
 
 #ifdef DEBUG
-    secondsLeft = 3;
+    secondsLeft = 89;
 #else
     secondsLeft = 89;
 #endif
@@ -111,7 +111,7 @@
     
     self.secondsLeft -= 1;
     
-    if (self.secondsLeft > 10) {
+    if (self.secondsLeft >= 10) {
         // The normal second sounds
         [[SimpleAudioEngine sharedEngine] playEffect:@"i06_tijdtiktaf.wav"];
     } else if (self.secondsLeft < 0) {
