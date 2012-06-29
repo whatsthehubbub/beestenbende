@@ -1409,7 +1409,7 @@ die strijden om de meeste punten.</string>
         <scene sceneID="NYe-nf-psF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqS-CZ-dGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="Team Picture" id="apH-ed-9aX" customClass="TeamPictureViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TeamPictureViewController" title="Team Picture" id="apH-ed-9aX" customClass="TeamPictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QWU-cK-vyO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2820,14 +2820,6 @@ die strijden om de meeste punten.</string>
                                 <rect key="frame" x="0.0" y="248" width="164" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="cFk-KO-87e">
-                                <rect key="frame" x="195" y="200" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="v1F-ym-i7b">
-                                <rect key="frame" x="192" y="198" width="86" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: Maak de zin af" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ga4-8b-XD1" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2898,10 +2890,17 @@ die strijden om de meeste punten.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="Kgz-tg-9iE" eventType="touchUpInside" id="Nej-PC-kEf"/>
-                                    <action selector="next:" destination="NDf-Ve-Xx0" eventType="touchUpInside" id="fMp-nj-bNG"/>
+                                    <action selector="next:" destination="NDf-Ve-Xx0" eventType="touchUpInside" id="t8J-gS-yb9"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="dne-2T-11h">
+                                <rect key="frame" x="197" y="200" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="Tqh-tF-Ng9">
+                                <rect key="frame" x="194" y="198" width="86" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -2909,7 +2908,7 @@ die strijden om de meeste punten.</string>
                     <connections>
                         <outlet property="doneButton" destination="v27-C1-U6a" id="N9f-jP-p95"/>
                         <outlet property="featureButton" destination="N0H-sq-Nql" id="KrU-Zt-10L"/>
-                        <outlet property="featureImageView" destination="v1F-ym-i7b" id="K9q-aK-Uk6"/>
+                        <outlet property="featureImageView" destination="dne-2T-11h" id="7rs-hJ-qBb"/>
                         <outlet property="headerLabel" destination="Ga4-8b-XD1" id="FKq-R5-ix3"/>
                         <outlet property="overlayImage" destination="lyO-hb-Ap1" id="HJK-oy-dyg"/>
                         <outlet property="yesNoButton" destination="LTL-EX-1to" id="glq-ua-7Cn"/>
@@ -5971,9 +5970,14 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="fEa-BH-mAb"/>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
-        <segue reference="fEa-BH-mAb"/>
+        <segue reference="XVp-wt-Sm6"/>
+        <segue reference="bYY-FW-WYd"/>
+        <segue reference="GhX-mS-cBD"/>
+        <segue reference="aw3-qV-PsP"/>
+        <segue reference="aIf-Jt-bSO"/>
     </inferredMetricsTieBreakers>
 </document>
