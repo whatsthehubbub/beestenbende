@@ -64,7 +64,7 @@
     NSString *present = @"wel";
     // Presence depends on the first team playing not necessarily team1
     if (!fp.presentAssertion) {
-        present = @"geen";
+        present = @"niet";
     }
 
     featureLabel.text = [NSString stringWithFormat:@"De %@ heeft %@ %@", [[game getCurrentAnimalName] lowercaseString], present, fp.feature]; 
