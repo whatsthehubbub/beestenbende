@@ -67,7 +67,7 @@
 				<key>Label</key>
 				<string>tanden overal in de bek</string>
 				<key>Explanation</key>
-				<string>vissen en reptielen kunnen overal tanden in de bek hebben. </string>
+				<string>vissen en reptielen kunnen overal tanden in de bek hebben.</string>
 				<key>Vis</key>
 				<integer>0</integer>
 				<key>Zoogdier</key>
@@ -102,7 +102,7 @@
 				<key>Label</key>
 				<string>vier ledematen</string>
 				<key>Explanation</key>
-				<string>reptielen, vogels en zoogdieren hebben vier ledematen. Let op: bij slangen zijn de ledematen verdwenen. </string>
+				<string>reptielen, vogels en zoogdieren hebben vier ledematen. Let op: bij slangen zijn de ledematen verdwenen.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -158,7 +158,7 @@
 				<key>Label</key>
 				<string>een staart</string>
 				<key>Explanation</key>
-				<string>vogels, reptielen, vissen en zoogdieren hebben allemaal een staart. De staart van vogels is gemaakt van veren. Let op: soms is de staart zo klein dat je &apos;m niet meer ziet, zoals bij jou! </string>
+				<string>vogels, reptielen, vissen en zoogdieren hebben allemaal een staart. De staart van vogels is gemaakt van veren. Let op: soms is de staart zo klein dat je &apos;m niet meer ziet, zoals bij jou!</string>
 				<key>Vis</key>
 				<integer>1</integer>
 				<key>Zoogdier</key>
@@ -242,7 +242,7 @@
 				<key>Label</key>
 				<string>een staartvin</string>
 				<key>Explanation</key>
-				<string>alleen vissen hebben een staartvin. </string>
+				<string>alleen vissen hebben een staartvin.</string>
 				<key>Vis</key>
 				<integer>0</integer>
 				<key>Zoogdier</key>
@@ -303,7 +303,7 @@
 			</dict>
 			<dict>
 				<key>Label</key>
-				<string>schubben  </string>
+				<string>schubben</string>
 				<key>Explanation</key>
 				<string>vissen en reptielen hebben allebei schubben. Let op: het zijn wel andere soorten schubben. Bij vissen zijn schubben gemaakt van bot, bij reptielen van huid. Visschubben kun je eraf halen, bij een reptiel kan dat niet.</string>
 				<key>Vis</key>
@@ -354,7 +354,7 @@
 				<key>Label</key>
 				<string>kieuwen</string>
 				<key>Explanation</key>
-				<string>vissen hebben inderdaad kieuwen. Trouwens: jonge amfibieën hebben ook kieuwen (maar amfibieën doen niet mee in dit spel). </string>
+				<string>vissen hebben inderdaad kieuwen. Trouwens: jonge amfibieën hebben ook kieuwen (maar amfibieën doen niet mee in dit spel).</string>
 				<key>Vis</key>
 				<integer>0</integer>
 				<key>Zoogdier</key>
