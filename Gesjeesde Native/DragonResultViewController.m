@@ -67,7 +67,7 @@
             self.explanationLabel.text = [NSString stringWithFormat:@"Goed! Ik heb %@. Maar vissen zijn niet de enige groep met dit kenmerk. Kun je iets bij mij vinden dat alleen vissen hebben?", [featurePicture.feature lowercaseString]];
             
             [currentTeam.dragonFeaturesGuessed addObject:[feature objectForKey:@"Label"]];
-            currentTeam.points += 10;
+            currentTeam.points += 5;
         } else {
             self.explanationLabel.text = [NSString stringWithFormat:@"Huh? Heb jij wel eens een vis gezien met %@? Daar geloof ik niets van! Kijk nog eens goed.", [featurePicture.feature lowercaseString]];
         }
