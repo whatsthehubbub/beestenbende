@@ -66,11 +66,14 @@
 }
 
 - (BOOL)feature:(NSString *)fName presentInAnimal:(NSString *)animal {
-    NSDictionary *feature = [self getFeatureWithName:fName];
-    
-    int featureValue = [[feature objectForKey:animal] intValue];
-    
-    return featureValue == 0 || featureValue == 1;
+    if (animal) {
+        NSDictionary *feature = [self getFeatureWithName:fName];
+
+        int featureValue = [[feature objectForKey:animal] intValue];
+
+        return featureValue == 0 || featureValue == 1;
+    }
+    return NO;
 }
 
 - (NSString *)getCurrentAnimalName {
@@ -84,7 +87,7 @@
 }
 
 - (NSString *)getWrongAnimalClass {
-    NSString *animalClass = @"";
+    NSString *animalClass = nil;
     
     if (issue == 1) {
         animalClass = @"Vogel";
@@ -96,7 +99,7 @@
 }
 
 - (NSString *)getCorrectAnimalClass {
-    NSString *animalClass = @"";
+    NSString *animalClass = nil;
     
     if (issue == 1) {
         animalClass = @"Zoogdier";

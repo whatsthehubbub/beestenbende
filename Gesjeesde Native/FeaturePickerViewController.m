@@ -98,7 +98,20 @@
     static NSString *CellIdentifier;
     UITableViewCell *cell;
     
-    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || game.issue==3) {
+    // Bizarre code needed to figure out which team is on during issue 3, will only be used during issue 3
+    Team *currentTeam = [game firstTeamForTurn];
+    if (currentTeam.tookFeaturePictures) {
+        currentTeam = [game otherTeamForTeam:currentTeam];
+    }
+    
+    NSLog(@"Current team %@", currentTeam.dragonFeaturesGuessed);
+    NSLog(@"Current feature %@", [feature objectForKey:@"Label"]);
+    NSLog(@"Boolean: %d", ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]]);
+    
+    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
+        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || 
+        (game.issue==3 && ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]])
+        ) {
         // This feature is correct for one of two
         
         if (cell == nil) {
@@ -108,6 +121,7 @@
         CellIdentifier = @"FeatureCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     } else {
+        NSLog(@"Cell disabled");
         CellIdentifier = @"DisabledFeatureCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
@@ -129,7 +143,16 @@
 {
     NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
     
-    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || game.issue==3) {
+    // Bizarre code needed to figure out which team is on during issue 3, will only be used during issue 3
+    Team *currentTeam = [game firstTeamForTurn];
+    if (currentTeam.tookFeaturePictures) {
+        currentTeam = [game otherTeamForTeam:currentTeam];
+    }
+    
+    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
+        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || 
+        (game.issue==3 && ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]])
+        ) {
         // This feature is correct for one of two animals, so this cell is selectable
         
         [[SimpleAudioEngine sharedEngine] playEffect:@"i11_menu-select-close.wav"];

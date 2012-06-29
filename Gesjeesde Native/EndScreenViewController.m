@@ -45,7 +45,7 @@
         winner = game.team2;
     } else {
         // The team that had 3 dragon proofs wins on ties
-        winner = game.team1.dragonProofs == 3 ? game.team1 : game.team2;
+        winner = game.team1.dragonFeaturesGuessed.count == 3 ? game.team1 : game.team2;
     }
     
     self.winnerPicture.image = winner.picture;

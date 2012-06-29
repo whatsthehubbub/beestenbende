@@ -19,7 +19,7 @@
 @synthesize points;
 @synthesize totalPoints;
 
-@synthesize dragonProofs;
+@synthesize dragonFeaturesGuessed;
 @synthesize dragonClass;
 
 @synthesize fishEliminated;
@@ -39,7 +39,7 @@
         self.points = 0;
         self.totalPoints = 0;
         
-        self.dragonProofs = 0;
+        self.dragonFeaturesGuessed = [[NSMutableArray alloc] init];
         self.dragonClass = 0;
         
         

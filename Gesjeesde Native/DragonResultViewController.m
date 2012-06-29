@@ -61,12 +61,12 @@
         if ([[feature objectForKey:@"Vis"] intValue] == 0) {
             self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben %@. Kan je nog meer bewijs vinden?", [featurePicture.feature lowercaseString]];
             
-            currentTeam.dragonProofs += 1;
+            [currentTeam.dragonFeaturesGuessed addObject:[feature objectForKey:@"Label"]];
             currentTeam.points += 10;
         } else if ([[feature objectForKey:@"Vis"] intValue] == 1) {
             self.explanationLabel.text = [NSString stringWithFormat:@"Goed! Ik heb %@. Maar vissen zijn niet de enige groep met dit kenmerk. Kun je iets bij mij vinden dat alleen vissen hebben?", [featurePicture.feature lowercaseString]];
             
-            currentTeam.dragonProofs += 1;
+            [currentTeam.dragonFeaturesGuessed addObject:[feature objectForKey:@"Label"]];
             currentTeam.points += 10;
         } else {
             self.explanationLabel.text = [NSString stringWithFormat:@"Huh? Heb jij wel eens een vis gezien met %@? Daar geloof ik niets van! Kijk nog eens goed.", [featurePicture.feature lowercaseString]];
@@ -99,6 +99,7 @@
     // If both teams now have taken feature pictures, reset
     if (currentTeam.tookFeaturePictures && [game otherTeamForTeam:currentTeam].tookFeaturePictures) {
         // We don't have the concept of turns here, it just goes back and forth with the team with the most points starting
+        // TODO check if we still need this
         currentTeam.tookFeaturePictures = NO;
         [game otherTeamForTeam:currentTeam].tookFeaturePictures = NO;
     }

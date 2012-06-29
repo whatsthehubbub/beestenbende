@@ -50,8 +50,8 @@
     team1Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1Label.font.pointSize];
     team2Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2Label.font.pointSize];
     
-    self.team1Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team1.dragonProofs]];
-    self.team2Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team2.dragonProofs]];
+    self.team1Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team1.dragonFeaturesGuessed.count]];
+    self.team2Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team2.dragonFeaturesGuessed.count]];
     
     
     Team *currentTeam = [game firstTeamForTurn];
@@ -59,10 +59,10 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    if (game.team1.dragonProofs < 3 && game.team2.dragonProofs < 3) {
+    if (game.team1.dragonFeaturesGuessed.count < 3 && game.team2.dragonFeaturesGuessed.count < 3) {
         explanation.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer. ", [currentTeam getTeamName], [[game otherTeamForTeam:currentTeam] getTeamName]];
     } else {
-        Team *winner = game.team1.dragonProofs == 3 ? game.team1 : game.team2;
+        Team *winner = game.team1.dragonFeaturesGuessed.count == 3 ? game.team1 : game.team2;
         explanation.text = [NSString stringWithFormat:@"Team %@ heeft drie goede kenmerken gevonden!", [winner getTeamName]];
     }
 }
@@ -81,7 +81,7 @@
 - (IBAction)done:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-    if (game.team1.dragonProofs == 3 || game.team2.dragonProofs == 3) {
+    if (game.team1.dragonFeaturesGuessed.count == 3 || game.team2.dragonFeaturesGuessed.count == 3) {
         [self performSegueWithIdentifier:@"DragonDone" sender:sender];
     } else {
         [self performSegueWithIdentifier:@"DragonAgain" sender:sender];

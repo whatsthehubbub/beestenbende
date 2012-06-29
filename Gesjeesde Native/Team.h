@@ -25,7 +25,7 @@
     int points;
     int totalPoints;
     
-    int dragonProofs;
+    NSMutableArray *dragonFeaturesGuessed;
     int dragonClass;
     
     // For Dragon animal elimination
@@ -44,7 +44,7 @@
 @property (readwrite) int points;
 @property (readwrite) int totalPoints;
 
-@property (readwrite) int dragonProofs;
+@property (strong) NSMutableArray *dragonFeaturesGuessed;
 @property (readwrite) int dragonClass;
 
 @property (assign) BOOL fishEliminated;
