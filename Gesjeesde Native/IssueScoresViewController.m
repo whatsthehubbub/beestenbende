@@ -50,7 +50,7 @@
     game = appDelegate.game;
     
     if (game.issue == 1 || game.issue == 2) {
-        self.headerLabel.text = [NSString stringWithFormat:@"De %@ snapt het", [[game getCurrentAnimalName] lowercaseString]];
+        self.headerLabel.text = [NSString stringWithFormat:@"%@ snapt het", [game getCurrentAnimalName]];
     } else {
         self.headerLabel.text = @"De draak is ontmaskerd";
     }
@@ -76,9 +76,9 @@
     game.team2.points = 0;
     
     if (game.issue == 1 || game.issue == 2) {
-        self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@.", [[game getCurrentAnimalName] lowercaseString]];
+        self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van %@.", [game getCurrentAnimalName]];
     } else {
-        self.thanksLabel.text = @"Bedankt voor jullie hulp met het ontmaskeren van de draak.";
+        self.thanksLabel.text = @"Bedankt voor jullie hulp met het ontmaskeren van het draakje.";
     }
 }
 

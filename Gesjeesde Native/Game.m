@@ -79,7 +79,7 @@
     } else if (self.issue == 2) {
         return @"Zeepaling";
     } else {
-        return @"Draak";
+        return @"Draakje";
     }
 }
 
