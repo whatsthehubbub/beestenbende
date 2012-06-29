@@ -74,7 +74,7 @@
     } else {
         self.team1pointsImage.image = nil;
         
-        self.team1featureLabel.text = @"";
+        self.team1featureLabel.text = @"Gepast";
         self.team1featureImage.image = nil;
     }
     
@@ -102,7 +102,7 @@
     } else {
         self.team2pointsImage.image = nil;
         
-        self.team2featureLabel.text = @"";
+        self.team2featureLabel.text = @"Gepast";
         self.team2featureImage.image = nil;
     }
     
