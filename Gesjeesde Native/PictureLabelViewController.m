@@ -46,10 +46,11 @@
     game = appDelegate.game;
     
     // Find the current team
-    self.currentTeam = game.team1;
+    self.currentTeam = [game firstTeamForTurn];
     
     headerLabel.text = [NSString stringWithFormat:@"Team %@ benoem je foto's", [self.currentTeam getTeamName]];
     
+    overlayImage.image = [UIImage imageNamed:@"overlay-team-blue.png"];
     if (currentTeam.number != 1) {
         overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
@@ -143,7 +144,7 @@
     // Delete feature pictures marked for deletion
     [self.currentTeam purgeDeletedFeaturePictures];
     
-    if (self.currentTeam.number == 1) {
+    if (self.currentTeam == [game firstTeamForTurn]) {
         // Start segue back to this view for other team to take picture
         [UIView beginAnimations:@"View Flip" context:nil];
         [UIView setAnimationDuration:0.80];
@@ -151,9 +152,15 @@
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
         
         // Changes to this ViewController
-        self.currentTeam = game.team2;
+        self.currentTeam = [game secondTeamForTurn];
         self.currentPictureIndex = 0;
-        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        
+        if (currentTeam.number != 1) {
+            overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        } else {
+            overlayImage.image = [UIImage imageNamed:@"overlay-team-blue.png"];
+        }
+
         headerLabel.text = [NSString stringWithFormat:@"Team %@ benoem je foto's", [self.currentTeam getTeamName]];
         
 #ifndef DEBUG
@@ -161,7 +168,7 @@
 #endif
 
         [self displayPicture];
-            
+
         [UIView commitAnimations];
     } else {
         [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
