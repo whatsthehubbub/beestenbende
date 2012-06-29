@@ -52,7 +52,7 @@
     if (game.issue == 1 || game.issue == 2) {
         self.headerLabel.text = [NSString stringWithFormat:@"%@ snapt het", [game getCurrentAnimalName]];
     } else {
-        self.headerLabel.text = @"De draak is ontmaskerd";
+        self.headerLabel.text = @"Het draakje is ontmaskerd";
     }
     
     team1Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1Label.font.pointSize];
