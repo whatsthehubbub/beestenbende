@@ -1745,7 +1745,7 @@ die strijden om de meeste punten.</string>
         <scene sceneID="aSc-un-SDF">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hj7-sC-Kpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="jlM-Ks-Kmv" customClass="FeaturePictureViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeaturePictureViewController" id="jlM-Ks-Kmv" customClass="FeaturePictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4yC-z7-XCS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
