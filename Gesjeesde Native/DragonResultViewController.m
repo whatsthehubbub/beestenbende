@@ -64,7 +64,7 @@
         NSDictionary *feature = [game getFeatureWithName:featurePicture.feature];
         
         if ([[feature objectForKey:@"Vis"] intValue] == 0) {
-            self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben <kenmerk>. Kan je nog meer bewijs vinden?", [featurePicture.feature lowercaseString]];
+            self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben %@. Kan je nog meer bewijs vinden?", [featurePicture.feature lowercaseString]];
             
             currentTeam.dragonProofs += 1;
             currentTeam.points += 10;
