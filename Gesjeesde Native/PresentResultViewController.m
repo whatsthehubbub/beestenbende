@@ -113,7 +113,7 @@
     NSString *present = @"wel";
     // Presence depends on the first team playing not necessarily team1
     if (![[game firstTeamForTurn] featurePictureForTurn:game.turn].presentAssertion) {
-        present = @"geen";
+        present = @"niet";
     }
     self.titleLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimalName], present];
     

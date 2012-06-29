@@ -2437,31 +2437,31 @@ die strijden om de meeste punten.</string>
                                 <rect key="frame" x="40" y="163" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wie heeft de juiste kenmerken om de eekhoorn te overtuigen dat hij geen vogel is, maar een zoogdier?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Vt1-zq-wXL" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wie heeft de juiste kenmerken om de eekhoorn te overtuigen dat hij geen vogel is, maar een zoogdier?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Vt1-zq-wXL" customClass="NormalLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Elk team maakt straks deze zin af: eekhoorn, je bent geen vogel, maar een zoogdier, want je hebt wel/geen…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ugh-lQ-Z7I" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Elk team maakt straks deze zin af: eekhoorn, je bent geen vogel, maar een zoogdier, want je hebt wel/geen…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ugh-lQ-Z7I" customClass="NormalLabel">
                                         <rect key="frame" x="240" y="0.0" width="240" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Teams kiezen omstebeurt voor: wel of geen. Unieke kenmerken leveren de meeste punten op. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="r1j-Sa-pIZ" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Teams kiezen omstebeurt voor: wel of geen. Unieke kenmerken leveren de meeste punten op. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="r1j-Sa-pIZ" customClass="NormalLabel">
                                         <rect key="frame" x="480" y="0.0" width="240" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="En let op: kies kenmerken die zoogdieren wél hebben en vogels niet of andersom! Anders schiet eekhoorn er niets mee op." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nVe-Tn-alT" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="En let op: kies kenmerken die zoogdieren wél hebben en vogels niet of andersom! Anders schiet eekhoorn er niets mee op." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nVe-Tn-alT" customClass="NormalLabel">
                                         <rect key="frame" x="720" y="0.0" width="240" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2504,8 +2504,8 @@ die strijden om de meeste punten.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="632-ey-gBf">
-                                <rect key="frame" x="5" y="6" width="28" height="28"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="632-ey-gBf">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="button-titlebar-back.png">
@@ -2585,9 +2585,9 @@ die strijden om de meeste punten.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Goed werk, team [winnaar]! Maar hebben jullie ook de juiste kenmerken?" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="brj-QX-7hP" customClass="NormalLabel">
-                                <rect key="frame" x="86" y="343.5" width="214" height="84"/>
+                                <rect key="frame" x="86" y="344" width="214" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -3062,7 +3062,7 @@ die strijden om de meeste punten.</string>
                                         <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="frJ-dV-aHD">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="frJ-dV-aHD">
                                         <rect key="frame" x="10" y="125" width="120" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
@@ -3083,7 +3083,7 @@ die strijden om de meeste punten.</string>
                                         <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="V8k-Pf-c7m">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="V8k-Pf-c7m">
                                         <rect key="frame" x="10" y="125" width="120" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
@@ -3230,7 +3230,7 @@ die strijden om de meeste punten.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling heeft geen tanden allemaal van hetzelfde type." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="n4o-Si-akp" customClass="NormalLabel">
-                                <rect key="frame" x="108" y="59.5" width="192" height="80"/>
+                                <rect key="frame" x="108" y="60" width="192" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3538,9 +3538,9 @@ die strijden om de meeste punten.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bedankt voor jullie hulp met het overtuigen van de eekhoorn." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lL7-rY-bvQ" customClass="NormalLabel">
-                                <rect key="frame" x="86" y="336.5" width="214" height="84"/>
+                                <rect key="frame" x="86" y="337" width="214" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -5478,7 +5478,7 @@ want hij heeft…</string>
         <image name="button-dragon-is-reptile-disabled.png" width="263" height="305"/>
         <image name="button-dragon-is-reptile-off.png" width="263" height="305"/>
         <image name="button-dragon-is-reptile-on.png" width="263" height="305"/>
-        <image name="button-start-nieuw-spel.png" width="365" height="112"/>
+        <image name="button-start-nieuw-spel.png" width="362" height="110"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
         <image name="clock.png" width="498" height="523"/>
         <image name="dragon-evidence-0.png" width="231" height="75"/>
@@ -5971,6 +5971,9 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="pY3-Mn-Wz0"/>
+        <segue reference="iYQ-bF-g8K"/>
         <segue reference="fEa-BH-mAb"/>
     </inferredMetricsTieBreakers>
 </document>

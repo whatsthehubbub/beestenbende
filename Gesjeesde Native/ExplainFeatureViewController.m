@@ -64,7 +64,7 @@
     NSString *present = @"wel";
     // Presence depends on the first team playing not necessarily team1
     if (!fp.presentAssertion) {
-        present = @"geen";
+        present = @"niet";
     }
 
     featureLabel.text = [NSString stringWithFormat:@"De %@ heeft %@ %@", [[game getCurrentAnimalName] lowercaseString], present, fp.feature]; 
@@ -79,7 +79,7 @@
     } else if (result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
     } else if (result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: %@ en %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [[game getCurrentAnimalName] lowercaseString]];
+        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: een %@ en een %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [[game getCurrentAnimalName] lowercaseString]];
     } else {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
     }
