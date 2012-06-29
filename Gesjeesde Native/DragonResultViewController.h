@@ -18,9 +18,6 @@
 
 @property (strong) IBOutlet UIImageView *teamOverlay;
 
-@property (strong) IBOutlet UIImageView *featureImage;
-@property (strong) IBOutlet UILabel *featureLabel;
-
 @property (strong) IBOutlet UILabel *explanationLabel;
 
 - (IBAction)done:(id)sender;

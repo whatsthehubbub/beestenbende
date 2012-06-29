@@ -19,8 +19,6 @@
 
 @synthesize teamOverlay;
 
-@synthesize featureImage;
-@synthesize featureLabel;
 @synthesize explanationLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -53,10 +51,7 @@
     // Check the result
     FeaturePicture *featurePicture = currentTeam.featurePictures.lastObject;
     
-    self.featureImage.image = featurePicture.image;
-    
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
-    self.featureLabel.text = [NSString stringWithFormat:@"Draakje is een %@ want hij heeft: %@.", [class lowercaseString], featurePicture.feature];
         
     if (currentTeam.dragonClass == 0) {
         // If fish has been chosen
