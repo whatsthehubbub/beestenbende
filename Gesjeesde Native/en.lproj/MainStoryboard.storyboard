@@ -3471,6 +3471,9 @@ die strijden om de meeste punten.</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="1eD-BL-qUt" eventType="touchUpInside" id="r1Z-ZU-jsR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -5987,14 +5990,10 @@ Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="fEa-BH-mAb"/>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
         <segue reference="XVp-wt-Sm6"/>
-        <segue reference="bYY-FW-WYd"/>
-        <segue reference="GhX-mS-cBD"/>
-        <segue reference="aw3-qV-PsP"/>
-        <segue reference="aIf-Jt-bSO"/>
-        <segue reference="fEa-BH-mAb"/>
     </inferredMetricsTieBreakers>
 </document>
