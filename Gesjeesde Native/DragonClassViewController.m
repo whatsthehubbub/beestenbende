@@ -50,10 +50,10 @@
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
-    self.mammalButton.enabled = !game.mammalEliminated;
-    self.fishButton.enabled = !game.fishEliminated;
-    self.reptileButton.enabled = !game.reptileEliminated;
-    self.birdButton.enabled = !game.birdEliminated;
+    self.mammalButton.enabled = !currentTeam.mammalEliminated;
+    self.fishButton.enabled = !currentTeam.fishEliminated;
+    self.reptileButton.enabled = !currentTeam.reptileEliminated;
+    self.birdButton.enabled = !currentTeam.birdEliminated;
 
 }
 

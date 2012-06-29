@@ -22,6 +22,11 @@
 @synthesize dragonProofs;
 @synthesize dragonClass;
 
+@synthesize fishEliminated;
+@synthesize mammalEliminated;
+@synthesize reptileEliminated;
+@synthesize birdEliminated;
+
 - (id)initWithNumber:(int)teamNumber;
 {
     self = [super init];
@@ -36,6 +41,12 @@
         
         self.dragonProofs = 0;
         self.dragonClass = 0;
+        
+        
+        self.fishEliminated = NO;
+        self.mammalEliminated = NO;
+        self.reptileEliminated = NO;
+        self.birdEliminated = NO;
     }
     return self;
 }

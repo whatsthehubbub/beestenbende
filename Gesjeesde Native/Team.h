@@ -27,6 +27,12 @@
     
     int dragonProofs;
     int dragonClass;
+    
+    // For Dragon animal elimination
+    BOOL fishEliminated;
+    BOOL mammalEliminated;
+    BOOL reptileEliminated;
+    BOOL birdEliminated;
 }
 
 @property (readwrite) int number;
@@ -40,6 +46,11 @@
 
 @property (readwrite) int dragonProofs;
 @property (readwrite) int dragonClass;
+
+@property (assign) BOOL fishEliminated;
+@property (assign) BOOL mammalEliminated;
+@property (assign) BOOL reptileEliminated;
+@property (assign) BOOL birdEliminated;
 
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamName;

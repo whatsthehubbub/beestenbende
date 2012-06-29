@@ -114,13 +114,13 @@
 - (void)eliminateAnimalClass {
     switch (currentTeam.dragonClass) {
         case 1:
-            game.mammalEliminated = YES;
+            currentTeam.mammalEliminated = YES;
             break;
         case 2:
-            game.reptileEliminated = YES;
+            currentTeam.reptileEliminated = YES;
             break;
         case 3:
-            game.birdEliminated = YES;
+            currentTeam.birdEliminated = YES;
             break;
         default:
             break;
