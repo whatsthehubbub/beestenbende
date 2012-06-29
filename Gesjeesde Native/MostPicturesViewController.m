@@ -42,6 +42,8 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+    
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i08_tijdvoorbij_v2.wav"];
 
     team1Image.image = game.team1.picture;
     team2Image.image = game.team2.picture;
