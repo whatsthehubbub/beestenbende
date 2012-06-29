@@ -81,7 +81,7 @@
     
 
 #ifdef DEBUG
-    secondsLeft = 89;
+    secondsLeft = 3;
 #else
     secondsLeft = 89;
 #endif
