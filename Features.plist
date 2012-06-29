@@ -2,397 +2,397 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-    <dict>
-        <key>Group</key>
-        <string>Bek</string>
-        <key>Features</key>
-        <array>
-            <dict>
-    			<key>Label</key>
-    			<string>1 rij tanden</string>
-    			<key>Explanation</key>
-    			<string>Alle zoogdieren hebben tanden in 1 rij. Tip: reptielen en vissen kunnen meerdere rijen tanden achter elkaar hebben.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>0</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Verschillende type tanden</string>
-    			<key>Explanation</key>
-    			<string>Zoogdieren hebben verschillende types tanden.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>0</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Snavel</string>
-    			<key>Explanation</key>
-    			<string>Vogels hebben een snavel. Tip: ze hebben dus geen tanden!</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>0</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Tanden in meerdere rijen</string>
-    			<key>Explanation</key>
-    			<string>Vissen en reptielen kunnen tanden in meerdere rijen hebben.</string>
-    			<key>Vis</key>
-    			<integer>1</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Overal tanden in de bek</string>
-    			<key>Explanation</key>
-    			<string>Vissen en reptielen kunnen overal tanden in de bek hebben.</string>
-    			<key>Vis</key>
-    			<integer>1</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Allemaal hetzelfde type tanden</string>
-    			<key>Explanation</key>
-    			<string>De meeste vissen en reptielen hebben dezelfde type tanden.</string>
-    			<key>Vis</key>
-    			<integer>1</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    	</array>
-    </dict>
-    <dict>
-        <key>Group</key>
-        <string>Ledematen</string>
-        <key>Features</key>
-        <array>
-            <dict>
-    			<key>Label</key>
-    			<string>4 ledematen</string>
-    			<key>Explanation</key>
-    			<string>Reptielen, vogels en zoogdieren hebben 4 ledematen. Let op: bij slangen zijn de ledematen verdwenen.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>1</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Lichaam recht boven de poten</string>
-    			<key>Explanation</key>
-    			<string>Vogels en zoogdieren hebben hun lichaam recht boven op hun poten. Tip: Reptielen hebben hun lichaam tussen de poten.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>1</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Nagels</string>
-    			<key>Explanation</key>
-    			<string>Vogels, reptielen en zoogdieren hebben allemaal nagels.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>1</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Tenen</string>
-    			<key>Explanation</key>
-    			<string>Vogels en zoogdieren hebben allemaal 1, 2, 3, 4 of 5 tenen per poot. Reptielen hebben altijd 5 tenen per poot.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Staart</string>
-    			<key>Explanation</key>
-    			<string>Vogels, reptielen, vissen en zoogdieren hebben allemaal een staart. De staart van vogels is gemaakt van veren. Let op: soms is de staart zo klein dat je &apos;m niet meer ziet, zoals bij jou! </string>
-    			<key>Vis</key>
-    			<integer>1</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>1</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Vleugels met veren</string>
-    			<key>Explanation</key>
-    			<string>Alleen vogels hebben 2 vleugels met veren.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>0</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Vleugels van huid</string>
-    			<key>Explanation</key>
-    			<string>Soms hebben reptielen en zoogdieren een extra flap aan hun lijf, waarmee ze kunnen zweven. Dit heet een huidflap.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>2 poten</string>
-    			<key>Explanation</key>
-    			<string>Vogels hebben 2 poten waarop ze lopen. Dat is niet uniek, kijk maar eens naar jezelf!</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>1</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>4 tenen per poot</string>
-    			<key>Explanation</key>
-    			<string>Alleen vogels hebben 4 tenen waarvan er 3 naar voren wijzen en 1 naar achteren.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>0</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Vinnen</string>
-    			<key>Explanation</key>
-    			<string>Alleen vissen hebben vinnen.</string>
-    			<key>Vis</key>
-    			<integer>0</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Staartvin</string>
-    			<key>Explanation</key>
-    			<string>Alleen vissen hebben een staartvin. </string>
-    			<key>Vis</key>
-    			<integer>0</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-        </array>
-    </dict>
-    <dict>
-        <key>Group</key>
-        <string>Huid</string>
-        <key>Features</key>
-        <array>
-            <dict>
-    			<key>Label</key>
-    			<string>Haren</string>
-    			<key>Explanation</key>
-    			<string>Alleen zoogdieren hebben haren.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>0</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Veren</string>
-    			<key>Explanation</key>
-    			<string>Vogels hebben veren.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>0</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Schubben op poten</string>
-    			<key>Explanation</key>
-    			<string>Reptielen en vogels hebben allebei schubben op hun poten.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>1</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Schubben</string>
-    			<key>Explanation</key>
-    			<string>Vissen en reptielen hebben allebei schubben. Let op: het zijn wel andere soorten schubben. Bij vissen zijn schubben gemaakt van bot, bij reptielen van huid. Visschubben kun je eraf halen, bij een reptiel kan dat niet.</string>
-    			<key>Vis</key>
-    			<integer>1</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-        </array>
-    </dict>
-    <dict>
-        <key>Group</key>
-        <string>Overig</string>
-        <key>Features</key>
-        <array>
-            <dict>
-    			<key>Label</key>
-    			<string>Uitstekend borstbeen</string>
-    			<key>Explanation</key>
-    			<string>Alleen vogels hebben een borstbeen dat naar voren uitsteekt.</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>0</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Plat borstbeen</string>
-    			<key>Explanation</key>
-    			<string>Reptielen, vissen en zoogdieren hebben een plat borstbeen. Tip: het borstbeen van vogels steekt naar voren uit.</string>
-    			<key>Vis</key>
-    			<integer>1</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Kieuwen</string>
-    			<key>Explanation</key>
-    			<string>Vissen hebben inderdaad kieuwen. Trouwens: jonge amfibieën hebben ook kieuwen (maar amfibieën doen niet mee in dit spel). </string>
-    			<key>Vis</key>
-    			<integer>0</integer>
-    			<key>Zoogdier</key>
-    			<integer>2</integer>
-    			<key>Reptiel</key>
-    			<integer>2</integer>
-    			<key>Vogel</key>
-    			<integer>2</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Nek</string>
-    			<key>Explanation</key>
-    			<string>Vogels, zoogdieren en reptielen hebben een nek. Let op: vissen hebben geen nek!</string>
-    			<key>Vis</key>
-    			<integer>2</integer>
-    			<key>Zoogdier</key>
-    			<integer>1</integer>
-    			<key>Reptiel</key>
-    			<integer>1</integer>
-    			<key>Vogel</key>
-    			<integer>1</integer>
-    		</dict>
-    		<dict>
-    			<key>Label</key>
-    			<string>Ei</string>
-    			<key>Explanation</key>
-    			<string>Je weet niet zeker of het ei dat hier ligt van een vogel, vis of reptiel is. Tip: gebruik alleen bewijzen die je zelf kunt waarnemen.</string>
-    			<key>Vis</key>
-    			<integer>3</integer>
-    			<key>Zoogdier</key>
-    			<integer>3</integer>
-    			<key>Reptiel</key>
-    			<integer>3</integer>
-    			<key>Vogel</key>
-    			<integer>3</integer>
-    		</dict>
-        </array>
-    </dict>
+	<dict>
+		<key>Group</key>
+		<string>Bek</string>
+		<key>Features</key>
+		<array>
+			<dict>
+				<key>Label</key>
+				<string>één rij tanden</string>
+				<key>Explanation</key>
+				<string>alle zoogdieren hebben tanden in één rij. Tip: vissen hebben meestal meerdere rijen tanden achter elkaar.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>verschillende type tanden</string>
+				<key>Explanation</key>
+				<string>zoogdieren hebben verschillende types tanden: kiezen, snij- en hoektanden.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>0</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>een snavel</string>
+				<key>Explanation</key>
+				<string>vogels hebben een snavel. Tip: ze hebben dus geen tanden!</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>tanden in meerdere rijen</string>
+				<key>Explanation</key>
+				<string>vissen en reptielen kunnen tanden in meerdere rijen hebben.</string>
+				<key>Vis</key>
+				<integer>0</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>tanden overal in de bek</string>
+				<key>Explanation</key>
+				<string>vissen en reptielen kunnen overal tanden in de bek hebben. </string>
+				<key>Vis</key>
+				<integer>0</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>tanden van hetzelfde type</string>
+				<key>Explanation</key>
+				<string>de meeste vissen en reptielen hebben dezelfde type tanden, dus geen kiezen, snij- en hoektanden.</string>
+				<key>Vis</key>
+				<integer>1</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Group</key>
+		<string>Ledematen</string>
+		<key>Features</key>
+		<array>
+			<dict>
+				<key>Label</key>
+				<string>vier ledematen</string>
+				<key>Explanation</key>
+				<string>reptielen, vogels en zoogdieren hebben vier ledematen. Let op: bij slangen zijn de ledematen verdwenen. </string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>het lichaam recht boven de poten</string>
+				<key>Explanation</key>
+				<string>vogels en zoogdieren hebben hun lichaam recht boven op hun poten. Tip: reptielen hebben hun lichaam tussen de poten.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>nagels</string>
+				<key>Explanation</key>
+				<string>vogels, reptielen en zoogdieren hebben allemaal nagels.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>tenen</string>
+				<key>Explanation</key>
+				<string>vogels en zoogdieren hebben allemaal 1, 2, 3, 4 of 5 tenen per poot. Reptielen hebben altijd vijf tenen per poot.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>een staart</string>
+				<key>Explanation</key>
+				<string>vogels, reptielen, vissen en zoogdieren hebben allemaal een staart. De staart van vogels is gemaakt van veren. Let op: soms is de staart zo klein dat je &apos;m niet meer ziet, zoals bij jou! </string>
+				<key>Vis</key>
+				<integer>1</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>vleugels met veren</string>
+				<key>Explanation</key>
+				<string>alleen vogels hebben twee vleugels met veren.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>vleugels van huid</string>
+				<key>Explanation</key>
+				<string>soms hebben reptielen en zoogdieren een extra flap aan hun lijf, waarmee ze kunnen zweven. Dit heet een huidflap.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>twee poten</string>
+				<key>Explanation</key>
+				<string>vogels hebben twee poten waarop ze lopen. Dat is niet uniek, kijk maar eens naar jezelf!</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>vier tenen per poot</string>
+				<key>Explanation</key>
+				<string>alleen vogels hebben vier tenen waarvan er drie naar voren wijzen en één naar achteren.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>vinnen</string>
+				<key>Explanation</key>
+				<string>alleen vissen hebben vinnen.</string>
+				<key>Vis</key>
+				<integer>0</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>een staartvin</string>
+				<key>Explanation</key>
+				<string>alleen vissen hebben een staartvin. </string>
+				<key>Vis</key>
+				<integer>0</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Group</key>
+		<string>Huid</string>
+		<key>Features</key>
+		<array>
+			<dict>
+				<key>Label</key>
+				<string>haren</string>
+				<key>Explanation</key>
+				<string>alleen zoogdieren hebben haren.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>0</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>veren</string>
+				<key>Explanation</key>
+				<string>alleen vogels hebben veren.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>schubben op de poten</string>
+				<key>Explanation</key>
+				<string>reptielen en vogels hebben allebei schubben op hun poten.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>schubben  </string>
+				<key>Explanation</key>
+				<string>vissen en reptielen hebben allebei schubben. Let op: het zijn wel andere soorten schubben. Bij vissen zijn schubben gemaakt van bot, bij reptielen van huid. Visschubben kun je eraf halen, bij een reptiel kan dat niet.</string>
+				<key>Vis</key>
+				<integer>1</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Group</key>
+		<string>Overig</string>
+		<key>Features</key>
+		<array>
+			<dict>
+				<key>Label</key>
+				<string>een uitstekend borstbeen</string>
+				<key>Explanation</key>
+				<string>alleen vogels hebben een borstbeen dat naar voren uitsteekt.</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>een plat borstbeen</string>
+				<key>Explanation</key>
+				<string>reptielen, vissen en zoogdieren hebben een plat borstbeen. Tip: het borstbeen van vogels steekt naar voren uit.</string>
+				<key>Vis</key>
+				<integer>1</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>kieuwen</string>
+				<key>Explanation</key>
+				<string>vissen hebben inderdaad kieuwen. Trouwens: jonge amfibieën hebben ook kieuwen (maar amfibieën doen niet mee in dit spel). </string>
+				<key>Vis</key>
+				<integer>0</integer>
+				<key>Zoogdier</key>
+				<integer>2</integer>
+				<key>Reptiel</key>
+				<integer>2</integer>
+				<key>Vogel</key>
+				<integer>2</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>een nek</string>
+				<key>Explanation</key>
+				<string>vogels, zoogdieren en reptielen hebben een nek. Let op: vissen hebben geen nek!</string>
+				<key>Vis</key>
+				<integer>2</integer>
+				<key>Zoogdier</key>
+				<integer>1</integer>
+				<key>Reptiel</key>
+				<integer>1</integer>
+				<key>Vogel</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>Label</key>
+				<string>een ei</string>
+				<key>Explanation</key>
+				<string>je weet niet zeker of het ei dat hier ligt van een vogel, vis of reptiel is. Tip: gebruik alleen bewijzen die je zelf kunt waarnemen.</string>
+				<key>Vis</key>
+				<integer>3</integer>
+				<key>Zoogdier</key>
+				<integer>3</integer>
+				<key>Reptiel</key>
+				<integer>3</integer>
+				<key>Vogel</key>
+				<integer>3</integer>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>
