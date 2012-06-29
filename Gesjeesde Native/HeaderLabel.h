@@ -1,6 +1,6 @@
 //
 //  HeaderLabel.h
-//  Gesjeesde Beesten
+//  Beestenbende
 //
 //  Created by Alper Çuğun on 16/4/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.

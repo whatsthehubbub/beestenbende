@@ -20,7 +20,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P9u-ot-bQt">
-                                <rect key="frame" x="69" y="273" width="182" height="56"/>
+                                <rect key="frame" x="69" y="337" width="182" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" image="button-start-nieuw-spel.png">
@@ -48,18 +48,6 @@
                                 <connections>
                                     <segue destination="aA8-Uu-wjL" kind="push" identifier="Credits" id="sWp-gp-vaf"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="k5m-q7-Pbc">
-                                <rect key="frame" x="70" y="337" width="180" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-speel-verder.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2266,12 +2254,12 @@ die strijden om de meeste punten.</string>
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzA-ic-LbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="dCT-Mf-cjh" customClass="FeaturePickerViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="UVc-Hd-48B">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="UVc-Hd-48B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeatureCell" textLabel="SEd-Cp-Qkb" style="IBUITableViewCellStyleDefault" id="Wz7-xB-0pl">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeatureCell" textLabel="SEd-Cp-Qkb" style="IBUITableViewCellStyleDefault" id="Wz7-xB-0pl">
                                 <rect key="frame" x="0.0" y="46" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -2290,7 +2278,7 @@ die strijden om de meeste punten.</string>
                                 </view>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DisabledFeatureCell" textLabel="Du1-nC-8LG" style="IBUITableViewCellStyleDefault" id="nBl-MN-x0X">
-                                <rect key="frame" x="0.0" y="91" width="320" height="45"/>
+                                <rect key="frame" x="0.0" y="91" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="10" y="0.0" width="300" height="43"/>
@@ -2976,7 +2964,7 @@ die strijden om de meeste punten.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WoQ-zd-fSs">
-                                <rect key="frame" x="77" y="106" width="223" height="28"/>
+                                <rect key="frame" x="78" y="100" width="224" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <state key="normal" title="kies een kenmerk…" backgroundImage="button-bg-choose-feature.png">
@@ -2999,7 +2987,7 @@ die strijden om de meeste punten.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="xtc-7C-RXk">
-                                <rect key="frame" x="20" y="106" width="52" height="28"/>
+                                <rect key="frame" x="21" y="100" width="52" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" image="toggle-wel-on-geen-off.png">
@@ -3237,7 +3225,7 @@ die strijden om de meeste punten.</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="[kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="n4o-Si-akp" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De [Eekhoorn/Zeepaling] heeft [wel/geen] [kenmerk]" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="n4o-Si-akp" customClass="NormalLabel">
                                 <rect key="frame" x="108" y="59.5" width="192" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
@@ -3311,7 +3299,7 @@ die strijden om de meeste punten.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamFeatureCell" textLabel="L6w-FK-FoM" rowHeight="93" style="IBUITableViewCellStyleDefault" id="bRq-Qg-dew">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TeamFeatureCell" textLabel="L6w-FK-FoM" rowHeight="93" style="IBUITableViewCellStyleDefault" id="bRq-Qg-dew">
                                 <rect key="frame" x="0.0" y="22" width="320" height="93"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -3842,15 +3830,15 @@ Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zoals
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="0O5-CU-J7b">
-                                <rect key="frame" x="20" y="60" width="80" height="80"/>
+                                <rect key="frame" x="43" y="60" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-80.png" id="3TO-JS-ICs">
-                                <rect key="frame" x="15" y="55" width="91" height="89"/>
+                                <rect key="frame" x="38" y="55" width="91" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="H88-Xz-M5S">
-                                <rect key="frame" x="114" y="90" width="186" height="19"/>
+                                <rect key="frame" x="137" y="90" width="146" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="18"/>
                                 <nil key="highlightedColor"/>
@@ -4760,19 +4748,19 @@ Audio</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="2uX-40-ao7">
-                                <rect key="frame" x="36" y="116" width="248" height="247"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="ckl-Ai-cCT">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zwv-1O-2Ql">
-                                <rect key="frame" x="22" y="368" width="276" height="38"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="2uX-40-ao7">
+                                <rect key="frame" x="36" y="116" width="248" height="247"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Kies een kenmerk…" backgroundImage="button-bg-choose-feature.png">
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zwv-1O-2Ql">
+                                <rect key="frame" x="38.5" y="368" width="243" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <state key="normal" title="Kies een kenmerk…" backgroundImage="button-bg-choose-feature-white.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -4817,10 +4805,12 @@ Audio</string>
                                     <action selector="next:" destination="yMG-9O-rz6" eventType="touchUpInside" id="gBF-RJ-NoS"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is een [diergroep] want hij heeft…" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vi0-Ps-U7O">
-                                <rect key="frame" x="22" y="60" width="280" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vi0-Ps-U7O">
+                                <rect key="frame" x="39" y="70" width="243" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <string key="text">Draakje is een [diergroep] 
+want hij heeft…</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -5496,7 +5486,6 @@ Audio</string>
         <image name="button-dragon-is-reptile-disabled.png" width="263" height="305"/>
         <image name="button-dragon-is-reptile-off.png" width="263" height="305"/>
         <image name="button-dragon-is-reptile-on.png" width="263" height="305"/>
-        <image name="button-speel-verder.png" width="361" height="111"/>
         <image name="button-start-nieuw-spel.png" width="365" height="112"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
         <image name="clock.png" width="498" height="523"/>
@@ -5990,10 +5979,14 @@ Audio</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fEa-BH-mAb"/>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="pY3-Mn-Wz0"/>
-        <segue reference="iYQ-bF-g8K"/>
         <segue reference="XVp-wt-Sm6"/>
+        <segue reference="bYY-FW-WYd"/>
+        <segue reference="aw3-qV-PsP"/>
+        <segue reference="nT0-nb-xZI"/>
+        <segue reference="aIf-Jt-bSO"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="LV6-Fj-42D"/>
     </inferredMetricsTieBreakers>
 </document>
