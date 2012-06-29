@@ -2878,7 +2878,7 @@ die strijden om de meeste punten.</string>
                                     <action selector="yesNo:" destination="NDf-Ve-Xx0" eventType="touchUpInside" id="yIX-hl-PhA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v27-C1-U6a" customClass="ArrowRight">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v27-C1-U6a" customClass="ArrowRight">
                                 <rect key="frame" x="160" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -3004,7 +3004,7 @@ die strijden om de meeste punten.</string>
                                     <action selector="yesNo:" destination="Kgz-tg-9iE" eventType="touchUpInside" id="ezM-Rf-Is8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wQJ-ju-lAl" customClass="ArrowRight">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wQJ-ju-lAl" customClass="ArrowRight">
                                 <rect key="frame" x="160" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -3212,14 +3212,6 @@ die strijden om de meeste punten.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="jGF-d0-KDM">
-                                <rect key="frame" x="20" y="60" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="vhi-l6-377">
-                                <rect key="frame" x="17" y="58" width="86" height="84"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dNh-td-Cgx" customClass="NormalLabel">
                                 <rect key="frame" x="20" y="148" width="280" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3237,6 +3229,14 @@ die strijden om de meeste punten.</string>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="tuz-tN-Xs7">
                                 <rect key="frame" x="0.0" y="276" width="264" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="6Ef-LR-JHU">
+                                <rect key="frame" x="14" y="60" width="86" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="8kh-6C-4gE">
+                                <rect key="frame" x="17" y="62" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zo zit dat!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wwf-yI-tyP" customClass="HeaderLabel">
@@ -3282,7 +3282,7 @@ die strijden om de meeste punten.</string>
                     </view>
                     <navigationItem key="navigationItem" id="DST-A7-LpF"/>
                     <connections>
-                        <outlet property="featureImage" destination="vhi-l6-377" id="X6g-O4-JDJ"/>
+                        <outlet property="featureImage" destination="8kh-6C-4gE" id="Noz-B7-gaN"/>
                         <outlet property="featureLabel" destination="n4o-Si-akp" id="Ies-TK-7e4"/>
                         <outlet property="overlayImage" destination="dxV-at-NUA" id="AYT-lz-DWY"/>
                         <outlet property="resultAndExplanationLabel" destination="dNh-td-Cgx" id="WVL-o7-lLp"/>
@@ -5974,10 +5974,5 @@ want hij heeft…</string>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="pY3-Mn-Wz0"/>
         <segue reference="iYQ-bF-g8K"/>
-        <segue reference="XVp-wt-Sm6"/>
-        <segue reference="bYY-FW-WYd"/>
-        <segue reference="GhX-mS-cBD"/>
-        <segue reference="aw3-qV-PsP"/>
-        <segue reference="aIf-Jt-bSO"/>
     </inferredMetricsTieBreakers>
 </document>
