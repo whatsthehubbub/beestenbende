@@ -73,7 +73,7 @@
     } else if (result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
     } else if (result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Inderdaad, %@ heeft dit kenmerk. Maar %@ ook! Kun je een kenmerk bedenken dat onderscheidend is?", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
+        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: %@ en %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [[game getCurrentAnimalName] lowercaseString]];
     } else {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
     }
