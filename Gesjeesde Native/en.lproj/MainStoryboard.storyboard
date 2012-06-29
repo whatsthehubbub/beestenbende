@@ -4362,7 +4362,7 @@ Audio</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: fotografeer een kenmerk. Team [Kleur]: jullie mogen straks weer. " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="29c-3B-RCO" customClass="NormalLabel">
                                 <rect key="frame" x="86" y="326" width="214" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4453,10 +4453,10 @@ Audio</string>
                                 <rect key="frame" x="172" y="257" width="116" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eerste met 3 goede kenmerken wint!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ti7-NT-oKg" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eerste met 3 goede kenmerken wint!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="Ti7-NT-oKg" customClass="NormalLabel">
                                 <rect key="frame" x="20" y="60" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4568,10 +4568,12 @@ Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer een kenmerk van een [gekozen diergroep]." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tgb-PZ-EPf" customClass="NormalLabel">
-                                <rect key="frame" x="20" y="60" width="280" height="56"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tgb-PZ-EPf" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="74" width="240" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <string key="text">Fotografeer een kenmerk van 
+een [gekozen diergroep].</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4806,7 +4808,7 @@ Audio</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vi0-Ps-U7O">
-                                <rect key="frame" x="39" y="70" width="243" height="42"/>
+                                <rect key="frame" x="39" y="74" width="243" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Draakje is een [diergroep] 
 want hij heeft…</string>
@@ -4848,25 +4850,26 @@ want hij heeft…</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="BZL-pm-ezJ">
-                                <rect key="frame" x="23" y="152" width="280" height="250"/>
+                                <rect key="frame" x="20" y="60" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="NzE-cL-tYh">
-                                <rect key="frame" x="23" y="62" width="80" height="80"/>
+                                <rect key="frame" x="23" y="378" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="NvF-eX-RrG">
-                                <rect key="frame" x="20" y="60" width="86" height="84"/>
+                                <rect key="frame" x="20" y="376" width="86" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="96T-5F-tRV">
                                 <rect key="frame" x="127" y="246" width="193" height="234"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fout want: [Uitleg.] Maar ik ben geen [diergroep]! / Goed want: [Uitleg.]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="10" id="N1a-WB-Qev" customClass="NormalLabel">
-                                <rect key="frame" x="40" y="172" width="240" height="155"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="10" id="N1a-WB-Qev" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="80" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <string key="text">Goed! Ik heb allemaal hetzelfde type tanden. Maar vissen zijn niet de enige groep met dit kenmerk. Kun je iets bij mij vinden dat alleen vissen hebben?</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -4905,9 +4908,9 @@ want hij heeft…</string>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is een [diergroep] want hij heeft [kenmerk]." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UrW-kZ-Q8C" customClass="NormalLabel">
-                                <rect key="frame" x="114" y="60" width="186" height="84"/>
+                                <rect key="frame" x="114" y="376" width="186" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -5986,7 +5989,5 @@ want hij heeft…</string>
         <segue reference="aw3-qV-PsP"/>
         <segue reference="nT0-nb-xZI"/>
         <segue reference="aIf-Jt-bSO"/>
-        <segue reference="fEa-BH-mAb"/>
-        <segue reference="LV6-Fj-42D"/>
     </inferredMetricsTieBreakers>
 </document>
