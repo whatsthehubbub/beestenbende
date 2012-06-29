@@ -53,7 +53,7 @@
     }
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
-    self.classLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft…", class.lowercaseString];
+    self.classLabel.text = [NSString stringWithFormat:@"Draakje is een %@ want hij heeft…", class.lowercaseString];
     
     self.dragonPictureView.image = ((FeaturePicture *)self.currentTeam.featurePictures.lastObject).image;
     

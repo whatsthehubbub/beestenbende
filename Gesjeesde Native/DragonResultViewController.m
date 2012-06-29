@@ -56,7 +56,7 @@
     self.featureImage.image = featurePicture.image;
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
-    self.featureLabel.text = [NSString stringWithFormat:@"De draak is een %@ want hij heeft: %@.", [class lowercaseString], featurePicture.feature];
+    self.featureLabel.text = [NSString stringWithFormat:@"Draakje is een %@ want hij heeft: %@.", [class lowercaseString], featurePicture.feature];
         
     if (currentTeam.dragonClass == 0) {
         // If fish has been chosen

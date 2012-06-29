@@ -67,7 +67,7 @@
         present = @"niet";
     }
 
-    featureLabel.text = [NSString stringWithFormat:@"De %@ heeft %@ %@", [[game getCurrentAnimalName] lowercaseString], present, fp.feature]; 
+    featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@", [game getCurrentAnimalName], present, fp.feature]; 
     
     // Lots of code to generate the result
     NSString *explanation = [[game getFeatureWithName:fp.feature] objectForKey:@"Explanation"];
@@ -79,7 +79,7 @@
     } else if (result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
     } else if (result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: een %@ en een %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [[game getCurrentAnimalName] lowercaseString]];
+        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: een %@ en een %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [game getCurrentAnimalName]];
     } else {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
     }
