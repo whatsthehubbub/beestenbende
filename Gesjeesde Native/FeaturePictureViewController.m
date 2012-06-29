@@ -81,7 +81,7 @@
     
 
 #ifdef DEBUG
-    secondsLeft = 3;
+    secondsLeft = 10;
 #else
     secondsLeft = 13 /*89*/;
 #endif
@@ -106,19 +106,20 @@
 
 - (void)decrementTimer:(NSTimer *)theTimer {
     // Could get userinfo object from theTimer if necessary
-    
-    self.timeLabel.text = [NSString stringWithFormat:@"%d", self.secondsLeft];
-    
-    self.secondsLeft -= 1;
-    
-    if (self.secondsLeft >= 10) {
-        // The normal second sounds
-        [[SimpleAudioEngine sharedEngine] playEffect:@"i06_tijdtiktaf.wav"];
-    } else if (self.secondsLeft < 0) {
-        [self timeUp];
-    } else {
-        // The last couple of seconds have a different sound
-        [[SimpleAudioEngine sharedEngine] playEffect:@"i07_tijdtiktlaatstesec_v3.wav"];
+    if (self.secondsLeft > -1) { // TODO replace with a state variable countingDown
+        self.timeLabel.text = [NSString stringWithFormat:@"%d", self.secondsLeft];
+        
+        self.secondsLeft -= 1;
+        
+        if (self.secondsLeft >= 10) {
+            // The normal second sounds
+            [[SimpleAudioEngine sharedEngine] playEffect:@"i06_tijdtiktaf.wav"];
+        } else if (self.secondsLeft < 0) {
+            [self timeUp];
+        } else {
+            // The last couple of seconds have a different sound
+            [[SimpleAudioEngine sharedEngine] playEffect:@"i07_tijdtiktlaatstesec_v3.wav"];
+        }
     }
 }
 
@@ -146,10 +147,11 @@
 }
 
 - (void)becameActive {
-    [self startTimer];
-    [self.csManager startPreview];
-
-    self.pictureFrame.hidden = NO;
+    if (self.secondsLeft > -1) {
+        self.pictureFrame.hidden = NO;
+        [self startTimer];
+        [self.csManager startPreview];
+    }
 }
 
 - (void)startTimer {
