@@ -1,6 +1,6 @@
 //
 //  PresentResultViewController.m
-//  Gesjeesde Beesten
+//  Beestenbende
 //
 //  Created by Alper Çuğun on 5/4/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.

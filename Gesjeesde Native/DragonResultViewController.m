@@ -64,12 +64,12 @@
         NSDictionary *feature = [game getFeatureWithName:featurePicture.feature];
         
         if ([[feature objectForKey:@"Vis"] intValue] == 0) {
-            self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben %@. Kan je nog meer bewijs vinden? We hebben nog %d bewijs/zen nodig om iedereen te overtuigen.", [featurePicture.feature lowercaseString], 3-currentTeam.dragonProofs];
+            self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben %@. Kan je nog meer bewijs vinden?", [featurePicture.feature lowercaseString]];
             
             currentTeam.dragonProofs += 1;
             currentTeam.points += 10;
         } else if ([[feature objectForKey:@"Vis"] intValue] == 1) {
-            self.explanationLabel.text = [NSString stringWithFormat:@"Goed! Ik heb %@. Ik ben een vis! En vissen hebben %@. Maar wij zijn niet de enige groep met %@. Zie je ook iets aan mij dat alleen vissen hebben? We hebben nog %d bewijs/zen nodig om iedereen te overtuigen.", [featurePicture.feature lowercaseString], [featurePicture.feature lowercaseString], [featurePicture.feature lowercaseString], 3-currentTeam.dragonProofs];
+            self.explanationLabel.text = [NSString stringWithFormat:@"Goed! Ik heb %@. Maar vissen zijn niet de enige groep met dit kenmerk. Kun je iets bij mij vinden dat alleen vissen hebben?", [featurePicture.feature lowercaseString]];
             
             currentTeam.dragonProofs += 1;
             currentTeam.points += 10;
@@ -84,14 +84,12 @@
                 (currentTeam.dragonClass == 2 && [game feature:featurePicture.feature presentInAnimal:@"Reptiel"]) ||
                 (currentTeam.dragonClass == 3 && [game feature:featurePicture.feature presentInAnimal:@"Vogel"])) {
                 // Correct for dragon and for chosen class
-                self.explanationLabel.text = [NSString stringWithFormat:@"Ja, ik heb inderdaad %@, maar ik ben geen %@. Denk goed na: welke diergroep heeft ook %@?", [featurePicture.feature lowercaseString], [class lowercaseString], [featurePicture.feature lowercaseString]];
+                self.explanationLabel.text = [NSString stringWithFormat:@"Ja, ik heb inderdaad %@, maar ik ben geen %@. Denk goed na: welke diergroep heeft ook dit kenmerk?", [featurePicture.feature lowercaseString], [class lowercaseString]];
                 
                 [self eliminateAnimalClass];
             } else {
                 // Correct for dragon but not for chosen class
-                self.explanationLabel.text = [NSString stringWithFormat:@"Inderdaad, ik heb %@. Maar een %@ heeft toch geen %@! Denk goed na: welke diergroep heeft wel %@?", [featurePicture.feature lowercaseString], [class lowercaseString], [featurePicture.feature lowercaseString], [featurePicture.feature lowercaseString]];
-                
-                [self eliminateAnimalClass];
+                self.explanationLabel.text = [NSString stringWithFormat:@"Inderdaad, ik heb %@. Maar een %@ heeft dit toch niet! Denk goed na: welke diergroep heeft wel dit kenmerk?", [featurePicture.feature lowercaseString], [class lowercaseString]];
             }
         } else {
             // Correct for neither

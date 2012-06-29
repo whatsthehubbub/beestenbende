@@ -1,6 +1,6 @@
 //
 //  FeaturePickerViewController.h
-//  Gesjeesde Beesten
+//  Beestenbende
 //
 //  Created by Alper Çuğun on 3/4/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.

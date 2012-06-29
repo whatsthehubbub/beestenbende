@@ -1,6 +1,6 @@
 //
 //  TeamPictureViewController.m
-//  Gesjeesde Beesten
+//  Beestenbende
 //
 //  Created by Alper Çuğun on 22/3/12.
 //  Copyright (c) 2012 Hubbub. All rights reserved.
