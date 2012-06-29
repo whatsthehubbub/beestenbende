@@ -23,6 +23,8 @@
 @property (strong) IBOutlet UIButton *reptileButton;
 @property (strong) IBOutlet UIButton *birdButton;
 
+@property (strong) IBOutlet UIButton *nextButton;
+
 - (IBAction)next:(id)sender;
 
 - (IBAction)buttonPushed:(UIButton *)sender;

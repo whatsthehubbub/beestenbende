@@ -24,6 +24,8 @@
 @synthesize reptileButton;
 @synthesize birdButton;
 
+@synthesize nextButton;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -93,6 +95,8 @@
     
     sender.selected = YES;
     currentTeam.dragonClass = sender.tag-1;
+    
+    self.nextButton.enabled = YES;
 }
 
 @end

@@ -2160,7 +2160,7 @@ die strijden om de meeste punten.</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="546-tb-hty">
-                                <rect key="frame" x="38.5" y="372" width="243" height="40"/>
+                                <rect key="frame" x="37" y="372" width="243" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <state key="normal" title="Kies een kenmerk…" backgroundImage="button-bg-choose-feature-white.png">
@@ -4622,7 +4622,7 @@ een [gekozen diergroep].</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fIE-W5-9D5" customClass="ArrowRight">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fIE-W5-9D5" customClass="ArrowRight">
                                 <rect key="frame" x="160" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -4728,6 +4728,7 @@ een [gekozen diergroep].</string>
                         <outlet property="birdButton" destination="iCa-yc-afv" id="3Iz-K8-DYe"/>
                         <outlet property="fishButton" destination="HcT-w6-kzG" id="s95-sM-01a"/>
                         <outlet property="mammalButton" destination="waL-uT-QTk" id="3qw-xx-WbO"/>
+                        <outlet property="nextButton" destination="fIE-W5-9D5" id="T3V-4f-S6e"/>
                         <outlet property="reptileButton" destination="hu3-Lu-8Gy" id="hiW-qa-yiK"/>
                         <outlet property="teamOverlay" destination="fd8-lB-z4u" id="Z18-gd-ucf"/>
                         <segue destination="JWy-sg-rOd" kind="push" identifier="Next" id="7aH-1G-qYY"/>
@@ -5587,6 +5588,7 @@ want hij heeft…</string>
                 <relationship kind="outlet" name="birdButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="fishButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="mammalButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="reptileButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
             </relationships>
