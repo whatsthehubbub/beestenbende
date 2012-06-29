@@ -83,7 +83,7 @@
 #ifdef DEBUG
     secondsLeft = 3;
 #else
-    secondsLeft = 89;
+    secondsLeft = 13 /*89*/;
 #endif
     
     timeLabel.text = [NSString stringWithFormat:@"%d", secondsLeft+1];
