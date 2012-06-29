@@ -11,9 +11,9 @@
 #import "SimpleAudioEngine.h"
 #import "FlurryAnalytics.h"
 
-@interface FirstIssueIntroductionViewController : UIViewController {
-}
+@interface FirstIssueIntroductionViewController : UIViewController 
 
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

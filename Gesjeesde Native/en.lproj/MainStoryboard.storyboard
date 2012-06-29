@@ -320,7 +320,7 @@
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3H3-7E-w5x">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3H3-7E-w5x">
                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -331,6 +331,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="back:" destination="aEm-4i-hHa" eventType="touchUpInside" id="WCW-4b-ajl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Joehoe! Ik kan vliegen, dus ik ben een vogel!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7LP-Ke-fTV" customClass="NormalLabel">
                                 <rect key="frame" x="58" y="255" width="205" height="125"/>
@@ -5262,7 +5265,6 @@ Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="4ip-Ih-Udu" eventType="touchUpInside" id="M67-EV-4t3"/>
-                                    <segue destination="aEm-4i-hHa" kind="push" identifier="Next" id="QyZ-NX-iFp"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek de vliegende eekhoorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="FJi-EN-HCn" customClass="HeaderLabel">
@@ -5289,7 +5291,7 @@ Audio</string>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="ozD-1G-oAa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="zoek-foto-eekhoorn.jpg" id="HVL-wi-FgJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="HVL-wi-FgJ">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -5301,6 +5303,9 @@ Audio</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="i9M-sL-Vkr"/>
+                    <connections>
+                        <segue destination="aEm-4i-hHa" kind="push" identifier="Next" id="Je2-Me-Dt1"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2527" y="-165"/>
@@ -5537,7 +5542,6 @@ Audio</string>
         <image name="um-logo-splash.jpg" width="640" height="960"/>
         <image name="um-logo.png" width="428" height="164"/>
         <image name="zoek-foto-draak.jpg" width="16" height="16"/>
-        <image name="zoek-foto-eekhoorn.jpg" width="16" height="16"/>
     </resources>
     <classes>
         <class className="AnimalPartsViewController" superclassName="UIViewController">
@@ -5786,6 +5790,7 @@ Audio</string>
         <class className="FirstIssueIntroductionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstIssueIntroductionViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next:"/>
             </relationships>
         </class>
