@@ -43,8 +43,12 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
+    
     self.currentTeam = [game firstTeamForTurn];
     
+    if (![self.currentTeam featurePictureForTurn:game.turn]) {
+        self.currentTeam = [game secondTeamForTurn];
+    }
     [self setViewsForCurrentTeam];
     
     if (self.currentTeam.number == 1) {
@@ -99,7 +103,7 @@
 - (IBAction)done:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-    if (self.currentTeam == [game firstTeamForTurn]) {
+    if (self.currentTeam == [game firstTeamForTurn] && [[game secondTeamForTurn] featurePictureForTurn:game.turn]) {
         [UIView beginAnimations:@"View Flip" context:nil];
         [UIView setAnimationDuration:0.80];
         [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
