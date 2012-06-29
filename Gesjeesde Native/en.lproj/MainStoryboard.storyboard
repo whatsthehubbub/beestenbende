@@ -3309,7 +3309,7 @@ die strijden om de meeste punten.</string>
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L6w-FK-FoM">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="L6w-FK-FoM">
                                             <rect key="frame" x="10" y="0.0" width="300" height="92"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
@@ -5972,5 +5972,14 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="pY3-Mn-Wz0"/>
+        <segue reference="iYQ-bF-g8K"/>
+        <segue reference="XVp-wt-Sm6"/>
+        <segue reference="bYY-FW-WYd"/>
+        <segue reference="aw3-qV-PsP"/>
+        <segue reference="nT0-nb-xZI"/>
+        <segue reference="aIf-Jt-bSO"/>
+        <segue reference="fEa-BH-mAb"/>
     </inferredMetricsTieBreakers>
 </document>
