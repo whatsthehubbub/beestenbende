@@ -70,7 +70,13 @@
     [game resetForNextIssue];
     game.issue = 1;
     
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+    // Go to the main menu again
+    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+    [self.navigationController pushViewController:viewController animated:YES];
+    
+    
+//    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (IBAction)back:(id)sender {
