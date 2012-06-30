@@ -36,7 +36,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [[SimpleAudioEngine sharedEngine] playEffect:@"d10_draak_wiebenik_v4.wav"];
+    [[SimpleAudioEngine sharedEngine] playEffect:@"d10_draak_wiebenik_v3.wav"];
     
     self.scrollView.contentSize = CGSizeMake(self.scrollView.frame.size.width * 4, self.scrollView.frame.size.height);
     

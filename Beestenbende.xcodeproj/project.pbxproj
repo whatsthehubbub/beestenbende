@@ -151,6 +151,7 @@
 		4E3326B7151A909000CEC850 /* CreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3326B6151A909000CEC850 /* CreditsViewController.m */; };
 		4E3326BA151A91B200CEC850 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3326B9151A91B200CEC850 /* MenuViewController.m */; };
 		4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */; };
+		4E3D23B7159F391600112E9C /* d10_draak_wiebenik_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D23B6159F391600112E9C /* d10_draak_wiebenik_v3.wav */; };
 		4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E428204154425F8009FD991 /* MakeTeamsViewController.m */; };
 		4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamPrepareViewController.m */; };
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
@@ -432,6 +433,7 @@
 		4E3326B9151A91B200CEC850 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		4E3385DB154043AF00E740BB /* SecondIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondIssueIntroductionViewController.m; sourceTree = "<group>"; };
+		4E3D23B6159F391600112E9C /* d10_draak_wiebenik_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d10_draak_wiebenik_v3.wav; sourceTree = "<group>"; };
 		4E428203154425F8009FD991 /* MakeTeamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTeamsViewController.h; sourceTree = "<group>"; };
 		4E428204154425F8009FD991 /* MakeTeamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamsViewController.m; sourceTree = "<group>"; };
 		4E42820715447EBC009FD991 /* TeamPrepareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPrepareViewController.h; sourceTree = "<group>"; };
@@ -843,6 +845,7 @@
 				4ED69F6C1588F8DF00F84D92 /* d07_vissen_hulp.wav */,
 				4ED69F6F1588F93600F84D92 /* d08_zeepaling_snapt.wav */,
 				4ED69F701588F93600F84D92 /* d09_vissen_opgelucht.wav */,
+				4E3D23B6159F391600112E9C /* d10_draak_wiebenik_v3.wav */,
 				4ED69F781589E40B00F84D92 /* d10_draak_wiebenik_v4.wav */,
 				4ED69F791589E40B00F84D92 /* d11_reptielen_watisdraak_v2.wav */,
 				4ED69F7A1589E40C00F84D92 /* d12_draak_inderdaadvis_v4.wav */,
@@ -1314,6 +1317,7 @@
 				47A87155159B51FA0019F9EF /* button-dragon-is-bird-on.png in Resources */,
 				47A87156159B51FA0019F9EF /* button-dragon-is-mammal-on.png in Resources */,
 				47C81ADE159CC0BA004C5D5D /* button-bg-choose-feature-white.png in Resources */,
+				4E3D23B7159F391600112E9C /* d10_draak_wiebenik_v3.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
