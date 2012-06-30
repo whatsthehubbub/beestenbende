@@ -75,7 +75,7 @@
     UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 44.0)];
     headerLabel.backgroundColor = [UIColor clearColor];
     headerLabel.opaque = NO;
-    headerLabel.font = [UIFont fontWithName:@"HoeflerText-Regular" size:16.0f];
+    headerLabel.font = [UIFont fontWithName:@"HoeflerText-Regular" size:22.0f];
     
     headerLabel.text = [[self.game.features objectAtIndex:section] objectForKey:@"Group"];
     
