@@ -15,7 +15,7 @@
 @synthesize captureSession;
 @synthesize stillImageOutput;
 
-// Code from : http://www.musicalgeometry.com/?p=1273
+// Code from: http://www.musicalgeometry.com/?p=1273
 // and: http://www.musicalgeometry.com/?p=1297
 - (id)initWithImageView:(UIImageView *)iView {
     if ((self = [super init])) {

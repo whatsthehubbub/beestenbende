@@ -124,7 +124,7 @@
         self.animalImage.image = [UIImage imageNamed:@"animal-eel-icon.png"];
     }
     
-    self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ heeft nog", [game getCurrentAnimalName]];
+    self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ wil nog", [game getCurrentAnimalName]];
     
     
     // Check if we're closer to the required proof

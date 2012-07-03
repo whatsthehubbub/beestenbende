@@ -54,10 +54,10 @@
     
     NSString *winnerText;
     if (game.team1.featurePictures.count == game.team2.featurePictures.count) {
-        winnerText = @"Goed werk, teams! Maar hebben jullie ook de juiste kenmerken?";
+        winnerText = @"Goed werk, teams! Maar hebben jullie ook het beste bewijsmateriaal?";
     } else {
         Team *winner = game.team1.featurePictures.count > game.team2.featurePictures.count ? game.team1 : game.team2;
-        winnerText = [NSString stringWithFormat:@"Goed werk, team %@! Maar hebben jullie ook de juiste kenmerken?", winner.getTeamName];
+        winnerText = [NSString stringWithFormat:@"Goed werk, team %@! Maar hebben jullie ook het beste bewijsmateriaal?", winner.getTeamName];
     }
     systemText.text = winnerText;
 }
