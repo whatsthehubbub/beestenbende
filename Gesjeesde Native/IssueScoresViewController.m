@@ -76,7 +76,7 @@
     game.team2.points = 0;
     
     if (game.issue == 1 || game.issue == 2) {
-        self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van %@!", [game getCurrentAnimalName]];
+        self.thanksLabel.text = [NSString stringWithFormat:@"Bedankt voor jullie hulp met het overtuigen van de %@!", [[game getCurrentAnimalName] lowercaseString]];
     } else {
         self.thanksLabel.text = @"Bedankt voor jullie hulp met het ontmaskeren van het draakje!";
     }
