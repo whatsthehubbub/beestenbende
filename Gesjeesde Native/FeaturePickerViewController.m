@@ -150,7 +150,9 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
+    // TODO refactor this twice used if to a method on game
+    if ([[feature objectForKey:@"Label"] isEqualToString:@"een ei"] ||
+        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
         [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || 
         (game.issue==3 && ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]])
         ) {
