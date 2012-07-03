@@ -108,7 +108,8 @@
     NSLog(@"Current feature %@", [feature objectForKey:@"Label"]);
     NSLog(@"Boolean: %d", ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]]);
     
-    if ([game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
+    if ([[feature objectForKey:@"Label"] isEqualToString:@"een ei"] ||
+        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
         [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || 
         (game.issue==3 && ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]])
         ) {
