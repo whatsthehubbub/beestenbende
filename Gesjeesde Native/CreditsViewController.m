@@ -32,7 +32,7 @@
     
     self.creditsScrollView.scrollEnabled = YES;
     
-    self.creditsScrollView.contentSize = CGSizeMake(320.0, 885.0);
+    self.creditsScrollView.contentSize = CGSizeMake(320.0, 930.0);
 }
 
 - (void)viewDidUnload
