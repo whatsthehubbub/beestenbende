@@ -609,7 +609,7 @@ van jong en oud.</string>
                                     <action selector="back:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="Tzj-hg-ELP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="zoek-foto-draak.jpg" id="YTH-J4-GQW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="zoek-foto-zeepaling.jpg" id="YTH-J4-GQW">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -5273,7 +5273,7 @@ want hij heeft…</string>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="ozD-1G-oAa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="HVL-wi-FgJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="zoek-foto-eekhoorn.jpg" id="HVL-wi-FgJ">
                                 <rect key="frame" x="40" y="120" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -5523,6 +5523,8 @@ want hij heeft…</string>
         <image name="um-logo-splash.jpg" width="640" height="960"/>
         <image name="um-logo.png" width="428" height="164"/>
         <image name="zoek-foto-draak.jpg" width="16" height="16"/>
+        <image name="zoek-foto-eekhoorn.jpg" width="16" height="16"/>
+        <image name="zoek-foto-zeepaling.jpg" width="16" height="16"/>
     </resources>
     <classes>
         <class className="AnimalPartsViewController" superclassName="UIViewController">
