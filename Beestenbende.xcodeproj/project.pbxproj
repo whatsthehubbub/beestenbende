@@ -58,6 +58,9 @@
 		479683DD15AC273B0075C6C1 /* zoek-foto-eekhoorn@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 479683DB15AC273B0075C6C1 /* zoek-foto-eekhoorn@2x.jpg */; };
 		479683E015AC28310075C6C1 /* zoek-foto-zeepaling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 479683DE15AC28310075C6C1 /* zoek-foto-zeepaling.jpg */; };
 		479683E115AC28310075C6C1 /* zoek-foto-zeepaling@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 479683DF15AC28310075C6C1 /* zoek-foto-zeepaling@2x.jpg */; };
+		479683E315AC2CB80075C6C1 /* example-photos-of-features@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 479683E215AC2CB80075C6C1 /* example-photos-of-features@2x.png */; };
+		479683E615AC2F780075C6C1 /* speech-bubble-for-example.png in Resources */ = {isa = PBXBuildFile; fileRef = 479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */; };
+		479683E715AC2F780075C6C1 /* speech-bubble-for-example@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */; };
 		47993148152E3EDA00AF019F /* button-titlebar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 47993147152E3EDA00AF019F /* button-titlebar-back.png */; };
 		4799314C152E405E00AF019F /* titlebar-team-marot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314A152E405E00AF019F /* titlebar-team-marot.png */; };
 		4799314D152E405E00AF019F /* titlebar-team-seba.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314B152E405E00AF019F /* titlebar-team-seba.png */; };
@@ -339,6 +342,9 @@
 		479683DB15AC273B0075C6C1 /* zoek-foto-eekhoorn@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zoek-foto-eekhoorn@2x.jpg"; sourceTree = "<group>"; };
 		479683DE15AC28310075C6C1 /* zoek-foto-zeepaling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zoek-foto-zeepaling.jpg"; sourceTree = "<group>"; };
 		479683DF15AC28310075C6C1 /* zoek-foto-zeepaling@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "zoek-foto-zeepaling@2x.jpg"; sourceTree = "<group>"; };
+		479683E215AC2CB80075C6C1 /* example-photos-of-features@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "example-photos-of-features@2x.png"; sourceTree = "<group>"; };
+		479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-for-example.png"; sourceTree = "<group>"; };
+		479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-for-example@2x.png"; sourceTree = "<group>"; };
 		47993147152E3EDA00AF019F /* button-titlebar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-back.png"; sourceTree = "<group>"; };
 		4799314A152E405E00AF019F /* titlebar-team-marot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-marot.png"; sourceTree = "<group>"; };
 		4799314B152E405E00AF019F /* titlebar-team-seba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-seba.png"; sourceTree = "<group>"; };
@@ -658,6 +664,9 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */,
+				479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */,
+				479683E215AC2CB80075C6C1 /* example-photos-of-features@2x.png */,
 				479683DE15AC28310075C6C1 /* zoek-foto-zeepaling.jpg */,
 				479683DF15AC28310075C6C1 /* zoek-foto-zeepaling@2x.jpg */,
 				479683DA15AC273B0075C6C1 /* zoek-foto-eekhoorn.jpg */,
@@ -1342,6 +1351,9 @@
 				479683DD15AC273B0075C6C1 /* zoek-foto-eekhoorn@2x.jpg in Resources */,
 				479683E015AC28310075C6C1 /* zoek-foto-zeepaling.jpg in Resources */,
 				479683E115AC28310075C6C1 /* zoek-foto-zeepaling@2x.jpg in Resources */,
+				479683E315AC2CB80075C6C1 /* example-photos-of-features@2x.png in Resources */,
+				479683E615AC2F780075C6C1 /* speech-bubble-for-example.png in Resources */,
+				479683E715AC2F780075C6C1 /* speech-bubble-for-example@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
