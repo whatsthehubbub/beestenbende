@@ -144,7 +144,12 @@
     } else {
         [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
         
-        [self performSegueWithIdentifier:@"Result" sender:self];
+        if ([game.firstTeamForTurn featurePictureForTurn:game.turn] || [game.secondTeamForTurn featurePictureForTurn:game.turn]) {
+            [self performSegueWithIdentifier:@"Result" sender:self];            
+        } else {
+            [self performSegueWithIdentifier:@"BothPassed" sender:self];
+        }
+
     }
 }
 
