@@ -120,7 +120,13 @@
             [self.featureButton setTitle:@"Wordt verwijderd" forState:UIControlStateNormal];
         } else {
             [self.deleteButton setImage:[UIImage imageNamed:@"toggle-trash-off.png"] forState:UIControlStateNormal];
-            [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
+            
+            if ([fp.feature length] != 0) {
+                [self.featureButton setTitle:fp.feature forState:UIControlStateNormal];
+            } else {
+                [self.featureButton setTitle:@"Kies een kenmerk…" forState:UIControlStateNormal];
+            }
+
         }
     }
 }
