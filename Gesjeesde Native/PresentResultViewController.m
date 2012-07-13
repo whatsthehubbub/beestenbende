@@ -131,9 +131,8 @@
     if (abs(team1points) + abs(team2points) > 0) {
         // This means we have one positive proof
         game.required -= 1;
-        
-        [self.proofsRequiredLabel setText:[NSString stringWithFormat:@"%d", game.required]];
     }
+    [self.proofsRequiredLabel setText:[NSString stringWithFormat:@"%d", game.required]];
 }
 
 - (void)viewDidUnload
