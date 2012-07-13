@@ -140,6 +140,11 @@
         // self.hasFeature remains the same for the other team, they have to go along
         self.yesNoButton.enabled = NO; // Disable yes no button for the second team
         
+        self.doneButton.enabled = NO;
+#ifdef DEBUG
+        self.doneButton.enabled = YES;
+#endif
+        
         [UIView commitAnimations];
     } else {
         [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
