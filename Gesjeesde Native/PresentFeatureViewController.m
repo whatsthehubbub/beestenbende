@@ -114,8 +114,11 @@
     
     // Commit the feature picture to the current turn and present assertion
     // because it could still change after picking
-    self.currentFeaturePicture.presentedTurn = game.turn;
-    self.currentFeaturePicture.presentAssertion = self.hasFeature;
+    
+    if (self.currentFeaturePicture) {
+        self.currentFeaturePicture.presentedTurn = game.turn;
+        self.currentFeaturePicture.presentAssertion = self.hasFeature;
+    }
     
     if (self.currentTeam == [game firstTeamForTurn]) {
         [UIView beginAnimations:@"View Flip" context:nil];
