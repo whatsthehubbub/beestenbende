@@ -127,7 +127,7 @@
         [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
         
         // Changes to this ViewController
-        self.currentTeam = [game secondTeamForTurn];
+        self.currentTeam = [game secondTeamForTurn];    
         
         self.headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [self.currentTeam getTeamName]];
         
