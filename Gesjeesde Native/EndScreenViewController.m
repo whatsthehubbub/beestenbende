@@ -66,10 +66,9 @@
 }
 
 - (IBAction)mainMenu:(id)sender {
-    // Reset game
-    [game resetForNextIssue];
-    game.issue = 1;
-    
+    // Create new game because we are in fact creating a a new game
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    appDelegate.game = [[Game alloc] init];
     
     // Go to the main menu again
     UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
