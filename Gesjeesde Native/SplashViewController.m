@@ -28,7 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self performSelector:@selector(next) withObject:nil afterDelay:0.7];
+    [self performSelector:@selector(next) withObject:nil afterDelay:1.5];
 }
 
 - (void)viewDidUnload
