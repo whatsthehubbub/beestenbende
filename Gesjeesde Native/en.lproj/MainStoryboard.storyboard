@@ -3393,8 +3393,8 @@ Help je ons?</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik kan dan wel een stukje zweven, maar ik heb veel meer kenmerken van een zoogdier dan van een vogel. Duidelijk!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fXJ-6d-Pob" customClass="NormalLabel">
-                                <rect key="frame" x="40" y="235" width="240" height="155"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik kan dan wel een stukje zweven, maar ik ben geen vogel. Ik ben een zoogdier!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fXJ-6d-Pob" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="237" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
