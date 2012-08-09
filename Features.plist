@@ -9,7 +9,7 @@
 		<array>
 			<dict>
 				<key>Label</key>
-				<string>één rij tanden</string>
+				<string>tanden in één rij</string>
 				<key>Explanation</key>
 				<string>alle zoogdieren hebben tanden in één rij. Tip: vissen hebben meestal meerdere rijen tanden achter elkaar.</string>
 				<key>Vis</key>
@@ -114,7 +114,7 @@
 			</dict>
 			<dict>
 				<key>Label</key>
-				<string>het lichaam recht boven de poten</string>
+				<string>een lichaam recht boven de poten</string>
 				<key>Explanation</key>
 				<string>vogels en zoogdieren hebben hun lichaam recht boven op hun poten. Tip: reptielen hebben hun lichaam tussen de poten.</string>
 				<key>Vis</key>
