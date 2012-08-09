@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -3392,7 +3392,7 @@ Help je ons?</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik kan dan wel een stukje zweven, maar ik ben geen vogel. Ik ben een zoogdier!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fXJ-6d-Pob" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik kan dan wel een stukje zweven, maar ben geen vogel. Ik ben een zoogdier!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="fXJ-6d-Pob" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="237" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
@@ -6000,15 +6000,15 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-<segue reference="fEa-BH-mAb"/>
-<segue reference="AoM-So-BHK"/>
-<segue reference="all-Ba-Vs9"/>
-<segue reference="pY3-Mn-Wz0"/>
-<segue reference="iYQ-bF-g8K"/>
-<segue reference="XVp-wt-Sm6"/>
-<segue reference="89K-HW-lP0"/>
-<segue reference="aw3-qV-PsP"/>
-<segue reference="nT0-nb-xZI"/>
-<segue reference="EGx-F1-zqe"/>
+        <segue reference="all-Ba-Vs9"/>
+        <segue reference="pY3-Mn-Wz0"/>
+        <segue reference="iYQ-bF-g8K"/>
+        <segue reference="XVp-wt-Sm6"/>
+        <segue reference="bYY-FW-WYd"/>
+        <segue reference="alL-iy-cNA"/>
+        <segue reference="aw3-qV-PsP"/>
+        <segue reference="nT0-nb-xZI"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="AoM-So-BHK"/>
     </inferredMetricsTieBreakers>
 </document>
