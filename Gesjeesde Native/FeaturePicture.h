@@ -27,5 +27,6 @@
 
 -(id)initWithImage:(UIImage *)newImage;
 
+- (NSString *)featureForNegation;
 
 @end

@@ -64,14 +64,19 @@
     
     featureImage.image = fp.image;
     
+    // We may need to change this text but need to leave the original intact
+    NSString *featureText = fp.feature;
+    
     // Update some user interface
     NSString *present = @"wel";
     // Presence depends on the first team playing not necessarily team1
     if (!fp.presentAssertion) {
         present = @"geen";
+        
+        featureText = [fp featureForNegation];
     }
 
-    featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@", [game getCurrentAnimalName], present, fp.feature]; 
+    featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@", [game getCurrentAnimalName], present, featureText]; 
     
     // Lots of code to generate the result
     NSString *explanation = [[game getFeatureWithName:fp.feature] objectForKey:@"Explanation"];

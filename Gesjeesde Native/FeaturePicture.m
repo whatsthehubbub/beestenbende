@@ -30,4 +30,14 @@
     return self;
 }
 
+- (NSString *)featureForNegation {
+    // This returns the feature but strips off any indefinite article in front of it ('een ') to make it fit in texts better
+    
+    if ([self.feature hasPrefix:@"een "]) {
+        return [self.feature substringFromIndex:4];
+    } else {
+        return self.feature;
+    }
+}
+
 @end

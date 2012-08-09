@@ -96,9 +96,13 @@
     if (self.hasFeature) {
         imageName = @"toggle-wel-on-geen-off.png";
         imageDisabledName = @"toggle-wel-on-geen-off-inactive.png";
+        
+        [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
     } else {
         imageName = @"toggle-wel-off-geen-on.png";
         imageDisabledName = @"toggle-wel-off-geen-on-inactive.png";
+        
+        [self.featureButton setTitle:[self.currentFeaturePicture featureForNegation] forState:UIControlStateNormal];
     }
     
     [self.yesNoButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
@@ -170,7 +174,11 @@
         
         self.featureImageView.image = self.currentFeaturePicture.image;
         
-        [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
+        if (self.hasFeature) {
+            [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
+        } else {
+            [self.featureButton setTitle:[self.currentFeaturePicture featureForNegation] forState:UIControlStateNormal];
+        }
     } else {
         // Pass picked
         
