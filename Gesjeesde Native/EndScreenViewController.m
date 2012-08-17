@@ -17,6 +17,7 @@
 @synthesize game;
 
 @synthesize winnerPicture;
+@synthesize teamOverlay;
 @synthesize winnerLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -46,6 +47,10 @@
     } else {
         // The team that had 3 dragon proofs wins on ties
         winner = game.team1.dragonFeaturesGuessed.count == 3 ? game.team1 : game.team2;
+    }
+    
+    if (winner.number != 1) {
+        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
     self.winnerPicture.image = winner.picture;
