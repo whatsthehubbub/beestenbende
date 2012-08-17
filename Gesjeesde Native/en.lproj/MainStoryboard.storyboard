@@ -1567,7 +1567,7 @@ Help je ons?</string>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bedenk je: wat zijn dingen die alleen vogels hebben? En wat is typsich voor zoogdieren?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Gke-GF-Qs6" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bedenk je: wat zijn dingen die alleen vogels hebben? En wat is typisch voor zoogdieren?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Gke-GF-Qs6" customClass="NormalLabel">
                                         <rect key="frame" x="480" y="0.0" width="240" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
@@ -3431,7 +3431,7 @@ Help je ons?</string>
                                 <rect key="frame" x="20" y="60" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik heb dan misschien lang en dun, maar ik ben geen slang. Ik ben een vis! Hoera!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Uni-8Q-7is" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aha. Ik ben dan misschien lang en dun, maar ik ben geen slang. Ik ben een vis! Hoera!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Uni-8Q-7is" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="80" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
