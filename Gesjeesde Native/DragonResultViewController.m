@@ -59,7 +59,14 @@
         NSDictionary *feature = [game getFeatureWithName:featurePicture.feature];
         
         if ([[feature objectForKey:@"Vis"] intValue] == 0) {
-            self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben %@. Kan je nog meer bewijs vinden?", [featurePicture.feature lowercaseString]];
+            
+            // We only display more proof if the game hasn't been won by either party yet
+            NSString *moreProof = @"";
+            if (game.team1.dragonFeaturesGuessed.count < 3 && game.team2.dragonFeaturesGuessed.count < 3) {
+                moreProof = @" Kan je nog meer bewijs vinden?";
+            }
+            
+            self.explanationLabel.text = [NSString stringWithFormat:@"Uitstekend bewijs! Ik ben een vis, want alleen vissen hebben %@.%@", [featurePicture.feature lowercaseString], moreProof];
             
             [currentTeam.dragonFeaturesGuessed addObject:[feature objectForKey:@"Label"]];
             currentTeam.points += 10;
