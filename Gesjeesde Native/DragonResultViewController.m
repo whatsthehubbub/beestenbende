@@ -62,7 +62,7 @@
             
             // We only display more proof if the game hasn't been won by either party yet
             NSString *moreProof = @"";
-            if (game.team1.dragonFeaturesGuessed.count < 3 && game.team2.dragonFeaturesGuessed.count < 3) {
+            if (currentTeam.dragonFeaturesGuessed.count < 2) {
                 moreProof = @" Kan je nog meer bewijs vinden?";
             }
             
