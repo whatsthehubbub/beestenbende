@@ -35,7 +35,7 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    [FlurryAnalytics logEvent:@"Issue2"];
+    [Flurry logEvent:@"Issue2"];
 }
 
 - (void)viewDidUnload

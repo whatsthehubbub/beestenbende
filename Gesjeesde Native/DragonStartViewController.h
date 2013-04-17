@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "SimpleAudioEngine.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 
 @interface DragonStartViewController : UIViewController
 

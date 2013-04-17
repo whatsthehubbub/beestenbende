@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "Game.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     

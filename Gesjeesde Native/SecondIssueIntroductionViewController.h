@@ -10,7 +10,7 @@
 
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
-#import "FlurryAnalytics.h"
+#import "Flurry.h"
 
 @interface SecondIssueIntroductionViewController : UIViewController {
     Game *game;

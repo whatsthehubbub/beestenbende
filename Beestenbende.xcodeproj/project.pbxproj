@@ -166,6 +166,8 @@
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
 		4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */; };
 		4E4282141546CEFB009FD991 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282131546C8AD009FD991 /* DDPageControl.m */; };
+		4E4346C5171EB6E100B93D50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */; };
+		4E4346CA171EB76800B93D50 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4346C9171EB76800B93D50 /* libFlurry.a */; };
 		4E4A4DF3154EB719009785BD /* DragonPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */; };
 		4E4A4DF7154ECA1B009785BD /* DragonLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
@@ -287,7 +289,6 @@
 		4EDEFAFD152B90C700324EDB /* toggle-trash-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
 		4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */; };
-		4EF7F2521597931000DD9C63 /* libFlurryAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF7F2511597931000DD9C63 /* libFlurryAnalytics.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -462,6 +463,10 @@
 		4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediaryScoresViewController.m; sourceTree = "<group>"; };
 		4E4282121546C8AC009FD991 /* DDPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPageControl.h; sourceTree = "<group>"; };
 		4E4282131546C8AD009FD991 /* DDPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
+		4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Beestenbende.xcodeproj; sourceTree = "<group>"; };
+		4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4E4346C8171EB76800B93D50 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		4E4346C9171EB76800B93D50 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		4E4A4DF1154EB719009785BD /* DragonPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonPictureViewController.h; sourceTree = "<group>"; };
 		4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonPictureViewController.m; sourceTree = "<group>"; };
 		4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonLabelViewController.h; sourceTree = "<group>"; };
@@ -636,8 +641,6 @@
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
 		4EF7F24C159697A200DD9C63 /* IssueSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueSplashViewController.h; sourceTree = "<group>"; };
 		4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueSplashViewController.m; sourceTree = "<group>"; };
-		4EF7F2501597931000DD9C63 /* FlurryAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalytics.h; sourceTree = "<group>"; };
-		4EF7F2511597931000DD9C63 /* libFlurryAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAnalytics.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -645,6 +648,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4346C5171EB6E100B93D50 /* SystemConfiguration.framework in Frameworks */,
 				4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */,
 				4E4EECEF1588BDEF0018170C /* AudioToolbox.framework in Frameworks */,
 				4E4EECED1588BDE80018170C /* OpenAL.framework in Frameworks */,
@@ -654,7 +658,7 @@
 				4EAE98DB151A618A0051C926 /* UIKit.framework in Frameworks */,
 				4EAE98DD151A618A0051C926 /* Foundation.framework in Frameworks */,
 				4EAE98DF151A618A0051C926 /* CoreGraphics.framework in Frameworks */,
-				4EF7F2521597931000DD9C63 /* libFlurryAnalytics.a in Frameworks */,
+				4E4346CA171EB76800B93D50 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,6 +838,20 @@
 			name = assets;
 			sourceTree = "<group>";
 		};
+		4E4346C2171EB6A500B93D50 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E4346C7171EB76800B93D50 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				4E4346C8171EB76800B93D50 /* Flurry.h */,
+				4E4346C9171EB76800B93D50 /* libFlurry.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
 		4E4EECDD1588BDC00018170C /* CocosDenshion */ = {
 			isa = PBXGroup;
 			children = (
@@ -899,6 +917,8 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
+				4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */,
+				4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */,
 				4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */,
 				4E4EECEC1588BDE80018170C /* OpenAL.framework */,
 				47AA630D159B1E56000BD6B3 /* Default.png */,
@@ -936,6 +956,7 @@
 		4EAE98E0151A618A0051C926 /* Gesjeesde Native */ = {
 			isa = PBXGroup;
 			children = (
+				4E4346C7171EB76800B93D50 /* Flurry */,
 				4E6E2A021593DBCC000EA338 /* AnimalPartsViewController.h */,
 				4ED69F641588F5A600F84D92 /* AnimalUnderstandsResponseViewController.h */,
 				4ECB233A1587F61500F3CDCA /* AnimalUnderstandsViewController.h */,
@@ -1030,7 +1051,6 @@
 				4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */,
 				4E4EECDD1588BDC00018170C /* CocosDenshion */,
 				4ED21521153C3BD300040C97 /* Custom */,
-				4EF7F24F1597930D00DD9C63 /* FlurryAnalytics */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
 				4EDEFAD3152B304D00324EDB /* Model */,
 				4EAE98E1151A618A0051C926 /* Supporting Files */,
@@ -1085,15 +1105,6 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		4EF7F24F1597930D00DD9C63 /* FlurryAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				4EF7F2501597931000DD9C63 /* FlurryAnalytics.h */,
-				4EF7F2511597931000DD9C63 /* libFlurryAnalytics.a */,
-			);
-			path = FlurryAnalytics;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1133,6 +1144,12 @@
 			mainGroup = 4EAE98CB151A61890051C926;
 			productRefGroup = 4EAE98D7151A618A0051C926 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4E4346C2171EB6A500B93D50 /* Products */;
+					ProjectRef = 4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4EAE98D5151A618A0051C926 /* Beestenbende */,
@@ -1457,8 +1474,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Alper Cugun";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alper Cugun";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1467,8 +1484,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "A3805FF3-785C-4B60-9E95-49260978A79F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A3805FF3-785C-4B60-9E95-49260978A79F";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1482,7 +1497,7 @@
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Gesjeesde Native/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				PRODUCT_NAME = Beestenbende;
 				WRAPPER_EXTENSION = app;
@@ -1495,8 +1510,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Alper Cugun (UWC9C6XB66)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alper Cugun (UWC9C6XB66)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1511,8 +1526,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "9CC517A6-3564-45BA-A203-EA9795024EA4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9CC517A6-3564-45BA-A203-EA9795024EA4";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1523,8 +1538,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Alper Cugun";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1533,7 +1548,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "8E8EFF3A-AE79-490D-8243-5CD6C93B78BF";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1547,7 +1561,7 @@
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Gesjeesde Native/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				PRODUCT_NAME = Beestenbende;
 				WRAPPER_EXTENSION = app;
@@ -1562,7 +1576,7 @@
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/Gesjeesde Native/FlurryAnalytics\"",
+					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				PRODUCT_NAME = Beestenbende;
 				WRAPPER_EXTENSION = app;

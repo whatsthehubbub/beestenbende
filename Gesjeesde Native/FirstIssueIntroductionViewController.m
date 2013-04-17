@@ -29,7 +29,7 @@
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"d02_vleekhoorn_denktvogel.wav"];
     
-    [FlurryAnalytics logEvent:@"Issue1"];
+    [Flurry logEvent:@"Issue1"];
 }
 
 - (void)viewDidUnload

@@ -56,7 +56,7 @@
     self.winnerPicture.image = winner.picture;
     self.winnerLabel.text = [NSString stringWithFormat:@"Team %@", [winner getTeamName]];
     
-    [FlurryAnalytics logEvent:@"GameOver"];
+    [Flurry logEvent:@"GameOver"];
 }
 
 - (void)viewDidUnload

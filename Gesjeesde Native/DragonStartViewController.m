@@ -30,7 +30,7 @@
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"d10_draak_wiebenik_v4.wav"];
     
-    [FlurryAnalytics logEvent:@"IssueDragon"];
+    [Flurry logEvent:@"IssueDragon"];
 }
 
 - (void)viewDidUnload
