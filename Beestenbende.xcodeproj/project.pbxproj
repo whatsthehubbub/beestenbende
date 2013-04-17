@@ -917,10 +917,7 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
-				4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */,
 				4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */,
-				4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */,
-				4E4EECEC1588BDE80018170C /* OpenAL.framework */,
 				47AA630D159B1E56000BD6B3 /* Default.png */,
 				47AA6311159B1FCF000BD6B3 /* Icon.png */,
 				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
@@ -942,6 +939,9 @@
 		4EAE98D9151A618A0051C926 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E4EECEC1588BDE80018170C /* OpenAL.framework */,
+				4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */,
+				4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */,
 				4EAF06C4153C8FA500BE1CAA /* CoreVideo.framework */,
 				4EAF06C2153C8FA100BE1CAA /* CoreMedia.framework */,
 				4EAF06C0153C8F5100BE1CAA /* ImageIO.framework */,
@@ -1474,8 +1474,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alper Cugun (5WBE98GG8T)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alper Cugun (5WBE98GG8T)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1484,6 +1484,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "25CCB0D9-144E-4C9D-9943-490A5B50B0E4";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "25CCB0D9-144E-4C9D-9943-490A5B50B0E4";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
