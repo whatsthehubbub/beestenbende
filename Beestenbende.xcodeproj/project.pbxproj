@@ -668,6 +668,9 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47AA630D159B1E56000BD6B3 /* Default.png */,
+				47AA6311159B1FCF000BD6B3 /* Icon.png */,
+				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
 				479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */,
 				479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */,
 				479683E215AC2CB80075C6C1 /* example-photos-of-features@2x.png */,
@@ -918,9 +921,6 @@
 			isa = PBXGroup;
 			children = (
 				4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */,
-				47AA630D159B1E56000BD6B3 /* Default.png */,
-				47AA6311159B1FCF000BD6B3 /* Icon.png */,
-				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
 				4E3326B4151A68C200CEC850 /* assets */,
 				4EAE98D9151A618A0051C926 /* Frameworks */,
 				4EAE98E0151A618A0051C926 /* Gesjeesde Native */,
