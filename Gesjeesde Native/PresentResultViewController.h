@@ -32,8 +32,10 @@
 @property (nonatomic, retain) IBOutlet UILabel *animalRequiresLabel;
 @property (nonatomic, retain) IBOutlet UILabel *proofsRequiredLabel;
 
-@property (nonatomic, retain) FeaturePicture *team1fp;
-@property (nonatomic, retain) FeaturePicture *team2fp;
+//@property (nonatomic, retain) FeaturePicture *team1fp;
+//@property (nonatomic, retain) FeaturePicture *team2fp;
+
+@property (strong) FeaturePicture *currentFeaturePicture;
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;

@@ -54,6 +54,34 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (BOOL)disableFeature:(NSString *)feature {
+    BOOL disable = NO;
+    Team *currentTeam = [game getCurrentTeam];
+    
+    // For the dragon disable a feature if it has been used by that team already
+    if (game.issue == 3 && [currentTeam.dragonFeaturesGuessed containsObject:feature]) {
+        disable = YES;
+    }
+    
+    if (game.issue == 1 || game.issue == 2) {
+        // Disable a cell only if it does not fit
+        if ([feature isEqualToString:@"een ei"] ||
+            [game feature:feature presentInAnimal:[game getCorrectAnimalClass]] ||
+            [game feature:feature presentInAnimal:[game getWrongAnimalClass]]) {
+            
+        } else {
+            disable = YES;
+        }
+        
+        // Disable a cell if the feature has already been used
+        if ([game featureUsed:feature]) {
+            disable = YES;
+        }
+    }
+    
+    return disable;
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -99,22 +127,15 @@
     UITableViewCell *cell;
     
     // Bizarre code needed to figure out which team is on during issue 3, will only be used during issue 3
-    Team *currentTeam = [game firstTeamForTurn];
-    if (currentTeam.tookFeaturePictures) {
-        currentTeam = [game otherTeamForTeam:currentTeam];
-    }
+//    Team *currentTeam = [game getCurrentTeam];
+//    
+//    NSLog(@"Current team %@", currentTeam.dragonFeaturesGuessed);
+//    NSLog(@"Current feature %@", [feature objectForKey:@"Label"]);
+//    NSLog(@"Boolean: %d", ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]]);
     
-    NSLog(@"Current team %@", currentTeam.dragonFeaturesGuessed);
-    NSLog(@"Current feature %@", [feature objectForKey:@"Label"]);
-    NSLog(@"Boolean: %d", ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]]);
+    BOOL disableCell = [self disableFeature:[feature objectForKey:@"Label"]];
     
-    if ([[feature objectForKey:@"Label"] isEqualToString:@"een ei"] ||
-        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
-        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || 
-        (game.issue==3 && ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]])
-        ) {
-        // This feature is correct for one of two
-        
+    if (!disableCell) {
         if (cell == nil) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         }
@@ -122,7 +143,7 @@
         CellIdentifier = @"FeatureCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     } else {
-        NSLog(@"Cell disabled");
+//        NSLog(@"Cell disabled");
         CellIdentifier = @"DisabledFeatureCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         
@@ -144,18 +165,10 @@
 {
     NSDictionary *feature = [[self.game getOrderedFeaturesForGroup:indexPath.section] objectAtIndex:indexPath.row];
     
-    // Bizarre code needed to figure out which team is on during issue 3, will only be used during issue 3
-    Team *currentTeam = [game firstTeamForTurn];
-    if (currentTeam.tookFeaturePictures) {
-        currentTeam = [game otherTeamForTeam:currentTeam];
-    }
+    BOOL disable = [self disableFeature:[feature objectForKey:@"Label"]];
     
     // TODO refactor this twice used if to a method on game
-    if ([[feature objectForKey:@"Label"] isEqualToString:@"een ei"] ||
-        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getCorrectAnimalClass]] || 
-        [game feature:[feature objectForKey:@"Label"] presentInAnimal:[game getWrongAnimalClass]] || 
-        (game.issue==3 && ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]])
-        ) {
+    if (!disable) {
         // This feature is correct for one of two animals, so this cell is selectable
         
         [[SimpleAudioEngine sharedEngine] playEffect:@"i11_menu-select-close.wav"];

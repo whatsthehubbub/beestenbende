@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="11E53" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
         <scene sceneID="5">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="MenuViewController" title="Main Menu" id="2" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -56,13 +55,13 @@
                         <segue destination="19C-6r-hKc" kind="push" identifier="Next" id="auO-a0-vdd"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1435" y="-2157"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="S9k-Fp-Exm">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CgD-rJ-5Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Map" id="19C-6r-hKc" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bKu-U0-Mur">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -121,13 +120,13 @@
                         <segue destination="gnf-ri-JiR" kind="push" identifier="Next" id="cBi-GF-qMg"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CgD-rJ-5Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1915" y="-2157"/>
         </scene>
         <!--Welcome View Controller - Welcome-->
         <scene sceneID="qrX-xg-Mrk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lmU-bJ-VAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Welcome" id="gnf-ri-JiR" customClass="WelcomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rki-O6-hwG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -263,13 +262,13 @@ van jong en oud.</string>
                         <segue destination="i3Y-tE-tAM" kind="push" identifier="Next" id="rZF-5p-iuu"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lmU-bJ-VAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1282" y="-805"/>
         </scene>
         <!--First Issue Introduction View Controller-->
         <scene sceneID="kxR-Ib-jnv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WOf-21-m0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="aEm-4i-hHa" customClass="FirstIssueIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ihD-cQ-GH1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -339,13 +338,13 @@ van jong en oud.</string>
                         <segue destination="O1r-7e-Hsl" kind="push" identifier="Next" id="jiE-vb-I9x"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOf-21-m0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2954" y="-164"/>
         </scene>
         <!--Explanation View Controller-->
         <scene sceneID="ijN-Ou-H9H">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="h8c-Wh-MX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="vvi-fO-Lr8" customClass="ExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ic-5Z-W8U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -482,13 +481,13 @@ van jong en oud.</string>
                         <segue destination="eaH-OO-SNN" kind="push" identifier="Next" id="HtV-Y0-kXO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8c-Wh-MX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1013" y="-805"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="oAu-2C-PM7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ga3-wu-Ssy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SecondIssueSplash" id="rPn-bJ-gLN" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t48-Sy-pNh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -555,13 +554,13 @@ van jong en oud.</string>
                         <segue destination="Vwl-8G-Q8z" kind="push" identifier="Next" id="ej4-jd-UAr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ga3-wu-Ssy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2042" y="481"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="nCv-RD-v7D">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NtQ-6E-Bv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Vwl-8G-Q8z" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdn-uX-S8q">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -624,13 +623,13 @@ van jong en oud.</string>
                         <segue destination="viR-Ly-7kL" kind="push" identifier="Next" id="hHD-P9-itN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtQ-6E-Bv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2527" y="481"/>
         </scene>
         <!--Second Issue Introduction View Controller-->
         <scene sceneID="rBC-kx-VM3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W23-by-e55" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="SecondIssueIntroduction" id="viR-Ly-7kL" customClass="SecondIssueIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pes-6s-NxI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -700,13 +699,13 @@ van jong en oud.</string>
                         <segue destination="pZK-6x-SL0" kind="push" identifier="Next" id="myP-D3-vUz"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W23-by-e55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2954" y="481"/>
         </scene>
         <!--Dragon Start View Controller-->
         <scene sceneID="Jxr-kz-8GL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9T9-LD-Zpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FinalIssueIntroduction" id="e3m-9K-xFw" customClass="DragonStartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MKd-zs-MI5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -776,13 +775,13 @@ van jong en oud.</string>
                         <segue destination="fbs-mE-PLk" kind="push" identifier="Next" id="MZi-4W-qVc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9T9-LD-Zpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2458" y="1116"/>
         </scene>
         <!--Dragon Question View Controller-->
         <scene sceneID="GnT-KT-xeG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="d4r-GI-JIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="fbs-mE-PLk" customClass="DragonQuestionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p0n-d1-PLQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -852,13 +851,13 @@ van jong en oud.</string>
                         <segue destination="axP-nJ-0sf" kind="push" identifier="Next" id="5d6-iR-adl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4r-GI-JIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2936" y="1116"/>
         </scene>
         <!--Dragon Explanation View Controller-->
         <scene sceneID="HaD-5H-CQD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Kco-3P-Og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="axP-nJ-0sf" customClass="DragonExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9lN-NA-l6A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -991,13 +990,13 @@ van jong en oud.</string>
                         <segue destination="Dee-6Y-Prk" kind="push" identifier="Next" id="fEa-BH-mAb"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kco-3P-Og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3415" y="1116"/>
         </scene>
         <!--Make Team Pictures View Controller-->
         <scene sceneID="6uc-Ng-T8J">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PpI-55-cDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="eaH-OO-SNN" customClass="MakeTeamPicturesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MGp-Ty-CMO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1071,13 +1070,13 @@ van jong en oud.</string>
                         <segue destination="apH-ed-9aX" kind="push" identifier="Next" id="ED8-19-NeI"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpI-55-cDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1454" y="-805"/>
         </scene>
         <!--Make Teams View Controller-->
         <scene sceneID="3RN-6O-mt2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-cG-ujE" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="IoP-tb-2Mi" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grp-Hh-uYs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1156,13 +1155,13 @@ te helpen.</string>
                         <segue destination="Ctl-ZB-eat" kind="push" identifier="Next" id="llt-Ka-N9j"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-cG-ujE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-312" y="-805"/>
         </scene>
         <!--Make Teams View Controller-->
         <scene sceneID="qN9-tO-ExE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ll1-So-o3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ctl-ZB-eat" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VYP-qp-unm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1234,13 +1233,13 @@ te helpen.</string>
                         <segue destination="W9S-Qk-Vcr" kind="push" identifier="Next" id="Dgh-T9-jdy"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ll1-So-o3i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="121" y="-805"/>
         </scene>
         <!--Animal Parts View Controller-->
         <scene sceneID="NQB-65-13G">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GXb-qc-HlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="W9S-Qk-Vcr" customClass="AnimalPartsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rXF-Em-dAb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1301,13 +1300,13 @@ te helpen.</string>
                         <segue destination="vvi-fO-Lr8" kind="push" identifier="Next" id="5HY-Pk-Req"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GXb-qc-HlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="545" y="-805"/>
         </scene>
         <!--Make Teams View Controller-->
         <scene sceneID="QjV-tY-JgD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QfR-Fv-pdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="i3Y-tE-tAM" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDj-5G-06t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1403,13 +1402,13 @@ die strijden om de meeste punten.</string>
                         <segue destination="IoP-tb-2Mi" kind="push" identifier="Next" id="Na2-jC-fPy"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfR-Fv-pdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-790" y="-805"/>
         </scene>
         <!--Team Picture View Controller - Team Picture-->
         <scene sceneID="NYe-nf-psF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vqS-CZ-dGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="TeamPictureViewController" title="Team Picture" id="apH-ed-9aX" customClass="TeamPictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QWU-cK-vyO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1522,14 +1521,14 @@ die strijden om de meeste punten.</string>
                         <segue destination="rPn-bJ-gLN" kind="push" identifier="SecondIssueIntroduction" id="cmy-uU-Pjz"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqS-CZ-dGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1923" y="-805"/>
         </scene>
         <!--First Issue Explanation View Controller-->
         <scene sceneID="xrJ-Lo-DNP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnx-el-5dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="O1r-7e-Hsl" customClass="FirstIssueExplanationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstIssueExplanation" id="O1r-7e-Hsl" customClass="FirstIssueExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foe-OV-4XC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1680,13 +1679,13 @@ Help je ons?</string>
                         <segue destination="p3a-E9-b1k" kind="push" identifier="FeatureExample" id="Bce-Ux-NY9"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnx-el-5dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3432" y="-164"/>
         </scene>
         <!--Feature Example View Controller-->
         <scene sceneID="dDP-mV-XhC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6CS-Yq-LNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="p3a-E9-b1k" customClass="FeatureExampleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K77-9w-uXa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1742,13 +1741,13 @@ Help je ons?</string>
                     </view>
                     <navigationItem key="navigationItem" id="7Xj-bK-0tp"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6CS-Yq-LNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3911" y="-770"/>
         </scene>
         <!--Feature Picture View Controller-->
         <scene sceneID="aSc-un-SDF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hj7-sC-Kpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FeaturePictureViewController" id="jlM-Ks-Kmv" customClass="FeaturePictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4yC-z7-XCS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1762,6 +1761,21 @@ Help je ons?</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kF7-2m-XFW" customClass="BeestenButton">
+                                <rect key="frame" x="20" y="379" width="110" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Opnieuw">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeFeaturePictureAgain:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="e6o-XT-Y5O"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer bewijs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9XZ-VN-APE" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1781,17 +1795,6 @@ Help je ons?</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="clock.png" id="liQ-gz-0gT">
-                                <rect key="frame" x="35" y="109" width="249" height="262"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Roep het andere team er weer bij." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GPT-hi-9L0">
-                                <rect key="frame" x="20" y="379" width="280" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1pI-Nz-eIs" customClass="BeestenButton">
                                 <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1807,28 +1810,6 @@ Help je ons?</string>
                                     <action selector="takeFeaturePicture:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="zv6-Pn-lXz"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-clock.png" id="sfJ-69-6FS">
-                                <rect key="frame" x="40" y="84" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icon-stack-of-photos.png" id="8nd-K1-cks">
-                                <rect key="frame" x="252" y="84" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="60" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qT8-zr-JJV" customClass="NormalLabel">
-                                <rect key="frame" x="71" y="87" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tv8-fi-k7e" customClass="NormalLabel">
-                                <rect key="frame" x="207" y="87" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Q1-KH-j0a" customClass="BeestenButton">
                                 <rect key="frame" x="40" y="418" width="240" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1852,6 +1833,13 @@ Help je ons?</string>
                                 <rect key="frame" x="36" y="116" width="248" height="247"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fotografeer een kenmerk van een zoogdier of een vogel" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ty2-yX-4tC">
+                                <rect key="frame" x="40" y="66" width="270" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1859,26 +1847,21 @@ Help je ons?</string>
                     <connections>
                         <outlet property="doneButton" destination="5Q1-KH-j0a" id="KAv-ug-LTF"/>
                         <outlet property="headerLabel" destination="9XZ-VN-APE" id="3op-Tz-3SJ"/>
-                        <outlet property="imagesLabel" destination="tv8-fi-k7e" id="9x6-3P-50i"/>
                         <outlet property="pictureFrame" destination="9Wr-fn-qC2" id="Q3i-ly-XbY"/>
                         <outlet property="pictureView" destination="Xa1-Hl-WNi" id="OKI-si-Xr8"/>
+                        <outlet property="takePictureAgainButton" destination="kF7-2m-XFW" id="5hw-Fr-i10"/>
                         <outlet property="takePictureButton" destination="1pI-Nz-eIs" id="iID-2b-jFh"/>
                         <outlet property="teamOverlay" destination="wRd-MK-2wJ" id="Q4z-TE-HNi"/>
-                        <outlet property="timeLabel" destination="qT8-zr-JJV" id="rqa-NI-xZZ"/>
-                        <outlet property="timeUpImage" destination="liQ-gz-0gT" id="VnH-Ad-iLC"/>
-                        <outlet property="timeUpLabel" destination="GPT-hi-9L0" id="0gR-Qd-phL"/>
-                        <segue destination="mhP-gb-YWU" kind="push" identifier="NextTeamPrepare" id="gvp-bG-FzK"/>
-                        <segue destination="7jx-Og-bWS" kind="push" identifier="LabelFirst" id="KVj-xd-ewv"/>
-                        <segue destination="Moc-nT-lay" kind="push" identifier="LabelSecond" id="ukb-al-fCe"/>
+                        <segue destination="Kgz-tg-9iE" kind="push" identifier="UsePictureFirst" id="SJP-HO-3Ea"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hj7-sC-Kpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4394" y="-165"/>
+            <point key="canvasLocation" x="4900" y="-165"/>
         </scene>
         <!--Team Prepare View Controller-->
         <scene sceneID="L1C-Nq-hfS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xfh-Bo-PeI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="mhP-gb-YWU" customClass="TeamPrepareViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIL-oH-2Oj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -1896,8 +1879,8 @@ Help je ons?</string>
                                 <rect key="frame" x="20" y="60" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Let op: jullie hebben 90 seconden om fotobewijs te verzamelen. Het andere team kan alvast even rondkijken…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Dv3-KM-zeD" customClass="NormalLabel">
-                                <rect key="frame" x="40" y="81" width="240" height="155"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team x mag beginnen, team y komt zo aan de beurt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Dv3-KM-zeD" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="82" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1922,7 +1905,7 @@ Help je ons?</string>
                                     <action selector="next:" destination="mhP-gb-YWU" eventType="touchUpInside" id="5rC-uR-5TW"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw/Geel bereid je voor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tpg-Mh-feY" customClass="HeaderLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wie mag er beginnen?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tpg-Mh-feY" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1952,16 +1935,16 @@ Help je ons?</string>
                         <outlet property="explanationLabel" destination="Dv3-KM-zeD" id="sZE-IN-EdH"/>
                         <outlet property="headerLabel" destination="tpg-Mh-feY" id="7l1-t0-g0B"/>
                         <outlet property="teamOverlay" destination="o8x-X9-RCA" id="Hgf-Yh-xZT"/>
-                        <segue destination="jlM-Ks-Kmv" kind="push" identifier="Next" id="KXB-WX-Gcw"/>
+                        <segue destination="4Xr-pd-4cz" kind="push" identifier="Next" id="GW9-yo-buq"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xfh-Bo-PeI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3911" y="-164"/>
         </scene>
         <!--Feature Picture Done View Controller-->
         <scene sceneID="gJv-t0-ChO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlr-Ob-U8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="7jx-Og-bWS" customClass="FeaturePictureDoneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p6K-7W-nMq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2028,17 +2011,14 @@ Help je ons?</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="NB1-ED-2ox"/>
-                    <connections>
-                        <segue destination="rP3-dC-dUL" kind="push" identifier="Next" id="pY3-Mn-Wz0"/>
-                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qlr-Ob-U8O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4876" y="-164"/>
+            <point key="canvasLocation" x="4900" y="-1084"/>
         </scene>
         <!--Feature Picture Done View Controller-->
         <scene sceneID="dH6-WM-p80">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oTe-Hn-ddK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Moc-nT-lay" customClass="FeaturePictureDoneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R2u-cb-CDk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2105,17 +2085,14 @@ Help je ons?</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dnz-VS-eEq"/>
-                    <connections>
-                        <segue destination="rP3-dC-dUL" kind="push" identifier="Next" id="0AR-ig-N8o"/>
-                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oTe-Hn-ddK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4876" y="475"/>
+            <point key="canvasLocation" x="4480" y="-1124"/>
         </scene>
         <!--Picture Label View Controller-->
         <scene sceneID="IC2-hg-Dfa">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i0A-xp-E6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="rP3-dC-dUL" customClass="PictureLabelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MUu-st-lJj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2174,9 +2151,6 @@ Help je ons?</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="iYQ-bF-g8K"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="R51-xD-bKj">
                                 <rect key="frame" x="258" y="104" width="40" height="38"/>
@@ -2250,16 +2224,15 @@ Help je ons?</string>
                         <outlet property="featureButton" destination="546-tb-hty" id="TZN-yM-E5X"/>
                         <outlet property="headerLabel" destination="K3s-YT-CSG" id="7hL-hh-Zhh"/>
                         <outlet property="overlayImage" destination="dCt-RR-0x9" id="qjZ-d9-qxk"/>
-                        <segue destination="Xjc-Xc-ENv" kind="push" identifier="LabellingDone" id="8Y3-nS-vPa"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i0A-xp-E6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5356" y="-165"/>
+            <point key="canvasLocation" x="4674" y="-1735"/>
         </scene>
         <!--Feature Picker View Controller-->
         <scene sceneID="mDs-fL-2SJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NzA-ic-LbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="dCT-Mf-cjh" customClass="FeaturePickerViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="UVc-Hd-48B">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2311,13 +2284,13 @@ Help je ons?</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="00V-35-v7n"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NzA-ic-LbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5835" y="-770"/>
+            <point key="canvasLocation" x="5343" y="-798"/>
         </scene>
         <!--Convince First Animal View Controller-->
         <scene sceneID="9Ez-FX-W4p">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7g3-ru-P6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="StartPresentFirstIssue" id="ETL-EA-CCI" customClass="ConvinceFirstAnimalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QR6-ba-wtE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2482,16 +2455,15 @@ Help je ons?</string>
                         <outlet property="nextButton" destination="agy-Ug-hQT" id="fd1-Ss-4NW"/>
                         <outlet property="previousButton" destination="joJ-CX-vXm" id="HuR-Kw-1gc"/>
                         <outlet property="scrollView" destination="nOx-mv-HEt" id="Say-Sr-Jl3"/>
-                        <segue destination="Kgz-tg-9iE" kind="push" identifier="Next" id="8jN-ZW-QTz"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7g3-ru-P6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6317" y="-164"/>
+            <point key="canvasLocation" x="6627" y="-1018"/>
         </scene>
         <!--Most Pictures View Controller-->
         <scene sceneID="I3e-rk-uqI">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nor-ow-sUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Xjc-Xc-ENv" customClass="MostPicturesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EoG-HO-ffU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2626,13 +2598,13 @@ Help je ons?</string>
                         <segue destination="ETL-EA-CCI" kind="push" identifier="LabellingDone" id="dDB-Xz-g1r"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nor-ow-sUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5835" y="-165"/>
+            <point key="canvasLocation" x="6145" y="-1019"/>
         </scene>
         <!--Convince Second Animal View Controller-->
         <scene sceneID="Jvw-Ym-Q31">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f0V-nS-Jqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="StartPresentSecondIssue" id="JWb-Gt-s87" customClass="ConvinceSecondAnimalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CLc-md-kBr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2797,16 +2769,15 @@ Help je ons?</string>
                         <outlet property="nextButton" destination="t4P-fY-9Hy" id="gBM-rE-aby"/>
                         <outlet property="previousButton" destination="7OU-j2-m6a" id="drL-GH-b0i"/>
                         <outlet property="scrollView" destination="1x8-zq-gbW" id="wT9-9d-Kgh"/>
-                        <segue destination="NDf-Ve-Xx0" kind="push" identifier="Next" id="XVp-wt-Sm6"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0V-nS-Jqq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6317" y="475"/>
+            <point key="canvasLocation" x="6799" y="-753"/>
         </scene>
         <!--Present Feature View Controller-->
         <scene sceneID="F0F-JI-qJE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ccj-M7-Re4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NDf-Ve-Xx0" customClass="PresentFeatureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b1r-29-hI9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2861,9 +2832,6 @@ Help je ons?</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="h2d-Qg-jN8" kind="push" identifier="PickFeature" id="GhX-mS-cBD"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="LTL-EX-1to">
                                 <rect key="frame" x="20" y="101" width="52" height="40"/>
@@ -2916,17 +2884,15 @@ Help je ons?</string>
                         <outlet property="headerLabel" destination="Ga4-8b-XD1" id="FKq-R5-ix3"/>
                         <outlet property="overlayImage" destination="lyO-hb-Ap1" id="HJK-oy-dyg"/>
                         <outlet property="yesNoButton" destination="LTL-EX-1to" id="glq-ua-7Cn"/>
-                        <segue destination="bTt-EX-SMb" kind="push" identifier="Result" id="bYY-FW-WYd"/>
-                        <segue destination="4Xr-pd-4cz" kind="push" identifier="BothPassed" id="K9f-Pf-sLl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccj-M7-Re4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6794" y="475"/>
+            <point key="canvasLocation" x="4840" y="553"/>
         </scene>
         <!--Present Feature View Controller-->
         <scene sceneID="n2N-b1-R7d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ci-0u-KMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Kgz-tg-9iE" customClass="PresentFeatureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4s6-Wt-hs0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -2982,7 +2948,7 @@ Help je ons?</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="h2d-Qg-jN8" kind="push" identifier="PickFeature" id="nT0-nb-xZI"/>
+                                    <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="1fY-YD-3fF"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="uTF-wg-lnc">
@@ -3035,17 +3001,16 @@ Help je ons?</string>
                         <outlet property="headerLabel" destination="VzL-5w-4Vr" id="Q4T-pX-3e6"/>
                         <outlet property="overlayImage" destination="RxL-gE-LAJ" id="4nE-52-OU8"/>
                         <outlet property="yesNoButton" destination="xtc-7C-RXk" id="R5G-uQ-ZMR"/>
-                        <segue destination="bTt-EX-SMb" kind="push" identifier="Result" id="EGx-F1-zqe"/>
-                        <segue destination="4Xr-pd-4cz" kind="push" identifier="BothPassed" id="89K-HW-lP0"/>
+                        <segue destination="bTt-EX-SMb" kind="push" identifier="Next" id="fpS-jq-29F"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ci-0u-KMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6800" y="-164"/>
+            <point key="canvasLocation" x="5379" y="-164"/>
         </scene>
         <!--Present Result View Controller-->
         <scene sceneID="ZyI-wr-vRl">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8xJ-mZ-EAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4Xr-pd-4cz" customClass="PresentResultViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIW-Hn-7zF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3192,19 +3157,17 @@ Help je ons?</string>
                         <outlet property="team2featureLabel" destination="V8k-Pf-c7m" id="0vl-DM-sWn"/>
                         <outlet property="team2pointsImage" destination="Smo-zc-9YY" id="Oun-EZ-xGh"/>
                         <outlet property="titleLabel" destination="2LW-Hk-jGE" id="v4H-h1-kfV"/>
-                        <segue destination="rTe-1j-Lla" kind="push" identifier="FirstProofComplete" id="7Ms-DA-xSn"/>
-                        <segue destination="1eD-BL-qUt" kind="push" identifier="SecondProofComplete" id="deg-D3-jsq"/>
-                        <segue destination="Kgz-tg-9iE" kind="push" identifier="AnotherRoundFirstIssue" id="aw3-qV-PsP"/>
-                        <segue destination="NDf-Ve-Xx0" kind="push" identifier="AnotherRoundSecondIssue" id="DsN-gf-eaW"/>
+                        <segue destination="jlM-Ks-Kmv" kind="push" identifier="NextTeam" id="AjB-Uk-xnQ"/>
+                        <segue destination="rTe-1j-Lla" kind="push" identifier="AnimalConvinced" id="TyM-mf-ygn"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xJ-mZ-EAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8148" y="65"/>
+            <point key="canvasLocation" x="4398" y="-165"/>
         </scene>
         <!--Explain Feature View Controller-->
         <scene sceneID="F2H-N0-PIK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wrz-fZ-A9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="bTt-EX-SMb" customClass="ExplainFeatureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cDG-JA-I4d">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3292,16 +3255,16 @@ Help je ons?</string>
                         <outlet property="featureLabel" destination="n4o-Si-akp" id="Ies-TK-7e4"/>
                         <outlet property="overlayImage" destination="dxV-at-NUA" id="AYT-lz-DWY"/>
                         <outlet property="resultAndExplanationLabel" destination="dNh-td-Cgx" id="WVL-o7-lLp"/>
-                        <segue destination="4Xr-pd-4cz" kind="push" identifier="Done" id="alL-iy-cNA"/>
+                        <segue destination="4Xr-pd-4cz" kind="push" identifier="NextTeam" id="OHM-xk-G1T"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrz-fZ-A9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7618" y="65"/>
+            <point key="canvasLocation" x="5935" y="-165"/>
         </scene>
         <!--Team Feature Picker View Controller-->
         <scene sceneID="0xp-NP-yXF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="htq-iv-af9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="h2d-Qg-jN8" customClass="TeamFeaturePickerViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="93" sectionHeaderHeight="22" sectionFooterHeight="22" id="VZ1-31-7E1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3334,13 +3297,13 @@ Help je ons?</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="RZc-2n-BSn"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="htq-iv-af9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7448" y="-961"/>
+            <point key="canvasLocation" x="5792" y="-805"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="cwx-wr-6zT">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="igr-XW-cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="rTe-1j-Lla" customClass="AnimalUnderstandsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dt-zu-5YR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3407,13 +3370,13 @@ Help je ons?</string>
                         <segue destination="QN4-xP-Apt" kind="push" identifier="Next" id="SVt-KJ-JuY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igr-XW-cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9034" y="-164"/>
+            <point key="canvasLocation" x="6204" y="339"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="eok-ou-PYS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Psx-9i-7Vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="1eD-BL-qUt" customClass="AnimalUnderstandsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dH9-bv-bHb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3480,13 +3443,13 @@ Help je ons?</string>
                         <segue destination="jda-9n-bj0" kind="push" identifier="Next" id="jlU-aZ-YoS"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Psx-9i-7Vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9034" y="519"/>
         </scene>
         <!--Issue Scores View Controller-->
         <scene sceneID="XBQ-vX-giP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bbn-rO-1m8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="3Ko-sZ-1eK" customClass="IssueScoresViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dXn-7p-EJ8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3630,13 +3593,13 @@ Help je ons?</string>
                         <segue destination="rSy-eg-ifs" kind="push" identifier="Next" id="Ahu-A3-OJ7"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbn-rO-1m8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10059" y="-164"/>
         </scene>
         <!--Intermediary Scores View Controller-->
         <scene sceneID="Vc6-1M-xGY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B2d-dB-IYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="rSy-eg-ifs" customClass="IntermediaryScoresViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W8B-8W-jLB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3779,13 +3742,13 @@ Help je ons?</string>
                         <segue destination="3rS-nM-KiT" kind="push" identifier="EndScreen" id="0rk-rs-l5i"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2d-dB-IYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10469" y="-164"/>
         </scene>
         <!--End Screen View Controller-->
         <scene sceneID="yLR-YY-TNR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eQy-Az-ObB" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="3rS-nM-KiT" customClass="EndScreenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NeM-sW-wuw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3877,13 +3840,13 @@ Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zodat
                         <outlet property="winnerPicture" destination="0O5-CU-J7b" id="iLU-D8-gLs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQy-Az-ObB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10961" y="-164"/>
         </scene>
         <!--Animal Understands Response View Controller-->
         <scene sceneID="L3j-eL-VcF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ABc-rc-jSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="QN4-xP-Apt" customClass="AnimalUnderstandsResponseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4G0-TU-KsZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -3953,13 +3916,13 @@ Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zodat
                         <segue destination="3Ko-sZ-1eK" kind="push" identifier="Next" id="D3e-WY-yM9"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABc-rc-jSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9492" y="-164"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="zud-re-MKp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HA4-cX-Myv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="aA8-Uu-wjL" customClass="CreditsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xs4-fv-CJu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4107,13 +4070,13 @@ Audio</string>
                         <outlet property="creditsScrollView" destination="05s-nn-VjM" id="vD7-Dj-S7x"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HA4-cX-Myv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1915" y="-1517"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="o7I-wb-sCo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P0U-F6-V3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="3Oi-9P-c94" customClass="SplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJ5-bk-kBy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4131,13 +4094,13 @@ Audio</string>
                         <segue destination="umP-hU-cZb" kind="push" identifier="Next" id="SX8-6g-XRT"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P0U-F6-V3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="462" y="-2156"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="OhM-7N-Nf9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Db8-Ws-oGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="umP-hU-cZb" customClass="SplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FEF-YG-zEG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4155,13 +4118,13 @@ Audio</string>
                         <segue destination="2" kind="push" identifier="Next" id="J2h-Zn-n45"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Db8-Ws-oGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="943" y="-2156"/>
         </scene>
         <!--Second Issue Explanation View Controller-->
         <scene sceneID="EXb-LP-run">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TMe-Fi-ctz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="pZK-6x-SL0" customClass="SecondIssueExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8KN-WO-11Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4294,13 +4257,13 @@ Audio</string>
                         <segue destination="mhP-gb-YWU" kind="push" identifier="Next" id="all-Ba-Vs9"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TMe-Fi-ctz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3432" y="475"/>
         </scene>
         <!--Animal Understands Response View Controller-->
         <scene sceneID="Qup-xT-pOs">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g2T-PN-zhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="jda-9n-bj0" customClass="AnimalUnderstandsResponseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ju0-62-wBR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4370,13 +4333,13 @@ Audio</string>
                         <segue destination="3Ko-sZ-1eK" kind="push" identifier="Next" id="aIf-Jt-bSO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2T-PN-zhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9492" y="519"/>
         </scene>
         <!--Dragon Introduction View Controller-->
         <scene sceneID="aXj-aZ-nnA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AaH-uG-MJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Dee-6Y-Prk" customClass="DragonIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GKT-ke-Jds">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4507,13 +4470,13 @@ Audio</string>
                         <segue destination="Xrb-GQ-McX" kind="push" identifier="DragonAgain" id="xxo-5k-F2o"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaH-uG-MJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3900" y="1116"/>
         </scene>
         <!--Dragon Picture View Controller-->
         <scene sceneID="XUj-ef-RYG">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fj1-M9-pq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="JWy-sg-rOd" customClass="DragonPictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4r-fe-Nlj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4623,13 +4586,13 @@ een [gekozen diergroep].</string>
                         <segue destination="yMG-9O-rz6" kind="push" identifier="Next" id="HOA-0I-TTa"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fj1-M9-pq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4876" y="1116"/>
         </scene>
         <!--Dragon Class View Controller-->
         <scene sceneID="wGT-rQ-oAw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xaY-JC-CR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Xrb-GQ-McX" customClass="DragonClassViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y9X-L3-rO7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4762,13 +4725,13 @@ een [gekozen diergroep].</string>
                         <segue destination="JWy-sg-rOd" kind="push" identifier="Next" id="7aH-1G-qYY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xaY-JC-CR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4408" y="1116"/>
         </scene>
         <!--Dragon Label View Controller-->
         <scene sceneID="X9A-dO-oBU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bVB-sK-dK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="yMG-9O-rz6" customClass="DragonLabelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghy-02-M9z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4801,9 +4764,6 @@ een [gekozen diergroep].</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="LV6-Fj-42D"/>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje heeft het kenmerk…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sFB-BP-ABr" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -4861,13 +4821,13 @@ want hij heeft…</string>
                         <segue destination="Ica-di-yHw" kind="push" identifier="Next" id="cGx-rh-seh"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVB-sK-dK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5356" y="1116"/>
         </scene>
         <!--Dragon Result View Controller-->
         <scene sceneID="XRf-iB-mpE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wcX-RD-TwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Ica-di-yHw" customClass="DragonResultViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIq-Sx-cOj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -4941,13 +4901,13 @@ want hij heeft…</string>
                         <segue destination="Dee-6Y-Prk" kind="push" identifier="DragonAgain" id="5OT-N5-qpE"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcX-RD-TwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5835" y="1109"/>
         </scene>
         <!--Dragon Resolution View Controller-->
         <scene sceneID="Ttn-ai-RLD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YTB-dS-b3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="riD-0B-aIy" customClass="DragonResolutionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5F5-Rt-rRK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -5073,13 +5033,13 @@ want hij heeft…</string>
                         <segue destination="gkn-EA-2Cj" kind="push" identifier="Next" id="Fdn-wg-VFE"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YTB-dS-b3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4416" y="1732"/>
         </scene>
         <!--Dragon Revealed View Controller-->
         <scene sceneID="ktj-ry-yzQ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pe7-ai-G7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="gkn-EA-2Cj" customClass="DragonRevealedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FWq-1i-flX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -5149,13 +5109,13 @@ want hij heeft…</string>
                         <segue destination="3Ko-sZ-1eK" kind="push" identifier="Next" id="AoM-So-BHK"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pe7-ai-G7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9492" y="1116"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="E0o-ZR-fnM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vkr-Rd-ynP" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="5Sb-GL-yMm" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sPa-Cy-el8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -5222,13 +5182,13 @@ want hij heeft…</string>
                         <segue destination="4ip-Ih-Udu" kind="push" identifier="Next" id="pdk-lb-eRN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkr-Rd-ynP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2042" y="-164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uvS-q7-vsb">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dku-Ol-iWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController navigationBarHidden="YES" id="a31-AO-osa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -5241,13 +5201,13 @@ want hij heeft…</string>
                         <segue destination="3Oi-9P-c94" kind="relationship" relationship="rootViewController" id="YUg-Z9-Sge"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dku-Ol-iWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-64" y="-2156"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="tfG-hs-F3d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xxr-gJ-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="4ip-Ih-Udu" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ey-df-rHD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -5312,13 +5272,13 @@ want hij heeft…</string>
                         <segue destination="aEm-4i-hHa" kind="push" identifier="Next" id="Je2-Me-Dt1"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xxr-gJ-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2527" y="-165"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="r7i-Vi-JzD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2MT-dh-bHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="FinalIssueSplash" id="PGG-bi-Ubz" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hks-Me-33v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -5387,13 +5347,13 @@ want hij heeft…</string>
                         <segue destination="yzE-93-vBD" kind="push" identifier="Next" id="CAY-g4-g6G"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2MT-dh-bHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1570" y="1116"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="kKk-M4-neV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9z0-Sm-wqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="yzE-93-vBD" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5s-la-6jB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
@@ -5456,6 +5416,7 @@ want hij heeft…</string>
                         <segue destination="e3m-9K-xFw" kind="push" identifier="Next" id="foh-uf-2hW"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9z0-Sm-wqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2002" y="1116"/>
         </scene>
@@ -5508,13 +5469,10 @@ want hij heeft…</string>
         <image name="button-dragon-is-reptile-on.png" width="263" height="305"/>
         <image name="button-start-nieuw-spel.png" width="362" height="110"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="clock.png" width="498" height="523"/>
         <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="example-photos-of-features.png" width="248" height="186"/>
         <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
         <image name="hubbub-typo.png" width="428" height="82"/>
-        <image name="icon-clock.png" width="53" height="53"/>
-        <image name="icon-stack-of-photos.png" width="54" height="54"/>
         <image name="infographic-make-team-photo.png" width="293" height="222"/>
         <image name="logo-gemeente-utrecht.png" width="214" height="133"/>
         <image name="logo-min-eli.png" width="428" height="185"/>
@@ -5769,16 +5727,14 @@ want hij heeft…</string>
             <relationships>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="action" name="takeFeaturePicture:"/>
+                <relationship kind="action" name="takeFeaturePictureAgain:"/>
                 <relationship kind="outlet" name="doneButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="imagesLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="pictureFrame" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="pictureView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="takePictureAgainButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="takePictureButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeUpImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="timeUpLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="FirstIssueExplanationViewController" superclassName="UIViewController">
@@ -6002,15 +5958,9 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="pY3-Mn-Wz0"/>
-        <segue reference="iYQ-bF-g8K"/>
-        <segue reference="XVp-wt-Sm6"/>
-        <segue reference="bYY-FW-WYd"/>
-        <segue reference="alL-iy-cNA"/>
-        <segue reference="aw3-qV-PsP"/>
-        <segue reference="nT0-nb-xZI"/>
+        <segue reference="sz9-qc-ZZh"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
+        <segue reference="OHM-xk-G1T"/>
     </inferredMetricsTieBreakers>
 </document>

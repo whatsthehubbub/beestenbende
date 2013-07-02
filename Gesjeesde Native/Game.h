@@ -22,17 +22,6 @@ typedef enum {
 
 
 @interface Game : NSObject {
-    Team *team1;
-    Team *team2;
-    
-    NSArray *features;
-    
-    // The issue we are currently playing
-    int issue;
-    
-    // For resolving the turns
-    int turn;
-    int required;
 }
 
 @property (strong) Team *team1;
@@ -43,6 +32,8 @@ typedef enum {
 @property (assign) int issue;
 
 @property (assign) int turn;
+@property (strong) Team *currentTeam;
+
 @property (assign) int required;
 
 - (NSDictionary *)getFeatureWithName:(NSString *)name;
@@ -55,6 +46,10 @@ typedef enum {
 - (NSString *)getWrongAnimalClass;
 - (NSString *)getCorrectAnimalClass;
 
+- (BOOL)feature:(NSString *)fName usedByTeam:(Team *)thisTeam;
+- (BOOL)featureUsed:(NSString *)fName;
+
+- (Team *)getCurrentTeam;
 - (Team *)firstTeamForTurn;
 - (Team *)secondTeamForTurn;
 - (Team *)otherTeamForTeam:(Team *)thisTeam;

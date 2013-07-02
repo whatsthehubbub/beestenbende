@@ -18,6 +18,8 @@
 @synthesize issue;
 
 @synthesize turn;
+@synthesize currentTeam;
+
 @synthesize required;
 
 - (id)init
@@ -31,6 +33,8 @@
         self.features = [[NSArray alloc] initWithContentsOfFile:plistPath];
         
         self.turn = 1;
+        self.currentTeam = nil;
+        
         self.required = 4;
     }
     return self;
@@ -135,15 +139,53 @@
     return [[NSArray alloc] initWithObjects:@"Vis", @"Zoogdier", @"Reptiel", @"Vogel", nil];
 }
 
+
+- (Team *)getCurrentTeam {
+    if (!self.currentTeam) {
+        // Flip a coin for who is allowed to start
+        int randomTeam = (arc4random() % 2) + 1;
+        
+        if (randomTeam == 1) {
+            self.currentTeam = team1;
+        } else {
+            self.currentTeam = team2;
+        }
+    }
+    
+    return self.currentTeam;
+}
+
+- (BOOL)featureUsed:(NSString *)fName {
+    return [self feature:fName usedByTeam:self.team1] || [self feature:fName usedByTeam:self.team2];
+}
+
+- (BOOL)feature:(NSString *)fName usedByTeam:(Team *)thisTeam {
+    for (FeaturePicture *fp in thisTeam.featurePictures) {
+        if (fp.feature == fName) {
+            return YES;
+        }
+    }
+        
+    return NO;
+}
+
+// Remove this method altogether TODO
 - (Team *)firstTeamForTurn {
-    // First issue we start with team 1, and then alternate
-    if (issue != 3) {
+    if (issue == 1) {
+//        if (!self.firstTeam) {
+//            
+//        }
+//        
+//        return self.firstTeam;
+        
+    } else if (issue == 2) {
+        // TODO who is allowed to start here?
         if ((turn + issue - 1) % 2 == 0) {
             return team2;
         } else {
             return team1;
         }
-    } else {
+    } else if (issue == 3) {
         // For issue 3 the team with the most points is allowed to start (and a minor advantage)
         if (team1.totalPoints > team2.totalPoints) {
             // Behaviour undefined for tie

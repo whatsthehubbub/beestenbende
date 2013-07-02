@@ -42,15 +42,11 @@
     game = appDelegate.game;
     
     // Find the current team
-    Team *team = [game firstTeamForTurn];
-    if (team.tookFeaturePictures) {
-        team = [game otherTeamForTeam:team];
-        
-        // Change the text on the label
-        self.explanationLabel.text = @"Let op: jullie hebben 90 seconden om fotobewijs te verzamelen.";
-    }
+    Team *team = [game getCurrentTeam];
 
     headerLabel.text = [NSString stringWithFormat:@"Team %@ bereid je voor", [team getTeamName]];
+    
+    self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een munt opgegooid en die zegt dat team %@ mag beginnen.", [team getTeamName]];
     
     if (team.number == 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];

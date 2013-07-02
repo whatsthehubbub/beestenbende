@@ -15,20 +15,6 @@
 #import "SimpleAudioEngine.h"
 
 @interface TeamPictureViewController : UIViewController {
-    UIImageView *teamPictureView;
-    UIImageView *teamOverlay;
-    
-    UIButton *takeTeamPictureButton;
-    UIButton *takePictureAgainButton;
-    UIButton *nextButton;
-    
-    UILabel *titleLabel;
-    
-    int currentTeamNumber;
-    
-    Game *game;
-    
-    CaptureSessionManager *csManager;
 }
 
 @property (assign) int currentTeamNumber;

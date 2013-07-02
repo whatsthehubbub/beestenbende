@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
-#import "TeamFeaturePickerViewController.h"
+//#import "TeamFeaturePickerViewController.h"
+#import "FeaturePickerViewController.h"
+#import "FeaturePicture.h"
 #import "SimpleAudioEngine.h"
 
-@interface PresentFeatureViewController : UIViewController <TeamFeaturePickerViewControllerDelegate> {
+@interface PresentFeatureViewController : UIViewController <FeaturePickerViewControllerDelegate> {
     UILabel *teamLabel;
     UIButton *yesNoButton;
     UIButton *featureButton;

@@ -15,27 +15,9 @@
 #import "SimpleAudioEngine.h"
 
 @interface FeaturePictureViewController : UIViewController {
-    UILabel *timeLabel;
-    UILabel *imagesLabel;
-    
-    UIImageView *pictureView;
-    
-    NSTimer *timer;
-    int secondsLeft;
-    
-    Game *game;
-    Team *team;
-    
-    CaptureSessionManager *csManager;
 }
 
 @property (strong) IBOutlet UILabel *headerLabel;
-
-@property (nonatomic, retain) IBOutlet UILabel *timeLabel;
-@property (nonatomic, retain) IBOutlet UILabel *imagesLabel;
-
-@property (strong) IBOutlet UIImageView *timeUpImage;
-@property (nonatomic, retain) IBOutlet UILabel *timeUpLabel;
 
 @property (nonatomic, retain) IBOutlet UIImageView *pictureView;
 @property (nonatomic, retain) IBOutlet UIImageView *pictureFrame;
@@ -43,23 +25,24 @@
 @property (nonatomic, retain) IBOutlet UIImageView *teamOverlay;
 
 @property (strong) IBOutlet UIButton *takePictureButton;
+@property (strong) IBOutlet UIButton *takePictureAgainButton;
 @property (strong) IBOutlet UIButton *doneButton;
 
-@property (nonatomic, retain) NSTimer *timer;
-@property (readwrite) int secondsLeft;
-
 @property (strong) Game *game;
+@property (strong) Team *team;
 
 @property (strong) CaptureSessionManager *csManager;
 
-- (void)startTimer;
-- (void)stopTimer;
-- (void)decrementTimer:(NSTimer *)theTimer;
-- (void)timeUp;
+//- (void)startTimer;
+//- (void)stopTimer;
+//- (void)decrementTimer:(NSTimer *)theTimer;
+//- (void)timeUp;
 
 - (IBAction)takeFeaturePicture:(id)sender;
+- (IBAction)takeFeaturePictureAgain:(id)sender;
+
 - (IBAction)next:(id)sender;
-- (void)pictureTaken:(NSNotification *)notification;
+//- (void)pictureTaken:(NSNotification *)notification;
 
 
 
