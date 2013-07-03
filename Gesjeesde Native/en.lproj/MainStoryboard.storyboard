@@ -2335,7 +2335,7 @@ Help je ons?</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzA-ic-LbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5343" y="-798"/>
+            <point key="canvasLocation" x="6033" y="442"/>
         </scene>
         <!--Convince First Animal View Controller-->
         <scene sceneID="9Ez-FX-W4p">
@@ -2934,6 +2934,7 @@ Help je ons?</string>
                         <outlet property="overlayImage" destination="lyO-hb-Ap1" id="HJK-oy-dyg"/>
                         <outlet property="yesNoButton" destination="LTL-EX-1to" id="glq-ua-7Cn"/>
                         <segue destination="bTt-EX-SMb" kind="push" identifier="Next" id="cz4-cS-3oL"/>
+                        <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="LgX-Z4-nzB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccj-M7-Re4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3369,7 +3370,7 @@ Help je ons?</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htq-iv-af9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5792" y="-805"/>
+            <point key="canvasLocation" x="5850" y="-1117"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="cwx-wr-6zT">
@@ -6034,7 +6035,8 @@ want hij heeft…</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="OHM-xk-G1T"/>
-        <segue reference="fpS-jq-29F"/>
+        <segue reference="cz4-cS-3oL"/>
+        <segue reference="LgX-Z4-nzB"/>
         <segue reference="AoM-So-BHK"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="sz9-qc-ZZh"/>
