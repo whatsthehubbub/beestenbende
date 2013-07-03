@@ -164,7 +164,11 @@
     } else {
         game.currentTeam = nil;
         
-        [self performSegueWithIdentifier:@"AnimalConvinced" sender:sender];
+        if (game.issue == 1) {
+            [self performSegueWithIdentifier:@"FirstAnimalConvinced" sender:sender];
+        } else if (game.issue == 2) {
+            [self performSegueWithIdentifier:@"SecondAnimalConvinced" sender:sender];
+        }
     }
     
 //    if (game.required > 0 && (game.team1.featurePictures.count > 0 || game.team2.featurePictures.count > 0)) {

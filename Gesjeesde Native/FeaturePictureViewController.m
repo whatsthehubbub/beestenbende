@@ -167,7 +167,7 @@
     
     if (game.issue == 1) {
         [self performSegueWithIdentifier:@"UsePictureFirst" sender:sender];
-    } else {
+    } else if (game.issue == 2) {
         [self performSegueWithIdentifier:@"UsePictureSecond" sender:sender];
     }
     
