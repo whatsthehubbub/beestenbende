@@ -3032,7 +3032,7 @@ Help je ons?</string>
                                         <rect key="frame" x="4" y="2" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="frJ-dV-aHD">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="frJ-dV-aHD">
                                         <rect key="frame" x="10" y="125" width="120" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
@@ -3053,7 +3053,7 @@ Help je ons?</string>
                                         <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="V8k-Pf-c7m">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Geel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="V8k-Pf-c7m">
                                         <rect key="frame" x="10" y="125" width="120" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
@@ -3119,14 +3119,6 @@ Help je ons?</string>
                                     <action selector="next:" destination="4Xr-pd-4cz" eventType="touchUpInside" id="45S-zO-c5N"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="points-uniek.png" id="egx-QW-1QD">
-                                <rect key="frame" x="58" y="222" width="65" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="points-fout.png" id="Smo-zc-9YY">
-                                <rect key="frame" x="198" y="222" width="65" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TCg-Hk-zTf">
                                 <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3149,6 +3141,20 @@ Help je ons?</string>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="X punten" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qLA-np-4K0">
+                                <rect key="frame" x="56" y="238" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="X punten" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1mM-Ig-pa3">
+                                <rect key="frame" x="196" y="238" width="69" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3158,11 +3164,11 @@ Help je ons?</string>
                         <outlet property="animalRequiresLabel" destination="mta-oL-oJU" id="eAw-1q-dxO"/>
                         <outlet property="proofsRequiredLabel" destination="k80-i3-9IF" id="0Cc-RB-UkH"/>
                         <outlet property="team1Image" destination="r9i-Ll-gaT" id="ppd-bZ-VyQ"/>
+                        <outlet property="team1PointsLabel" destination="qLA-np-4K0" id="Icz-BC-R1J"/>
                         <outlet property="team1featureLabel" destination="frJ-dV-aHD" id="9vF-r7-Fmh"/>
-                        <outlet property="team1pointsImage" destination="egx-QW-1QD" id="KtN-c5-v3M"/>
                         <outlet property="team2Image" destination="7k1-MM-fbB" id="mso-75-JQE"/>
+                        <outlet property="team2PointsLabel" destination="1mM-Ig-pa3" id="cBN-1Z-cUF"/>
                         <outlet property="team2featureLabel" destination="V8k-Pf-c7m" id="0vl-DM-sWn"/>
-                        <outlet property="team2pointsImage" destination="Smo-zc-9YY" id="Oun-EZ-xGh"/>
                         <outlet property="titleLabel" destination="2LW-Hk-jGE" id="v4H-h1-kfV"/>
                         <segue destination="jlM-Ks-Kmv" kind="push" identifier="NextTeam" id="AjB-Uk-xnQ"/>
                         <segue destination="rTe-1j-Lla" kind="push" identifier="AnimalConvinced" id="TyM-mf-ygn"/>
@@ -5492,8 +5498,6 @@ want hij heeft…</string>
         <image name="photo-frame-square-160.png" width="171" height="169"/>
         <image name="photo-frame-square-480.png" width="496" height="494"/>
         <image name="photo-frame-square-80.png" width="91" height="89"/>
-        <image name="points-fout.png" width="130" height="180"/>
-        <image name="points-uniek.png" width="130" height="180"/>
         <image name="progress-0.png" width="470" height="119"/>
         <image name="progress-4.png" width="470" height="120"/>
         <image name="speech-bubble-big-mirrored-flipped.png" width="560" height="500"/>

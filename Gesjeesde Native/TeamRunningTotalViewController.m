@@ -18,16 +18,10 @@
 
 @synthesize titleLabel;
 
-@synthesize team1featureLabel;
+@synthesize team1PointsLabel;
 @synthesize team1Image;
-@synthesize team2featureLabel;
+@synthesize team2PointsLabel;
 @synthesize team2Image;
-
-@synthesize team1pointsImage;
-@synthesize team2pointsImage;
-
-//@synthesize team1fp;
-//@synthesize team2fp;
 
 @synthesize currentFeaturePicture;
 
@@ -127,6 +121,9 @@
     
     self.team1Image.image = game.team1.picture;
     self.team2Image.image = game.team2.picture;
+    
+    self.team1PointsLabel.text = [NSString stringWithFormat:@"%d punten", game.team1.points];
+    self.team2PointsLabel.text = [NSString stringWithFormat:@"%d punten", game.team2.points];
     
     if (game.issue == 1) {
         self.animalImage.image = [UIImage imageNamed:@"animal-squirrel-icon.png"];
