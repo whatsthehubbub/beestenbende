@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "PresentResultViewController.h"
+#import "TeamRunningTotalViewController.h"
 
-@interface PresentResultViewController ()
+@interface TeamRunningTotalViewController ()
 
 @end
 
-@implementation PresentResultViewController
+@implementation TeamRunningTotalViewController
 
 @synthesize game;
 

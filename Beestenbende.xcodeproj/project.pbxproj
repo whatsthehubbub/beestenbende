@@ -162,7 +162,7 @@
 		4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */; };
 		4E3D23B7159F391600112E9C /* d10_draak_wiebenik_v3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E3D23B6159F391600112E9C /* d10_draak_wiebenik_v3.wav */; };
 		4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E428204154425F8009FD991 /* MakeTeamsViewController.m */; };
-		4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamPrepareViewController.m */; };
+		4E42820915447EBD009FD991 /* TeamFlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamFlipViewController.m */; };
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
 		4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */; };
 		4E4282141546CEFB009FD991 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282131546C8AD009FD991 /* DDPageControl.m */; };
@@ -173,7 +173,7 @@
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
 		4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */; };
 		4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */; };
-		4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */; };
+		4E4D8FAD152D0A3100E898D5 /* TeamRunningTotalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4D8FAC152D0A3100E898D5 /* TeamRunningTotalViewController.m */; };
 		4E4EECED1588BDE80018170C /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4EECEC1588BDE80018170C /* OpenAL.framework */; };
 		4E4EECEF1588BDEF0018170C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */; };
 		4E4EECF21588C2570018170C /* i01_openingsscherm_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E4EECF11588C2570018170C /* i01_openingsscherm_v2.wav */; };
@@ -455,8 +455,8 @@
 		4E3D23B6159F391600112E9C /* d10_draak_wiebenik_v3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = d10_draak_wiebenik_v3.wav; sourceTree = "<group>"; };
 		4E428203154425F8009FD991 /* MakeTeamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTeamsViewController.h; sourceTree = "<group>"; };
 		4E428204154425F8009FD991 /* MakeTeamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamsViewController.m; sourceTree = "<group>"; };
-		4E42820715447EBC009FD991 /* TeamPrepareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPrepareViewController.h; sourceTree = "<group>"; };
-		4E42820815447EBD009FD991 /* TeamPrepareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamPrepareViewController.m; sourceTree = "<group>"; };
+		4E42820715447EBC009FD991 /* TeamFlipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamFlipViewController.h; sourceTree = "<group>"; };
+		4E42820815447EBD009FD991 /* TeamFlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamFlipViewController.m; sourceTree = "<group>"; };
 		4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondIssueExplanationViewController.h; sourceTree = "<group>"; };
 		4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondIssueExplanationViewController.m; sourceTree = "<group>"; };
 		4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediaryScoresViewController.h; sourceTree = "<group>"; };
@@ -476,8 +476,8 @@
 		4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentFeatureViewController.m; sourceTree = "<group>"; };
 		4E4D8FA8152D05EE00E898D5 /* TeamFeaturePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamFeaturePickerViewController.h; sourceTree = "<group>"; };
 		4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamFeaturePickerViewController.m; sourceTree = "<group>"; };
-		4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentResultViewController.h; sourceTree = "<group>"; };
-		4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentResultViewController.m; sourceTree = "<group>"; };
+		4E4D8FAB152D0A3100E898D5 /* TeamRunningTotalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamRunningTotalViewController.h; sourceTree = "<group>"; };
+		4E4D8FAC152D0A3100E898D5 /* TeamRunningTotalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamRunningTotalViewController.m; sourceTree = "<group>"; };
 		4E4EECEC1588BDE80018170C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		4E4EECEE1588BDEF0018170C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4E4EECF11588C2570018170C /* i01_openingsscherm_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i01_openingsscherm_v2.wav; sourceTree = "<group>"; };
@@ -994,13 +994,13 @@
 				4E50320515497AD80028880F /* MostPicturesViewController.h */,
 				4EDEFADB152B625800324EDB /* PictureLabelViewController.h */,
 				4E4D8F9F152D02D100E898D5 /* PresentFeatureViewController.h */,
-				4E4D8FAB152D0A3100E898D5 /* PresentResultViewController.h */,
+				4E4D8FAB152D0A3100E898D5 /* TeamRunningTotalViewController.h */,
 				4E42820C1545F9B8009FD991 /* SecondIssueExplanationViewController.h */,
 				4E3385DB154043AF00E740BB /* SecondIssueIntroductionViewController.h */,
 				4ECE090C158FF59200868CD0 /* SplashViewController.h */,
 				4E4D8FA8152D05EE00E898D5 /* TeamFeaturePickerViewController.h */,
 				4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */,
-				4E42820715447EBC009FD991 /* TeamPrepareViewController.h */,
+				4E42820715447EBC009FD991 /* TeamFlipViewController.h */,
 				4EAE98EF151A618A0051C926 /* ViewController.h */,
 				4E80ADC8151FCA22001CBA7E /* WelcomeViewController.h */,
 				4E6E2A031593DBCC000EA338 /* AnimalPartsViewController.m */,
@@ -1040,13 +1040,13 @@
 				4E50320615497AD80028880F /* MostPicturesViewController.m */,
 				4EDEFADC152B625800324EDB /* PictureLabelViewController.m */,
 				4E4D8FA0152D02D100E898D5 /* PresentFeatureViewController.m */,
-				4E4D8FAC152D0A3100E898D5 /* PresentResultViewController.m */,
+				4E4D8FAC152D0A3100E898D5 /* TeamRunningTotalViewController.m */,
 				4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */,
 				4E3385DC154043AF00E740BB /* SecondIssueIntroductionViewController.m */,
 				4ECE090D158FF59200868CD0 /* SplashViewController.m */,
 				4E4D8FA9152D05EE00E898D5 /* TeamFeaturePickerViewController.m */,
 				4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */,
-				4E42820815447EBD009FD991 /* TeamPrepareViewController.m */,
+				4E42820815447EBD009FD991 /* TeamFlipViewController.m */,
 				4EAE98F0151A618A0051C926 /* ViewController.m */,
 				4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */,
 				4E4EECDD1588BDC00018170C /* CocosDenshion */,
@@ -1401,7 +1401,7 @@
 				4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */,
 				4E4D8FA1152D02D200E898D5 /* PresentFeatureViewController.m in Sources */,
 				4E4D8FAA152D05EE00E898D5 /* TeamFeaturePickerViewController.m in Sources */,
-				4E4D8FAD152D0A3100E898D5 /* PresentResultViewController.m in Sources */,
+				4E4D8FAD152D0A3100E898D5 /* TeamRunningTotalViewController.m in Sources */,
 				4EC4012D152E09A10005EC5C /* IssueScoresViewController.m in Sources */,
 				4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */,
 				4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */,
@@ -1413,7 +1413,7 @@
 				4EAF06D7153DAE6600BE1CAA /* ArrowRight.m in Sources */,
 				4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */,
 				4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */,
-				4E42820915447EBD009FD991 /* TeamPrepareViewController.m in Sources */,
+				4E42820915447EBD009FD991 /* TeamFlipViewController.m in Sources */,
 				4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */,
 				4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */,
 				4E50320715497AD80028880F /* MostPicturesViewController.m in Sources */,

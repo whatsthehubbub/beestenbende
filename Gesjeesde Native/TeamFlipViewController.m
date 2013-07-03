@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "TeamPrepareViewController.h"
+#import "TeamFlipViewController.h"
 
-@interface TeamPrepareViewController ()
+@interface TeamFlipViewController ()
 
 @end
 
-@implementation TeamPrepareViewController
+@implementation TeamFlipViewController
 
 @synthesize headerLabel;
 @synthesize teamOverlay;

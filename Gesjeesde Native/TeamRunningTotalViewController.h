@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
 
-@interface PresentResultViewController : UIViewController {
+@interface TeamRunningTotalViewController : UIViewController {
     Game *game;
 }
 

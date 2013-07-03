@@ -1859,10 +1859,10 @@ Help je ons?</string>
             </objects>
             <point key="canvasLocation" x="4900" y="-165"/>
         </scene>
-        <!--Team Prepare View Controller-->
+        <!--Team Flip View Controller-->
         <scene sceneID="L1C-Nq-hfS">
             <objects>
-                <viewController id="mhP-gb-YWU" customClass="TeamPrepareViewController" sceneMemberID="viewController">
+                <viewController id="mhP-gb-YWU" customClass="TeamFlipViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIL-oH-2Oj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3008,10 +3008,10 @@ Help je ons?</string>
             </objects>
             <point key="canvasLocation" x="5379" y="-164"/>
         </scene>
-        <!--Present Result View Controller-->
+        <!--Team Running Total View Controller-->
         <scene sceneID="ZyI-wr-vRl">
             <objects>
-                <viewController id="4Xr-pd-4cz" customClass="PresentResultViewController" sceneMemberID="viewController">
+                <viewController id="4Xr-pd-4cz" customClass="TeamRunningTotalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIW-Hn-7zF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -5870,23 +5870,6 @@ want hij heeft…</string>
                 <relationship kind="outlet" name="yesNoButton" candidateClass="UIButton"/>
             </relationships>
         </class>
-        <class className="PresentResultViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PresentResultViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="outlet" name="animalImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="animalRequiresLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="proofsRequiredLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team1featureImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="team1featureLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team1pointsImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="team2featureImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="team2featureLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="team2pointsImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
         <class className="SecondIssueExplanationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondIssueExplanationViewController.h"/>
             <relationships>
@@ -5912,6 +5895,15 @@ want hij heeft…</string>
         <class className="TeamFeaturePickerViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamFeaturePickerViewController.h"/>
         </class>
+        <class className="TeamFlipViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamFlipViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="explanationLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="TeamPictureViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPictureViewController.h"/>
             <relationships>
@@ -5928,13 +5920,21 @@ want hij heeft…</string>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="TeamPrepareViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamPrepareViewController.h"/>
+        <class className="TeamRunningTotalViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TeamRunningTotalViewController.h"/>
             <relationships>
+                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next:"/>
-                <relationship kind="outlet" name="explanationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="animalImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="animalRequiresLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="proofsRequiredLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1featureImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team1featureLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team1pointsImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team2featureImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="team2featureLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="team2pointsImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="WelcomeViewController" superclassName="UIViewController">
@@ -5958,9 +5958,9 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sz9-qc-ZZh"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="AoM-So-BHK"/>
-        <segue reference="OHM-xk-G1T"/>
+        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="GW9-yo-buq"/>
     </inferredMetricsTieBreakers>
 </document>

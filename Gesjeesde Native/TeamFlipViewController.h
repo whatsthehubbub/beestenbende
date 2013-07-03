@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
 
-@interface TeamPrepareViewController : UIViewController 
+@interface TeamFlipViewController : UIViewController 
 
 @property (nonatomic, retain) IBOutlet UILabel *headerLabel;
 @property (strong) IBOutlet UIImageView *teamOverlay;
