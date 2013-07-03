@@ -54,6 +54,8 @@
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
+    self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek %@", [game getCurrentAnimalName]];
+    
     // Start capture session and bind it to the image view
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
 //    csManager.continuous = YES;
