@@ -24,6 +24,9 @@
 
 @property (nonatomic, retain) IBOutlet UIImageView *teamOverlay;
 
+@property (strong) IBOutlet UILabel *explanationLabel;
+@property (strong) IBOutlet UILabel *hintLabel;
+
 @property (strong) IBOutlet UIButton *takePictureButton;
 @property (strong) IBOutlet UIButton *takePictureAgainButton;
 @property (strong) IBOutlet UIButton *doneButton;

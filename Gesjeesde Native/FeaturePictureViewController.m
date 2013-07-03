@@ -56,6 +56,15 @@
     
     self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek %@", [game getCurrentAnimalName]];
     
+    self.explanationLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van een %@ of een %@", [game getCorrectAnimalClass], [game getWrongAnimalClass]];
+    
+    if (game.issue == 1) {
+        self.hintLabel.text = @"Bijvoorbeeld: Veren";
+    } else if (game.issue == 2) {
+        self.hintLabel.text = @"Bijvoorbeeld: Schubben";
+    }
+
+    
     // Start capture session and bind it to the image view
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
 //    csManager.continuous = YES;
