@@ -19,9 +19,9 @@
 @synthesize titleLabel;
 
 @synthesize team1featureLabel;
-@synthesize team1featureImage;
+@synthesize team1Image;
 @synthesize team2featureLabel;
-@synthesize team2featureImage;
+@synthesize team2Image;
 
 @synthesize team1pointsImage;
 @synthesize team2pointsImage;
@@ -121,7 +121,13 @@
 //    }
 //    self.titleLabel.text = [NSString stringWithFormat:@"%@ heeft %@…", [game getCurrentAnimalName], present];
 //    
-//    
+//
+    
+    self.titleLabel.text = [NSString stringWithFormat:@"Overtuig %@…", [game getCurrentAnimalName]];
+    
+    self.team1Image.image = game.team1.picture;
+    self.team2Image.image = game.team2.picture;
+    
     if (game.issue == 1) {
         self.animalImage.image = [UIImage imageNamed:@"animal-squirrel-icon.png"];
     } else if (game.issue == 2) {

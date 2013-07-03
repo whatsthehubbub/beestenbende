@@ -22,8 +22,8 @@
 @property (nonatomic, retain) IBOutlet UILabel *team1featureLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2featureLabel;
 
-@property (nonatomic, retain) IBOutlet UIImageView *team1featureImage;
-@property (nonatomic, retain) IBOutlet UIImageView *team2featureImage;
+@property (nonatomic, retain) IBOutlet UIImageView *team1Image;
+@property (nonatomic, retain) IBOutlet UIImageView *team2Image;
 
 @property (nonatomic, retain) IBOutlet UIImageView *team1pointsImage;
 @property (nonatomic, retain) IBOutlet UIImageView *team2pointsImage;
