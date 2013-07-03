@@ -23,6 +23,8 @@
 @synthesize featureLabel;
 @synthesize resultAndExplanationLabel;
 
+@synthesize pointsImage;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -86,14 +88,22 @@
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", explanation];
         
         currentTeam.points += 10;
+        
+        self.pointsImage.image = [UIImage imageNamed:@"points-uniek.png"];
     } else if (result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
         
         currentTeam.points += 5;
+        
+        self.pointsImage.image = [UIImage imageNamed:@"points-goed.png"];
     } else if (result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: een %@ en een %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [game getCurrentAnimalName]];
+        
+        self.pointsImage.image = [UIImage imageNamed:@"points-fout.png"];
     } else {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
+        
+        self.pointsImage.image = [UIImage imageNamed:@"points-fout.png"];
     }
     
     if (result == FEATURE_YES_UNIQUE || result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
