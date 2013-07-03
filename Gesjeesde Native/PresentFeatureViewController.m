@@ -126,6 +126,8 @@
     if (self.currentFeaturePicture) {
         self.currentFeaturePicture.presentedTurn = game.turn;
         self.currentFeaturePicture.presentAssertion = self.hasFeature;
+        
+        self.currentFeaturePicture.feature = self.featureButton.titleLabel.text;
     }
     
     [self performSegueWithIdentifier:@"Next" sender:self];   
@@ -210,8 +212,6 @@
 
 -(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)feature {
     [self.featureButton setTitle:feature forState:UIControlStateNormal];
-    
-    self.currentFeaturePicture.feature = feature;
     
 //    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];
 //    fp.feature = feature;
