@@ -26,4 +26,6 @@
 
 - (BOOL)disableFeature:(NSString *)feature;
 
+- (IBAction)back:(id)sender;
+
 @end

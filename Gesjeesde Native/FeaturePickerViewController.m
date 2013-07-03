@@ -82,6 +82,12 @@
     return disable;
 }
 
+- (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
