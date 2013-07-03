@@ -74,7 +74,7 @@
         }
         
         // Disable a cell if the feature has already been used
-        if ([game featureUsed:feature]) {
+        if ([game featureUsedSuccesfully:feature]) {
             disable = YES;
         }
     }

@@ -109,6 +109,7 @@
     if (result == FEATURE_YES_UNIQUE || result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
         // This means we have one positive proof
         game.required -= 1;
+        fp.usedSuccesfully = YES;
     }
 }
 

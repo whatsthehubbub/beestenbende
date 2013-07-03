@@ -15,17 +15,6 @@
 #import "SimpleAudioEngine.h"
 
 @interface PresentFeatureViewController : UIViewController <FeaturePickerViewControllerDelegate> {
-    UILabel *teamLabel;
-    UIButton *yesNoButton;
-    UIButton *featureButton;
-    
-    UIImageView *featureImageView;
-
-    Game *game;
-    Team *currentTeam;
-    FeaturePicture *currentFeaturePicture;
-    
-    bool hasFeature;
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *headerLabel;
@@ -42,7 +31,7 @@
 @property (strong) Team *currentTeam;
 @property (strong) FeaturePicture *currentFeaturePicture;
 
-@property (assign) bool hasFeature;
+@property (assign) BOOL hasFeature;
 
 - (IBAction)yesNo:(id)sender;
 - (IBAction)next:(id)sender;

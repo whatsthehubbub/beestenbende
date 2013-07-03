@@ -14,7 +14,10 @@
 @synthesize image;
 @synthesize deleted;
 @synthesize presentedTurn;
+
 @synthesize presentAssertion;
+
+@synthesize usedSuccesfully;
 
 -(id)initWithImage:(UIImage *)newImage {
     self = [super init];
@@ -26,6 +29,8 @@
         
         self.presentedTurn = -1;
         self.presentAssertion = YES;
+        
+        self.usedSuccesfully = NO;
     }
     return self;
 }

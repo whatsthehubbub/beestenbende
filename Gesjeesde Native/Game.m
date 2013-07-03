@@ -155,13 +155,13 @@
     return self.currentTeam;
 }
 
-- (BOOL)featureUsed:(NSString *)fName {
-    return [self feature:fName usedByTeam:self.team1] || [self feature:fName usedByTeam:self.team2];
+- (BOOL)featureUsedSuccesfully:(NSString *)fName {
+    return [self feature:fName usedSuccesfullyByTeam:self.team1] || [self feature:fName usedSuccesfullyByTeam:self.team2];
 }
 
-- (BOOL)feature:(NSString *)fName usedByTeam:(Team *)thisTeam {
+- (BOOL)feature:(NSString *)fName usedSuccesfullyByTeam:(Team *)thisTeam {
     for (FeaturePicture *fp in thisTeam.featurePictures) {
-        if (fp.feature == fName) {
+        if ([fp.feature isEqualToString:fName] && fp.usedSuccesfully) {
             return YES;
         }
     }

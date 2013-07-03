@@ -46,8 +46,8 @@ typedef enum {
 - (NSString *)getWrongAnimalClass;
 - (NSString *)getCorrectAnimalClass;
 
-- (BOOL)feature:(NSString *)fName usedByTeam:(Team *)thisTeam;
-- (BOOL)featureUsed:(NSString *)fName;
+- (BOOL)feature:(NSString *)fName usedSuccesfullyByTeam:(Team *)thisTeam;
+- (BOOL)featureUsedSuccesfully:(NSString *)fName;
 
 - (Team *)getCurrentTeam;
 - (Team *)firstTeamForTurn;
