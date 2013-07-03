@@ -1927,6 +1927,10 @@ Help je ons?</string>
                                     <action selector="back:" destination="mhP-gb-YWU" eventType="touchUpInside" id="hKc-TS-fCv"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="wvO-mz-UFz">
+                                <rect key="frame" x="60" y="217" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1934,13 +1938,14 @@ Help je ons?</string>
                     <connections>
                         <outlet property="explanationLabel" destination="Dv3-KM-zeD" id="sZE-IN-EdH"/>
                         <outlet property="headerLabel" destination="tpg-Mh-feY" id="7l1-t0-g0B"/>
+                        <outlet property="teamImage" destination="wvO-mz-UFz" id="8UD-6F-XVm"/>
                         <outlet property="teamOverlay" destination="o8x-X9-RCA" id="Hgf-Yh-xZT"/>
                         <segue destination="4Xr-pd-4cz" kind="push" identifier="Next" id="GW9-yo-buq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfh-Bo-PeI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3911" y="-164"/>
+            <point key="canvasLocation" x="3911" y="-165"/>
         </scene>
         <!--Feature Picture Done View Controller-->
         <scene sceneID="gJv-t0-ChO">
@@ -5910,6 +5915,7 @@ want hij heeft…</string>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="outlet" name="explanationLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="headerLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="teamImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="teamOverlay" candidateClass="UIImageView"/>
             </relationships>
         </class>

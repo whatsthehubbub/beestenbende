@@ -17,6 +17,8 @@
 @synthesize headerLabel;
 @synthesize teamOverlay;
 
+@synthesize teamImage;
+
 @synthesize explanationLabel;
 
 @synthesize game;
@@ -44,9 +46,11 @@
     // Find the current team
     Team *team = [game getCurrentTeam];
 
-    headerLabel.text = [NSString stringWithFormat:@"Team %@ bereid je voor", [team getTeamName]];
+    headerLabel.text = [NSString stringWithFormat:@"Wie begint?"];
     
-    self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een munt opgegooid en die zegt dat team %@ mag beginnen.", [team getTeamName]];
+    self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een muntje opgegooid en team %@ mag beginnen.", [team getTeamName]];
+    
+    self.teamImage.image = team.picture;
     
     if (team.number == 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];
