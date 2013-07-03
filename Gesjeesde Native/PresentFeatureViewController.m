@@ -171,6 +171,12 @@
 //    }
 }
 
+- (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 //#pragma mark - TeamFeaturePickerViewControllerDelegate
 //
 //- (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {

@@ -46,5 +46,6 @@
 
 - (IBAction)yesNo:(id)sender;
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

@@ -196,6 +196,12 @@
 //    }
 }
 
+- (IBAction)back:(id)sender {
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (IBAction)takeFeaturePictureAgain:(id)sender {
     [csManager startPreview];
     

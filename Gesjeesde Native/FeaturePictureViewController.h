@@ -45,6 +45,7 @@
 - (IBAction)takeFeaturePictureAgain:(id)sender;
 
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 //- (void)pictureTaken:(NSNotification *)notification;
 
 
