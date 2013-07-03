@@ -4839,6 +4839,9 @@ een [gekozen diergroep].</string>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="i9S-9K-imd"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje heeft het kenmerk…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="sFB-BP-ABr" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
@@ -6040,9 +6043,9 @@ want hij heeft…</string>
     <inferredMetricsTieBreakers>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="cz4-cS-3oL"/>
-        <segue reference="A1T-Wu-GhT"/>
         <segue reference="AoM-So-BHK"/>
         <segue reference="fEa-BH-mAb"/>
         <segue reference="sz9-qc-ZZh"/>
+        <segue reference="i9S-9K-imd"/>
     </inferredMetricsTieBreakers>
 </document>
