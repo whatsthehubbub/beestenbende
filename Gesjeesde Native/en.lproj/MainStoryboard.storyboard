@@ -3018,7 +3018,7 @@ Help je ons?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ci-0u-KMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5379" y="-164"/>
+            <point key="canvasLocation" x="5366" y="-165"/>
         </scene>
         <!--Team Running Total View Controller-->
         <scene sceneID="ZyI-wr-vRl">
@@ -3395,7 +3395,7 @@ Help je ons?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igr-XW-cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6204" y="339"/>
+            <point key="canvasLocation" x="5930" y="435"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="eok-ou-PYS">
@@ -5978,9 +5978,9 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fEa-BH-mAb"/>
+        <segue reference="OHM-xk-G1T"/>
         <segue reference="AoM-So-BHK"/>
+        <segue reference="fEa-BH-mAb"/>
         <segue reference="sz9-qc-ZZh"/>
-        <segue reference="GW9-yo-buq"/>
     </inferredMetricsTieBreakers>
 </document>
