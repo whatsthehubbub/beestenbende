@@ -29,6 +29,7 @@
 
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
+@property (strong) NSString *feature;
 @property (strong) FeaturePicture *currentFeaturePicture;
 
 @property (assign) BOOL hasFeature;

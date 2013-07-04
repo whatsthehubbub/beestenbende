@@ -74,7 +74,7 @@
     if (!fp.presentAssertion) {
         present = @"geen";
         
-        featureText = [fp featureForNegation];
+        featureText = [FeaturePicture featureForNegation:fp.feature];
     }
 
     featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@", [game getCurrentAnimalName], present, featureText]; 

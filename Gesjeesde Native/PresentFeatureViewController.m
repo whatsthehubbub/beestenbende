@@ -26,6 +26,7 @@
 
 @synthesize game;
 @synthesize currentTeam;
+@synthesize feature;
 @synthesize currentFeaturePicture;
 
 @synthesize hasFeature;
@@ -49,6 +50,8 @@
     
     self.currentTeam = [game getCurrentTeam];
 
+    self.feature = @"";
+    
     self.headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [self.currentTeam getTeamName]];
     
     if (self.currentTeam.number == 1) {
@@ -101,12 +104,12 @@
         imageName = @"toggle-wel-on-geen-off.png";
         imageDisabledName = @"toggle-wel-on-geen-off-inactive.png";
         
-//        [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
+        [self.featureButton setTitle:self.feature forState:UIControlStateNormal];
     } else {
         imageName = @"toggle-wel-off-geen-on.png";
         imageDisabledName = @"toggle-wel-off-geen-on-inactive.png";
         
-//        [self.featureButton setTitle:[self.currentFeaturePicture featureForNegation] forState:UIControlStateNormal];
+        [self.featureButton setTitle:[FeaturePicture featureForNegation:self.feature] forState:UIControlStateNormal];
     }
     
     [self.yesNoButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
@@ -211,6 +214,8 @@
 #pragma mark - FeaturePickerViewControllerDelegate
 
 -(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)feature {
+    self.feature = feature;
+    
     [self.featureButton setTitle:feature forState:UIControlStateNormal];
     
 //    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];

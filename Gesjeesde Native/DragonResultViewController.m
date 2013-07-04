@@ -95,7 +95,7 @@
             }
         } else {
             // Correct for neither
-            self.explanationLabel.text = [NSString stringWithFormat:@"Haha! Gefopt. Ik heb helemaal geen %@. Kijk nog eens goed.", [[featurePicture featureForNegation] lowercaseString]];
+            self.explanationLabel.text = [NSString stringWithFormat:@"Haha! Gefopt. Ik heb helemaal geen %@. Kijk nog eens goed.", [[FeaturePicture featureForNegation:featurePicture.feature] lowercaseString]];
         }
     }
     
