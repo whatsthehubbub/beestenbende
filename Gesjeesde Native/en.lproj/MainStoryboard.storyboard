@@ -366,14 +366,14 @@ van jong en oud.</string>
                                 <rect key="frame" x="40" y="70" width="240" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Daarna spelen jullie een spel: ieder team kiest telkens één fotobewijs om het dier te overtuigen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wYr-2A-Dge" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ieder team maakt telkens één fotobewijs om het dier te overtuigen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="wYr-2A-Dge" customClass="NormalLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Het beste bewijs, krijgt de meeste punten. Het team dat na twee kwesties voor staat, mag bij de derde kwestie beginnen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8Oa-zp-93U" customClass="NormalLabel">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Het beste bewijs krijgt de meeste punten. Het team dat na twee kwesties voor staat, mag bij de derde kwestie beginnen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="8Oa-zp-93U" customClass="NormalLabel">
                                         <rect key="frame" x="240" y="0.0" width="240" height="175"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
