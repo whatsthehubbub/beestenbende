@@ -119,7 +119,7 @@
 //    
 //
     
-    self.titleLabel.text = [NSString stringWithFormat:@"Overtuig %@…", [game getCurrentAnimalName]];
+    self.titleLabel.text = [NSString stringWithFormat:@"Overtuig de %@…", [[game getCurrentAnimalName] lowercaseString]];
     
     self.team1Image.image = game.team1.picture;
     self.team2Image.image = game.team2.picture;

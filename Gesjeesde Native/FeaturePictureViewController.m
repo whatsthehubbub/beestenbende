@@ -54,14 +54,14 @@
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
     }
     
-    self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek %@", [game getCurrentAnimalName]];
+    self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek de %@", [[game getCurrentAnimalName] lowercaseString]];
     
-    self.explanationLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van een %@ of een %@", [game getCorrectAnimalClass], [game getWrongAnimalClass]];
+    self.explanationLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van een %@ of een %@.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
     
     if (game.issue == 1) {
-        self.hintLabel.text = @"Bijvoorbeeld: Veren";
+        self.hintLabel.text = @"Bijvoorbeeld: veren.";
     } else if (game.issue == 2) {
-        self.hintLabel.text = @"Bijvoorbeeld: Schubben";
+        self.hintLabel.text = @"Bijvoorbeeld: vinnen.";
     }
 
     
