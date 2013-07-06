@@ -69,11 +69,11 @@
 				<key>Explanation</key>
 				<string>vissen en reptielen kunnen overal tanden in de bek hebben.</string>
 				<key>Vis</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>Zoogdier</key>
 				<integer>2</integer>
 				<key>Reptiel</key>
-				<integer>2</integer>
+				<integer>1</integer>
 				<key>Vogel</key>
 				<integer>2</integer>
 			</dict>
