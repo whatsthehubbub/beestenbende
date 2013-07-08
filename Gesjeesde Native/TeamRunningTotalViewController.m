@@ -124,8 +124,8 @@
     self.team1Image.image = game.team1.picture;
     self.team2Image.image = game.team2.picture;
     
-    self.team1PointsLabel.text = [NSString stringWithFormat:@"%d punten", game.team1.points];
-    self.team2PointsLabel.text = [NSString stringWithFormat:@"%d punten", game.team2.points];
+    self.team1PointsLabel.text = [NSString stringWithFormat:@"%d", game.team1.points];
+    self.team2PointsLabel.text = [NSString stringWithFormat:@"%d", game.team2.points];
     
     self.turnLabel.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer.", [[game getCurrentTeam] getTeamName], [[game otherTeamForTeam:[game getCurrentTeam]] getTeamName]];
     
