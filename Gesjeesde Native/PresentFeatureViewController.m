@@ -66,9 +66,6 @@
     self.featureImageView.image = self.currentFeaturePicture.image;
     
     self.doneButton.enabled = NO;
-#ifdef DEBUG
-    self.doneButton.enabled = YES;
-#endif
 }
 
 - (void)viewDidUnload
@@ -130,7 +127,7 @@
         self.currentFeaturePicture.presentedTurn = game.turn;
         self.currentFeaturePicture.presentAssertion = self.hasFeature;
         
-        self.currentFeaturePicture.feature = self.featureButton.titleLabel.text;
+        self.currentFeaturePicture.feature = self.feature;
     }
     
     [self performSegueWithIdentifier:@"Next" sender:self];   
@@ -217,6 +214,8 @@
     self.feature = feature;
     
     [self.featureButton setTitle:feature forState:UIControlStateNormal];
+    
+    self.doneButton.enabled = YES;
     
 //    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];
 //    fp.feature = feature;
