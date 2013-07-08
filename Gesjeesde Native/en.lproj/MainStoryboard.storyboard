@@ -2652,7 +2652,7 @@ Help je ons?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nor-ow-sUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6145" y="-1019"/>
+            <point key="canvasLocation" x="6093" y="-1755"/>
         </scene>
         <!--Convince Second Animal View Controller-->
         <scene sceneID="Jvw-Ym-Q31">
@@ -3397,7 +3397,7 @@ Help je ons?</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="htq-iv-af9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5850" y="-1117"/>
+            <point key="canvasLocation" x="5746" y="-1137"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="cwx-wr-6zT">
