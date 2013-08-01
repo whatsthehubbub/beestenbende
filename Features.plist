@@ -53,13 +53,13 @@
 				<key>Label</key>
 				<string>tanden in meerdere rijen</string>
 				<key>Explanation</key>
-				<string>vissen en reptielen kunnen tanden in meerdere rijen hebben.</string>
+				<string>vissen hebben vaak tanden in meerdere rijen.</string>
 				<key>Vis</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Zoogdier</key>
 				<integer>2</integer>
 				<key>Reptiel</key>
-				<integer>1</integer>
+				<integer>2</integer>
 				<key>Vogel</key>
 				<integer>2</integer>
 			</dict>
@@ -81,7 +81,7 @@
 				<key>Label</key>
 				<string>tanden van hetzelfde type</string>
 				<key>Explanation</key>
-				<string>de meeste vissen en reptielen hebben dezelfde type tanden, dus geen kiezen, snij- en hoektanden.</string>
+				<string>bij vissen en reptielen zijn alle tanden hetzelfde, dus geen kiezen, snij- en hoektanden.</string>
 				<key>Vis</key>
 				<integer>1</integer>
 				<key>Zoogdier</key>
@@ -100,9 +100,9 @@
 		<array>
 			<dict>
 				<key>Label</key>
-				<string>vier ledematen</string>
+				<string>vier poten</string>
 				<key>Explanation</key>
-				<string>reptielen, vogels en zoogdieren hebben vier ledematen. Let op: bij slangen zijn de ledematen verdwenen.</string>
+				<string>reptielen en zoogdieren hebben vier poten. Let op: bij slangen zijn de poten verdwenen.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -110,7 +110,7 @@
 				<key>Reptiel</key>
 				<integer>1</integer>
 				<key>Vogel</key>
-				<integer>1</integer>
+				<integer>2</integer>
 			</dict>
 			<dict>
 				<key>Label</key>
@@ -128,31 +128,17 @@
 			</dict>
 			<dict>
 				<key>Label</key>
-				<string>nagels</string>
+				<string>vijf tenen per poot</string>
 				<key>Explanation</key>
-				<string>vogels, reptielen en zoogdieren hebben allemaal nagels.</string>
+				<string>reptielen hebben altijd vijf tenen per poot, behalve natuurlijk de slangen. Die hebben geen poten. Let op: ook sommige zoogdieren hebben vijf tenen. Tel maar na.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
-				<integer>1</integer>
-				<key>Reptiel</key>
-				<integer>1</integer>
-				<key>Vogel</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>Label</key>
-				<string>tenen</string>
-				<key>Explanation</key>
-				<string>vogels en zoogdieren hebben allemaal 1, 2, 3, 4 of 5 tenen per poot. Reptielen hebben altijd vijf tenen per poot.</string>
-				<key>Vis</key>
 				<integer>2</integer>
-				<key>Zoogdier</key>
-				<integer>1</integer>
 				<key>Reptiel</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>Vogel</key>
-				<integer>1</integer>
+				<integer>2</integer>
 			</dict>
 			<dict>
 				<key>Label</key>
@@ -170,9 +156,9 @@
 			</dict>
 			<dict>
 				<key>Label</key>
-				<string>vleugels met veren</string>
+				<string>twee poten en twee vleugels</string>
 				<key>Explanation</key>
-				<string>alleen vogels hebben twee vleugels met veren.</string>
+				<string>vogels hebben twee poten waarop ze lopen en vleugels waarmee ze vliegen.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -181,34 +167,6 @@
 				<integer>2</integer>
 				<key>Vogel</key>
 				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Label</key>
-				<string>vleugels van huid</string>
-				<key>Explanation</key>
-				<string>soms hebben reptielen en zoogdieren een extra flap aan hun lijf, waarmee ze kunnen zweven. Dit heet een huidflap.</string>
-				<key>Vis</key>
-				<integer>2</integer>
-				<key>Zoogdier</key>
-				<integer>1</integer>
-				<key>Reptiel</key>
-				<integer>1</integer>
-				<key>Vogel</key>
-				<integer>2</integer>
-			</dict>
-			<dict>
-				<key>Label</key>
-				<string>twee poten</string>
-				<key>Explanation</key>
-				<string>vogels hebben twee poten waarop ze lopen. Dat is niet uniek, kijk maar eens naar jezelf!</string>
-				<key>Vis</key>
-				<integer>2</integer>
-				<key>Zoogdier</key>
-				<integer>1</integer>
-				<key>Reptiel</key>
-				<integer>2</integer>
-				<key>Vogel</key>
-				<integer>1</integer>
 			</dict>
 			<dict>
 				<key>Label</key>
