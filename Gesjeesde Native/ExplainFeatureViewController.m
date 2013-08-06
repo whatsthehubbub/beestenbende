@@ -127,29 +127,6 @@
 - (IBAction)done:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-//    if (self.currentTeam == [game firstTeamForTurn] && [[game secondTeamForTurn] featurePictureForTurn:game.turn]) {
-//        [UIView beginAnimations:@"View Flip" context:nil];
-//        [UIView setAnimationDuration:0.80];
-//        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-//        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
-//        
-//        // Changes to this ViewController
-//        self.currentTeam = [game secondTeamForTurn];
-//        [self setViewsForCurrentTeam];
-//        
-//        if (self.currentTeam.number == 1) {
-//            overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-explanation-bubble.png"];
-//        } else {
-//            overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-explanation-bubble.png"];
-//        }
-//        
-//        [UIView commitAnimations];
-//    } else {
-//        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
-//        
-//        [self performSegueWithIdentifier:@"Done" sender:self];
-//    }
-    
     game.currentTeam = [game otherTeamForTeam:game.currentTeam];
     
     [self performSegueWithIdentifier:@"NextTeam" sender:self];

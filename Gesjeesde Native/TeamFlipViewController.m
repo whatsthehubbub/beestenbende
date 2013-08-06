@@ -50,7 +50,7 @@
     
     self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een muntje opgegooid en team %@ mag beginnen.", [team getTeamName]];
     
-    self.teamImage.image = team.picture;
+    self.teamImage.image = team.picture; 
     
     if (team.number == 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];

@@ -111,10 +111,6 @@
     
     [self.yesNoButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     [self.yesNoButton setImage:[UIImage imageNamed:imageDisabledName] forState:UIControlStateDisabled];
-    
-//    if (self.currentFeaturePicture) {
-//        self.currentFeaturePicture.presentAssertion = self.hasFeature;
-//    }
 }
 
 - (IBAction)next:(id)sender {
@@ -132,45 +128,7 @@
     
     [self performSegueWithIdentifier:@"Next" sender:self];   
     
-//    if (self.currentTeam == [game firstTeamForTurn]) {
-//        [UIView beginAnimations:@"View Flip" context:nil];
-//        [UIView setAnimationDuration:0.80];
-//        [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-//        [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:NO];
-//        
-//        // Changes to this ViewController
-//        self.currentTeam = [game secondTeamForTurn];    
-//        
-//        self.headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [self.currentTeam getTeamName]];
-//        
-//        if (self.currentTeam.number == 1) {
-//            overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-choose-evidence-bubble.png"];
-//        } else {
-//            overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-choose-evidence-bubble.png"];
-//        }
-//        
-//        [featureButton setTitle:@"kies een kenmerk…" forState:UIControlStateNormal];
-//        featureImageView.image = nil;
-//        
-//        // self.hasFeature remains the same for the other team, they have to go along
-//        self.yesNoButton.enabled = NO; // Disable yes no button for the second team
-//        
-//        self.doneButton.enabled = NO;
-//#ifdef DEBUG
-//        self.doneButton.enabled = YES;
-//#endif
-//        
-//        [UIView commitAnimations];
-//    } else {
-        [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
-        
-//        if ([game.firstTeamForTurn featurePictureForTurn:game.turn] || [game.secondTeamForTurn featurePictureForTurn:game.turn]) {
-//            [self performSegueWithIdentifier:@"Result" sender:self];            
-//        } else {
-//            [self performSegueWithIdentifier:@"BothPassed" sender:self];
-//        }
-
-//    }
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
 }
 
 - (IBAction)back:(id)sender {
@@ -178,35 +136,6 @@
     
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-//#pragma mark - TeamFeaturePickerViewControllerDelegate
-//
-//- (void)teamFeaturePickerViewController:(TeamFeaturePickerViewController *)controller didSelectFeature:(int)index {
-//    
-//    if (index < self.currentTeam.featurePictures.count) {    
-//        self.currentFeaturePicture = [self.currentTeam.featurePictures objectAtIndex:index];
-//        
-//        self.featureImageView.image = self.currentFeaturePicture.image;
-//        
-//        if (self.hasFeature) {
-//            [self.featureButton setTitle:self.currentFeaturePicture.feature forState:UIControlStateNormal];
-//        } else {
-//            [self.featureButton setTitle:[self.currentFeaturePicture featureForNegation] forState:UIControlStateNormal];
-//        }
-//    } else {
-//        // Pass picked
-//        
-//        self.currentFeaturePicture = nil;
-//        self.featureImageView.image = nil;
-//        
-//        [self.featureButton setTitle:@"Pas!" forState:UIControlStateNormal];
-//    }
-//    
-//    [self.navigationController popViewControllerAnimated:YES];
-//    
-//    // Enable the done button
-//    self.doneButton.enabled = YES;
-//}
 
 #pragma mark - FeaturePickerViewControllerDelegate
 
@@ -216,9 +145,6 @@
     [self.featureButton setTitle:feature forState:UIControlStateNormal];
     
     self.doneButton.enabled = YES;
-    
-//    FeaturePicture *fp = [self.currentTeam.featurePictures objectAtIndex:self.currentPictureIndex];
-//    fp.feature = feature;
     
     [self.navigationController popViewControllerAnimated:YES];
 

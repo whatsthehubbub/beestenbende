@@ -4177,7 +4177,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkr-Rd-ynP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2042" y="-164"/>
+            <point key="canvasLocation" x="2054" y="-159"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uvS-q7-vsb">
@@ -4887,11 +4887,11 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="aIf-Jt-bSO"/>
+        <segue reference="AoM-So-BHK"/>
+        <segue reference="fEa-BH-mAb"/>
+        <segue reference="all-Ba-Vs9"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="cz4-cS-3oL"/>
         <segue reference="A1T-Wu-GhT"/>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="fEa-BH-mAb"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -77,19 +77,6 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
-    
-//
-//#ifdef DEBUG
-//    secondsLeft = 13;
-//#else
-//    secondsLeft = 89;
-//#endif
-    
-//    timeLabel.text = [NSString stringWithFormat:@"%d", secondsLeft+1];
-    
-//    imagesLabel.text = @"0";
-    
-//    [self startTimer];
 }
 
 - (void)viewDidUnload
@@ -103,41 +90,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-//- (void)decrementTimer:(NSTimer *)theTimer {
-//    // Could get userinfo object from theTimer if necessary
-//    if (self.secondsLeft > -1) { // TODO replace with a state variable countingDown
-//        self.timeLabel.text = [NSString stringWithFormat:@"%d", self.secondsLeft];
-//        
-//        self.secondsLeft -= 1;
-//        
-//        if (self.secondsLeft >= 10) {
-//            // The normal second sounds
-//            [[SimpleAudioEngine sharedEngine] playEffect:@"i06_tijdtiktaf.wav"];
-//        } else if (self.secondsLeft < 0) {
-//            [self timeUp];
-//        } else {
-//            // The last couple of seconds have a different sound
-//            [[SimpleAudioEngine sharedEngine] playEffect:@"i07_tijdtiktlaatstesec_v3.wav"];
-//        }
-//    }
-//}
-
-//- (void)timeUp {
-//    [[SimpleAudioEngine sharedEngine] playEffect:@"i08_tijdvoorbij_v2.wav"];
-//    
-//    [self stopTimer];
-//    
-//    pictureView.hidden = YES;
-//    pictureFrame.hidden = YES;
-//    takePictureButton.hidden = YES;
-//    
-//    headerLabel.text = @"De tijd is op!";
-//    timeUpImage.hidden = NO;
-//    timeUpLabel.hidden = NO;
-//    
-//    doneButton.hidden = NO;
-//}
-
 - (void)resignedActive {    
 //    [self stopTimer];
     [self.csManager stopPreview];
@@ -146,21 +98,9 @@
 }
 
 - (void)becameActive {
-//    if (self.secondsLeft > -1) {
-        self.pictureFrame.hidden = NO;
-//        [self startTimer];
-        [self.csManager startPreview];
-//    }
+    self.pictureFrame.hidden = NO;
+    [self.csManager startPreview];
 }
-
-//- (void)startTimer {
-//    // Timer code from: http://www.herbert-siojo.com/2011/04/19/drawing-a-countdown-timer-ios/
-//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(decrementTimer:) userInfo:nil repeats:YES];
-//}
-
-//- (void)stopTimer {
-//    [self.timer invalidate];
-//}
 
 - (IBAction)next:(id)sender {
 //    [self stopTimer];
@@ -179,21 +119,6 @@
     } else if (game.issue == 2) {
         [self performSegueWithIdentifier:@"UsePictureSecond" sender:sender];
     }
-    
-    
-//    if (team.tookFeaturePictures && [[game otherTeamForTeam:team] tookFeaturePictures]) {
-//        // Go on to labelling
-//        
-//    } else {
-//        [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
-//        
-//        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
-//        
-//        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
-//        
-//        // Go back again to have team 2 take their pictures
-////        [self performSegueWithIdentifier:@"NextTeamPrepare" sender:self];
-//    }
 }
 
 - (IBAction)back:(id)sender {
@@ -209,17 +134,6 @@
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
 }
-
-//- (void)pictureTaken:(NSNotification *)notification {
-//    UIImage *image = [notification.userInfo valueForKey:@"image"];
-//
-//    // Save UIImage to team object
-//    [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
-//                                     [image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
-//    
-//    // Update the count of images
-////    imagesLabel.text = [NSString stringWithFormat:@"%d", team.featurePictures.count];
-//}
 
 #pragma mark -
 
