@@ -2370,7 +2370,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igr-XW-cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9034" y="-165"/>
+            <point key="canvasLocation" x="7154" y="-165"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="eok-ou-PYS">
@@ -2443,7 +2443,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Psx-9i-7Vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9034" y="519"/>
+            <point key="canvasLocation" x="7154" y="519"/>
         </scene>
         <!--Issue Scores View Controller-->
         <scene sceneID="XBQ-vX-giP">
@@ -2593,7 +2593,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbn-rO-1m8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10059" y="-164"/>
+            <point key="canvasLocation" x="8179" y="-164"/>
         </scene>
         <!--Intermediary Scores View Controller-->
         <scene sceneID="Vc6-1M-xGY">
@@ -2742,7 +2742,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2d-dB-IYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10469" y="-164"/>
+            <point key="canvasLocation" x="8589" y="-164"/>
         </scene>
         <!--End Screen View Controller-->
         <scene sceneID="yLR-YY-TNR">
@@ -2840,7 +2840,7 @@ Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zodat
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQy-Az-ObB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10961" y="-164"/>
+            <point key="canvasLocation" x="9081" y="-164"/>
         </scene>
         <!--Animal Understands Response View Controller-->
         <scene sceneID="L3j-eL-VcF">
@@ -2916,7 +2916,7 @@ Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zodat
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABc-rc-jSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9492" y="-164"/>
+            <point key="canvasLocation" x="7612" y="-164"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="zud-re-MKp">
@@ -3325,7 +3325,7 @@ Audio</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2T-PN-zhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9492" y="519"/>
+            <point key="canvasLocation" x="7612" y="519"/>
         </scene>
         <!--Dragon Introduction View Controller-->
         <scene sceneID="aXj-aZ-nnA">
@@ -4104,7 +4104,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe7-ai-G7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9492" y="1116"/>
+            <point key="canvasLocation" x="7612" y="1116"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="E0o-ZR-fnM">
@@ -4887,10 +4887,10 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="aIf-Jt-bSO"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="cz4-cS-3oL"/>
         <segue reference="A1T-Wu-GhT"/>
-        <segue reference="D3e-WY-yM9"/>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="fEa-BH-mAb"/>
     </inferredMetricsTieBreakers>
