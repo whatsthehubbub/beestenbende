@@ -239,6 +239,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="pgL-9r-Bqd" eventType="touchUpInside" id="5Nt-1F-2nf"/>
                                     <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="QjK-Rl-2zm"/>
                                 </connections>
                             </button>
@@ -264,7 +265,7 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="xxl-R6-bVH"/>
+                                    <action selector="next:" destination="pgL-9r-Bqd" eventType="touchUpInside" id="6g7-7Q-3Ym"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -311,7 +312,7 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="iRo-Xe-2rg"/>
+                                    <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="9R7-pv-k7J"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De vliegende eekhoorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="H34-JF-Y9M" customClass="HeaderLabel">
@@ -643,14 +644,16 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="viR-Ly-7kL" eventType="touchUpInside" id="wen-i1-jr5"/>
-                                    <segue destination="jym-ki-3ka" kind="push" identifier="Next" id="VHk-nu-h5E"/>
+                                    <action selector="next:" destination="viR-Ly-7kL" eventType="touchUpInside" id="2Fx-WT-kcq"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="G14-5S-tyh"/>
+                    <connections>
+                        <segue destination="jym-ki-3ka" kind="push" identifier="Next" id="FCs-O0-tb1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W23-by-e55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3254,10 +3257,10 @@ Audio</string>
             </objects>
             <point key="canvasLocation" x="3911" y="481"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Issue Introduction View Controller-->
         <scene sceneID="71g-w9-5X5">
             <objects>
-                <viewController id="jym-ki-3ka" sceneMemberID="viewController">
+                <viewController id="jym-ki-3ka" customClass="SecondIssueIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aY-ox-gRs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3293,6 +3296,7 @@ Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="back:" destination="jym-ki-3ka" eventType="touchUpInside" id="lUG-dM-Gb6"/>
                                     <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="xz1-rD-And"/>
                                 </connections>
                             </button>
@@ -3318,14 +3322,16 @@ Help ons bewijzen dat hij een vis is en geen reptiel.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="viR-Ly-7kL" eventType="touchUpInside" id="As2-he-hRy"/>
-                                    <segue destination="pZK-6x-SL0" kind="push" id="yAe-va-ImF"/>
+                                    <action selector="next:" destination="jym-ki-3ka" eventType="touchUpInside" id="MwV-zT-bS6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vP0-2V-zYe"/>
+                    <connections>
+                        <segue destination="pZK-6x-SL0" kind="push" identifier="Next" id="0kF-Hb-miM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ce-VU-0If" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
