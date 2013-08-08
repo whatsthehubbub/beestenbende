@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="-1282" y="-805"/>
         </scene>
-        <!--View Controller-->
+        <!--First Issue Introduction View Controller-->
         <scene sceneID="Og1-a0-qeh">
             <objects>
-                <viewController id="pgL-9r-Bqd" sceneMemberID="viewController">
+                <viewController id="pgL-9r-Bqd" customClass="FirstIssueIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FbV-vX-aua">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -265,13 +265,15 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="xxl-R6-bVH"/>
-                                    <segue destination="O1r-7e-Hsl" kind="push" identifier="Next" id="0Oh-Av-Ifo"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ptd-tp-pBk"/>
+                    <connections>
+                        <segue destination="O1r-7e-Hsl" kind="push" identifier="Next" id="ZxF-dX-s1H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8i-N0-jEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -310,7 +312,6 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                                 </state>
                                 <connections>
                                     <action selector="next:" destination="aEm-4i-hHa" eventType="touchUpInside" id="iRo-Xe-2rg"/>
-                                    <segue destination="pgL-9r-Bqd" kind="push" identifier="Next" id="It3-kN-xf3"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De vliegende eekhoorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="H34-JF-Y9M" customClass="HeaderLabel">
@@ -346,6 +347,9 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="KHk-bU-xg2"/>
+                    <connections>
+                        <segue destination="pgL-9r-Bqd" kind="push" identifier="Next" id="tBK-s6-4Rn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOf-21-m0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1039,13 +1043,15 @@ Welk team ontdekt als eerste bij welke groep ik hoor?</string>
                                 <connections>
                                     <action selector="next:" destination="IoP-tb-2Mi" eventType="touchUpInside" id="7H4-C7-LP6"/>
                                     <action selector="next:" destination="i3Y-tE-tAM" eventType="touchUpInside" id="veb-wp-hya"/>
-                                    <segue destination="W9S-Qk-Vcr" kind="push" identifier="Next" id="FRv-1z-5Mk"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="EfU-aY-pLt"/>
+                    <connections>
+                        <segue destination="W9S-Qk-Vcr" kind="push" identifier="Next" id="gWX-hn-Bo5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-cG-ujE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
