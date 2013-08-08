@@ -199,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="-1282" y="-805"/>
         </scene>
-        <!--First Issue Introduction View Controller-->
+        <!--First Issue Explanation View Controller-->
         <scene sceneID="Og1-a0-qeh">
             <objects>
-                <viewController id="pgL-9r-Bqd" customClass="FirstIssueIntroductionViewController" sceneMemberID="viewController">
+                <viewController id="pgL-9r-Bqd" customClass="FirstIssueExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FbV-vX-aua">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -238,8 +238,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="pgL-9r-Bqd" eventType="touchUpInside" id="5Nt-1F-2nf"/>
-                                    <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="QjK-Rl-2zm"/>
+                                    <action selector="back:" destination="pgL-9r-Bqd" eventType="touchUpInside" id="t0J-P7-eD7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="YaF-61-qcU" customClass="NormalLabel">
@@ -264,7 +263,7 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="pgL-9r-Bqd" eventType="touchUpInside" id="6g7-7Q-3Ym"/>
+                                    <action selector="next:" destination="pgL-9r-Bqd" eventType="touchUpInside" id="XjA-1T-OnP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1402,6 +1401,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="Hgh-kK-144"/>
+                                    <action selector="next:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="dsM-bq-TRG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LJQ-hh-xoc" customClass="BeestenButton">
@@ -1438,7 +1438,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="uyl-QQ-ySP"/>
+                                    <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="rep-6j-bua"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1619,7 +1619,6 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="29e-BW-LPo"/>
-                                    <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="w3U-gQ-iNc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -3296,7 +3295,6 @@ Audio</string>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="jym-ki-3ka" eventType="touchUpInside" id="lUG-dM-Gb6"/>
-                                    <action selector="back:" destination="O1r-7e-Hsl" eventType="touchUpInside" id="xz1-rD-And"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7bm-yc-VbC" customClass="NormalLabel">
@@ -4803,13 +4801,8 @@ want hij heeft…</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstIssueExplanationViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="done:"/>
                 <relationship kind="action" name="example:"/>
                 <relationship kind="action" name="next:"/>
-                <relationship kind="action" name="previous:"/>
-                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
             </relationships>
         </class>
         <class className="FirstIssueIntroductionViewController" superclassName="UIViewController">
