@@ -2112,7 +2112,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-blue.png" id="Wcv-2M-2lg">
-                                        <rect key="frame" x="4" y="2" width="132" height="156"/>
+                                        <rect key="frame" x="4" y="0.0" width="132" height="156"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="frJ-dV-aHD">
