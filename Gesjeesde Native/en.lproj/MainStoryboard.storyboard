@@ -338,7 +338,7 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Joehoe! Ik kan vliegen, dus ik ben een vogel!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7LP-Ke-fTV" customClass="NormalLabel">
                                 <rect key="frame" x="58" y="255" width="205" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2880,9 +2880,12 @@ Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zodat
                                 <rect key="frame" x="21" y="60" width="280" height="250"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Juist! Ken je kenmerken, eekhoorn." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bkW-Xq-Hsg" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="bkW-Xq-Hsg" customClass="NormalLabel">
                                 <rect key="frame" x="41" y="80" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Juist! 
+Ken je kenmerken, 
+eekhoorn.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -3315,9 +3318,12 @@ Help ons bewijzen dat hij een vis is en geen reptiel.</string>
                                 <rect key="frame" x="0.0" y="248" width="164" height="232"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Juist! Ken je kenmerken, zeepaling." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="U4s-2M-rSm" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="U4s-2M-rSm" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="80" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Juist! 
+Ken uw kenmerken, 
+zeepaling.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -4932,8 +4938,8 @@ want hij heeft…</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
         <segue reference="all-Ba-Vs9"/>
+        <segue reference="aIf-Jt-bSO"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="fpS-jq-29F"/>
         <segue reference="1fY-YD-3fF"/>
