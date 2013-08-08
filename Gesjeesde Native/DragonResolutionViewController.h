@@ -13,19 +13,10 @@
 
 @interface DragonResolutionViewController : UIViewController <UIScrollViewDelegate>
 
-@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain)  DDPageControl *pageControl;
-
-@property (assign) BOOL pageControlBeingUsed;
-
-@property (strong) IBOutlet UIButton *previousButton;
-@property (strong) IBOutlet UIButton *nextButton;
-
 - (void)scrollPage;
-- (IBAction)previous;
-- (IBAction)next;
+
+- (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
-- (IBAction)done:(id)sender;
 
 - (void)pageControlClicked:(id)sender;
 

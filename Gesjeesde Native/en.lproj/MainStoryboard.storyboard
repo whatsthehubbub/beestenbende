@@ -4047,23 +4047,25 @@ want hij heeft…</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="done:" destination="riD-0B-aIy" eventType="touchUpInside" id="nfG-Hq-cqK"/>
-                                    <segue destination="1Kq-6m-nNZ" kind="push" id="ruk-mJ-PSx"/>
+                                    <action selector="next:" destination="riD-0B-aIy" eventType="touchUpInside" id="VYw-uc-daJ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SXK-81-Ifv"/>
+                    <connections>
+                        <segue destination="1Kq-6m-nNZ" kind="push" identifier="Next" id="Bu0-Li-mt1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTB-dS-b3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4416" y="1732"/>
         </scene>
-        <!--View Controller-->
+        <!--Dragon Resolution View Controller-->
         <scene sceneID="aRH-xy-uK7">
             <objects>
-                <viewController id="1Kq-6m-nNZ" sceneMemberID="viewController">
+                <viewController id="1Kq-6m-nNZ" customClass="DragonResolutionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bIl-Ur-eFl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4099,7 +4101,7 @@ want hij heeft…</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="back:" destination="riD-0B-aIy" eventType="touchUpInside" id="Mhs-h1-pYB"/>
+                                    <action selector="back:" destination="1Kq-6m-nNZ" eventType="touchUpInside" id="D3p-Eg-32r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZXF-YV-AV1" customClass="ArrowRight">
@@ -4114,8 +4116,7 @@ want hij heeft…</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="done:" destination="riD-0B-aIy" eventType="touchUpInside" id="1kX-dl-mQC"/>
-                                    <segue destination="gkn-EA-2Cj" kind="push" id="rsx-ED-WmA"/>
+                                    <action selector="next:" destination="1Kq-6m-nNZ" eventType="touchUpInside" id="PPP-Mx-ONn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zkm-Th-XS1" customClass="NormalLabel">
@@ -4130,6 +4131,9 @@ want hij heeft…</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="aZR-Rj-HDd"/>
+                    <connections>
+                        <segue destination="gkn-EA-2Cj" kind="push" identifier="Next" id="gqy-1R-n7b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42Y-KR-Ylm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4712,12 +4716,7 @@ want hij heeft…</string>
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DragonResolutionViewController.h"/>
             <relationships>
                 <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="next"/>
-                <relationship kind="action" name="previous"/>
-                <relationship kind="outlet" name="nextButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="previousButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="action" name="next:"/>
             </relationships>
         </class>
         <class className="DragonResultViewController" superclassName="UIViewController">
