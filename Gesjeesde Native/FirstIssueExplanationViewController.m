@@ -28,7 +28,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [[SimpleAudioEngine sharedEngine] playEffect:@"d03_vogels_irritatie.wav"];
+    if ([self.title isEqualToString:@"FirstBirds"]) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"d03_vogels_irritatie.wav"];
+    }
 }
 
 - (void)viewDidUnload
