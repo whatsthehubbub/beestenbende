@@ -3217,7 +3217,7 @@ Audio</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="done:" destination="pZK-6x-SL0" eventType="touchUpInside" id="bOu-yf-SfJ"/>
+                                    <action selector="next:" destination="pZK-6x-SL0" eventType="touchUpInside" id="8CE-PZ-gcy"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aan de slag!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kmr-be-VpQ" customClass="HeaderLabel">
