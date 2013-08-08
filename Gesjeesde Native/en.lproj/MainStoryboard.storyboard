@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -1156,7 +1156,7 @@ Welk team ontdekt als eerste bij welke groep ik hoor?</string>
                                 <rect key="frame" x="40" y="162" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Eerst maken jullie teams, 
-die strijden om de meeste punten.</string>
+die strijden om de meeste punten.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -3998,6 +3998,14 @@ want hij heeft…</string>
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon-happy.png" id="h1f-1r-UvR">
+                                <rect key="frame" x="122" y="246" width="198" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="TZQ-SN-xC6">
+                                <rect key="frame" x="20" y="60" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is ontmaskerd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="HHn-fM-mi6" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4020,74 +4028,13 @@ want hij heeft…</string>
                                     <action selector="back:" destination="riD-0B-aIy" eventType="touchUpInside" id="POZ-UE-mG8"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon-happy.png" id="h1f-1r-UvR">
-                                <rect key="frame" x="122" y="246" width="198" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="TZQ-SN-xC6">
-                                <rect key="frame" x="20" y="60" width="280" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="FVt-nT-YFD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Goed gezien! Ik ben natuurlijk een vis. Sterker nog, ik ben een heel knap opgevouwen rog." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Zbp-n0-NlH" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="70" width="240" height="175"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Goed gezien! Ik ben natuurlijk een vis. Sterker nog, ik ben een heel knap opgevouwen rog." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Zbp-n0-NlH" customClass="NormalLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="175"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ik sta hier, omdat verzamelaars vroeger veel geld betaalden voor een draak in hun kabinet." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2jP-nR-Cz5" customClass="NormalLabel">
-                                        <rect key="frame" x="240" y="0.0" width="240" height="175"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maar wie zijn kenmerken goed kent, laat zich natuurlijk niet voor de gek houden." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Jk5-Cm-7VS" customClass="NormalLabel">
-                                        <rect key="frame" x="480" y="0.0" width="240" height="175"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <connections>
-                                    <outlet property="delegate" destination="riD-0B-aIy" id="VJT-6J-1hO"/>
-                                </connections>
-                            </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="j6O-ZH-U0r">
-                                <rect key="frame" x="280" y="138" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-carousel-next.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="next" destination="riD-0B-aIy" eventType="touchUpInside" id="iNc-of-duG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="NF6-pH-EyS">
-                                <rect key="frame" x="0.0" y="138" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-carousel-prev.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="previous" destination="riD-0B-aIy" eventType="touchUpInside" id="Wbc-mj-Oaf"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="evE-KA-jql" customClass="ArrowRight">
                                 <rect key="frame" x="160" y="418" width="140" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4101,22 +4048,92 @@ want hij heeft…</string>
                                 </state>
                                 <connections>
                                     <action selector="done:" destination="riD-0B-aIy" eventType="touchUpInside" id="nfG-Hq-cqK"/>
+                                    <segue destination="1Kq-6m-nNZ" kind="push" id="ruk-mJ-PSx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SXK-81-Ifv"/>
-                    <connections>
-                        <outlet property="nextButton" destination="j6O-ZH-U0r" id="fhS-Os-7IX"/>
-                        <outlet property="previousButton" destination="NF6-pH-EyS" id="zsc-0Z-dMM"/>
-                        <outlet property="scrollView" destination="FVt-nT-YFD" id="80L-dD-srP"/>
-                        <segue destination="gkn-EA-2Cj" kind="push" identifier="Next" id="Fdn-wg-VFE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTB-dS-b3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4416" y="1732"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aRH-xy-uK7">
+            <objects>
+                <viewController id="1Kq-6m-nNZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bIl-Ur-eFl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="Xah-cl-5rk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon-happy.png" id="jUa-Jp-RaM">
+                                <rect key="frame" x="122" y="246" width="198" height="234"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="p4w-hP-Qsn">
+                                <rect key="frame" x="20" y="60" width="280" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is ontmaskerd" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="xkG-cg-w9G" customClass="HeaderLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="p3b-3f-e6f">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="button-titlebar-back.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="riD-0B-aIy" eventType="touchUpInside" id="Mhs-h1-pYB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZXF-YV-AV1" customClass="ArrowRight">
+                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Verder…">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="riD-0B-aIy" eventType="touchUpInside" id="1kX-dl-mQC"/>
+                                    <segue destination="gkn-EA-2Cj" kind="push" id="rsx-ED-WmA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zkm-Th-XS1" customClass="NormalLabel">
+                                <rect key="frame" x="40" y="70" width="240" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Verzamelaars betaalden vroeger veel geld voor een draak in hun kabinet. Maar wie zijn kenmerken goed kent, laat zich niet voor de gek houden.</string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aZR-Rj-HDd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="42Y-KR-Ylm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4890" y="1727"/>
         </scene>
         <!--Dragon Revealed View Controller-->
         <scene sceneID="ktj-ry-yzQ">
@@ -4192,7 +4209,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe7-ai-G7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7612" y="1116"/>
+            <point key="canvasLocation" x="5835" y="1727"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="E0o-ZR-fnM">
@@ -4532,8 +4549,6 @@ want hij heeft…</string>
         <image name="block-yellow-team.png" width="276" height="185"/>
         <image name="button-bg-choose-feature-white.png" width="486" height="80"/>
         <image name="button-bg-choose-feature.png" width="446" height="80"/>
-        <image name="button-carousel-next.png" width="80" height="80"/>
-        <image name="button-carousel-prev.png" width="80" height="80"/>
         <image name="button-credits.png" width="366" height="118"/>
         <image name="button-dragon-is-bird-disabled.png" width="263" height="305"/>
         <image name="button-dragon-is-bird-off.png" width="263" height="305"/>
@@ -4977,7 +4992,7 @@ want hij heeft…</string>
     <inferredMetricsTieBreakers>
         <segue reference="sz9-qc-ZZh"/>
         <segue reference="fEa-BH-mAb"/>
-        <segue reference="aIf-Jt-bSO"/>
+        <segue reference="AoM-So-BHK"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="fpS-jq-29F"/>
         <segue reference="1fY-YD-3fF"/>
