@@ -28,7 +28,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [[SimpleAudioEngine sharedEngine] playEffect:@"d12_draak_inderdaadvis_v4.wav"];
+    if ([self.title isEqualToString:@"FirstDragon"]) {
+        [[SimpleAudioEngine sharedEngine] playEffect:@"d12_draak_inderdaadvis_v4.wav"];
+    }
 }
 
 - (void)viewDidUnload

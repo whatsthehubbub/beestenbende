@@ -3983,10 +3983,10 @@ want hij heeft…</string>
             </objects>
             <point key="canvasLocation" x="5835" y="1109"/>
         </scene>
-        <!--Dragon Resolution View Controller-->
+        <!--Dragon Resolution View Controller - FirstDragon-->
         <scene sceneID="Ttn-ai-RLD">
             <objects>
-                <viewController id="riD-0B-aIy" customClass="DragonResolutionViewController" sceneMemberID="viewController">
+                <viewController title="FirstDragon" id="riD-0B-aIy" customClass="DragonResolutionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5F5-Rt-rRK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -4059,10 +4059,10 @@ want hij heeft…</string>
             </objects>
             <point key="canvasLocation" x="4416" y="1732"/>
         </scene>
-        <!--Dragon Resolution View Controller-->
+        <!--Dragon Resolution View Controller - SecondDragon-->
         <scene sceneID="aRH-xy-uK7">
             <objects>
-                <viewController id="1Kq-6m-nNZ" customClass="DragonResolutionViewController" sceneMemberID="viewController">
+                <viewController title="SecondDragon" id="1Kq-6m-nNZ" customClass="DragonResolutionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bIl-Ur-eFl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
