@@ -1108,6 +1108,11 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = Hubbub;
+				TargetAttributes = {
+					4EAE98D5151A618A0051C926 = {
+						DevelopmentTeam = 5WBE98GG8T;
+					};
+				};
 			};
 			buildConfigurationList = 4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "Beestenbende" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1464,6 +1469,8 @@
 		4EA0F267151B61D100B12716 /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
@@ -1472,6 +1479,7 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				PRODUCT_NAME = Beestenbende;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Ad Hoc";
@@ -1528,6 +1536,8 @@
 		4EAE98F5151A618A0051C926 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
@@ -1536,6 +1546,7 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				PRODUCT_NAME = Beestenbende;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1543,6 +1554,8 @@
 		4EAE98F6151A618A0051C926 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
@@ -1551,6 +1564,7 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				PRODUCT_NAME = Beestenbende;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
