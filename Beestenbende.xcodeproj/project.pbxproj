@@ -29,8 +29,6 @@
 		4740FEBE15920C0C00DEB661 /* speech-bubble-explanation.png in Resources */ = {isa = PBXBuildFile; fileRef = 4740FEBD15920C0C00DEB661 /* speech-bubble-explanation.png */; };
 		4740FEC115920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 4740FEBF15920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png */; };
 		4740FEC215920F8800DEB661 /* overlay-team-blue-explanation-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 4740FEC015920F8800DEB661 /* overlay-team-blue-explanation-bubble.png */; };
-		4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 4740FEC31592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png */; };
-		4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 4740FEC41592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png */; };
 		475D6B6015498CB20010DF59 /* progress-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B5C15498CB20010DF59 /* progress-1.png */; };
 		475D6B6115498CB20010DF59 /* progress-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B5D15498CB20010DF59 /* progress-0.png */; };
 		475D6B6215498CB20010DF59 /* progress-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 475D6B5E15498CB20010DF59 /* progress-2.png */; };
@@ -121,6 +119,8 @@
 		47BFEDC8153F04DF002BF8F3 /* button-speel-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */; };
 		47BFEDCA153F0DA1002BF8F3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC9153F0DA1002BF8F3 /* map.png */; };
 		47C81ADE159CC0BA004C5D5D /* button-bg-choose-feature-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */; };
+		47F246AA17FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */; };
+		47F246AB17FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */; };
 		47F47F40154EA6CB00BB481D /* animal-all.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F3F154EA6CB00BB481D /* animal-all.png */; };
 		47F47F43154EAC0400BB481D /* progress-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F42154EAC0400BB481D /* progress-3.png */; };
 		47F47F45154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */; };
@@ -309,8 +309,6 @@
 		4740FEBD15920C0C00DEB661 /* speech-bubble-explanation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-explanation.png"; sourceTree = "<group>"; };
 		4740FEBF15920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-yellow-explanation-bubble.png"; sourceTree = "<group>"; };
 		4740FEC015920F8800DEB661 /* overlay-team-blue-explanation-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-blue-explanation-bubble.png"; sourceTree = "<group>"; };
-		4740FEC31592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-blue-choose-evidence-bubble.png"; sourceTree = "<group>"; };
-		4740FEC41592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-yellow-choose-evidence-bubble.png"; sourceTree = "<group>"; };
 		475D6B5C15498CB20010DF59 /* progress-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-1.png"; sourceTree = "<group>"; };
 		475D6B5D15498CB20010DF59 /* progress-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-0.png"; sourceTree = "<group>"; };
 		475D6B5E15498CB20010DF59 /* progress-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-2.png"; sourceTree = "<group>"; };
@@ -401,6 +399,8 @@
 		47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-speel-verder.png"; sourceTree = "<group>"; };
 		47BFEDC9153F0DA1002BF8F3 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature-white.png"; sourceTree = "<group>"; };
+		47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-yellow-choose-evidence-bubble.png"; sourceTree = "<group>"; };
+		47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-blue-choose-evidence-bubble.png"; sourceTree = "<group>"; };
 		47F47F3F154EA6CB00BB481D /* animal-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-all.png"; sourceTree = "<group>"; };
 		47F47F42154EAC0400BB481D /* progress-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-3.png"; sourceTree = "<group>"; };
 		47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-big-mirrored-flipped.png"; sourceTree = "<group>"; };
@@ -653,6 +653,8 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */,
+				47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */,
 				47AA630D159B1E56000BD6B3 /* Default.png */,
 				47AA6311159B1FCF000BD6B3 /* Icon.png */,
 				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
@@ -775,10 +777,8 @@
 				47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */,
 				47BFEDC9153F0DA1002BF8F3 /* map.png */,
 				472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */,
-				4740FEC31592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png */,
 				4740FEC015920F8800DEB661 /* overlay-team-blue-explanation-bubble.png */,
 				478F9DF815401FB100D14182 /* overlay-team-blue.png */,
-				4740FEC41592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png */,
 				4740FEBF15920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png */,
 				478F9DF915401FB100D14182 /* overlay-team-yellow.png */,
 				47993164152E5BD700AF019F /* photo-frame-square-120.png */,
@@ -1165,6 +1165,7 @@
 				4E3326AA151A663B00CEC850 /* points-fout.png in Resources */,
 				4E3326AB151A663B00CEC850 /* points-goed.png in Resources */,
 				4E3326AC151A663B00CEC850 /* points-uniek.png in Resources */,
+				47F246AA17FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
 				4E3326AD151A663B00CEC850 /* pulldown.png in Resources */,
 				4E3326AE151A663B00CEC850 /* speech-bubble-big.png in Resources */,
 				4E3326AF151A663B00CEC850 /* speech-bubble-small.png in Resources */,
@@ -1203,6 +1204,7 @@
 				47993151152E426700AF019F /* animal-squirrel.png in Resources */,
 				47993153152E432A00AF019F /* speech-bubble-squirrel-screen-5.png in Resources */,
 				47993155152E456B00AF019F /* photo-frame-square-480.png in Resources */,
+				47F246AB17FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				47993157152E489000AF019F /* animal-birds.png in Resources */,
 				4799315A152E499E00AF019F /* button-bijvoorbeeld.png in Resources */,
 				4799315B152E499E00AF019F /* button-duidelijk.png in Resources */,
@@ -1319,8 +1321,6 @@
 				4740FEBE15920C0C00DEB661 /* speech-bubble-explanation.png in Resources */,
 				4740FEC115920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png in Resources */,
 				4740FEC215920F8800DEB661 /* overlay-team-blue-explanation-bubble.png in Resources */,
-				4740FEC51592108F00DEB661 /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
-				4740FEC61592108F00DEB661 /* overlay-team-yellow-choose-evidence-bubble.png in Resources */,
 				4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */,
 				47AA630E159B1E56000BD6B3 /* Default.png in Resources */,
 				47AA6310159B1FC7000BD6B3 /* Icon@2x.png in Resources */,
