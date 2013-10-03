@@ -1972,7 +1972,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" id="WoQ-zd-fSs">
-                                <rect key="frame" x="20" y="150" width="280" height="40"/>
+                                <rect key="frame" x="19" y="150" width="283" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <state key="normal" title="kies een kenmerk…" backgroundImage="button-bg-choose-feature.png">
@@ -1995,7 +1995,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="xtc-7C-RXk">
-                                <rect key="frame" x="20" y="100" width="280" height="40"/>
+                                <rect key="frame" x="19" y="100" width="283" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" image="toggle-wel-on-geen-off.png">
@@ -4581,8 +4581,8 @@ want hij heeft…</string>
         <image name="block-blue-team.png" width="276" height="185"/>
         <image name="block-yellow-team.png" width="276" height="185"/>
         <image name="button-bg-choose-feature-white.png" width="486" height="80"/>
-        <image name="button-bg-choose-feature.png" width="446" height="80"/>
-        <image name="button-bg-choose-feature.png" width="446" height="80"/>
+        <image name="button-bg-choose-feature.png" width="566" height="80"/>
+        <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-credits.png" width="366" height="118"/>
         <image name="button-dragon-is-bird-disabled.png" width="263" height="305"/>
         <image name="button-dragon-is-bird-off.png" width="263" height="305"/>
@@ -4716,8 +4716,8 @@ want hij heeft…</string>
         <image name="tfi-logo.png" width="428" height="201"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
-        <image name="toggle-wel-on-geen-off.png" width="105" height="79"/>
-        <image name="toggle-wel-on-geen-off.png" width="105" height="79"/>
+        <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
+        <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
         <image name="um-logo-splash.jpg" width="640" height="960"/>
         <image name="um-logo.png" width="428" height="164"/>
         <image name="zoek-foto-draak.jpg" width="240" height="240"/>

@@ -15,8 +15,6 @@
 		472AFF5E1547F291001B38F9 /* team-photo-frame-yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF5C1547F291001B38F9 /* team-photo-frame-yellow.png */; };
 		472AFF5F1547F291001B38F9 /* team-photo-frame-blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF5D1547F291001B38F9 /* team-photo-frame-blue.png */; };
 		472AFF611547F6D4001B38F9 /* number-of-evidence-left-frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */; };
-		472AFF6415480467001B38F9 /* toggle-wel-off-geen-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */; };
-		472AFF6515480467001B38F9 /* toggle-wel-on-geen-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */; };
 		472AFF6715480A2E001B38F9 /* photo-frame-square-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6615480A2E001B38F9 /* photo-frame-square-80.png */; };
 		472AFF6915480A70001B38F9 /* photo-frame-square-160.png in Resources */ = {isa = PBXBuildFile; fileRef = 472AFF6815480A70001B38F9 /* photo-frame-square-160.png */; };
 		4740FEB01591B70100DEB661 /* speech-bubble-build-evidence.png in Resources */ = {isa = PBXBuildFile; fileRef = 4740FEAF1591B70100DEB661 /* speech-bubble-build-evidence.png */; };
@@ -79,7 +77,6 @@
 		4799316B152E5E9300AF019F /* button-en-de-winnaar-is.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799316A152E5E9200AF019F /* button-en-de-winnaar-is.png */; };
 		479DEB7D154199550093C1A6 /* icon-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7C154199550093C1A6 /* icon-clock.png */; };
 		479DEB7F15419A800093C1A6 /* icon-stack-of-photos.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */; };
-		479DEB811541A6BD0093C1A6 /* button-bg-choose-feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */; };
 		47A8713B159B2CC70019F9EF /* logo-gemeente-utrecht.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A87138159B2CC70019F9EF /* logo-gemeente-utrecht.png */; };
 		47A8713C159B2CC70019F9EF /* logo-provincie-utrecht.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */; };
 		47A8713D159B2CC70019F9EF /* logo-min-eli.png in Resources */ = {isa = PBXBuildFile; fileRef = 47A8713A159B2CC70019F9EF /* logo-min-eli.png */; };
@@ -121,6 +118,9 @@
 		47C81ADE159CC0BA004C5D5D /* button-bg-choose-feature-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */; };
 		47F246AA17FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */; };
 		47F246AB17FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */; };
+		47F246AD17FDAC8500AFE29E /* button-bg-choose-feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */; };
+		47F246B017FDACAB00AFE29E /* toggle-wel-off-geen-on.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246AE17FDACAB00AFE29E /* toggle-wel-off-geen-on.png */; };
+		47F246B117FDACAB00AFE29E /* toggle-wel-on-geen-off.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246AF17FDACAB00AFE29E /* toggle-wel-on-geen-off.png */; };
 		47F47F40154EA6CB00BB481D /* animal-all.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F3F154EA6CB00BB481D /* animal-all.png */; };
 		47F47F43154EAC0400BB481D /* progress-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F42154EAC0400BB481D /* progress-3.png */; };
 		47F47F45154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */; };
@@ -295,8 +295,6 @@
 		472AFF5C1547F291001B38F9 /* team-photo-frame-yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team-photo-frame-yellow.png"; sourceTree = "<group>"; };
 		472AFF5D1547F291001B38F9 /* team-photo-frame-blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team-photo-frame-blue.png"; sourceTree = "<group>"; };
 		472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "number-of-evidence-left-frame.png"; sourceTree = "<group>"; };
-		472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-off-geen-on.png"; sourceTree = "<group>"; };
-		472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-on-geen-off.png"; sourceTree = "<group>"; };
 		472AFF6615480A2E001B38F9 /* photo-frame-square-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame-square-80.png"; sourceTree = "<group>"; };
 		472AFF6815480A70001B38F9 /* photo-frame-square-160.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-frame-square-160.png"; sourceTree = "<group>"; };
 		4740FEAF1591B70100DEB661 /* speech-bubble-build-evidence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-build-evidence.png"; sourceTree = "<group>"; };
@@ -359,7 +357,6 @@
 		4799316A152E5E9200AF019F /* button-en-de-winnaar-is.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-en-de-winnaar-is.png"; sourceTree = "<group>"; };
 		479DEB7C154199550093C1A6 /* icon-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-clock.png"; sourceTree = "<group>"; };
 		479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-stack-of-photos.png"; sourceTree = "<group>"; };
-		479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature.png"; sourceTree = "<group>"; };
 		47A87138159B2CC70019F9EF /* logo-gemeente-utrecht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-gemeente-utrecht.png"; sourceTree = "<group>"; };
 		47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-provincie-utrecht.png"; sourceTree = "<group>"; };
 		47A8713A159B2CC70019F9EF /* logo-min-eli.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-min-eli.png"; sourceTree = "<group>"; };
@@ -401,6 +398,9 @@
 		47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature-white.png"; sourceTree = "<group>"; };
 		47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-yellow-choose-evidence-bubble.png"; sourceTree = "<group>"; };
 		47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-blue-choose-evidence-bubble.png"; sourceTree = "<group>"; };
+		47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature.png"; sourceTree = "<group>"; };
+		47F246AE17FDACAB00AFE29E /* toggle-wel-off-geen-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-off-geen-on.png"; sourceTree = "<group>"; };
+		47F246AF17FDACAB00AFE29E /* toggle-wel-on-geen-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toggle-wel-on-geen-off.png"; sourceTree = "<group>"; };
 		47F47F3F154EA6CB00BB481D /* animal-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-all.png"; sourceTree = "<group>"; };
 		47F47F42154EAC0400BB481D /* progress-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-3.png"; sourceTree = "<group>"; };
 		47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-big-mirrored-flipped.png"; sourceTree = "<group>"; };
@@ -711,9 +711,9 @@
 				478F9DF51540163B00D14182 /* block-blue-team.png */,
 				472AFF541547E88C001B38F9 /* block-yellow-team-small.png */,
 				478F9DF41540163B00D14182 /* block-yellow-team.png */,
+				47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */,
 				4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */,
 				47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */,
-				479DEB801541A6BD0093C1A6 /* button-bg-choose-feature.png */,
 				47993158152E499E00AF019F /* button-bijvoorbeeld.png */,
 				4EDEFAE8152B705500324EDB /* button-carousel-next.png */,
 				4EDEFAE9152B705500324EDB /* button-carousel-prev.png */,
@@ -816,10 +816,10 @@
 				4799314B152E405E00AF019F /* titlebar-team-seba.png */,
 				4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */,
 				4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */,
+				47F246AE17FDACAB00AFE29E /* toggle-wel-off-geen-on.png */,
+				47F246AF17FDACAB00AFE29E /* toggle-wel-on-geen-off.png */,
 				47F47F47154ECD0900BB481D /* toggle-wel-off-geen-on-inactive.png */,
-				472AFF6215480467001B38F9 /* toggle-wel-off-geen-on.png */,
 				47F47F46154ECD0900BB481D /* toggle-wel-on-geen-off-inactive.png */,
-				472AFF6315480467001B38F9 /* toggle-wel-on-geen-off.png */,
 				47A9B675158F6FFA00691553 /* um-logo.png */,
 				4E4EECF01588C2480018170C /* audio */,
 			);
@@ -1192,6 +1192,7 @@
 				47AF02D4152C8C37008905ED /* button-verder.png in Resources */,
 				47AF02D6152C8D56008905ED /* speech-bubble-screen-6.png in Resources */,
 				47AF02D8152C8FDE008905ED /* bg-2-main-menu.jpg in Resources */,
+				47F246B017FDACAB00AFE29E /* toggle-wel-off-geen-on.png in Resources */,
 				47AF02DB152C9007008905ED /* bg-3-map.jpg in Resources */,
 				47AF02DC152C9007008905ED /* bg-4-welcome-to-cabinet.jpg in Resources */,
 				47AF02DE152C9056008905ED /* bg-1-splash.jpg in Resources */,
@@ -1209,6 +1210,7 @@
 				4799315A152E499E00AF019F /* button-bijvoorbeeld.png in Resources */,
 				4799315B152E499E00AF019F /* button-duidelijk.png in Resources */,
 				4799315D152E504700AF019F /* button-ja-start.png in Resources */,
+				47F246AD17FDAC8500AFE29E /* button-bg-choose-feature.png in Resources */,
 				4799315F152E581800AF019F /* animal-squirrel-icon.png in Resources */,
 				47993161152E58B900AF019F /* button-start.png in Resources */,
 				47993163152E5A1E00AF019F /* speech-bubble-twin-screen-19.png in Resources */,
@@ -1232,7 +1234,6 @@
 				478F9DFB15401FB100D14182 /* overlay-team-yellow.png in Resources */,
 				479DEB7D154199550093C1A6 /* icon-clock.png in Resources */,
 				479DEB7F15419A800093C1A6 /* icon-stack-of-photos.png in Resources */,
-				479DEB811541A6BD0093C1A6 /* button-bg-choose-feature.png in Resources */,
 				472AFF521547E5D6001B38F9 /* photo-frame-square-240.png in Resources */,
 				472AFF561547E88C001B38F9 /* block-yellow-team-small.png in Resources */,
 				472AFF571547E88C001B38F9 /* block-blue-team-small.png in Resources */,
@@ -1241,8 +1242,6 @@
 				472AFF5E1547F291001B38F9 /* team-photo-frame-yellow.png in Resources */,
 				472AFF5F1547F291001B38F9 /* team-photo-frame-blue.png in Resources */,
 				472AFF611547F6D4001B38F9 /* number-of-evidence-left-frame.png in Resources */,
-				472AFF6415480467001B38F9 /* toggle-wel-off-geen-on.png in Resources */,
-				472AFF6515480467001B38F9 /* toggle-wel-on-geen-off.png in Resources */,
 				472AFF6715480A2E001B38F9 /* photo-frame-square-80.png in Resources */,
 				472AFF6915480A70001B38F9 /* photo-frame-square-160.png in Resources */,
 				475D6B6015498CB20010DF59 /* progress-1.png in Resources */,
@@ -1268,6 +1267,7 @@
 				4E4EECF61588C3B80018170C /* i03_schermterug.wav in Resources */,
 				4ED69F351588D7B500F84D92 /* i15_tussenstand_v2.wav in Resources */,
 				4ED69F391588DB7D00F84D92 /* i08_tijdvoorbij_v2.wav in Resources */,
+				47F246B117FDACAB00AFE29E /* toggle-wel-on-geen-off.png in Resources */,
 				4ED69F3B1588DB9100F84D92 /* i06_tijdtiktaf.wav in Resources */,
 				4ED69F3D1588DD1200F84D92 /* i05_carouselverderterug.wav in Resources */,
 				4ED69F3F1588E65E00F84D92 /* i10_openmenu.wav in Resources */,
