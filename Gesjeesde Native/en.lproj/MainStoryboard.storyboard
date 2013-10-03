@@ -1842,15 +1842,17 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zeepaling, u bent een vis en geen reptiel want u hebt…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lBy-Aa-eWe" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lBy-Aa-eWe" customClass="NormalLabel">
                                 <rect key="frame" x="20" y="60" width="280" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Zeepaling, u bent een vis en 
+geen reptiel want u hebt…</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" id="N0H-sq-Nql">
-                                <rect key="frame" x="77" y="101" width="223" height="40"/>
+                                <rect key="frame" x="19" y="150" width="283" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
                                 <state key="normal" title="kies een kenmerk…" backgroundImage="button-bg-choose-feature.png">
@@ -1865,7 +1867,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="LTL-EX-1to">
-                                <rect key="frame" x="20" y="101" width="52" height="40"/>
+                                <rect key="frame" x="19" y="100" width="283" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" image="toggle-wel-on-geen-off.png">
@@ -1897,11 +1899,11 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="dne-2T-11h">
-                                <rect key="frame" x="197" y="200" width="80" height="80"/>
+                                <rect key="frame" x="195" y="260" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="Tqh-tF-Ng9">
-                                <rect key="frame" x="194" y="198" width="86" height="84"/>
+                                <rect key="frame" x="192" y="258" width="86" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aGb-Vt-62n">
@@ -4731,10 +4733,10 @@ want hij heeft…</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="fEa-BH-mAb"/>
-        <segue reference="AoM-So-BHK"/>
         <segue reference="all-Ba-Vs9"/>
+        <segue reference="AoM-So-BHK"/>
+        <segue reference="A1T-Wu-GhT"/>
         <segue reference="OHM-xk-G1T"/>
-        <segue reference="fpS-jq-29F"/>
-        <segue reference="1fY-YD-3fF"/>
+        <segue reference="cz4-cS-3oL"/>
     </inferredMetricsTieBreakers>
 </document>
