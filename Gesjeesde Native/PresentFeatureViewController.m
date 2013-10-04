@@ -142,7 +142,11 @@
 -(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)feature {
     self.feature = feature;
     
-    [self.featureButton setTitle:feature forState:UIControlStateNormal];
+    if (self.hasFeature) {
+        [self.featureButton setTitle:feature forState:UIControlStateNormal];
+    } else {
+        [self.featureButton setTitle:[FeaturePicture featureForNegation:self.feature] forState:UIControlStateNormal];
+    }
     
     self.doneButton.enabled = YES;
     
