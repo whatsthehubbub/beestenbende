@@ -16,6 +16,7 @@ typedef enum {
     FEATURE_YES_INCORRECT, // 0 points
     
     FEATURE_NO_INCORRECT, // 5 points
+    FEATURE_NO_INCORRECT_AND_UNIQUE, // 10 points
     FEATURE_NO_CORRECT // 0 points
 } FEATURE_RESULT;
 

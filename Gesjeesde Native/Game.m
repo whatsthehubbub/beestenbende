@@ -60,7 +60,11 @@
         }
     } else {
         if (featureForCorrectAnimal == 2) {
-            return FEATURE_NO_INCORRECT;
+            if (featureForWrongAnimal == 0) {
+                return FEATURE_NO_INCORRECT_AND_UNIQUE;
+            } else {
+                return FEATURE_NO_INCORRECT;
+            }
         } else {
             return FEATURE_NO_CORRECT;
         }

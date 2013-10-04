@@ -84,7 +84,7 @@
     
     FEATURE_RESULT result = [game resultForFeaturePicture:fp];
     
-    if (result == FEATURE_YES_UNIQUE) {
+    if (result == FEATURE_YES_UNIQUE || result == FEATURE_NO_INCORRECT_AND_UNIQUE) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", explanation];
         
         currentTeam.points += 10;
@@ -106,7 +106,7 @@
         self.pointsImage.image = [UIImage imageNamed:@"points-fout.png"];
     }
     
-    if (result == FEATURE_YES_UNIQUE || result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
+    if (result == FEATURE_YES_UNIQUE || result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT || result == FEATURE_NO_INCORRECT_AND_UNIQUE) {
         // This means we have one positive proof
         game.required -= 1;
         fp.usedSuccesfully = YES;
