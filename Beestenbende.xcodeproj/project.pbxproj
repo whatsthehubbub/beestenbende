@@ -122,7 +122,6 @@
 		47F47F40154EA6CB00BB481D /* animal-all.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F3F154EA6CB00BB481D /* animal-all.png */; };
 		47F47F43154EAC0400BB481D /* progress-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F42154EAC0400BB481D /* progress-3.png */; };
 		47F47F45154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */; };
-		4E08C30F1524723D00F3CDC7 /* 15.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E08C30E1524723D00F3CDC7 /* 15.png */; };
 		4E08C313152489BF00F3CDC7 /* FeatureExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */; };
 		4E08C31615248CAA00F3CDC7 /* FirstIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */; };
 		4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0D5F38152E69DD00009EC0 /* ExplainFeatureViewController.m */; };
@@ -397,7 +396,6 @@
 		47F47F3F154EA6CB00BB481D /* animal-all.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-all.png"; sourceTree = "<group>"; };
 		47F47F42154EAC0400BB481D /* progress-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "progress-3.png"; sourceTree = "<group>"; };
 		47F47F44154ECC5700BB481D /* speech-bubble-big-mirrored-flipped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-big-mirrored-flipped.png"; sourceTree = "<group>"; };
-		4E08C30E1524723D00F3CDC7 /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.png; sourceTree = "<group>"; };
 		4E08C311152489BF00F3CDC7 /* FeatureExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureExampleViewController.h; sourceTree = "<group>"; };
 		4E08C312152489BF00F3CDC7 /* FeatureExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureExampleViewController.m; sourceTree = "<group>"; };
 		4E08C31415248CAA00F3CDC7 /* FirstIssueExplanationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueExplanationViewController.h; sourceTree = "<group>"; };
@@ -643,30 +641,6 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
-				47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */,
-				47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */,
-				47AA630D159B1E56000BD6B3 /* Default.png */,
-				47AA6311159B1FCF000BD6B3 /* Icon.png */,
-				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
-				479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */,
-				479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */,
-				479683E215AC2CB80075C6C1 /* example-photos-of-features@2x.png */,
-				479683DE15AC28310075C6C1 /* zoek-foto-zeepaling.jpg */,
-				479683DF15AC28310075C6C1 /* zoek-foto-zeepaling@2x.jpg */,
-				479683DA15AC273B0075C6C1 /* zoek-foto-eekhoorn.jpg */,
-				479683DB15AC273B0075C6C1 /* zoek-foto-eekhoorn@2x.jpg */,
-				479683D615AC26470075C6C1 /* zoek-foto-draak.jpg */,
-				479683D715AC26470075C6C1 /* zoek-foto-draak@2x.jpg */,
-				47AF02DF152C90C7008905ED /* bg-0-plain.jpg */,
-				47AF02DD152C9056008905ED /* bg-1-splash.jpg */,
-				47AF02D7152C8FDE008905ED /* bg-2-main-menu.jpg */,
-				47AF02D9152C9006008905ED /* bg-3-map.jpg */,
-				47AF02DA152C9006008905ED /* bg-4-welcome-to-cabinet.jpg */,
-				4799314E152E422900AF019F /* bg-5-intro-mission-1.jpg */,
-				47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */,
-				47A9B66B158F44D200691553 /* um-logo-splash.jpg */,
-				4E4D8F9D152CCFCD00E898D5 /* Features.plist */,
-				4E08C30E1524723D00F3CDC7 /* 15.png */,
 				47F47F3F154EA6CB00BB481D /* animal-all.png */,
 				4740FEB11591C57200DEB661 /* animal-birds-happy.png */,
 				47993156152E489000AF019F /* animal-birds.png */,
@@ -688,22 +662,29 @@
 				47A9B679158F852200691553 /* animal-squirrel-icon-large.png */,
 				4799315E152E581800AF019F /* animal-squirrel-icon.png */,
 				47993150152E426700AF019F /* animal-squirrel.png */,
+				4E4EECF01588C2480018170C /* audio */,
+				47AF02DF152C90C7008905ED /* bg-0-plain.jpg */,
 				4E332677151A663B00CEC850 /* bg-0-plain.png */,
+				47AF02DD152C9056008905ED /* bg-1-splash.jpg */,
 				4EDEFAE2152B6ED400324EDB /* bg-1-splash.png */,
 				4E33267D151A663B00CEC850 /* bg-14-label-photos.png */,
+				47AF02D7152C8FDE008905ED /* bg-2-main-menu.jpg */,
 				4EDEFAE3152B6ED400324EDB /* bg-2-main-menu.png */,
 				4E33267E151A663B00CEC850 /* bg-20-uitslag.png */,
+				47AF02D9152C9006008905ED /* bg-3-map.jpg */,
 				4EDEFADE152B6D2F00324EDB /* bg-3-map.png */,
+				47AF02DA152C9006008905ED /* bg-4-welcome-to-cabinet.jpg */,
 				4EDEFAE6152B6F6500324EDB /* bg-4-welcome-to-cabinet.png */,
+				4799314E152E422900AF019F /* bg-5-intro-mission-1.jpg */,
 				4E33267C151A663B00CEC850 /* bg-5-intro-mission-1.png */,
 				4E33267F151A663B00CEC850 /* bird.png */,
 				472AFF551547E88C001B38F9 /* block-blue-team-small.png */,
 				478F9DF51540163B00D14182 /* block-blue-team.png */,
 				472AFF541547E88C001B38F9 /* block-yellow-team-small.png */,
 				478F9DF41540163B00D14182 /* block-yellow-team.png */,
-				47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */,
 				4EDEFAF4152B8E9E00324EDB /* button-aan-de-slag.png */,
 				47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */,
+				47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */,
 				47993158152E499E00AF019F /* button-bijvoorbeeld.png */,
 				4EDEFAE8152B705500324EDB /* button-carousel-next.png */,
 				4EDEFAE9152B705500324EDB /* button-carousel-prev.png */,
@@ -745,6 +726,7 @@
 				4EAF06CC153DA00100BE1CAA /* button-vierkant.png */,
 				4E332686151A663B00CEC850 /* button-volgende.png */,
 				4793D5D11590D457003312D8 /* clock.png */,
+				47AA630D159B1E56000BD6B3 /* Default.png */,
 				4E3326B2151A666D00CEC850 /* Default@2x.png */,
 				4E332687151A663B00CEC850 /* dot-black.png */,
 				4E332688151A663B00CEC850 /* dot-white.png */,
@@ -755,11 +737,16 @@
 				4E332689151A663B00CEC850 /* evidence-photo-frame-large.png */,
 				4E33268A151A663B00CEC850 /* evidence-photo-frame-small.png */,
 				4EDEFAF2152B89A400324EDB /* example-photos-of-features.png */,
+				479683E215AC2CB80075C6C1 /* example-photos-of-features@2x.png */,
+				4E4D8F9D152CCFCD00E898D5 /* Features.plist */,
 				4E33268B151A663B00CEC850 /* flying-squirrel.png */,
 				4E33268C151A663B00CEC850 /* horizontal-rule.png */,
+				47A9B671158F68C200691553 /* hubbub-logo-splash.jpg */,
 				47A9B673158F6DF200691553 /* hubbub-typo.png */,
 				479DEB7C154199550093C1A6 /* icon-clock.png */,
 				479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */,
+				47AA6311159B1FCF000BD6B3 /* Icon.png */,
+				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
 				47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */,
 				4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */,
 				47A87138159B2CC70019F9EF /* logo-gemeente-utrecht.png */,
@@ -767,8 +754,10 @@
 				47A87139159B2CC70019F9EF /* logo-provincie-utrecht.png */,
 				47BFEDC9153F0DA1002BF8F3 /* map.png */,
 				472AFF601547F6D4001B38F9 /* number-of-evidence-left-frame.png */,
+				47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */,
 				4740FEC015920F8800DEB661 /* overlay-team-blue-explanation-bubble.png */,
 				478F9DF815401FB100D14182 /* overlay-team-blue.png */,
+				47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */,
 				4740FEBF15920F8800DEB661 /* overlay-team-yellow-explanation-bubble.png */,
 				478F9DF915401FB100D14182 /* overlay-team-yellow.png */,
 				47993164152E5BD700AF019F /* photo-frame-square-120.png */,
@@ -792,6 +781,8 @@
 				4E332691151A663B00CEC850 /* speech-bubble-big.png */,
 				4740FEAF1591B70100DEB661 /* speech-bubble-build-evidence.png */,
 				4740FEBD15920C0C00DEB661 /* speech-bubble-explanation.png */,
+				479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */,
+				479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */,
 				47AF02D5152C8D56008905ED /* speech-bubble-screen-6.png */,
 				4E332692151A663B00CEC850 /* speech-bubble-small.png */,
 				47993152152E432A00AF019F /* speech-bubble-squirrel-screen-5.png */,
@@ -805,8 +796,14 @@
 				4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */,
 				47F246AE17FDACAB00AFE29E /* toggle-wel-off-geen-on.png */,
 				47F246AF17FDACAB00AFE29E /* toggle-wel-on-geen-off.png */,
+				47A9B66B158F44D200691553 /* um-logo-splash.jpg */,
 				47A9B675158F6FFA00691553 /* um-logo.png */,
-				4E4EECF01588C2480018170C /* audio */,
+				479683D615AC26470075C6C1 /* zoek-foto-draak.jpg */,
+				479683D715AC26470075C6C1 /* zoek-foto-draak@2x.jpg */,
+				479683DA15AC273B0075C6C1 /* zoek-foto-eekhoorn.jpg */,
+				479683DB15AC273B0075C6C1 /* zoek-foto-eekhoorn@2x.jpg */,
+				479683DE15AC28310075C6C1 /* zoek-foto-zeepaling.jpg */,
+				479683DF15AC28310075C6C1 /* zoek-foto-zeepaling@2x.jpg */,
 			);
 			name = assets;
 			sourceTree = "<group>";
@@ -1156,7 +1153,6 @@
 				4E3326AF151A663B00CEC850 /* speech-bubble-small.png in Resources */,
 				4E3326B0151A663B00CEC850 /* sun.png in Resources */,
 				4E3326B3151A666D00CEC850 /* Default@2x.png in Resources */,
-				4E08C30F1524723D00F3CDC7 /* 15.png in Resources */,
 				4EDEFADF152B6D2F00324EDB /* bg-3-map.png in Resources */,
 				4EDEFAE1152B6DA200324EDB /* animal-host.png in Resources */,
 				4EDEFAE4152B6ED400324EDB /* bg-1-splash.png in Resources */,
