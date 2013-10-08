@@ -58,8 +58,6 @@
 		479683E615AC2F780075C6C1 /* speech-bubble-for-example.png in Resources */ = {isa = PBXBuildFile; fileRef = 479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */; };
 		479683E715AC2F780075C6C1 /* speech-bubble-for-example@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */; };
 		47993148152E3EDA00AF019F /* button-titlebar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 47993147152E3EDA00AF019F /* button-titlebar-back.png */; };
-		4799314C152E405E00AF019F /* titlebar-team-marot.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314A152E405E00AF019F /* titlebar-team-marot.png */; };
-		4799314D152E405E00AF019F /* titlebar-team-seba.png in Resources */ = {isa = PBXBuildFile; fileRef = 4799314B152E405E00AF019F /* titlebar-team-seba.png */; };
 		4799314F152E422900AF019F /* bg-5-intro-mission-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4799314E152E422900AF019F /* bg-5-intro-mission-1.jpg */; };
 		47993151152E426700AF019F /* animal-squirrel.png in Resources */ = {isa = PBXBuildFile; fileRef = 47993150152E426700AF019F /* animal-squirrel.png */; };
 		47993153152E432A00AF019F /* speech-bubble-squirrel-screen-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 47993152152E432A00AF019F /* speech-bubble-squirrel-screen-5.png */; };
@@ -273,7 +271,6 @@
 		4EDEFAE7152B6F6500324EDB /* bg-4-welcome-to-cabinet.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAE6152B6F6500324EDB /* bg-4-welcome-to-cabinet.png */; };
 		4EDEFAEA152B705500324EDB /* button-carousel-next.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAE8152B705500324EDB /* button-carousel-next.png */; };
 		4EDEFAEB152B705500324EDB /* button-carousel-prev.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAE9152B705500324EDB /* button-carousel-prev.png */; };
-		4EDEFAED152B825E00324EDB /* team-names-screen-26.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */; };
 		4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */; };
 		4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */; };
 		4EDEFAF3152B89A400324EDB /* example-photos-of-features.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EDEFAF2152B89A400324EDB /* example-photos-of-features.png */; };
@@ -338,8 +335,6 @@
 		479683E415AC2F780075C6C1 /* speech-bubble-for-example.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-for-example.png"; sourceTree = "<group>"; };
 		479683E515AC2F780075C6C1 /* speech-bubble-for-example@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-for-example@2x.png"; sourceTree = "<group>"; };
 		47993147152E3EDA00AF019F /* button-titlebar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-back.png"; sourceTree = "<group>"; };
-		4799314A152E405E00AF019F /* titlebar-team-marot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-marot.png"; sourceTree = "<group>"; };
-		4799314B152E405E00AF019F /* titlebar-team-seba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "titlebar-team-seba.png"; sourceTree = "<group>"; };
 		4799314E152E422900AF019F /* bg-5-intro-mission-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg-5-intro-mission-1.jpg"; sourceTree = "<group>"; };
 		47993150152E426700AF019F /* animal-squirrel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-squirrel.png"; sourceTree = "<group>"; };
 		47993152152E432A00AF019F /* speech-bubble-squirrel-screen-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-squirrel-screen-5.png"; sourceTree = "<group>"; };
@@ -613,7 +608,6 @@
 		4EDEFAE6152B6F6500324EDB /* bg-4-welcome-to-cabinet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-4-welcome-to-cabinet.png"; sourceTree = "<group>"; };
 		4EDEFAE8152B705500324EDB /* button-carousel-next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-carousel-next.png"; sourceTree = "<group>"; };
 		4EDEFAE9152B705500324EDB /* button-carousel-prev.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-carousel-prev.png"; sourceTree = "<group>"; };
-		4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "team-names-screen-26.png"; sourceTree = "<group>"; };
 		4EDEFAEE152B831B00324EDB /* button-ja-klaar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-ja-klaar.png"; sourceTree = "<group>"; };
 		4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "infographic-make-team-photo.png"; sourceTree = "<group>"; };
 		4EDEFAF2152B89A400324EDB /* example-photos-of-features.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "example-photos-of-features.png"; sourceTree = "<group>"; };
@@ -808,12 +802,9 @@
 				47993162152E5A1E00AF019F /* speech-bubble-twin-screen-19.png */,
 				472AFF581547E9F6001B38F9 /* stack-of-photos.png */,
 				4E332693151A663B00CEC850 /* sun.png */,
-				4EDEFAEC152B825E00324EDB /* team-names-screen-26.png */,
 				472AFF5D1547F291001B38F9 /* team-photo-frame-blue.png */,
 				472AFF5C1547F291001B38F9 /* team-photo-frame-yellow.png */,
 				47A9B677158F724F00691553 /* tfi-logo.png */,
-				4799314A152E405E00AF019F /* titlebar-team-marot.png */,
-				4799314B152E405E00AF019F /* titlebar-team-seba.png */,
 				4EDEFAFA152B90C600324EDB /* toggle-trash-off.png */,
 				4EDEFAFB152B90C600324EDB /* toggle-trash-on.png */,
 				47F246AE17FDACAB00AFE29E /* toggle-wel-off-geen-on.png */,
@@ -1179,7 +1170,6 @@
 				4EDEFAE7152B6F6500324EDB /* bg-4-welcome-to-cabinet.png in Resources */,
 				4EDEFAEA152B705500324EDB /* button-carousel-next.png in Resources */,
 				4EDEFAEB152B705500324EDB /* button-carousel-prev.png in Resources */,
-				4EDEFAED152B825E00324EDB /* team-names-screen-26.png in Resources */,
 				4EDEFAEF152B831C00324EDB /* button-ja-klaar.png in Resources */,
 				4EDEFAF1152B874B00324EDB /* infographic-make-team-photo.png in Resources */,
 				4EDEFAF3152B89A400324EDB /* example-photos-of-features.png in Resources */,
@@ -1199,8 +1189,6 @@
 				47AF02E0152C90C7008905ED /* bg-0-plain.jpg in Resources */,
 				4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */,
 				47993148152E3EDA00AF019F /* button-titlebar-back.png in Resources */,
-				4799314C152E405E00AF019F /* titlebar-team-marot.png in Resources */,
-				4799314D152E405E00AF019F /* titlebar-team-seba.png in Resources */,
 				4799314F152E422900AF019F /* bg-5-intro-mission-1.jpg in Resources */,
 				47993151152E426700AF019F /* animal-squirrel.png in Resources */,
 				47993153152E432A00AF019F /* speech-bubble-squirrel-screen-5.png in Resources */,
