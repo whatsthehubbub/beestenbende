@@ -62,6 +62,7 @@
     
     self.hasFeature = YES;
     
+    // This is the last picture the team took and which should be assigned a feature and a present assertion
     self.currentFeaturePicture = [self.currentTeam.featurePictures lastObject];
     self.featureImageView.image = self.currentFeaturePicture.image;
     
@@ -95,22 +96,25 @@
     self.hasFeature = !self.hasFeature;
     
     NSString *imageName;
-    NSString *imageDisabledName;
+    NSString *featureButtonText;
     
     if (self.hasFeature) {
         imageName = @"toggle-wel-on-geen-off.png";
-        imageDisabledName = @"toggle-wel-on-geen-off-inactive.png";
         
-        [self.featureButton setTitle:self.feature forState:UIControlStateNormal];
+        featureButtonText = self.feature;
     } else {
         imageName = @"toggle-wel-off-geen-on.png";
-        imageDisabledName = @"toggle-wel-off-geen-on-inactive.png";
         
-        [self.featureButton setTitle:[FeaturePicture featureForNegation:self.feature] forState:UIControlStateNormal];
+        featureButtonText = [FeaturePicture featureForNegation:self.feature];
     }
     
+    // If no feature has been chosen the label will have been blanked by either of the previous two branches and we will have to set it again
+    if ([self.feature length] == 0) {
+        featureButtonText = @"kies een kenmerk…";
+    }
+
     [self.yesNoButton setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-    [self.yesNoButton setImage:[UIImage imageNamed:imageDisabledName] forState:UIControlStateDisabled];
+    [self.featureButton setTitle:featureButtonText forState:UIControlStateNormal];
 }
 
 - (IBAction)next:(id)sender {
@@ -120,7 +124,7 @@
     // because it could still change after picking
     
     if (self.currentFeaturePicture) {
-        self.currentFeaturePicture.presentedTurn = game.turn;
+        self.currentFeaturePicture.presentedTurn = game.turn; // TODO is this still being used?
         self.currentFeaturePicture.presentAssertion = self.hasFeature;
         
         self.currentFeaturePicture.feature = self.feature;
