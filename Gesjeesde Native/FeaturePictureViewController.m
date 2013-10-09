@@ -56,7 +56,7 @@
     
     self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek de %@", [[game getCurrentAnimalName] lowercaseString]];
     
-    self.explanationLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van een %@ of een %@.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
+    self.explanationLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van \r een %@ of een %@.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
     
     if (game.issue == 1) {
         self.hintLabel.text = @"Bijvoorbeeld: veren.";
