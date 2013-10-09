@@ -40,6 +40,8 @@
 		4765A92D154AD7F700204E85 /* animal-eel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4765A92C154AD7F700204E85 /* animal-eel.png */; };
 		4765A92F154AD93D00204E85 /* animal-fish.png in Resources */ = {isa = PBXBuildFile; fileRef = 4765A92E154AD93D00204E85 /* animal-fish.png */; };
 		4765A931154AE15700204E85 /* animal-eel-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4765A930154AE15700204E85 /* animal-eel-icon.png */; };
+		476631E9180555EB00E33710 /* spotlight-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 476631E7180555EB00E33710 /* spotlight-icon@2x.png */; };
+		476631EA180555EB00E33710 /* spotlight-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 476631E8180555EB00E33710 /* spotlight-icon.png */; };
 		478F9DF21540138900D14182 /* button-titlebar-home.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF11540138900D14182 /* button-titlebar-home.png */; };
 		478F9DF61540163B00D14182 /* block-yellow-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF41540163B00D14182 /* block-yellow-team.png */; };
 		478F9DF71540163B00D14182 /* block-blue-team.png in Resources */ = {isa = PBXBuildFile; fileRef = 478F9DF51540163B00D14182 /* block-blue-team.png */; };
@@ -314,6 +316,8 @@
 		4765A92C154AD7F700204E85 /* animal-eel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-eel.png"; sourceTree = "<group>"; };
 		4765A92E154AD93D00204E85 /* animal-fish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-fish.png"; sourceTree = "<group>"; };
 		4765A930154AE15700204E85 /* animal-eel-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "animal-eel-icon.png"; sourceTree = "<group>"; };
+		476631E7180555EB00E33710 /* spotlight-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlight-icon@2x.png"; sourceTree = "<group>"; };
+		476631E8180555EB00E33710 /* spotlight-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spotlight-icon.png"; sourceTree = "<group>"; };
 		478F9DF11540138900D14182 /* button-titlebar-home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-titlebar-home.png"; sourceTree = "<group>"; };
 		478F9DF41540163B00D14182 /* block-yellow-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-yellow-team.png"; sourceTree = "<group>"; };
 		478F9DF51540163B00D14182 /* block-blue-team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "block-blue-team.png"; sourceTree = "<group>"; };
@@ -746,6 +750,8 @@
 				479DEB7C154199550093C1A6 /* icon-clock.png */,
 				479DEB7E15419A800093C1A6 /* icon-stack-of-photos.png */,
 				47AA6311159B1FCF000BD6B3 /* Icon.png */,
+				476631E7180555EB00E33710 /* spotlight-icon@2x.png */,
+				476631E8180555EB00E33710 /* spotlight-icon.png */,
 				47AA630F159B1FC7000BD6B3 /* Icon@2x.png */,
 				47BFEDC3153EFC2D002BF8F3 /* icon_001-04-L.png */,
 				4EDEFAF0152B874B00324EDB /* infographic-make-team-photo.png */,
@@ -1186,6 +1192,7 @@
 				47F246AB17FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png in Resources */,
 				47993157152E489000AF019F /* animal-birds.png in Resources */,
 				4799315A152E499E00AF019F /* button-bijvoorbeeld.png in Resources */,
+				476631E9180555EB00E33710 /* spotlight-icon@2x.png in Resources */,
 				4799315B152E499E00AF019F /* button-duidelijk.png in Resources */,
 				4799315D152E504700AF019F /* button-ja-start.png in Resources */,
 				47F246AD17FDAC8500AFE29E /* button-bg-choose-feature.png in Resources */,
@@ -1224,6 +1231,7 @@
 				472AFF6915480A70001B38F9 /* photo-frame-square-160.png in Resources */,
 				475D6B6015498CB20010DF59 /* progress-1.png in Resources */,
 				475D6B6115498CB20010DF59 /* progress-0.png in Resources */,
+				476631EA180555EB00E33710 /* spotlight-icon.png in Resources */,
 				475D6B6215498CB20010DF59 /* progress-2.png in Resources */,
 				475D6B65154998C40010DF59 /* animal-dragon.png in Resources */,
 				475D6B671549996B0010DF59 /* speech-bubble-big-mirrored.png in Resources */,
