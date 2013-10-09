@@ -242,12 +242,13 @@
                                     <action selector="back:" destination="pgL-9r-Bqd" eventType="touchUpInside" id="t0J-P7-eD7"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="YaF-61-qcU" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YaF-61-qcU" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="70" width="240" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Kijk, dat bedoelen we nou. 
-Hij maakt er een bende van. 
-We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
+Hij maakt er een bende van. We zoeken bewijzen dat 
+de eekhoorn een zoogdier is 
+en geen vogel.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -856,7 +857,9 @@ We zoeken bewijzen dat de eekhoorn een zoogdier is en geen vogel.</string>
                                 <rect key="frame" x="40" y="70" width="240" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Kijk goed naar mij! 
-Welke kenmerken heb ik? Van vogels? Zoogdieren? Vissen of reptielen? 
+Welke kenmerken heb ik? 
+Van vogels? Zoogdieren? Vissen 
+of reptielen?
 Welk team ontdekt als eerste bij welke groep ik hoor?</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1152,11 +1155,9 @@ Welk team ontdekt als eerste bij welke groep ik hoor?</string>
                                 <rect key="frame" x="0.0" y="276" width="264" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="z26-nx-a8H" customClass="NormalLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Eerst maken jullie teams, die strijden om de meeste punten." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="z26-nx-a8H" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="162" width="240" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Eerst maken jullie teams, 
-die strijden om de meeste punten.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -2840,7 +2841,8 @@ geen reptiel want u hebt…</string>
                                 <rect key="frame" x="45" y="165" width="230" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Fijn! 
-Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zodat iedereen ons goed kan zien.</string>
+Jullie hebben ons goed geholpen. We gaan weer netjes in onze kasten staan, zodat iedereen ons goed 
+kan zien.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -3292,7 +3294,8 @@ Audio</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Wat is hij verdrietig! 
 En nogal in de war. 
-Help ons bewijzen dat hij een vis is en geen reptiel.</string>
+Help ons bewijzen dat hij 
+een vis is en geen reptiel.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -4095,7 +4098,7 @@ want hij heeft…</string>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zkm-Th-XS1" customClass="NormalLabel">
                                 <rect key="frame" x="40" y="70" width="240" height="175"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Verzamelaars betaalden vroeger veel geld voor een draak in hun kabinet. Maar wie zijn kenmerken goed kent, laat zich niet voor de gek houden.</string>
+                                <string key="text">Verzamelaars betaalden vroeger veel geld voor een draak in hun kabinet. Maar wie zijn kenmerken goed kent, laat zich niet voor de gek houden.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -4500,8 +4503,14 @@ want hij heeft…</string>
         <image name="animal-all.png" width="640" height="960"/>
         <image name="animal-birds-happy.png" width="366" height="480"/>
         <image name="animal-birds.png" width="366" height="480"/>
+        <image name="animal-birds.png" width="366" height="480"/>
+        <image name="animal-birds.png" width="366" height="480"/>
+        <image name="animal-birds.png" width="366" height="480"/>
+        <image name="animal-dragon-happy.png" width="395" height="467"/>
         <image name="animal-dragon-happy.png" width="395" height="467"/>
         <image name="animal-dragon-icon-large.png" width="347" height="346"/>
+        <image name="animal-dragon.png" width="386" height="467"/>
+        <image name="animal-dragon.png" width="386" height="467"/>
         <image name="animal-dragon.png" width="386" height="467"/>
         <image name="animal-eel-happy.png" width="290" height="429"/>
         <image name="animal-eel-icon-large.png" width="340" height="343"/>
@@ -4509,7 +4518,17 @@ want hij heeft…</string>
         <image name="animal-example.png" width="548" height="612"/>
         <image name="animal-fish-happy.png" width="329" height="463"/>
         <image name="animal-fish.png" width="329" height="463"/>
+        <image name="animal-fish.png" width="329" height="463"/>
+        <image name="animal-fish.png" width="329" height="463"/>
         <image name="animal-host-icon.png" width="117" height="120"/>
+        <image name="animal-host-icon.png" width="117" height="120"/>
+        <image name="animal-host-icon.png" width="117" height="120"/>
+        <image name="animal-host.png" width="527" height="408"/>
+        <image name="animal-host.png" width="527" height="408"/>
+        <image name="animal-host.png" width="527" height="408"/>
+        <image name="animal-host.png" width="527" height="408"/>
+        <image name="animal-host.png" width="527" height="408"/>
+        <image name="animal-host.png" width="527" height="408"/>
         <image name="animal-host.png" width="527" height="408"/>
         <image name="animal-reptiles-happy.png" width="343" height="463"/>
         <image name="animal-reptiles.png" width="343" height="463"/>
@@ -4518,13 +4537,56 @@ want hij heeft…</string>
         <image name="animal-squirrel-icon.png" width="118" height="120"/>
         <image name="animal-squirrel.png" width="428" height="641"/>
         <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.jpg" width="640" height="960"/>
+        <image name="bg-0-plain.png" width="640" height="960"/>
+        <image name="bg-0-plain.png" width="640" height="960"/>
+        <image name="bg-0-plain.png" width="640" height="960"/>
+        <image name="bg-0-plain.png" width="640" height="960"/>
+        <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-2-main-menu.jpg" width="640" height="960"/>
         <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
+        <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
+        <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
+        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
         <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
         <image name="block-blue-team.png" width="276" height="185"/>
         <image name="block-yellow-team.png" width="276" height="185"/>
         <image name="button-bg-choose-feature-white.png" width="486" height="80"/>
+        <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-credits.png" width="366" height="118"/>
         <image name="button-dragon-is-bird-disabled.png" width="263" height="305"/>
@@ -4541,6 +4603,53 @@ want hij heeft…</string>
         <image name="button-dragon-is-reptile-on.png" width="263" height="305"/>
         <image name="button-start-nieuw-spel.png" width="362" height="110"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="button-titlebar-back.png" width="80" height="80"/>
+        <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="example-photos-of-features.png" width="248" height="186"/>
         <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
@@ -4552,23 +4661,66 @@ want hij heeft…</string>
         <image name="map.png" width="492" height="659"/>
         <image name="number-of-evidence-left-frame.png" width="46" height="45"/>
         <image name="overlay-team-blue-choose-evidence-bubble.png" width="640" height="960"/>
+        <image name="overlay-team-blue-choose-evidence-bubble.png" width="640" height="960"/>
         <image name="overlay-team-blue-explanation-bubble.png" width="640" height="960"/>
         <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="overlay-team-blue.png" width="640" height="960"/>
+        <image name="photo-frame-square-160.png" width="171" height="169"/>
+        <image name="photo-frame-square-160.png" width="171" height="169"/>
         <image name="photo-frame-square-160.png" width="171" height="169"/>
         <image name="photo-frame-square-480.png" width="496" height="494"/>
+        <image name="photo-frame-square-480.png" width="496" height="494"/>
+        <image name="photo-frame-square-480.png" width="496" height="494"/>
+        <image name="photo-frame-square-480.png" width="496" height="494"/>
+        <image name="photo-frame-square-480.png" width="496" height="494"/>
+        <image name="photo-frame-square-480.png" width="496" height="494"/>
+        <image name="photo-frame-square-480.png" width="496" height="494"/>
+        <image name="photo-frame-square-80.png" width="91" height="89"/>
         <image name="photo-frame-square-80.png" width="91" height="89"/>
         <image name="progress-0.png" width="470" height="119"/>
         <image name="progress-4.png" width="470" height="120"/>
         <image name="speech-bubble-big-mirrored-flipped.png" width="560" height="500"/>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
+        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
+        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
+        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
+        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
+        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
+        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
+        <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="speech-bubble-for-example.png" width="150" height="111"/>
         <image name="speech-bubble-screen-6.png" width="502" height="292"/>
         <image name="speech-bubble-squirrel-screen-5.png" width="490" height="431"/>
         <image name="team-photo-frame-blue.png" width="265" height="313"/>
+        <image name="team-photo-frame-blue.png" width="265" height="313"/>
+        <image name="team-photo-frame-blue.png" width="265" height="313"/>
+        <image name="team-photo-frame-blue.png" width="265" height="313"/>
+        <image name="team-photo-frame-yellow.png" width="265" height="313"/>
+        <image name="team-photo-frame-yellow.png" width="265" height="313"/>
+        <image name="team-photo-frame-yellow.png" width="265" height="313"/>
         <image name="team-photo-frame-yellow.png" width="265" height="313"/>
         <image name="tfi-logo.png" width="428" height="201"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
+        <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
         <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
         <image name="um-logo-splash.jpg" width="640" height="960"/>
         <image name="um-logo.png" width="428" height="164"/>
