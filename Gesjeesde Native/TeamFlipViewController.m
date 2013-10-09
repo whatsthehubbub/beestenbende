@@ -48,7 +48,7 @@
 
     headerLabel.text = [NSString stringWithFormat:@"Wie begint?"];
     
-    self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een muntje opgegooid en team %@ mag beginnen.", [team getTeamName]];
+    self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een muntje opgegooid en team %@ \r mag beginnen.", [team getTeamName]];
     
     self.teamImage.image = team.picture; 
     
