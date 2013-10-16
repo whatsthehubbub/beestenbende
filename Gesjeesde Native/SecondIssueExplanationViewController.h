@@ -13,20 +13,7 @@
 
 @interface SecondIssueExplanationViewController : UIViewController <UIScrollViewDelegate>
 
-@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, retain) DDPageControl *pageControl;
-
-@property (strong) IBOutlet UIButton *previousButton;
-@property (strong) IBOutlet UIButton *nextButton;
-
-@property (assign) BOOL pageControlBeingUsed;
-
-- (void)scrollPage;
-- (void)checkButtons;
-
-- (IBAction)previous:(id)sender;
 - (IBAction)next:(id)sender;
-- (IBAction)done:(id)sender;
 - (IBAction)back:(id)sender;
 
 @end

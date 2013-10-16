@@ -24,4 +24,8 @@
 @property (strong) Game *game;
 @property (nonatomic, weak) id <FeaturePickerViewControllerDelegate> delegate;
 
+- (BOOL)disableFeature:(NSString *)feature;
+
+- (IBAction)back:(id)sender;
+
 @end

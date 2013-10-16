@@ -9,24 +9,22 @@
 #import <Foundation/Foundation.h>
 
 @interface FeaturePicture : NSObject {
-    NSString *feature;
-    
-    UIImage *image;
-    bool deleted;
-    
-    int presentedTurn; // The turn that this feature picture was presented in
-    bool presentAssertion; // True is Wel, False is Geen
 }
 
 @property (nonatomic, retain) NSString *feature;
 @property (nonatomic, retain) UIImage *image;
+
+// TODO remove this property
 @property (assign) bool deleted;
 
+// TODO remove this property
 @property (assign) int presentedTurn;
-@property (assign) bool presentAssertion;
+@property (assign) BOOL presentAssertion;
+
+@property (assign) BOOL usedSuccesfully;
 
 -(id)initWithImage:(UIImage *)newImage;
 
-- (NSString *)featureForNegation;
++ (NSString *)featureForNegation:(NSString *)theFeature;
 
 @end

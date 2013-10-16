@@ -9,21 +9,12 @@
 #import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
-#import "TeamFeaturePickerViewController.h"
+//#import "TeamFeaturePickerViewController.h"
+#import "FeaturePickerViewController.h"
+#import "FeaturePicture.h"
 #import "SimpleAudioEngine.h"
 
-@interface PresentFeatureViewController : UIViewController <TeamFeaturePickerViewControllerDelegate> {
-    UILabel *teamLabel;
-    UIButton *yesNoButton;
-    UIButton *featureButton;
-    
-    UIImageView *featureImageView;
-
-    Game *game;
-    Team *currentTeam;
-    FeaturePicture *currentFeaturePicture;
-    
-    bool hasFeature;
+@interface PresentFeatureViewController : UIViewController <FeaturePickerViewControllerDelegate> {
 }
 
 @property (nonatomic, retain) IBOutlet UILabel *headerLabel;
@@ -38,11 +29,13 @@
 
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
+@property (strong) NSString *feature;
 @property (strong) FeaturePicture *currentFeaturePicture;
 
-@property (assign) bool hasFeature;
+@property (assign) BOOL hasFeature;
 
 - (IBAction)yesNo:(id)sender;
 - (IBAction)next:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end

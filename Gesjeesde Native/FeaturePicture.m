@@ -14,7 +14,10 @@
 @synthesize image;
 @synthesize deleted;
 @synthesize presentedTurn;
+
 @synthesize presentAssertion;
+
+@synthesize usedSuccesfully;
 
 -(id)initWithImage:(UIImage *)newImage {
     self = [super init];
@@ -26,17 +29,19 @@
         
         self.presentedTurn = -1;
         self.presentAssertion = YES;
+        
+        self.usedSuccesfully = NO;
     }
     return self;
 }
 
-- (NSString *)featureForNegation {
++ (NSString *)featureForNegation:(NSString *)theFeature {
     // This returns the feature but strips off any indefinite article in front of it ('een ') to make it fit in texts better
     
-    if ([self.feature hasPrefix:@"een "]) {
-        return [self.feature substringFromIndex:4];
+    if ([theFeature hasPrefix:@"een "]) {
+        return [theFeature substringFromIndex:4];
     } else {
-        return self.feature;
+        return theFeature;
     }
 }
 

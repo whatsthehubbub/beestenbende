@@ -6,16 +6,18 @@
 //  Copyright (c) 2012 Hubbub. All rights reserved.
 //
 
-#import "TeamPrepareViewController.h"
+#import "TeamFlipViewController.h"
 
-@interface TeamPrepareViewController ()
+@interface TeamFlipViewController ()
 
 @end
 
-@implementation TeamPrepareViewController
+@implementation TeamFlipViewController
 
 @synthesize headerLabel;
 @synthesize teamOverlay;
+
+@synthesize teamImage;
 
 @synthesize explanationLabel;
 
@@ -42,15 +44,13 @@
     game = appDelegate.game;
     
     // Find the current team
-    Team *team = [game firstTeamForTurn];
-    if (team.tookFeaturePictures) {
-        team = [game otherTeamForTeam:team];
-        
-        // Change the text on the label
-        self.explanationLabel.text = @"Let op: jullie hebben 90 seconden om fotobewijs te verzamelen.";
-    }
+    Team *team = [game getCurrentTeam];
 
-    headerLabel.text = [NSString stringWithFormat:@"Team %@ bereid je voor", [team getTeamName]];
+    headerLabel.text = [NSString stringWithFormat:@"Wie begint?"];
+    
+    self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een muntje opgegooid en team %@ \r mag beginnen.", [team getTeamName]];
+    
+    self.teamImage.image = team.picture; 
     
     if (team.number == 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];

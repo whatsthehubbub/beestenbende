@@ -27,6 +27,8 @@
 @property (nonatomic, retain) IBOutlet UILabel *featureLabel;
 @property (nonatomic, retain) IBOutlet UILabel *resultAndExplanationLabel;
 
+@property (strong) IBOutlet UIImageView *pointsImage;
+
 - (IBAction)done:(id)sender;
 
 @end

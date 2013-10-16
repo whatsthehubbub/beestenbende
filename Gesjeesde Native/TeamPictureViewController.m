@@ -98,7 +98,10 @@
 - (IBAction)takeTeamPicture:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v4.wav"];
     
+#if TARGET_IPHONE_SIMULATOR
+#else
     [self.csManager captureStillImage];
+#endif
     
     // Hide take picture button, show other two
     // TODO actually switch the buttons when the picture has been really taken (slight delay)
