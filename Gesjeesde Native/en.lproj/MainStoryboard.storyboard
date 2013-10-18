@@ -858,9 +858,8 @@ en geen vogel.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Kijk goed naar mij! 
 Welke kenmerken heb ik? 
-Van vogels? Zoogdieren? Vissen 
-of reptielen?
-Welk team ontdekt als eerste bij welke groep ik hoor?</string>
+Van vogels? Zoogdieren? 
+Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
