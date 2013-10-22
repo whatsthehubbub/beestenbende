@@ -2764,10 +2764,10 @@ geen reptiel want u hebt…</string>
                                     <action selector="nextIssue:" destination="rSy-eg-ifs" eventType="touchUpInside" id="op6-Ig-Cse"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kwesties" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oYm-q4-YC8" customClass="NormalLabel">
-                                <rect key="frame" x="43" y="331" width="234" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelijkspel! [Kleur] heeft het draakje opgelost, dus wint." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vB2-Un-cTd">
+                                <rect key="frame" x="43" y="297" width="234" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2788,7 +2788,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2d-dB-IYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8628" y="-165"/>
+            <point key="canvasLocation" x="8622" y="-165"/>
         </scene>
         <!--End Screen View Controller-->
         <scene sceneID="yLR-YY-TNR">
