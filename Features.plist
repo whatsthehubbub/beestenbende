@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
@@ -11,7 +11,7 @@
 				<key>Label</key>
 				<string>tanden in één rij</string>
 				<key>Explanation</key>
-				<string>alle zoogdieren hebben tanden in één rij. Tip: vissen hebben meestal meerdere rijen tanden achter elkaar.</string>
+				<string>zoogdieren en reptielen hebben tanden in één rij. Tip: vissen hebben meestal meerdere rijen tanden achter elkaar.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -25,7 +25,7 @@
 				<key>Label</key>
 				<string>verschillende type tanden</string>
 				<key>Explanation</key>
-				<string>zoogdieren hebben verschillende types tanden: kiezen, snij- en hoektanden.</string>
+				<string>alleen zoogdieren hebben verschillende type tanden: kiezen, snij- en hoektanden.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -39,7 +39,7 @@
 				<key>Label</key>
 				<string>een snavel</string>
 				<key>Explanation</key>
-				<string>vogels hebben een snavel. Tip: ze hebben dus geen tanden!</string>
+				<string>alleen vogels hebben een snavel. Tip: ze hebben dus geen tanden!</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -158,7 +158,7 @@
 				<key>Label</key>
 				<string>twee poten en twee vleugels</string>
 				<key>Explanation</key>
-				<string>vogels hebben twee poten waarop ze lopen en vleugels waarmee ze vliegen.</string>
+				<string>alleen vogels hebben twee poten waarop ze lopen en vleugels waarmee ze vliegen.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -249,7 +249,7 @@
 				<key>Label</key>
 				<string>schubben op de poten</string>
 				<key>Explanation</key>
-				<string>reptielen en vogels hebben allebei schubben op hun poten.</string>
+				<string>alleen reptielen en vogels hebben schubben op hun poten.</string>
 				<key>Vis</key>
 				<integer>2</integer>
 				<key>Zoogdier</key>
@@ -263,7 +263,7 @@
 				<key>Label</key>
 				<string>schubben</string>
 				<key>Explanation</key>
-				<string>vissen en reptielen hebben allebei schubben. Let op: het zijn wel andere soorten schubben. Bij vissen zijn schubben gemaakt van bot, bij reptielen van huid. Visschubben kun je eraf halen, bij een reptiel kan dat niet.</string>
+				<string>alleen vissen en reptielen hebben schubben. Let op: het zijn wel andere soorten schubben. Bij vissen zijn schubben gemaakt van bot, bij reptielen van huid. Visschubben kun je eraf halen, bij een reptiel kan dat niet.</string>
 				<key>Vis</key>
 				<integer>1</integer>
 				<key>Zoogdier</key>
