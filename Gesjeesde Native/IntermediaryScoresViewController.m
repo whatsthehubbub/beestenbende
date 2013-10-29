@@ -66,6 +66,17 @@
     
     if (game.issue == 3) {
         self.headerLabel.text = @"Eindstand";
+        
+        if (game.team1.totalPoints == game.team2.totalPoints) {
+            // Tie, so show the label with how we break it
+            
+            Team *winner = game.team1.dragonFeaturesGuessed.count == 3 ? game.team1 : game.team2;
+            
+            self.tieLabel.text = [NSString stringWithFormat:@"Gelijkspel! %@ heeft het draakje opgelost en wint dus.", [winner getTeamName]];
+            self.tieLabel.hidden = NO;
+            
+            
+        }
     }
 }
 

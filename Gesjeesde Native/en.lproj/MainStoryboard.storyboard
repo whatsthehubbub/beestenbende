@@ -2764,7 +2764,7 @@ geen reptiel want u hebt…</string>
                                     <action selector="nextIssue:" destination="rSy-eg-ifs" eventType="touchUpInside" id="op6-Ig-Cse"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelijkspel! [Kleur] heeft het draakje opgelost, dus wint." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vB2-Un-cTd">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelijkspel! [Kleur] heeft het draakje opgelost, dus wint." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vB2-Un-cTd">
                                 <rect key="frame" x="43" y="297" width="234" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
@@ -2784,6 +2784,7 @@ geen reptiel want u hebt…</string>
                         <outlet property="team2Label" destination="MJl-Zr-NX2" id="Dpv-q7-4Qc"/>
                         <outlet property="team2Picture" destination="6xt-As-GCo" id="s8P-eb-4Fs"/>
                         <outlet property="team2ScoreLabel" destination="t3g-6B-II9" id="cKH-xx-fOp"/>
+                        <outlet property="tieLabel" destination="vB2-Un-cTd" id="zl2-M4-3Bw"/>
                         <segue destination="3rS-nM-KiT" kind="push" identifier="EndScreen" id="0rk-rs-l5i"/>
                     </connections>
                 </viewController>
@@ -4503,14 +4504,8 @@ want hij heeft…</string>
         <image name="animal-all.png" width="640" height="960"/>
         <image name="animal-birds-happy.png" width="366" height="480"/>
         <image name="animal-birds.png" width="366" height="480"/>
-        <image name="animal-birds.png" width="366" height="480"/>
-        <image name="animal-birds.png" width="366" height="480"/>
-        <image name="animal-birds.png" width="366" height="480"/>
-        <image name="animal-dragon-happy.png" width="395" height="467"/>
         <image name="animal-dragon-happy.png" width="395" height="467"/>
         <image name="animal-dragon-icon-large.png" width="347" height="346"/>
-        <image name="animal-dragon.png" width="386" height="467"/>
-        <image name="animal-dragon.png" width="386" height="467"/>
         <image name="animal-dragon.png" width="386" height="467"/>
         <image name="animal-eel-happy.png" width="290" height="429"/>
         <image name="animal-eel-icon-large.png" width="340" height="343"/>
@@ -4518,17 +4513,7 @@ want hij heeft…</string>
         <image name="animal-example.png" width="548" height="612"/>
         <image name="animal-fish-happy.png" width="329" height="463"/>
         <image name="animal-fish.png" width="329" height="463"/>
-        <image name="animal-fish.png" width="329" height="463"/>
-        <image name="animal-fish.png" width="329" height="463"/>
         <image name="animal-host-icon.png" width="117" height="120"/>
-        <image name="animal-host-icon.png" width="117" height="120"/>
-        <image name="animal-host-icon.png" width="117" height="120"/>
-        <image name="animal-host.png" width="527" height="408"/>
-        <image name="animal-host.png" width="527" height="408"/>
-        <image name="animal-host.png" width="527" height="408"/>
-        <image name="animal-host.png" width="527" height="408"/>
-        <image name="animal-host.png" width="527" height="408"/>
-        <image name="animal-host.png" width="527" height="408"/>
         <image name="animal-host.png" width="527" height="408"/>
         <image name="animal-reptiles-happy.png" width="343" height="463"/>
         <image name="animal-reptiles.png" width="343" height="463"/>
@@ -4537,56 +4522,13 @@ want hij heeft…</string>
         <image name="animal-squirrel-icon.png" width="118" height="120"/>
         <image name="animal-squirrel.png" width="428" height="641"/>
         <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
-        <image name="bg-0-plain.png" width="640" height="960"/>
-        <image name="bg-0-plain.png" width="640" height="960"/>
-        <image name="bg-0-plain.png" width="640" height="960"/>
-        <image name="bg-0-plain.png" width="640" height="960"/>
-        <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-2-main-menu.jpg" width="640" height="960"/>
         <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
-        <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
-        <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
         <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
         <image name="block-blue-team.png" width="276" height="185"/>
         <image name="block-yellow-team.png" width="276" height="185"/>
         <image name="button-bg-choose-feature-white.png" width="486" height="80"/>
-        <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-credits.png" width="366" height="118"/>
         <image name="button-dragon-is-bird-disabled.png" width="263" height="305"/>
@@ -4603,53 +4545,6 @@ want hij heeft…</string>
         <image name="button-dragon-is-reptile-on.png" width="263" height="305"/>
         <image name="button-start-nieuw-spel.png" width="362" height="110"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="example-photos-of-features.png" width="248" height="186"/>
         <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
@@ -4661,66 +4556,23 @@ want hij heeft…</string>
         <image name="map.png" width="492" height="659"/>
         <image name="number-of-evidence-left-frame.png" width="46" height="45"/>
         <image name="overlay-team-blue-choose-evidence-bubble.png" width="640" height="960"/>
-        <image name="overlay-team-blue-choose-evidence-bubble.png" width="640" height="960"/>
         <image name="overlay-team-blue-explanation-bubble.png" width="640" height="960"/>
         <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="overlay-team-blue.png" width="640" height="960"/>
-        <image name="photo-frame-square-160.png" width="171" height="169"/>
-        <image name="photo-frame-square-160.png" width="171" height="169"/>
         <image name="photo-frame-square-160.png" width="171" height="169"/>
         <image name="photo-frame-square-480.png" width="496" height="494"/>
-        <image name="photo-frame-square-480.png" width="496" height="494"/>
-        <image name="photo-frame-square-480.png" width="496" height="494"/>
-        <image name="photo-frame-square-480.png" width="496" height="494"/>
-        <image name="photo-frame-square-480.png" width="496" height="494"/>
-        <image name="photo-frame-square-480.png" width="496" height="494"/>
-        <image name="photo-frame-square-480.png" width="496" height="494"/>
-        <image name="photo-frame-square-80.png" width="91" height="89"/>
         <image name="photo-frame-square-80.png" width="91" height="89"/>
         <image name="progress-0.png" width="470" height="119"/>
         <image name="progress-4.png" width="470" height="120"/>
         <image name="speech-bubble-big-mirrored-flipped.png" width="560" height="500"/>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
-        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
-        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
-        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
-        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
-        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
-        <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="speech-bubble-for-example.png" width="150" height="111"/>
         <image name="speech-bubble-screen-6.png" width="502" height="292"/>
         <image name="speech-bubble-squirrel-screen-5.png" width="490" height="431"/>
         <image name="team-photo-frame-blue.png" width="265" height="313"/>
-        <image name="team-photo-frame-blue.png" width="265" height="313"/>
-        <image name="team-photo-frame-blue.png" width="265" height="313"/>
-        <image name="team-photo-frame-blue.png" width="265" height="313"/>
-        <image name="team-photo-frame-yellow.png" width="265" height="313"/>
-        <image name="team-photo-frame-yellow.png" width="265" height="313"/>
-        <image name="team-photo-frame-yellow.png" width="265" height="313"/>
         <image name="team-photo-frame-yellow.png" width="265" height="313"/>
         <image name="tfi-logo.png" width="428" height="201"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
-        <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
         <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
         <image name="um-logo-splash.jpg" width="640" height="960"/>
         <image name="um-logo.png" width="428" height="164"/>
