@@ -15,6 +15,8 @@
 
 @property (strong) Game *game;
 
+@property (nonatomic, retain) IBOutlet UILabel *headerLabel;
+
 @property (nonatomic, retain) IBOutlet UILabel *team1Label;
 @property (nonatomic, retain) IBOutlet UILabel *team2Label;
 
@@ -23,6 +25,8 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *team1ScoreLabel;
 @property (nonatomic, retain) IBOutlet UILabel *team2ScoreLabel;
+
+@property (nonatomic, retain) IBOutlet UILabel *tieLabel;
 
 @property (nonatomic, retain) IBOutlet UIImageView *progressImage;
 

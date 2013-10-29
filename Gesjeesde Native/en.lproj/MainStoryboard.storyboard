@@ -2776,6 +2776,7 @@ geen reptiel want u hebt…</string>
                     </view>
                     <navigationItem key="navigationItem" id="j54-lQ-ubl"/>
                     <connections>
+                        <outlet property="headerLabel" destination="EjL-tG-3ot" id="GGa-zU-ofx"/>
                         <outlet property="progressImage" destination="swt-ai-enj" id="5NA-pK-lXd"/>
                         <outlet property="team1Label" destination="cl4-l6-Zv2" id="BEO-YR-6Pg"/>
                         <outlet property="team1Picture" destination="c2t-qu-lA2" id="w0C-NS-vY1"/>

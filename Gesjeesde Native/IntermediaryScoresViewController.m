@@ -16,6 +16,8 @@
 
 @synthesize game;
 
+@synthesize headerLabel;
+
 @synthesize team1Label;
 @synthesize team2Label;
 
@@ -24,6 +26,8 @@
 
 @synthesize team1ScoreLabel;
 @synthesize team2ScoreLabel;
+
+@synthesize tieLabel;
 
 @synthesize progressImage;
 
@@ -59,6 +63,10 @@
     team2ScoreLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2ScoreLabel.font.pointSize];
     
     self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"progress-%d.png", game.issue]];
+    
+    if (game.issue == 3) {
+        self.headerLabel.text = @"Eindstand";
+    }
 }
 
 - (void)viewDidUnload
