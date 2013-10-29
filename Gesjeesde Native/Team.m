@@ -39,6 +39,7 @@
         self.points = 0;
         self.totalPoints = 0;
         
+        // Features are added to this array if they have been used to gain points with, which makes them reusable
         self.dragonFeaturesGuessed = [[NSMutableArray alloc] init];
         self.dragonClass = 0;
         
