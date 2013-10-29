@@ -93,7 +93,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (IBAction)next:(id)sender {    
+- (IBAction)next:(id)sender {       
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
     [self performSegueWithIdentifier:@"Next" sender:self];
