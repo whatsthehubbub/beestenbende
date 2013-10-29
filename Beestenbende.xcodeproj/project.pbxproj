@@ -1463,7 +1463,7 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				PRODUCT_NAME = Beestenbende;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "1A1AB707-695E-47E6-840F-E8948EA60A0E";
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Ad Hoc";
