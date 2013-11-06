@@ -13,17 +13,17 @@
 #define kImageCapturedSuccessfully @"imageCapturedSuccessfully"
 
 @interface CaptureSessionManager : NSObject {
-    UIImageView *imageView;
-    
-    // Continuous means the imageView is not used to display previews of the images
-    bool continuous;
 }
 
+// TODO we probably don't use this anymore
+// Continuous means the imageView is not used to display previews of the images
 @property (readwrite) bool continuous;
 
 @property (retain) AVCaptureVideoPreviewLayer *previewLayer;
 @property (retain) AVCaptureSession *captureSession;
 @property (retain) AVCaptureStillImageOutput *stillImageOutput;
+
+@property (weak) UIImageView *imageView;
 
 - (id)initWithImageView:(UIImageView *)iView;
 

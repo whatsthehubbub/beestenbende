@@ -10,7 +10,9 @@
 
 @implementation CaptureSessionManager
 
+@synthesize imageView;
 @synthesize continuous;
+
 @synthesize previewLayer;
 @synthesize captureSession;
 @synthesize stillImageOutput;
@@ -136,6 +138,15 @@
     [self.previewLayer removeFromSuperlayer];
     
     [captureSession stopRunning];
+}
+
+- (void)dealloc {
+    [self stopPreview];
+    
+    self.captureSession = nil;
+    
+    self.previewLayer = nil;
+    self.stillImageOutput = nil;
 }
 
 @end
