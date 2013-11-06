@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="a31-AO-osa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
         <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
         <!--Menu View Controller - Main Menu-->
@@ -10,7 +10,7 @@
             <objects>
                 <viewController storyboardIdentifier="MenuViewController" title="Main Menu" id="2" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-2-main-menu.jpg" id="f0F-eE-B2i">
@@ -64,11 +64,11 @@
             <objects>
                 <viewController title="Map" id="19C-6r-hKc" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bKu-U0-Mur">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="Yb5-Q0-uGk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Op naar het Rariteitenkabinet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yPF-GC-xvT" customClass="HeaderLabel">
@@ -129,11 +129,11 @@
             <objects>
                 <viewController title="Welcome" id="gnf-ri-JiR" customClass="WelcomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rki-O6-hwG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-4-welcome-to-cabinet.jpg" id="Nhi-rz-gUX">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="8ww-cs-jzw">
@@ -205,7 +205,7 @@
             <objects>
                 <viewController title="FirstBirds" id="pgL-9r-Bqd" customClass="FirstIssueExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FbV-vX-aua">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="RjV-EQ-O5J">
@@ -285,11 +285,11 @@ en geen vogel.</string>
             <objects>
                 <viewController id="aEm-4i-hHa" customClass="FirstIssueIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ihD-cQ-GH1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="dvQ-Gs-Air">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-squirrel-happy.png" id="Tzw-Pm-76O">
@@ -361,11 +361,11 @@ en geen vogel.</string>
             <objects>
                 <viewController id="vvi-fO-Lr8" customClass="ExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ic-5Z-W8U">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="ssF-Nm-z5t">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="3MR-Ow-cba">
@@ -446,7 +446,7 @@ en geen vogel.</string>
             <objects>
                 <viewController storyboardIdentifier="SecondIssueSplash" id="rPn-bJ-gLN" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t48-Sy-pNh">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="oAr-Tj-SwJ">
@@ -519,7 +519,7 @@ en geen vogel.</string>
             <objects>
                 <viewController id="Vwl-8G-Q8z" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdn-uX-S8q">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="QdM-0N-lfT">
@@ -588,11 +588,11 @@ en geen vogel.</string>
             <objects>
                 <viewController storyboardIdentifier="SecondIssueIntroduction" id="viR-Ly-7kL" customClass="SecondIssueIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pes-6s-NxI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="4qe-Ve-8Bk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-eel.png" id="DgK-OZ-YRD">
@@ -664,11 +664,11 @@ en geen vogel.</string>
             <objects>
                 <viewController storyboardIdentifier="FinalIssueIntroduction" id="e3m-9K-xFw" customClass="DragonStartViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MKd-zs-MI5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="YeQ-8i-Nu0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big-mirrored.png" id="msi-gt-g8z">
@@ -740,11 +740,11 @@ en geen vogel.</string>
             <objects>
                 <viewController id="fbs-mE-PLk" customClass="DragonQuestionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p0n-d1-PLQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="Vbl-6D-O9L">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="3mg-Yc-A36">
@@ -816,11 +816,11 @@ en geen vogel.</string>
             <objects>
                 <viewController id="axP-nJ-0sf" customClass="DragonExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9lN-NA-l6A">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="FcA-he-MNy">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon.png" id="Bk7-03-zzb">
@@ -896,7 +896,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
             <objects>
                 <viewController id="eaH-OO-SNN" customClass="MakeTeamPicturesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MGp-Ty-CMO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="j2B-0a-ms5">
@@ -976,7 +976,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
             <objects>
                 <viewController id="IoP-tb-2Mi" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="grp-Hh-uYs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="R2U-AU-rTA">
@@ -1066,7 +1066,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
             <objects>
                 <viewController id="W9S-Qk-Vcr" customClass="AnimalPartsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rXF-Em-dAb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="IW2-En-fOC">
@@ -1139,7 +1139,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
             <objects>
                 <viewController id="i3Y-tE-tAM" customClass="MakeTeamsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GDj-5G-06t">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="G95-OL-A0j">
@@ -1246,7 +1246,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
             <objects>
                 <viewController storyboardIdentifier="TeamPictureViewController" title="Team Picture" id="apH-ed-9aX" customClass="TeamPictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QWU-cK-vyO">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="9Wm-t4-V6t">
@@ -1360,7 +1360,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
             <objects>
                 <viewController storyboardIdentifier="FirstIssueExplanation" title="SecondBirds" id="O1r-7e-Hsl" customClass="FirstIssueExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="foe-OV-4XC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="qES-xw-fVc">
@@ -1454,7 +1454,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
             <objects>
                 <viewController id="p3a-E9-b1k" customClass="FeatureExampleViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K77-9w-uXa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="dO8-I8-uGa">
@@ -1516,7 +1516,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
             <objects>
                 <viewController storyboardIdentifier="FeaturePictureViewController" id="jlM-Ks-Kmv" customClass="FeaturePictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4yC-z7-XCS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="QH7-Cw-vvc">
@@ -1643,7 +1643,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
             <objects>
                 <viewController id="mhP-gb-YWU" customClass="TeamFlipViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIL-oH-2Oj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="cBf-6s-fSu">
@@ -1735,11 +1735,11 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
             <objects>
                 <tableViewController id="dCT-Mf-cjh" customClass="FeaturePickerViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="UVc-Hd-48B">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="gaa-ZI-Y4f">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="40"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kies een kenmerk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="SIq-cr-P1d" customClass="HeaderLabel">
@@ -1769,14 +1769,14 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                         </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FeatureCell" textLabel="SEd-Cp-Qkb" style="IBUITableViewCellStyleDefault" id="Wz7-xB-0pl">
-                                <rect key="frame" x="0.0" y="95" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="95" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wz7-xB-0pl" id="2NB-78-q1q">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SEd-Cp-Qkb">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="738" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1786,14 +1786,14 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DisabledFeatureCell" textLabel="Du1-nC-8LG" style="IBUITableViewCellStyleDefault" id="nBl-MN-x0X">
-                                <rect key="frame" x="0.0" y="139" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="139" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nBl-MN-x0X" id="mpI-7O-4Nx">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Du1-nC-8LG">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                            <rect key="frame" x="15" y="0.0" width="738" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1820,7 +1820,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
             <objects>
                 <viewController id="NDf-Ve-Xx0" customClass="PresentFeatureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b1r-29-hI9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-4-welcome-to-cabinet.jpg" id="NyC-h6-uM5">
@@ -1944,7 +1944,7 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="Kgz-tg-9iE" customClass="PresentFeatureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4s6-Wt-hs0">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-4-welcome-to-cabinet.jpg" id="6Hx-UI-pSU">
@@ -2065,7 +2065,7 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="4Xr-pd-4cz" customClass="TeamRunningTotalViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIW-Hn-7zF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host-icon.png" id="VNx-eH-wrK">
@@ -2253,7 +2253,7 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="bTt-EX-SMb" customClass="ExplainFeatureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cDG-JA-I4d">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="AO4-Md-wIW">
@@ -2355,11 +2355,11 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="rTe-1j-Lla" customClass="AnimalUnderstandsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8dt-zu-5YR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="9py-iq-Ibf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-squirrel.png" id="MLF-YK-uyw">
@@ -2428,7 +2428,7 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="1eD-BL-qUt" customClass="AnimalUnderstandsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dH9-bv-bHb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="DHl-4a-cJh">
@@ -2496,7 +2496,7 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="3Ko-sZ-1eK" customClass="IssueScoresViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dXn-7p-EJ8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="u9G-2s-2Om">
@@ -2646,7 +2646,7 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="rSy-eg-ifs" customClass="IntermediaryScoresViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W8B-8W-jLB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="Lkt-vM-8Ln">
@@ -2797,7 +2797,7 @@ geen reptiel want u hebt…</string>
             <objects>
                 <viewController id="3rS-nM-KiT" customClass="EndScreenViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NeM-sW-wuw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="Slo-Ni-2kW">
@@ -2896,7 +2896,7 @@ kan zien.</string>
             <objects>
                 <viewController id="QN4-xP-Apt" customClass="AnimalUnderstandsResponseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4G0-TU-KsZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="pf4-7x-Bww">
@@ -2975,15 +2975,15 @@ eekhoorn.</string>
             <objects>
                 <viewController id="aA8-Uu-wjL" customClass="CreditsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xs4-fv-CJu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="Y4W-DO-9cW">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="05s-nn-VjM">
-                                <rect key="frame" x="0.0" y="40" width="320" height="440"/>
+                                <rect key="frame" x="0.0" y="584" width="320" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gemaakt door" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9ZT-xD-vRA">
@@ -3129,11 +3129,11 @@ Audio</string>
             <objects>
                 <viewController id="3Oi-9P-c94" customClass="SplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gJ5-bk-kBy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="um-logo-splash.jpg" id="CHF-Vp-itB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -3153,11 +3153,11 @@ Audio</string>
             <objects>
                 <viewController id="umP-hU-cZb" customClass="SplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FEF-YG-zEG">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="hubbub-logo-splash.jpg" id="DX6-jC-0xX">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
@@ -3177,7 +3177,7 @@ Audio</string>
             <objects>
                 <viewController title="SecondFish" id="pZK-6x-SL0" customClass="SecondIssueExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8KN-WO-11Y">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="sJa-mX-eIe">
@@ -3253,7 +3253,7 @@ Audio</string>
             <objects>
                 <viewController title="FirstFish" id="jym-ki-3ka" customClass="SecondIssueExplanationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aY-ox-gRs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="6yh-ro-mO2">
@@ -3333,7 +3333,7 @@ een vis is en geen reptiel.</string>
             <objects>
                 <viewController id="jda-9n-bj0" customClass="AnimalUnderstandsResponseViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ju0-62-wBR">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="5g9-5j-f84">
@@ -3412,11 +3412,11 @@ zeepaling.</string>
             <objects>
                 <viewController id="Dee-6Y-Prk" customClass="DragonIntroductionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GKT-ke-Jds">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="mu4-qv-fxR">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host-icon.png" id="Si1-O4-exb">
@@ -3549,11 +3549,11 @@ zeepaling.</string>
             <objects>
                 <viewController id="JWy-sg-rOd" customClass="DragonPictureViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H4r-fe-Nlj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="HgE-yd-0JP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="1Og-aM-259">
@@ -3660,11 +3660,11 @@ een [gekozen diergroep].</string>
             <objects>
                 <viewController id="Xrb-GQ-McX" customClass="DragonClassViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y9X-L3-rO7">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="dHv-CF-ks9">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="fd8-lB-z4u">
@@ -3799,11 +3799,11 @@ een [gekozen diergroep].</string>
             <objects>
                 <viewController id="yMG-9O-rz6" customClass="DragonLabelViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ghy-02-M9z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="bOV-aw-M0p">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="qZN-bD-HyY">
@@ -3893,11 +3893,11 @@ want hij heeft…</string>
             <objects>
                 <viewController id="Ica-di-yHw" customClass="DragonResultViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIq-Sx-cOj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="cxS-tL-QcB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="fWu-u0-Aw1">
@@ -3968,11 +3968,11 @@ want hij heeft…</string>
             <objects>
                 <viewController title="FirstDragon" id="riD-0B-aIy" customClass="DragonResolutionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5F5-Rt-rRK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="h2z-VC-sx4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon-happy.png" id="h1f-1r-UvR">
@@ -4044,11 +4044,11 @@ want hij heeft…</string>
             <objects>
                 <viewController title="SecondDragon" id="1Kq-6m-nNZ" customClass="DragonResolutionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bIl-Ur-eFl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="Xah-cl-5rk">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-dragon-happy.png" id="jUa-Jp-RaM">
@@ -4121,11 +4121,11 @@ want hij heeft…</string>
             <objects>
                 <viewController id="gkn-EA-2Cj" customClass="DragonRevealedViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FWq-1i-flX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="LqC-e8-diy">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="jXq-lw-5Sg">
@@ -4197,7 +4197,7 @@ want hij heeft…</string>
             <objects>
                 <viewController id="5Sb-GL-yMm" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sPa-Cy-el8">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="1EP-ar-3K1">
@@ -4289,7 +4289,7 @@ want hij heeft…</string>
             <objects>
                 <viewController id="4ip-Ih-Udu" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1ey-df-rHD">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="EJK-VV-r4X">
@@ -4360,7 +4360,7 @@ want hij heeft…</string>
             <objects>
                 <viewController storyboardIdentifier="FinalIssueSplash" id="PGG-bi-Ubz" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hks-Me-33v">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="87J-HC-ffy">
@@ -4435,7 +4435,7 @@ want hij heeft…</string>
             <objects>
                 <viewController id="yzE-93-vBD" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5s-la-6jB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="Uu2-up-Lcf">
