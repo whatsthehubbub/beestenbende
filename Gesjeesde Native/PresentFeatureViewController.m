@@ -143,8 +143,8 @@
 
 #pragma mark - FeaturePickerViewControllerDelegate
 
--(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)feature {
-    self.feature = feature;
+-(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)f {
+    self.feature = f;
     
     if (self.hasFeature) {
         [self.featureButton setTitle:feature forState:UIControlStateNormal];
