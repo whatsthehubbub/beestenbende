@@ -13,11 +13,7 @@
 
 @interface DragonResolutionViewController : UIViewController <UIScrollViewDelegate>
 
-- (void)scrollPage;
-
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
-
-- (void)pageControlClicked:(id)sender;
 
 @end
