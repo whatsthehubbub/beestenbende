@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="a31-AO-osa">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1435" y="-2157"/>
+            <point key="canvasLocation" x="2841" y="-3310"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="S9k-Fp-Exm">
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgD-rJ-5Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1915" y="-2157"/>
+            <point key="canvasLocation" x="3727" y="-3310"/>
         </scene>
         <!--Welcome View Controller - Welcome-->
         <scene sceneID="qrX-xg-Mrk">
@@ -198,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lmU-bJ-VAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1282" y="-805"/>
+            <point key="canvasLocation" x="-22" y="-709"/>
         </scene>
         <!--First Issue Explanation View Controller - FirstBirds-->
         <scene sceneID="Og1-a0-qeh">
@@ -278,7 +278,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8i-N0-jEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2954" y="-165"/>
+            <point key="canvasLocation" x="2720" y="608"/>
         </scene>
         <!--First Issue Introduction View Controller-->
         <scene sceneID="kxR-Ib-jnv">
@@ -354,7 +354,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOf-21-m0F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2527" y="-165"/>
+            <point key="canvasLocation" x="1831" y="608"/>
         </scene>
         <!--Explanation View Controller-->
         <scene sceneID="ijN-Ou-H9H">
@@ -439,7 +439,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8c-Wh-MX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="-805"/>
+            <point key="canvasLocation" x="3437" y="-709"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="oAu-2C-PM7">
@@ -512,7 +512,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ga3-wu-Ssy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2042" y="481"/>
+            <point key="canvasLocation" x="-30" y="1801"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="nCv-RD-v7D">
@@ -581,7 +581,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtQ-6E-Bv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2527" y="481"/>
+            <point key="canvasLocation" x="903" y="1801"/>
         </scene>
         <!--Second Issue Introduction View Controller-->
         <scene sceneID="rBC-kx-VM3">
@@ -657,7 +657,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W23-by-e55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2954" y="481"/>
+            <point key="canvasLocation" x="1831" y="1811"/>
         </scene>
         <!--Dragon Start View Controller-->
         <scene sceneID="Jxr-kz-8GL">
@@ -733,7 +733,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9T9-LD-Zpb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2458" y="1116"/>
+            <point key="canvasLocation" x="1838" y="3000"/>
         </scene>
         <!--Dragon Question View Controller-->
         <scene sceneID="GnT-KT-xeG">
@@ -809,7 +809,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4r-GI-JIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2936" y="1116"/>
+            <point key="canvasLocation" x="2728" y="2980"/>
         </scene>
         <!--Dragon Explanation View Controller-->
         <scene sceneID="HaD-5H-CQD">
@@ -889,7 +889,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kco-3P-Og0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3415" y="1116"/>
+            <point key="canvasLocation" x="3595" y="2980"/>
         </scene>
         <!--Make Team Pictures View Controller-->
         <scene sceneID="6uc-Ng-T8J">
@@ -969,7 +969,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PpI-55-cDk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="-805"/>
+            <point key="canvasLocation" x="4434" y="-709"/>
         </scene>
         <!--Make Teams View Controller-->
         <scene sceneID="3RN-6O-mt2">
@@ -1059,7 +1059,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-cG-ujE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-312" y="-805"/>
+            <point key="canvasLocation" x="1662" y="-709"/>
         </scene>
         <!--Animal Parts View Controller-->
         <scene sceneID="NQB-65-13G">
@@ -1132,7 +1132,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GXb-qc-HlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="-805"/>
+            <point key="canvasLocation" x="2499" y="-709"/>
         </scene>
         <!--Make Teams View Controller-->
         <scene sceneID="QjV-tY-JgD">
@@ -1239,7 +1239,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfR-Fv-pdK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-790" y="-805"/>
+            <point key="canvasLocation" x="826" y="-709"/>
         </scene>
         <!--Team Picture View Controller - Team Picture-->
         <scene sceneID="NYe-nf-psF">
@@ -1353,7 +1353,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqS-CZ-dGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1923" y="-805"/>
+            <point key="canvasLocation" x="5363" y="-709"/>
         </scene>
         <!--First Issue Explanation View Controller - SecondBirds-->
         <scene sceneID="xrJ-Lo-DNP">
@@ -1447,7 +1447,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jnx-el-5dZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3432" y="-164"/>
+            <point key="canvasLocation" x="3576" y="608"/>
         </scene>
         <!--Feature Example View Controller-->
         <scene sceneID="dDP-mV-XhC">
@@ -1509,7 +1509,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6CS-Yq-LNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3911" y="-770"/>
+            <point key="canvasLocation" x="4573" y="608"/>
         </scene>
         <!--Feature Picture View Controller-->
         <scene sceneID="aSc-un-SDF">
@@ -1636,7 +1636,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hj7-sC-Kpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4900" y="-165"/>
+            <point key="canvasLocation" x="7526" y="603"/>
         </scene>
         <!--Team Flip View Controller-->
         <scene sceneID="L1C-Nq-hfS">
@@ -1728,7 +1728,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfh-Bo-PeI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3911" y="-165"/>
+            <point key="canvasLocation" x="5495" y="608"/>
         </scene>
         <!--Feature Picker View Controller-->
         <scene sceneID="mDs-fL-2SJ">
@@ -1813,7 +1813,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NzA-ic-LbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6245" y="434"/>
+            <point key="canvasLocation" x="10028" y="-642"/>
         </scene>
         <!--Present Feature View Controller-->
         <scene sceneID="F0F-JI-qJE">
@@ -1937,7 +1937,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccj-M7-Re4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5460" y="429"/>
+            <point key="canvasLocation" x="8608" y="-619"/>
         </scene>
         <!--Present Feature View Controller-->
         <scene sceneID="n2N-b1-R7d">
@@ -2058,7 +2058,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ci-0u-KMn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5460" y="-159"/>
+            <point key="canvasLocation" x="8608" y="-1804"/>
         </scene>
         <!--Team Running Total View Controller-->
         <scene sceneID="ZyI-wr-vRl">
@@ -2246,7 +2246,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xJ-mZ-EAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4398" y="-165"/>
+            <point key="canvasLocation" x="6514" y="603"/>
         </scene>
         <!--Explain Feature View Controller-->
         <scene sceneID="F2H-N0-PIK">
@@ -2348,7 +2348,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wrz-fZ-A9h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6245" y="-165"/>
+            <point key="canvasLocation" x="10013" y="-1804"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="cwx-wr-6zT">
@@ -2421,7 +2421,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igr-XW-cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7154" y="-165"/>
+            <point key="canvasLocation" x="9750" y="603"/>
         </scene>
         <!--Animal Understands View Controller-->
         <scene sceneID="eok-ou-PYS">
@@ -2489,7 +2489,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Psx-9i-7Vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7154" y="519"/>
+            <point key="canvasLocation" x="9786" y="1819"/>
         </scene>
         <!--Issue Scores View Controller-->
         <scene sceneID="XBQ-vX-giP">
@@ -2639,7 +2639,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbn-rO-1m8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8179" y="-164"/>
+            <point key="canvasLocation" x="10179" y="3792"/>
         </scene>
         <!--Intermediary Scores View Controller-->
         <scene sceneID="Vc6-1M-xGY">
@@ -2790,7 +2790,7 @@ geen reptiel want u hebt…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B2d-dB-IYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8622" y="-165"/>
+            <point key="canvasLocation" x="11142" y="3792"/>
         </scene>
         <!--End Screen View Controller-->
         <scene sceneID="yLR-YY-TNR">
@@ -2889,7 +2889,7 @@ kan zien.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eQy-Az-ObB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9081" y="-164"/>
+            <point key="canvasLocation" x="12149" y="3792"/>
         </scene>
         <!--Animal Understands Response View Controller-->
         <scene sceneID="L3j-eL-VcF">
@@ -2968,7 +2968,7 @@ eekhoorn.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ABc-rc-jSC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7612" y="-164"/>
+            <point key="canvasLocation" x="10744" y="603"/>
         </scene>
         <!--Credits View Controller-->
         <scene sceneID="zud-re-MKp">
@@ -3122,7 +3122,7 @@ Audio</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HA4-cX-Myv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1915" y="-1517"/>
+            <point key="canvasLocation" x="3727" y="-2157"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="o7I-wb-sCo">
@@ -3146,7 +3146,7 @@ Audio</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0U-F6-V3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462" y="-2156"/>
+            <point key="canvasLocation" x="924" y="-3310"/>
         </scene>
         <!--Splash View Controller-->
         <scene sceneID="OhM-7N-Nf9">
@@ -3170,7 +3170,7 @@ Audio</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Db8-Ws-oGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="943" y="-2156"/>
+            <point key="canvasLocation" x="1883" y="-3310"/>
         </scene>
         <!--Second Issue Explanation View Controller - SecondFish-->
         <scene sceneID="EXb-LP-run">
@@ -3246,7 +3246,7 @@ Audio</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMe-Fi-ctz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3911" y="481"/>
+            <point key="canvasLocation" x="3576" y="1789"/>
         </scene>
         <!--Second Issue Explanation View Controller - FirstFish-->
         <scene sceneID="71g-w9-5X5">
@@ -3326,7 +3326,7 @@ een vis is en geen reptiel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ce-VU-0If" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3432" y="481"/>
+            <point key="canvasLocation" x="2720" y="1789"/>
         </scene>
         <!--Animal Understands Response View Controller-->
         <scene sceneID="Qup-xT-pOs">
@@ -3405,7 +3405,7 @@ zeepaling.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2T-PN-zhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7612" y="519"/>
+            <point key="canvasLocation" x="10744" y="1819"/>
         </scene>
         <!--Dragon Introduction View Controller-->
         <scene sceneID="aXj-aZ-nnA">
@@ -3542,7 +3542,7 @@ zeepaling.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AaH-uG-MJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3900" y="1116"/>
+            <point key="canvasLocation" x="4548" y="3000"/>
         </scene>
         <!--Dragon Picture View Controller-->
         <scene sceneID="XUj-ef-RYG">
@@ -3653,7 +3653,7 @@ een [gekozen diergroep].</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fj1-M9-pq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4876" y="1116"/>
+            <point key="canvasLocation" x="6384" y="3000"/>
         </scene>
         <!--Dragon Class View Controller-->
         <scene sceneID="wGT-rQ-oAw">
@@ -3792,7 +3792,7 @@ een [gekozen diergroep].</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaY-JC-CR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4408" y="1116"/>
+            <point key="canvasLocation" x="5495" y="3000"/>
         </scene>
         <!--Dragon Label View Controller-->
         <scene sceneID="X9A-dO-oBU">
@@ -3886,7 +3886,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVB-sK-dK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5356" y="1116"/>
+            <point key="canvasLocation" x="7292" y="3000"/>
         </scene>
         <!--Dragon Result View Controller-->
         <scene sceneID="XRf-iB-mpE">
@@ -3961,7 +3961,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcX-RD-TwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5835" y="1109"/>
+            <point key="canvasLocation" x="8187" y="3012"/>
         </scene>
         <!--Dragon Resolution View Controller - FirstDragon-->
         <scene sceneID="Ttn-ai-RLD">
@@ -4037,7 +4037,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTB-dS-b3C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4416" y="1732"/>
+            <point key="canvasLocation" x="5495" y="4227"/>
         </scene>
         <!--Dragon Resolution View Controller - SecondDragon-->
         <scene sceneID="aRH-xy-uK7">
@@ -4114,7 +4114,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42Y-KR-Ylm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4890" y="1727"/>
+            <point key="canvasLocation" x="6384" y="4227"/>
         </scene>
         <!--Dragon Revealed View Controller-->
         <scene sceneID="ktj-ry-yzQ">
@@ -4190,7 +4190,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe7-ai-G7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5356" y="1732"/>
+            <point key="canvasLocation" x="7292" y="4227"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="E0o-ZR-fnM">
@@ -4263,7 +4263,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkr-Rd-ynP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="-164"/>
+            <point key="canvasLocation" x="-30" y="608"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uvS-q7-vsb">
@@ -4282,7 +4282,7 @@ want hij heeft…</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dku-Ol-iWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="-2156"/>
+            <point key="canvasLocation" x="-58" y="-3310"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="tfG-hs-F3d">
@@ -4353,7 +4353,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xxr-gJ-s0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2042" y="-165"/>
+            <point key="canvasLocation" x="892" y="608"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="r7i-Vi-JzD">
@@ -4428,7 +4428,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MT-dh-bHw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1570" y="1116"/>
+            <point key="canvasLocation" x="-30" y="3000"/>
         </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="kKk-M4-neV">
@@ -4497,7 +4497,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9z0-Sm-wqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002" y="1116"/>
+            <point key="canvasLocation" x="903" y="3012"/>
         </scene>
     </scenes>
     <resources>
@@ -4586,11 +4586,11 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="OHM-xk-G1T"/>
-        <segue reference="cz4-cS-3oL"/>
-        <segue reference="A1T-Wu-GhT"/>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="fEa-BH-mAb"/>
+        <segue reference="i9S-9K-imd"/>
+        <segue reference="5OT-N5-qpE"/>
         <segue reference="AoM-So-BHK"/>
+        <segue reference="all-Ba-Vs9"/>
+        <segue reference="OHM-xk-G1T"/>
+        <segue reference="fpS-jq-29F"/>
     </inferredMetricsTieBreakers>
 </document>
