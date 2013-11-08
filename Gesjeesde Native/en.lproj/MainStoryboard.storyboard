@@ -581,7 +581,7 @@ en geen vogel.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NtQ-6E-Bv4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="1801"/>
+            <point key="canvasLocation" x="924" y="1801"/>
         </scene>
         <!--Second Issue Introduction View Controller-->
         <scene sceneID="rBC-kx-VM3">
@@ -1509,7 +1509,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6CS-Yq-LNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4573" y="608"/>
+            <point key="canvasLocation" x="4909" y="1768"/>
         </scene>
         <!--Feature Picture View Controller-->
         <scene sceneID="aSc-un-SDF">
@@ -1636,7 +1636,7 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hj7-sC-Kpm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7526" y="603"/>
+            <point key="canvasLocation" x="7578" y="-1185"/>
         </scene>
         <!--Team Flip View Controller-->
         <scene sceneID="L1C-Nq-hfS">
@@ -4586,11 +4586,11 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="i9S-9K-imd"/>
+        <segue reference="all-Ba-Vs9"/>
+        <segue reference="GW9-yo-buq"/>
+        <segue reference="fpS-jq-29F"/>
         <segue reference="5OT-N5-qpE"/>
         <segue reference="AoM-So-BHK"/>
-        <segue reference="all-Ba-Vs9"/>
-        <segue reference="OHM-xk-G1T"/>
-        <segue reference="fpS-jq-29F"/>
+        <segue reference="i9S-9K-imd"/>
     </inferredMetricsTieBreakers>
 </document>

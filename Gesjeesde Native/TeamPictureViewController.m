@@ -151,6 +151,8 @@
         
         game.issue = selector.selectedSegmentIndex+1;
         
+        [self.csManager disposeOfSession];
+        
         if (game.issue == 1) {
             // Start segue to the next view to start the game
             [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];

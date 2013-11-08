@@ -36,18 +36,10 @@
 
 @property (strong) CaptureSessionManager *csManager;
 
-//- (void)startTimer;
-//- (void)stopTimer;
-//- (void)decrementTimer:(NSTimer *)theTimer;
-//- (void)timeUp;
-
 - (IBAction)takeFeaturePicture:(id)sender;
 - (IBAction)takeFeaturePictureAgain:(id)sender;
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
-//- (void)pictureTaken:(NSNotification *)notification;
-
-
 
 @end

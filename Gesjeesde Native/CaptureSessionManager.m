@@ -10,19 +10,16 @@
 
 @implementation CaptureSessionManager
 
-@synthesize imageView;
-@synthesize continuous;
-
 @synthesize previewLayer;
 @synthesize captureSession;
 @synthesize stillImageOutput;
+
+@synthesize imageView;
 
 // Code from: http://www.musicalgeometry.com/?p=1273
 // and: http://www.musicalgeometry.com/?p=1297
 - (id)initWithImageView:(UIImageView *)iView {
     if ((self = [super init])) {
-        self.continuous = NO;
-        
         imageView = iView;
         
 		self.captureSession = [[AVCaptureSession alloc] init];
@@ -103,34 +100,19 @@
             NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageSampleBuffer];
             UIImage *image = [[UIImage alloc] initWithData:imageData];
             
-            if (!continuous) {
-                // Pass the data using the UIImageView
-                imageView.contentMode = UIViewContentModeScaleAspectFill;
-                [imageView setImage:image];
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
+            [imageView setImage:image];
                 
-                // Slow
-                // UIImageWriteToSavedPhotosAlbum(image, self, @selector(saved), nil);
-                
-                [self stopPreview];
-            } else {
-                // TODO flash the image view to show that a picture has been taken
-                
-                // Pass the data in some other way            
-                NSDictionary *userInfo = [NSDictionary dictionaryWithObject:image forKey:@"image"];
-
-                [[NSNotificationCenter defaultCenter] postNotificationName:kImageCapturedSuccessfully object:self userInfo:userInfo];
-            }
+            [self stopPreview];
         }
     }];
 }
 
 - (void)startPreview {
-    if (!continuous) {
-        // Blank image, because we're showing a preview
-        imageView.image = nil;
-    }
+    // Blank image, because we're showing a preview
+    self.imageView.image = nil;
     
-    [imageView.layer addSublayer:previewLayer];
+    [self.imageView.layer addSublayer:previewLayer];
     [self.captureSession startRunning];
 }
 
@@ -140,13 +122,25 @@
     [captureSession stopRunning];
 }
 
-- (void)dealloc {
+- (void)disposeOfSession {
     [self stopPreview];
     
-    self.captureSession = nil;
+    for (AVCaptureInput *avci in self.captureSession.inputs) {
+        [self.captureSession removeInput:avci];
+    }
+    
+    for (AVCaptureOutput *avco in self.captureSession.outputs) {
+        [self.captureSession removeOutput:avco];
+    }
     
     self.previewLayer = nil;
+    self.captureSession = nil;
     self.stillImageOutput = nil;
+    
+}
+
+- (void)dealloc {
+    [self disposeOfSession];
 }
 
 @end

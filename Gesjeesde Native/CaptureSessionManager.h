@@ -10,14 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <ImageIO/ImageIO.h>
 
-#define kImageCapturedSuccessfully @"imageCapturedSuccessfully"
-
 @interface CaptureSessionManager : NSObject {
 }
-
-// TODO we probably don't use this anymore
-// Continuous means the imageView is not used to display previews of the images
-@property (readwrite) bool continuous;
 
 @property (retain) AVCaptureVideoPreviewLayer *previewLayer;
 @property (retain) AVCaptureSession *captureSession;
@@ -30,5 +24,6 @@
 - (void)captureStillImage;
 - (void)startPreview;
 - (void)stopPreview;
+- (void)disposeOfSession;
 
 @end

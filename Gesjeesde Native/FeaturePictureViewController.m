@@ -64,15 +64,10 @@
         self.hintLabel.text = @"Bijvoorbeeld: vinnen.";
     }
 
-    
-    // Start capture session and bind it to the image view
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
-//    csManager.continuous = YES;
     [csManager startPreview];
     
     self.pictureFrame.hidden = NO;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pictureTaken:) name:kImageCapturedSuccessfully object:nil];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
     
@@ -83,6 +78,9 @@
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    
+    [self.csManager stopPreview];
+    self.csManager = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -90,8 +88,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)resignedActive {    
-//    [self stopTimer];
+- (void)resignedActive {
     [self.csManager stopPreview];
     
     self.pictureFrame.hidden = YES;
@@ -103,12 +100,9 @@
 }
 
 - (IBAction)next:(id)sender {
-//    [self stopTimer];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kImageCapturedSuccessfully object:nil];
-    
-    // TODO does it still make sense to have featurePictures be an array?
     [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:[pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
+    
+    [self.csManager disposeOfSession];
     
     team.tookFeaturePictures = YES;
     
