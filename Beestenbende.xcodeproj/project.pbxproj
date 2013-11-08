@@ -1457,12 +1457,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "CD_USE_OWN_FILEUTILS=1";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = Beestenbende;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1526,6 +1528,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"CD_USE_OWN_FILEUTILS=1",
+				);
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
@@ -1546,12 +1553,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Gesjeesde Native/Gesjeesde Native-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "CD_USE_OWN_FILEUTILS=1";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = Beestenbende;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
