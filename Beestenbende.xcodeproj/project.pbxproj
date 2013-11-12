@@ -116,6 +116,7 @@
 		47BFEDC8153F04DF002BF8F3 /* button-speel-verder.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */; };
 		47BFEDCA153F0DA1002BF8F3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC9153F0DA1002BF8F3 /* map.png */; };
 		47C81ADE159CC0BA004C5D5D /* button-bg-choose-feature-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */; };
+		47E259651832E463003C25CC /* Beestenbende iPad Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E259641832E463003C25CC /* Beestenbende iPad Images.xcassets */; };
 		47F246AA17FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */; };
 		47F246AB17FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */; };
 		47F246AD17FDAC8500AFE29E /* button-bg-choose-feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */; };
@@ -392,6 +393,7 @@
 		47BFEDC7153F04DF002BF8F3 /* button-speel-verder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-speel-verder.png"; sourceTree = "<group>"; };
 		47BFEDC9153F0DA1002BF8F3 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature-white.png"; sourceTree = "<group>"; };
+		47E259641832E463003C25CC /* Beestenbende iPad Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Beestenbende iPad Images.xcassets"; sourceTree = "<group>"; };
 		47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-yellow-choose-evidence-bubble.png"; sourceTree = "<group>"; };
 		47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-blue-choose-evidence-bubble.png"; sourceTree = "<group>"; };
 		47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature.png"; sourceTree = "<group>"; };
@@ -893,6 +895,7 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
+				47E259641832E463003C25CC /* Beestenbende iPad Images.xcassets */,
 				4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */,
 				4E3326B4151A68C200CEC850 /* assets */,
 				4EAE98D9151A618A0051C926 /* Frameworks */,
@@ -1319,6 +1322,7 @@
 				47A8714F159B51FA0019F9EF /* button-dragon-is-fish-on.png in Resources */,
 				47A87150159B51FA0019F9EF /* button-dragon-is-mammal-disabled.png in Resources */,
 				47A87151159B51FA0019F9EF /* button-dragon-is-bird-disabled.png in Resources */,
+				47E259651832E463003C25CC /* Beestenbende iPad Images.xcassets in Resources */,
 				47A87152159B51FA0019F9EF /* button-dragon-is-mammal-off.png in Resources */,
 				47A87153159B51FA0019F9EF /* button-dragon-is-bird-off.png in Resources */,
 				47A87154159B51FA0019F9EF /* button-dragon-is-reptile-on.png in Resources */,
