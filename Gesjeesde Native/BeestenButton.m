@@ -45,7 +45,7 @@
     
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
-    [self.titleLabel setFont:[UIFont fontWithName:@"HoeflerText-Black" size:18]];
+    [self.titleLabel setFont:[UIFont fontWithName:@"HoeflerText-Black" size:30]];
     
     self.contentEdgeInsets = UIEdgeInsetsMake(5, 0, 0, 0);
     
