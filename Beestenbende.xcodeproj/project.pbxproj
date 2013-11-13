@@ -117,6 +117,8 @@
 		47BFEDCA153F0DA1002BF8F3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 47BFEDC9153F0DA1002BF8F3 /* map.png */; };
 		47C81ADE159CC0BA004C5D5D /* button-bg-choose-feature-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */; };
 		47E259651832E463003C25CC /* Beestenbende iPad Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E259641832E463003C25CC /* Beestenbende iPad Images.xcassets */; };
+		47E259691833EBD4003C25CC /* Linden Hill Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47E259671833EBD4003C25CC /* Linden Hill Italic.otf */; };
+		47E2596A1833EBD4003C25CC /* Linden Hill.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47E259681833EBD4003C25CC /* Linden Hill.otf */; };
 		47F246AA17FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */; };
 		47F246AB17FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */; };
 		47F246AD17FDAC8500AFE29E /* button-bg-choose-feature.png in Resources */ = {isa = PBXBuildFile; fileRef = 47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */; };
@@ -394,6 +396,8 @@
 		47BFEDC9153F0DA1002BF8F3 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 		47C81ADD159CC0BA004C5D5D /* button-bg-choose-feature-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature-white.png"; sourceTree = "<group>"; };
 		47E259641832E463003C25CC /* Beestenbende iPad Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Beestenbende iPad Images.xcassets"; sourceTree = "<group>"; };
+		47E259671833EBD4003C25CC /* Linden Hill Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linden Hill Italic.otf"; sourceTree = "<group>"; };
+		47E259681833EBD4003C25CC /* Linden Hill.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Linden Hill.otf"; sourceTree = "<group>"; };
 		47F246A817FD84EE00AFE29E /* overlay-team-yellow-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-yellow-choose-evidence-bubble.png"; sourceTree = "<group>"; };
 		47F246A917FD84EE00AFE29E /* overlay-team-blue-choose-evidence-bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "overlay-team-blue-choose-evidence-bubble.png"; sourceTree = "<group>"; };
 		47F246AC17FDAC8500AFE29E /* button-bg-choose-feature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-bg-choose-feature.png"; sourceTree = "<group>"; };
@@ -644,9 +648,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		47E2596B1833EBE2003C25CC /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				47E259671833EBD4003C25CC /* Linden Hill Italic.otf */,
+				47E259681833EBD4003C25CC /* Linden Hill.otf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				47E2596B1833EBE2003C25CC /* fonts */,
 				47F47F3F154EA6CB00BB481D /* animal-all.png */,
 				4740FEB11591C57200DEB661 /* animal-birds-happy.png */,
 				47993156152E489000AF019F /* animal-birds.png */,
@@ -1290,6 +1304,7 @@
 				47A9B66C158F44D200691553 /* um-logo-splash.jpg in Resources */,
 				47A9B66E158F4AF500691553 /* progress-4.png in Resources */,
 				47A9B670158F505F00691553 /* animal-example.png in Resources */,
+				47E259691833EBD4003C25CC /* Linden Hill Italic.otf in Resources */,
 				47A9B672158F68C200691553 /* hubbub-logo-splash.jpg in Resources */,
 				47A9B674158F6DF200691553 /* hubbub-typo.png in Resources */,
 				47A9B676158F6FFA00691553 /* um-logo.png in Resources */,
@@ -1301,6 +1316,7 @@
 				4740FEB01591B70100DEB661 /* speech-bubble-build-evidence.png in Resources */,
 				4740FEB21591C57200DEB661 /* animal-birds-happy.png in Resources */,
 				4740FEB41591C68000DEB661 /* animal-fish-happy.png in Resources */,
+				47E2596A1833EBD4003C25CC /* Linden Hill.otf in Resources */,
 				4740FEB61591C9D900DEB661 /* animal-reptiles-happy.png in Resources */,
 				4740FEB81591CD9A00DEB661 /* animal-squirrel-happy.png in Resources */,
 				4740FEBA1591CF6700DEB661 /* animal-eel-happy.png in Resources */,
