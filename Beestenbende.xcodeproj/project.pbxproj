@@ -188,6 +188,7 @@
 		4E80ADCA151FCA22001CBA7E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E80ADC9151FCA22001CBA7E /* WelcomeViewController.m */; };
 		4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E94ACF8159A1527003AB362 /* i04_neemfoto_v4.wav */; };
 		4EA0F265151B54AC00B12716 /* TeamPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */; };
+		4EA442781833EEE600AD3154 /* CustomFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA442771833EEE600AD3154 /* CustomFontLabel.m */; };
 		4EA62E2A15249B4100E74E64 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2915249B4100E74E64 /* Game.m */; };
 		4EA62E2E15249B9D00E74E64 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2D15249B9D00E74E64 /* Team.m */; };
 		4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */; };
@@ -494,6 +495,8 @@
 		4E94ACF8159A1527003AB362 /* i04_neemfoto_v4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i04_neemfoto_v4.wav; sourceTree = "<group>"; };
 		4EA0F263151B54AC00B12716 /* TeamPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamPictureViewController.h; sourceTree = "<group>"; };
 		4EA0F264151B54AC00B12716 /* TeamPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamPictureViewController.m; sourceTree = "<group>"; };
+		4EA442761833EEE600AD3154 /* CustomFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFontLabel.h; sourceTree = "<group>"; };
+		4EA442771833EEE600AD3154 /* CustomFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontLabel.m; sourceTree = "<group>"; };
 		4EA62E2815249B4100E74E64 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		4EA62E2915249B4100E74E64 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		4EA62E2C15249B9D00E74E64 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
@@ -1068,6 +1071,8 @@
 				4EAF06C7153D808900BE1CAA /* UIImage+Extras.m */,
 				4EAF06C9153D9FE200BE1CAA /* BeestenButton.h */,
 				4EAF06CA153D9FE200BE1CAA /* BeestenButton.m */,
+				4EA442761833EEE600AD3154 /* CustomFontLabel.h */,
+				4EA442771833EEE600AD3154 /* CustomFontLabel.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -1421,6 +1426,7 @@
 				4EA7E225159DE72900B179BF /* CDAudioManager.m in Sources */,
 				4EA7E226159DE72900B179BF /* CDOpenALSupport.m in Sources */,
 				4EA7E227159DE72900B179BF /* CocosDenshion.m in Sources */,
+				4EA442781833EEE600AD3154 /* CustomFontLabel.m in Sources */,
 				4EA7E228159DE72900B179BF /* SimpleAudioEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
