@@ -42,10 +42,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Vollkorn-Bold.ttf</string>
-		<string>Vollkorn-BoldItalic.ttf</string>
-		<string>Vollkorn-Italic.ttf</string>
-		<string>Vollkorn-Regular.ttf</string>
+		<string>Linden Hill.otf</string>
+		<string>Linden Hill Italic.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
