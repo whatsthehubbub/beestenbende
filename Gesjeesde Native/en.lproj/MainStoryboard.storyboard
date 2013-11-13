@@ -1143,16 +1143,12 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="9Wm-t4-V6t">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="aMU-rC-4xZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="10-background-blue" id="9Wm-t4-V6t">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="kJe-GL-DM8">
-                                <rect key="frame" x="42" y="54" width="242" height="29"/>
+                                <rect key="frame" x="263" y="276" width="242" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Eekhoorn"/>
@@ -1161,19 +1157,20 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                                 </segments>
                             </segmentedControl>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="50Y-ih-Ttg">
-                                <rect key="frame" x="40" y="120" width="240" height="240"/>
+                                <rect key="frame" x="200" y="328" width="370" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="NbA-dD-FFm">
-                                <rect key="frame" x="36" y="116" width="248" height="247"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="10-camera-frame-blue" id="NbA-dD-FFm">
+                                <rect key="frame" x="184" y="312" width="400" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pcn-Qj-exJ" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="418" width="240" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pcn-Qj-exJ" customClass="CustomFontButton">
+                                <rect key="frame" x="264" y="835" width="240" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
                                 <state key="normal" title="Maak teamfoto">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -1183,12 +1180,13 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                                     <action selector="takeTeamPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="Zj1-Ey-JUL"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJi-Na-9mH" customClass="BeestenButton">
-                                <rect key="frame" x="40" y="418" width="110" height="42"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iJi-Na-9mH" customClass="CustomFontButton">
+                                <rect key="frame" x="134" y="835" width="240" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
                                 <state key="normal" title="Opnieuw">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -1198,12 +1196,13 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                                     <action selector="takeTeamPictureAgain:" destination="apH-ed-9aX" eventType="touchUpInside" id="dxZ-id-raN"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmF-Sg-FnO" customClass="ArrowRight">
-                                <rect key="frame" x="170" y="418" width="110" height="42"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmF-Sg-FnO" customClass="CustomFontButton">
+                                <rect key="frame" x="394" y="835" width="240" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
                                 <state key="normal" title="Klaar">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -1213,20 +1212,13 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                                     <action selector="doneWithPicture:" destination="apH-ed-9aX" eventType="touchUpInside" id="AIe-7M-657"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Teamfoto Blauw/Geel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VmV-6v-w4x" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Teamfoto Blauw/Geel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VmV-6v-w4x" customClass="CustomFontLabel">
+                                <rect key="frame" x="0.0" y="38" width="768" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Nf-ZS-hUa">
-                                <rect key="frame" x="5" y="6" width="28" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -1236,7 +1228,6 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                         <outlet property="selector" destination="kJe-GL-DM8" id="tVW-jm-HtJ"/>
                         <outlet property="takePictureAgainButton" destination="iJi-Na-9mH" id="Hz8-Ln-fNZ"/>
                         <outlet property="takeTeamPictureButton" destination="pcn-Qj-exJ" id="9Kd-sW-6K7"/>
-                        <outlet property="teamOverlay" destination="aMU-rC-4xZ" id="eH6-Xe-dkn"/>
                         <outlet property="teamPictureFrame" destination="NbA-dD-FFm" id="WDk-dC-XCu"/>
                         <outlet property="teamPictureView" destination="50Y-ih-Ttg" id="fIc-hY-0xz"/>
                         <outlet property="titleLabel" destination="VmV-6v-w4x" id="qzc-HR-nzM"/>
@@ -4406,6 +4397,8 @@ want hij heeft…</string>
         <image name="06-background" width="768" height="1024"/>
         <image name="07-background" width="768" height="1024"/>
         <image name="09-background" width="768" height="1024"/>
+        <image name="10-background-blue" width="768" height="1024"/>
+        <image name="10-camera-frame-blue" width="400" height="400"/>
         <image name="animal-all.png" width="640" height="960"/>
         <image name="animal-birds-happy.png" width="366" height="480"/>
         <image name="animal-birds.png" width="366" height="480"/>
