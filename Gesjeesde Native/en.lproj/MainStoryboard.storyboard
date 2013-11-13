@@ -859,49 +859,22 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="j2B-0a-ms5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="09-background" id="j2B-0a-ms5">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="infographic-make-team-photo.png" id="jCi-sf-Kuk">
-                                <rect key="frame" x="87" y="58" width="146" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host.png" id="jwQ-tP-8lp">
-                                <rect key="frame" x="0.0" y="276" width="264" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-screen-6.png" id="9YE-c7-Uan">
-                                <rect key="frame" x="35" y="187" width="251" height="146"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zit je haar goed? Geen spinazie tussen je tanden?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2XX-Pl-lpW" customClass="NormalLabel">
-                                <rect key="frame" x="55" y="207" width="210" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UO3-k8-qay" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Verder…">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="next:" destination="eaH-OO-SNN" eventType="touchUpInside" id="uN7-uq-bz0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maak teamfoto’s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qL2-KY-gzW" customClass="HeaderLabel">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zit je haar goed? Geen spinazie tussen je tanden?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2XX-Pl-lpW" customClass="NormalLabel">
+                                <rect key="frame" x="55" y="207" width="210" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Obp-eD-QtP">
@@ -917,6 +890,21 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="eaH-OO-SNN" eventType="touchUpInside" id="qLv-bd-1Pg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UO3-k8-qay" customClass="ArrowRight">
+                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Verder…">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="eaH-OO-SNN" eventType="touchUpInside" id="uN7-uq-bz0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -4414,6 +4402,7 @@ want hij heeft…</string>
         <image name="05-teams" width="295" height="125"/>
         <image name="06-background" width="768" height="1024"/>
         <image name="07-background" width="768" height="1024"/>
+        <image name="09-background" width="768" height="1024"/>
         <image name="animal-all.png" width="640" height="960"/>
         <image name="animal-birds-happy.png" width="366" height="480"/>
         <image name="animal-birds.png" width="366" height="480"/>
@@ -4456,7 +4445,6 @@ want hij heeft…</string>
         <image name="example-photos-of-features.png" width="248" height="186"/>
         <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
         <image name="hubbub-typo.png" width="428" height="82"/>
-        <image name="infographic-make-team-photo.png" width="293" height="222"/>
         <image name="logo-gemeente-utrecht.png" width="214" height="133"/>
         <image name="logo-min-eli.png" width="428" height="185"/>
         <image name="logo-provincie-utrecht.png" width="428" height="57"/>
@@ -4472,7 +4460,6 @@ want hij heeft…</string>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
         <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="speech-bubble-for-example.png" width="150" height="111"/>
-        <image name="speech-bubble-screen-6.png" width="502" height="292"/>
         <image name="speech-bubble-squirrel-screen-5.png" width="490" height="431"/>
         <image name="team-photo-frame-blue.png" width="265" height="313"/>
         <image name="team-photo-frame-yellow.png" width="265" height="313"/>
