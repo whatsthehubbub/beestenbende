@@ -1781,60 +1781,36 @@ geen reptiel want u hebt…</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-4-welcome-to-cabinet.jpg" id="6Hx-UI-pSU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="17-background-blue" id="6Hx-UI-pSU">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue-choose-evidence-bubble.png" id="RxL-gE-LAJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: maak de zin af" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VzL-5w-4Vr" customClass="CustomFontLabel">
+                                <rect key="frame" x="0.0" y="38" width="768" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: maak de zin af" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="VzL-5w-4Vr" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-birds.png" id="PXA-Md-mGs">
-                                <rect key="frame" x="0.0" y="240" width="183" height="240"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Eekhoorn, je bent een zoogdier en geen vogel want je hebt…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lnX-R3-m9X" customClass="CustomFontLabel">
+                                <rect key="frame" x="138" y="125" width="492" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Eekhoorn, je bent een zoogdier en geen vogel want je hebt…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lnX-R3-m9X" customClass="NormalLabel">
-                                <rect key="frame" x="20" y="60" width="280" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" id="WoQ-zd-fSs">
-                                <rect key="frame" x="19" y="150" width="283" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
-                                <state key="normal" title="kies een kenmerk…" backgroundImage="button-bg-choose-feature.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="1fY-YD-3fF"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="uTF-wg-lnc">
-                                <rect key="frame" x="195" y="260" width="80" height="80"/>
+                                <rect key="frame" x="254" y="240" width="260" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-160.png" id="iae-Mp-agN">
-                                <rect key="frame" x="192" y="258" width="86" height="84"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="17-photo-frame" id="iae-Mp-agN">
+                                <rect key="frame" x="244" y="230" width="280" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="xtc-7C-RXk">
-                                <rect key="frame" x="19" y="100" width="283" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="xtc-7C-RXk" customClass="CustomFontButton">
+                                <rect key="frame" x="164" y="545" width="440" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" image="toggle-wel-on-geen-off.png">
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <state key="normal" image="00-wel-on-geen-off">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1846,27 +1822,28 @@ geen reptiel want u hebt…</string>
                                     <action selector="yesNo:" destination="Kgz-tg-9iE" eventType="touchUpInside" id="ezM-Rf-Is8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wQJ-ju-lAl" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="tailTruncation" id="WoQ-zd-fSs" customClass="CustomFontButton">
+                                <rect key="frame" x="164" y="646" width="440" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Ja, klaar!">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
+                                <state key="normal" title="kies een kenmerk…" backgroundImage="00-choose-feature">
+                                    <color key="titleColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="next:" destination="Kgz-tg-9iE" eventType="touchUpInside" id="FRy-NR-rZt"/>
+                                    <segue destination="dCT-Mf-cjh" kind="push" identifier="PickFeature" id="1fY-YD-3fF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nxE-zn-JKx">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nxE-zn-JKx" customClass="CustomFontButton">
+                                <rect key="frame" x="285" y="910" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Terug" backgroundImage="00-back-button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -1874,6 +1851,22 @@ geen reptiel want u hebt…</string>
                                 </state>
                                 <connections>
                                     <action selector="back:" destination="Kgz-tg-9iE" eventType="touchUpInside" id="sjy-hO-Q2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wQJ-ju-lAl" customClass="CustomFontButton">
+                                <rect key="frame" x="505" y="910" width="220" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="Ja, klaar!" backgroundImage="00-next-button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="Kgz-tg-9iE" eventType="touchUpInside" id="FRy-NR-rZt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1885,7 +1878,6 @@ geen reptiel want u hebt…</string>
                         <outlet property="featureButton" destination="WoQ-zd-fSs" id="gwZ-R4-fpR"/>
                         <outlet property="featureImageView" destination="uTF-wg-lnc" id="vzo-yt-4N0"/>
                         <outlet property="headerLabel" destination="VzL-5w-4Vr" id="Q4T-pX-3e6"/>
-                        <outlet property="overlayImage" destination="RxL-gE-LAJ" id="4nE-52-OU8"/>
                         <outlet property="yesNoButton" destination="xtc-7C-RXk" id="R5G-uQ-ZMR"/>
                         <segue destination="bTt-EX-SMb" kind="push" identifier="Next" id="fpS-jq-29F"/>
                     </connections>
@@ -4267,8 +4259,10 @@ want hij heeft…</string>
     <resources>
         <image name="00-back-button" width="200" height="60"/>
         <image name="00-button-example" width="200" height="60"/>
+        <image name="00-choose-feature" width="440" height="60"/>
         <image name="00-nautilus-background" width="768" height="1024"/>
         <image name="00-next-button" width="220" height="60"/>
+        <image name="00-wel-on-geen-off" width="440" height="80"/>
         <image name="01-background" width="768" height="1024"/>
         <image name="01-credits-button" width="240" height="60"/>
         <image name="01-start-button" width="240" height="60"/>
@@ -4288,12 +4282,13 @@ want hij heeft…</string>
         <image name="16-background" width="768" height="1024"/>
         <image name="16-photo-frame" width="227" height="227"/>
         <image name="16-squirrel" width="400" height="300"/>
+        <image name="17-background-blue" width="768" height="1024"/>
+        <image name="17-photo-frame" width="280" height="280"/>
         <image name="22-background-blue" width="768" height="1024"/>
         <image name="22-camera-frame-blue" width="400" height="400"/>
         <image name="43-background-yellow" width="768" height="1024"/>
         <image name="animal-all.png" width="640" height="960"/>
         <image name="animal-birds-happy.png" width="366" height="480"/>
-        <image name="animal-birds.png" width="366" height="480"/>
         <image name="animal-dragon-happy.png" width="395" height="467"/>
         <image name="animal-dragon-icon-large.png" width="347" height="346"/>
         <image name="animal-dragon.png" width="386" height="467"/>
@@ -4358,11 +4353,11 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="GW9-yo-buq"/>
-        <segue reference="sz9-qc-ZZh"/>
-        <segue reference="fpS-jq-29F"/>
-        <segue reference="5OT-N5-qpE"/>
         <segue reference="AoM-So-BHK"/>
-        <segue reference="i9S-9K-imd"/>
+        <segue reference="5OT-N5-qpE"/>
+        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="GW9-yo-buq"/>
+        <segue reference="1fY-YD-3fF"/>
+        <segue reference="fpS-jq-29F"/>
     </inferredMetricsTieBreakers>
 </document>
