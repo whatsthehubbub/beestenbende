@@ -60,7 +60,7 @@
     }
     
     if (game.team1.dragonFeaturesGuessed.count < 3 && game.team2.dragonFeaturesGuessed.count < 3) {
-        explanation.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer. ", [currentTeam getTeamName], [[game otherTeamForTeam:currentTeam] getTeamName]];
+        explanation.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. \r Team %@: jullie mogen straks weer. ", [currentTeam getTeamName], [[game otherTeamForTeam:currentTeam] getTeamName]];
     } else {
         Team *winner = game.team1.dragonFeaturesGuessed.count == 3 ? game.team1 : game.team2;
         explanation.text = [NSString stringWithFormat:@"Team %@ heeft drie goede kenmerken gevonden!", [winner getTeamName]];
