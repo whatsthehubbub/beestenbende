@@ -1974,7 +1974,7 @@ geen reptiel want u hebt…</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16-squirrel" id="zL8-5W-7u5">
-                                <rect key="frame" x="216" y="553" width="335" height="227"/>
+                                <rect key="frame" x="184" y="500" width="400" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view opaque="NO" contentMode="scaleToFill" id="UCJ-lQ-goO">
@@ -4303,7 +4303,7 @@ want hij heeft…</string>
         <image name="15-background" width="768" height="1024"/>
         <image name="16-background" width="768" height="1024"/>
         <image name="16-photo-frame" width="227" height="227"/>
-        <image name="16-squirrel" width="335" height="227"/>
+        <image name="16-squirrel" width="400" height="300"/>
         <image name="43-background-yellow" width="768" height="1024"/>
         <image name="animal-all.png" width="640" height="960"/>
         <image name="animal-birds-happy.png" width="366" height="480"/>
