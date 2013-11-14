@@ -14,9 +14,9 @@
 
 @implementation TeamPictureViewController
 
+@synthesize backgroundImage;
 @synthesize teamPictureView;
 @synthesize teamPictureFrame;
-@synthesize teamOverlay;
 @synthesize titleLabel;
 
 @synthesize takeTeamPictureButton;
@@ -133,7 +133,9 @@
         self.currentTeamNumber = 2;
         
         [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [game.team2 getTeamName]]];
-        [self.teamOverlay setImage:[UIImage imageNamed:@"overlay-team-yellow.png"]];
+        [self.backgroundImage setImage:[UIImage imageNamed:@"10-background-yellow"]];
+        [self.teamPictureFrame setImage:[UIImage imageNamed:@"10-camera-frame-yellow"]];
+        
         
         // Setup everything for team picture again
         [self takeTeamPictureAgain:self];

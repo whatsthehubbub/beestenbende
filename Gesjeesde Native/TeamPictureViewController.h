@@ -19,9 +19,9 @@
 
 @property (assign) int currentTeamNumber;
 
+@property (strong) IBOutlet UIImageView *backgroundImage;
 @property (strong) IBOutlet UIImageView *teamPictureView;
 @property (strong )IBOutlet UIImageView *teamPictureFrame;
-@property (strong) IBOutlet UIImageView *teamOverlay;
 @property (strong) IBOutlet UILabel *titleLabel;
 
 @property (strong) IBOutlet UIButton *takeTeamPictureButton;

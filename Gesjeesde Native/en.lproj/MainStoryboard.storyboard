@@ -1216,6 +1216,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                     </view>
                     <navigationItem key="navigationItem" id="ifW-qg-foT"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="9Wm-t4-V6t" id="tYx-lB-kF2"/>
                         <outlet property="nextButton" destination="kmF-Sg-FnO" id="fKC-5f-uKI"/>
                         <outlet property="selector" destination="kJe-GL-DM8" id="tVW-jm-HtJ"/>
                         <outlet property="takePictureAgainButton" destination="iJi-Na-9mH" id="Hz8-Ln-fNZ"/>
