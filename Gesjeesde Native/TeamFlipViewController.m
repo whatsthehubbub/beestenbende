@@ -17,8 +17,6 @@
 @synthesize headerLabel;
 @synthesize backgroundImage;
 
-@synthesize explanationLabel;
-
 @synthesize game;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -45,8 +43,6 @@
     Team *team = [game getCurrentTeam];
 
     headerLabel.text = [NSString stringWithFormat:@"Wie begint?"];
-    
-    self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een muntje opgegooid en team %@ \r mag beginnen.", [team getTeamName]];
     
 //    self.teamImage.image = team.picture; 
     
