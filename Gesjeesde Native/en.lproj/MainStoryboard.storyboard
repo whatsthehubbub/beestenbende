@@ -2042,6 +2042,7 @@ geen reptiel want u hebt…</string>
                     </view>
                     <navigationItem key="navigationItem" id="2Xr-Bc-Yow"/>
                     <connections>
+                        <outlet property="animalImage" destination="zL8-5W-7u5" id="RJu-Kz-NsM"/>
                         <outlet property="animalRequiresLabel" destination="mta-oL-oJU" id="eAw-1q-dxO"/>
                         <outlet property="proofsRequiredLabel" destination="k80-i3-9IF" id="0Cc-RB-UkH"/>
                         <outlet property="team1Image" destination="r9i-Ll-gaT" id="ppd-bZ-VyQ"/>

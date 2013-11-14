@@ -23,8 +23,6 @@
 @synthesize team2PointsLabel;
 @synthesize team2Image;
 
-@synthesize turnLabel;
-
 @synthesize currentFeaturePicture;
 
 @synthesize animalImage;
@@ -58,12 +56,10 @@
     self.team1PointsLabel.text = [NSString stringWithFormat:@"%d", game.team1.points];
     self.team2PointsLabel.text = [NSString stringWithFormat:@"%d", game.team2.points];
     
-    self.turnLabel.text = [NSString stringWithFormat:@"Team %@: fotografeer een kenmerk. Team %@: jullie mogen straks weer.", [[game getCurrentTeam] getTeamName], [[game otherTeamForTeam:[game getCurrentTeam]] getTeamName]];
-    
     if (game.issue == 1) {
-        self.animalImage.image = [UIImage imageNamed:@"animal-squirrel-icon.png"];
+        self.animalImage.image = [UIImage imageNamed:@"16-squirrel"];
     } else if (game.issue == 2) {
-        self.animalImage.image = [UIImage imageNamed:@"animal-eel-icon.png"];
+        self.animalImage.image = [UIImage imageNamed:@"29-eel"];
     }
     
     self.animalRequiresLabel.text = [NSString stringWithFormat:@"%@ wil nog", [game getCurrentAnimalName]];
