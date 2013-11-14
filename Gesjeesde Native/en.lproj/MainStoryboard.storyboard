@@ -3010,76 +3010,77 @@ zeepaling.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="mu4-qv-fxR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="39-background" id="mu4-qv-fxR">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-host-icon.png" id="Si1-O4-exb">
-                                <rect key="frame" x="20" y="338" width="58" height="60"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wat is het draakje?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="r5d-ye-RBL" customClass="CustomFontLabel">
+                                <rect key="frame" x="0.0" y="38" width="768" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: fotografeer een kenmerk. Team [Kleur]: jullie mogen straks weer. " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="29c-3B-RCO" customClass="NormalLabel">
-                                <rect key="frame" x="86" y="326" width="214" height="84"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eerste met 3 goede kenmerken wint!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="Ti7-NT-oKg" customClass="CustomFontLabel">
+                                <rect key="frame" x="138" y="133" width="492" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view opaque="NO" contentMode="scaleToFill" id="nyG-qZ-KB8">
-                                <rect key="frame" x="20" y="89" width="140" height="160"/>
+                                <rect key="frame" x="70" y="271" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="vHv-AJ-hrm">
-                                        <rect key="frame" x="20" y="15" width="100" height="100"/>
+                                        <rect key="frame" x="10" y="10" width="220" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-blue.png" id="LE3-zA-941">
-                                        <rect key="frame" x="4" y="0.0" width="132" height="156"/>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="39-photo-frame" id="LE3-zA-941">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qlT-HG-SfI">
-                                        <rect key="frame" x="10" y="123" width="120" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="39-progress-0" id="zrt-ZD-Jgp">
+                                <rect key="frame" x="70" y="520" width="245" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view opaque="NO" contentMode="scaleToFill" id="GiZ-32-DbQ">
-                                <rect key="frame" x="160" y="89" width="140" height="160"/>
+                                <rect key="frame" x="460" y="271" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fqC-By-QSd">
-                                        <rect key="frame" x="20" y="15" width="100" height="100"/>
+                                        <rect key="frame" x="10" y="10" width="220" height="220"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="team-photo-frame-yellow.png" id="nIW-9G-pdF">
-                                        <rect key="frame" x="4" y="0.0" width="132" height="156"/>
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="39-photo-frame" id="nIW-9G-pdF">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Geel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="0dS-4y-fPc">
-                                        <rect key="frame" x="10" y="123" width="120" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </view>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wat is het draakje?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="r5d-ye-RBL" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="39-progress-0" id="cBs-Pa-1id">
+                                <rect key="frame" x="460" y="520" width="245" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="29c-3B-RCO" customClass="CustomFontLabel">
+                                <rect key="frame" x="138" y="784" width="492" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Team [Kleur]: fotografeer een kenmerk. 
+Team [Kleur]: jullie mogen straks weer. </string>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Wh-85-qIs">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4Wh-85-qIs" customClass="CustomFontButton">
+                                <rect key="frame" x="285" y="910" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Terug" backgroundImage="00-back-button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -3089,12 +3090,13 @@ zeepaling.</string>
                                     <action selector="back:" destination="Dee-6Y-Prk" eventType="touchUpInside" id="P1r-xB-QrC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v3b-8J-XOm" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="v3b-8J-XOm" customClass="CustomFontButton">
+                                <rect key="frame" x="505" y="910" width="220" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Verder…">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="Verder…" backgroundImage="00-next-button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -3104,31 +3106,14 @@ zeepaling.</string>
                                     <action selector="done:" destination="Dee-6Y-Prk" eventType="touchUpInside" id="PnY-G6-leO"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="dragon-evidence-0.png" id="zrt-ZD-Jgp">
-                                <rect key="frame" x="32" y="257" width="116" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="dragon-evidence-0.png" id="cBs-Pa-1id">
-                                <rect key="frame" x="172" y="257" width="116" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De eerste met 3 goede kenmerken wint!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" id="Ti7-NT-oKg" customClass="NormalLabel">
-                                <rect key="frame" x="20" y="60" width="280" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="16"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="mUS-MS-wcz"/>
                     <connections>
                         <outlet property="explanation" destination="29c-3B-RCO" id="RWk-2g-ydE"/>
-                        <outlet property="team1Label" destination="qlT-HG-SfI" id="oMm-04-D2R"/>
                         <outlet property="team1Picture" destination="vHv-AJ-hrm" id="cQP-kl-EYH"/>
                         <outlet property="team1Proofs" destination="zrt-ZD-Jgp" id="7n5-LL-ON9"/>
-                        <outlet property="team2Label" destination="0dS-4y-fPc" id="NAS-lF-io8"/>
                         <outlet property="team2Picture" destination="fqC-By-QSd" id="Dx9-4n-pAB"/>
                         <outlet property="team2Proofs" destination="cBs-Pa-1id" id="Jv1-uF-pZl"/>
                         <segue destination="riD-0B-aIy" kind="push" identifier="DragonDone" id="hwp-Dj-N7X"/>
@@ -4075,6 +4060,9 @@ want hij heeft…</string>
         <image name="37-background-dragon" width="768" height="1024"/>
         <image name="37-background-reptiles" width="768" height="1024"/>
         <image name="38-background" width="768" height="1024"/>
+        <image name="39-background" width="768" height="1024"/>
+        <image name="39-photo-frame" width="240" height="240"/>
+        <image name="39-progress-0" width="245" height="100"/>
         <image name="43-background-yellow" width="768" height="1024"/>
         <image name="45-background-blue" width="768" height="1024"/>
         <image name="45-photo-frame" width="240" height="240"/>
@@ -4085,7 +4073,6 @@ want hij heeft…</string>
         <image name="animal-eel.png" width="290" height="429"/>
         <image name="animal-fish-happy.png" width="329" height="463"/>
         <image name="animal-fish.png" width="329" height="463"/>
-        <image name="animal-host-icon.png" width="117" height="120"/>
         <image name="animal-reptiles-happy.png" width="343" height="463"/>
         <image name="bg-0-plain.jpg" width="640" height="960"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
@@ -4106,7 +4093,6 @@ want hij heeft…</string>
         <image name="button-dragon-is-reptile-off.png" width="263" height="305"/>
         <image name="button-dragon-is-reptile-on.png" width="263" height="305"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="dragon-evidence-0.png" width="231" height="75"/>
         <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
         <image name="hubbub-typo.png" width="428" height="82"/>
         <image name="logo-gemeente-utrecht.png" width="214" height="133"/>
@@ -4118,8 +4104,6 @@ want hij heeft…</string>
         <image name="photo-frame-square-480.png" width="496" height="494"/>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
         <image name="speech-bubble-big.png" width="560" height="500"/>
-        <image name="team-photo-frame-blue.png" width="265" height="313"/>
-        <image name="team-photo-frame-yellow.png" width="265" height="313"/>
         <image name="tfi-logo.png" width="428" height="201"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
         <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
