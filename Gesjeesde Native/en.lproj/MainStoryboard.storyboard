@@ -1573,6 +1573,7 @@ veren. Ja, toch?</string>
                     </view>
                     <navigationItem key="navigationItem" id="RpP-1M-0do"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="cBf-6s-fSu" id="KdW-2u-HPz"/>
                         <outlet property="explanationLabel" destination="Dv3-KM-zeD" id="sZE-IN-EdH"/>
                         <outlet property="headerLabel" destination="tpg-Mh-feY" id="7l1-t0-g0B"/>
                         <segue destination="4Xr-pd-4cz" kind="push" identifier="Next" id="GW9-yo-buq"/>

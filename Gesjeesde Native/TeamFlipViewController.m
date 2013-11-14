@@ -15,9 +15,7 @@
 @implementation TeamFlipViewController
 
 @synthesize headerLabel;
-@synthesize teamOverlay;
-
-@synthesize teamImage;
+@synthesize backgroundImage;
 
 @synthesize explanationLabel;
 
@@ -50,12 +48,12 @@
     
     self.explanationLabel.text = [NSString stringWithFormat:@"We hebben een muntje opgegooid en team %@ \r mag beginnen.", [team getTeamName]];
     
-    self.teamImage.image = team.picture; 
+//    self.teamImage.image = team.picture; 
     
     if (team.number == 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];
+        backgroundImage.image = [UIImage imageNamed:@"43-background-blue"];
     } else {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        backgroundImage.image = [UIImage imageNamed:@"43-background-yellow"];
     }
 }
 

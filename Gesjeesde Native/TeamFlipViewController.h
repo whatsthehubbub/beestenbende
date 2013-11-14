@@ -13,9 +13,7 @@
 @interface TeamFlipViewController : UIViewController 
 
 @property (nonatomic, retain) IBOutlet UILabel *headerLabel;
-@property (strong) IBOutlet UIImageView *teamOverlay;
-
-@property (strong) IBOutlet UIImageView *teamImage;
+@property (strong) IBOutlet UIImageView *backgroundImage;
 
 @property (strong) IBOutlet UILabel *explanationLabel;
 
