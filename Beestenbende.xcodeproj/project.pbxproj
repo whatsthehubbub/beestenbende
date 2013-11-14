@@ -165,7 +165,6 @@
 		4E42820915447EBD009FD991 /* TeamFlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820815447EBD009FD991 /* TeamFlipViewController.m */; };
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
 		4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */; };
-		4E4282141546CEFB009FD991 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282131546C8AD009FD991 /* DDPageControl.m */; };
 		4E4346C5171EB6E100B93D50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */; };
 		4E4346CA171EB76800B93D50 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4346C9171EB76800B93D50 /* libFlurry.a */; };
 		4E4A4DF3154EB719009785BD /* DragonPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */; };
@@ -458,8 +457,6 @@
 		4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondIssueExplanationViewController.m; sourceTree = "<group>"; };
 		4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermediaryScoresViewController.h; sourceTree = "<group>"; };
 		4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediaryScoresViewController.m; sourceTree = "<group>"; };
-		4E4282121546C8AC009FD991 /* DDPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDPageControl.h; sourceTree = "<group>"; };
-		4E4282131546C8AD009FD991 /* DDPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
 		4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Beestenbende.xcodeproj; sourceTree = "<group>"; };
 		4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		4E4346C8171EB76800B93D50 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
@@ -1061,8 +1058,6 @@
 		4ED21521153C3BD300040C97 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				4E4282121546C8AC009FD991 /* DDPageControl.h */,
-				4E4282131546C8AD009FD991 /* DDPageControl.m */,
 				4ED2151D153C3B6400040C97 /* HeaderLabel.h */,
 				4ED2151E153C3B6400040C97 /* HeaderLabel.m */,
 				4EAF06D2153DAE5C00BE1CAA /* ArrowLeft.h */,
@@ -1380,7 +1375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E4282141546CEFB009FD991 /* DDPageControl.m in Sources */,
 				4EAE98E7151A618A0051C926 /* main.m in Sources */,
 				4EAE98EB151A618A0051C926 /* AppDelegate.m in Sources */,
 				4EAE98F1151A618A0051C926 /* ViewController.m in Sources */,
