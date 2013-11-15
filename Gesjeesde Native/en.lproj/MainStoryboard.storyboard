@@ -3461,6 +3461,7 @@ want hij heeft…</string>
                     </view>
                     <navigationItem key="navigationItem" id="MFV-Hb-6rg"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="bOV-aw-M0p" id="ksn-2w-Tc3"/>
                         <outlet property="classLabel" destination="vi0-Ps-U7O" id="4Bs-OH-2Hl"/>
                         <outlet property="doneButton" destination="Mcg-PQ-7g3" id="Tz6-0H-Odx"/>
                         <outlet property="dragonPictureView" destination="ckl-Ai-cCT" id="ash-NR-5Nx"/>

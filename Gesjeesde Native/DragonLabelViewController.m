@@ -16,9 +16,10 @@
 
 @synthesize classLabel;
 
+@synthesize backgroundImage;
 @synthesize headerLabel;
+
 @synthesize dragonPictureView;
-@synthesize teamOverlay;
 
 @synthesize featureButton;
 @synthesize doneButton;
@@ -49,9 +50,8 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    
     if (currentTeam.number != 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        backgroundImage.image = [UIImage imageNamed:@"42-background-yellow"];
         
         headerLabel.text = @"Team Geel: maak de zin af";
     }
