@@ -61,7 +61,6 @@
     self.fishButton.enabled = !currentTeam.fishEliminated;
     self.reptileButton.enabled = !currentTeam.reptileEliminated;
     self.birdButton.enabled = !currentTeam.birdEliminated;
-
 }
 
 - (void)viewDidUnload
