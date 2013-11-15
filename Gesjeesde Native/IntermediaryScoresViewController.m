@@ -62,7 +62,7 @@
     team1ScoreLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1ScoreLabel.font.pointSize];
     team2ScoreLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2ScoreLabel.font.pointSize];
     
-    self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"progress-%d.png", game.issue]];
+    self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"34-progress-%d", game.issue]];
     
     if (game.issue == 3) {
         self.headerLabel.text = @"Eindstand";
