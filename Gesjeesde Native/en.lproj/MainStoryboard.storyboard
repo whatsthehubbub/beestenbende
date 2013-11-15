@@ -1457,6 +1457,7 @@ veren. Ja, toch?</string>
                     </view>
                     <navigationItem key="navigationItem" id="Hfm-BP-Gk7"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="QH7-Cw-vvc" id="lDG-G2-T8y"/>
                         <outlet property="doneButton" destination="5Q1-KH-j0a" id="KAv-ug-LTF"/>
                         <outlet property="explanationLabel" destination="Ty2-yX-4tC" id="wDi-tx-4ET"/>
                         <outlet property="headerLabel" destination="9XZ-VN-APE" id="3op-Tz-3SJ"/>
