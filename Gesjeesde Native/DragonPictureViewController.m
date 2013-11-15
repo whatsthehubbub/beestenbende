@@ -15,6 +15,7 @@
 @implementation DragonPictureViewController
 
 @synthesize backgroundImage;
+@synthesize headerLabel;
 
 @synthesize classLabel;
 
@@ -57,6 +58,8 @@
         backgroundImage.image = [UIImage imageNamed:@"41-background-yellow"];
         
         dragonPictureFrame.image = [UIImage imageNamed:@"41-photo-frame-yellow"];
+        
+        headerLabel.text = @"Team Geel: onderzoek de draak";
     }
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];

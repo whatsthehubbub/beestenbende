@@ -3150,7 +3150,7 @@ Team [Kleur]: jullie mogen straks weer. </string>
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team [Kleur]: onderzoek de draak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WjZ-qA-zcE" customClass="CustomFontLabel">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Team Blauw: onderzoek de draak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WjZ-qA-zcE" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
@@ -3229,6 +3229,7 @@ een [gekozen diergroep].</string>
                         <outlet property="doneButton" destination="d91-aZ-hGR" id="bNv-gw-qm5"/>
                         <outlet property="dragonPictureFrame" destination="S7H-X2-pY3" id="p8L-Db-cSU"/>
                         <outlet property="dragonPictureView" destination="6tb-W8-dWk" id="PpL-Oe-nBd"/>
+                        <outlet property="headerLabel" destination="WjZ-qA-zcE" id="Xig-FM-crN"/>
                         <outlet property="takeDragonPictureButton" destination="2tz-1D-sEa" id="yLX-iD-1Z4"/>
                         <outlet property="takePictureAgainButton" destination="oPR-1W-hG1" id="AEq-pJ-Bgw"/>
                         <segue destination="yMG-9O-rz6" kind="push" identifier="Next" id="HOA-0I-TTa"/>

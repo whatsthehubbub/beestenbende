@@ -16,6 +16,7 @@
 @interface DragonPictureViewController : UIViewController
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
+@property (strong) IBOutlet UILabel *headerLabel;
 
 @property (nonatomic, retain) IBOutlet UILabel *classLabel;
 
