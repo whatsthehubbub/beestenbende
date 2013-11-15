@@ -15,11 +15,13 @@
 
 @interface DragonPictureViewController : UIViewController
 
+@property (strong) IBOutlet UIImageView *backgroundImage;
+
 @property (nonatomic, retain) IBOutlet UILabel *classLabel;
 
 @property (strong) IBOutlet UIImageView *dragonPictureView;
 @property (strong)  IBOutlet UIImageView *dragonPictureFrame;
-@property (strong) IBOutlet UIImageView *teamOverlay;
+
 
 @property (strong) IBOutlet UIButton *takeDragonPictureButton;
 @property (strong) IBOutlet UIButton *takePictureAgainButton;

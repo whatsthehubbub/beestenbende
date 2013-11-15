@@ -16,6 +16,7 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *classLabel;
 
+@property (strong) IBOutlet UILabel *headerLabel;
 @property (strong) IBOutlet UIImageView *dragonPictureView;
 @property (strong) IBOutlet UIImageView *teamOverlay;
 

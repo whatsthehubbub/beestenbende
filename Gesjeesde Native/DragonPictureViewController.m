@@ -14,11 +14,12 @@
 
 @implementation DragonPictureViewController
 
+@synthesize backgroundImage;
+
 @synthesize classLabel;
 
 @synthesize dragonPictureView;
 @synthesize dragonPictureFrame;
-@synthesize teamOverlay;
 
 @synthesize takeDragonPictureButton;
 @synthesize takePictureAgainButton;
@@ -53,7 +54,9 @@
     }
     
     if (currentTeam.number != 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        backgroundImage.image = [UIImage imageNamed:@"41-background-yellow"];
+        
+        dragonPictureFrame.image = [UIImage imageNamed:@"41-photo-frame-yellow"];
     }
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];

@@ -16,6 +16,7 @@
 
 @synthesize classLabel;
 
+@synthesize headerLabel;
 @synthesize dragonPictureView;
 @synthesize teamOverlay;
 
@@ -48,16 +49,17 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
+    
     if (currentTeam.number != 1) {
         teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        
+        headerLabel.text = @"Team Geel: maak de zin af";
     }
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
     self.classLabel.text = [NSString stringWithFormat:@"Draakje is een %@ \r want hij heeft…", class.lowercaseString];
     
     self.dragonPictureView.image = ((FeaturePicture *)self.currentTeam.featurePictures.lastObject).image;
-    
-    self.featureButton.titleLabel.font = [UIFont fontWithName:@"HoeflerText-Regular" size:self.featureButton.titleLabel.font.pointSize];
 }
 
 - (void)viewDidUnload
