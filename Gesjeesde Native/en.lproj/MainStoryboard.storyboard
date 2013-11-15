@@ -3361,6 +3361,7 @@ een [gekozen diergroep].</string>
                     </view>
                     <navigationItem key="navigationItem" id="GJN-aE-nFF"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="dHv-CF-ks9" id="MrG-ji-cMG"/>
                         <outlet property="birdButton" destination="iCa-yc-afv" id="3Iz-K8-DYe"/>
                         <outlet property="fishButton" destination="HcT-w6-kzG" id="s95-sM-01a"/>
                         <outlet property="mammalButton" destination="waL-uT-QTk" id="3qw-xx-WbO"/>

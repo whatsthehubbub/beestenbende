@@ -17,7 +17,7 @@
 @synthesize game;
 @synthesize currentTeam;
 
-@synthesize teamOverlay;
+@synthesize backgroundImage;
 
 @synthesize mammalButton;
 @synthesize fishButton;
@@ -49,7 +49,7 @@
     }
     
     if (currentTeam.number != 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        backgroundImage.image = [UIImage imageNamed:@"40-background-yellow"];
     }
     
     self.mammalButton.enabled = !currentTeam.mammalEliminated;
