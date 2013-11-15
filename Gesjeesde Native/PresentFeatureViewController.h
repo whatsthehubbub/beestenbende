@@ -19,6 +19,8 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *headerLabel;
 
+@property (strong) IBOutlet UIImageView *backgroundImage;
+
 @property (nonatomic, retain) IBOutlet UIImageView *overlayImage;
 
 @property (nonatomic, retain) IBOutlet UIButton *yesNoButton;
