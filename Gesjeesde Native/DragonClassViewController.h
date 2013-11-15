@@ -18,6 +18,8 @@
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
 
+@property (strong) IBOutlet UILabel *headerLabel;
+
 @property (strong) IBOutlet UIButton *mammalButton;
 @property (strong) IBOutlet UIButton *fishButton;
 @property (strong) IBOutlet UIButton *reptileButton;

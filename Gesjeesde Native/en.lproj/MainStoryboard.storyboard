@@ -3364,6 +3364,7 @@ een [gekozen diergroep].</string>
                         <outlet property="backgroundImage" destination="dHv-CF-ks9" id="MrG-ji-cMG"/>
                         <outlet property="birdButton" destination="iCa-yc-afv" id="3Iz-K8-DYe"/>
                         <outlet property="fishButton" destination="HcT-w6-kzG" id="s95-sM-01a"/>
+                        <outlet property="headerLabel" destination="Ri5-5D-03i" id="bES-qu-Bvw"/>
                         <outlet property="mammalButton" destination="waL-uT-QTk" id="3qw-xx-WbO"/>
                         <outlet property="nextButton" destination="fIE-W5-9D5" id="T3V-4f-S6e"/>
                         <outlet property="reptileButton" destination="hu3-Lu-8Gy" id="hiW-qa-yiK"/>

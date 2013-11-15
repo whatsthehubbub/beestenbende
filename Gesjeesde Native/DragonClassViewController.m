@@ -19,6 +19,8 @@
 
 @synthesize backgroundImage;
 
+@synthesize headerLabel;
+
 @synthesize mammalButton;
 @synthesize fishButton;
 @synthesize reptileButton;
@@ -48,8 +50,11 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
+    headerLabel.text = @"Team Blauw: maak de zin af";
     if (currentTeam.number != 1) {
         backgroundImage.image = [UIImage imageNamed:@"40-background-yellow"];
+        
+        headerLabel.text = @"Team Geel: maak de zin af";
     }
     
     self.mammalButton.enabled = !currentTeam.mammalEliminated;
