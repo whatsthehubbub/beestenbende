@@ -2088,6 +2088,7 @@ geen reptiel want u hebt…</string>
                     </view>
                     <navigationItem key="navigationItem" id="DST-A7-LpF"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="AO4-Md-wIW" id="ii4-y5-WN4"/>
                         <outlet property="featureImage" destination="8kh-6C-4gE" id="Noz-B7-gaN"/>
                         <outlet property="featureLabel" destination="n4o-Si-akp" id="Ies-TK-7e4"/>
                         <outlet property="resultAndExplanationLabel" destination="dNh-td-Cgx" id="WVL-o7-lLp"/>
@@ -4084,11 +4085,11 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sz9-qc-ZZh"/>
         <segue reference="OHM-xk-G1T"/>
-        <segue reference="cz4-cS-3oL"/>
-        <segue reference="A1T-Wu-GhT"/>
-        <segue reference="5OT-N5-qpE"/>
+        <segue reference="fpS-jq-29F"/>
+        <segue reference="sz9-qc-ZZh"/>
         <segue reference="AoM-So-BHK"/>
+        <segue reference="5OT-N5-qpE"/>
+        <segue reference="i9S-9K-imd"/>
     </inferredMetricsTieBreakers>
 </document>

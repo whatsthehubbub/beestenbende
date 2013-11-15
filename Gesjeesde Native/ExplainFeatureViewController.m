@@ -17,7 +17,7 @@
 @synthesize game;
 @synthesize currentTeam;
 
-@synthesize overlayImage;
+@synthesize backgroundImage;
 
 @synthesize featureImage;
 @synthesize featureLabel;
@@ -51,9 +51,9 @@
     [self setViewsForCurrentTeam];
     
     if (self.currentTeam.number == 1) {
-        overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-explanation-bubble.png"];
+        backgroundImage.image = [UIImage imageNamed:@"18-background-blue"];
     } else {
-        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-explanation-bubble.png"];
+        backgroundImage.image = [UIImage imageNamed:@"18-background-yellow"];
     }
 }
 
