@@ -3531,6 +3531,7 @@ want hij heeft…</string>
                     </view>
                     <navigationItem key="navigationItem" id="w7a-lX-fPL"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="cxS-tL-QcB" id="uR6-NS-Pfx"/>
                         <outlet property="explanationLabel" destination="N1a-WB-Qev" id="Ljv-I5-Zqs"/>
                         <segue destination="Dee-6Y-Prk" kind="push" identifier="DragonAgain" id="5OT-N5-qpE"/>
                     </connections>

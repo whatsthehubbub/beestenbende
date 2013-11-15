@@ -17,7 +17,7 @@
 @synthesize game;
 @synthesize currentTeam;
 
-@synthesize teamOverlay;
+@synthesize backgroundImage;
 
 @synthesize explanationLabel;
 
@@ -45,7 +45,7 @@
     }
     
     if (currentTeam.number != 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        backgroundImage.image = [UIImage imageNamed:@"49-background-yellow"];
     }
     
     // Check the result
