@@ -50,17 +50,11 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    team1Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1Label.font.pointSize];
-    team2Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2Label.font.pointSize];
-    
     team1Picture.image = game.team1.picture;
     team2Picture.image = game.team2.picture;
     
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.totalPoints]];
     [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.totalPoints]];
-    
-    team1ScoreLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1ScoreLabel.font.pointSize];
-    team2ScoreLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2ScoreLabel.font.pointSize];
     
     self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"34-progress-%d", game.issue]];
     
