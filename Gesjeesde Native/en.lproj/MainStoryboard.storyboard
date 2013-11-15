@@ -1862,6 +1862,7 @@ geen reptiel want u hebt…</string>
                     </view>
                     <navigationItem key="navigationItem" id="ZP5-aN-YkD"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="6Hx-UI-pSU" id="e1X-xq-5Av"/>
                         <outlet property="doneButton" destination="wQJ-ju-lAl" id="Gyt-vs-87c"/>
                         <outlet property="featureButton" destination="WoQ-zd-fSs" id="gwZ-R4-fpR"/>
                         <outlet property="featureImageView" destination="uTF-wg-lnc" id="vzo-yt-4N0"/>
