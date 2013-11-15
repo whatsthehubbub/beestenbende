@@ -16,8 +16,9 @@
 
 @synthesize game;
 
+@synthesize backgroundImage;
 @synthesize winnerPicture;
-@synthesize teamOverlay;
+
 @synthesize winnerLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -50,7 +51,7 @@
     }
     
     if (winner.number != 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        backgroundImage.image = [UIImage imageNamed:@"45-background-yellow"];
     }
     
     self.winnerPicture.image = winner.picture;

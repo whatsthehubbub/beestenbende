@@ -16,8 +16,9 @@
 
 @property (strong) Game *game;
 
+@property (nonatomic, retain) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic, retain) IBOutlet UIImageView *winnerPicture;
-@property (nonatomic, retain) IBOutlet UIImageView *teamOverlay;
+
 
 @property (nonatomic, retain) IBOutlet UILabel *winnerLabel;
 

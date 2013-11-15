@@ -2491,6 +2491,7 @@ geen reptiel want u hebt…</string>
                     </view>
                     <navigationItem key="navigationItem" id="IWr-Lb-mz4"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="Slo-Ni-2kW" id="1cC-5B-25g"/>
                         <outlet property="winnerPicture" destination="0O5-CU-J7b" id="iLU-D8-gLs"/>
                     </connections>
                 </viewController>
