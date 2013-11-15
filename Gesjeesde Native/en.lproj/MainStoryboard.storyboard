@@ -2079,6 +2079,10 @@ geen reptiel want u hebt…</string>
                                     <action selector="done:" destination="bTt-EX-SMb" eventType="touchUpInside" id="ei2-Nd-4xO"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="18-points-10" id="hkb-Sh-cjz">
+                                <rect key="frame" x="67" y="210" width="194" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -4007,6 +4011,7 @@ want hij heeft…</string>
         <image name="17-photo-frame" width="280" height="280"/>
         <image name="18-background-blue" width="768" height="1024"/>
         <image name="18-photo-frame" width="160" height="160"/>
+        <image name="18-points-10" width="194" height="200"/>
         <image name="19-background" width="768" height="1024"/>
         <image name="20-background" width="768" height="1024"/>
         <image name="21-nautilus" width="400" height="300"/>
