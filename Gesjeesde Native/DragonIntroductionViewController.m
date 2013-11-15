@@ -19,9 +19,6 @@
 @synthesize team1Picture;
 @synthesize team2Picture;
 
-@synthesize team1Label;
-@synthesize team2Label;
-
 @synthesize team1Proofs;
 @synthesize team2Proofs;
 
@@ -47,11 +44,8 @@
     team1Picture.image = game.team1.picture;
     team2Picture.image = game.team2.picture;
     
-    team1Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1Label.font.pointSize];
-    team2Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2Label.font.pointSize];
-    
-    self.team1Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team1.dragonFeaturesGuessed.count]];
-    self.team2Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"dragon-evidence-%d.png", game.team2.dragonFeaturesGuessed.count]];
+    self.team1Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"39-progress-%d", game.team1.dragonFeaturesGuessed.count]];
+    self.team2Proofs.image = [UIImage imageNamed:[NSString stringWithFormat:@"39-progress-%d", game.team2.dragonFeaturesGuessed.count]];
     
     
     Team *currentTeam = [game firstTeamForTurn];
