@@ -18,9 +18,6 @@
 
 @synthesize headerLabel;
 
-@synthesize team1Label;
-@synthesize team2Label;
-
 @synthesize team1Picture;
 @synthesize team2Picture;
 
@@ -105,12 +102,6 @@
     } else if (game.issue == 3) {
         [self performSegueWithIdentifier:@"EndScreen" sender:sender];
     }
-}
-
-- (IBAction)back:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
-    
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
