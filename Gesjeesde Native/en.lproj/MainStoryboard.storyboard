@@ -3243,73 +3243,21 @@ een [gekozen diergroep].</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="dHv-CF-ks9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="40-background-blue" id="dHv-CF-ks9">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="overlay-team-blue.png" id="fd8-lB-z4u">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is eigenlijk een…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ri5-5D-03i" customClass="CustomFontLabel">
+                                <rect key="frame" x="0.0" y="38" width="768" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Draakje is eigenlijk een…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ri5-5D-03i" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fIE-W5-9D5" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Verder…">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="next:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="W9j-F7-IcV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sTE-4G-h8T">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HcT-w6-kzG" customClass="CustomFontButton">
+                                <rect key="frame" x="151" y="230" width="227" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="h2c-uo-Xds"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="waL-uT-QTk">
-                                <rect key="frame" x="168" y="60" width="132" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-dragon-is-mammal-off.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="button-dragon-is-mammal-disabled.png"/>
-                                <state key="selected" image="button-dragon-is-mammal-on.png"/>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonPushed:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="8Zd-0c-GFp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="HcT-w6-kzG">
-                                <rect key="frame" x="20" y="60" width="132" height="152"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-dragon-is-fish-off.png">
+                                <state key="normal" image="40-fish-off">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -3322,11 +3270,28 @@ een [gekozen diergroep].</string>
                                     <action selector="buttonPushed:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="8m6-c6-bs3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hu3-Lu-8Gy">
-                                <rect key="frame" x="20" y="220" width="132" height="152"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="waL-uT-QTk" customClass="CustomFontButton">
+                                <rect key="frame" x="411" y="230" width="227" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-dragon-is-reptile-off.png">
+                                <state key="normal" image="40-mammal-off">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" image="button-dragon-is-mammal-disabled.png"/>
+                                <state key="selected" image="button-dragon-is-mammal-on.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPushed:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="8Zd-0c-GFp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hu3-Lu-8Gy" customClass="CustomFontButton">
+                                <rect key="frame" x="151" y="490" width="227" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="40-reptile-off">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -3339,11 +3304,11 @@ een [gekozen diergroep].</string>
                                     <action selector="buttonPushed:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="lXB-Ba-4WC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iCa-yc-afv">
-                                <rect key="frame" x="168" y="220" width="132" height="152"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iCa-yc-afv" customClass="CustomFontButton">
+                                <rect key="frame" x="411" y="490" width="227" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-dragon-is-bird-off.png">
+                                <state key="normal" image="40-bird-off">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -3356,6 +3321,37 @@ een [gekozen diergroep].</string>
                                     <action selector="buttonPushed:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="6H8-U8-WfZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sTE-4G-h8T" customClass="CustomFontButton">
+                                <rect key="frame" x="285" y="910" width="200" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Terug" backgroundImage="00-back-button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="h2c-uo-Xds"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fIE-W5-9D5" customClass="CustomFontButton">
+                                <rect key="frame" x="505" y="910" width="220" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" title="Verder…" backgroundImage="00-next-button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="next:" destination="Xrb-GQ-McX" eventType="touchUpInside" id="W9j-F7-IcV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3366,7 +3362,6 @@ een [gekozen diergroep].</string>
                         <outlet property="mammalButton" destination="waL-uT-QTk" id="3qw-xx-WbO"/>
                         <outlet property="nextButton" destination="fIE-W5-9D5" id="T3V-4f-S6e"/>
                         <outlet property="reptileButton" destination="hu3-Lu-8Gy" id="hiW-qa-yiK"/>
-                        <outlet property="teamOverlay" destination="fd8-lB-z4u" id="Z18-gd-ucf"/>
                         <segue destination="JWy-sg-rOd" kind="push" identifier="Next" id="7aH-1G-qYY"/>
                     </connections>
                 </viewController>
@@ -4063,6 +4058,11 @@ want hij heeft…</string>
         <image name="39-background" width="768" height="1024"/>
         <image name="39-photo-frame" width="240" height="240"/>
         <image name="39-progress-0" width="245" height="100"/>
+        <image name="40-background-blue" width="768" height="1024"/>
+        <image name="40-bird-off" width="227" height="260"/>
+        <image name="40-fish-off" width="227" height="260"/>
+        <image name="40-mammal-off" width="227" height="260"/>
+        <image name="40-reptile-off" width="227" height="260"/>
         <image name="43-background-yellow" width="768" height="1024"/>
         <image name="45-background-blue" width="768" height="1024"/>
         <image name="45-photo-frame" width="240" height="240"/>
@@ -4081,16 +4081,12 @@ want hij heeft…</string>
         <image name="button-bg-choose-feature-white.png" width="486" height="80"/>
         <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-dragon-is-bird-disabled.png" width="263" height="305"/>
-        <image name="button-dragon-is-bird-off.png" width="263" height="305"/>
         <image name="button-dragon-is-bird-on.png" width="263" height="305"/>
         <image name="button-dragon-is-fish-disabled.png" width="263" height="305"/>
-        <image name="button-dragon-is-fish-off.png" width="263" height="305"/>
         <image name="button-dragon-is-fish-on.png" width="263" height="305"/>
         <image name="button-dragon-is-mammal-disabled.png" width="263" height="305"/>
-        <image name="button-dragon-is-mammal-off.png" width="263" height="305"/>
         <image name="button-dragon-is-mammal-on.png" width="263" height="305"/>
         <image name="button-dragon-is-reptile-disabled.png" width="263" height="305"/>
-        <image name="button-dragon-is-reptile-off.png" width="263" height="305"/>
         <image name="button-dragon-is-reptile-on.png" width="263" height="305"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
         <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
