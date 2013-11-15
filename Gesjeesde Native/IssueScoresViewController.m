@@ -55,18 +55,11 @@
         self.headerLabel.text = @"Het draakje is ontmaskerd";
     }
     
-    team1Label.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1Label.font.pointSize];
-    
-    
-    
     team1Picture.image = game.team1.picture;
     team2Picture.image = game.team2.picture;
     
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.points]];
     [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.points]];
-    
-    team1ScoreLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team1ScoreLabel.font.pointSize];
-    team2ScoreLabel.font = [UIFont fontWithName:@"HoeflerText-Black" size:team2ScoreLabel.font.pointSize];
     
     // Store the points in the total and reset the points for the second issue
     game.team1.totalPoints += game.team1.points;
