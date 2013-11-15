@@ -19,10 +19,11 @@
 
 @property (strong) IBOutlet UILabel *headerLabel;
 
+@property (nonatomic, retain) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic, retain) IBOutlet UIImageView *pictureView;
 @property (nonatomic, retain) IBOutlet UIImageView *pictureFrame;
 
-@property (nonatomic, retain) IBOutlet UIImageView *teamOverlay;
+
 
 @property (strong) IBOutlet UILabel *explanationLabel;
 @property (strong) IBOutlet UILabel *hintLabel;
@@ -40,6 +41,5 @@
 - (IBAction)takeFeaturePictureAgain:(id)sender;
 
 - (IBAction)next:(id)sender;
-- (IBAction)back:(id)sender;
 
 @end

@@ -16,9 +16,10 @@
 
 @synthesize headerLabel;
 
+@synthesize backgroundImage;
 @synthesize pictureView;
 @synthesize pictureFrame;
-@synthesize teamOverlay;
+
 
 @synthesize takePictureButton;
 @synthesize takePictureAgainButton;
@@ -49,9 +50,10 @@
     team = [game getCurrentTeam];
     
     // Set the correct overlay for this team
-    teamOverlay.image = [UIImage imageNamed:@"overlay-team-blue.png"];
     if (team.number != 1) {
-        teamOverlay.image = [UIImage imageNamed:@"overlay-team-yellow.png"];
+        backgroundImage.image = [UIImage imageNamed:@"22-background-yellow"];
+        
+        pictureFrame.image = [UIImage imageNamed:@"22-camera-frame-yellow"];
     }
     
     self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek de %@", [[game getCurrentAnimalName] lowercaseString]];
@@ -113,12 +115,6 @@
     } else if (game.issue == 2) {
         [self performSegueWithIdentifier:@"UsePictureSecond" sender:sender];
     }
-}
-
-- (IBAction)back:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
-    
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)takeFeaturePictureAgain:(id)sender {

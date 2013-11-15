@@ -99,11 +99,11 @@
     NSString *featureButtonText;
     
     if (self.hasFeature) {
-        imageName = @"toggle-wel-on-geen-off.png";
+        imageName = @"00-wel-on-geen-off";
         
         featureButtonText = self.feature;
     } else {
-        imageName = @"toggle-wel-off-geen-on.png";
+        imageName = @"00-wel-off-geen-on";
         
         featureButtonText = [FeaturePicture featureForNegation:self.feature];
     }
