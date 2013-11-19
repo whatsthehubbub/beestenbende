@@ -1134,7 +1134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "Beestenbende" */;
+			buildConfigurationList = 4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "BeestenbendeiPad" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1609,7 +1609,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "Beestenbende" */ = {
+		4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "BeestenbendeiPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EAE98F2151A618A0051C926 /* Debug */,
