@@ -518,7 +518,7 @@
 		4EA7E222159DE72900B179BF /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
 		4EA7E223159DE72900B179BF /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
 		4EA7E224159DE72900B179BF /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
-		4EAE98D6151A618A0051C926 /* Beestenbende.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beestenbende.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAE98D6151A618A0051C926 /* BeestenbendeiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeestenbendeiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE98DA151A618A0051C926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4EAE98DC151A618A0051C926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EAE98DE151A618A0051C926 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -930,7 +930,7 @@
 		4EAE98D7151A618A0051C926 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EAE98D6151A618A0051C926 /* Beestenbende.app */,
+				4EAE98D6151A618A0051C926 /* BeestenbendeiPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1103,9 +1103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EAE98D5151A618A0051C926 /* Beestenbende */ = {
+		4EAE98D5151A618A0051C926 /* BeestenbendeiPad */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "Beestenbende" */;
+			buildConfigurationList = 4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "BeestenbendeiPad" */;
 			buildPhases = (
 				4EAE98D2151A618A0051C926 /* Sources */,
 				4EAE98D3151A618A0051C926 /* Frameworks */,
@@ -1115,9 +1115,9 @@
 			);
 			dependencies = (
 			);
-			name = Beestenbende;
+			name = BeestenbendeiPad;
 			productName = "Gesjeesde Native";
-			productReference = 4EAE98D6151A618A0051C926 /* Beestenbende.app */;
+			productReference = 4EAE98D6151A618A0051C926 /* BeestenbendeiPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1134,7 +1134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "BeestenbendeiPad" */;
+			buildConfigurationList = 4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "Beestenbende" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1152,7 +1152,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				4EAE98D5151A618A0051C926 /* Beestenbende */,
+				4EAE98D5151A618A0051C926 /* BeestenbendeiPad */,
 			);
 		};
 /* End PBXProject section */
@@ -1481,8 +1481,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "25CCB0D9-144E-4C9D-9943-490A5B50B0E4";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "25CCB0D9-144E-4C9D-9943-490A5B50B0E4";
+				PROVISIONING_PROFILE = "89B6B294-3578-46EC-B8DD-460ADC710EAE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "89B6B294-3578-46EC-B8DD-460ADC710EAE";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1503,8 +1503,8 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = Beestenbende;
-				PROVISIONING_PROFILE = "";
+				PRODUCT_NAME = BeestenbendeiPad;
+				PROVISIONING_PROFILE = "89B6B294-3578-46EC-B8DD-460ADC710EAE";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1577,7 +1577,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
-				PRODUCT_NAME = Beestenbende;
+				PRODUCT_NAME = BeestenbendeiPad;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1599,7 +1599,7 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = Beestenbende;
+				PRODUCT_NAME = BeestenbendeiPad;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1609,7 +1609,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "BeestenbendeiPad" */ = {
+		4EAE98D0151A61890051C926 /* Build configuration list for PBXProject "Beestenbende" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EAE98F2151A618A0051C926 /* Debug */,
@@ -1619,7 +1619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "Beestenbende" */ = {
+		4EAE98F4151A618A0051C926 /* Build configuration list for PBXNativeTarget "BeestenbendeiPad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4EAE98F5151A618A0051C926 /* Debug */,
