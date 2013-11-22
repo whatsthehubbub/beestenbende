@@ -1503,7 +1503,7 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = BeestenbendeiPad;
+				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "89B6B294-3578-46EC-B8DD-460ADC710EAE";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1577,7 +1577,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
-				PRODUCT_NAME = BeestenbendeiPad;
+				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -1599,7 +1599,7 @@
 					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PRODUCT_NAME = BeestenbendeiPad;
+				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
