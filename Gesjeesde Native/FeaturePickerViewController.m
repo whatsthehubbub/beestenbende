@@ -104,9 +104,9 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     // http://www.iphonedevsdk.com/forum/iphone-sdk-development/5172-font-size-color-tableview-header.html
-    UIView *wrapperView = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 44.0)];
+//    UIView *wrapperView = [[UIView alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 44.0)];
 
-    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 0.0, 300.0, 44.0)];
+    UILabel *headerLabel = [[UILabel alloc] init];
     headerLabel.backgroundColor = [UIColor clearColor];
     headerLabel.opaque = NO;
     
@@ -114,8 +114,10 @@
     
     headerLabel.text = [[self.game.features objectAtIndex:section] objectForKey:@"Group"];
     
-    [wrapperView addSubview:headerLabel];
-    return wrapperView;
+//    [wrapperView addSubview:headerLabel];
+//    return wrapperView;
+    
+    return headerLabel;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
