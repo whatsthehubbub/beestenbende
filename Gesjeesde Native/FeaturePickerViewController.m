@@ -107,7 +107,7 @@
     headerLabel.backgroundColor = [UIColor clearColor];
     headerLabel.opaque = NO;
     
-    headerLabel.font = [UIFont fontWithName:@"LindenHill" size:50.0];
+    headerLabel.font = [UIFont fontWithName:@"LindenHill-Italic" size:50.0];
     headerLabel.text = [[self.game.features objectAtIndex:section] objectForKey:@"Group"];
     
     UIView *wrapperView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, headerLabel.frame.size.height)];
