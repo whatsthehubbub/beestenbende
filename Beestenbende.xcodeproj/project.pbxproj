@@ -518,7 +518,7 @@
 		4EA7E222159DE72900B179BF /* CocosDenshion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocosDenshion.m; sourceTree = "<group>"; };
 		4EA7E223159DE72900B179BF /* SimpleAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAudioEngine.h; sourceTree = "<group>"; };
 		4EA7E224159DE72900B179BF /* SimpleAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAudioEngine.m; sourceTree = "<group>"; };
-		4EAE98D6151A618A0051C926 /* BeestenbendeiPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeestenbendeiPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAE98D6151A618A0051C926 /* Beestenbende iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beestenbende iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EAE98DA151A618A0051C926 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4EAE98DC151A618A0051C926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4EAE98DE151A618A0051C926 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -930,7 +930,7 @@
 		4EAE98D7151A618A0051C926 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EAE98D6151A618A0051C926 /* BeestenbendeiPad.app */,
+				4EAE98D6151A618A0051C926 /* Beestenbende iPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1117,7 +1117,7 @@
 			);
 			name = BeestenbendeiPad;
 			productName = "Gesjeesde Native";
-			productReference = 4EAE98D6151A618A0051C926 /* BeestenbendeiPad.app */;
+			productReference = 4EAE98D6151A618A0051C926 /* Beestenbende iPad.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

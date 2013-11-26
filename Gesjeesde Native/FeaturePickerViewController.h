@@ -17,7 +17,7 @@
 -(void)featurePickerViewController:(FeaturePickerViewController *)controller didSelectFeature:(NSString *)feature;
 @end;
 
-@interface FeaturePickerViewController : UITableViewController {
+@interface FeaturePickerViewController : UIViewController {
     Game *game;
 }
 
