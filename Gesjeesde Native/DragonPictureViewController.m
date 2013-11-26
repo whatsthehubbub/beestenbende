@@ -65,10 +65,7 @@
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
     self.classLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk \r van een %@.", class.lowercaseString];
     
-    // Start capture session and bind it to the image view
-    self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];
-    
-    [self.csManager startPreview];
+    [self setupCaptureManager];
     
     // For some reason this camera does not resume gracefully after Active/Inactive
     // I suspect this has something to do with looping back through this ViewController
@@ -105,6 +102,12 @@
     self.dragonPictureFrame.hidden = NO;
 }
 
+- (void)setupCaptureManager {
+    // Start capture session and bind it to the image view
+    csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];
+    [csManager startPreview];
+}
+
 #pragma mark -
 
 - (IBAction)takeDragonPicture:(id)sender {
@@ -123,7 +126,7 @@
 }
 
 - (IBAction)takeDragonPictureAgain:(id)sender {
-    [csManager startPreview];
+    [self setupCaptureManager];
     
     self.takeDragonPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
@@ -134,7 +137,7 @@
     [currentTeam.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
                                      [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
     
-    [self.csManager stopPreview];
+    [self.csManager disposeOfSession];
     
     
     // Remove notification observers

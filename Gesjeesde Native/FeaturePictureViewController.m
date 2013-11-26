@@ -65,9 +65,8 @@
     } else if (game.issue == 2) {
         self.hintLabel.text = @"Bijvoorbeeld: vinnen.";
     }
-
-    csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
-    [csManager startPreview];
+    
+    [self setupCaptureManager];
     
     self.pictureFrame.hidden = NO;
     
@@ -118,11 +117,16 @@
 }
 
 - (IBAction)takeFeaturePictureAgain:(id)sender {
-    [csManager startPreview];
+    [self setupCaptureManager];
     
     self.takePictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
+}
+
+- (void)setupCaptureManager {
+    csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
+    [csManager startPreview];
 }
 
 #pragma mark -
