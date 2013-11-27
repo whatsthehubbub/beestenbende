@@ -175,29 +175,18 @@
 
 // Remove this method altogether TODO
 - (Team *)firstTeamForTurn {
-    if (issue == 1) {
-//        if (!self.firstTeam) {
-//            
-//        }
-//        
-//        return self.firstTeam;
-        
-    } else if (issue == 2) {
-        // TODO who is allowed to start here?
-        if ((turn + issue - 1) % 2 == 0) {
-            return team2;
-        } else {
-            return team1;
-        }
-    } else if (issue == 3) {
-        // For issue 3 the team with the most points is allowed to start (and a minor advantage)
-        if (team1.totalPoints > team2.totalPoints) {
-            // Behaviour undefined for tie
-            return team1;
-        } else {
-            return team2;
-        }
+    // This function is only called by the Dragon issue so no check for issue is required anymore
+//    if (issue == 3) {
+    
+    // For issue 3 the team with the most points is allowed to start (and a minor advantage)
+    if (team1.totalPoints > team2.totalPoints) {
+        // Behaviour undefined for tie
+        return team1;
+    } else {
+        return team2;
     }
+    
+//    }
 }
 
 - (Team *)secondTeamForTurn {
