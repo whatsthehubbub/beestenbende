@@ -103,11 +103,11 @@
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, 15, tableView.frame.size.width, 90)];
+    UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 3, tableView.frame.size.width, 75)];
     headerLabel.backgroundColor = [UIColor clearColor];
     headerLabel.opaque = NO;
     
-    headerLabel.font = [UIFont fontWithName:@"LindenHill-Italic" size:50.0];
+    headerLabel.font = [UIFont fontWithName:@"LindenHill-Italic" size:40.0];
     headerLabel.text = [[self.game.features objectAtIndex:section] objectForKey:@"Group"];
     
     UIView *wrapperView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.frame.size.width, headerLabel.frame.size.height)];
@@ -116,7 +116,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 90.0;
+    return 75.0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
