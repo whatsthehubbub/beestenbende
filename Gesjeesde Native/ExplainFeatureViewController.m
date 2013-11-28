@@ -77,7 +77,7 @@
         featureText = [FeaturePicture featureForNegation:fp.feature];
     }
 
-    featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@", [game getCurrentAnimalName], present, featureText]; 
+    featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@.", [game getCurrentAnimalName], present, featureText]; 
     
     // Lots of code to generate the result
     NSString *explanation = [[game getFeatureWithName:fp.feature] objectForKey:@"Explanation"];
