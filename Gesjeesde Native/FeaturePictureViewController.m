@@ -127,6 +127,8 @@
 - (void)setupCaptureManager {
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
     [csManager startPreview];
+    
+    self.takePictureButton.enabled = YES;
 }
 
 #pragma mark -
