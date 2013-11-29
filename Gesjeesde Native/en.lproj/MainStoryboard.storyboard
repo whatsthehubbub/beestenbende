@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="a31-AO-osa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="an3-Z1-mOZ">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="-3310"/>
+            <point key="canvasLocation" x="3735" y="-3330"/>
         </scene>
         <!--Map View Controller - Map-->
         <scene sceneID="S9k-Fp-Exm">
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgD-rJ-5Nq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3727" y="-3310"/>
+            <point key="canvasLocation" x="4701" y="-3310"/>
         </scene>
         <!--Welcome View Controller - Welcome-->
         <scene sceneID="qrX-xg-Mrk">
@@ -2743,54 +2743,6 @@ Audio</string>
             </objects>
             <point key="canvasLocation" x="3727" y="-2157"/>
         </scene>
-        <!--Splash View Controller-->
-        <scene sceneID="o7I-wb-sCo">
-            <objects>
-                <viewController id="3Oi-9P-c94" customClass="SplashViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gJ5-bk-kBy">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="um-logo-splash.jpg" id="CHF-Vp-itB">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="vvB-qd-Q5U"/>
-                    <connections>
-                        <segue destination="umP-hU-cZb" kind="push" identifier="Next" id="SX8-6g-XRT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P0U-F6-V3j" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="924" y="-3310"/>
-        </scene>
-        <!--Splash View Controller-->
-        <scene sceneID="OhM-7N-Nf9">
-            <objects>
-                <viewController id="umP-hU-cZb" customClass="SplashViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="FEF-YG-zEG">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="hubbub-logo-splash.jpg" id="DX6-jC-0xX">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="AR2-Rp-EZ9"/>
-                    <connections>
-                        <segue destination="2" kind="push" identifier="Next" id="J2h-Zn-n45"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Db8-Ws-oGR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1883" y="-3310"/>
-        </scene>
         <!--Second Issue Explanation View Controller - SecondFish-->
         <scene sceneID="EXb-LP-run">
             <objects>
@@ -3808,25 +3760,6 @@ want hij heeft…</string>
             </objects>
             <point key="canvasLocation" x="-30" y="608"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="uvS-q7-vsb">
-            <objects>
-                <navigationController navigationBarHidden="YES" id="a31-AO-osa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BfT-By-uRx">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="3Oi-9P-c94" kind="relationship" relationship="rootViewController" id="YUg-Z9-Sge"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dku-Ol-iWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-58" y="-3310"/>
-        </scene>
         <!--Issue Splash View Controller-->
         <scene sceneID="tfG-hs-F3d">
             <objects>
@@ -4005,6 +3938,26 @@ want hij heeft…</string>
             </objects>
             <point key="canvasLocation" x="903" y="3012"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="W30-SU-dGu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="an3-Z1-mOZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AKM-QU-JUn">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="VIK-WO-AVS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yp2-vf-T0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2773" y="-3330"/>
+        </scene>
     </scenes>
     <resources>
         <image name="00-back-button" width="200" height="60"/>
@@ -4088,7 +4041,6 @@ want hij heeft…</string>
         <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
         <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="hubbub-logo-splash.jpg" width="640" height="960"/>
         <image name="hubbub-typo.png" width="428" height="82"/>
         <image name="logo-gemeente-utrecht.png" width="214" height="133"/>
         <image name="logo-min-eli.png" width="428" height="185"/>
@@ -4101,7 +4053,6 @@ want hij heeft…</string>
         <image name="tfi-logo.png" width="428" height="201"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
         <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
-        <image name="um-logo-splash.jpg" width="640" height="960"/>
         <image name="um-logo.png" width="428" height="164"/>
         <image name="zoek-foto-zeepaling.jpg" width="240" height="240"/>
     </resources>
