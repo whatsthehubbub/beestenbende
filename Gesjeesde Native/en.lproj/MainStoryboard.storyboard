@@ -1493,14 +1493,14 @@ veren. Ja, toch?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="We hebben een muntje opgegooid en…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Dv3-KM-zeD" customClass="CustomFontLabel">
-                                <rect key="frame" x="180" y="278" width="411" height="100"/>
+                                <rect key="frame" x="180" y="148" width="411" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="…mag beginnen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" id="L5T-z9-x4y" customClass="CustomFontLabel">
-                                <rect key="frame" x="180" y="548" width="411" height="50"/>
+                                <rect key="frame" x="180" y="598" width="411" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1538,6 +1538,14 @@ veren. Ja, toch?</string>
                                     <action selector="next:" destination="mhP-gb-YWU" eventType="touchUpInside" id="5rC-uR-5TW"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="SQW-Z8-y5s">
+                                <rect key="frame" x="270" y="340" width="220" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="43-photo-frame-yellow" id="4TZ-Cz-VyF">
+                                <rect key="frame" x="260" y="330" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -4032,6 +4040,7 @@ want hij heeft…</string>
         <image name="42-choose-feature" width="500" height="60"/>
         <image name="42-photo-frame-blue" width="280" height="280"/>
         <image name="43-background-yellow" width="768" height="1024"/>
+        <image name="43-photo-frame-yellow" width="240" height="240"/>
         <image name="44-header" width="768" height="90"/>
         <image name="45-background-blue" width="768" height="1024"/>
         <image name="45-photo-frame" width="240" height="240"/>
@@ -4071,10 +4080,10 @@ want hij heeft…</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="sz9-qc-ZZh"/>
+        <segue reference="GW9-yo-buq"/>
+        <segue reference="cz4-cS-3oL"/>
         <segue reference="5OT-N5-qpE"/>
         <segue reference="cOM-ft-9PE"/>
         <segue reference="AoM-So-BHK"/>
-        <segue reference="OHM-xk-G1T"/>
-        <segue reference="cz4-cS-3oL"/>
     </inferredMetricsTieBreakers>
 </document>
