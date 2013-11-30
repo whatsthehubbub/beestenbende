@@ -449,38 +449,23 @@ dus ik ben een vogel!</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.jpg" id="QdM-0N-lfT">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="26-background" id="QdM-0N-lfT">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uYr-LT-gkD" customClass="ArrowRight">
-                                <rect key="frame" x="127" y="418" width="173" height="42"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek de zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="X5b-Vv-Zkh" customClass="CustomFontLabel">
+                                <rect key="frame" x="0.0" y="38" width="768" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Ja, gevonden!">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="done:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="5iQ-9M-zLf"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek de zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="X5b-Vv-Zkh" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MKi-E8-DB4">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MKi-E8-DB4" customClass="CustomFontButton">
+                                <rect key="frame" x="285" y="910" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <state key="normal" title="Terug" backgroundImage="00-back-button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -490,14 +475,21 @@ dus ik ben een vogel!</string>
                                     <action selector="back:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="Tzj-hg-ELP"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="zoek-foto-zeepaling.jpg" id="YTH-J4-GQW">
-                                <rect key="frame" x="40" y="120" width="240" height="240"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uYr-LT-gkD" customClass="CustomFontButton">
+                                <rect key="frame" x="505" y="910" width="220" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo-frame-square-480.png" id="BjI-hy-6ds">
-                                <rect key="frame" x="36" y="116" width="248" height="247"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <state key="normal" title="Ja, gevonden!" backgroundImage="00-next-button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="Vwl-8G-Q8z" eventType="touchUpInside" id="5iQ-9M-zLf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3987,6 +3979,7 @@ want hij heeft…</string>
         <image name="22-background-blue" width="768" height="1024"/>
         <image name="22-camera-frame-blue" width="400" height="400"/>
         <image name="25-background" width="768" height="1024"/>
+        <image name="26-background" width="768" height="1024"/>
         <image name="34-progress-1" width="520" height="170"/>
         <image name="34-ribbon" width="510" height="97"/>
         <image name="35-background" width="768" height="1024"/>
@@ -4027,7 +4020,6 @@ want hij heeft…</string>
         <image name="animal-eel.png" width="290" height="429"/>
         <image name="animal-fish-happy.png" width="329" height="463"/>
         <image name="animal-fish.png" width="329" height="463"/>
-        <image name="bg-0-plain.jpg" width="640" height="960"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
         <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
@@ -4039,14 +4031,12 @@ want hij heeft…</string>
         <image name="logo-provincie-utrecht.png" width="428" height="57"/>
         <image name="overlay-team-blue-choose-evidence-bubble.png" width="640" height="960"/>
         <image name="photo-frame-square-160.png" width="171" height="169"/>
-        <image name="photo-frame-square-480.png" width="496" height="494"/>
         <image name="speech-bubble-big-mirrored.png" width="560" height="500"/>
         <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="tfi-logo.png" width="428" height="201"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
         <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
         <image name="um-logo.png" width="428" height="164"/>
-        <image name="zoek-foto-zeepaling.jpg" width="240" height="240"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
