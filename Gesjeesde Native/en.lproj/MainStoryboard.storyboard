@@ -2858,41 +2858,33 @@ Help ons bewijzen dat hij een vis is en geen reptiel.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-5-intro-mission-1.jpg" id="5g9-5j-f84">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="33-background" id="5g9-5j-f84">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="speech-bubble-big.png" id="fYH-LF-c8M">
-                                <rect key="frame" x="20" y="60" width="280" height="250"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QH5-D3-BWV" customClass="CustomFontLabel">
+                                <rect key="frame" x="0.0" y="38" width="768" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="animal-fish-happy.png" id="jvV-jd-okv">
-                                <rect key="frame" x="0.0" y="248" width="164" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="U4s-2M-rSm" customClass="NormalLabel">
-                                <rect key="frame" x="40" y="80" width="240" height="155"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="U4s-2M-rSm" customClass="CustomFontLabel">
+                                <rect key="frame" x="166" y="358" width="461" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Juist! 
 Ken uw kenmerken, 
 zeepaling.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QH5-D3-BWV" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8ej-au-1S7" customClass="CustomFontButton">
+                                <rect key="frame" x="285" y="910" width="200" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8ej-au-1S7">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <state key="normal" title="Terug" backgroundImage="00-back-button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -2902,12 +2894,11 @@ zeepaling.</string>
                                     <action selector="back:" destination="jda-9n-bj0" eventType="touchUpInside" id="KaZ-YY-KHy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m5W-mm-oRw" customClass="ArrowRight">
-                                <rect key="frame" x="160" y="418" width="140" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="m5W-mm-oRw" customClass="CustomFontButton">
+                                <rect key="frame" x="505" y="910" width="220" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Verder…">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <state key="normal" title="Verder…" backgroundImage="00-next-button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -3953,6 +3944,7 @@ want hij heeft…</string>
         <image name="27-background-fish" width="768" height="1024"/>
         <image name="28-background" width="768" height="1024"/>
         <image name="32-background" width="768" height="1024"/>
+        <image name="33-background" width="768" height="1024"/>
         <image name="34-progress-1" width="520" height="170"/>
         <image name="34-ribbon" width="510" height="97"/>
         <image name="35-background" width="768" height="1024"/>
@@ -3989,11 +3981,9 @@ want hij heeft…</string>
         <image name="47-background" width="768" height="1024"/>
         <image name="48-background" width="768" height="1024"/>
         <image name="49-background-blue" width="768" height="1024"/>
-        <image name="animal-fish-happy.png" width="329" height="463"/>
         <image name="animal-fish.png" width="329" height="463"/>
         <image name="bg-0-plain.png" width="640" height="960"/>
         <image name="bg-4-welcome-to-cabinet.jpg" width="641" height="960"/>
-        <image name="bg-5-intro-mission-1.jpg" width="641" height="960"/>
         <image name="button-bg-choose-feature.png" width="566" height="80"/>
         <image name="button-titlebar-back.png" width="80" height="80"/>
         <image name="hubbub-typo.png" width="428" height="82"/>
@@ -4002,7 +3992,6 @@ want hij heeft…</string>
         <image name="logo-provincie-utrecht.png" width="428" height="57"/>
         <image name="overlay-team-blue-choose-evidence-bubble.png" width="640" height="960"/>
         <image name="photo-frame-square-160.png" width="171" height="169"/>
-        <image name="speech-bubble-big.png" width="560" height="500"/>
         <image name="tfi-logo.png" width="428" height="201"/>
         <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
         <image name="toggle-wel-on-geen-off.png" width="566" height="80"/>
@@ -4016,9 +4005,9 @@ want hij heeft…</string>
     <inferredMetricsTieBreakers>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="GW9-yo-buq"/>
+        <segue reference="aIf-Jt-bSO"/>
         <segue reference="cz4-cS-3oL"/>
         <segue reference="5OT-N5-qpE"/>
         <segue reference="cOM-ft-9PE"/>
-        <segue reference="AoM-So-BHK"/>
     </inferredMetricsTieBreakers>
 </document>
