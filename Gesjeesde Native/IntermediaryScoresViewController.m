@@ -63,7 +63,7 @@
             
             Team *winner = game.team1.dragonFeaturesGuessed.count == 3 ? game.team1 : game.team2;
             
-            self.tieLabel.text = [NSString stringWithFormat:@"Gelijkspel! %@ heeft het draakje opgelost en wint dus.", [winner getTeamName]];
+            self.tieLabel.text = [NSString stringWithFormat:@"Gelijkspel! %@ heeft \r het draakje opgelost en wint dus.", [winner getTeamName]];
             self.tieLabel.hidden = NO;
             
             

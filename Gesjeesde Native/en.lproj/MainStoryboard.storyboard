@@ -2409,14 +2409,16 @@ geen reptiel want u hebt…</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="34-progress-1" id="swt-ai-enj">
-                                <rect key="frame" x="124" y="710" width="520" height="170"/>
+                                <rect key="frame" x="124" y="740" width="520" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gelijkspel! [Kleur] heeft het draakje opgelost en wint dus." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vB2-Un-cTd" customClass="CustomFontLabel">
-                                <rect key="frame" x="20" y="880" width="477" height="120"/>
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vB2-Un-cTd" customClass="CustomFontLabel">
+                                <rect key="frame" x="138" y="660" width="492" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Gelijkspel! [Kleur] heeft het 
+draakje opgelost en wint dus.</string>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uUL-N6-Wm5" customClass="CustomFontButton">
@@ -2434,6 +2436,10 @@ geen reptiel want u hebt…</string>
                                     <action selector="nextIssue:" destination="rSy-eg-ifs" eventType="touchUpInside" id="op6-Ig-Cse"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="34-ribbon" id="KLM-ok-6HB">
+                                <rect key="frame" x="129" y="652" width="510" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3998,6 +4004,7 @@ want hij heeft…</string>
         <image name="22-background-blue" width="768" height="1024"/>
         <image name="22-camera-frame-blue" width="400" height="400"/>
         <image name="34-progress-1" width="520" height="170"/>
+        <image name="34-ribbon" width="510" height="97"/>
         <image name="35-background" width="768" height="1024"/>
         <image name="36-background" width="768" height="1024"/>
         <image name="37-background-dragon" width="768" height="1024"/>
