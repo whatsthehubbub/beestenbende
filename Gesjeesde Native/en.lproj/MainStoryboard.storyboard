@@ -1660,11 +1660,10 @@ geen reptiel want u hebt…</string>
                                 <rect key="frame" x="164" y="545" width="440" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" image="00-wel-off-geen-on">
+                                <state key="normal" image="00-wel-on-geen-off">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="disabled" image="toggle-wel-on-geen-off-inactive.png"/>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -3897,7 +3896,6 @@ want hij heeft…</string>
         <image name="00-choose-feature" width="440" height="60"/>
         <image name="00-nautilus-background" width="768" height="1024"/>
         <image name="00-next-button" width="220" height="60"/>
-        <image name="00-wel-off-geen-on" width="440" height="80"/>
         <image name="00-wel-on-geen-off" width="440" height="80"/>
         <image name="01-background" width="768" height="1024"/>
         <image name="01-credits-button" width="240" height="60"/>
@@ -3979,7 +3977,6 @@ want hij heeft…</string>
         <image name="logo-min-eli.png" width="428" height="185"/>
         <image name="logo-provincie-utrecht.png" width="428" height="57"/>
         <image name="tfi-logo.png" width="428" height="201"/>
-        <image name="toggle-wel-on-geen-off-inactive.png" width="105" height="79"/>
         <image name="um-logo.png" width="428" height="164"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -3991,8 +3988,8 @@ want hij heeft…</string>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="GW9-yo-buq"/>
         <segue reference="aIf-Jt-bSO"/>
-        <segue reference="cz4-cS-3oL"/>
-        <segue reference="bVc-ph-DLl"/>
+        <segue reference="HNX-X0-mXX"/>
+        <segue reference="fpS-jq-29F"/>
         <segue reference="5OT-N5-qpE"/>
     </inferredMetricsTieBreakers>
 </document>
