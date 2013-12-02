@@ -50,11 +50,8 @@
     team = [game getCurrentTeam];
     
     // Set the correct overlay for this team
-    if (team.number != 1) {
-        backgroundImage.image = [UIImage imageNamed:@"22-background-yellow"];
-        
-        pictureFrame.image = [UIImage imageNamed:@"22-camera-frame-yellow"];
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"22-background-%@", [team getTeamColor]]];
+    pictureFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"22-camera-frame-%@", [team getTeamColor]]];
     
     self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek de %@", [[game getCurrentAnimalName] lowercaseString]];
     
