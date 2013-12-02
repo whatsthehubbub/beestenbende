@@ -19,11 +19,6 @@
 @property (nonatomic, retain) IBOutlet UIImageView *backgroundImage;
 @property (nonatomic, retain) IBOutlet UIImageView *winnerPicture;
 
-
-@property (nonatomic, retain) IBOutlet UILabel *winnerLabel;
-
 - (IBAction)mainMenu:(id)sender;
-
-- (IBAction)back:(id)sender;
 
 @end

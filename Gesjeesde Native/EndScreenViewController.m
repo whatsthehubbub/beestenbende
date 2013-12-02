@@ -19,8 +19,6 @@
 @synthesize backgroundImage;
 @synthesize winnerPicture;
 
-@synthesize winnerLabel;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -49,13 +47,10 @@
         // The team that had 3 dragon proofs wins on ties
         winner = game.team1.dragonFeaturesGuessed.count == 3 ? game.team1 : game.team2;
     }
-    
-    if (winner.number != 1) {
-        backgroundImage.image = [UIImage imageNamed:@"45-background-yellow"];
-    }
+        
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"45-background-%@", [winner getTeamColor]]];
     
     self.winnerPicture.image = winner.picture;
-    self.winnerLabel.text = [NSString stringWithFormat:@"Team %@", [winner getTeamName]];
     
     [Flurry logEvent:@"GameOver"];
 }
@@ -82,12 +77,6 @@
     
     
 //    [self.navigationController popToRootViewControllerAnimated:YES];
-}
-
-- (IBAction)back:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
-    
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
