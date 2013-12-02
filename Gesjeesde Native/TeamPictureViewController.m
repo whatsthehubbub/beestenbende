@@ -133,9 +133,8 @@
         self.currentTeamNumber = 2;
         
         [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [game.team2 getTeamName]]];
-        [self.backgroundImage setImage:[UIImage imageNamed:@"10-background-yellow"]];
-        [self.teamPictureFrame setImage:[UIImage imageNamed:@"10-camera-frame-yellow"]];
-        
+        [self.backgroundImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"10-background-%@", [game.team2 getTeamColor]]]];
+        [self.teamPictureFrame setImage:[UIImage imageNamed:[NSString stringWithFormat:@"10-camera-frame-%@", [game.team2 getTeamColor]]]];
         
         // Setup everything for team picture again
         [self takeTeamPictureAgain:self];
