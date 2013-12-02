@@ -54,13 +54,9 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    if (currentTeam.number != 1) {
-        backgroundImage.image = [UIImage imageNamed:@"41-background-yellow"];
-        
-        dragonPictureFrame.image = [UIImage imageNamed:@"41-photo-frame-yellow"];
-        
-        headerLabel.text = @"Team Geel: onderzoek de draak";
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"41-background-%@", [currentTeam getTeamColor]]];
+    dragonPictureFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"41-photo-frame-%@", [currentTeam getTeamColor]]];
+    headerLabel.text = [NSString stringWithFormat:@"Team %@: onderzoek de draak", [currentTeam getTeamName]];
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
     self.classLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk \r van een %@.", class.lowercaseString];

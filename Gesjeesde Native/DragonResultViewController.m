@@ -44,9 +44,7 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    if (currentTeam.number != 1) {
-        backgroundImage.image = [UIImage imageNamed:@"49-background-yellow"];
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"49-background-%@", [currentTeam getTeamColor]]];
     
     // Check the result
     FeaturePicture *featurePicture = currentTeam.featurePictures.lastObject;
