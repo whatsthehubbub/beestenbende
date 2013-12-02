@@ -53,6 +53,7 @@
 @property (assign) BOOL birdEliminated;
 
 -(id)initWithNumber:(int)teamNumber;
+-(NSString *)getTeamColor;
 -(NSString *)getTeamName;
 -(NSString *)getPicturePath;
 

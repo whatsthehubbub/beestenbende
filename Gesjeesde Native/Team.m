@@ -60,6 +60,14 @@
     }
 }
 
+- (NSString *)getTeamColor {
+    if (self.number == 1) {
+        return @"blue";
+    } else {
+        return @"yellow";
+    }
+}
+
 -(NSString *)getPicturePath {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];

@@ -51,13 +51,8 @@
     
     [self setViewsForCurrentTeam];
     
-    if (self.currentTeam.number == 1) {
-        backgroundImage.image = [UIImage imageNamed:@"18-background-blue"];
-        featureImageFrame.image = [UIImage imageNamed:@"18-photo-frame-blue"];
-    } else {
-        backgroundImage.image = [UIImage imageNamed:@"18-background-yellow"];
-        featureImageFrame.image = [UIImage imageNamed:@"18-photo-frame-yellow"];
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-background-%@", [currentTeam getTeamColor]]];
+    featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-photo-frame-%@", [currentTeam getTeamColor]]];
 }
 
 - (void)setViewsForCurrentTeam {
@@ -92,7 +87,7 @@
         
         currentTeam.points += 10;
         
-        self.pointsImage.image = [UIImage imageNamed:@"18-points-10"];
+        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-10-%@", [currentTeam getTeamColor]]];
     } else if (result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
         
@@ -106,7 +101,7 @@
     } else {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
         
-        self.pointsImage.image = [UIImage imageNamed:@"18-points-00"];
+        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-00", [currentTeam getTeamColor]]];
     }
     
     if (result == FEATURE_YES_UNIQUE || result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT || result == FEATURE_NO_INCORRECT_AND_UNIQUE) {
