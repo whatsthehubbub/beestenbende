@@ -93,7 +93,7 @@
         
         currentTeam.points += 5;
         
-        self.pointsImage.image = [UIImage imageNamed:@"18-points-05"];
+        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-05-%@", [currentTeam getTeamColor]]];
     } else if (result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: een %@ en een %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [game getCurrentAnimalName]];
         
@@ -101,7 +101,7 @@
     } else {
         resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
         
-        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-00", [currentTeam getTeamColor]]];
+        self.pointsImage.image = [UIImage imageNamed:@"18-points-00"];
     }
     
     if (result == FEATURE_YES_UNIQUE || result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT || result == FEATURE_NO_INCORRECT_AND_UNIQUE) {
