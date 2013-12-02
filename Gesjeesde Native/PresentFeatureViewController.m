@@ -17,7 +17,6 @@
 @synthesize headerLabel;
 
 @synthesize backgroundImage;
-@synthesize overlayImage;
 
 @synthesize yesNoButton;
 @synthesize featureButton;
@@ -55,15 +54,7 @@
     
     self.headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [self.currentTeam getTeamName]];
     
-    if (self.currentTeam.number == 1) {
-        overlayImage.image = [UIImage imageNamed:@"overlay-team-blue-choose-evidence-bubble.png"];
-        
-        backgroundImage.image = [UIImage imageNamed:@"17-background-blue"];
-    } else {
-        overlayImage.image = [UIImage imageNamed:@"overlay-team-yellow-choose-evidence-bubble.png"];
-        
-        backgroundImage.image = [UIImage imageNamed:@"17-background-yellow"];
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"17-background-%@", [currentTeam getTeamColor]]];
     
     self.hasFeature = YES;
     

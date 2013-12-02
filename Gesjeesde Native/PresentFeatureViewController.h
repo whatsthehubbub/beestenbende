@@ -21,8 +21,6 @@
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
 
-@property (nonatomic, retain) IBOutlet UIImageView *overlayImage;
-
 @property (nonatomic, retain) IBOutlet UIButton *yesNoButton;
 @property (nonatomic, retain) IBOutlet UIButton *featureButton;
 @property (nonatomic, retain) IBOutlet UIImageView *featureImageView;
