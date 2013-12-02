@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="an3-Z1-mOZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="an3-Z1-mOZ">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -2401,7 +2401,7 @@ draakje opgelost en wint dus.</string>
                         <outlet property="team1ScoreLabel" destination="OM1-AH-2xP" id="1NC-Q6-hp3"/>
                         <outlet property="team2Picture" destination="6xt-As-GCo" id="s8P-eb-4Fs"/>
                         <outlet property="team2ScoreLabel" destination="t3g-6B-II9" id="cKH-xx-fOp"/>
-                        <outlet property="tieLabel" destination="vB2-Un-cTd" id="zl2-M4-3Bw"/>
+                        <outlet property="tieImage" destination="KLM-ok-6HB" id="tsc-n4-rOR"/>
                         <segue destination="3rS-nM-KiT" kind="push" identifier="EndScreen" id="0rk-rs-l5i"/>
                     </connections>
                 </viewController>

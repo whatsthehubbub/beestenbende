@@ -25,6 +25,7 @@
 @synthesize team2ScoreLabel;
 
 @synthesize tieLabel;
+@synthesize tieImage;
 
 @synthesize progressImage;
 
@@ -65,8 +66,7 @@
             
             self.tieLabel.text = [NSString stringWithFormat:@"Gelijkspel! %@ heeft \r het draakje opgelost en wint dus.", [winner getTeamName]];
             self.tieLabel.hidden = NO;
-            
-            
+            self.tieImage.hidden = NO;
         }
     }
 }

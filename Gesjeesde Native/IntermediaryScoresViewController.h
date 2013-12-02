@@ -24,6 +24,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *team2ScoreLabel;
 
 @property (nonatomic, retain) IBOutlet UILabel *tieLabel;
+@property (strong) IBOutlet UIImageView *tieImage;
 
 @property (nonatomic, retain) IBOutlet UIImageView *progressImage;
 
