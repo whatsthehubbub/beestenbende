@@ -1723,6 +1723,7 @@ geen reptiel want u hebt…</string>
                     </view>
                     <navigationItem key="navigationItem" id="TPb-Br-cHt"/>
                     <connections>
+                        <outlet property="backgroundImage" destination="NyC-h6-uM5" id="pPU-tZ-ARn"/>
                         <outlet property="doneButton" destination="v27-C1-U6a" id="N9f-jP-p95"/>
                         <outlet property="featureButton" destination="N0H-sq-Nql" id="KrU-Zt-10L"/>
                         <outlet property="featureImageView" destination="dne-2T-11h" id="7rs-hJ-qBb"/>
@@ -3991,8 +3992,8 @@ want hij heeft…</string>
         <segue reference="all-Ba-Vs9"/>
         <segue reference="aIf-Jt-bSO"/>
         <segue reference="OHM-xk-G1T"/>
-        <segue reference="fpS-jq-29F"/>
-        <segue reference="HNX-X0-mXX"/>
+        <segue reference="cz4-cS-3oL"/>
+        <segue reference="bVc-ph-DLl"/>
         <segue reference="5OT-N5-qpE"/>
     </inferredMetricsTieBreakers>
 </document>
