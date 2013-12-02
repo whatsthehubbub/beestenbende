@@ -50,11 +50,8 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    if (currentTeam.number != 1) {
-        backgroundImage.image = [UIImage imageNamed:@"42-background-yellow"];
-        
-        headerLabel.text = @"Team Geel: maak de zin af";
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"42-background-%@", [currentTeam getTeamColor]]];
+    headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [currentTeam getTeamName]];
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];
     self.classLabel.text = [NSString stringWithFormat:@"Draakje is een %@ \r want hij heeft…", class.lowercaseString];
