@@ -2386,7 +2386,7 @@ draakje opgelost en wint dus.</string>
                                     <action selector="nextIssue:" destination="rSy-eg-ifs" eventType="touchUpInside" id="op6-Ig-Cse"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="34-ribbon" id="KLM-ok-6HB">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="34-ribbon" id="KLM-ok-6HB">
                                 <rect key="frame" x="129" y="652" width="510" height="97"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
