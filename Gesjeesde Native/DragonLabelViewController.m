@@ -19,6 +19,7 @@
 @synthesize backgroundImage;
 @synthesize headerLabel;
 
+@synthesize dragonPictureFrame;
 @synthesize dragonPictureView;
 
 @synthesize featureButton;
@@ -51,6 +52,7 @@
     }
     
     backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"42-background-%@", [currentTeam getTeamColor]]];
+    dragonPictureFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"42-photo-frame-%@", [currentTeam getTeamColor]]];
     headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [currentTeam getTeamName]];
     
     NSString *class = [[game getClasses] objectAtIndex:currentTeam.dragonClass];

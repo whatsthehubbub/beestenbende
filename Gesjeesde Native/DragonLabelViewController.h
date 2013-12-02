@@ -19,6 +19,7 @@
 @property (strong) IBOutlet UIImageView *backgroundImage;
 @property (strong) IBOutlet UILabel *headerLabel;
 
+@property (strong) IBOutlet UIImageView *dragonPictureFrame;
 @property (strong) IBOutlet UIImageView *dragonPictureView;
 
 

@@ -3361,6 +3361,7 @@ want hij heeft…</string>
                         <outlet property="backgroundImage" destination="bOV-aw-M0p" id="ksn-2w-Tc3"/>
                         <outlet property="classLabel" destination="vi0-Ps-U7O" id="4Bs-OH-2Hl"/>
                         <outlet property="doneButton" destination="Mcg-PQ-7g3" id="Tz6-0H-Odx"/>
+                        <outlet property="dragonPictureFrame" destination="2uX-40-ao7" id="qHT-G3-2ah"/>
                         <outlet property="dragonPictureView" destination="ckl-Ai-cCT" id="ash-NR-5Nx"/>
                         <outlet property="featureButton" destination="zwv-1O-2Ql" id="yjz-7u-YSM"/>
                         <outlet property="headerLabel" destination="sFB-BP-ABr" id="Ngb-37-auC"/>
@@ -3993,7 +3994,7 @@ want hij heeft…</string>
         <segue reference="aIf-Jt-bSO"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="cz4-cS-3oL"/>
-        <segue reference="bVc-ph-DLl"/>
         <segue reference="5OT-N5-qpE"/>
+        <segue reference="cOM-ft-9PE"/>
     </inferredMetricsTieBreakers>
 </document>
