@@ -44,20 +44,11 @@
     
     // Find the current team
     Team *team = [game getCurrentTeam];
-
-    headerLabel.text = [NSString stringWithFormat:@"Wie begint?"];
-    
-//    self.teamImage.image = team.picture;
     
     self.teamPhoto.image = team.picture;
     
-    if (team.number == 1) {
-        backgroundImage.image = [UIImage imageNamed:@"43-background-blue"];
-        photoFrame.image = [UIImage imageNamed:@"43-photo-frame-blue"];
-    } else {
-        backgroundImage.image = [UIImage imageNamed:@"43-background-yellow"];
-        photoFrame.image = [UIImage imageNamed:@"43-photo-frame-yellow"];
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"43-background-%@", [team getTeamColor]]];
+    photoFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"43-photo-frame-%@", [team getTeamColor]]];
 }
 
 - (void)viewDidUnload
