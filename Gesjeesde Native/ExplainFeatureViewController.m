@@ -19,6 +19,7 @@
 
 @synthesize backgroundImage;
 
+@synthesize featureImageFrame;
 @synthesize featureImage;
 @synthesize featureLabel;
 @synthesize resultAndExplanationLabel;
@@ -52,8 +53,10 @@
     
     if (self.currentTeam.number == 1) {
         backgroundImage.image = [UIImage imageNamed:@"18-background-blue"];
+        featureImageFrame.image = [UIImage imageNamed:@"18-photo-frame-blue"];
     } else {
         backgroundImage.image = [UIImage imageNamed:@"18-background-yellow"];
+        featureImageFrame.image = [UIImage imageNamed:@"18-photo-frame-yellow"];
     }
 }
 

@@ -23,6 +23,7 @@
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
 
+@property (strong) IBOutlet UIImageView *featureImageFrame;
 @property (nonatomic, retain) IBOutlet UIImageView *featureImage;
 @property (nonatomic, retain) IBOutlet UILabel *featureLabel;
 @property (nonatomic, retain) IBOutlet UILabel *resultAndExplanationLabel;

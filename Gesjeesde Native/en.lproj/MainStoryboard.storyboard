@@ -2063,6 +2063,7 @@ geen reptiel want u hebt…</string>
                     <connections>
                         <outlet property="backgroundImage" destination="AO4-Md-wIW" id="ii4-y5-WN4"/>
                         <outlet property="featureImage" destination="8kh-6C-4gE" id="Noz-B7-gaN"/>
+                        <outlet property="featureImageFrame" destination="6Ef-LR-JHU" id="yab-dT-T6J"/>
                         <outlet property="featureLabel" destination="n4o-Si-akp" id="Ies-TK-7e4"/>
                         <outlet property="pointsImage" destination="hkb-Sh-cjz" id="KHu-WN-3Ow"/>
                         <outlet property="resultAndExplanationLabel" destination="dNh-td-Cgx" id="WVL-o7-lLp"/>
@@ -3988,10 +3989,10 @@ want hij heeft…</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="all-Ba-Vs9"/>
-        <segue reference="GW9-yo-buq"/>
         <segue reference="aIf-Jt-bSO"/>
-        <segue reference="HNX-X0-mXX"/>
+        <segue reference="OHM-xk-G1T"/>
         <segue reference="fpS-jq-29F"/>
+        <segue reference="HNX-X0-mXX"/>
         <segue reference="5OT-N5-qpE"/>
     </inferredMetricsTieBreakers>
 </document>
