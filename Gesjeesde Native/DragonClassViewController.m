@@ -50,12 +50,8 @@
         currentTeam = [game otherTeamForTeam:currentTeam];
     }
     
-    headerLabel.text = @"Team Blauw: maak de zin af";
-    if (currentTeam.number != 1) {
-        backgroundImage.image = [UIImage imageNamed:@"40-background-yellow"];
-        
-        headerLabel.text = @"Team Geel: maak de zin af";
-    }
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"40-background-%@", [currentTeam getTeamColor]]];
+    headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [currentTeam getTeamName]];
     
     self.mammalButton.enabled = !currentTeam.mammalEliminated;
     self.fishButton.enabled = !currentTeam.fishEliminated;
