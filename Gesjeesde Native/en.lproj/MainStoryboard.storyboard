@@ -1512,6 +1512,8 @@ veren. Ja, toch?</string>
                     <connections>
                         <outlet property="backgroundImage" destination="cBf-6s-fSu" id="KdW-2u-HPz"/>
                         <outlet property="headerLabel" destination="tpg-Mh-feY" id="7l1-t0-g0B"/>
+                        <outlet property="photoFrame" destination="4TZ-Cz-VyF" id="oez-R8-Us8"/>
+                        <outlet property="teamPhoto" destination="SQW-Z8-y5s" id="NZF-5l-yYR"/>
                         <segue destination="4Xr-pd-4cz" kind="push" identifier="Next" id="GW9-yo-buq"/>
                     </connections>
                 </viewController>
