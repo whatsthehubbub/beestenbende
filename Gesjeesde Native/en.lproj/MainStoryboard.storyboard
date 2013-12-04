@@ -2416,6 +2416,7 @@ draakje opgelost en wint dus.</string>
                         <outlet property="team2Picture" destination="6xt-As-GCo" id="s8P-eb-4Fs"/>
                         <outlet property="team2ScoreLabel" destination="t3g-6B-II9" id="cKH-xx-fOp"/>
                         <outlet property="tieImage" destination="KLM-ok-6HB" id="tsc-n4-rOR"/>
+                        <outlet property="tieLabel" destination="vB2-Un-cTd" id="ujn-P9-Fbn"/>
                         <segue destination="3rS-nM-KiT" kind="push" identifier="EndScreen" id="0rk-rs-l5i"/>
                     </connections>
                 </viewController>
@@ -3904,10 +3905,10 @@ want hij heeft…</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="all-Ba-Vs9"/>
-        <segue reference="aIf-Jt-bSO"/>
         <segue reference="OHM-xk-G1T"/>
-        <segue reference="cz4-cS-3oL"/>
-        <segue reference="bVc-ph-DLl"/>
+        <segue reference="fpS-jq-29F"/>
+        <segue reference="HNX-X0-mXX"/>
+        <segue reference="aIf-Jt-bSO"/>
         <segue reference="5OT-N5-qpE"/>
     </inferredMetricsTieBreakers>
 </document>

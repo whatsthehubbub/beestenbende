@@ -54,7 +54,7 @@
     [self.team1ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team1.totalPoints]];
     [self.team2ScoreLabel setText:[NSString stringWithFormat:@"%d", game.team2.totalPoints]];
     
-    self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"34-progress-%d", game.issue]];
+    self.progressImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"34-progress-%d", game.issue+1]];
     
     if (game.issue == 3) {
         self.headerLabel.text = @"Eindstand";
