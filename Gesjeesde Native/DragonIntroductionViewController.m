@@ -38,6 +38,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [[SimpleAudioEngine sharedEngine] playEffect:@"i13_uitslagronde_v2.wav"];
+    
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
