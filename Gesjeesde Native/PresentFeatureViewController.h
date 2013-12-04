@@ -23,6 +23,7 @@
 
 @property (nonatomic, retain) IBOutlet UIButton *yesNoButton;
 @property (nonatomic, retain) IBOutlet UIButton *featureButton;
+@property (strong) IBOutlet UIImageView *featureImageFrame;
 @property (nonatomic, retain) IBOutlet UIImageView *featureImageView;
 
 @property (nonatomic, retain) IBOutlet UIButton *doneButton;

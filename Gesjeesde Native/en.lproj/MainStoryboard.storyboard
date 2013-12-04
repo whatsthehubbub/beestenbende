@@ -1726,6 +1726,7 @@ geen reptiel want u hebt…</string>
                         <outlet property="backgroundImage" destination="NyC-h6-uM5" id="pPU-tZ-ARn"/>
                         <outlet property="doneButton" destination="v27-C1-U6a" id="N9f-jP-p95"/>
                         <outlet property="featureButton" destination="N0H-sq-Nql" id="KrU-Zt-10L"/>
+                        <outlet property="featureImageFrame" destination="Tqh-tF-Ng9" id="VQ7-3V-VO7"/>
                         <outlet property="featureImageView" destination="dne-2T-11h" id="7rs-hJ-qBb"/>
                         <outlet property="headerLabel" destination="Ga4-8b-XD1" id="FKq-R5-ix3"/>
                         <outlet property="yesNoButton" destination="LTL-EX-1to" id="glq-ua-7Cn"/>
@@ -1839,6 +1840,7 @@ geen reptiel want u hebt…</string>
                         <outlet property="backgroundImage" destination="6Hx-UI-pSU" id="e1X-xq-5Av"/>
                         <outlet property="doneButton" destination="wQJ-ju-lAl" id="Gyt-vs-87c"/>
                         <outlet property="featureButton" destination="WoQ-zd-fSs" id="gwZ-R4-fpR"/>
+                        <outlet property="featureImageFrame" destination="iae-Mp-agN" id="TWY-Pc-Jgr"/>
                         <outlet property="featureImageView" destination="uTF-wg-lnc" id="vzo-yt-4N0"/>
                         <outlet property="headerLabel" destination="VzL-5w-4Vr" id="Q4T-pX-3e6"/>
                         <outlet property="yesNoButton" destination="xtc-7C-RXk" id="R5G-uQ-ZMR"/>
@@ -3888,10 +3890,10 @@ want hij heeft…</string>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="sz9-qc-ZZh"/>
-        <segue reference="aIf-Jt-bSO"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="cz4-cS-3oL"/>
         <segue reference="bVc-ph-DLl"/>
+        <segue reference="aIf-Jt-bSO"/>
         <segue reference="5OT-N5-qpE"/>
     </inferredMetricsTieBreakers>
 </document>

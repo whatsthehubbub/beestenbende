@@ -20,6 +20,7 @@
 
 @synthesize yesNoButton;
 @synthesize featureButton;
+@synthesize featureImageFrame;
 @synthesize featureImageView;
 
 @synthesize doneButton;
@@ -55,6 +56,7 @@
     self.headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [self.currentTeam getTeamName]];
     
     backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"17-background-%@", [currentTeam getTeamColor]]];
+    featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"17-photo-frame-%@", [currentTeam getTeamColor]]];
     
     self.hasFeature = YES;
     
