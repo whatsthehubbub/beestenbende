@@ -9,10 +9,9 @@
 #import <UIKit/UIKit.h>
 
 #import "FeatureExampleViewController.h"
-#import "DDPageControl.h"
 #import "SimpleAudioEngine.h"
 
-@interface FirstIssueExplanationViewController : UIViewController <FeatureExampleViewControllerDelegate, UIScrollViewDelegate>
+@interface FirstIssueExplanationViewController : UIViewController <FeatureExampleViewControllerDelegate>
 
 - (IBAction)example:(id)sender;
 - (IBAction)next:(id)sender;

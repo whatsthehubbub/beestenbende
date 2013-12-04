@@ -190,7 +190,6 @@
 		4EA442781833EEE600AD3154 /* CustomFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA442771833EEE600AD3154 /* CustomFontLabel.m */; };
 		4EA4427B1833F2C100AD3154 /* CustomFontButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4427A1833F2C100AD3154 /* CustomFontButton.m */; };
 		4EA4427E183529C700AD3154 /* CustomItalicFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4427D183529C700AD3154 /* CustomItalicFontLabel.m */; };
-		4EA4428118352BB200AD3154 /* DDPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4428018352BB200AD3154 /* DDPageControl.m */; };
 		4EA62E2A15249B4100E74E64 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2915249B4100E74E64 /* Game.m */; };
 		4EA62E2E15249B9D00E74E64 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2D15249B9D00E74E64 /* Team.m */; };
 		4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */; };
@@ -496,8 +495,6 @@
 		4EA4427A1833F2C100AD3154 /* CustomFontButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFontButton.m; sourceTree = "<group>"; };
 		4EA4427C183529C700AD3154 /* CustomItalicFontLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomItalicFontLabel.h; sourceTree = "<group>"; };
 		4EA4427D183529C700AD3154 /* CustomItalicFontLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomItalicFontLabel.m; sourceTree = "<group>"; };
-		4EA4427F18352BB200AD3154 /* DDPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDPageControl.h; sourceTree = "<group>"; };
-		4EA4428018352BB200AD3154 /* DDPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDPageControl.m; sourceTree = "<group>"; };
 		4EA62E2815249B4100E74E64 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		4EA62E2915249B4100E74E64 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		4EA62E2C15249B9D00E74E64 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
@@ -1056,8 +1053,6 @@
 				4EA4427A1833F2C100AD3154 /* CustomFontButton.m */,
 				4EA4427C183529C700AD3154 /* CustomItalicFontLabel.h */,
 				4EA4427D183529C700AD3154 /* CustomItalicFontLabel.m */,
-				4EA4427F18352BB200AD3154 /* DDPageControl.h */,
-				4EA4428018352BB200AD3154 /* DDPageControl.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -1406,7 +1401,6 @@
 				4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */,
 				4EA7E225159DE72900B179BF /* CDAudioManager.m in Sources */,
 				4EA7E226159DE72900B179BF /* CDOpenALSupport.m in Sources */,
-				4EA4428118352BB200AD3154 /* DDPageControl.m in Sources */,
 				4EA7E227159DE72900B179BF /* CocosDenshion.m in Sources */,
 				4EA442781833EEE600AD3154 /* CustomFontLabel.m in Sources */,
 				4EA7E228159DE72900B179BF /* SimpleAudioEngine.m in Sources */,

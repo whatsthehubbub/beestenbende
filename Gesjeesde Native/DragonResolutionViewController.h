@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DDPageControl.h"
 #import "SimpleAudioEngine.h"
 
-@interface DragonResolutionViewController : UIViewController <UIScrollViewDelegate>
+@interface DragonResolutionViewController : UIViewController
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;

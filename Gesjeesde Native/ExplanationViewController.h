@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 
 #import "SimpleAudioEngine.h"
-#import "DDPageControl.h"
-
 
 @interface ExplanationViewController : UIViewController
 

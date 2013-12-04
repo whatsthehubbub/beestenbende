@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DDPageControl.h"
 #import "SimpleAudioEngine.h"
 
-@interface SecondIssueExplanationViewController : UIViewController <UIScrollViewDelegate>
+@interface SecondIssueExplanationViewController : UIViewController
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
