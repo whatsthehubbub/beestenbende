@@ -55,8 +55,13 @@
     
     self.headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [self.currentTeam getTeamName]];
     
-    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"17-background-%@", [currentTeam getTeamColor]]];
-    featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"17-photo-frame-%@", [currentTeam getTeamColor]]];
+    int screenNumber = 17;
+    if (game.issue == 2) {
+        screenNumber = 30;
+    }
+    
+    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d-background-%@", screenNumber, [currentTeam getTeamColor]]];
+    featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d-photo-frame-%@", screenNumber, [currentTeam getTeamColor]]];
     
     self.hasFeature = YES;
     
