@@ -1654,7 +1654,7 @@ geen reptiel want u hebt…</string>
                                 <rect key="frame" x="254" y="240" width="260" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="17-photo-frame" id="Tqh-tF-Ng9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="17-photo-frame-blue" id="Tqh-tF-Ng9">
                                 <rect key="frame" x="244" y="230" width="280" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1765,7 +1765,7 @@ geen reptiel want u hebt…</string>
                                 <rect key="frame" x="254" y="240" width="260" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="17-photo-frame" id="iae-Mp-agN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="17-photo-frame-blue" id="iae-Mp-agN">
                                 <rect key="frame" x="244" y="230" width="280" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3827,7 +3827,7 @@ want hij heeft…</string>
         <image name="16-photo-frame" width="227" height="227"/>
         <image name="16-squirrel" width="400" height="300"/>
         <image name="17-background-blue" width="768" height="1024"/>
-        <image name="17-photo-frame" width="280" height="280"/>
+        <image name="17-photo-frame-blue" width="280" height="280"/>
         <image name="18-background-blue" width="768" height="1024"/>
         <image name="18-photo-frame-blue" width="160" height="160"/>
         <image name="18-points-00" width="194" height="200"/>
@@ -3891,7 +3891,7 @@ want hij heeft…</string>
         <segue reference="aIf-Jt-bSO"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="cz4-cS-3oL"/>
+        <segue reference="bVc-ph-DLl"/>
         <segue reference="5OT-N5-qpE"/>
-        <segue reference="cOM-ft-9PE"/>
     </inferredMetricsTieBreakers>
 </document>
