@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="an3-Z1-mOZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="an3-Z1-mOZ">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
@@ -2558,130 +2558,16 @@ eekhoorn.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg-0-plain.png" id="Y4W-DO-9cW">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="05s-nn-VjM">
-                                <rect key="frame" x="0.0" y="584" width="320" height="440"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Gemaakt door" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="9ZT-xD-vRA">
-                                        <rect key="frame" x="10" y="20" width="300" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="hubbub-typo.png" id="2Om-oZ-GgI">
-                                        <rect key="frame" x="53" y="35" width="214" height="41"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="7Jj-Hf-dPt">
-                                        <rect key="frame" x="5" y="84" width="150" height="90"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Kars Alfrink
-Erwin Bravenboer
-Alper Cugun
-Hanne Marckmann
-Karel Millenaar
-Rik Nieuwdorp</string>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="10" id="olm-g1-aQk">
-                                        <rect key="frame" x="165" y="84" width="150" height="90"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Project Lead
-Production
-Software Engineering
-Copy &amp; Game Design
-Art &amp; Game Design
-Audio</string>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="www.whatsthehubbub.nl" textAlignment="center" id="tQi-7W-OPd">
-                                        <rect key="frame" x="10" y="174" width="300" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="In opdracht van" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QSg-xT-ZUG">
-                                        <rect key="frame" x="10" y="212" width="300" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="um-logo.png" id="EG3-5w-Sai">
-                                        <rect key="frame" x="53" y="232" width="214" height="82"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="www.museum.uu.nl" textAlignment="center" id="lL7-wf-Luq">
-                                        <rect key="frame" x="10" y="314" width="300" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mogelijk gemaakt door" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2w9-mf-HgT">
-                                        <rect key="frame" x="10" y="352" width="300" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Black" family="Hoefler Text" pointSize="16"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="tfi-logo.png" id="GFp-qh-ofw">
-                                        <rect key="frame" x="53" y="372" width="214" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" numberOfLines="99" baselineAdjustment="alignBaselines" minimumFontSize="10" id="whu-4b-SQy">
-                                        <rect key="frame" x="20" y="480" width="280" height="180"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">Deze game is ontwikkeld binnen het project Smart Experience Actuator (SEA). SEA wordt mogelijk gemaakt door subsidie in het kader van het economisch stimuleringsprogramma ‘Pieken in de Delta’ van het Ministerie van Economische Zaken, de gemeente Utrecht en de provincie Utrecht. SEA is een samenwerkingsverband tussen Taskforce Innovatie Regio Utrecht, Universiteit Utrecht, Universiteit Twente, Hogeschool Utrecht, Hogeschool voor de Kunsten Utrecht en Reinwardt Academie.</string>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="www.taskforceinnovatie.nl" textAlignment="center" id="meK-zH-I3M">
-                                        <rect key="frame" x="10" y="660" width="300" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-min-eli.png" id="jgi-4L-N5q">
-                                        <rect key="frame" x="53" y="698" width="214" height="92"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-provincie-utrecht.png" id="gqy-jL-XmG">
-                                        <rect key="frame" x="53" y="803" width="214" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo-gemeente-utrecht.png" id="5fb-Bw-okh">
-                                        <rect key="frame" x="107" y="844" width="107" height="66"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                            </scrollView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2TT-OX-NEm" customClass="HeaderLabel">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="44-header" id="Wva-3a-qLe">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aVq-jn-Dsi">
-                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <rect key="frame" x="0.0" y="33" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" image="button-titlebar-back.png">
+                                <inset key="contentEdgeInsets" minX="-3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" image="00-back-button-header">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2692,6 +2578,24 @@ Audio</string>
                                     <action selector="back:" destination="aA8-Uu-wjL" eventType="touchUpInside" id="4YB-BV-bmt"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2TT-OX-NEm" customClass="CustomFontLabel">
+                                <rect key="frame" x="0.0" y="38" width="768" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                <color key="textColor" red="0.86274509799999999" green="0.10980392160000001" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="05s-nn-VjM">
+                                <rect key="frame" x="0.0" y="90" width="768" height="934"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="03-credits" id="5fb-Bw-okh">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1888"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -3906,6 +3810,7 @@ want hij heeft…</string>
         <image name="01-credits-button" width="240" height="60"/>
         <image name="01-start-button" width="240" height="60"/>
         <image name="02-background" width="768" height="1024"/>
+        <image name="03-credits" width="768" height="1888"/>
         <image name="05-teams" width="295" height="125"/>
         <image name="06-background" width="768" height="1024"/>
         <image name="07-background" width="768" height="1024"/>
@@ -3975,14 +3880,6 @@ want hij heeft…</string>
         <image name="47-background" width="768" height="1024"/>
         <image name="48-background" width="768" height="1024"/>
         <image name="49-background-blue" width="768" height="1024"/>
-        <image name="bg-0-plain.png" width="640" height="960"/>
-        <image name="button-titlebar-back.png" width="80" height="80"/>
-        <image name="hubbub-typo.png" width="428" height="82"/>
-        <image name="logo-gemeente-utrecht.png" width="214" height="133"/>
-        <image name="logo-min-eli.png" width="428" height="185"/>
-        <image name="logo-provincie-utrecht.png" width="428" height="57"/>
-        <image name="tfi-logo.png" width="428" height="201"/>
-        <image name="um-logo.png" width="428" height="164"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
