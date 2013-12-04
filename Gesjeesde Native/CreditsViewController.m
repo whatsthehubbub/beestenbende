@@ -30,9 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.creditsScrollView.scrollEnabled = YES;
-    
-    self.creditsScrollView.contentSize = CGSizeMake(320.0, 930.0);
+    self.creditsScrollView.contentSize = CGSizeMake(768.0, 1888.0);
 }
 
 - (void)viewDidUnload
