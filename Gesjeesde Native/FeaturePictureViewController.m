@@ -125,6 +125,7 @@
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
     [csManager startPreview];
     
+    // Enable the button only after everything is ready for taking pictures
     self.takePictureButton.enabled = YES;
 }
 
