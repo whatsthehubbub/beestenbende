@@ -211,12 +211,9 @@
 		4EAF06C3153C8FA100BE1CAA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAF06C2153C8FA100BE1CAA /* CoreMedia.framework */; };
 		4EAF06C5153C8FA500BE1CAA /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EAF06C4153C8FA500BE1CAA /* CoreVideo.framework */; };
 		4EAF06C8153D808900BE1CAA /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF06C7153D808900BE1CAA /* UIImage+Extras.m */; };
-		4EAF06CB153D9FE200BE1CAA /* BeestenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF06CA153D9FE200BE1CAA /* BeestenButton.m */; };
 		4EAF06CF153DA00100BE1CAA /* button-vierkant.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06CC153DA00100BE1CAA /* button-vierkant.png */; };
 		4EAF06D0153DA00100BE1CAA /* button-pijl-links.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06CD153DA00100BE1CAA /* button-pijl-links.png */; };
 		4EAF06D1153DA00100BE1CAA /* button-pijl-rechts.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06CE153DA00100BE1CAA /* button-pijl-rechts.png */; };
-		4EAF06D4153DAE5C00BE1CAA /* ArrowLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF06D3153DAE5C00BE1CAA /* ArrowLeft.m */; };
-		4EAF06D7153DAE6600BE1CAA /* ArrowRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAF06D6153DAE6600BE1CAA /* ArrowRight.m */; };
 		4EAF06DA153DBB2700BE1CAA /* button-pijl-links@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06D8153DBB2700BE1CAA /* button-pijl-links@2x.png */; };
 		4EAF06DB153DBB2700BE1CAA /* button-pijl-rechts@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EAF06D9153DBB2700BE1CAA /* button-pijl-rechts@2x.png */; };
 		4EC4012D152E09A10005EC5C /* IssueScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */; };
@@ -227,8 +224,6 @@
 		4ECB233F1587F88200F3CDCA /* DragonQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB233E1587F88000F3CDCA /* DragonQuestionViewController.m */; };
 		4ECB23421587FA1A00F3CDCA /* DragonRevealedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */; };
 		4ECE090E158FF59200868CD0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECE090D158FF59200868CD0 /* SplashViewController.m */; };
-		4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2151E153C3B6400040C97 /* HeaderLabel.m */; };
-		4ED21524153C417D00040C97 /* NormalLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED21523153C417D00040C97 /* NormalLabel.m */; };
 		4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2152D153C610700040C97 /* AVFoundation.framework */; };
 		4ED69F301588CDCF00F84D92 /* MakeTeamPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */; };
 		4ED69F351588D7B500F84D92 /* i15_tussenstand_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F341588D7B500F84D92 /* i15_tussenstand_v2.wav */; };
@@ -538,15 +533,9 @@
 		4EAF06C4153C8FA500BE1CAA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		4EAF06C6153D808800BE1CAA /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
 		4EAF06C7153D808900BE1CAA /* UIImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extras.m"; sourceTree = "<group>"; };
-		4EAF06C9153D9FE200BE1CAA /* BeestenButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeestenButton.h; sourceTree = "<group>"; };
-		4EAF06CA153D9FE200BE1CAA /* BeestenButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeestenButton.m; sourceTree = "<group>"; };
 		4EAF06CC153DA00100BE1CAA /* button-vierkant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-vierkant.png"; sourceTree = "<group>"; };
 		4EAF06CD153DA00100BE1CAA /* button-pijl-links.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pijl-links.png"; sourceTree = "<group>"; };
 		4EAF06CE153DA00100BE1CAA /* button-pijl-rechts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pijl-rechts.png"; sourceTree = "<group>"; };
-		4EAF06D2153DAE5C00BE1CAA /* ArrowLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowLeft.h; sourceTree = "<group>"; };
-		4EAF06D3153DAE5C00BE1CAA /* ArrowLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowLeft.m; sourceTree = "<group>"; };
-		4EAF06D5153DAE6600BE1CAA /* ArrowRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowRight.h; sourceTree = "<group>"; };
-		4EAF06D6153DAE6600BE1CAA /* ArrowRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowRight.m; sourceTree = "<group>"; };
 		4EAF06D8153DBB2700BE1CAA /* button-pijl-links@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pijl-links@2x.png"; sourceTree = "<group>"; };
 		4EAF06D9153DBB2700BE1CAA /* button-pijl-rechts@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-pijl-rechts@2x.png"; sourceTree = "<group>"; };
 		4EC4012B152E09A10005EC5C /* IssueScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueScoresViewController.h; sourceTree = "<group>"; };
@@ -565,10 +554,6 @@
 		4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonRevealedViewController.m; sourceTree = "<group>"; };
 		4ECE090C158FF59200868CD0 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		4ECE090D158FF59200868CD0 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		4ED2151D153C3B6400040C97 /* HeaderLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderLabel.h; sourceTree = "<group>"; };
-		4ED2151E153C3B6400040C97 /* HeaderLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderLabel.m; sourceTree = "<group>"; };
-		4ED21522153C417D00040C97 /* NormalLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalLabel.h; sourceTree = "<group>"; };
-		4ED21523153C417D00040C97 /* NormalLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalLabel.m; sourceTree = "<group>"; };
 		4ED2152D153C610700040C97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4ED69F2E1588CDCE00F84D92 /* MakeTeamPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTeamPicturesViewController.h; sourceTree = "<group>"; };
 		4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamPicturesViewController.m; sourceTree = "<group>"; };
@@ -1061,20 +1046,10 @@
 		4ED21521153C3BD300040C97 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				4ED2151D153C3B6400040C97 /* HeaderLabel.h */,
-				4ED2151E153C3B6400040C97 /* HeaderLabel.m */,
-				4EAF06D2153DAE5C00BE1CAA /* ArrowLeft.h */,
-				4EAF06D3153DAE5C00BE1CAA /* ArrowLeft.m */,
-				4EAF06D5153DAE6600BE1CAA /* ArrowRight.h */,
-				4EAF06D6153DAE6600BE1CAA /* ArrowRight.m */,
-				4ED21522153C417D00040C97 /* NormalLabel.h */,
-				4ED21523153C417D00040C97 /* NormalLabel.m */,
 				4EAF06BC153C85C300BE1CAA /* CaptureSessionManager.h */,
 				4EAF06BD153C85C300BE1CAA /* CaptureSessionManager.m */,
 				4EAF06C6153D808800BE1CAA /* UIImage+Extras.h */,
 				4EAF06C7153D808900BE1CAA /* UIImage+Extras.m */,
-				4EAF06C9153D9FE200BE1CAA /* BeestenButton.h */,
-				4EAF06CA153D9FE200BE1CAA /* BeestenButton.m */,
 				4EA442761833EEE600AD3154 /* CustomFontLabel.h */,
 				4EA442771833EEE600AD3154 /* CustomFontLabel.m */,
 				4EA442791833F2C100AD3154 /* CustomFontButton.h */,
@@ -1402,13 +1377,8 @@
 				4E4D8FAD152D0A3100E898D5 /* TeamRunningTotalViewController.m in Sources */,
 				4EC4012D152E09A10005EC5C /* IssueScoresViewController.m in Sources */,
 				4E0D5F39152E69DD00009EC0 /* ExplainFeatureViewController.m in Sources */,
-				4ED2151F153C3B6400040C97 /* HeaderLabel.m in Sources */,
-				4ED21524153C417D00040C97 /* NormalLabel.m in Sources */,
 				4EAF06BE153C85C300BE1CAA /* CaptureSessionManager.m in Sources */,
 				4EAF06C8153D808900BE1CAA /* UIImage+Extras.m in Sources */,
-				4EAF06CB153D9FE200BE1CAA /* BeestenButton.m in Sources */,
-				4EAF06D4153DAE5C00BE1CAA /* ArrowLeft.m in Sources */,
-				4EAF06D7153DAE6600BE1CAA /* ArrowRight.m in Sources */,
 				4E3385DD154043AF00E740BB /* SecondIssueIntroductionViewController.m in Sources */,
 				4E428205154425F8009FD991 /* MakeTeamsViewController.m in Sources */,
 				4E42820915447EBD009FD991 /* TeamFlipViewController.m in Sources */,
