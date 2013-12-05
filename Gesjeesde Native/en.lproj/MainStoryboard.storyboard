@@ -1147,7 +1147,7 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                                     <action selector="takeTeamPictureAgain:" destination="apH-ed-9aX" eventType="touchUpInside" id="dxZ-id-raN"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmF-Sg-FnO" customClass="CustomFontButton">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kmF-Sg-FnO" customClass="CustomFontButton">
                                 <rect key="frame" x="385" y="835" width="220" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>

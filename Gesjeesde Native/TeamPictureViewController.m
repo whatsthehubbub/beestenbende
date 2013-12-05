@@ -108,6 +108,12 @@
     self.takeTeamPictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;
     self.nextButton.hidden = NO;
+    
+    double delayInSeconds = 0.5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        self.nextButton.enabled = YES;
+    });
 }
 
 - (IBAction)takeTeamPictureAgain:(id)sender {
@@ -138,6 +144,8 @@
         
         // Setup everything for team picture again
         [self takeTeamPictureAgain:self];
+        
+        self.nextButton.enabled = NO;
         
         [UIView commitAnimations];
     } else {
