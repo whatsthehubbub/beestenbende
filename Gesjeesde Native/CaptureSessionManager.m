@@ -95,7 +95,7 @@
     [self.stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
         
         if (error) {
-            NSLog(@"Error capturing image: %@", [error localizedDescription]);
+            NSLog(@"Error capturing image: %@ (%d)", [error localizedDescription], error.code);
         } else
         // Check to see if the buffer is not Null
         if (CMSampleBufferIsValid(imageSampleBuffer)) {
