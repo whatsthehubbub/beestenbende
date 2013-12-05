@@ -34,7 +34,7 @@
     if (game.issue == 1) {
         [[SimpleAudioEngine sharedEngine] playEffect:@"d04_vleekhoorn_snapt.wav"];
     } else {
-        [[SimpleAudioEngine sharedEngine] playEffect:@"d08_zeepaling_reptielverdriet.wav"];
+        [[SimpleAudioEngine sharedEngine] playEffect:@"d08_zeepaling_snapt.wav"];
     }
 }
 
