@@ -24,10 +24,6 @@
     
     return YES;
 }
-
-- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
-    
-}
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
