@@ -119,6 +119,12 @@
     self.takeDragonPictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;
     self.doneButton.hidden = NO;
+    
+    double delayInSeconds = 0.5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        self.doneButton.enabled = YES;
+    });
 }
 
 - (IBAction)takeDragonPictureAgain:(id)sender {
@@ -127,6 +133,7 @@
     self.takeDragonPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
+    self.doneButton.enabled = NO;
 }
 
 - (IBAction)doneWithPicture:(id)sender {
