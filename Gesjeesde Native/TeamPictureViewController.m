@@ -122,6 +122,7 @@
     self.takeTeamPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
     self.nextButton.hidden = YES;
+    self.nextButton.enabled = NO;
 }
 
 - (IBAction)doneWithPicture:(id)sender {

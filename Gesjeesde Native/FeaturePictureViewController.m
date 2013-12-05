@@ -119,6 +119,7 @@
     self.takePictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
+    self.doneButton.enabled = NO;
 }
 
 - (void)setupCaptureManager {
