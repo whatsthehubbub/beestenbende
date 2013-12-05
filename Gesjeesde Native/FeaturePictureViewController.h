@@ -23,8 +23,6 @@
 @property (nonatomic, retain) IBOutlet UIImageView *pictureView;
 @property (nonatomic, retain) IBOutlet UIImageView *pictureFrame;
 
-
-
 @property (strong) IBOutlet UILabel *explanationLabel;
 @property (strong) IBOutlet UILabel *hintLabel;
 

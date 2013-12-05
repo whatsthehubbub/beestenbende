@@ -99,12 +99,12 @@
 
 - (IBAction)next:(id)sender {
     [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:[pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
-    
-    [self.csManager disposeOfSession];
-    
+
     team.tookFeaturePictures = YES;
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
+    
+    [self.csManager disposeOfSession];
     
     if (game.issue == 1) {
         [self performSegueWithIdentifier:@"UsePictureFirst" sender:sender];
@@ -124,9 +124,6 @@
 - (void)setupCaptureManager {
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
     [csManager startPreview];
-    
-    // Enable the button only after everything is ready for taking pictures
-    self.takePictureButton.enabled = YES;
 }
 
 #pragma mark -
@@ -142,6 +139,12 @@
     self.takePictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;
     self.doneButton.hidden = NO;
+    
+    double delayInSeconds = 0.5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        self.doneButton.enabled = YES;
+    });
 }
 
 @end
