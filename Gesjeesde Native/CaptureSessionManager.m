@@ -28,7 +28,8 @@
         
         // Set captureSession.sessionPreset to something with a sane output value
         // Default is 1280x720 px images
-        self.captureSession.sessionPreset = AVCaptureSessionPresetMedium;
+//        self.captureSession.sessionPreset = AVCaptureSessionPresetMedium;
+        self.captureSession.sessionPreset = AVCaptureSessionPreset640x480;
         
         AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
         if (videoDevice) {
