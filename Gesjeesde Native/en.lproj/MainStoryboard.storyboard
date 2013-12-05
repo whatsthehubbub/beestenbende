@@ -2569,6 +2569,10 @@ eekhoorn.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03-background" id="Ca6-PB-myW">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="05s-nn-VjM">
                                 <rect key="frame" x="0.0" y="90" width="768" height="934"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -3828,7 +3832,8 @@ want hij heeft…</string>
         <image name="01-credits-button" width="240" height="60"/>
         <image name="01-start-button" width="240" height="60"/>
         <image name="02-background" width="768" height="1024"/>
-        <image name="03-credits" width="768" height="1888"/>
+        <image name="03-background" width="768" height="1024"/>
+        <image name="03-credits" width="768" height="1880"/>
         <image name="05-teams" width="295" height="125"/>
         <image name="06-background" width="768" height="1024"/>
         <image name="07-background" width="768" height="1024"/>
