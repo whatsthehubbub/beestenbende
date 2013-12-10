@@ -28,6 +28,8 @@
 @property (strong) IBOutlet UIButton *takePictureAgainButton;
 @property (strong) IBOutlet UIButton *doneButton;
 
+@property (strong) UIImage *dragonPicture;
+
 @property (strong) Game *game;
 @property (strong) Team *currentTeam;
 

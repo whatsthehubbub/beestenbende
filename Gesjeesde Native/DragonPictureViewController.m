@@ -26,6 +26,8 @@
 @synthesize takePictureAgainButton;
 @synthesize doneButton;
 
+@synthesize dragonPicture;
+
 @synthesize game;
 @synthesize currentTeam;
 
@@ -47,6 +49,9 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+    
+    // Register the dragonPictureView for KVO so we know when a picture has actually been taken
+    [dragonPictureView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
     
     // Get the team that has to take the picture
     currentTeam = [game firstTeamForTurn];
@@ -115,16 +120,20 @@
 #endif
     
     // Hide take picture button, show other two
-    // TODO actually switch the buttons when the picture has been really taken (slight delay)
     self.takeDragonPictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;
     self.doneButton.hidden = NO;
     
-    double delayInSeconds = 0.5;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        self.doneButton.enabled = YES;
-    });
+//    double delayInSeconds = 0.5;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//    });
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if (object == dragonPictureView && [keyPath isEqualToString:@"image"]) {
+        dragonPicture = [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
+    }
 }
 
 - (IBAction)takeDragonPictureAgain:(id)sender {
@@ -133,12 +142,11 @@
     self.takeDragonPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
-    self.doneButton.enabled = NO;
 }
 
 - (IBAction)doneWithPicture:(id)sender {
     [currentTeam.featurePictures addObject:[[FeaturePicture alloc] initWithImage:
-                                     [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
+                                     dragonPicture]];
     
     [self.csManager disposeOfSession];
     

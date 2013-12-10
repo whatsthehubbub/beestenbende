@@ -115,8 +115,6 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
     if (object == teamPictureView && [keyPath isEqualToString:@"image"]) {
-        NSLog(@"image value changed");
-        
         Team *team;
         if (currentTeamNumber == 1) {
             team = game.team1;

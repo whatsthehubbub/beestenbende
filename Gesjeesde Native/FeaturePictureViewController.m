@@ -152,9 +152,7 @@
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if (object == pictureView && [keyPath isEqualToString:@"image"]) {
-        NSLog(@"image value changed");
-        
+    if (object == pictureView && [keyPath isEqualToString:@"image"]) {        
         featureImage = [pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
     }
 }
