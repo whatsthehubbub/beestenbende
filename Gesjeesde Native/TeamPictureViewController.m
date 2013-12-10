@@ -180,4 +180,13 @@
         }
     }
 }
+
+-(void)didReceiveMemoryWarning {
+    NSLog(@"Did receive memory warning in %@", NSStringFromClass([self class]));
+}
+
+- (void)dealloc {
+    NSLog(@"Dealloc called for %@", NSStringFromClass([self class]));
+}
+
 @end

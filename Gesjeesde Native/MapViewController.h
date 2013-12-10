@@ -13,6 +13,5 @@
 @interface MapViewController : UIViewController
 
 - (IBAction)next:(id)sender;
-- (IBAction)back:(id)sender;
 
 @end

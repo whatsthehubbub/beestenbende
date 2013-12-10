@@ -91,7 +91,7 @@
         }
 	}
     
-	NSLog(@"about to request a capture from: %@", self.stillImageOutput);
+//	NSLog(@"about to request a capture from: %@", self.stillImageOutput);
     
     [self.stillImageOutput captureStillImageAsynchronouslyFromConnection:videoConnection completionHandler:^(CMSampleBufferRef imageSampleBuffer, NSError *error) {
         
