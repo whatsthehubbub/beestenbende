@@ -16,27 +16,10 @@
 //#define kTeamNumberKey @"teamNumberKey"
 
 @interface Team : NSObject {
-    int number;
-    UIImage *picture;
-    
-    bool tookFeaturePictures;
-    NSMutableArray *featurePictures;
-    
-    int points;
-    int totalPoints;
-    
-    NSMutableArray *dragonFeaturesGuessed;
-    int dragonClass;
-    
-    // For Dragon animal elimination
-    BOOL fishEliminated;
-    BOOL mammalEliminated;
-    BOOL reptileEliminated;
-    BOOL birdEliminated;
 }
 
 @property (readwrite) int number;
-@property (nonatomic, retain) UIImage *picture;
+@property (strong) UIImage *picture;
 
 @property (readwrite) bool tookFeaturePictures;
 @property (nonatomic, retain) NSMutableArray *featurePictures;

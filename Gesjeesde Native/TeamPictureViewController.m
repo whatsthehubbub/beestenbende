@@ -51,6 +51,9 @@
     selector.hidden = YES;
 #endif
     
+    // Register the TeamPictureView for KVO so we know when a picture has actually been taken
+    [teamPictureView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
+    
     // TODO fix this like we do it elsewhere
     self.currentTeamNumber = 1;
     
@@ -108,12 +111,21 @@
     self.takeTeamPictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;
     self.nextButton.hidden = NO;
-    
-    double delayInSeconds = 0.5;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        self.nextButton.enabled = YES;
-    });
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if (object == teamPictureView && [keyPath isEqualToString:@"image"]) {
+        NSLog(@"image value changed");
+        
+        Team *team;
+        if (currentTeamNumber == 1) {
+            team = game.team1;
+        } else {
+            team = game.team2;
+        }
+        
+        team.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
+    }
 }
 
 - (IBAction)takeTeamPictureAgain:(id)sender {
@@ -122,14 +134,10 @@
     self.takeTeamPictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
     self.nextButton.hidden = YES;
-    self.nextButton.enabled = NO;
 }
 
 - (IBAction)doneWithPicture:(id)sender {
     if ([self currentTeamNumber] == 1) {
-        // TODO team1 picture is sometimes not saved (if everything goes to quickly maybe?)
-        game.team1.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
-        
         // Start segue back to this view for other team to take picture
         [UIView beginAnimations:@"View Flip" context:nil];
         [UIView setAnimationDuration:0.80];
@@ -146,12 +154,8 @@
         // Setup everything for team picture again
         [self takeTeamPictureAgain:self];
         
-        self.nextButton.enabled = NO;
-        
         [UIView commitAnimations];
     } else {
-        game.team2.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
-
         // Remove notification observers
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
         
@@ -161,6 +165,11 @@
         
         game.issue = selector.selectedSegmentIndex+1;
         
+        // TODO is this still being disposed in time?
+//        double delayInSeconds = 0.2;
+//        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//        });
         [self.csManager disposeOfSession];
         
         if (game.issue == 1) {
