@@ -25,6 +25,8 @@
 @synthesize takePictureAgainButton;
 @synthesize doneButton;
 
+@synthesize featureImage;
+
 @synthesize game;
 @synthesize team;
 
@@ -45,6 +47,9 @@
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
+    
+    // Observe the setting of image on the pictureView so we can catch it directly
+    [pictureView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
     
     // Find the current team
     team = [game getCurrentTeam];
@@ -98,7 +103,7 @@
 }
 
 - (IBAction)next:(id)sender {
-    [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:[pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)]]];
+    [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:featureImage]];
 
     team.tookFeaturePictures = YES;
     
@@ -119,7 +124,6 @@
     self.takePictureButton.hidden = NO;
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
-    self.doneButton.enabled = NO;
 }
 
 - (void)setupCaptureManager {
@@ -141,11 +145,18 @@
     self.takePictureAgainButton.hidden = NO;
     self.doneButton.hidden = NO;
     
-    double delayInSeconds = 0.5;
-    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-        self.doneButton.enabled = YES;
-    });
+//    double delayInSeconds = 0.5;
+//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+//    });
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if (object == pictureView && [keyPath isEqualToString:@"image"]) {
+        NSLog(@"image value changed");
+        
+        featureImage = [pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
+    }
 }
 
 @end

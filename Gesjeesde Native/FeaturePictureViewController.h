@@ -30,6 +30,9 @@
 @property (strong) IBOutlet UIButton *takePictureAgainButton;
 @property (strong) IBOutlet UIButton *doneButton;
 
+// Place to store the processed image before we set it on the team upon exit of this view controller
+@property (strong) UIImage *featureImage;
+
 @property (strong) Game *game;
 @property (strong) Team *team;
 

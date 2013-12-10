@@ -1401,7 +1401,7 @@ veren. Ja, toch?</string>
                                     <action selector="takeFeaturePictureAgain:" destination="jlM-Ks-Kmv" eventType="touchUpInside" id="e6o-XT-Y5O"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Q1-KH-j0a" customClass="CustomFontButton">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Q1-KH-j0a" customClass="CustomFontButton">
                                 <rect key="frame" x="385" y="835" width="220" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
