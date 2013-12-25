@@ -64,7 +64,7 @@
     
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
-    
+    self.csManager.delegate = self;
     [self.csManager startPreview];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
@@ -105,12 +105,6 @@
 #else
     [self.csManager captureStillImage];
 #endif
-    
-    // Hide take picture button, show other two
-    // TODO actually switch the buttons when the picture has been really taken (slight delay)
-    self.takeTeamPictureButton.hidden = YES;
-    self.takePictureAgainButton.hidden = NO;
-    self.nextButton.hidden = NO;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -187,6 +181,18 @@
 
 - (void)dealloc {
     NSLog(@"Dealloc called for %@", NSStringFromClass([self class]));
+}
+
+#pragma mark - CaptureSessionDelegate methods
+
+- (void)stillImageFailed {
+    [self takeTeamPictureAgain:self];
+}
+
+- (void)stillImageSucceeded {
+    self.takeTeamPictureButton.hidden = YES;
+    self.takePictureAgainButton.hidden = NO;
+    self.nextButton.hidden = NO;
 }
 
 @end

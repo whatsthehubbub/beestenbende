@@ -14,7 +14,7 @@
 #import "UIImage+Extras.h"
 #import "SimpleAudioEngine.h"
 
-@interface TeamPictureViewController : UIViewController {
+@interface TeamPictureViewController : UIViewController <CaptureSessionDelegate> {
 }
 
 @property (assign) int currentTeamNumber;
