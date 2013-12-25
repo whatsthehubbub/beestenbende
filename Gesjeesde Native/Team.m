@@ -74,48 +74,6 @@
     NSLog(@"%@", fp.image);
 }
 
-- (FeaturePicture *)featurePictureForTurn:(int)turn {
-    for (FeaturePicture *fp in self.featurePictures) {
-        if (fp.presentedTurn == turn) {
-            return fp;
-        }
-    }
-    return nil;
-}
-
-- (bool)allFeaturePicturesLabelledOrDeleted {
-    for (FeaturePicture *fp in self.featurePictures) {
-        if ([fp.feature isEqualToString:@""] && !fp.deleted) {
-            return false;
-        }
-    }
-    
-    return true;
-}
-
-- (void)purgeDeletedFeaturePictures {
-    NSMutableArray *save = [[NSMutableArray alloc] init];
-    
-    for (FeaturePicture *fp in self.featurePictures) {
-        if (!fp.deleted) {
-            [save addObject:fp];
-        }
-    }
-    self.featurePictures = save;
-}
-
-- (void)purgeUsedFeaturePictures {
-    NSMutableArray *save = [[NSMutableArray alloc] init];
-    
-    for (FeaturePicture *fp in self.featurePictures) {
-        if (fp.presentedTurn == -1) {
-            [save addObject:fp];
-        }
-    }
-    
-    self.featurePictures = save;
-}
-
 - (void)resetForNextIssue {
     tookFeaturePictures = NO;
     featurePictures = [[NSMutableArray alloc] init];

@@ -40,10 +40,6 @@
 -(NSString *)getTeamName;
 
 - (void)addFeaturePicture:(FeaturePicture *)fp;
-- (FeaturePicture *)featurePictureForTurn:(int)turn;
-- (bool)allFeaturePicturesLabelledOrDeleted;
-- (void)purgeDeletedFeaturePictures;
-- (void)purgeUsedFeaturePictures;
 
 - (void)resetForNextIssue;
 
