@@ -106,6 +106,7 @@
 - (void)setupCaptureManager {
     // Start capture session and bind it to the image view
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.dragonPictureView];
+    csManager.delegate = self;
     [csManager startPreview];
 }
 
@@ -118,16 +119,6 @@
 #else
     [self.csManager captureStillImage];
 #endif
-    
-    // Hide take picture button, show other two
-    self.takeDragonPictureButton.hidden = YES;
-    self.takePictureAgainButton.hidden = NO;
-    self.doneButton.hidden = NO;
-    
-//    double delayInSeconds = 0.5;
-//    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-//    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//    });
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -162,5 +153,17 @@
     [self performSegueWithIdentifier:@"Next" sender:sender];
 }
 
+#pragma mark CaptureSessionDelegate methods
+
+- (void)stillImageSucceeded {
+    // Hide take picture button, show other two
+    self.takeDragonPictureButton.hidden = YES;
+    self.takePictureAgainButton.hidden = NO;
+    self.doneButton.hidden = NO;
+}
+
+- (void)stillImageFailed {
+    [self takeDragonPictureAgain:self];
+}
 
 @end

@@ -13,7 +13,7 @@
 #import "UIImage+Extras.h"
 #import "SimpleAudioEngine.h"
 
-@interface DragonPictureViewController : UIViewController
+@interface DragonPictureViewController : UIViewController <CaptureSessionDelegate>
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
 @property (strong) IBOutlet UILabel *headerLabel;
