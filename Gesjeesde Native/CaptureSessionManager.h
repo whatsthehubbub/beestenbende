@@ -10,6 +10,13 @@
 #import <AVFoundation/AVFoundation.h>
 #import <ImageIO/ImageIO.h>
 
+@class CaptureSessionManager;
+
+@protocol CaptureSessionDelegate
+    -(void)stillImageFailed;
+    -(void)stillImageSucceeded;
+@end
+
 @interface CaptureSessionManager : NSObject {
 }
 
@@ -17,7 +24,9 @@
 @property (retain) AVCaptureSession *captureSession;
 @property (retain) AVCaptureStillImageOutput *stillImageOutput;
 
-@property (weak) UIImageView *imageView;
+@property (nonatomic, weak) UIImageView *imageView;
+
+@property (nonatomic, weak) id <CaptureSessionDelegate> delegate;
 
 - (id)initWithImageView:(UIImageView *)iView;
 

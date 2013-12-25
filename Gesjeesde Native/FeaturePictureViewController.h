@@ -14,7 +14,7 @@
 #import "UIImage+Extras.h"
 #import "SimpleAudioEngine.h"
 
-@interface FeaturePictureViewController : UIViewController {
+@interface FeaturePictureViewController : UIViewController <CaptureSessionDelegate> {
 }
 
 @property (strong) IBOutlet UILabel *headerLabel;
