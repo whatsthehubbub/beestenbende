@@ -103,7 +103,7 @@
 }
 
 - (IBAction)next:(id)sender {
-    [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:featureImage]];
+    [team addFeaturePicture:[[FeaturePicture alloc] initWithImage:featureImage]];
 
     team.tookFeaturePictures = YES;
     

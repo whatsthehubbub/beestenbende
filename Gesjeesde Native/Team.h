@@ -38,8 +38,8 @@
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamColor;
 -(NSString *)getTeamName;
--(NSString *)getPicturePath;
 
+- (void)addFeaturePicture:(FeaturePicture *)fp;
 - (FeaturePicture *)featurePictureForTurn:(int)turn;
 - (bool)allFeaturePicturesLabelledOrDeleted;
 - (void)purgeDeletedFeaturePictures;

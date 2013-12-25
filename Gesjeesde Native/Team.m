@@ -68,13 +68,10 @@
     }
 }
 
--(NSString *)getPicturePath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    
-    NSString *fullPathToFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"Team-%@-image", [self getTeamName]]];
-    
-    return fullPathToFile;
+- (void)addFeaturePicture:(FeaturePicture *)fp {
+    [self.featurePictures addObject:fp];
+    NSLog(@"Feature picture added");
+    NSLog(@"%@", fp.image);
 }
 
 - (FeaturePicture *)featurePictureForTurn:(int)turn {
