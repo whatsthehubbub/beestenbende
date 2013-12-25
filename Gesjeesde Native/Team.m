@@ -68,55 +68,10 @@
     }
 }
 
--(NSString *)getPicturePath {
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    
-    NSString *fullPathToFile = [documentsDirectory stringByAppendingPathComponent:[NSString stringWithFormat:@"Team-%@-image", [self getTeamName]]];
-    
-    return fullPathToFile;
-}
-
-- (FeaturePicture *)featurePictureForTurn:(int)turn {
-    for (FeaturePicture *fp in self.featurePictures) {
-        if (fp.presentedTurn == turn) {
-            return fp;
-        }
-    }
-    return nil;
-}
-
-- (bool)allFeaturePicturesLabelledOrDeleted {
-    for (FeaturePicture *fp in self.featurePictures) {
-        if ([fp.feature isEqualToString:@""] && !fp.deleted) {
-            return false;
-        }
-    }
-    
-    return true;
-}
-
-- (void)purgeDeletedFeaturePictures {
-    NSMutableArray *save = [[NSMutableArray alloc] init];
-    
-    for (FeaturePicture *fp in self.featurePictures) {
-        if (!fp.deleted) {
-            [save addObject:fp];
-        }
-    }
-    self.featurePictures = save;
-}
-
-- (void)purgeUsedFeaturePictures {
-    NSMutableArray *save = [[NSMutableArray alloc] init];
-    
-    for (FeaturePicture *fp in self.featurePictures) {
-        if (fp.presentedTurn == -1) {
-            [save addObject:fp];
-        }
-    }
-    
-    self.featurePictures = save;
+- (void)addFeaturePicture:(FeaturePicture *)fp {
+    [self.featurePictures addObject:fp];
+    NSLog(@"Feature picture added");
+    NSLog(@"%@", fp.image);
 }
 
 - (void)resetForNextIssue {

@@ -127,7 +127,6 @@
     // because it could still change after picking
     
     if (self.currentFeaturePicture) {
-        self.currentFeaturePicture.presentedTurn = game.turn; // TODO is this still being used?
         self.currentFeaturePicture.presentAssertion = self.hasFeature;
         
         self.currentFeaturePicture.feature = self.feature;

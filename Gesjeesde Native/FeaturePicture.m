@@ -12,8 +12,6 @@
 
 @synthesize feature;
 @synthesize image;
-@synthesize deleted;
-@synthesize presentedTurn;
 
 @synthesize presentAssertion;
 
@@ -25,9 +23,7 @@
     if (self) {
         self.image = newImage;
         self.feature = @"";
-        self.deleted = NO;
         
-        self.presentedTurn = -1;
         self.presentAssertion = YES;
         
         self.usedSuccesfully = NO;

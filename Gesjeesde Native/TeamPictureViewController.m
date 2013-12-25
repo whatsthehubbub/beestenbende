@@ -29,7 +29,7 @@
 
 @synthesize csManager;
 
-// TODO remove for the final game
+// For debug only
 @synthesize selector;
 
 
@@ -54,7 +54,6 @@
     // Register the TeamPictureView for KVO so we know when a picture has actually been taken
     [teamPictureView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
     
-    // TODO fix this like we do it elsewhere
     self.currentTeamNumber = 1;
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -64,7 +63,7 @@
     
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
-    
+    self.csManager.delegate = self;
     [self.csManager startPreview];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
@@ -105,12 +104,6 @@
 #else
     [self.csManager captureStillImage];
 #endif
-    
-    // Hide take picture button, show other two
-    // TODO actually switch the buttons when the picture has been really taken (slight delay)
-    self.takeTeamPictureButton.hidden = YES;
-    self.takePictureAgainButton.hidden = NO;
-    self.nextButton.hidden = NO;
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
@@ -163,11 +156,6 @@
         
         game.issue = selector.selectedSegmentIndex+1;
         
-        // TODO is this still being disposed in time?
-//        double delayInSeconds = 0.2;
-//        dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-//        dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-//        });
         [self.csManager disposeOfSession];
         
         if (game.issue == 1) {
@@ -187,6 +175,18 @@
 
 - (void)dealloc {
     NSLog(@"Dealloc called for %@", NSStringFromClass([self class]));
+}
+
+#pragma mark - CaptureSessionDelegate methods
+
+- (void)stillImageFailed {
+    [self takeTeamPictureAgain:self];
+}
+
+- (void)stillImageSucceeded {
+    self.takeTeamPictureButton.hidden = YES;
+    self.takePictureAgainButton.hidden = NO;
+    self.nextButton.hidden = NO;
 }
 
 @end

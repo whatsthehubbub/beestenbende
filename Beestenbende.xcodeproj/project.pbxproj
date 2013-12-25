@@ -49,7 +49,6 @@
 		4EA4427E183529C700AD3154 /* CustomItalicFontLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4427D183529C700AD3154 /* CustomItalicFontLabel.m */; };
 		4EA62E2A15249B4100E74E64 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2915249B4100E74E64 /* Game.m */; };
 		4EA62E2E15249B9D00E74E64 /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E2D15249B9D00E74E64 /* Team.m */; };
-		4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */; };
 		4EA7E225159DE72900B179BF /* CDAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7E21D159DE72900B179BF /* CDAudioManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4EA7E226159DE72900B179BF /* CDOpenALSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7E220159DE72900B179BF /* CDOpenALSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		4EA7E227159DE72900B179BF /* CocosDenshion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EA7E222159DE72900B179BF /* CocosDenshion.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -193,8 +192,6 @@
 		4EA62E2915249B4100E74E64 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		4EA62E2C15249B9D00E74E64 /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
 		4EA62E2D15249B9D00E74E64 /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
-		4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabellingResultsViewController.h; sourceTree = "<group>"; };
-		4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabellingResultsViewController.m; sourceTree = "<group>"; };
 		4EA7E21C159DE72900B179BF /* CDAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAudioManager.h; sourceTree = "<group>"; };
 		4EA7E21D159DE72900B179BF /* CDAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAudioManager.m; sourceTree = "<group>"; };
 		4EA7E21E159DE72900B179BF /* CDConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDConfig.h; sourceTree = "<group>"; };
@@ -503,8 +500,6 @@
 				4EC4012C152E09A10005EC5C /* IssueScoresViewController.m */,
 				4EF7F24C159697A200DD9C63 /* IssueSplashViewController.h */,
 				4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */,
-				4EA62E2F1524B31A00E74E64 /* LabellingResultsViewController.h */,
-				4EA62E301524B31A00E74E64 /* LabellingResultsViewController.m */,
 				4EAE98EC151A618A0051C926 /* MainStoryboard.storyboard */,
 				4ED69F2E1588CDCE00F84D92 /* MakeTeamPicturesViewController.h */,
 				4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */,
@@ -709,7 +704,6 @@
 				4E08C31615248CAA00F3CDC7 /* FirstIssueExplanationViewController.m in Sources */,
 				4EA62E2A15249B4100E74E64 /* Game.m in Sources */,
 				4EA62E2E15249B9D00E74E64 /* Team.m in Sources */,
-				4EA62E311524B31A00E74E64 /* LabellingResultsViewController.m in Sources */,
 				4E6D61EF1525F79A009D27B0 /* FeaturePictureViewController.m in Sources */,
 				4EA4427E183529C700AD3154 /* CustomItalicFontLabel.m in Sources */,
 				4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */,

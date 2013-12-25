@@ -32,7 +32,6 @@ typedef enum {
 
 @property (assign) int issue;
 
-@property (assign) int turn;
 @property (strong) Team *currentTeam;
 
 @property (assign) int required;

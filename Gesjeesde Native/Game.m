@@ -17,7 +17,6 @@
 
 @synthesize issue;
 
-@synthesize turn;
 @synthesize currentTeam;
 
 @synthesize required;
@@ -32,7 +31,6 @@
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Features" ofType:@"plist"];
         self.features = [[NSArray alloc] initWithContentsOfFile:plistPath];
         
-        self.turn = 1;
         self.currentTeam = nil;
         
         self.required = 4;
@@ -163,6 +161,9 @@
     return [self feature:fName usedSuccesfullyByTeam:self.team1] || [self feature:fName usedSuccesfullyByTeam:self.team2];
 }
 
+/*
+ * Used to determine whether we need to disable features in the list views.
+ */
 - (BOOL)feature:(NSString *)fName usedSuccesfullyByTeam:(Team *)thisTeam {
     for (FeaturePicture *fp in thisTeam.featurePictures) {
         if ([fp.feature isEqualToString:fName] && fp.usedSuccesfully) {
@@ -176,7 +177,6 @@
 // Remove this method altogether TODO
 - (Team *)firstTeamForTurn {
     // This function is only called by the Dragon issue so no check for issue is required anymore
-//    if (issue == 3) {
     
     // For issue 3 the team with the most points is allowed to start (and a minor advantage)
     if (team1.totalPoints > team2.totalPoints) {
@@ -185,8 +185,6 @@
     } else {
         return team2;
     }
-    
-//    }
 }
 
 - (Team *)secondTeamForTurn {
@@ -202,7 +200,6 @@
 }
 
 - (void)resetForNextIssue {
-    turn = 1;
     required = 4;
     
     [self.team1 resetForNextIssue];

@@ -16,6 +16,8 @@
 
 @synthesize imageView;
 
+@synthesize delegate;
+
 // Code from: http://www.musicalgeometry.com/?p=1273
 // and: http://www.musicalgeometry.com/?p=1297
 - (id)initWithImageView:(UIImageView *)iView {
@@ -97,6 +99,8 @@
         
         if (error) {
             NSLog(@"Error capturing image: %@ (%d)", [error localizedDescription], error.code);
+            
+            [self.delegate stillImageFailed];
         } else
         // Check to see if the buffer is not Null
         if (CMSampleBufferIsValid(imageSampleBuffer)) {
@@ -108,8 +112,14 @@
             [imageView setImage:image];
                 
             [self stopPreview];
+            
+            [self.delegate stillImageSucceeded];
+        } else {
+            [self.delegate stillImageFailed];
         }
     }];
+    
+    
 }
 
 - (void)startPreview {
@@ -140,6 +150,8 @@
     self.previewLayer = nil;
     self.captureSession = nil;
     self.stillImageOutput = nil;
+    self.imageView = nil;
+    self.delegate = nil;
     
 }
 

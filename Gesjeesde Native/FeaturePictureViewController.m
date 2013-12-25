@@ -103,7 +103,7 @@
 }
 
 - (IBAction)next:(id)sender {
-    [team.featurePictures addObject:[[FeaturePicture alloc] initWithImage:featureImage]];
+    [team addFeaturePicture:[[FeaturePicture alloc] initWithImage:featureImage]];
 
     team.tookFeaturePictures = YES;
     
@@ -128,6 +128,7 @@
 
 - (void)setupCaptureManager {
     csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
+    csManager.delegate = self;
     [csManager startPreview];
 }
 
@@ -141,10 +142,6 @@
     [self.csManager captureStillImage];
 #endif
     
-    self.takePictureButton.hidden = YES;
-    self.takePictureAgainButton.hidden = NO;
-    self.doneButton.hidden = NO;
-    
 //    double delayInSeconds = 0.5;
 //    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
 //    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
@@ -155,6 +152,18 @@
     if (object == pictureView && [keyPath isEqualToString:@"image"]) {        
         featureImage = [pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
     }
+}
+
+#pragma mark - CaptureSessionDelegate
+
+- (void)stillImageSucceeded {
+    self.takePictureButton.hidden = YES;
+    self.takePictureAgainButton.hidden = NO;
+    self.doneButton.hidden = NO;
+}
+
+- (void)stillImageFailed {
+    [self takeFeaturePictureAgain:self];
 }
 
 @end

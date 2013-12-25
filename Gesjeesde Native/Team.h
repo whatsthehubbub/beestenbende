@@ -22,6 +22,7 @@
 @property (strong) UIImage *picture;
 
 @property (readwrite) bool tookFeaturePictures;
+// We actually need to keep track of all used featurePictures to see whether we need to disable things
 @property (nonatomic, retain) NSMutableArray *featurePictures;
 
 @property (readwrite) int points;
@@ -38,12 +39,8 @@
 -(id)initWithNumber:(int)teamNumber;
 -(NSString *)getTeamColor;
 -(NSString *)getTeamName;
--(NSString *)getPicturePath;
 
-- (FeaturePicture *)featurePictureForTurn:(int)turn;
-- (bool)allFeaturePicturesLabelledOrDeleted;
-- (void)purgeDeletedFeaturePictures;
-- (void)purgeUsedFeaturePictures;
+- (void)addFeaturePicture:(FeaturePicture *)fp;
 
 - (void)resetForNextIssue;
 
