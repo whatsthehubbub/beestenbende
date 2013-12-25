@@ -14,11 +14,6 @@
 @property (nonatomic, retain) NSString *feature;
 @property (nonatomic, retain) UIImage *image;
 
-// TODO remove this property
-@property (assign) bool deleted;
-
-// TODO remove this property
-@property (assign) int presentedTurn;
 @property (assign) BOOL presentAssertion;
 
 @property (assign) BOOL usedSuccesfully;

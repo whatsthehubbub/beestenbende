@@ -17,7 +17,6 @@
 
 @synthesize issue;
 
-@synthesize turn;
 @synthesize currentTeam;
 
 @synthesize required;
@@ -32,7 +31,6 @@
         NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Features" ofType:@"plist"];
         self.features = [[NSArray alloc] initWithContentsOfFile:plistPath];
         
-        self.turn = 1;
         self.currentTeam = nil;
         
         self.required = 4;
@@ -202,7 +200,6 @@
 }
 
 - (void)resetForNextIssue {
-    turn = 1;
     required = 4;
     
     [self.team1 resetForNextIssue];
