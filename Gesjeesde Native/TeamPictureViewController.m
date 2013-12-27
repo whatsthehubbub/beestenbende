@@ -98,6 +98,8 @@
 #pragma mark -
 
 - (IBAction)takeTeamPicture:(id)sender {
+    self.takeTeamPictureButton.enabled = NO;
+    
     [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v4.wav"];
     
 #if TARGET_IPHONE_SIMULATOR
@@ -122,7 +124,9 @@
 - (IBAction)takeTeamPictureAgain:(id)sender {
     [csManager startPreview];
     
+    self.takeTeamPictureButton.enabled = YES;
     self.takeTeamPictureButton.hidden = NO;
+    
     self.takePictureAgainButton.hidden = YES;
     self.nextButton.hidden = YES;
 }
