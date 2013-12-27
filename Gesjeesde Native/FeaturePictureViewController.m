@@ -121,7 +121,9 @@
 - (IBAction)takeFeaturePictureAgain:(id)sender {
     [self setupCaptureManager];
     
+    self.takePictureButton.enabled = YES;
     self.takePictureButton.hidden = NO;
+    
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
 }
@@ -135,6 +137,8 @@
 #pragma mark -
 
 - (IBAction)takeFeaturePicture:(id)sender {
+    self.takePictureButton.enabled = NO;
+    
     [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v4.wav"];
 
 #if TARGET_IPHONE_SIMULATOR
