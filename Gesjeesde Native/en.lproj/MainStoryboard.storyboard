@@ -3365,7 +3365,7 @@ want hij heeft…</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcX-RD-TwK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8187" y="3012"/>
+            <point key="canvasLocation" x="8247" y="2980"/>
         </scene>
         <!--Dragon Resolution View Controller - FirstDragon-->
         <scene sceneID="Ttn-ai-RLD">
