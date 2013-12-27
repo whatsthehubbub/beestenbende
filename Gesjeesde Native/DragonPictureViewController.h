@@ -18,11 +18,10 @@
 @property (strong) IBOutlet UIImageView *backgroundImage;
 @property (strong) IBOutlet UILabel *headerLabel;
 
-@property (nonatomic, retain) IBOutlet UILabel *classLabel;
+@property (strong) IBOutlet UILabel *classLabel;
 
 @property (strong) IBOutlet UIImageView *dragonPictureView;
-@property (strong)  IBOutlet UIImageView *dragonPictureFrame;
-
+@property (strong) IBOutlet UIImageView *dragonPictureFrame;
 
 @property (strong) IBOutlet UIButton *takeDragonPictureButton;
 @property (strong) IBOutlet UIButton *takePictureAgainButton;
@@ -30,8 +29,8 @@
 
 @property (strong) UIImage *dragonPicture;
 
-@property (strong) Game *game;
-@property (strong) Team *currentTeam;
+@property (nonatomic, weak) Game *game;
+@property (nonatomic, weak) Team *currentTeam;
 
 @property (strong) CaptureSessionManager *csManager;
 

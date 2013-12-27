@@ -13,8 +13,8 @@
 
 @interface DragonClassViewController : UIViewController
 
-@property (strong) Game *game;
-@property (strong) Team *currentTeam;
+@property (nonatomic, weak) Game *game;
+@property (nonatomic, weak) Team *currentTeam;
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
 

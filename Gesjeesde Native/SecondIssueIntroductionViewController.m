@@ -14,8 +14,6 @@
 
 @implementation SecondIssueIntroductionViewController
 
-@synthesize game;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,9 +29,6 @@
 	// Do any additional setup after loading the view.
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"d06_zeepaling_reptielverdriet.wav"];
-    
-    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    game = appDelegate.game;
     
     [Flurry logEvent:@"Issue2"];
 }

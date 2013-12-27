@@ -13,25 +13,20 @@
 #import "SimpleAudioEngine.h"
 
 @interface IssueScoresViewController : UIViewController {
-    Game *game;
 }
 
-@property (strong) Game *game;
+@property (nonatomic, weak) Game *game;
 
-@property (nonatomic, retain) IBOutlet UILabel *headerLabel;
+@property (strong) IBOutlet UILabel *headerLabel;
 
-@property (nonatomic, retain) IBOutlet UILabel *team1Label;
-@property (nonatomic, retain) IBOutlet UILabel *team2Label;
+@property (strong) IBOutlet UIImageView *team1Picture;
+@property (strong) IBOutlet UIImageView *team2Picture;
 
-@property (nonatomic, retain) IBOutlet UIImageView *team1Picture;
-@property (nonatomic, retain) IBOutlet UIImageView *team2Picture;
+@property (strong) IBOutlet UILabel *team1ScoreLabel;
+@property (strong) IBOutlet UILabel *team2ScoreLabel;
 
-@property (nonatomic, retain) IBOutlet UILabel *team1ScoreLabel;
-@property (nonatomic, retain) IBOutlet UILabel *team2ScoreLabel;
-
-@property (nonatomic, retain) IBOutlet UILabel *thanksLabel;
+@property (strong) IBOutlet UILabel *thanksLabel;
 
 - (IBAction)next:(id)sender;
-- (IBAction)back:(id)sender;
 
 @end

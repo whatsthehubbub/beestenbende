@@ -76,6 +76,7 @@
     // Release any retained subviews of the main view.
     
     [self.csManager stopPreview];
+    [self.csManager disposeOfSession];
     self.csManager = nil;
 }
 

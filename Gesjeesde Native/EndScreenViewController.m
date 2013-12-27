@@ -76,9 +76,6 @@
 //    [self.navigationController pushViewController:viewController animated:YES];
     
     [self.navigationController popToRootViewControllerAnimated:YES];
-    
-    
-//    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

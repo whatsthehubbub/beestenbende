@@ -14,10 +14,10 @@
 
 @interface EndScreenViewController : UIViewController
 
-@property (strong) Game *game;
+@property (nonatomic, weak) Game *game;
 
-@property (nonatomic, retain) IBOutlet UIImageView *backgroundImage;
-@property (nonatomic, retain) IBOutlet UIImageView *winnerPicture;
+@property (strong) IBOutlet UIImageView *backgroundImage;
+@property (strong) IBOutlet UIImageView *winnerPicture;
 
 - (IBAction)mainMenu:(id)sender;
 

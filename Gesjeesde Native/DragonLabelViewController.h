@@ -14,7 +14,7 @@
 
 @interface DragonLabelViewController : UIViewController <FeaturePickerViewControllerDelegate>
 
-@property (nonatomic, retain) IBOutlet UILabel *classLabel;
+@property (strong) IBOutlet UILabel *classLabel;
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
 @property (strong) IBOutlet UILabel *headerLabel;
@@ -22,12 +22,11 @@
 @property (strong) IBOutlet UIImageView *dragonPictureFrame;
 @property (strong) IBOutlet UIImageView *dragonPictureView;
 
-
 @property (strong) IBOutlet UIButton *featureButton;
 @property (strong) IBOutlet UIButton *doneButton;
 
-@property (strong) Game *game;
-@property (strong) Team *currentTeam;
+@property (nonatomic, weak) Game *game;
+@property (nonatomic, weak) Team *currentTeam;
 
 - (IBAction)next:(id)sender;
 

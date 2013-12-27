@@ -18,9 +18,6 @@
 
 @synthesize headerLabel;
 
-@synthesize team1Label;
-@synthesize team2Label;
-
 @synthesize team1Picture;
 @synthesize team2Picture;
 
@@ -90,12 +87,6 @@
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
     [self performSegueWithIdentifier:@"Next" sender:self];
-}
-
-- (IBAction)back:(id)sender {
-    [[SimpleAudioEngine sharedEngine] playEffect:@"i03_schermterug.wav"];
-    
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

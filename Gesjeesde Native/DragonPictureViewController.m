@@ -50,9 +50,6 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
-    // Register the dragonPictureView for KVO so we know when a picture has actually been taken
-    [dragonPictureView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
-    
     // Get the team that has to take the picture
     currentTeam = [game firstTeamForTurn];
     if (currentTeam.tookFeaturePictures) {
@@ -67,15 +64,6 @@
     self.classLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk \r van een %@.", class.lowercaseString];
     
     [self setupCaptureManager];
-    
-    // For some reason this camera does not resume gracefully after Active/Inactive
-    // I suspect this has something to do with looping back through this ViewController
-    // http://developer.apple.com/library/ios/#DOCUMENTATION/iPhone/Conceptual/iPhoneOSProgrammingGuide/ManagingYourApplicationsFlow/ManagingYourApplicationsFlow.html#//apple_ref/doc/uid/TP40007072-CH4-SW1
-    // http://stackoverflow.com/questions/10125261/avcapturevideopreviewlayer-displays-nothing-on-resume
-
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 - (void)viewDidUnload
@@ -83,7 +71,9 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     
-//    [[NSNotificationCenter defaultCenter] removeObserver:self.csManager];
+    [self.csManager stopPreview];
+    [self.csManager disposeOfSession];
+    self.csManager = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -123,12 +113,6 @@
 #endif
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if (object == dragonPictureView && [keyPath isEqualToString:@"image"]) {
-        dragonPicture = [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
-    }
-}
-
 - (IBAction)takeDragonPictureAgain:(id)sender {
     [self setupCaptureManager];
     
@@ -146,12 +130,6 @@
     [self.csManager disposeOfSession];
     
     
-    // Remove notification observers
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
-    
-    
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
     [self performSegueWithIdentifier:@"Next" sender:sender];
@@ -160,6 +138,8 @@
 #pragma mark CaptureSessionDelegate methods
 
 - (void)stillImageSucceeded {
+    dragonPicture = [dragonPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
+    
     // Hide take picture button, show other two
     self.takeDragonPictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;

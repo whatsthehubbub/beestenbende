@@ -13,10 +13,7 @@
 #import "Flurry.h"
 
 @interface SecondIssueIntroductionViewController : UIViewController {
-    Game *game;
 }
-
-@property (strong) Game *game;
 
 - (IBAction)next:(id)sender;
 - (IBAction)back:(id)sender;
