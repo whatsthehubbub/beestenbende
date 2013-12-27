@@ -121,8 +121,6 @@
 }
 
 - (IBAction)next:(id)sender {
-    // Check if they have picked a feature TODO
-    
     // Commit the feature picture to the current turn and present assertion
     // because it could still change after picking
     

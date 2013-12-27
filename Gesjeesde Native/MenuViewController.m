@@ -48,10 +48,6 @@
 }
 
 - (IBAction)next:(id)sender {
-    
-//    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FeaturePictureViewController"];
-//    [self.navigationController pushViewController:viewController animated:YES];
-    
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     [self performSegueWithIdentifier:@"Next" sender:self];
 }

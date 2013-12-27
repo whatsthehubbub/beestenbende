@@ -19,9 +19,9 @@
 
 @property (strong) IBOutlet UILabel *headerLabel;
 
-@property (nonatomic, retain) IBOutlet UIImageView *backgroundImage;
-@property (nonatomic, retain) IBOutlet UIImageView *pictureView;
-@property (nonatomic, retain) IBOutlet UIImageView *pictureFrame;
+@property (strong) IBOutlet UIImageView *backgroundImage;
+@property (strong) IBOutlet UIImageView *pictureView;
+@property (strong) IBOutlet UIImageView *pictureFrame;
 
 @property (strong) IBOutlet UILabel *explanationLabel;
 @property (strong) IBOutlet UILabel *hintLabel;
@@ -33,8 +33,8 @@
 // Place to store the processed image before we set it on the team upon exit of this view controller
 @property (strong) UIImage *featureImage;
 
-@property (strong) Game *game;
-@property (strong) Team *team;
+@property (nonatomic, weak) Game *game;
+@property (nonatomic, weak) Team *team;
 
 @property (strong) CaptureSessionManager *csManager;
 

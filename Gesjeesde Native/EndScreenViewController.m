@@ -72,8 +72,10 @@
     appDelegate.game = [[Game alloc] init];
     
     // Go to the main menu again
-    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
-    [self.navigationController pushViewController:viewController animated:YES];
+//    UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"MenuViewController"];
+//    [self.navigationController pushViewController:viewController animated:YES];
+    
+    [self.navigationController popToRootViewControllerAnimated:YES];
     
     
 //    [self.navigationController popToRootViewControllerAnimated:YES];

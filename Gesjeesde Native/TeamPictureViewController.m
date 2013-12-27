@@ -51,9 +51,6 @@
     selector.hidden = YES;
 #endif
     
-    // Register the TeamPictureView for KVO so we know when a picture has actually been taken
-    [teamPictureView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:NULL];
-    
     self.currentTeamNumber = 1;
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -65,34 +62,20 @@
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
     self.csManager.delegate = self;
     [self.csManager startPreview];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignedActive) name:UIApplicationWillResignActiveNotification object:nil];
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(becameActive) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 - (void)viewDidUnload
 {
-    [self setTeamPictureView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
+    
+    [self.csManager stopPreview];
+    self.csManager = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-
-- (void)resignedActive {
-    [self.csManager stopPreview];
-    
-    self.teamPictureFrame.hidden = YES;
-}
-
-- (void)becameActive {
-    [self.csManager startPreview];
-    
-    self.teamPictureFrame.hidden = NO;
 }
 
 #pragma mark -
@@ -106,19 +89,6 @@
 #else
     [self.csManager captureStillImage];
 #endif
-}
-
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    if (object == teamPictureView && [keyPath isEqualToString:@"image"]) {
-        Team *team;
-        if (currentTeamNumber == 1) {
-            team = game.team1;
-        } else {
-            team = game.team2;
-        }
-        
-        team.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
-    }
 }
 
 - (IBAction)takeTeamPictureAgain:(id)sender {
@@ -151,11 +121,6 @@
         
         [UIView commitAnimations];
     } else {
-        // Remove notification observers
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
-        
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
-        
         [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
         
         game.issue = selector.selectedSegmentIndex+1;
@@ -174,6 +139,8 @@
 }
 
 -(void)didReceiveMemoryWarning {
+    self.csManager = nil;
+    
     NSLog(@"Did receive memory warning in %@", NSStringFromClass([self class]));
 }
 
@@ -188,6 +155,15 @@
 }
 
 - (void)stillImageSucceeded {
+    Team *team;
+    if (currentTeamNumber == 1) {
+        team = game.team1;
+    } else {
+        team = game.team2;
+    }
+    
+    team.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
+    
     self.takeTeamPictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;
     self.nextButton.hidden = NO;

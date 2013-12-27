@@ -19,16 +19,6 @@
 @synthesize game;
 @synthesize delegate;
 
-//- (id)initWithStyle:(UITableViewStyle)style
-//{
-//    self = [super initWithStyle:style];
-//    if (self) {
-//        // Custom initialization
-//    }
-//    
-//    return self;
-//}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -126,13 +116,6 @@
     static NSString *CellIdentifier;
     UITableViewCell *cell;
     
-    // Bizarre code needed to figure out which team is on during issue 3, will only be used during issue 3
-//    Team *currentTeam = [game getCurrentTeam];
-//    
-//    NSLog(@"Current team %@", currentTeam.dragonFeaturesGuessed);
-//    NSLog(@"Current feature %@", [feature objectForKey:@"Label"]);
-//    NSLog(@"Boolean: %d", ![currentTeam.dragonFeaturesGuessed containsObject:[feature objectForKey:@"Label"]]);
-    
     BOOL disableCell = [self disableFeature:[feature objectForKey:@"Label"]];
     
     if (!disableCell) {
@@ -143,7 +126,6 @@
         CellIdentifier = @"FeatureCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     } else {
-//        NSLog(@"Cell disabled");
         CellIdentifier = @"DisabledFeatureCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         

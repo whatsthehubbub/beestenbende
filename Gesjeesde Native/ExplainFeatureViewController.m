@@ -59,8 +59,6 @@
     // Utility method to not have to type this twice, parametrized on self.currentTeam
     FeaturePicture *fp = [self.currentTeam.featurePictures lastObject];
     
-//    NSLog(@"Feature picture for current team %@", fp.feature);
-    
     featureImage.image = fp.image;
     
     // We may need to change this text but need to leave the original intact

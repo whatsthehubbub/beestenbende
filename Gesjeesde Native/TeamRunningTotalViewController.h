@@ -12,10 +12,9 @@
 #import "SimpleAudioEngine.h"
 
 @interface TeamRunningTotalViewController : UIViewController {
-    Game *game;
 }
 
-@property (strong) Game *game;
+@property (nonatomic, weak) Game *game;
 
 @property (nonatomic, retain) IBOutlet UILabel *titleLabel;
 

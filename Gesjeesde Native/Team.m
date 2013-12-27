@@ -70,8 +70,6 @@
 
 - (void)addFeaturePicture:(FeaturePicture *)fp {
     [self.featurePictures addObject:fp];
-    NSLog(@"Feature picture added");
-    NSLog(@"%@", fp.image);
 }
 
 - (void)resetForNextIssue {

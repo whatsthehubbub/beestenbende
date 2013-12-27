@@ -18,10 +18,9 @@
 @end;
 
 @interface FeaturePickerViewController : UIViewController {
-    Game *game;
 }
 
-@property (strong) Game *game;
+@property (nonatomic, weak) Game *game;
 @property (nonatomic, weak) id <FeaturePickerViewControllerDelegate> delegate;
 
 - (BOOL)disableFeature:(NSString *)feature;

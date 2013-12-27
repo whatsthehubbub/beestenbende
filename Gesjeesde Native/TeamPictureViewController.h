@@ -28,7 +28,7 @@
 @property (strong) IBOutlet UIButton *takePictureAgainButton;
 @property (strong) IBOutlet UIButton *nextButton;
 
-@property (strong) Game *game;
+@property (weak, nonatomic) Game *game;
 
 @property (strong) CaptureSessionManager *csManager;
 

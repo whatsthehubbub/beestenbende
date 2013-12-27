@@ -14,18 +14,17 @@
 @class ExplainFeatureViewController;
 
 @interface ExplainFeatureViewController : UIViewController {
-    NSDictionary *feature;
 }
 
-@property (strong) Game *game;
-@property (strong) Team *currentTeam;
+@property (nonatomic, weak) Game *game;
+@property (nonatomic, weak) Team *currentTeam;
 
 @property (strong) IBOutlet UIImageView *backgroundImage;
 
 @property (strong) IBOutlet UIImageView *featureImageFrame;
-@property (nonatomic, retain) IBOutlet UIImageView *featureImage;
-@property (nonatomic, retain) IBOutlet UILabel *featureLabel;
-@property (nonatomic, retain) IBOutlet UILabel *resultAndExplanationLabel;
+@property (strong) IBOutlet UIImageView *featureImage;
+@property (strong) IBOutlet UILabel *featureLabel;
+@property (strong) IBOutlet UILabel *resultAndExplanationLabel;
 
 @property (strong) IBOutlet UIImageView *pointsImage;
 
