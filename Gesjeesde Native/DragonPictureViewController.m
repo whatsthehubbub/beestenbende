@@ -113,6 +113,8 @@
 #pragma mark -
 
 - (IBAction)takeDragonPicture:(id)sender {
+    self.takeDragonPictureButton.enabled = NO;
+    
     [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v4.wav"];
     
 #if TARGET_IPHONE_SIMULATOR
@@ -130,7 +132,9 @@
 - (IBAction)takeDragonPictureAgain:(id)sender {
     [self setupCaptureManager];
     
+    self.takeDragonPictureButton.enabled = YES;
     self.takeDragonPictureButton.hidden = NO;
+    
     self.takePictureAgainButton.hidden = YES;
     self.doneButton.hidden = YES;
 }
