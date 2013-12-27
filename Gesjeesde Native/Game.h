@@ -55,5 +55,6 @@ typedef enum {
 - (Team *)otherTeamForTeam:(Team *)thisTeam;
 
 - (void)resetForNextIssue;
+- (void)scrubAllImages;
 
 @end

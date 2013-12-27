@@ -79,4 +79,10 @@
     featurePictures = [[NSMutableArray alloc] init];
 }
 
+- (void)scrubImages {
+    for (FeaturePicture *fp in featurePictures) {
+        fp.image = nil;
+    }
+}
+
 @end

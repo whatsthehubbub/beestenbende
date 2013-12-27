@@ -43,5 +43,6 @@
 - (void)addFeaturePicture:(FeaturePicture *)fp;
 
 - (void)resetForNextIssue;
+- (void)scrubImages;
 
 @end

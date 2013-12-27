@@ -206,4 +206,9 @@
     [self.team2 resetForNextIssue];
 }
 
+- (void)scrubAllImages {
+    [self.team1 scrubImages];
+    [self.team2 scrubImages];
+}
+
 @end

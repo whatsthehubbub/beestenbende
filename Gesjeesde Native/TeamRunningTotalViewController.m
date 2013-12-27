@@ -48,6 +48,9 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
+    // We can throw away all image data taken up until now because we won't be needing it anyway
+    [game scrubAllImages];
+    
     self.titleLabel.text = [NSString stringWithFormat:@"Overtuig de %@…", [[game getCurrentAnimalName] lowercaseString]];
     
     self.team1Image.image = game.team1.picture;

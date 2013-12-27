@@ -43,6 +43,9 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     game = appDelegate.game;
     
+    // We don't need the images taken up until now
+    [game scrubAllImages];
+    
     team1Picture.image = game.team1.picture;
     team2Picture.image = game.team2.picture;
     
