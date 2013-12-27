@@ -108,6 +108,7 @@
     [[SimpleAudioEngine sharedEngine] playEffect:@"i04_neemfoto_v4.wav"];
     
 #if TARGET_IPHONE_SIMULATOR
+    [self stillImageSucceeded];
 #else
     [self.csManager captureStillImage];
 #endif
