@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "Flurry.h"
 #import "SimpleAudioEngine.h"
 
 @interface FirstIssueIntroductionViewController : UIViewController 

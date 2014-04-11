@@ -120,6 +120,7 @@
 		4EEFC16C18F85CE400522BE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEFC16B18F85CE400522BE0 /* QuartzCore.framework */; };
 		4EEFC16E18F85CEF00522BE0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEFC16D18F85CEF00522BE0 /* CoreText.framework */; };
 		4EEFC17018F85CFE00522BE0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEFC16F18F85CFE00522BE0 /* Security.framework */; };
+		4EEFC17418F86C4F00522BE0 /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEFC17318F86C4F00522BE0 /* libFlurry_4.4.0.a */; };
 		4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -293,6 +294,8 @@
 		4EEFC16B18F85CE400522BE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		4EEFC16D18F85CEF00522BE0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4EEFC16F18F85CFE00522BE0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4EEFC17218F86C4F00522BE0 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		4EEFC17318F86C4F00522BE0 /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
 		4EF7F24C159697A200DD9C63 /* IssueSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueSplashViewController.h; sourceTree = "<group>"; };
 		4EF7F24D159697A200DD9C63 /* IssueSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueSplashViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -307,6 +310,7 @@
 				4EEFC16E18F85CEF00522BE0 /* CoreText.framework in Frameworks */,
 				4EEFC16C18F85CE400522BE0 /* QuartzCore.framework in Frameworks */,
 				4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */,
+				4EEFC17418F86C4F00522BE0 /* libFlurry_4.4.0.a in Frameworks */,
 				4E4EECEF1588BDEF0018170C /* AudioToolbox.framework in Frameworks */,
 				4E4EECED1588BDE80018170C /* OpenAL.framework in Frameworks */,
 				4EAF06C5153C8FA500BE1CAA /* CoreVideo.framework in Frameworks */,
@@ -452,6 +456,7 @@
 		4EAE98E0151A618A0051C926 /* Gesjeesde Native */ = {
 			isa = PBXGroup;
 			children = (
+				4EEFC17118F86C4F00522BE0 /* Flurry */,
 				4E6E2A021593DBCC000EA338 /* AnimalPartsViewController.h */,
 				4E6E2A031593DBCC000EA338 /* AnimalPartsViewController.m */,
 				4ED69F641588F5A600F84D92 /* AnimalUnderstandsResponseViewController.h */,
@@ -599,6 +604,15 @@
 				4EEFC16718F85B8900522BE0 /* HockeySDKResources.bundle */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		4EEFC17118F86C4F00522BE0 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				4EEFC17218F86C4F00522BE0 /* Flurry.h */,
+				4EEFC17318F86C4F00522BE0 /* libFlurry_4.4.0.a */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -845,7 +859,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "CD_USE_OWN_FILEUTILS=1";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Gesjeesde",
+					Native/Flurry,
+				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
@@ -940,7 +958,11 @@
 				);
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Gesjeesde",
+					Native/Flurry,
+				);
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -964,7 +986,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "CD_USE_OWN_FILEUTILS=1";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Gesjeesde",
+					Native/Flurry,
+				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";

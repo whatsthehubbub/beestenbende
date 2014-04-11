@@ -29,6 +29,8 @@
 	// Do any additional setup after loading the view.
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"d10_draak_wiebenik_v4.wav"];
+    
+    [Flurry logEvent:@"IssueDragon"];
 }
 
 - (void)viewDidUnload

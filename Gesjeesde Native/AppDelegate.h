@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <HockeySDK/HockeySDK.h>
 
+#import "Flurry.h"
+
 #import "Game.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {

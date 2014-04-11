@@ -30,7 +30,7 @@
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"d06_zeepaling_reptielverdriet.wav"];
     
-//    [Flurry logEvent:@"Issue2"];
+    [Flurry logEvent:@"Issue2"];
 }
 
 - (void)viewDidUnload
