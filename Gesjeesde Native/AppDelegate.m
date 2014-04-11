@@ -22,6 +22,10 @@
     
 //    [Flurry startSession:@"226VFBNZRZN6QZP2DKN2"];
     
+    [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"96e6f19c2994bcfb744bc3973893c6f6"];
+    [[BITHockeyManager sharedHockeyManager] startManager];
+    [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+    
     return YES;
 }
 							
