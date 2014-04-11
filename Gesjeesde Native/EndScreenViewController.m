@@ -52,7 +52,7 @@
     
     self.winnerPicture.image = winner.picture;
     
-    [Flurry logEvent:@"GameOver"];
+//    [Flurry logEvent:@"GameOver"];
 }
 
 - (void)viewDidUnload

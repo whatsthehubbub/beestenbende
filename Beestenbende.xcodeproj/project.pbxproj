@@ -23,7 +23,6 @@
 		4E42820E1545F9BA009FD991 /* SecondIssueExplanationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E42820D1545F9BA009FD991 /* SecondIssueExplanationViewController.m */; };
 		4E4282111546C13E009FD991 /* IntermediaryScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */; };
 		4E4346C5171EB6E100B93D50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */; };
-		4E4346CA171EB76800B93D50 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4346C9171EB76800B93D50 /* libFlurry.a */; };
 		4E4A4DF3154EB719009785BD /* DragonPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */; };
 		4E4A4DF7154ECA1B009785BD /* DragonLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A4DF6154ECA1B009785BD /* DragonLabelViewController.m */; };
 		4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D8F9D152CCFCD00E898D5 /* Features.plist */; };
@@ -147,8 +146,6 @@
 		4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntermediaryScoresViewController.m; sourceTree = "<group>"; };
 		4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Beestenbende.xcodeproj; sourceTree = "<group>"; };
 		4E4346C4171EB6E100B93D50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		4E4346C8171EB76800B93D50 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		4E4346C9171EB76800B93D50 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		4E4A4DF1154EB719009785BD /* DragonPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonPictureViewController.h; sourceTree = "<group>"; };
 		4E4A4DF2154EB719009785BD /* DragonPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonPictureViewController.m; sourceTree = "<group>"; };
 		4E4A4DF5154ECA1B009785BD /* DragonLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonLabelViewController.h; sourceTree = "<group>"; };
@@ -303,7 +300,6 @@
 				4EAE98DB151A618A0051C926 /* UIKit.framework in Frameworks */,
 				4EAE98DD151A618A0051C926 /* Foundation.framework in Frameworks */,
 				4EAE98DF151A618A0051C926 /* CoreGraphics.framework in Frameworks */,
-				4E4346CA171EB76800B93D50 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,15 +328,6 @@
 		4E4346C2171EB6A500B93D50 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
-			sourceTree = "<group>";
-		};
-		4E4346C7171EB76800B93D50 /* Flurry */ = {
-			isa = PBXGroup;
-			children = (
-				4E4346C8171EB76800B93D50 /* Flurry.h */,
-				4E4346C9171EB76800B93D50 /* libFlurry.a */,
-			);
-			path = Flurry;
 			sourceTree = "<group>";
 		};
 		4E4EECDD1588BDC00018170C /* CocosDenshion */ = {
@@ -493,7 +480,6 @@
 				4E08C31515248CAA00F3CDC7 /* FirstIssueExplanationViewController.m */,
 				4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */,
 				4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */,
-				4E4346C7171EB76800B93D50 /* Flurry */,
 				4E42820F1546C13C009FD991 /* IntermediaryScoresViewController.h */,
 				4E4282101546C13D009FD991 /* IntermediaryScoresViewController.m */,
 				4EC4012B152E09A10005EC5C /* IssueScoresViewController.h */,
@@ -602,7 +588,7 @@
 		4EAE98CD151A61890051C926 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Hubbub;
 				TargetAttributes = {
 					4EAE98D5151A618A0051C926 = {
@@ -775,15 +761,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -806,10 +800,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "CD_USE_OWN_FILEUTILS=1";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
@@ -822,8 +813,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Alper Cugun (UWC9C6XB66)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Alper Cugun (UWC9C6XB66)";
 				COPY_PHASE_STRIP = NO;
@@ -836,10 +832,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "9CC517A6-3564-45BA-A203-EA9795024EA4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9CC517A6-3564-45BA-A203-EA9795024EA4";
 				SDKROOT = iphoneos;
@@ -850,15 +850,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -883,10 +891,7 @@
 				);
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 2;
@@ -906,10 +911,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "CD_USE_OWN_FILEUTILS=1";
 				INFOPLIST_FILE = "Gesjeesde Native/Gesjeesde Native-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Gesjeesde Native/Flurry\"",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
