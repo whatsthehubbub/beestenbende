@@ -26,7 +26,8 @@
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     
-    [[BITHockeyManager sharedHockeyManager] testIdentifier];
+    // Line to test if the integration has worked
+    // [[BITHockeyManager sharedHockeyManager] testIdentifier];
     
     return YES;
 }
