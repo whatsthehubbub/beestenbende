@@ -26,6 +26,8 @@
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     
+    [[BITHockeyManager sharedHockeyManager] testIdentifier];
+    
     return YES;
 }
 							
