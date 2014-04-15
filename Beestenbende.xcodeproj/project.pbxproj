@@ -114,6 +114,7 @@
 		4EDEFAD7152B359D00324EDB /* FeaturePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD6152B359D00324EDB /* FeaturePicture.m */; };
 		4EDEFADA152B426300324EDB /* FeaturePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */; };
 		4EE1E1BF152625E800A8C6CF /* FirstIssueIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */; };
+		4EEB8B1A18FD41960040DAF4 /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEB8B1918FD41960040DAF4 /* libFlurry_4.4.0.a */; };
 		4EEFC16818F85B8900522BE0 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EEFC16418F85B8900522BE0 /* HockeySDK.framework */; };
 		4EEFC16918F85B8900522BE0 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFC16618F85B8900522BE0 /* HockeySDK.xcconfig */; };
 		4EEFC16A18F85B8900522BE0 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4EEFC16718F85B8900522BE0 /* HockeySDKResources.bundle */; };
@@ -287,6 +288,8 @@
 		4EDEFAD9152B426300324EDB /* FeaturePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeaturePickerViewController.m; sourceTree = "<group>"; };
 		4EE1E1BD152625E800A8C6CF /* FirstIssueIntroductionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstIssueIntroductionViewController.h; sourceTree = "<group>"; };
 		4EE1E1BE152625E800A8C6CF /* FirstIssueIntroductionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstIssueIntroductionViewController.m; sourceTree = "<group>"; };
+		4EEB8B1818FD41960040DAF4 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		4EEB8B1918FD41960040DAF4 /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
 		4EEFC16418F85B8900522BE0 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		4EEFC16618F85B8900522BE0 /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
 		4EEFC16718F85B8900522BE0 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
@@ -307,6 +310,7 @@
 				4EEFC16E18F85CEF00522BE0 /* CoreText.framework in Frameworks */,
 				4EEFC16C18F85CE400522BE0 /* QuartzCore.framework in Frameworks */,
 				4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */,
+				4EEB8B1A18FD41960040DAF4 /* libFlurry_4.4.0.a in Frameworks */,
 				4E4EECEF1588BDEF0018170C /* AudioToolbox.framework in Frameworks */,
 				4E4EECED1588BDE80018170C /* OpenAL.framework in Frameworks */,
 				4EAF06C5153C8FA500BE1CAA /* CoreVideo.framework in Frameworks */,
@@ -452,6 +456,7 @@
 		4EAE98E0151A618A0051C926 /* Gesjeesde Native */ = {
 			isa = PBXGroup;
 			children = (
+				4EEB8B1718FD41960040DAF4 /* Flurry */,
 				4E6E2A021593DBCC000EA338 /* AnimalPartsViewController.h */,
 				4E6E2A031593DBCC000EA338 /* AnimalPartsViewController.m */,
 				4ED69F641588F5A600F84D92 /* AnimalUnderstandsResponseViewController.h */,
@@ -580,6 +585,15 @@
 				4EDEFAD6152B359D00324EDB /* FeaturePicture.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		4EEB8B1718FD41960040DAF4 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				4EEB8B1818FD41960040DAF4 /* Flurry.h */,
+				4EEB8B1918FD41960040DAF4 /* libFlurry_4.4.0.a */,
+			);
+			path = Flurry;
 			sourceTree = "<group>";
 		};
 		4EEFC16318F85B8900522BE0 /* HockeySDK.embeddedframework */ = {
@@ -849,6 +863,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Gesjeesde",
 					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)/Gesjeesde",
+					Native/Flurry,
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
@@ -948,6 +964,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Gesjeesde",
 					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)/Gesjeesde",
+					Native/Flurry,
 				);
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
@@ -976,6 +994,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Gesjeesde",
 					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)/Gesjeesde",
+					Native/Flurry,
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
