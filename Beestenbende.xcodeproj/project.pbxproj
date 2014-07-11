@@ -74,6 +74,7 @@
 		4ECB23421587FA1A00F3CDCA /* DragonRevealedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB23411587FA1800F3CDCA /* DragonRevealedViewController.m */; };
 		4ECE090E158FF59200868CD0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECE090D158FF59200868CD0 /* SplashViewController.m */; };
 		4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2152D153C610700040C97 /* AVFoundation.framework */; };
+		4ED4D2CB196E9DCF00D949A4 /* UIImageView+UncachedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */; };
 		4ED69F301588CDCF00F84D92 /* MakeTeamPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */; };
 		4ED69F351588D7B500F84D92 /* i15_tussenstand_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F341588D7B500F84D92 /* i15_tussenstand_v2.wav */; };
 		4ED69F391588DB7D00F84D92 /* i08_tijdvoorbij_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F381588DB7D00F84D92 /* i08_tijdvoorbij_v2.wav */; };
@@ -242,6 +243,8 @@
 		4ECE090C158FF59200868CD0 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		4ECE090D158FF59200868CD0 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		4ED2152D153C610700040C97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4ED4D2C9196E9DCF00D949A4 /* UIImageView+UncachedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UncachedImageView.h"; sourceTree = "<group>"; };
+		4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UncachedImageView.m"; sourceTree = "<group>"; };
 		4ED69F2E1588CDCE00F84D92 /* MakeTeamPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTeamPicturesViewController.h; sourceTree = "<group>"; };
 		4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamPicturesViewController.m; sourceTree = "<group>"; };
 		4ED69F341588D7B500F84D92 /* i15_tussenstand_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i15_tussenstand_v2.wav; sourceTree = "<group>"; };
@@ -415,6 +418,8 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
+				4ED4D2C9196E9DCF00D949A4 /* UIImageView+UncachedImageView.h */,
+				4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */,
 				47E259641832E463003C25CC /* Beestenbende iPad Images.xcassets */,
 				4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */,
 				4E3326B4151A68C200CEC850 /* assets */,
@@ -784,6 +789,7 @@
 				4EF7F24E159697A200DD9C63 /* IssueSplashViewController.m in Sources */,
 				4EA7E225159DE72900B179BF /* CDAudioManager.m in Sources */,
 				4EA7E226159DE72900B179BF /* CDOpenALSupport.m in Sources */,
+				4ED4D2CB196E9DCF00D949A4 /* UIImageView+UncachedImageView.m in Sources */,
 				4EA7E227159DE72900B179BF /* CocosDenshion.m in Sources */,
 				4EA442781833EEE600AD3154 /* CustomFontLabel.m in Sources */,
 				4EA7E228159DE72900B179BF /* SimpleAudioEngine.m in Sources */,
@@ -861,10 +867,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Gesjeesde",
-					"$(PROJECT_DIR)/Flurry",
-					"$(PROJECT_DIR)/Gesjeesde",
-					Native/Flurry,
+					"$(PROJECT_DIR)/Gesjeesde\\ Native/Flurry",
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
@@ -962,10 +965,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Gesjeesde",
-					"$(PROJECT_DIR)/Flurry",
-					"$(PROJECT_DIR)/Gesjeesde",
-					Native/Flurry,
+					"$(PROJECT_DIR)/Gesjeesde\\ Native/Flurry",
 				);
 				PRODUCT_NAME = "Beestenbende iPad";
 				PROVISIONING_PROFILE = "";
@@ -992,10 +992,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Gesjeesde",
-					"$(PROJECT_DIR)/Flurry",
-					"$(PROJECT_DIR)/Gesjeesde",
-					Native/Flurry,
+					"$(PROJECT_DIR)/Gesjeesde\\ Native/Flurry",
 				);
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "Beestenbende iPad";
