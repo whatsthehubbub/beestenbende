@@ -14,14 +14,6 @@
 
 @implementation TeamFlipViewController
 
-@synthesize headerLabel;
-@synthesize backgroundImage;
-
-@synthesize teamPhoto;
-@synthesize photoFrame;
-
-@synthesize game;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -40,15 +32,16 @@
     [[SimpleAudioEngine sharedEngine] playEffect:[nautilus objectAtIndex:arc4random() % [nautilus count]]];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    game = appDelegate.game;
+    self.game = appDelegate.game;
     
     // Find the current team
-    Team *team = [game getCurrentTeam];
+    Team *team = [self.game getCurrentTeam];
     
     self.teamPhoto.image = team.picture;
     
-    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"43-background-%@", [team getTeamColor]]];
-    photoFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"43-photo-frame-%@", [team getTeamColor]]];
+    [self.backgroundImage setUncachedImage:[NSString stringWithFormat:@"43-background-%@", [team getTeamColor]]];
+    
+    self.photoFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"43-photo-frame-%@", [team getTeamColor]]];
 }
 
 - (void)viewDidUnload

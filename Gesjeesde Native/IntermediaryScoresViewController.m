@@ -82,11 +82,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)clearViewControllerStack {
-    NSArray *vcArray = [[NSArray alloc] initWithObjects:self.navigationController.viewControllers.firstObject, self.navigationController.viewControllers.lastObject, nil];
-    [self.navigationController setViewControllers:vcArray];
-}
-
 - (IBAction)nextIssue:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
         
@@ -94,20 +89,12 @@
         game.issue = 2;
         [game resetForNextIssue];
         
-        [self clearViewControllerStack];
-        
-//        Class img = NSClassFromString(@"UIImage");
-//        [img performSelector:@selector(_flushSharedImageCache)];
-//        [UIImage _flushSharedImageCache];
-        
         // Go to the first screen of the second issue
         UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondIssueSplash"];
         [self.navigationController pushViewController:viewController animated:YES];
     } else if (game.issue == 2) {
         game.issue = 3;
         [game resetForNextIssue];
-        
-        [self clearViewControllerStack];
         
         // Go to the first screen of the dragon
         UIViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"FinalIssueSplash"];

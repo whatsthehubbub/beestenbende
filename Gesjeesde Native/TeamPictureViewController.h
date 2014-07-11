@@ -13,26 +13,28 @@
 #import "CaptureSessionManager.h"
 #import "UIImage+Extras.h"
 #import "SimpleAudioEngine.h"
+#import "UIImageView+UncachedImageView.h"
 
 @interface TeamPictureViewController : UIViewController <CaptureSessionDelegate> {
 }
 
 @property (assign) int currentTeamNumber;
 
-@property (strong) IBOutlet UIImageView *backgroundImage;
-@property (strong) IBOutlet UIImageView *teamPictureView;
-@property (strong )IBOutlet UIImageView *teamPictureFrame;
-@property (strong) IBOutlet UILabel *titleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, weak) IBOutlet UIImageView *teamPictureView;
+@property (nonatomic, weak) IBOutlet UIImageView *teamPictureFrame;
+@property (nonatomic, weak) IBOutlet UILabel *titleLabel;
 
-@property (strong) IBOutlet UIButton *takeTeamPictureButton;
-@property (strong) IBOutlet UIButton *takePictureAgainButton;
-@property (strong) IBOutlet UIButton *nextButton;
+@property (nonatomic, weak) IBOutlet UIButton *takeTeamPictureButton;
+@property (nonatomic, weak) IBOutlet UIButton *takePictureAgainButton;
+@property (nonatomic, weak) IBOutlet UIButton *nextButton;
 
-@property (weak, nonatomic) Game *game;
+@property (nonatomic, weak) Game *game;
 
 @property (strong) CaptureSessionManager *csManager;
 
-@property (strong) IBOutlet UISegmentedControl *selector;
+// For debug only
+@property (nonatomic, weak) IBOutlet UISegmentedControl *selector;
 
 - (IBAction)takeTeamPicture:(id)sender;
 - (IBAction)takeTeamPictureAgain:(id)sender;

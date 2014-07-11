@@ -14,18 +14,6 @@
 
 @implementation ExplainFeatureViewController
 
-@synthesize game;
-@synthesize currentTeam;
-
-@synthesize backgroundImage;
-
-@synthesize featureImageFrame;
-@synthesize featureImage;
-@synthesize featureLabel;
-@synthesize resultAndExplanationLabel;
-
-@synthesize pointsImage;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -44,22 +32,22 @@
     [[SimpleAudioEngine sharedEngine] playEffect:[nautilus objectAtIndex:arc4random() % [nautilus count]]];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    game = appDelegate.game;
+    self.game = appDelegate.game;
     
     
-    self.currentTeam = [game getCurrentTeam];
+    self.currentTeam = [self.game getCurrentTeam];
     
     [self setViewsForCurrentTeam];
     
-    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-background-%@", [currentTeam getTeamColor]]];
-    featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-photo-frame-%@", [currentTeam getTeamColor]]];
+    [self.backgroundImage setUncachedImage:[NSString stringWithFormat:@"18-background-%@", [self.currentTeam getTeamColor]]];
+    self.featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-photo-frame-%@", [self.currentTeam getTeamColor]]];
 }
 
 - (void)setViewsForCurrentTeam {
     // Utility method to not have to type this twice, parametrized on self.currentTeam
     FeaturePicture *fp = [self.currentTeam.featurePictures lastObject];
     
-    featureImage.image = fp.image;
+    self.featureImage.image = fp.image;
     
     // We may need to change this text but need to leave the original intact
     NSString *featureText = fp.feature;
@@ -73,38 +61,38 @@
         featureText = [FeaturePicture featureForNegation:fp.feature];
     }
 
-    featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@.", [game getCurrentAnimalName], present, featureText]; 
+    self.featureLabel.text = [NSString stringWithFormat:@"%@ heeft %@ %@.", [self.game getCurrentAnimalName], present, featureText];
     
     // Lots of code to generate the result
-    NSString *explanation = [[game getFeatureWithName:fp.feature] objectForKey:@"Explanation"];
+    NSString *explanation = [[self.game getFeatureWithName:fp.feature] objectForKey:@"Explanation"];
     
-    FEATURE_RESULT result = [game resultForFeaturePicture:fp];
+    FEATURE_RESULT result = [self.game resultForFeaturePicture:fp];
     
     if (result == FEATURE_YES_UNIQUE || result == FEATURE_NO_INCORRECT_AND_UNIQUE) {
-        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", explanation];
+        self.resultAndExplanationLabel.text = [NSString stringWithFormat:@"Uniek want: %@", explanation];
         
-        currentTeam.points += 10;
+        self.currentTeam.points += 10;
         
-        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-10-%@", [currentTeam getTeamColor]]];
+        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-10-%@", [self.currentTeam getTeamColor]]];
     } else if (result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT) {
-        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
+        self.resultAndExplanationLabel.text = [NSString stringWithFormat:@"Goed want: %@", explanation];
         
-        currentTeam.points += 5;
+        self.currentTeam.points += 5;
         
-        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-05-%@", [currentTeam getTeamColor]]];
+        self.pointsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"18-points-05-%@", [self.currentTeam getTeamColor]]];
     } else if (result == FEATURE_YES_CORRECT_NOT_DIFFERENTIATING) {
-        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: een %@ en een %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString], [game getCurrentAnimalName]];
+        self.resultAndExplanationLabel.text = [NSString stringWithFormat:@"Denk beter na: een %@ en een %@ hebben allebei dit kenmerk. Hier schiet %@ niks mee op.", [[self.game getCorrectAnimalClass] lowercaseString], [[self.game getWrongAnimalClass] lowercaseString], [self.game getCurrentAnimalName]];
         
         self.pointsImage.image = [UIImage imageNamed:@"18-points-00"];
     } else {
-        resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
+        self.resultAndExplanationLabel.text = [NSString stringWithFormat:@"Fout want: %@", explanation];
         
         self.pointsImage.image = [UIImage imageNamed:@"18-points-00"];
     }
     
     if (result == FEATURE_YES_UNIQUE || result == FEATURE_YES_CORRECT_AND_DIFFERENTIATING || result == FEATURE_NO_INCORRECT || result == FEATURE_NO_INCORRECT_AND_UNIQUE) {
         // This means we have one positive proof
-        game.required -= 1;
+        self.game.required -= 1;
         fp.usedSuccesfully = YES;
     }
 }
@@ -123,7 +111,7 @@
 - (IBAction)done:(id)sender {
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
-    game.currentTeam = [game otherTeamForTeam:game.currentTeam];
+    self.game.currentTeam = [self.game otherTeamForTeam:self.game.currentTeam];
     
     [self performSegueWithIdentifier:@"NextTeam" sender:self];
 }

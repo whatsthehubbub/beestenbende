@@ -13,28 +13,29 @@
 #import "CaptureSessionManager.h"
 #import "UIImage+Extras.h"
 #import "SimpleAudioEngine.h"
+#import "UIImageView+UncachedImageView.h"
 
 @interface FeaturePictureViewController : UIViewController <CaptureSessionDelegate> {
 }
 
-@property (strong) IBOutlet UILabel *headerLabel;
+@property (nonatomic, weak) IBOutlet UILabel *headerLabel;
 
-@property (strong) IBOutlet UIImageView *backgroundImage;
-@property (strong) IBOutlet UIImageView *pictureView;
-@property (strong) IBOutlet UIImageView *pictureFrame;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, weak) IBOutlet UIImageView *pictureView;
+@property (nonatomic, weak) IBOutlet UIImageView *pictureFrame;
 
-@property (strong) IBOutlet UILabel *explanationLabel;
-@property (strong) IBOutlet UILabel *hintLabel;
+@property (nonatomic, weak) IBOutlet UILabel *explanationLabel;
+@property (nonatomic, weak) IBOutlet UILabel *hintLabel;
 
-@property (strong) IBOutlet UIButton *takePictureButton;
-@property (strong) IBOutlet UIButton *takePictureAgainButton;
-@property (strong) IBOutlet UIButton *doneButton;
+@property (nonatomic, weak) IBOutlet UIButton *takePictureButton;
+@property (nonatomic, weak) IBOutlet UIButton *takePictureAgainButton;
+@property (nonatomic, weak) IBOutlet UIButton *doneButton;
 
 // Place to store the processed image before we set it on the team upon exit of this view controller
 @property (strong) UIImage *featureImage;
 
 @property (nonatomic, weak) Game *game;
-@property (nonatomic, weak) Team *team;
+@property (strong) Team *team;
 
 @property (strong) CaptureSessionManager *csManager;
 

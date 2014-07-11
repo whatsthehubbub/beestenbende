@@ -14,25 +14,6 @@
 
 @implementation TeamPictureViewController
 
-@synthesize backgroundImage;
-@synthesize teamPictureView;
-@synthesize teamPictureFrame;
-@synthesize titleLabel;
-
-@synthesize takeTeamPictureButton;
-@synthesize takePictureAgainButton;
-@synthesize nextButton;
-
-@synthesize currentTeamNumber;
-
-@synthesize game;
-
-@synthesize csManager;
-
-// For debug only
-@synthesize selector;
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,15 +29,15 @@
 	// Do any additional setup after loading the view.
     
 #ifndef DEBUG
-    selector.hidden = YES;
+    self.selector.hidden = YES;
 #endif
     
     self.currentTeamNumber = 1;
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    game = appDelegate.game;
+    self.game = appDelegate.game;
     
-    [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [game.team1 getTeamName]]];
+    [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [self.game.team1 getTeamName]]];
     
     // Start capture session and bind it to the image view
     self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.teamPictureView];
@@ -94,7 +75,7 @@
 }
 
 - (IBAction)takeTeamPictureAgain:(id)sender {
-    [csManager startPreview];
+    [self.csManager startPreview];
     
     self.takeTeamPictureButton.enabled = YES;
     self.takeTeamPictureButton.hidden = NO;
@@ -114,9 +95,10 @@
         // Changes to this ViewController
         self.currentTeamNumber = 2;
         
-        [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [game.team2 getTeamName]]];
-        [self.backgroundImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"10-background-%@", [game.team2 getTeamColor]]]];
-        [self.teamPictureFrame setImage:[UIImage imageNamed:[NSString stringWithFormat:@"10-camera-frame-%@", [game.team2 getTeamColor]]]];
+        [self.titleLabel setText:[NSString stringWithFormat:@"Teamfoto %@", [self.game.team2 getTeamName]]];
+        
+        [self.backgroundImage setUncachedImage:[NSString stringWithFormat:@"10-background-%@", [self.game.team2 getTeamColor]]];
+        [self.teamPictureFrame setImage:[UIImage imageNamed:[NSString stringWithFormat:@"10-camera-frame-%@", [self.game.team2 getTeamColor]]]];
         
         // Setup everything for team picture again
         [self takeTeamPictureAgain:self];
@@ -125,14 +107,14 @@
     } else {
         [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
         
-        game.issue = selector.selectedSegmentIndex+1;
+        self.game.issue = self.selector.selectedSegmentIndex+1;
         
         [self.csManager disposeOfSession];
         
-        if (game.issue == 1) {
+        if (self.game.issue == 1) {
             // Start segue to the next view to start the game
             [self performSegueWithIdentifier:@"FirstIssueIntroduction" sender:sender];
-        } else if (game.issue == 2) {
+        } else if (self.game.issue == 2) {
             [self performSegueWithIdentifier:@"SecondIssueIntroduction" sender:sender];
         } else {
             [self performSegueWithIdentifier:@"FinalIssueIntroduction" sender:sender];
@@ -158,13 +140,13 @@
 
 - (void)stillImageSucceeded {
     Team *team;
-    if (currentTeamNumber == 1) {
-        team = game.team1;
+    if (self.currentTeamNumber == 1) {
+        team = self.game.team1;
     } else {
-        team = game.team2;
+        team = self.game.team2;
     }
     
-    team.picture = [teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
+    team.picture = [self.teamPictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
     
     self.takeTeamPictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;

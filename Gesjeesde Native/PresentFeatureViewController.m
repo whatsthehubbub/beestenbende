@@ -14,24 +14,6 @@
 
 @implementation PresentFeatureViewController
 
-@synthesize headerLabel;
-
-@synthesize backgroundImage;
-
-@synthesize yesNoButton;
-@synthesize featureButton;
-@synthesize featureImageFrame;
-@synthesize featureImageView;
-
-@synthesize doneButton;
-
-@synthesize game;
-@synthesize currentTeam;
-@synthesize feature;
-@synthesize currentFeaturePicture;
-
-@synthesize hasFeature;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -47,21 +29,21 @@
 	// Do any additional setup after loading the view.
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    game = appDelegate.game;
+    self.game = appDelegate.game;
     
-    self.currentTeam = [game getCurrentTeam];
+    self.currentTeam = [self.game getCurrentTeam];
 
     self.feature = @"";
     
     self.headerLabel.text = [NSString stringWithFormat:@"Team %@: maak de zin af", [self.currentTeam getTeamName]];
     
     int screenNumber = 17;
-    if (game.issue == 2) {
+    if (self.game.issue == 2) {
         screenNumber = 30;
     }
     
-    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d-background-%@", screenNumber, [currentTeam getTeamColor]]];
-    featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d-photo-frame-%@", screenNumber, [currentTeam getTeamColor]]];
+    [self.backgroundImage setUncachedImage:[NSString stringWithFormat:@"%d-background-%@", screenNumber, [self.currentTeam getTeamColor]]];
+    self.featureImageFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d-photo-frame-%@", screenNumber, [self.currentTeam getTeamColor]]];
     
     self.hasFeature = YES;
     
@@ -147,7 +129,7 @@
     self.feature = f;
     
     if (self.hasFeature) {
-        [self.featureButton setTitle:feature forState:UIControlStateNormal];
+        [self.featureButton setTitle:self.feature forState:UIControlStateNormal];
     } else {
         [self.featureButton setTitle:[FeaturePicture featureForNegation:self.feature] forState:UIControlStateNormal];
     }
@@ -156,7 +138,7 @@
     
     [self.navigationController popViewControllerAnimated:YES];
 
-    doneButton.hidden = NO;
+    self.doneButton.hidden = NO;
 }
 
 @end

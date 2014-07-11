@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
+#import "UIImageView+UncachedImageView.h"
 
 @class ExplainFeatureViewController;
 
@@ -17,16 +18,16 @@
 }
 
 @property (nonatomic, weak) Game *game;
-@property (nonatomic, weak) Team *currentTeam;
+@property (strong) Team *currentTeam;
 
-@property (strong) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImage;
 
-@property (strong) IBOutlet UIImageView *featureImageFrame;
-@property (strong) IBOutlet UIImageView *featureImage;
-@property (strong) IBOutlet UILabel *featureLabel;
-@property (strong) IBOutlet UILabel *resultAndExplanationLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *featureImageFrame;
+@property (nonatomic, weak) IBOutlet UIImageView *featureImage;
+@property (nonatomic, weak) IBOutlet UILabel *featureLabel;
+@property (nonatomic, weak) IBOutlet UILabel *resultAndExplanationLabel;
 
-@property (strong) IBOutlet UIImageView *pointsImage;
+@property (nonatomic, weak) IBOutlet UIImageView *pointsImage;
 
 - (IBAction)done:(id)sender;
 

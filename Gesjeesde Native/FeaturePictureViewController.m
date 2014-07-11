@@ -14,24 +14,6 @@
 
 @implementation FeaturePictureViewController
 
-@synthesize headerLabel;
-
-@synthesize backgroundImage;
-@synthesize pictureView;
-@synthesize pictureFrame;
-
-
-@synthesize takePictureButton;
-@synthesize takePictureAgainButton;
-@synthesize doneButton;
-
-@synthesize featureImage;
-
-@synthesize game;
-@synthesize team;
-
-@synthesize csManager;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -46,22 +28,22 @@
     [super viewDidLoad];
     
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    game = appDelegate.game;
+    self.game = appDelegate.game;
     
     // Find the current team
-    team = [game getCurrentTeam];
+    self.team = [self.game getCurrentTeam];
     
     // Set the correct overlay for this team
-    backgroundImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"22-background-%@", [team getTeamColor]]];
-    pictureFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"22-camera-frame-%@", [team getTeamColor]]];
+    [self.backgroundImage setUncachedImage:[NSString stringWithFormat:@"22-background-%@", [self.team getTeamColor]]];
+    self.pictureFrame.image = [UIImage imageNamed:[NSString stringWithFormat:@"22-camera-frame-%@", [self.team getTeamColor]]];
     
-    self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek de %@", [[game getCurrentAnimalName] lowercaseString]];
+    self.headerLabel.text = [NSString stringWithFormat:@"Onderzoek de %@", [[self.game getCurrentAnimalName] lowercaseString]];
     
-    self.explanationLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van \r een %@ of een %@.", [[game getCorrectAnimalClass] lowercaseString], [[game getWrongAnimalClass] lowercaseString]];
+    self.explanationLabel.text = [NSString stringWithFormat:@"Fotografeer een kenmerk van \r een %@ of een %@.", [[self.game getCorrectAnimalClass] lowercaseString], [[self.game getWrongAnimalClass] lowercaseString]];
     
-    if (game.issue == 1) {
+    if (self.game.issue == 1) {
         self.hintLabel.text = @"Bijvoorbeeld: veren.";
-    } else if (game.issue == 2) {
+    } else if (self.game.issue == 2) {
         self.hintLabel.text = @"Bijvoorbeeld: vinnen.";
     }
     
@@ -86,17 +68,17 @@
 }
 
 - (IBAction)next:(id)sender {
-    [team addFeaturePicture:[[FeaturePicture alloc] initWithImage:featureImage]];
+    [self.team addFeaturePicture:[[FeaturePicture alloc] initWithImage:self.featureImage]];
 
-    team.tookFeaturePictures = YES;
+    self.team.tookFeaturePictures = YES;
     
     [[SimpleAudioEngine sharedEngine] playEffect:@"i02_schermverder.wav"];
     
     [self.csManager disposeOfSession];
     
-    if (game.issue == 1) {
+    if (self.game.issue == 1) {
         [self performSegueWithIdentifier:@"UsePictureFirst" sender:sender];
-    } else if (game.issue == 2) {
+    } else if (self.game.issue == 2) {
         [self performSegueWithIdentifier:@"UsePictureSecond" sender:sender];
     }
 }
@@ -112,9 +94,9 @@
 }
 
 - (void)setupCaptureManager {
-    csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
-    csManager.delegate = self;
-    [csManager startPreview];
+    self.csManager = [[CaptureSessionManager alloc] initWithImageView:self.pictureView];
+    self.csManager.delegate = self;
+    [self.csManager startPreview];
 }
 
 #pragma mark -
@@ -134,7 +116,7 @@
 #pragma mark - CaptureSessionDelegate
 
 - (void)stillImageSucceeded {
-    featureImage = [pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
+    self.featureImage = [self.pictureView.image imageByScalingAndCroppingForSize:CGSizeMake(612, 612)];
     
     self.takePictureButton.hidden = YES;
     self.takePictureAgainButton.hidden = NO;

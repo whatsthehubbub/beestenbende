@@ -7,16 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
+#import "UIImageView+UncachedImageView.h"
 
 @interface TeamFlipViewController : UIViewController 
 
-@property (strong) IBOutlet UILabel *headerLabel;
-@property (strong) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, weak) IBOutlet UILabel *headerLabel;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImage;
 
-@property (strong) IBOutlet UIImageView *teamPhoto;
-@property (strong) IBOutlet UIImageView *photoFrame;
+@property (nonatomic, weak) IBOutlet UIImageView *teamPhoto;
+@property (nonatomic, weak) IBOutlet UIImageView *photoFrame;
 
 @property (nonatomic, weak) Game *game;
 

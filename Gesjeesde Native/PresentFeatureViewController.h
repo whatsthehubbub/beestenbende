@@ -12,26 +12,27 @@
 #import "FeaturePickerViewController.h"
 #import "FeaturePicture.h"
 #import "SimpleAudioEngine.h"
+#import "UIImageView+UncachedImageView.h"
 
 @interface PresentFeatureViewController : UIViewController <FeaturePickerViewControllerDelegate> {
 }
 
-@property (strong) IBOutlet UILabel *headerLabel;
+@property (nonatomic, weak) IBOutlet UILabel *headerLabel;
 
-@property (strong) IBOutlet UIImageView *backgroundImage;
+@property (nonatomic, weak) IBOutlet UIImageView *backgroundImage;
 
-@property (strong) IBOutlet UIButton *yesNoButton;
-@property (strong) IBOutlet UIButton *featureButton;
-@property (strong) IBOutlet UIImageView *featureImageFrame;
-@property (strong) IBOutlet UIImageView *featureImageView;
+@property (nonatomic, weak) IBOutlet UIButton *yesNoButton;
+@property (nonatomic, weak) IBOutlet UIButton *featureButton;
+@property (nonatomic, weak) IBOutlet UIImageView *featureImageFrame;
+@property (nonatomic, weak) IBOutlet UIImageView *featureImageView;
 
-@property (nonatomic, retain) IBOutlet UIButton *doneButton;
+@property (nonatomic, weak) IBOutlet UIButton *doneButton;
 
 @property (nonatomic, weak) Game *game;
-@property (nonatomic, weak) Team *currentTeam;
+@property (strong) Team *currentTeam;
 
 @property (strong) NSString *feature;
-@property (nonatomic, weak) FeaturePicture *currentFeaturePicture;
+@property (strong) FeaturePicture *currentFeaturePicture;
 
 @property (assign) BOOL hasFeature;
 
