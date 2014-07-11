@@ -10,11 +10,19 @@
 
 @implementation UIImageView (UncachedImageView)
 
-- (void)setPlaatje:(NSString *)name {
-    NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"png"];
+/**
+ * Here we catch the user defined runtime attribute for ImageViews where 
+ * we don't want to use imageNamed because that cache is filling up.
+ */
+- (void)setUncachedImage:(NSString *)name {
+    // TODO we're hardcoding it here to be retina because that is what we use
+    NSString *retinaName = [NSString stringWithFormat:@"%@@2x", name];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:retinaName ofType:@"png"];
+    
+//    NSLog(@"Got path %@", path);
 
-//    self.image = [UIImage imageWithContentsOfFile:path];
-    self.image = [UIImage imageNamed:name];
+    self.image = [UIImage imageWithContentsOfFile:path];
 }
 
 @end

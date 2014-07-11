@@ -75,6 +75,12 @@
 		4ECE090E158FF59200868CD0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ECE090D158FF59200868CD0 /* SplashViewController.m */; };
 		4ED2152E153C610700040C97 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED2152D153C610700040C97 /* AVFoundation.framework */; };
 		4ED4D2CB196E9DCF00D949A4 /* UIImageView+UncachedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */; };
+		4ED4D2D21970405900D949A4 /* 01-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4D2D11970405900D949A4 /* 01-background.png */; };
+		4ED4D2D41970406300D949A4 /* 01-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4D2D31970406300D949A4 /* 01-background@2x.png */; };
+		4ED4D2D71970431A00D949A4 /* 02-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4D2D51970431A00D949A4 /* 02-background.png */; };
+		4ED4D2D81970431A00D949A4 /* 02-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4D2D61970431A00D949A4 /* 02-background@2x.png */; };
+		4ED4D2DB1970447100D949A4 /* 03-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4D2D91970447100D949A4 /* 03-background.png */; };
+		4ED4D2DC1970447100D949A4 /* 03-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ED4D2DA1970447100D949A4 /* 03-background@2x.png */; };
 		4ED69F301588CDCF00F84D92 /* MakeTeamPicturesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */; };
 		4ED69F351588D7B500F84D92 /* i15_tussenstand_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F341588D7B500F84D92 /* i15_tussenstand_v2.wav */; };
 		4ED69F391588DB7D00F84D92 /* i08_tijdvoorbij_v2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4ED69F381588DB7D00F84D92 /* i08_tijdvoorbij_v2.wav */; };
@@ -243,8 +249,14 @@
 		4ECE090C158FF59200868CD0 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		4ECE090D158FF59200868CD0 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		4ED2152D153C610700040C97 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		4ED4D2C9196E9DCF00D949A4 /* UIImageView+UncachedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UncachedImageView.h"; sourceTree = "<group>"; };
-		4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UncachedImageView.m"; sourceTree = "<group>"; };
+		4ED4D2C9196E9DCF00D949A4 /* UIImageView+UncachedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+UncachedImageView.h"; path = "../UIImageView+UncachedImageView.h"; sourceTree = "<group>"; };
+		4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+UncachedImageView.m"; path = "../UIImageView+UncachedImageView.m"; sourceTree = "<group>"; };
+		4ED4D2D11970405900D949A4 /* 01-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-background.png"; sourceTree = "<group>"; };
+		4ED4D2D31970406300D949A4 /* 01-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "01-background@2x.png"; sourceTree = "<group>"; };
+		4ED4D2D51970431A00D949A4 /* 02-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-background.png"; sourceTree = "<group>"; };
+		4ED4D2D61970431A00D949A4 /* 02-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "02-background@2x.png"; sourceTree = "<group>"; };
+		4ED4D2D91970447100D949A4 /* 03-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-background.png"; sourceTree = "<group>"; };
+		4ED4D2DA1970447100D949A4 /* 03-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "03-background@2x.png"; sourceTree = "<group>"; };
 		4ED69F2E1588CDCE00F84D92 /* MakeTeamPicturesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeTeamPicturesViewController.h; sourceTree = "<group>"; };
 		4ED69F2F1588CDCE00F84D92 /* MakeTeamPicturesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MakeTeamPicturesViewController.m; sourceTree = "<group>"; };
 		4ED69F341588D7B500F84D92 /* i15_tussenstand_v2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = i15_tussenstand_v2.wav; sourceTree = "<group>"; };
@@ -341,6 +353,7 @@
 		4E3326B4151A68C200CEC850 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				4ED4D2CC19703F1B00D949A4 /* images */,
 				47E2596B1833EBE2003C25CC /* fonts */,
 				4E4EECF01588C2480018170C /* audio */,
 				4E4D8F9D152CCFCD00E898D5 /* Features.plist */,
@@ -418,8 +431,6 @@
 		4EAE98CB151A61890051C926 = {
 			isa = PBXGroup;
 			children = (
-				4ED4D2C9196E9DCF00D949A4 /* UIImageView+UncachedImageView.h */,
-				4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */,
 				47E259641832E463003C25CC /* Beestenbende iPad Images.xcassets */,
 				4E4346C1171EB6A500B93D50 /* Beestenbende.xcodeproj */,
 				4E3326B4151A68C200CEC850 /* assets */,
@@ -470,6 +481,8 @@
 				4ECB233B1587F61700F3CDCA /* AnimalUnderstandsViewController.m */,
 				4EAE98E9151A618A0051C926 /* AppDelegate.h */,
 				4EAE98EA151A618A0051C926 /* AppDelegate.m */,
+				4ED4D2C9196E9DCF00D949A4 /* UIImageView+UncachedImageView.h */,
+				4ED4D2CA196E9DCF00D949A4 /* UIImageView+UncachedImageView.m */,
 				4E4EECDD1588BDC00018170C /* CocosDenshion */,
 				4E3326B5151A909000CEC850 /* CreditsViewController.h */,
 				4E3326B6151A909000CEC850 /* CreditsViewController.m */,
@@ -579,6 +592,19 @@
 			name = Custom;
 			sourceTree = "<group>";
 		};
+		4ED4D2CC19703F1B00D949A4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4ED4D2D51970431A00D949A4 /* 02-background.png */,
+				4ED4D2D61970431A00D949A4 /* 02-background@2x.png */,
+				4ED4D2D11970405900D949A4 /* 01-background.png */,
+				4ED4D2D31970406300D949A4 /* 01-background@2x.png */,
+				4ED4D2D91970447100D949A4 /* 03-background.png */,
+				4ED4D2DA1970447100D949A4 /* 03-background@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		4EDEFAD3152B304D00324EDB /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -684,6 +710,7 @@
 			files = (
 				4EAE98E5151A618A0051C926 /* InfoPlist.strings in Resources */,
 				4EAE98EE151A618A0051C926 /* MainStoryboard.storyboard in Resources */,
+				4ED4D2D21970405900D949A4 /* 01-background.png in Resources */,
 				4E4D8F9E152CCFCD00E898D5 /* Features.plist in Resources */,
 				4E4EECF21588C2570018170C /* i01_openingsscherm_v2.wav in Resources */,
 				4E4EECF51588C3B80018170C /* i02_schermverder.wav in Resources */,
@@ -691,11 +718,14 @@
 				4ED69F351588D7B500F84D92 /* i15_tussenstand_v2.wav in Resources */,
 				4ED69F391588DB7D00F84D92 /* i08_tijdvoorbij_v2.wav in Resources */,
 				4ED69F3B1588DB9100F84D92 /* i06_tijdtiktaf.wav in Resources */,
+				4ED4D2D41970406300D949A4 /* 01-background@2x.png in Resources */,
 				4ED69F3D1588DD1200F84D92 /* i05_carouselverderterug.wav in Resources */,
 				4ED69F3F1588E65E00F84D92 /* i10_openmenu.wav in Resources */,
 				4ED69F411588E66400F84D92 /* i11_menu-select-close.wav in Resources */,
+				4ED4D2D81970431A00D949A4 /* 02-background@2x.png in Resources */,
 				4ED69F431588E69800F84D92 /* i09_knop-toggle.wav in Resources */,
 				4ED69F481588E94F00F84D92 /* i13_uitslagronde_v2.wav in Resources */,
+				4ED4D2DC1970447100D949A4 /* 03-background@2x.png in Resources */,
 				4ED69F491588E94F00F84D92 /* i14_uitslagkwestie_v2.wav in Resources */,
 				4ED69F551588EACF00F84D92 /* d01_nautilus_1.wav in Resources */,
 				4ED69F561588EACF00F84D92 /* d01_nautilus_2.wav in Resources */,
@@ -721,11 +751,13 @@
 				4ED69F7C1589E40D00F84D92 /* d10_draak_wiebenik_v4.wav in Resources */,
 				4EEFC16918F85B8900522BE0 /* HockeySDK.xcconfig in Resources */,
 				4ED69F7D1589E40D00F84D92 /* d11_reptielen_watisdraak_v2.wav in Resources */,
+				4ED4D2D71970431A00D949A4 /* 02-background.png in Resources */,
 				4ED69F7E1589E40D00F84D92 /* d12_draak_inderdaadvis_v4.wav in Resources */,
 				4ED69F7F1589E40D00F84D92 /* d13_reptielen_opgelucht_v2.wav in Resources */,
 				4ED69F81158A737700F84D92 /* i07_tijdtiktlaatstesec_v3.wav in Resources */,
 				47E259691833EBD4003C25CC /* Linden Hill Italic.otf in Resources */,
 				47E2596A1833EBD4003C25CC /* Linden Hill.otf in Resources */,
+				4ED4D2DB1970447100D949A4 /* 03-background.png in Resources */,
 				4E94ACF9159A1527003AB362 /* i04_neemfoto_v4.wav in Resources */,
 				47E259651832E463003C25CC /* Beestenbende iPad Images.xcassets in Resources */,
 				4E3D23B7159F391600112E9C /* d10_draak_wiebenik_v3.wav in Resources */,

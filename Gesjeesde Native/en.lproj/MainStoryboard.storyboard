@@ -13,9 +13,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="01-background" id="f0F-eE-B2i">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="f0F-eE-B2i">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="01-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="P9u-ot-bQt">
                                 <rect key="frame" x="410" y="835" width="240" height="60"/>
@@ -67,9 +70,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="02-background" id="Yb5-Q0-uGk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Yb5-Q0-uGk">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="02-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Op naar het Rariteitenkabinet!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="yPF-GC-xvT" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -2572,9 +2578,12 @@ eekhoorn.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="03-background" id="Ca6-PB-myW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Ca6-PB-myW">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="03-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="05s-nn-VjM">
                                 <rect key="frame" x="0.0" y="90" width="768" height="934"/>
@@ -3831,11 +3840,8 @@ want hij heeft…</string>
         <image name="00-nautilus-background" width="768" height="1024"/>
         <image name="00-next-button" width="220" height="60"/>
         <image name="00-wel-on-geen-off" width="440" height="80"/>
-        <image name="01-background" width="768" height="1024"/>
         <image name="01-credits-button" width="240" height="60"/>
         <image name="01-start-button" width="240" height="60"/>
-        <image name="02-background" width="768" height="1024"/>
-        <image name="03-background" width="768" height="1024"/>
         <image name="03-credits" width="768" height="1880"/>
         <image name="05-teams" width="295" height="125"/>
         <image name="06-background" width="768" height="1024"/>
