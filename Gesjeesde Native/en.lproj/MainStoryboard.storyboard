@@ -421,9 +421,12 @@ dus ik ben een vogel!</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="25-background" id="oAr-Tj-SwJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="oAr-Tj-SwJ">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="25-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Kwestie 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QBF-uh-r6k" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -469,9 +472,12 @@ dus ik ben een vogel!</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="26-background" id="QdM-0N-lfT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="QdM-0N-lfT">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="26-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Zoek de zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="X5b-Vv-Zkh" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -532,9 +538,12 @@ dus ik ben een vogel!</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="27-background-eel" id="4qe-Ve-8Bk">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="4qe-Ve-8Bk">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="27-background-eel"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="tGy-Uw-Cbc" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -1318,9 +1327,12 @@ Fotografeer kenmerken van zoogdieren of vogels.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="15-background" id="dO8-I8-uGa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="dO8-I8-uGa">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="15-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Voorbeeld" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="r0m-AE-fiC" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -2205,9 +2217,12 @@ geen reptiel want u hebt…</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="32-background" id="DHl-4a-cJh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="DHl-4a-cJh">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="32-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="kR2-lo-5Af" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -2498,9 +2513,12 @@ draakje opgelost en wint dus.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="45-background-blue" id="Slo-Ni-2kW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Slo-Ni-2kW">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="45-background-blue"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="En de winnaar is…" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="ErG-De-wen" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -2704,9 +2722,12 @@ eekhoorn.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="28-background" id="sJa-mX-eIe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="sJa-mX-eIe">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="28-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Aan de slag!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kmr-be-VpQ" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -2773,9 +2794,12 @@ eekhoorn.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="27-background-fish" id="6yh-ro-mO2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="6yh-ro-mO2">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="27-background-fish"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="d4Z-Sw-DJw" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -2846,9 +2870,12 @@ Help ons bewijzen dat hij een vis is en geen reptiel.</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="33-background" id="5g9-5j-f84">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="5g9-5j-f84">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="33-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="De zeepaling snapt het" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="QH5-D3-BWV" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -3910,7 +3937,6 @@ want hij heeft…</string>
         <image name="03-credits" width="768" height="1880"/>
         <image name="05-teams" width="295" height="125"/>
         <image name="10-camera-frame-blue" width="400" height="400"/>
-        <image name="15-background" width="768" height="1024"/>
         <image name="16-photo-frame" width="227" height="227"/>
         <image name="16-squirrel" width="400" height="300"/>
         <image name="17-photo-frame-blue" width="280" height="280"/>
@@ -3918,13 +3944,6 @@ want hij heeft…</string>
         <image name="18-points-00" width="194" height="200"/>
         <image name="21-nautilus" width="400" height="300"/>
         <image name="22-camera-frame-blue" width="400" height="400"/>
-        <image name="25-background" width="768" height="1024"/>
-        <image name="26-background" width="768" height="1024"/>
-        <image name="27-background-eel" width="768" height="1024"/>
-        <image name="27-background-fish" width="768" height="1024"/>
-        <image name="28-background" width="768" height="1024"/>
-        <image name="32-background" width="768" height="1024"/>
-        <image name="33-background" width="768" height="1024"/>
         <image name="34-progress-1" width="520" height="170"/>
         <image name="34-ribbon" width="510" height="97"/>
         <image name="35-background" width="768" height="1024"/>
@@ -3955,7 +3974,6 @@ want hij heeft…</string>
         <image name="42-photo-frame-blue" width="280" height="280"/>
         <image name="43-photo-frame-yellow" width="240" height="240"/>
         <image name="44-header" width="768" height="90"/>
-        <image name="45-background-blue" width="768" height="1024"/>
         <image name="45-photo-frame" width="240" height="240"/>
         <image name="47-background" width="768" height="1024"/>
         <image name="48-background" width="768" height="1024"/>
@@ -3967,10 +3985,10 @@ want hij heeft…</string>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sz9-qc-ZZh"/>
+        <segue reference="all-Ba-Vs9"/>
         <segue reference="OHM-xk-G1T"/>
         <segue reference="cz4-cS-3oL"/>
-        <segue reference="D3e-WY-yM9"/>
+        <segue reference="aIf-Jt-bSO"/>
         <segue reference="bVc-ph-DLl"/>
         <segue reference="5OT-N5-qpE"/>
     </inferredMetricsTieBreakers>

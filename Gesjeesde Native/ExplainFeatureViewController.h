@@ -11,6 +11,7 @@
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
 #import "UIImageView+UncachedImageView.h"
+#import "UINavigationController+ClearViewControllers.h"
 
 @class ExplainFeatureViewController;
 
