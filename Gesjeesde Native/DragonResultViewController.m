@@ -35,6 +35,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [self.navigationController clearViewControllerStack];
+    
     NSArray *dragon = [NSArray arrayWithObjects:@"d10_draak_wiebenik_v3.wav", @"d10_draak_wiebenik_v4.wav", nil];
     [[SimpleAudioEngine sharedEngine] playEffect:[dragon objectAtIndex:arc4random() % [dragon count]]];
     

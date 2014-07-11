@@ -10,6 +10,7 @@
 
 #import "AppDelegate.h"
 #import "SimpleAudioEngine.h"
+#import "UINavigationController+ClearViewControllers.h"
 
 @interface DragonResultViewController : UIViewController
 
