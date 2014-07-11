@@ -12,7 +12,7 @@
 
 /**
  * Here we catch the user defined runtime attribute for ImageViews where 
- * we don't want to use imageNamed because that cache is filling up.
+ * we don't want to use imageNamed because that cache is never cleared.
  */
 - (void)setUncachedImage:(NSString *)name {
     // TODO we're hardcoding it here to be retina because that is what we use

@@ -119,9 +119,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="00-nautilus-background" id="Nhi-rz-gUX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Nhi-rz-gUX">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="00-nautilus-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wat een bende! Wie is een vogel, wie een zoogdier? Een vis? Een reptiel? Hulp nodig, van jong en oud." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fKm-NU-S1c" customClass="CustomFontLabel">
                                 <rect key="frame" x="160" y="311" width="451" height="200"/>
@@ -337,9 +340,12 @@ dus ik ben een vogel!</string>
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="00-nautilus-background" id="ssF-Nm-z5t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="ssF-Nm-z5t">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="00-nautilus-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg 4/4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lna-vx-9c3" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -809,9 +815,12 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="09-background" id="j2B-0a-ms5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="j2B-0a-ms5">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="09-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Maak teamfoto’s" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="qL2-KY-gzW" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -880,9 +889,12 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="06-background" id="R2U-AU-rTA">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="R2U-AU-rTA">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="06-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg 2/4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="nGD-yr-qI7" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -954,9 +966,12 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="07-background" id="IW2-En-fOC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="IW2-En-fOC">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="07-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uitleg 3/4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Fmf-dm-OeW" customClass="CustomFontLabel">
                                 <rect key="frame" x="0.0" y="38" width="768" height="38"/>
@@ -1018,9 +1033,12 @@ Vissen of reptielen? Welk team ontdekt als eerste bij welke groep ik hoor?</stri
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="00-nautilus-background" id="G95-OL-A0j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="G95-OL-A0j">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="00-nautilus-background"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Eerst maken jullie teams, die strijden om de meeste punten." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="10" id="z26-nx-a8H" customClass="CustomFontLabel">
                                 <rect key="frame" x="138" y="431" width="492" height="100"/>
@@ -2582,7 +2600,7 @@ eekhoorn.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="03-background"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="05s-nn-VjM">
@@ -3837,16 +3855,12 @@ want hij heeft…</string>
         <image name="00-back-button-header" width="13" height="22"/>
         <image name="00-button-example" width="200" height="60"/>
         <image name="00-choose-feature" width="440" height="60"/>
-        <image name="00-nautilus-background" width="768" height="1024"/>
         <image name="00-next-button" width="220" height="60"/>
         <image name="00-wel-on-geen-off" width="440" height="80"/>
         <image name="01-credits-button" width="240" height="60"/>
         <image name="01-start-button" width="240" height="60"/>
         <image name="03-credits" width="768" height="1880"/>
         <image name="05-teams" width="295" height="125"/>
-        <image name="06-background" width="768" height="1024"/>
-        <image name="07-background" width="768" height="1024"/>
-        <image name="09-background" width="768" height="1024"/>
         <image name="10-background-blue" width="768" height="1024"/>
         <image name="10-camera-frame-blue" width="400" height="400"/>
         <image name="11-background" width="768" height="1024"/>
