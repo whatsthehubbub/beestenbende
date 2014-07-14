@@ -2669,7 +2669,7 @@ eekhoorn.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="uncachedImage" value="03-background"/>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <scrollView autoresizesSubviews="NO" multipleTouchEnabled="YES" contentMode="top" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" id="05s-nn-VjM">
