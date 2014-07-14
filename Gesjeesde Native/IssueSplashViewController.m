@@ -29,7 +29,9 @@
 	// Do any additional setup after loading the view.
     
     // Clear the view controllers that we've seen but can't go back to to save memory
-    [self.navigationController clearViewControllerStack];
+    if ([self.title isEqualToString:@"IssueStart"]) {
+        [self.navigationController clearViewControllerStack];
+    }
 }
 
 - (void)viewDidUnload

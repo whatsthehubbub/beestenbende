@@ -413,10 +413,10 @@ dus ik ben een vogel!</string>
             </objects>
             <point key="canvasLocation" x="3437" y="-709"/>
         </scene>
-        <!--Issue Splash View Controller-->
+        <!--Issue Splash View Controller - IssueStart-->
         <scene sceneID="oAu-2C-PM7">
             <objects>
-                <viewController storyboardIdentifier="SecondIssueSplash" id="rPn-bJ-gLN" customClass="IssueSplashViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondIssueSplash" title="IssueStart" id="rPn-bJ-gLN" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t48-Sy-pNh">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3704,10 +3704,10 @@ want hij heeft…</string>
             </objects>
             <point key="canvasLocation" x="7292" y="4227"/>
         </scene>
-        <!--Issue Splash View Controller-->
+        <!--Issue Splash View Controller - IssueStart-->
         <scene sceneID="E0o-ZR-fnM">
             <objects>
-                <viewController id="5Sb-GL-yMm" customClass="IssueSplashViewController" sceneMemberID="viewController">
+                <viewController title="IssueStart" id="5Sb-GL-yMm" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sPa-Cy-el8">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3825,10 +3825,10 @@ want hij heeft…</string>
             </objects>
             <point key="canvasLocation" x="892" y="608"/>
         </scene>
-        <!--Issue Splash View Controller-->
+        <!--Issue Splash View Controller - IssueStart-->
         <scene sceneID="r7i-Vi-JzD">
             <objects>
-                <viewController storyboardIdentifier="FinalIssueSplash" id="PGG-bi-Ubz" customClass="IssueSplashViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinalIssueSplash" title="IssueStart" id="PGG-bi-Ubz" customClass="IssueSplashViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hks-Me-33v">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
